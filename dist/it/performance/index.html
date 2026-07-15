@@ -440,7 +440,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
   .pa-screen[data-k="sign"]{opacity:1;transform:none}.pa-sig path{stroke-dashoffset:0}.pa-stamp{opacity:1;transform:scale(1) rotate(-8deg)}.pa-pill[data-k="hire"]{color:#fff}
   .dock{display:none}
 }
-</style>
+.langsw{position:relative;display:inline-flex}.langsw-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:.92rem;font-weight:500;color:var(--ink);background:none;border:1px solid var(--line);border-radius:980px;padding:7px 13px;cursor:pointer;transition:border-color .2s,color .2s;line-height:1}.langsw-btn:hover{border-color:var(--sec)}.langsw-btn svg{width:15px;height:15px}.langsw-btn .cx{font-size:.7em;color:var(--sec)}.langsw-menu{position:absolute;top:calc(100% + 8px);right:0;background:var(--white);border:1px solid var(--line);border-radius:13px;box-shadow:0 10px 34px rgba(0,0,0,.12);padding:5px;display:none;flex-direction:column;min-width:104px;z-index:120}.langsw.open .langsw-menu{display:flex}.langsw-menu a{display:block;padding:8px 13px;border-radius:9px;font-size:.92rem;color:var(--ink);text-decoration:none;transition:background .15s}.langsw-menu a:hover{background:var(--alt)}.langsw-menu a.on{color:var(--blue);font-weight:600}@media(max-width:640px){.langsw-btn span.lc{display:none}}</style>
 <style>
 /* ---- Performance product page: minimal additions on top of the shared system ---- */
 .hero-shot{display:flex;justify-content:end;align-self:center;justify-self:end}
@@ -710,5 +710,34 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 })();
 </script>
 
+<script>
+(function(){
+  var root=document.querySelector('#hd .nav'); if(!root) return;
+  if(root.querySelector('.langsw')) return;
+  var cur=(document.documentElement.lang||'en').slice(0,2);
+  var label={en:'English',it:'Italiano',ru:'\u0420\u0443\u0441\u0441\u043a\u0438\u0439',es:'Espa\u00f1ol'};
+  var code={en:'EN',it:'IT',ru:'RU',es:'ES'};
+  var order=['en','it','ru','es'];
+  var alts={}; alts[cur]=location.pathname;
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function(l){
+    var h=l.getAttribute('hreflang'); if(h&&h!=='x-default') alts[h]=l.getAttribute('href');
+  });
+  var globe='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg>';
+  var w=document.createElement('div'); w.className='langsw';
+  var b=document.createElement('button'); b.type='button'; b.className='langsw-btn';
+  b.setAttribute('aria-label','Change language');
+  b.innerHTML=globe+'<span class="lc">'+(code[cur]||'EN')+'</span><span class="cx">\u25be</span>';
+  var m=document.createElement('div'); m.className='langsw-menu';
+  order.forEach(function(c){ if(!alts[c]) return;
+    var a=document.createElement('a'); a.href=alts[c]; a.textContent=label[c];
+    a.setAttribute('hreflang',c); if(c===cur)a.className='on'; m.appendChild(a);
+  });
+  w.appendChild(b); w.appendChild(m);
+  b.addEventListener('click',function(e){e.stopPropagation();w.classList.toggle('open');});
+  document.addEventListener('click',function(){w.classList.remove('open');});
+  var cta=root.querySelector('.btn-g')||root.querySelector('.btn');
+  if(cta) root.insertBefore(w,cta); else root.appendChild(w);
+})();
+</script>
 </body>
 </html>
