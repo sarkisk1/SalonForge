@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.salonforge.co.uk/sitemap.xml
+Sitemap: https://salonforge.com/sitemap.xml
