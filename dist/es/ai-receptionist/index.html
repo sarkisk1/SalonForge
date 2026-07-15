@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Receptionist — Atiende el teléfono fuera de horario | SalonForge</title>
+<meta name="description" content="Una voz de IA real que atiende el teléfono del salón fuera de horario: gestiona reservas de varios servicios, cambios de cita y objeciones, y lo escribe directamente en Daviana, la agenda en vivo.">
+<link rel="canonical" href="https://salonforge.com/es/ai-receptionist/">
+<link rel="alternate" hreflang="en" href="https://salonforge.com/ai-receptionist/">
+<link rel="alternate" hreflang="it" href="https://salonforge.com/it/ai-receptionist/">
+<link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/ai-receptionist/">
+<link rel="alternate" hreflang="es" href="https://salonforge.com/es/ai-receptionist/">
+<link rel="alternate" hreflang="x-default" href="https://salonforge.com/ai-receptionist/">
+<meta property="og:title" content="AI Receptionist — Atiende el teléfono fuera de horario | SalonForge">
+<meta property="og:description" content="Una voz de IA real que atiende el teléfono del salón fuera de horario: reservas de varios servicios, cambios de cita y objeciones, directo a la agenda.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://salonforge.com/es/ai-receptionist/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --white:#ffffff; --alt:#f5f5f7; --ink:#1d1d1f; --sec:#86868b; --line:#d2d2d7;
+  --blue:#D97757; --blue-h:#C15F3C; --blue-d:#E8946F;
+  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
+  --container:1080px; --gutter:clamp(22px,6vw,80px); --sec-pad:clamp(72px,10vw,128px);
+  --reveal:cubic-bezier(.28,.11,.32,1); --hover:cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--ink);font-family:var(--ui);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+::selection{background:rgba(217,119,87,.16);color:var(--ink)}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{font-size:.9375rem;font-weight:600;letter-spacing:0;color:var(--blue)}
+.eyebrow.mute{color:var(--sec)}
+h1,h2,h3,.disp{font-weight:600;letter-spacing:-.015em;line-height:1.06;text-wrap:balance}
+.hl{color:var(--blue)}
+.sw{font-style:normal;font-weight:600}
+.band{padding:var(--sec-pad) 0;position:relative}
+.band--2{background:var(--alt)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+
+/* CHAPTER RAIL */
+.chapter{display:flex;align-items:baseline;justify-content:space-between;gap:20px;
+  border-top:1px solid var(--line);padding-top:16px;margin-bottom:clamp(40px,6vw,64px)}
+.chapter .ix{font-size:.95rem;color:var(--blue);font-weight:600;
+  font-variant-numeric:tabular-nums;letter-spacing:0;flex:none}
+.chapter .lbl{font-size:.9375rem;font-weight:600;letter-spacing:0;color:var(--sec)}
+.chapter .end{font-size:.9375rem;color:var(--sec);letter-spacing:0;text-align:right}
+@media(max-width:600px){.chapter .end{display:none}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s var(--reveal),transform .6s var(--reveal)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}
+
+/* buttons */
+.btn{font-family:var(--ui);font-weight:500;font-size:1.0625rem;padding:12px 22px;border-radius:980px;border:1px solid transparent;cursor:pointer;transition:background .25s var(--hover),color .25s var(--hover),transform .2s var(--hover);display:inline-flex;align-items:center;gap:8px;white-space:nowrap;line-height:1.1}
+.btn-g{background:var(--blue);color:#fff}
+.btn-g:hover{background:var(--blue-h)}
+.btn-o{background:transparent;color:var(--blue);border-color:transparent;padding:12px 0;font-weight:400}
+.btn-o:hover{color:var(--blue-h)}
+.btn-o .ar{transition:transform .3s var(--hover)}
+.btn-o:hover .ar{transform:translateX(3px)}
+.ghost{color:var(--blue);font-weight:400;font-size:1.0625rem;display:inline-flex;align-items:center;gap:5px;transition:color .22s var(--hover)}
+.ghost:hover{color:var(--blue-h)}
+.ghost .ar{transition:transform .3s var(--hover)}
+.ghost:hover .ar{transform:translateX(3px)}
+
+/* NAV */
+header{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .4s var(--reveal),border-color .4s var(--reveal),backdrop-filter .4s}
+header.sc{background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid var(--line)}
+header:not(.sc){border-bottom:1px solid transparent}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-size:1.3125rem;font-weight:600;letter-spacing:-.02em;display:inline-flex;align-items:baseline;color:var(--ink)}
+.brand .dot{color:var(--blue)}
+.navlinks{display:flex;gap:34px;font-size:.9375rem;color:var(--ink);font-weight:400}
+.navlinks a{transition:color .2s;opacity:.82}.navlinks a:hover{opacity:1;color:var(--blue)}
+@media(max-width:900px){.navlinks{display:none}}
+header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
+
+/* HERO */
+.hero{position:relative;padding:clamp(118px,16vh,172px) 0 clamp(30px,5vh,60px);overflow:hidden;background:var(--white)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(48% 46% at 84% 42%,rgba(232,148,111,.06),transparent 64%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,5vw,72px);align-items:center}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;gap:clamp(24px,7vw,44px)}}
+.hero-inner{max-width:33rem}
+.hero h1{font-size:clamp(2.5rem,4.8vw,4rem);font-weight:600;margin:18px 0 22px;line-height:1.07;letter-spacing:-.018em;max-width:15ch}
+.hero .lede{max-width:36ch}
+.hero .lede-1{font-weight:500;font-size:clamp(1.25rem,2vw,1.6rem);color:var(--ink);line-height:1.22;letter-spacing:-.01em}
+.hero .lede-2{color:var(--sec);font-size:clamp(1.0625rem,1.25vw,1.175rem);margin-top:14px;max-width:44ch;line-height:1.45}
+.hero .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:30px}
+@media(max-width:920px){.hero-inner{max-width:none}.hero h1{max-width:18ch}}
+
+/* HERO constellation preview */
+.hero-cluster{position:relative;width:min(120%,700px);margin:0 auto;aspect-ratio:1/1;justify-self:end;align-self:center;transform:translateY(-40px)}
+.hero-cluster::before{content:"";position:absolute;inset:-12%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(232,148,111,.14),rgba(232,148,111,.05) 46%,transparent 72%);
+  filter:blur(6px);animation:cluglow 7s ease-in-out infinite}
+@keyframes cluglow{50%{opacity:.7;transform:scale(1.04)}}
+@media(max-width:920px){.hero-cluster{width:min(88vw,460px);justify-self:center;transform:none}}
+@media(max-width:480px){.hero-cluster{width:min(94vw,390px)}}
+.hc-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.hc-conn{fill:none;stroke:url(#heroSpoke);stroke-width:1.15;opacity:.85;stroke-linecap:round}
+.hc-ring{fill:none;stroke:var(--blue-d);stroke-width:.35;opacity:.34;stroke-dasharray:2.4 3;animation:spin 26s linear infinite;transform-origin:50px 50px}
+.hc-ring.b{opacity:.2;stroke-dasharray:1 4.5;animation-duration:40s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hc-pkt{fill:var(--blue-d);filter:drop-shadow(0 0 2.6px rgba(232,148,111,.7));animation:hcflow 3s linear infinite}
+@keyframes hcflow{from{offset-distance:0%;opacity:0}12%{opacity:1}80%{opacity:1}to{offset-distance:100%;opacity:0}}
+.cnode{position:absolute;transform:translate(-50%,-50%);width:clamp(46px,10vw,67px);height:clamp(46px,10vw,67px);border-radius:18px;background:var(--alt);border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);--dot:var(--blue);z-index:2;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.cnode svg{width:56%;height:56%}
+.cnode.core{width:clamp(96px,22vw,138px);height:clamp(96px,22vw,138px);border-radius:28px;border:1px solid rgba(232,148,111,.4);color:var(--blue);--dot:var(--blue);z-index:3;
+  background:radial-gradient(circle at 50% 38%,#ffffff 0%,#fff4ef 40%,#ffe4d7 100%);
+  box-shadow:0 10px 40px rgba(232,148,111,.28),0 0 60px rgba(232,148,111,.22),inset 0 1px 2px rgba(255,255,255,.9);animation:corepulse 5s ease-in-out infinite}
+.cnode.core svg{width:50%;height:50%}
+@keyframes corepulse{50%{box-shadow:0 10px 40px rgba(232,148,111,.34),0 0 80px rgba(232,148,111,.32),inset 0 1px 2px rgba(255,255,255,.9)}}
+
+/* PROOF RIBBON */
+.ribbon{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ribbon .wrap{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;padding:26px var(--gutter);text-align:center}
+.ribbon .fact{display:inline-flex;align-items:baseline;gap:9px;font-size:1rem;color:var(--sec)}
+.ribbon .fact .live{align-self:center}
+.ribbon .fact .n{color:var(--ink);font-weight:600;font-size:1.3rem;letter-spacing:-.01em;font-variant-numeric:tabular-nums;line-height:1}
+.ribbon .sep{width:5px;height:5px;border-radius:50%;background:var(--line)}
+.ribbon .live{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px rgba(217,119,87,.5);animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+@media(max-width:640px){.ribbon .sep{display:none}.ribbon .wrap{gap:16px;flex-direction:column}}
+
+/* ICON TILE */
+.tile{width:var(--ts,52px);height:var(--ts,52px);border-radius:15px;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);--dot:var(--blue);flex:none;transition:transform .3s var(--hover),border-color .3s var(--hover),box-shadow .3s var(--hover)}
+.tile svg{width:60%;height:60%}
+
+/* SEC HEAD */
+.sec-head{max-width:64ch;margin:0 auto clamp(40px,5vw,60px);text-align:center}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.4rem);margin:0 0 16px;letter-spacing:-.02em}
+.sec-head p{color:var(--sec);font-size:1.1875rem;max-width:52ch;margin:0 auto;line-height:1.45}
+
+/* PER-PRODUCT BEATS */
+.beat{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px);align-items:center;padding:clamp(48px,7vw,92px) 0;border-top:1px solid var(--line)}
+.beat:first-of-type{border-top:none;padding-top:clamp(8px,2vw,24px)}
+.beat.rev .beat-viz{order:2}
+@media(max-width:860px){.beat,.beat.rev{grid-template-columns:1fr;gap:36px}.beat.rev .beat-viz{order:0}}
+.beat-copy .head{display:flex;align-items:center;gap:16px}
+.beat-copy .tile{--ts:56px}
+.beat-copy .kicker{font-size:1.375rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.beat-copy h3{font-size:clamp(1.75rem,3.4vw,2.6rem);font-weight:600;letter-spacing:-.02em;margin:22px 0 16px;max-width:16ch}
+.beat-copy p{color:var(--sec);font-size:1.1875rem;max-width:42ch;line-height:1.5}
+.beat-add{margin-top:24px;padding-left:18px;border-left:2px solid var(--blue);max-width:40ch}
+.beat-add span{font-size:.875rem;letter-spacing:0;color:var(--blue);font-weight:600}
+.beat-add p{color:var(--ink);font-size:1.125rem;margin-top:7px;font-style:normal;font-weight:500;line-height:1.4}
+.beat-viz{display:flex;justify-content:center}
+.viz{width:100%;max-width:440px;aspect-ratio:1.15/1;border-radius:22px;border:1px solid var(--line);background:var(--alt);position:relative;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.05)}
+
+/* viz: AI receptionist video + call-waveform overlay */
+.ai-viz{background:#f3ede9}
+.ai-viz .rcp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ai-viz .ai-scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.05),transparent 28%,transparent 50%,rgba(24,12,7,.6))}
+.wave{position:absolute;left:0;right:0;bottom:0;height:34%;display:flex;align-items:flex-end;justify-content:center;gap:5px;padding:0 12% 11%;pointer-events:none}
+.wave i{width:5px;border-radius:6px;background:linear-gradient(180deg,#fff,var(--blue-d));box-shadow:0 0 8px rgba(232,148,111,.55);animation:eq 1.4s ease-in-out infinite}
+@keyframes eq{0%,100%{height:14%}50%{height:82%}}
+
+/* viz: image screenshot fill */
+.shot-viz{background:#f3ede9;overflow:hidden}
+.shot-viz img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.shot-viz .shot-scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.04),transparent 26%,transparent 74%,rgba(24,12,7,.22))}
+
+/* viz: call transcript (receptionist-specific, minimal) */
+.rx-viz{background:linear-gradient(180deg,#faf6f3,#f3ede9)}
+.rx{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:9px;padding:clamp(18px,5vw,26px);font-family:var(--ui)}
+.rx .b{max-width:84%;padding:9px 13px;border-radius:16px;font-size:.9rem;line-height:1.36;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.rx .who{font-size:.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.62;margin-bottom:3px}
+.rx .caller{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px;color:var(--ink)}
+.rx .luna{align-self:flex-end;background:linear-gradient(180deg,var(--blue-d),var(--blue));color:#fff;border-bottom-right-radius:5px}
+.rx .luna .who{color:#fff;opacity:.8}
+
+/* viz: grounded fact rows (receptionist-specific, minimal) */
+.fx-viz{background:linear-gradient(180deg,#faf6f3,#f3ede9)}
+.fx{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:clamp(20px,5vw,30px)}
+.fx .row{display:flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.9rem;font-weight:500;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.fx .row .tick{width:19px;height:19px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;flex:none}
+.fx .row .tick svg{width:11px;height:11px}
+.fx .row em{color:var(--sec);margin-left:auto;font-size:.72rem;font-weight:600;font-style:normal;letter-spacing:.02em}
+
+/* NUMBERS */
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center;max-width:960px;margin:0 auto}
+@media(max-width:640px){.nums{grid-template-columns:1fr;gap:40px}}
+.num{padding:0 10px}
+.num .n{font-size:clamp(3rem,7vw,5rem);color:var(--blue);line-height:1;font-weight:600;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.num .l{color:var(--sec);font-size:1.0625rem;margin-top:16px}
+.nums-foot{text-align:center;margin-top:clamp(38px,5vw,58px);max-width:52ch;margin-inline:auto;font-size:clamp(1.25rem,2.4vw,1.7rem);color:var(--ink);font-weight:600;letter-spacing:-.015em;line-height:1.35}
+
+/* CTA */
+.cta{text-align:center;overflow:hidden}
+.cta-glyph{position:absolute;bottom:-10%;left:50%;transform:translateX(-50%);width:min(80vw,760px);opacity:.6;pointer-events:none}
+.cta h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:600;letter-spacing:-.02em;position:relative;margin-bottom:20px}
+.cta p{color:var(--sec);max-width:48ch;margin:0 auto 32px;position:relative;font-size:1.1875rem;line-height:1.45}
+.cta .actions{display:flex;gap:22px;justify-content:center;align-items:center;flex-wrap:wrap;position:relative}
+.cta .btn-o{border:1px solid var(--line);border-radius:980px;padding:12px 22px;font-weight:500;color:var(--blue)}
+.cta .btn-o:hover{background:var(--alt)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt)}
+.foot{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.foot .tag{color:var(--sec);font-size:.9375rem;margin-top:12px;max-width:34ch}
+.foot .cols{display:flex;gap:30px;flex-wrap:wrap;color:var(--sec);font-size:.9375rem}
+.foot .cols a:hover{color:var(--blue)}
+.foot-base{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);font-size:.8125rem;color:var(--sec)}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ICON SYMBOLS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+ <symbol id="ic-daviana" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></g></symbol>
+ <symbol id="ic-ai" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2a9 9 0 0 1 9 9"/><path d="M13 6a5 5 0 0 1 5 5"/><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></g></symbol>
+ <symbol id="ic-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+</defs>
+</svg>
+
+<header id="hd"><div class="wrap nav">
+  <a class="brand" href="/es/">SalonForge<span class="dot">.</span></a>
+  <nav class="navlinks">
+    <a href="/#system">El sistema</a>
+    <a href="/#everything">Productos</a>
+    <a href="/#connect">Cómo se conecta</a>
+    <a href="/#proof">Por qué nosotros</a>
+  </nav>
+  <button class="btn btn-g">Reservar una demo</button>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-inner">
+        <p class="eyebrow reveal">AI Receptionist</p>
+        <h1 class="reveal d1">Atiende el teléfono <span class="hl sw">fuera de horario</span>.</h1>
+        <p class="lede lede-1 reveal d2">La llamada que antes se perdía en recepción ahora se convierte en cita.</p>
+        <p class="lede lede-2 reveal d3">Una voz de IA real atiende la llamada, gestiona toda la visita y la escribe directamente en la agenda, mientras el salón duerme.</p>
+        <div class="actions reveal d4">
+          <button class="btn btn-g">Reservar una demo</button>
+          <a href="/es/" class="ghost"><span class="ar">&lsaquo;</span> Todos los productos</a>
+        </div>
+      </div>
+
+      <div class="beat-viz reveal d3">
+        <div class="viz ai-viz">
+          <video class="rcp" src="/assets/receptionist.mp4" autoplay muted loop playsinline preload="auto"></video>
+          <div class="ai-scrim"></div>
+          <div class="wave" id="wave"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF RIBBON -->
+<div class="ribbon band--2">
+  <div class="wrap">
+    <span class="fact"><span class="live"></span> Voz en vivo en tiempo real, full-duplex</span>
+    <span class="sep"></span>
+    <span class="fact">Sus reglas se han aprendido de <span class="n">4.106</span> llamadas reales de salón</span>
+    <span class="sep"></span>
+    <span class="fact">Reserva en <span class="n">1</span> agenda en vivo — Daviana</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">Qué hace durante la llamada</span><span class="end">Una conversación real, no un menú de opciones</span></div>
+
+    <!-- Feature 1: understands real callers -->
+    <div class="beat reveal">
+      <div class="beat-copy">
+        <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="kicker">Una voz real</div></div>
+        <h3>Entiende a las personas de verdad.</h3>
+        <p>La voz full-duplex permite un intercambio de turnos natural: se le puede interrumpir, entiende acentos, manos libres y ruido de fondo, y cambia de idioma a mitad de la llamada. Sin menús, sin «pulse 1», nunca en espera.</p>
+        <div class="beat-add"><span>Por qué funciona</span><p>La voz en vivo interpreta el habla confusa antes de que el cerebro reserve nada.</p></div>
+      </div>
+      <div class="beat-viz"><div class="viz rx-viz">
+        <div class="rx">
+          <div class="b caller"><div class="who">Cliente</div>Hola, ¿habría forma de hacerme un corte y peinado el sábado?</div>
+          <div class="b luna"><div class="who">Recepción</div>Claro, con Federico en Chelsea tengo un hueco a las 14:15 o a las 16:30 el sábado. ¿Cuál le viene mejor?</div>
+          <div class="b caller"><div class="who">Cliente · cambiando al italiano</div>Il pomeriggio, grazie.</div>
+          <div class="b luna"><div class="who">Recepción</div>Perfecto, entonces a las 16:30. ¿Le apunto?</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Feature 2: books the whole visit -->
+    <div class="beat rev reveal">
+      <div class="beat-copy">
+        <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="kicker">Toda la visita</div></div>
+        <h3>Reserva peluquería y uñas como una sola visita.</h3>
+        <p>Compone una visita real, no una sola cita: las uñas mientras el color reposa, dos especialistas escalonados, un grupo repartido entre varias sillas. Comprueba en cada servicio quién está realmente libre y lo recoge todo como una única reserva.</p>
+        <div class="beat-add"><span>Creado a partir de llamadas reales</span><p>Basado en 46 llamadas reales de recepción en las que la visita al salón era más de una cosa.</p></div>
+      </div>
+      <div class="beat-viz"><div class="viz rx-viz">
+        <div class="rx">
+          <div class="b caller"><div class="who">Cliente</div>¿Podría hacerme el color y quizá una manicura a la vez?</div>
+          <div class="b luna"><div class="who">Recepción</div>Sí, puedo hacerle las uñas mientras el color reposa. Sofia para la manicura y Federico con su color.</div>
+          <div class="b luna"><div class="who">Recepción</div>Una sola visita, las dos cosas a la vez, y sale a la misma hora.</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Feature 3: handles objections -->
+    <div class="beat reveal">
+      <div class="beat-copy">
+        <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="kicker">Objeciones</div></div>
+        <h3>Sabe rebatir, y nunca se inventa un precio.</h3>
+        <p>¿Le parece caro? Ofrece un servicio más económico de verdad y la diferencia exacta. ¿Cancela a última hora? Le repite la cita real y la reprograma. En todo lo que tenga que ver con dinero o tarifas, nunca decide: toma un mensaje para el equipo.</p>
+        <div class="beat-add"><span>Una regla estricta</span><p>Los números de tarjeta se bloquean antes de que ningún modelo los vea; el dinero nunca se gestiona durante la llamada.</p></div>
+      </div>
+      <div class="beat-viz"><div class="viz rx-viz">
+        <div class="rx">
+          <div class="b caller"><div class="who">Cliente</div>£120 por un balayage es un poco mucho para mí, la verdad.</div>
+          <div class="b luna"><div class="who">Recepción</div>Lo entiendo. Un gloss con peinado le da un lavado de cara precioso por £75, son £45 menos. ¿Le gustaría eso en su lugar?</div>
+          <div class="b caller"><div class="who">Cliente</div>Venga, sí.</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Feature 4: grounded in the diary -->
+    <div class="beat rev reveal">
+      <div class="beat-copy">
+        <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="kicker">Con base real, sin adivinar</div></div>
+        <h3>Solo ofrece huecos que están realmente libres.</h3>
+        <p>Cada vez que se le pregunta, responde desde una lectura en vivo de la agenda: el estilista adecuado para el servicio, su turno, sus descansos. Y en el momento de reservar vuelve a comprobar ese hueco exacto. Si ya no está, recibe una respuesta sincera y la siguiente opción, nunca una reserva a ciegas.</p>
+        <div class="beat-add"><span>Ajustado por el propietario</span><p>Su manual se ha ido moldeando llamada a llamada a partir de las propias llamadas de prueba del propietario.</p></div>
+      </div>
+      <div class="beat-viz"><div class="viz fx-viz">
+        <div class="fx">
+          <div class="row"><span class="tick"><svg><use href="#ic-check"/></svg></span>El estilista adecuado para el servicio <em>comprobado</em></div>
+          <div class="row"><span class="tick"><svg><use href="#ic-check"/></svg></span>Turnos y descansos respetados <em>en vivo</em></div>
+          <div class="row"><span class="tick"><svg><use href="#ic-check"/></svg></span>Hueco reverificado al reservar <em>al confirmar</em></div>
+          <div class="row"><span class="tick"><svg><use href="#ic-check"/></svg></span>¿Sin hueco libre? Se añade a la lista de espera <em>automático</em></div>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PART OF ONE SYSTEM -->
+<section class="band band--2" id="connect">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Parte de un solo sistema</span><span class="end">Todo se escribe en Daviana</span></div>
+    <div class="sec-head reveal">
+      <p class="eyebrow">El núcleo · lectura y escritura</p>
+      <h2>No toma un recado. <span class="hl">Reserva</span>.</h2>
+      <p>El receptionist no es un contestador añadido. Lee y escribe en la misma fuente de verdad en vivo que usan todos los demás productos de SalonForge: Daviana, la agenda.</p>
+    </div>
+
+    <div class="beat reveal">
+      <div class="beat-copy">
+        <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="kicker">Daviana</div></div>
+        <h3>Un cliente. Una agenda. Un registro.</h3>
+        <p>El número de quien llama se identifica con su ficha de cliente antes incluso de saludar, así ya sabe si ha estado antes. La reserva cae en la agenda, y la propia llamada se convierte en una nota en la ficha del cliente: qué se dijo, qué se reservó y de qué debe encargarse el equipo.</p>
+        <div class="beat-add"><span>Nuestra aportación</span><p>La llamada que antes se esfumaba ahora deja un rastro escrito en la ficha del cliente.</p></div>
+      </div>
+      <div class="beat-viz"><div class="viz shot-viz">
+        <img src="/assets/daviana-callnote.png" alt="Una nota de llamada escrita directamente en la ficha del cliente en Daviana" loading="lazy">
+        <div class="shot-scrim"></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="band">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">03</span><span class="lbl">Por qué es real</span><span class="end">Creado dentro de salones en funcionamiento</span></div>
+    <div class="nums">
+      <div class="num reveal"><div class="n" data-count="4106">0</div><div class="l">Llamadas reales de las que aprendieron sus reglas</div></div>
+      <div class="num reveal d1"><div class="n" data-count="4">0</div><div class="l">Salones de Londres en activo que lo respaldan</div></div>
+      <div class="num reveal d2"><div class="n"><span data-count="1">0</span></div><div class="l">Agenda en vivo en la que reserva</div></div>
+    </div>
+    <p class="nums-foot reveal">No es un bot de demostración. Un receptionist moldeado por llamadas reales de salón: cada regla nacida de una llamada que ocurrió de verdad.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="band cta">
+  <div class="cta-glyph" aria-hidden="true">
+    <svg viewBox="0 0 760 400" preserveAspectRatio="xMidYMax slice">
+      <defs><linearGradient id="ctaG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#D97757" stop-opacity=".28"/><stop offset="1" stop-color="#D97757" stop-opacity="0"/></linearGradient></defs>
+      <line x1="380" y1="400" x2="380" y2="40" stroke="url(#ctaG)" stroke-width="2.4"/>
+      <g stroke="rgba(0,0,0,.05)" stroke-width="1"><line x1="280" y1="120" x2="480" y2="120"/><line x1="280" y1="220" x2="480" y2="220"/><line x1="280" y1="320" x2="480" y2="320"/></g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">Véalo en vivo</span><span class="end">Un recorrido guiado</span></div>
+    <h2 class="reveal d1">Escúchelo atender una llamada.</h2>
+    <p class="reveal d2">Le mostraremos al AI Receptionist atendiendo, componiendo una visita real y escribiéndola en la agenda, en el mismo sistema conectado que hace funcionar todo el salón.</p>
+    <div class="actions reveal d3">
+      <button class="btn btn-g">Reservar una demo</button>
+      <a href="/es/" class="btn btn-o">Ver todo el sistema</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <a class="brand" href="/es/">SalonForge<span class="dot">.</span></a>
+      <div class="tag">Un sistema conectado para todo el salón.</div>
+    </div>
+    <div class="cols">
+      <a href="/#everything">Daviana</a>
+      <a href="/es/ai-receptionist/">AI Receptionist</a>
+      <a href="/#everything">ColorLab</a>
+      <a href="/#everything">Performance</a>
+      <a href="/#everything">People</a>
+      <a href="/#everything">Bar</a>
+    </div>
+  </div>
+  <div class="foot-base">© 2026 SalonForge · Seis productos, una sola fuente de verdad en vivo.</div>
+</div></footer>
+
+<script>
+(function(){
+  var rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var hd = document.getElementById('hd');
+  addEventListener('scroll',function(){hd.classList.toggle('sc',scrollY>18)},{passive:true});
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.14, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  document.querySelectorAll('.viz').forEach(function(el){
+    new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ob.unobserve(e.target);}})},{threshold:.3}).observe(el);
+  });
+
+  var wave = document.getElementById('wave');
+  if(wave){ var hs=[30,55,72,90,66,84,50,74,40,88,58,44,68,52,80,46,62,36]; hs.forEach(function(h,i){var b=document.createElement('i');b.style.animationDelay=(i*0.07)+'s';b.style.height=(rm?h*0.6:14)+'%';wave.appendChild(b);}); }
+
+  function countEl(el,target,dur,fmt){
+    var start=performance.now();
+    function step(t){var p=Math.min(1,(t-start)/dur);var e=1-Math.pow(1-p,3);var v=target*e;el.textContent=fmt(v);if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  }
+  function watchCount(el,run){ new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){run();ob.unobserve(e.target);}})},{threshold:.5}).observe(el); }
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var t=+el.dataset.count; watchCount(el,function(){ if(rm){el.textContent=t.toLocaleString();return;} countEl(el,t,1400,function(v){return Math.round(v).toLocaleString();}); });
+  });
+})();
+</script>
+</body>
+</html>

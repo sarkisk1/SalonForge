@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SalonForge — one system runs the whole salon</title>
-<meta name="description" content="Six products, one live source of truth. Booking, colour, payments, people and the phone — one connected system that runs the whole salon.">
-<link rel="canonical" href="https://salonforge.com/">
-<link rel="alternate" hreflang="en" href="https://salonforge.com/">
-<link rel="alternate" hreflang="it" href="https://salonforge.com/it/">
-<link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/">
-<link rel="alternate" hreflang="es" href="https://salonforge.com/es/">
-<link rel="alternate" hreflang="x-default" href="https://salonforge.com/">
-<meta property="og:title" content="SalonForge — one system runs the whole salon">
-<meta property="og:description" content="Six products, one live source of truth. Booking, colour, payments, people and the phone — one connected system that runs the whole salon.">
+<title>Daviana — the booking spine of the salon | SalonForge</title>
+<meta name="description" content="Daviana is the appointment diary, till and client record every SalonForge product reads and writes. One live source of truth for booking, payments, per-stylist pricing, rota and online booking.">
+<link rel="canonical" href="https://salonforge.com/daviana/">
+<link rel="alternate" hreflang="en" href="https://salonforge.com/daviana/">
+<link rel="alternate" hreflang="it" href="https://salonforge.com/it/daviana/">
+<link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/daviana/">
+<link rel="alternate" hreflang="es" href="https://salonforge.com/es/daviana/">
+<link rel="alternate" hreflang="x-default" href="https://salonforge.com/daviana/">
+<meta property="og:title" content="Daviana — the booking spine of the salon | SalonForge">
+<meta property="og:description" content="The appointment diary, till, client records and per-stylist pricing that every other product reads from — one live source of truth.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://salonforge.com/">
+<meta property="og:url" content="https://salonforge.com/daviana/">
 <meta name="twitter:card" content="summary_large_image">
 <style>
 :root{
@@ -440,7 +440,84 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
   .pa-screen[data-k="sign"]{opacity:1;transform:none}.pa-sig path{stroke-dashoffset:0}.pa-stamp{opacity:1;transform:scale(1) rotate(-8deg)}.pa-pill[data-k="hire"]{color:#fff}
   .dock{display:none}
 }
-.kicker[href]{text-decoration:none;color:var(--ink);transition:color .2s}.kicker[href]:hover{color:var(--blue)}.kicker .arw{color:var(--blue);font-weight:400;display:inline-block;transition:transform .2s}.kicker[href]:hover .arw{transform:translateX(3px)}</style>
+</style>
+<style>
+/* ---- Daviana product page — minimal additions on top of the shared system ---- */
+.hero .actions .btn-o{border:1px solid var(--line);border-radius:980px;padding:11px 20px;font-weight:500;color:var(--blue)}
+.hero .actions .btn-o:hover{background:var(--alt)}
+.hero-viz{width:min(120%,560px);justify-self:end;align-self:center}
+@media(max-width:920px){.hero-viz{width:min(92vw,440px);justify-self:center}}
+.hero-viz .viz{aspect-ratio:1.02/1;max-width:none}
+.beat-viz .viz img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot-viz{background:#f3ede9;overflow:hidden}
+
+/* till / receipt viz */
+.dv-till{position:absolute;inset:0;display:flex;flex-direction:column;padding:20px;font-family:var(--ui);background:#fff}
+.dv-till .t-h{display:flex;align-items:center;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.dv-till .t-h b{font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+.dv-till .t-h .live{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px rgba(217,119,87,.5);animation:blink 2.4s ease-in-out infinite}
+.dv-line{display:flex;align-items:baseline;justify-content:space-between;padding:9px 0;font-size:.9rem;color:var(--ink);border-bottom:1px solid rgba(210,210,215,.5)}
+.dv-line span:first-child{color:var(--sec)}
+.dv-line b{font-weight:600;font-variant-numeric:tabular-nums}
+.dv-line .who{color:var(--blue);font-size:.72rem;font-weight:600;margin-left:6px}
+.dv-tot{margin-top:auto;display:flex;align-items:baseline;justify-content:space-between;padding-top:12px;border-top:2px solid var(--ink)}
+.dv-tot b{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.dv-tot span{font-size:.8rem;color:var(--sec);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.dv-pay{margin-top:12px;display:flex;gap:8px}
+.dv-chip{flex:1;text-align:center;font-size:.72rem;font-weight:600;color:var(--sec);background:var(--alt);border:1px solid var(--line);border-radius:8px;padding:8px 0}
+.dv-chip.on{color:#fff;background:var(--blue);border-color:var(--blue)}
+
+/* client record viz */
+.dv-client{position:absolute;inset:0;display:flex;flex-direction:column;padding:22px;font-family:var(--ui);background:#fff}
+.dv-cl-top{display:flex;align-items:center;gap:13px}
+.dv-cl-av{width:46px;height:46px;border-radius:50%;background:linear-gradient(180deg,#EFB197,#D97757);color:#fff;font-weight:700;font-size:1.05rem;display:grid;place-items:center;flex:none;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(217,119,87,.4)}
+.dv-cl-top b{font-size:1.05rem;font-weight:600;letter-spacing:-.01em;display:block}
+.dv-cl-top .vip{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:700;letter-spacing:.03em;color:var(--blue);background:rgba(217,119,87,.1);border-radius:6px;padding:2px 7px;margin-top:4px}
+.dv-cl-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin:18px 0}
+.dv-cl-stat{background:var(--alt);border:1px solid var(--line);border-radius:11px;padding:11px 9px;text-align:center}
+.dv-cl-stat b{display:block;font-size:1.25rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.dv-cl-stat span{display:block;font-size:.66rem;color:var(--sec);margin-top:4px;text-transform:uppercase;letter-spacing:.05em}
+.dv-cl-h{font-size:.72rem;color:var(--sec);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.dv-cl-visit{display:flex;align-items:baseline;justify-content:space-between;font-size:.85rem;padding:7px 0;border-bottom:1px solid rgba(210,210,215,.55)}
+.dv-cl-visit span:first-child{color:var(--ink);font-weight:500}
+.dv-cl-visit span:last-child{color:var(--sec);font-variant-numeric:tabular-nums}
+
+/* per-stylist pricing rows */
+.dv-price{position:absolute;inset:0;display:flex;flex-direction:column;padding:22px;font-family:var(--ui);background:#fff}
+.dv-price .p-h{font-size:.92rem;font-weight:600;letter-spacing:-.01em;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.dv-price .p-h span{color:var(--sec);font-weight:400}
+.dv-prow{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid rgba(210,210,215,.5)}
+.dv-prow i{width:30px;height:30px;border-radius:50%;background:var(--c,#999);color:#fff;font-size:.68rem;font-weight:700;font-style:normal;display:grid;place-items:center;flex:none;box-shadow:0 0 0 1.5px #fff,0 0 0 2.5px var(--c,#999)}
+.dv-prow .nm{font-size:.9rem;font-weight:600;color:var(--ink)}
+.dv-prow .rl{font-size:.72rem;color:var(--sec)}
+.dv-prow .pr{margin-left:auto;font-size:1rem;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.dv-prow .pr small{color:var(--sec);font-weight:400;font-size:.72rem}
+
+/* part-of-one-system cluster (light) */
+.dv-sys{position:relative;width:min(560px,90vw);margin:0 auto;aspect-ratio:1.15/1}
+.dv-sys-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.dv-sys-svg line{stroke:url(#dvSpoke);stroke-width:1.15;opacity:.85;fill:none;stroke-linecap:round}
+.dv-nd{position:absolute;transform:translate(-50%,-50%);width:clamp(52px,11vw,72px);height:clamp(52px,11vw,72px);border-radius:17px;background:var(--alt);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--ink);z-index:2;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:transform .3s var(--hover),box-shadow .3s var(--hover)}
+.dv-nd:hover{transform:translate(-50%,-50%) scale(1.06)}
+.dv-nd svg{width:42%;height:42%}
+.dv-nd .l{font-size:.56rem;font-weight:600;color:var(--sec);letter-spacing:.01em;white-space:nowrap}
+.dv-nd.core{width:clamp(104px,24vw,150px);height:clamp(104px,24vw,150px);border-radius:26px;border:1px solid rgba(217,119,87,.4);color:var(--blue);z-index:3;
+  background:radial-gradient(circle at 50% 38%,#fff 0%,#fff4ef 42%,#ffe4d7 100%);
+  box-shadow:0 12px 44px rgba(232,148,111,.28),0 0 60px rgba(232,148,111,.2),inset 0 1px 2px rgba(255,255,255,.9)}
+.dv-nd.core svg{width:34%;height:34%}
+.dv-nd.core .l{font-size:.82rem;color:var(--blue);font-weight:700;letter-spacing:-.01em}
+.dv-nd.core .t{font-size:.6rem;color:var(--blue);opacity:.75;font-weight:600;letter-spacing:.04em}
+@media(max-width:560px){
+  .dv-sys{aspect-ratio:auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .dv-sys-svg{display:none}
+  .dv-nd{position:static!important;transform:none;flex-direction:row;gap:11px;width:100%;max-width:320px;justify-content:flex-start;height:auto;padding:12px 16px;border-radius:14px}
+  .dv-nd:hover{transform:none}
+  .dv-nd svg{width:24px;height:24px}
+  .dv-nd .l{font-size:.9rem;color:var(--ink)}
+  .dv-nd.core{order:-1;width:100%;max-width:320px;height:auto}
+  .dv-nd.core .l{font-size:1rem}
+}
+</style>
 </head>
 <body>
 
@@ -462,13 +539,14 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 </defs>
 </svg>
 
+
 <header id="hd"><div class="wrap nav">
-  <div class="brand">SalonForge<span class="dot">.</span></div>
+  <a class="brand" href="/">SalonForge<span class="dot">.</span></a>
   <nav class="navlinks">
-    <a href="#system">The system</a>
-    <a href="#everything">Products</a>
-    <a href="#connect">How it connects</a>
-    <a href="#proof">Why us</a>
+    <a href="/#system">The system</a>
+    <a href="/#everything">Products</a>
+    <a href="/#connect">How it connects</a>
+    <a href="/#proof">Why us</a>
   </nav>
   <button class="btn btn-g">Book a demo</button>
 </div></header>
@@ -478,45 +556,45 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-inner">
-        <p class="eyebrow reveal">Six products · one connected system</p>
-        <h1 class="reveal d1">One system runs the <span class="hl sw">whole</span> salon.</h1>
-        <p class="lede lede-1 reveal d2">You built the salon. Let it run itself.</p>
-        <p class="lede lede-2 reveal d3">Booking, colour, payments, people and the phone — six products on one live source of truth.</p>
+        <p class="eyebrow reveal">Daviana</p>
+        <h1 class="reveal d1">The booking spine of the <span class="hl sw">whole</span> salon.</h1>
+        <p class="lede lede-1 reveal d2">The diary. The till. The client. In one place.</p>
+        <p class="lede lede-2 reveal d3">The appointment diary, payments, client records and per-stylist pricing that runs the salon floor — and the one live source every other SalonForge product reads and writes.</p>
         <div class="actions reveal d4">
           <button class="btn btn-g">Book a demo</button>
-          <a href="#system" class="ghost">See how it connects <span class="ar">&rsaquo;</span></a>
+          <a href="/" class="ghost"><span class="ar">&lsaquo;</span> All products</a>
         </div>
       </div>
 
-      <!-- living constellation preview — atmospheric, unlabeled -->
-      <div class="hero-cluster reveal d3" aria-hidden="true">
-        <svg class="hc-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <radialGradient id="heroSpoke" cx="50" cy="50" r="38" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#E8946F" stop-opacity=".95"/>
-              <stop offset=".55" stop-color="#EFB197" stop-opacity=".6"/>
-              <stop offset="1" stop-color="#D97757" stop-opacity=".18"/>
-            </radialGradient>
-          </defs>
-          <line class="hc-conn" x1="50"   y1="14"   x2="50" y2="50"/>
-          <line class="hc-conn" x1="84.5" y1="39"   x2="50" y2="50"/>
-          <line class="hc-conn" x1="71.4" y1="80"   x2="50" y2="50"/>
-          <line class="hc-conn" x1="28.6" y1="80"   x2="50" y2="50"/>
-          <line class="hc-conn" x1="15.5" y1="39"   x2="50" y2="50"/>
-          <circle class="hc-ring" cx="50" cy="50" r="27"/>
-          <circle class="hc-ring b" cx="50" cy="50" r="31"/>
-          <line class="hubpulse" style="--d:0s"    x1="50"   y1="14" x2="50" y2="50"/>
-          <line class="hubpulse" style="--d:-.4s"  x1="84.5" y1="39" x2="50" y2="50"/>
-          <line class="hubpulse" style="--d:-.8s"  x1="71.4" y1="80" x2="50" y2="50"/>
-          <line class="hubpulse" style="--d:-1.2s" x1="28.6" y1="80" x2="50" y2="50"/>
-          <line class="hubpulse" style="--d:-1.6s" x1="15.5" y1="39" x2="50" y2="50"/>
-        </svg>
-        <div class="cnode core" style="left:50%;top:50%"><svg><use href="#ic-daviana"/></svg></div>
-        <div class="cnode" style="left:50%;top:14%"><svg><use href="#ic-ai"/></svg></div>
-        <div class="cnode" style="left:84.5%;top:39%"><svg><use href="#ic-color"/></svg></div>
-        <div class="cnode" style="left:71.4%;top:80%"><svg><use href="#ic-perf"/></svg></div>
-        <div class="cnode" style="left:28.6%;top:80%"><svg><use href="#ic-people"/></svg></div>
-        <div class="cnode" style="left:15.5%;top:39%"><svg><use href="#ic-bar"/></svg></div>
+      <div class="hero-viz reveal d3">
+        <div class="viz dav-viz">
+          <div class="dav" aria-hidden="true">
+            <div class="dav-bar"><span class="dav-salon">GA South Kensington</span><span class="dav-day">Today</span></div>
+            <div class="dav-head">
+              <span></span>
+              <div class="dav-stf"><i style="--c:#d99a3f">PC</i><b>Paolo C.</b></div>
+              <div class="dav-stf"><i style="--c:#4f93d9">GV</i><b>Gabriela V.</b></div>
+              <div class="dav-stf"><i style="--c:#9a5fd0">VO</i><b>Veronica O.</b></div>
+            </div>
+            <div class="dav-body">
+              <span class="dav-h" style="grid-row:1">10</span>
+              <span class="dav-h" style="grid-row:5">11</span>
+              <span class="dav-h" style="grid-row:9">12</span>
+              <span class="dav-h" style="grid-row:13">13</span>
+              <span class="dav-h" style="grid-row:17">14</span>
+              <div class="appt g"  style="--i:.05s;grid-column:2;grid-row:1/5"><b>Elena M.</b><span>Roots Colour</span></div>
+              <div class="appt g"  style="--i:.35s;grid-column:2;grid-row:6/9"><b>Sofia R.</b><span>GA Blowdry</span></div>
+              <div class="appt g"  style="--i:.65s;grid-column:2;grid-row:10/14"><b>Marco D.</b><span>Men's Cut &amp; Style</span></div>
+              <div class="appt g"  style="--i:.2s;grid-column:3;grid-row:2/5"><b>Chiara B.</b><span>Ladies Haircut</span></div>
+              <div class="appt g"  style="--i:.5s;grid-column:3;grid-row:6/10"><b>Nadia K.</b><span>Toner Long</span></div>
+              <div class="appt g"  style="--i:.8s;grid-column:3;grid-row:11/16"><b>Ines P.</b><span>GA Blowdry</span></div>
+              <div class="appt p"  style="--i:.15s;grid-column:4;grid-row:1/5"><b>Amara T.</b><span>GA Manicure</span></div>
+              <div class="appt p"  style="--i:.55s;grid-column:4;grid-row:7/12"><b>Lucia F.</b><span>Gel Pedicure</span></div>
+              <div class="appt brk" style="--i:.9s;grid-column:4;grid-row:13/15"><b>Break</b></div>
+              <div class="appt g live" style="grid-column:2;grid-row:15/17"><span class="tag">NEW</span><b>Priya N.</b></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -525,191 +603,39 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 <!-- PROOF RIBBON -->
 <div class="ribbon band--2">
   <div class="wrap">
-    <span class="fact"><span class="live"></span> Built and run inside <span class="n">4</span> live London salons</span>
+    <span class="fact"><span class="live"></span> Runs <span class="n">4</span> live London salons</span>
     <span class="sep"></span>
-    <span class="fact"><span class="n">19,949</span> colour formulas weighed &amp; costed</span>
+    <span class="fact">One diary, one till, <span class="n">1</span> client record</span>
     <span class="sep"></span>
-    <span class="fact"><span class="n">6</span> products on <span class="n">1</span> source of truth</span>
+    <span class="fact">Read &amp; written by <span class="n">6</span> connected products</span>
   </div>
 </div>
 
-<!-- SYSTEM HUB -->
-<section class="hub-sec" id="system">
+<!-- FEATURES -->
+<section class="band" id="features">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">The one connected system</span><span class="end">Everything writes to Daviana</span></div>
-    <div class="hub-head reveal">
-      <p class="eyebrow">The core · read &amp; write</p>
-      <h2>Every product reads &amp; writes <span class="hl">one</span> source of truth.</h2>
-    </div>
-    <div class="hub reveal d1" id="hub">
-      <svg class="hub-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-        <defs>
-          <radialGradient id="spokeGrad" cx="50" cy="50" r="40" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#E8946F" stop-opacity=".98"/>
-            <stop offset=".5" stop-color="#EFB197" stop-opacity=".6"/>
-            <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
-          </radialGradient>
-        </defs>
-        <line class="conn" data-c="ai"     x1="50"   y1="12"   x2="50" y2="50"/>
-        <line class="conn" data-c="color"  x1="86.1" y1="38.3" x2="50" y2="50"/>
-        <line class="conn" data-c="perf"   x1="72.3" y1="80.7" x2="50" y2="50"/>
-        <line class="conn" data-c="people" x1="27.7" y1="80.7" x2="50" y2="50"/>
-        <line class="conn" data-c="bar"    x1="13.9" y1="38.3" x2="50" y2="50"/>
-        <circle class="core-ring" cx="50" cy="50" r="17"/>
-        <circle class="core-ring b" cx="50" cy="50" r="21"/>
-        <line class="hubpulse" data-c="ai"     style="--d:0s"     x1="50"   y1="12"   x2="50" y2="50"/>
-        <line class="hubpulse" data-c="color"  style="--d:-.44s"  x1="86.1" y1="38.3" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="perf"   style="--d:-.88s"  x1="72.3" y1="80.7" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="people" style="--d:-1.32s" x1="27.7" y1="80.7" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="bar"    style="--d:-1.76s" x1="13.9" y1="38.3" x2="50" y2="50"/>
-      </svg>
-
-      <div class="hub-node core" style="left:50%;top:50%">
-        <div class="tile"><div class="minidav">
-          <div class="md-top"></div>
-          <div class="md-cols">
-            <div class="md-col"><i class="md-b g" style="--i:.15s;top:4%;height:26%"></i><i class="md-b g" style="--i:.55s;top:36%;height:22%"></i><i class="md-b g" style="--i:.95s;top:64%;height:30%"></i></div>
-            <div class="md-col"><i class="md-b g" style="--i:.3s;top:12%;height:24%"></i><i class="md-b p" style="--i:.75s;top:44%;height:34%"></i></div>
-            <div class="md-col"><i class="md-b p" style="--i:.2s;top:6%;height:26%"></i><i class="md-b g" style="--i:1.05s;top:40%;height:22%"></i><i class="md-b g live" style="top:80%;height:15%"></i></div>
-          </div>
-        </div></div>
-        <div><div class="nm">Daviana</div><div class="tag">The spine</div></div>
-      </div>
-      <div class="hub-node" data-p="ai" style="left:50%;top:12%">
-        <div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="nm">AI Receptionist</div>
-      </div>
-      <div class="hub-node" data-p="color" style="left:86.1%;top:38.3%">
-        <div class="tile"><svg><use href="#ic-color"/></svg></div><div class="nm">ColorLab</div>
-      </div>
-      <div class="hub-node" data-p="perf" style="left:72.3%;top:80.7%">
-        <div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="nm">Performance</div>
-      </div>
-      <div class="hub-node" data-p="people" style="left:27.7%;top:80.7%">
-        <div class="tile"><svg><use href="#ic-people"/></svg></div><div class="nm">People</div>
-      </div>
-      <div class="hub-node" data-p="bar" style="left:13.9%;top:38.3%">
-        <div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="nm">Bar</div>
-      </div>
-    </div>
-    <p class="hub-cap reveal d2" id="hubcap"><b>One live source of truth.</b> Every product reads and writes Daviana — one client record, one till, one stock count.</p>
-  </div>
-</section>
-
-<!-- EVERYTHING GRID -->
-<section class="band" id="everything">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Six products, one system</span><span class="end">The whole salon day</span></div>
+    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">The operating core of the floor</span><span class="end">Diary · till · clients</span></div>
     <div class="sec-head reveal">
-      <h2>Everything a salon needs, end to end.</h2>
-      <p>From the first phone call to the last gram of colour — one product for every part of the day, each one wired into all the others.</p>
+      <h2>Everything the front desk runs on.</h2>
+      <p>Daviana is the diary the salon books into, the till it takes money on, and the client record it all attaches to — one product, working as one.</p>
     </div>
-    <div class="grid6">
-      <div class="gcard hero-card reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="zone">Get booked</div></div>
-        <h3>Booking, till &amp; clients</h3>
-        <div class="prod">Daviana</div>
-        <p>The diary, payments, client history and per-stylist pricing that every other product reads from.</p>
-        <div class="spine-badge"><i></i>The source of truth</div>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="zone">Never miss a call</div></div>
-        <h3>The phone, answered</h3>
-        <div class="prod">AI Receptionist</div>
-        <p>Books, reschedules and handles objections after hours — straight into the diary, in a real voice.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="zone">Run the chair</div></div>
-        <h3>Colour &amp; real cost</h3>
-        <div class="prod">ColorLab</div>
-        <p>Formulas weighed on a Bluetooth scale, snapped from a photo, and costed to the gram against the booking.</p>
-      </div>
-      <div class="gcard reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="zone">Guest experience</div></div>
-        <h3>The bar, on the tab</h3>
-        <div class="prod">Bar</div>
-        <p>A drink ordered to the chair posts to the client's bill and deducts from stock automatically.</p>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Get paid</div></div>
-        <h3>Performance &amp; pay</h3>
-        <div class="prod">Performance</div>
-        <p>Live revenue, leaderboards, commission, self-employed settlement and tips — from the same sales.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="zone">Build the team</div></div>
-        <h3>Hiring, rota &amp; payroll</h3>
-        <div class="prod">People</div>
-        <p>An AI-screened hiring funnel, onboarding, contracts, rota, payroll and leave — the whole team, in one place.</p>
-      </div>
-    </div>
-    <div class="grid-foot reveal">
-      <p class="line">Six products. <span class="hl sw">One</span> system your whole salon runs on.</p>
-      <a href="#connect" class="btn btn-o">See how it connects <span class="ar">&rsaquo;</span></a>
-    </div>
-  </div>
-</section>
 
-<!-- DATA SPINE FLOW -->
-<section class="band band--2" id="connect">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">03</span><span class="lbl">How it all connects</span><span class="end">One spine · read &amp; write</span></div>
-    <div class="sec-head reveal">
-      <h2>Not modules bolted together.</h2>
-      <p>One spine every product reads and writes — so nothing is ever entered twice.</p>
-    </div>
-    <div class="flow reveal">
-      <div class="flow-diagram">
-        <svg class="flow-net" viewBox="0 0 1000 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <g class="wires">
-            <path class="wire" style="--len:400" d="M220,60 C360,60 380,140 474,162"/>
-            <path class="wire" style="--len:400" d="M220,170 C360,170 400,170 474,170"/>
-            <path class="wire" style="--len:400" d="M220,280 C360,280 380,200 474,178"/>
-            <path class="wire" style="--len:400" d="M780,95 C640,95 600,145 526,164"/>
-            <path class="wire" style="--len:400" d="M780,245 C640,245 600,195 526,176"/>
-          </g>
-          <g class="pulses">
-            <path class="pulse" style="--d:0s"     d="M220,60 C360,60 380,140 474,162"/>
-            <path class="pulse" style="--d:-.55s"  d="M220,170 C360,170 400,170 474,170"/>
-            <path class="pulse" style="--d:-1.1s"  d="M220,280 C360,280 380,200 474,178"/>
-            <path class="pulse" style="--d:-.8s"   d="M780,95 C640,95 600,145 526,164"/>
-            <path class="pulse" style="--d:-1.5s"  d="M780,245 C640,245 600,195 526,176"/>
-          </g>
-          <circle class="node-glow" cx="500" cy="170" r="30"/>
-          <circle class="node-ring" cx="500" cy="170" r="26" fill="#ffffff" stroke="#D97757" stroke-width="2.6"/>
-          <use href="#ic-daviana" x="482" y="152" width="36" height="36" color="#D97757"/>
-        </svg>
-        <div class="fl-label l" style="top:17.6%"><b>AI Receptionist</b><span>books → the diary</span></div>
-        <div class="fl-label l" style="top:50%"><b>Bar</b><span>drink → posts to the bill</span></div>
-        <div class="fl-label l" style="top:82.4%"><b>People</b><span>sets → who's on the rota</span></div>
-        <div class="fl-label r" style="top:27.9%"><b>ColorLab</b><span>logs cost → the client bill</span></div>
-        <div class="fl-label r" style="top:72%"><b>Performance</b><span>reads → revenue &amp; commission</span></div>
-        <div class="fl-label center"><b>Daviana</b><span>one source of truth</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PER-PRODUCT BEATS -->
-<section class="band" id="products">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">The six, up close</span><span class="end">Each one, plugged into the spine</span></div>
-
-    <!-- Daviana -->
+    <!-- 1 — Appointment diary -->
     <div class="beat reveal">
       <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><a class="kicker" href="/daviana/">Daviana <span class="arw">&rarr;</span></a></div>
-        <h3>The booking spine.</h3>
-        <p>The appointment diary, till and payments, client records and per-stylist pricing — the operating core of the salon floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>The one source every other product reads and writes.</p></div>
+        <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="kicker">The diary</div></div>
+        <h3>A live diary, per salon.</h3>
+        <p>Every stylist a column, every service a block, colour-coded by discipline. Book, drag, reschedule and check a client in — the floor and the front desk see the same diary update the moment it changes.</p>
+        <div class="beat-add"><span>Built for the floor</span><p>Four salons, one diary each — the appointment is the unit everything else hangs off.</p></div>
       </div>
       <div class="beat-viz"><div class="viz dav-viz">
         <div class="dav" aria-hidden="true">
-          <div class="dav-bar"><span class="dav-salon">GA South Kensington</span><span class="dav-day">Today</span></div>
+          <div class="dav-bar"><span class="dav-salon">GA Chelsea</span><span class="dav-day">Today</span></div>
           <div class="dav-head">
             <span></span>
-            <div class="dav-stf"><i style="--c:#d99a3f">PC</i><b>Paolo C.</b></div>
-            <div class="dav-stf"><i style="--c:#4f93d9">GV</i><b>Gabriela V.</b></div>
-            <div class="dav-stf"><i style="--c:#9a5fd0">VO</i><b>Veronica O.</b></div>
+            <div class="dav-stf"><i style="--c:#d99a3f">AC</i><b>Antonio C.</b></div>
+            <div class="dav-stf"><i style="--c:#4f93d9">MB</i><b>Maria B.</b></div>
+            <div class="dav-stf"><i style="--c:#9a5fd0">SK</i><b>Sofia K.</b></div>
           </div>
           <div class="dav-body">
             <span class="dav-h" style="grid-row:1">10</span>
@@ -717,162 +643,171 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
             <span class="dav-h" style="grid-row:9">12</span>
             <span class="dav-h" style="grid-row:13">13</span>
             <span class="dav-h" style="grid-row:17">14</span>
-            <div class="appt g"  style="--i:.05s;grid-column:2;grid-row:1/5"><b>Elena M.</b><span>Roots Colour</span></div>
-            <div class="appt g"  style="--i:.35s;grid-column:2;grid-row:6/9"><b>Sofia R.</b><span>GA Blowdry</span></div>
-            <div class="appt g"  style="--i:.65s;grid-column:2;grid-row:10/14"><b>Marco D.</b><span>Men's Cut &amp; Style</span></div>
-            <div class="appt g"  style="--i:.2s;grid-column:3;grid-row:2/5"><b>Chiara B.</b><span>Ladies Haircut</span></div>
-            <div class="appt g"  style="--i:.5s;grid-column:3;grid-row:6/10"><b>Nadia K.</b><span>Toner Long</span></div>
-            <div class="appt g"  style="--i:.8s;grid-column:3;grid-row:11/16"><b>Ines P.</b><span>GA Blowdry</span></div>
-            <div class="appt p"  style="--i:.15s;grid-column:4;grid-row:1/5"><b>Amara T.</b><span>GA Manicure</span></div>
-            <div class="appt p"  style="--i:.55s;grid-column:4;grid-row:7/12"><b>Lucia F.</b><span>Gel Pedicure</span></div>
-            <div class="appt brk" style="--i:.9s;grid-column:4;grid-row:13/15"><b>Break</b></div>
-            <div class="appt g live" style="grid-column:2;grid-row:15/17"><span class="tag">NEW</span><b>Priya N.</b></div>
+            <div class="appt g"  style="--i:.1s;grid-column:2;grid-row:1/6"><b>Isabel R.</b><span>Full Head Colour</span></div>
+            <div class="appt g"  style="--i:.4s;grid-column:2;grid-row:8/12"><b>Hana Y.</b><span>Cut &amp; Blowdry</span></div>
+            <div class="appt g"  style="--i:.25s;grid-column:3;grid-row:2/6"><b>Greta L.</b><span>Balayage Refresh</span></div>
+            <div class="appt g"  style="--i:.6s;grid-column:3;grid-row:9/14"><b>Yara N.</b><span>Toner &amp; Gloss</span></div>
+            <div class="appt p"  style="--i:.2s;grid-column:4;grid-row:1/4"><b>Tessa M.</b><span>GA Manicure</span></div>
+            <div class="appt p"  style="--i:.55s;grid-column:4;grid-row:6/11"><b>Noor A.</b><span>Gel Pedicure</span></div>
+            <div class="appt brk" style="--i:.85s;grid-column:3;grid-row:15/17"><b>Break</b></div>
+            <div class="appt g live" style="grid-column:2;grid-row:14/17"><span class="tag">NEW</span><b>Dana P.</b></div>
           </div>
         </div>
       </div></div>
     </div>
 
-    <!-- AI Receptionist -->
+    <!-- 2 — Till & payments -->
     <div class="beat rev reveal">
       <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><a class="kicker" href="/ai-receptionist/">AI Receptionist <span class="arw">&rarr;</span></a></div>
-        <h3>Answers the phone after hours.</h3>
-        <p>Handles multi-service bookings, reschedules and objections in a natural voice — and never puts a caller on hold.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real AI voice that books straight into the diary.</p></div>
+        <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="kicker">Till &amp; payments</div></div>
+        <h3>The till lives on the booking.</h3>
+        <p>Cash out against the appointment and the sale is done — services, retail, tips and payment type land on one bill, attributed to the stylist who did the work. Nothing is re-keyed into a second system.</p>
+        <div class="beat-add"><span>Built for the floor</span><p>Payments, product sales and tips ledgered per stylist — the numbers the pay run reads later are captured here, first.</p></div>
       </div>
-      <div class="beat-viz"><div class="viz ai-viz">
-        <video class="rcp" src="assets/receptionist.mp4" autoplay muted loop playsinline preload="auto"></video>
-        <div class="ai-scrim"></div>
-        <div class="wave" id="wave"></div>
+      <div class="beat-viz"><div class="viz shot-viz">
+        <div class="dv-till" aria-hidden="true">
+          <div class="t-h"><b>Elena M. · checkout</b><span class="live"></span></div>
+          <div class="dv-line"><span>Roots Colour<span class="who">Paolo C.</span></span><b>£78.00</b></div>
+          <div class="dv-line"><span>GA Blowdry<span class="who">Paolo C.</span></span><b>£42.00</b></div>
+          <div class="dv-line"><span>Bond Repair — retail</span><b>£29.00</b></div>
+          <div class="dv-line"><span>Tip</span><b>£15.00</b></div>
+          <div class="dv-tot"><span>Total</span><b>£164.00</b></div>
+          <div class="dv-pay">
+            <div class="dv-chip on">Card</div>
+            <div class="dv-chip">Cash</div>
+            <div class="dv-chip">Gift card</div>
+          </div>
+        </div>
       </div></div>
     </div>
 
-    <!-- ColorLab -->
+    <!-- 3 — Client records -->
     <div class="beat reveal">
       <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><a class="kicker" href="/colorlab/">ColorLab <span class="arw">&rarr;</span></a></div>
-        <h3>Every bowl, weighed and costed.</h3>
-        <p>Precision Bluetooth-scale weighing, snap-a-photo AI formula and one-tap repeat — with the true cost of every gram.</p>
-        <div class="beat-add"><span>Our addition</span><p>Every bowl weighed and costed to the gram, tied to the booking.</p></div>
+        <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="kicker">Client records</div></div>
+        <h3>One record, the whole history.</h3>
+        <p>Every visit, every spend, every favourite stylist — held on one client card. Lifetime value and visit count roll up automatically into VIP and loyalty tiers, and a manager can flag a regular as VIP by hand when the numbers don't tell the whole story.</p>
+        <div class="beat-add"><span>Built for the floor</span><p>The same record the phone, the chair and the pay run all read — so a client is never a stranger twice.</p></div>
       </div>
-      <div class="beat-viz"><div class="viz cl-viz">
-        <video class="clv" src="assets/colorlab.mp4" autoplay muted loop playsinline preload="auto"></video>
-        <div class="cl-scrim"></div>
-        <div class="cl-readout">
-          <div class="rd"><div class="v" data-grams="62">0</div><div class="u">grams</div></div>
-          <div class="rd"><div class="v c">£<span data-cost="4.80">0.00</span></div><div class="u">cost</div></div>
+      <div class="beat-viz"><div class="viz shot-viz">
+        <div class="dv-client" aria-hidden="true">
+          <div class="dv-cl-top">
+            <div class="dv-cl-av">LF</div>
+            <div><b>Lucia F.</b><span class="vip">&#9733; VIP · Loyal</span></div>
+          </div>
+          <div class="dv-cl-stats">
+            <div class="dv-cl-stat"><b>34</b><span>Visits</span></div>
+            <div class="dv-cl-stat"><b>&pound;2.4k</b><span>Lifetime</span></div>
+            <div class="dv-cl-stat"><b>Paolo</b><span>Favourite</span></div>
+          </div>
+          <div class="dv-cl-h">Recent visits</div>
+          <div class="dv-cl-visit"><span>Balayage &amp; Toner</span><span>12 Jun · £186</span></div>
+          <div class="dv-cl-visit"><span>Cut &amp; Blowdry</span><span>08 May · £84</span></div>
+          <div class="dv-cl-visit"><span>Roots &amp; Gloss</span><span>03 Apr · £118</span></div>
         </div>
       </div></div>
     </div>
 
-    <!-- Performance -->
+    <!-- 4 — Per-stylist pricing & eligibility -->
     <div class="beat rev reveal">
       <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><a class="kicker" href="/performance/">Performance <span class="arw">&rarr;</span></a></div>
-        <h3>The app the team opens daily.</h3>
-        <p>Live revenue and leaderboards, commission and self-employed settlement, tips and gamified training — all from the same sales.</p>
-        <div class="beat-add"><span>Our addition</span><p>The pay run updates itself — no Sunday spreadsheet.</p></div>
+        <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="kicker">Pricing &amp; eligibility</div></div>
+        <h3>Every stylist, their own price list.</h3>
+        <p>The same service costs what the stylist performing it is worth. Daviana holds price per stylist on every service line — and holds who is eligible to perform what, so a colourist is never offered for a men's cut they don't do.</p>
+        <div class="beat-add"><span>Built for the floor</span><p>Eligibility decides <em>whether</em>, rota decides <em>when</em> — the two-step that keeps every offer honest, on the phone and online.</p></div>
       </div>
-      <div class="beat-viz"><div class="viz" id="perfviz">
-        <div class="bars">
-          <div class="b" style="height:0" data-h="42%"></div>
-          <div class="b" style="height:0" data-h="60%"></div>
-          <div class="b" style="height:0" data-h="50%"></div>
-          <div class="b peak" style="height:0" data-h="88%"></div>
-          <div class="b" style="height:0" data-h="70%"></div>
+      <div class="beat-viz"><div class="viz shot-viz">
+        <div class="dv-price" aria-hidden="true">
+          <div class="p-h">Balayage &amp; Toner <span>— price by stylist</span></div>
+          <div class="dv-prow"><i style="--c:#d99a3f">PC</i><div><div class="nm">Paolo C.</div><div class="rl">Master Colourist</div></div><div class="pr">£196</div></div>
+          <div class="dv-prow"><i style="--c:#4f93d9">GV</i><div><div class="nm">Gabriela V.</div><div class="rl">Senior Stylist</div></div><div class="pr">£168</div></div>
+          <div class="dv-prow"><i style="--c:#9a5fd0">VO</i><div><div class="nm">Veronica O.</div><div class="rl">Stylist</div></div><div class="pr">£142</div></div>
+          <div class="dv-prow"><i style="--c:#6ba368">AS</i><div><div class="nm">Asta S.</div><div class="rl">Nails only</div></div><div class="pr"><small>not eligible</small></div></div>
         </div>
-        <svg class="spark" viewBox="0 0 100 60" preserveAspectRatio="none"><polyline points="6,34 30,20 54,26 78,6 94,14"/></svg>
       </div></div>
     </div>
 
-    <!-- People -->
+    <!-- 5 — Rota, hours & online booking -->
     <div class="beat reveal">
       <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><a class="kicker" href="/people/">People <span class="arw">&rarr;</span></a></div>
-        <h3>The whole team, in one place.</h3>
-        <p>An AI-screened hiring funnel, onboarding, rota, contracts, payroll and leave — from first application to first shift.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real people-ops product, not an afterthought.</p></div>
+        <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="kicker">Rota, hours &amp; online</div></div>
+        <h3>Open the diary to the world.</h3>
+        <p>Salon opening hours, each stylist's rota and their time off are set once and enforced everywhere — no slot is ever offered outside them. Flip a service to bookable online and clients self-book straight into the same diary, deposit taken, from a branded portal.</p>
+        <div class="beat-add"><span>Built for the floor</span><p>The rota that fills the diary and the hours that gate it are one source — so online booking can never sell a slot that isn't really there.</p></div>
       </div>
-      <div class="beat-viz"><div class="viz pa-viz">
-        <div class="pa" aria-hidden="true">
-          <div class="pa-nav">
-            <span class="pa-pill" data-k="hire">Hire</span>
-            <span class="pa-pill" data-k="fire">Fire</span>
-            <span class="pa-pill" data-k="track">Track</span>
-            <span class="pa-pill" data-k="organise">Organise</span>
-          </div>
-          <div class="pa-body">
-            <div class="pa-screen" data-k="organise">
-              <div class="pa-h"><b>Rota</b> · this week</div>
-              <div class="pa-rota">
-                <span></span><span class="d">M</span><span class="d">T</span><span class="d">W</span><span class="d">T</span><span class="d">F</span>
-                <span class="nm">Paolo C.</span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span>
-                <span class="nm">Gabriela V.</span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span>
-                <span class="nm">Veronica O.</span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="track">
-              <div class="pa-h"><b>Hiring</b> · live</div>
-              <div class="pa-stats">
-                <div class="pa-stat"><b>1,495</b><span>applicants</span></div>
-                <div class="pa-stat"><b>14</b><span>in trial</span></div>
-                <div class="pa-stat hl"><b>&pound;21</b><span>per applicant</span></div>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="fire">
-              <div class="pa-h"><b>Offboarding</b></div>
-              <div class="pa-row"><b>Marco Vialli</b><span>left &middot; 30 Jun</span><i class="mut">P45 &check;</i></div>
-              <div class="pa-row"><b>Lena Ford</b><span>left &middot; 12 Jun</span><i class="mut">P45 &check;</i></div>
-            </div>
-            <div class="pa-screen" data-k="hire">
-              <div class="pa-h"><b>Open vacancies</b> · 3</div>
-              <div class="pa-row"><b>Junior Stylist</b><span>all salons</span><i class="ok">OPEN</i></div>
-              <div class="pa-row"><b>Receptionist</b><span>Wimbledon</span><i class="ok">OPEN</i></div>
-              <div class="pa-row"><b>Housekeeper</b><span>all salons</span><i class="ok">OPEN</i></div>
-            </div>
-            <div class="pa-screen" data-k="sign">
-              <div class="pa-h"><b>Contract</b></div>
-              <div class="pa-doc">
-                <div class="pa-doc-t"><b>Employment Contract</b><span>Sofia Marchetti · Senior Stylist</span></div>
-                <div class="pa-sig"><svg viewBox="0 0 92 28" aria-hidden="true"><path d="M4 20 C11 5 15 24 23 13 S35 4 43 17 53 22 61 9 75 7 88 15"/></svg></div>
-                <div class="pa-stamp">SIGNED</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></div>
-    </div>
-
-    <!-- Bar -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-bar"/></svg></div><a class="kicker" href="/bar/">Bar <span class="arw">&rarr;</span></a></div>
-        <h3>A drink to the chair.</h3>
-        <p>Order a coffee or a glass of something to the client at the chair — the guest experience, handled without leaving the floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>It posts to the client's bill and deducts stock, instantly.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz vid-viz">
-        <video src="assets/bar.mp4" autoplay muted loop playsinline preload="auto"></video>
-        <div class="vid-scrim"></div>
+      <div class="beat-viz"><div class="viz shot-viz">
+        <img src="/assets/daviana-callnote.png" alt="Daviana booking and client note detail" loading="lazy">
       </div></div>
     </div>
 
   </div>
 </section>
 
-<!-- NUMBERS -->
-<section class="band band--2" id="proof">
+<!-- PART OF ONE SYSTEM -->
+<section class="band band--2" id="system">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">05</span><span class="lbl">Earned, not claimed</span><span class="end">By a working salon group</span></div>
+    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Part of one system</span><span class="end">Daviana is the spine</span></div>
     <div class="sec-head reveal">
-      <h2>Built and run by a working salon group.</h2>
+      <h2>Not an integration. The <span class="hl">source of truth</span>.</h2>
+      <p>Daviana doesn't sync with the rest of the salon software — it <em>is</em> the rest of the salon software's memory. Every other SalonForge product reads from it and writes back to it, live.</p>
     </div>
-    <div class="nums">
-      <div class="num reveal"><div class="n" data-count="4">0</div><div class="l">Live London salons</div></div>
-      <div class="num reveal d1"><div class="n" data-count="19949">0</div><div class="l">Colour formulas costed</div></div>
-      <div class="num reveal d2"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Products, one source of truth</div></div>
+
+    <div class="dv-sys reveal d1" aria-hidden="true">
+      <svg class="dv-sys-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="dvSpoke" cx="50" cy="50" r="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#E8946F" stop-opacity=".95"/>
+            <stop offset=".55" stop-color="#EFB197" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#D97757" stop-opacity=".16"/>
+          </radialGradient>
+        </defs>
+        <line x1="50" y1="14" x2="50" y2="50"/>
+        <line x1="86" y1="34" x2="50" y2="50"/>
+        <line x1="74" y1="82" x2="50" y2="50"/>
+        <line x1="26" y1="82" x2="50" y2="50"/>
+        <line x1="14" y1="34" x2="50" y2="50"/>
+      </svg>
+      <div class="dv-nd core" style="left:50%;top:50%"><svg><use href="#ic-daviana"/></svg><div class="l">Daviana</div><div class="t">THE SPINE</div></div>
+      <div class="dv-nd" style="left:50%;top:14%"><svg><use href="#ic-ai"/></svg><div class="l">AI Receptionist</div></div>
+      <div class="dv-nd" style="left:86%;top:34%"><svg><use href="#ic-color"/></svg><div class="l">ColorLab</div></div>
+      <div class="dv-nd" style="left:74%;top:82%"><svg><use href="#ic-perf"/></svg><div class="l">Performance</div></div>
+      <div class="dv-nd" style="left:26%;top:82%"><svg><use href="#ic-people"/></svg><div class="l">People</div></div>
+      <div class="dv-nd" style="left:14%;top:34%"><svg><use href="#ic-bar"/></svg><div class="l">Bar</div></div>
     </div>
-    <p class="nums-foot reveal">The software we needed, so we made it — then we ran our own salons on it.</p>
+
+    <div class="grid6 reveal d2" style="margin-top:clamp(38px,5vw,56px)">
+      <div class="gcard">
+        <div class="top"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="zone">Reads &amp; writes</div></div>
+        <h3>AI Receptionist</h3>
+        <p>Reads live availability, eligibility and hours; writes new bookings straight into the diary while it's still on the call.</p>
+      </div>
+      <div class="gcard">
+        <div class="top"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="zone">Reads &amp; writes</div></div>
+        <h3>ColorLab</h3>
+        <p>Reads the appointment and its price; writes the colour cost back against the booking, to the gram.</p>
+      </div>
+      <div class="gcard">
+        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Reads</div></div>
+        <h3>Performance</h3>
+        <p>Reads the payments, product sales and tips Daviana captured at the till — the pay run builds itself from them.</p>
+      </div>
+      <div class="gcard">
+        <div class="top"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="zone">Reads &amp; writes</div></div>
+        <h3>People</h3>
+        <p>Writes the rota and time off that gate the diary; reads who worked to run onboarding, contracts and leave.</p>
+      </div>
+      <div class="gcard">
+        <div class="top"><div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="zone">Writes</div></div>
+        <h3>Bar</h3>
+        <p>Sends a guest's drink to the chair — it posts to the client's bill in Daviana and deducts the stock.</p>
+      </div>
+      <div class="gcard hero-card">
+        <div class="top"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="zone">The core</div></div>
+        <h3>Daviana</h3>
+        <div class="prod">One diary · one till · one client</div>
+        <div class="spine-badge"><i></i>The source of truth</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -886,12 +821,12 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
     </svg>
   </div>
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">06</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
-    <h2 class="reveal d1">See it running on your salon.</h2>
-    <p class="reveal d2">We'll walk you through SalonForge running a real salon floor — the diary, the colour bench, the pay run and the bar — on one connected system.</p>
+    <div class="chapter reveal"><span class="ix">03</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
+    <h2 class="reveal d1">See the diary run your floor.</h2>
+    <p class="reveal d2">We'll walk you through Daviana running a real salon day — the diary, the till, the client record and the rota — and show every other product reading and writing the same live source of truth.</p>
     <div class="actions reveal d3">
       <button class="btn btn-g">Book a demo</button>
-      <a href="tel:+00" class="btn btn-o">Talk to the team</a>
+      <a href="/" class="btn btn-o">All products</a>
     </div>
   </div>
 </section>
@@ -899,125 +834,35 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 <footer><div class="wrap">
   <div class="foot">
     <div>
-      <div class="brand">SalonForge<span class="dot">.</span></div>
+      <a class="brand" href="/">SalonForge<span class="dot">.</span></a>
       <div class="tag">One connected system for the whole salon.</div>
     </div>
     <div class="cols">
-      <a href="#everything">Daviana</a>
-      <a href="#everything">AI Receptionist</a>
-      <a href="#everything">ColorLab</a>
-      <a href="#everything">Performance</a>
-      <a href="#everything">People</a>
-      <a href="#everything">Bar</a>
+      <a href="/daviana/">Daviana</a>
+      <a href="/#everything">AI Receptionist</a>
+      <a href="/#everything">ColorLab</a>
+      <a href="/#everything">Performance</a>
+      <a href="/#everything">People</a>
+      <a href="/#everything">Bar</a>
     </div>
   </div>
   <div class="foot-base">© 2026 SalonForge · Six products, one live source of truth.</div>
 </div></footer>
-
-<!-- docked mini-spine -->
-<div class="dock" id="dock" aria-hidden="true">
-  <svg viewBox="0 0 26 190">
-    <line class="rail" x1="13" y1="8" x2="13" y2="182"/>
-    <circle class="core-dot" cx="13" cy="95" r="5"/>
-    <circle class="fire" cx="13" cy="8" r="3"/>
-  </svg>
-</div>
 
 <script>
 (function(){
   var rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
   var hd = document.getElementById('hd');
   addEventListener('scroll',function(){hd.classList.toggle('sc',scrollY>18)},{passive:true});
-
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.14, rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-
-  document.querySelectorAll('.flow, .viz, .scale').forEach(function(el){
+  document.querySelectorAll('.viz').forEach(function(el){
     new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ob.unobserve(e.target);}})},{threshold:.3}).observe(el);
   });
-
-  var wave = document.getElementById('wave');
-  if(wave){ var hs=[30,55,72,90,66,84,50,74,40,88,58,44,68,52,80,46,62,36]; hs.forEach(function(h,i){var b=document.createElement('i');b.style.animationDelay=(i*0.07)+'s';b.style.height=(rm?h*0.6:14)+'%';wave.appendChild(b);}); }
-
-  var pv = document.getElementById('perfviz');
-  if(pv){ new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){pv.querySelectorAll('.b').forEach(function(b){b.style.height=b.dataset.h;});ob.unobserve(e.target);}})},{threshold:.35}).observe(pv); }
-
-  function countEl(el,target,dur,fmt){
-    var start=performance.now();
-    function step(t){var p=Math.min(1,(t-start)/dur);var e=1-Math.pow(1-p,3);var v=target*e;el.textContent=fmt(v);if(p<1)requestAnimationFrame(step);}
-    requestAnimationFrame(step);
-  }
-  function watchCount(el,run){ new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){run();ob.unobserve(e.target);}})},{threshold:.5}).observe(el); }
-  document.querySelectorAll('[data-count]').forEach(function(el){
-    var t=+el.dataset.count; watchCount(el,function(){ if(rm){el.textContent=t.toLocaleString();return;} countEl(el,t,1400,function(v){return Math.round(v).toLocaleString();}); });
-  });
-  document.querySelectorAll('[data-grams]').forEach(function(el){
-    var t=+el.dataset.grams; watchCount(el,function(){ if(rm){el.textContent=t;return;} countEl(el,t,1600,function(v){return Math.round(v);}); });
-  });
-  document.querySelectorAll('[data-cost]').forEach(function(el){
-    var t=+el.dataset.cost; watchCount(el,function(){ if(rm){el.textContent=t.toFixed(2);return;} countEl(el,t,1600,function(v){return v.toFixed(2);}); });
-  });
-
-  var caps={
-    ai:'<b>AI Receptionist</b> answers the phone after hours and books straight into the diary.',
-    color:'<b>ColorLab</b> weighs and costs every bowl to the gram, tied to the booking.',
-    perf:'<b>Performance</b> reads live revenue, commission, settlement and tips as they happen.',
-    people:'<b>People</b> runs hiring, onboarding, rota, contracts, payroll and leave.',
-    bar:'<b>Bar</b> sends a drink to the chair — it posts to the bill and deducts stock.'
-  };
-  var defCap = '<b>One live source of truth.</b> Every product reads and writes Daviana — one client record, one till, one stock count.';
-  var hubcap = document.getElementById('hubcap');
-  var conns = document.querySelectorAll('.conn');
-  var pkts = document.querySelectorAll('.hubpulse[data-c]');
-  var lbls = document.querySelectorAll('.spoke-lbl[data-l]');
-  document.querySelectorAll('.hub-node[data-p]').forEach(function(n){
-    var p=n.dataset.p;
-    function on(){ n.classList.add('act'); conns.forEach(function(c){c.classList.toggle('lit',c.dataset.c===p)}); pkts.forEach(function(k){k.classList.toggle('lit',k.dataset.c===p)}); lbls.forEach(function(l){l.classList.toggle('lit',l.dataset.l===p)}); if(hubcap){hubcap.style.opacity=0; setTimeout(function(){hubcap.innerHTML=caps[p];hubcap.style.opacity=1;},140);} }
-    function off(){ n.classList.remove('act'); conns.forEach(function(c){c.classList.remove('lit')}); pkts.forEach(function(k){k.classList.remove('lit')}); lbls.forEach(function(l){l.classList.remove('lit')}); if(hubcap){hubcap.style.opacity=0; setTimeout(function(){hubcap.innerHTML=defCap;hubcap.style.opacity=1;},140);} }
-    n.addEventListener('mouseenter',on); n.addEventListener('mouseleave',off);
-    n.addEventListener('focusin',on); n.addEventListener('focusout',off);
-  });
-
-  if(!rm){
-    var dock=document.getElementById('dock');
-    var fire=dock.querySelector('.fire');
-    var products=document.getElementById('products');
-    new IntersectionObserver(function(es){es.forEach(function(e){dock.classList.toggle('show',e.isIntersecting)})},{threshold:.02}).observe(products);
-    document.querySelectorAll('.beat').forEach(function(b){
-      new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){fire.classList.remove('go');void fire.offsetWidth;fire.classList.add('go');ob.unobserve(e.target);}})},{threshold:.4}).observe(b);
-    });
-  }
 })();
 </script>
-<script>
-(function(){
-  var viz=document.querySelector('.pa-viz'); if(!viz) return;
-  var pa=viz.querySelector('.pa');
-  var order=['organise','track','fire','hire','sign'];
-  var pillFor={organise:'organise',track:'track',fire:'fire',hire:'hire',sign:'hire'};
-  var screens={}, pills={};
-  pa.querySelectorAll('.pa-screen').forEach(function(s){screens[s.dataset.k]=s;});
-  pa.querySelectorAll('.pa-pill').forEach(function(p){pills[p.dataset.k]=p;});
-  var rmq=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  function show(k){
-    Object.keys(screens).forEach(function(x){screens[x].classList.toggle('on',x===k);});
-    Object.keys(pills).forEach(function(x){pills[x].classList.toggle('on',x===pillFor[k]);});
-  }
-  var i=0, started=false;
-  function tick(){ show(order[i]); i=(i+1)%order.length; }
-  new IntersectionObserver(function(es){es.forEach(function(e){
-    if(e.isIntersecting && !started){ started=true;
-      if(rmq){ show('sign'); return; }
-      tick(); setInterval(tick, 2800);
-    }
-  });},{threshold:.3}).observe(viz);
-})();
-</script>
-<style>
-.hc-ring,.core-ring{transition:none}
-@media(prefers-reduced-motion:reduce){.hc-ring,.core-ring{animation:none!important}}
-</style>
+
 </body>
 </html>
