@@ -748,7 +748,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
         <div class="beat-add"><span>Что добавили мы</span><p>Настоящий ИИ-голос, который записывает клиентов прямо в журнал.</p></div>
       </div>
       <div class="beat-viz"><div class="viz ai-viz">
-        <video class="rcp" src="/assets/receptionist.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <video class="rcp" src="/assets/receptionist.mp4" poster="/assets/poster-receptionist.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
         <div class="ai-scrim"></div>
         <div class="wave" id="wave"></div>
       </div></div>
@@ -763,7 +763,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
         <div class="beat-add"><span>Что добавили мы</span><p>Каждая миска взвешена и рассчитана до грамма и привязана к записи.</p></div>
       </div>
       <div class="beat-viz"><div class="viz cl-viz">
-        <video class="clv" src="/assets/colorlab.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <video class="clv" src="/assets/colorlab.mp4" poster="/assets/poster-colorlab.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
         <div class="cl-scrim"></div>
         <div class="cl-readout">
           <div class="rd"><div class="v" data-grams="62">0</div><div class="u">граммов</div></div>
@@ -859,7 +859,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
         <div class="beat-add"><span>Что добавили мы</span><p>Всё сразу попадает в счёт клиента и списывается со склада, мгновенно.</p></div>
       </div>
       <div class="beat-viz"><div class="viz vid-viz">
-        <video src="/assets/bar.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <video src="/assets/bar.mp4" poster="/assets/poster-bar.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
         <div class="vid-scrim"></div>
       </div></div>
     </div>
@@ -1108,6 +1108,32 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
  function cl(){document.body.classList.remove('mnav-open');}
  ham.addEventListener('click',op);x.addEventListener('click',cl);ov.addEventListener('click',cl);
  panel.addEventListener('click',function(e){if(e.target.tagName==='A')cl();});
+})();
+</script>
+
+<script>
+(function(){
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { return; }
+  var vids = document.querySelectorAll("[data-lazyvid]");
+  if (!("IntersectionObserver" in window)) {
+    for (var i = 0; i < vids.length; i++) { vids[i].play().catch(function(){}); }
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    for (var j = 0; j < entries.length; j++) {
+      if (entries[j].isIntersecting) {
+        var v = entries[j].target;
+        v.play().catch(function(){});
+        io.unobserve(v);
+      }
+    }
+  }, { rootMargin: "200px" });
+  for (var k = 0; k < vids.length; k++) { io.observe(vids[k]); }
+  document.addEventListener("visibilitychange", function(){
+    if (document.hidden) {
+      for (var m = 0; m < vids.length; m++) { vids[m].pause(); }
+    }
+  });
 })();
 </script>
 </body>

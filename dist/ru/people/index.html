@@ -277,7 +277,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 
       <div class="beat-viz reveal d3">
         <div class="viz vid-viz">
-          <video src="/assets/people.mp4" autoplay muted loop playsinline preload="auto"></video>
+          <video src="/assets/people.mp4" poster="/assets/poster-people.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
           <div class="vid-scrim"></div>
         </div>
       </div>
@@ -314,7 +314,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
         <div class="beat-add"><span>Наше дополнение</span><p>Объём без рутины — каждый кандидат проверен одинаково, каждый раз.</p></div>
       </div>
       <div class="beat-viz"><div class="viz shot-viz">
-        <img class="shot" src="/assets/people-home.png" alt="Дашборд GA People с живой воронкой найма — подал заявку, прошёл телефонный скрининг, приглашён на пробную смену, нанят — по ролям ресепшена и младшего стилиста">
+        <img class="shot" src="/assets/people-home.png" alt="Дашборд GA People с живой воронкой найма — подал заявку, прошёл телефонный скрининг, приглашён на пробную смену, нанят — по ролям ресепшена и младшего стилиста" loading="lazy" decoding="async">
         <div class="shot-scrim"></div>
       </div></div>
     </div>
@@ -609,6 +609,32 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
  function cl(){document.body.classList.remove('mnav-open');}
  ham.addEventListener('click',op);x.addEventListener('click',cl);ov.addEventListener('click',cl);
  panel.addEventListener('click',function(e){if(e.target.tagName==='A')cl();});
+})();
+</script>
+
+<script>
+(function(){
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { return; }
+  var vids = document.querySelectorAll("[data-lazyvid]");
+  if (!("IntersectionObserver" in window)) {
+    for (var i = 0; i < vids.length; i++) { vids[i].play().catch(function(){}); }
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    for (var j = 0; j < entries.length; j++) {
+      if (entries[j].isIntersecting) {
+        var v = entries[j].target;
+        v.play().catch(function(){});
+        io.unobserve(v);
+      }
+    }
+  }, { rootMargin: "200px" });
+  for (var k = 0; k < vids.length; k++) { io.observe(vids[k]); }
+  document.addEventListener("visibilitychange", function(){
+    if (document.hidden) {
+      for (var m = 0; m < vids.length; m++) { vids[m].pause(); }
+    }
+  });
 })();
 </script>
 </body>
