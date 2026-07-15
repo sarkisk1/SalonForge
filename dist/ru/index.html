@@ -974,7 +974,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
     people:'<b>People</b> ведёт найм, онбординг, график, договоры, зарплату и отпуска.',
     bar:'<b>Bar</b> подаёт напиток к креслу — он попадает в счёт и списывается со склада.'
   };
-  var defCap = '<b>Единый источник данных в реальном времени.</b> Каждый продукт читает и пишет в Daviana — одна карта клиента, одна касса, один учёт остатков.';
+  var defCap = (document.getElementById('hubcap')||{}).innerHTML || '';
   var hubcap = document.getElementById('hubcap');
   var conns = document.querySelectorAll('.conn');
   var pkts = document.querySelectorAll('.hubpulse[data-c]');
