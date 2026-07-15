@@ -1,9 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://salonforge.com/</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://salonforge.com/website-design</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://salonforge.com/virtual-receptionist</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://salonforge.com/booking-bots</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://salonforge.com/blog-seo</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://salonforge.com/recruitment-automation</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://salonforge.com/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/daviana/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/daviana/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/daviana/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/daviana/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/daviana/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/daviana/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/daviana/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/daviana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/daviana/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ai-receptionist/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/ai-receptionist/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/ai-receptionist/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/ai-receptionist/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/ai-receptionist/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/ai-receptionist/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/ai-receptionist/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/ai-receptionist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/ai-receptionist/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/colorlab/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/colorlab/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/colorlab/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/colorlab/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/colorlab/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/colorlab/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/colorlab/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/colorlab/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/colorlab/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/bar/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/bar/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/bar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/bar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/bar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/bar/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/bar/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/bar/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/bar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/bar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/bar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/bar/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/bar/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/bar/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/bar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/bar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/bar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/bar/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/bar/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/bar/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/bar/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/bar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/bar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/bar/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/performance/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/performance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/performance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/performance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/performance/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/performance/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/performance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/performance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/performance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/performance/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/performance/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/performance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/performance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/performance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/performance/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/performance/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/performance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/performance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/performance/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/performance/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/people/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/people/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/people/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/people/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/people/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/people/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/it/people/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/people/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/people/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/people/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/people/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/people/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/ru/people/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/people/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/people/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/people/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/people/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/people/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/es/people/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salonforge.com/people/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://salonforge.com/it/people/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/people/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salonforge.com/es/people/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salonforge.com/people/"/>
+  </url>
+  <url>
+    <loc>https://salonforge.com/website-design/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://salonforge.com/virtual-receptionist/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://salonforge.com/booking-bots/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://salonforge.com/blog-seo/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://salonforge.com/recruitment-automation/</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
 </urlset>
