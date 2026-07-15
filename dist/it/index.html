@@ -974,7 +974,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
     people:'<b>People</b> runs hiring, onboarding, rota, contracts, payroll and leave.',
     bar:'<b>Bar</b> sends a drink to the chair — it posts to the bill and deducts stock.'
   };
-  var defCap = '<b>Un'unica fonte di verità in tempo reale.</b> Ogni prodotto legge e scrive su Daviana: una sola scheda cliente, una sola cassa, un solo conteggio di magazzino.';
+  var defCap = (document.getElementById('hubcap')||{}).innerHTML || '';
   var hubcap = document.getElementById('hubcap');
   var conns = document.querySelectorAll('.conn');
   var pkts = document.querySelectorAll('.hubpulse[data-c]');
