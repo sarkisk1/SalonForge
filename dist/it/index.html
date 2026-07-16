@@ -475,6 +475,18 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
   @keyframes sf-flow-settle{from{scale:.97}to{scale:1}}
 }
 }
+
+/* §05 proof grid — linked stats */
+.stat-link{text-decoration:none;color:inherit;display:block;transition:transform .25s var(--hover)}
+.stat-link:hover{transform:translateY(-3px)}
+.stat-link:hover .n{color:var(--blue-h)}
+.stat-link .l{transition:color .2s}
+.stat-link:hover .l{color:var(--ink)}
+.nums--4{grid-template-columns:repeat(4,1fr);max-width:1060px;gap:22px}
+.nums--4 .n{font-size:clamp(2.5rem,4.6vw,3.8rem)}
+@media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
+@media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
+.num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "it"}]}</script>
 </head>
@@ -903,11 +915,13 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
     <div class="sec-head reveal">
       <h2>Creato e usato ogni giorno da un gruppo di saloni che lavora davvero.</h2>
     </div>
-    <div class="nums">
-      <div class="num reveal"><div class="n" data-count="4">0</div><div class="l">Saloni attivi a Londra</div></div>
-      <div class="num reveal d1"><div class="n" data-count="19949">0</div><div class="l">Formule colore con costo calcolato</div></div>
-      <div class="num reveal d2"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Prodotti, un'unica fonte di verità</div></div>
+    <div class="nums nums--4">
+      <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="4">0</div><div class="l">Saloni attivi a Londra</div></a>
+      <a class="num stat-link reveal d1" href="/it/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Formule colore pesate e con costo calcolato</div></a>
+      <a class="num stat-link reveal d2" href="/it/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Chiamate reali da cui ha imparato</div></a>
+      <a class="num stat-link reveal d3" href="/it/people/"><div class="n"><span style="color:var(--sec);font-size:.55em">~</span><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/mese</span></div><div class="l">Candidati al mese</div></a>
     </div>
+    <div class="num num-solo reveal d4"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Prodotti, un'unica fonte di verità</div></div>
     <p class="nums-foot reveal">Il software di cui avevamo bisogno, così l'abbiamo creato, e poi ci abbiamo fatto girare i nostri saloni.</p>
   </div>
 </section>
