@@ -69,13 +69,17 @@ h1,h2,h3,.disp{font-weight:600;letter-spacing:-.015em;line-height:1.06;text-wrap
 .btn-g{background:var(--blue);color:#fff}
 .btn-g:hover{background:var(--blue-h)}
 .btn-o{background:transparent;color:var(--blue);border-color:transparent;padding:12px 0;font-weight:400}
-.btn-o:hover{color:var(--blue-h)}
+.btn-o:hover,.btn-o:focus-visible{color:var(--blue-h)}
 .btn-o .ar{transition:transform .3s var(--hover)}
-.btn-o:hover .ar{transform:translateX(3px)}
+.btn-o:hover .ar,.btn-o:focus-visible .ar{transform:translateX(3px)}
 .ghost{color:var(--blue);font-weight:400;font-size:1.0625rem;display:inline-flex;align-items:center;gap:5px;transition:color .22s var(--hover)}
-.ghost:hover{color:var(--blue-h)}
+.ghost:hover,.ghost:focus-visible{color:var(--blue-h)}
 .ghost .ar{transition:transform .3s var(--hover)}
-.ghost:hover .ar{transform:translateX(3px)}
+.ghost:hover .ar,.ghost:focus-visible .ar{transform:translateX(3px)}
+/* tactile CTA elevation — scoped to hero + final CTA; nav pill (header .btn-g) stays flat */
+.hero .btn-g,.cta .btn-g{box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(120,52,28,.16),0 1px 2px rgba(120,52,28,.15),0 4px 14px -4px rgba(120,52,28,.28);transition:background .25s var(--hover),color .25s var(--hover),transform .16s cubic-bezier(.22,.61,.36,1),box-shadow .16s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.hero .btn-g:hover,.hero .btn-g:focus-visible,.cta .btn-g:hover,.cta .btn-g:focus-visible{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -1px 0 rgba(120,52,28,.14),0 2px 6px rgba(120,52,28,.18),0 10px 24px -6px rgba(120,52,28,.34)}
+.hero .btn-g:active,.cta .btn-g:active{transform:translateY(1px) scale(.99);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 1px 2px rgba(120,52,28,.22),0 1px 3px rgba(120,52,28,.18);transition-duration:.07s}
 
 /* NAV */
 header{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .4s var(--reveal),border-color .4s var(--reveal),backdrop-filter .4s}
@@ -209,7 +213,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 @media(max-width:840px){.grid6{grid-template-columns:1fr 1fr}}
 @media(max-width:540px){.grid6{grid-template-columns:1fr}}
 .gcard{position:relative;background:var(--alt);border:1px solid var(--line);border-radius:20px;padding:28px 28px 30px;transition:transform .35s var(--reveal),box-shadow .35s var(--reveal)}
-.gcard:hover{transform:translateY(-4px);box-shadow:0 18px 44px -20px rgba(0,0,0,.22)}
+.gcard:hover{transform:translateY(-4px);border-color:rgba(217,119,87,.30);box-shadow:0 2px 5px rgba(24,20,17,.05),0 18px 40px -18px rgba(217,119,87,.20),0 10px 26px -16px rgba(24,20,17,.16)}
 .gcard .top{display:flex;align-items:center;gap:14px}
 .gcard .zone{font-size:.9375rem;letter-spacing:0;color:var(--sec);font-weight:500}
 .gcard .top .tile{background:var(--white)}
