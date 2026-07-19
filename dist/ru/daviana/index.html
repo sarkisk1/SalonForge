@@ -33,7 +33,7 @@
   --sh:38,22,14; /* warm-brown depth base */
   --ui:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
   --container:1080px; --gutter:clamp(22px,6vw,80px); --sec-pad:clamp(72px,10vw,128px);
-  --reveal:cubic-bezier(.28,.11,.32,1); --hover:cubic-bezier(.4,0,.2,1);
+  --reveal:cubic-bezier(.28,.11,.32,1); --hover:cubic-bezier(.4,0,.2,1); --enter:cubic-bezier(.22,1,.36,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -45,6 +45,7 @@ svg{display:block}
 .eyebrow{font-size:.9375rem;font-weight:600;letter-spacing:0;color:var(--blue)}
 .eyebrow.mute{color:var(--sec)}
 h1,h2,h3,.disp{font-weight:600;letter-spacing:-.015em;line-height:1.06;text-wrap:balance}
+.hero .lede-2,.sec-head p,.beat-copy p,.gcard p,.flow-note,.hub-cap{text-wrap:pretty}
 .hl{color:var(--blue)}
 .sw{font-style:normal;font-weight:600}
 .band{padding:var(--sec-pad) 0;position:relative}
@@ -61,9 +62,11 @@ h1,h2,h3,.disp{font-weight:600;letter-spacing:-.015em;line-height:1.06;text-wrap
 @media(max-width:600px){.chapter .end{display:none}}
 
 /* reveal */
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s var(--reveal),transform .6s var(--reveal)}
+.reveal{opacity:0;transform:translateY(14px) scale(.988);transition:opacity .62s var(--enter),transform .62s var(--enter)}
+.num.reveal{transform:translateY(6px) scale(.965);transform-origin:center bottom}
 .reveal.in{opacity:1;transform:none}
-.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}
+.num.reveal.in{transform:none}
+.d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}.d4{transition-delay:.24s}.d5{transition-delay:.30s}
 
 /* buttons */
 .btn{font-family:var(--ui);font-weight:500;font-size:1.0625rem;padding:12px 22px;border-radius:980px;border:1px solid transparent;cursor:pointer;transition:background .25s var(--hover),color .25s var(--hover),transform .2s var(--hover);display:inline-flex;align-items:center;gap:8px;white-space:nowrap;line-height:1.1}
@@ -443,7 +446,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition-duration:.001ms!important}
-  .reveal{opacity:1;transform:none}
+  .reveal,.num.reveal{opacity:1;transform:none}
   .pkt,.hc-pkt,.barviz .bub-anim{opacity:0}
   .flow-path{stroke-dashoffset:0}
   .scale .fill{height:74%}.viz.in .spark polyline{stroke-dashoffset:0}
