@@ -70,7 +70,7 @@ h1,h2,h3,.disp{font-weight:600;letter-spacing:-.015em;line-height:1.06;text-wrap
 .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}.d4{transition-delay:.24s}.d5{transition-delay:.30s}
 
 /* buttons */
-.btn{font-family:var(--ui);font-weight:500;font-size:1.0625rem;padding:12px 22px;border-radius:980px;border:1px solid transparent;cursor:pointer;transition:background .25s var(--hover),color .25s var(--hover),transform .2s var(--hover);display:inline-flex;align-items:center;gap:8px;white-space:nowrap;line-height:1.1}
+.btn{font-family:var(--ui);font-weight:500;font-size:1.0625rem;padding:12px 22px;border-radius:980px;border:1px solid transparent;cursor:pointer;transition:background .25s var(--hover),color .25s var(--hover),transform .2s var(--hover);display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;line-height:1.1;min-height:44px}
 .btn-g{background:var(--blue);color:#fff}
 .btn-g:hover{background:var(--blue-h)}
 .btn-o{background:transparent;color:var(--blue);border-color:transparent;padding:12px 0;font-weight:400}
@@ -112,6 +112,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 .hero .eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem .4rem .7rem;border-radius:999px;border:1px solid rgba(217,119,87,.22);background:rgba(217,119,87,.06);color:var(--blue-h);font-size:.875rem;letter-spacing:.005em;line-height:1}
 .hero .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none}
 .hero .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:30px}
+@media(max-width:520px){.hero .actions{flex-direction:column;align-items:stretch;gap:14px}.hero .actions .btn-g{width:100%}.hero .actions .ghost{justify-content:center;margin-top:2px}.cta .actions{flex-direction:column;align-items:stretch;gap:12px}.cta .actions .btn{width:100%}}
 @media(max-width:920px){.hero-inner{max-width:none}.hero h1{max-width:18ch}}
 
 /* HERO constellation preview */
@@ -265,7 +266,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 /* PER-PRODUCT BEATS */
 .beat{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px);align-items:center;padding:clamp(48px,7vw,92px) 0;border-top:1px solid var(--line)}
 .beat:first-of-type{border-top:none;padding-top:clamp(8px,2vw,24px)}
-.beat.rev .beat-viz{order:2}
+.beat.rev .beat-viz{order:-1}
 @media(max-width:860px){.beat,.beat.rev{grid-template-columns:1fr;gap:36px}.beat.rev .beat-viz{order:0}}
 .beat-copy .head{display:flex;align-items:center;gap:16px}
 .beat-copy .tile{--ts:56px}
@@ -939,7 +940,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
       <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="6">0</div><div class="l">Salons, London to Saudi</div></a>
       <a class="num stat-link reveal d1" href="/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Colour formulas weighed &amp; costed</div></a>
       <a class="num stat-link reveal d2" href="/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Real salon calls learned from</div></a>
-      <a class="num stat-link reveal d3" href="/people/"><div class="n"><span style="color:var(--sec);font-size:.55em">~</span><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/mo</span></div><div class="l">Applicants a month</div></a>
+      <a class="num stat-link reveal d3" href="/people/"><div class="n"><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/mo</span></div><div class="l">Applicants a month</div></a>
     </div>
     <div class="num num-solo reveal d4"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Products, one shared record</div></div>
     <p class="nums-foot reveal">The software we needed, so we made it — then we ran our own salons on it.</p>
@@ -961,7 +962,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
     <p class="reveal d2">We'll walk you through SalonForge running a real salon floor — the diary, the colour bench, the pay run and the bar — on one connected system.</p>
     <div class="actions reveal d3">
       <a class="btn btn-g" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a>
-      <a href="tel:+00" class="btn btn-o">Talk to the team</a>
+      <a href="mailto:info@salonforge.com?subject=SalonForge%20%E2%80%94%20talk%20to%20the%20team" class="btn btn-o">Talk to the team</a>
     </div>
   </div>
 </section>
