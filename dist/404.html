@@ -474,7 +474,24 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 @media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
 @media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
-/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}</style>
+/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
+/* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
+.navlinks a{white-space:nowrap}
+.navlinks{gap:clamp(20px,2.4vw,32px);align-items:center}
+.navdrop > a{display:inline-flex;align-items:center}
+/* Switch to the menu button before the bar gets crowded. The old 900px breakpoint
+   left a 900-1100px band where six items had to wrap. */
+@media(max-width:1100px){
+  #hd .navlinks{display:none}
+  .hamburger{display:flex}
+  #hd .langsw{display:none}
+  #hd .btn-g{margin-left:auto}
+}
+/* keyboard parity with :hover — the dropdown must open on focus too */
+.navdrop:focus-within .navdrop-menu{opacity:1;visibility:visible;
+  transform:translateX(-50%) translateY(0)}
+.navdrop:focus-within .ncar{transform:rotate(180deg)}
+</style>
 <style>
 /* 404-specific */
 .nf{min-height:100svh;display:flex;flex-direction:column}
