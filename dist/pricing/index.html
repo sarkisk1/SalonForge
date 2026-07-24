@@ -656,7 +656,9 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
   min-height:2.6em;line-height:1.4}
 .tier .amt{font-size:1.7rem;font-weight:600;letter-spacing:-.02em;margin-bottom:3px;
   font-variant-numeric:tabular-nums;line-height:1.15}
-.tier .amt small{font-size:.9375rem;font-weight:400;color:var(--sec);letter-spacing:0}
+/* own line — "Up to £350 a / month" breaks badly when it trails the figure */
+.tier .amt small{display:block;font-size:.9375rem;font-weight:400;color:var(--sec);
+  letter-spacing:0;margin-top:2px}
 /* the middle tier has no single figure — don't dress a phrase up as a price */
 .tier .amt.amt-txt{font-size:1.15rem;font-weight:600;color:var(--blue);letter-spacing:-.008em;
   padding:.34em 0}
