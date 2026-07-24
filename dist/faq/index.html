@@ -623,10 +623,31 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
   align-items:center}
 .topics a:hover{border-color:var(--blue);color:var(--blue)}
 .topics a.on{background:var(--ink);border-color:var(--ink);color:#fff}
+/* lead article — one piece carries the page, the rest fall in behind it.
+   Ten identical rows reads as a content dump; a lead plus thumbnails reads as a journal. */
+.lead{display:block;margin-bottom:clamp(30px,4vw,44px);group:none}
+.lead-img{position:relative;border-radius:20px;overflow:hidden;margin-bottom:22px;
+  background:var(--alt);aspect-ratio:16/7}
+.lead-img img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s var(--reveal)}
+.lead:hover .lead-img img{transform:scale(1.02)}
+.lead-t{font-size:clamp(1.6rem,3.6vw,2.35rem);line-height:1.12;letter-spacing:-.02em;
+  font-weight:600;margin-bottom:12px;text-wrap:balance;transition:color .2s;max-width:26ch}
+.lead:hover .lead-t{color:var(--blue)}
+.lead p{color:var(--sec);font-size:clamp(1.0625rem,1.9vw,1.1875rem);line-height:1.5;
+  max-width:60ch;text-wrap:pretty}
+.lead .pcard-meta{margin-top:14px}
+
 .plist{display:flex;flex-direction:column}
-.pcard{display:grid;grid-template-columns:1fr auto;gap:20px 34px;align-items:start;
-  padding:clamp(24px,3.2vw,30px) 0;border-bottom:1px solid var(--line);transition:.2s}
+.pcard{display:grid;grid-template-columns:1fr auto auto;gap:20px 26px;align-items:center;
+  padding:clamp(22px,2.8vw,28px) 0;border-bottom:1px solid var(--line);transition:.2s}
 .pcard:first-child{border-top:1px solid var(--line)}
+.pthumb{width:132px;aspect-ratio:16/10;border-radius:11px;overflow:hidden;flex:none;
+  background:var(--alt);align-self:center}
+.pthumb img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s var(--reveal)}
+.pcard:hover .pthumb img{transform:scale(1.05)}
+@media(max-width:600px){.pthumb{width:84px;border-radius:9px}}
 .pcard-t{font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.2;letter-spacing:-.015em;
   font-weight:600;margin-bottom:9px;text-wrap:balance;transition:color .2s}
 .pcard:hover .pcard-t{color:var(--blue)}
@@ -689,7 +710,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
     <span class="navdrop"><a href="/#system">The system<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/#system">The system</a><a href="/#connect">How it connects</a><a href="/#proof">Why us</a></div></span>
     <span class="navdrop"><a href="/#everything">Products<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/daviana/">Daviana</a><a href="/ai-receptionist/">AI Receptionist</a><a href="/colorlab/">ColorLab</a><a href="/bar/">Bar</a><a href="/performance/">Performance</a><a href="/people/">People</a></div></span>
     <a href="/pricing/">Pricing</a>
-    <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/faq/">Questions</a></div></span>
+    <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/compare/">Compare</a><a href="/faq/">Questions</a></div></span>
   </nav>
   <a class="btn btn-g" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a>
 </div></header>
@@ -713,6 +734,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
       <a href="/pricing/">Pricing</a>
       <a href="/blog/">Journal</a>
       <a href="/tools/">Calculators</a>
+      <a href="/compare/">Compare</a>
       <a href="/faq/">Questions</a>
     </div>
   </div>
