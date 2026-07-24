@@ -697,6 +697,37 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .fair li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;
   border-radius:50%;background:var(--line)}
 .fair li strong{color:var(--ink);font-weight:600}
+/* The comparison table. The shared `.prose table` rules only apply inside .prose and
+   this table is not, so without these it renders completely unstyled — no separators,
+   no column emphasis, nothing to scan by. */
+.cmp .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 4px;
+  border:1px solid var(--line);border-radius:18px}
+.cmp table{border-collapse:collapse;width:100%;min-width:620px;font-size:.9375rem;
+  table-layout:fixed}
+.cmp thead th{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--sec);text-align:left;padding:16px 20px;vertical-align:bottom;
+  border-bottom:1px solid var(--line);background:var(--white)}
+.cmp thead th:first-child{width:24%}
+.cmp thead th:nth-child(2){width:38%;color:var(--blue);
+  background:linear-gradient(180deg,#f8f4f0 0%,#f6f1ed 100%)}
+.cmp thead th:nth-child(3){width:38%}
+.cmp tbody th{font-weight:600;text-align:left;padding:17px 20px;vertical-align:top;
+  color:var(--ink);line-height:1.35;font-size:.9375rem;text-wrap:pretty}
+.cmp tbody td{padding:17px 20px;vertical-align:top;line-height:1.5;color:var(--sec);
+  text-wrap:pretty}
+/* the SalonForge column, tinted the whole way down so the eye can track it */
+.cmp tbody td:first-of-type{background:linear-gradient(180deg,#faf7f4 0%,#f8f4f0 100%);
+  color:var(--ink)}
+.cmp tbody tr + tr th,.cmp tbody tr + tr td{border-top:1px solid var(--line)}
+.cmp tbody tr:hover th,.cmp tbody tr:hover td{background-color:rgba(217,119,87,.035)}
+.cmp tbody tr:hover td:first-of-type{background-color:rgba(217,119,87,.07)}
+.cmp table sup{font-size:.68em;color:var(--blue);font-weight:600;margin-left:2px;
+  vertical-align:super;line-height:0}
+@media(max-width:640px){
+  .cmp table{font-size:.875rem}
+  .cmp thead th,.cmp tbody th,.cmp tbody td{padding:13px 14px}
+}
+
 .srcs{margin-top:clamp(40px,5vw,56px);padding-top:22px;border-top:1px solid var(--line)}
 .srcs h2{font-size:.78rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase;
   color:var(--sec);margin-bottom:12px}
@@ -730,7 +761,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
     <span class="navdrop"><a href="/#system">The system<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/#system">The system</a><a href="/#connect">How it connects</a><a href="/#proof">Why us</a></div></span>
     <span class="navdrop"><a href="/#everything">Products<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/daviana/">Daviana</a><a href="/ai-receptionist/">AI Receptionist</a><a href="/colorlab/">ColorLab</a><a href="/bar/">Bar</a><a href="/performance/">Performance</a><a href="/people/">People</a></div></span>
     <a href="/pricing/">Pricing</a>
-    <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/faq/">Questions</a></div></span>
+    <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/compare/">Compare</a><a href="/faq/">Questions</a></div></span>
   </nav>
   <a class="btn btn-g" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a>
 </div></header>
@@ -763,6 +794,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
       <a href="/pricing/">Pricing</a>
       <a href="/blog/">Journal</a>
       <a href="/tools/">Calculators</a>
+      <a href="/compare/">Compare</a>
       <a href="/faq/">Questions</a>
     </div>
   </div>
