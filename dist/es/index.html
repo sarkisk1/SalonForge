@@ -494,7 +494,24 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 @media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
 @media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
-/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}</style>
+/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
+/* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
+.navlinks a{white-space:nowrap}
+.navlinks{gap:clamp(20px,2.4vw,32px);align-items:center}
+.navdrop > a{display:inline-flex;align-items:center}
+/* Switch to the menu button before the bar gets crowded. The old 900px breakpoint
+   left a 900-1100px band where six items had to wrap. */
+@media(max-width:1100px){
+  #hd .navlinks{display:none}
+  .hamburger{display:flex}
+  #hd .langsw{display:none}
+  #hd .btn-g{margin-left:auto}
+}
+/* keyboard parity with :hover — the dropdown must open on focus too */
+.navdrop:focus-within .navdrop-menu{opacity:1;visibility:visible;
+  transform:translateX(-50%) translateY(0)}
+.navdrop:focus-within .ncar{transform:rotate(180deg)}
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "es"}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -526,10 +543,10 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 <header id="hd"><div class="wrap nav">
   <div class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></div>
   <nav class="navlinks">
-    <a href="#system">El sistema</a>
-    <a href="#everything">Productos</a>
-    <a href="#connect">Cómo se conecta</a>
-    <a href="#proof">Por qué nosotros</a>
+    <span class="navdrop"><a href="#system">El sistema<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="#system">El sistema</a><a href="#connect">Cómo se conecta</a><a href="#proof">Por qué nosotros</a></div></span>
+    <span class="navdrop"><a href="#everything">Productos<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/es/daviana/">Daviana</a><a href="/es/ai-receptionist/">AI Receptionist</a><a href="/es/colorlab/">ColorLab</a><a href="/es/bar/">Bar</a><a href="/es/performance/">Performance</a><a href="/es/people/">People</a></div></span>
+    <a href="/pricing/">Precios</a>
+    <span class="navdrop"><a href="/blog/">Recursos<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculadoras</a><a href="/faq/">Preguntas</a></div></span>
   </nav>
   <a class="btn btn-g" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Reserva una demo</a>
 </div></header>
@@ -1146,29 +1163,41 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 (function(){
  var hd=document.querySelector('#hd .nav'); if(!hd||document.querySelector('.hamburger')) return;
  var lang=(document.documentElement.lang||'en').slice(0,2);
- var prefix=(lang&&lang!=='en')?'/'+lang:'';
  var ham=document.createElement('button');ham.className='hamburger';ham.setAttribute('aria-label','Menu');
+ ham.setAttribute('aria-expanded','false');
  ham.innerHTML='<span></span><span></span><span></span>';hd.appendChild(ham);
  var ov=document.createElement('div');ov.className='mnav-ov';
  var panel=document.createElement('aside');panel.className='mnav';
- var x=document.createElement('button');x.className='mnav-x';x.setAttribute('aria-label','Close');x.innerHTML='×';panel.appendChild(x);
- var secs=[].slice.call(document.querySelectorAll('#hd .navlinks a')).filter(function(a){return !a.closest('.navdrop-menu');});
- if(secs.length){var g=document.createElement('nav');g.className='mnav-secs';secs.forEach(function(a){var e=document.createElement('a');e.href=a.getAttribute('href');e.textContent=a.textContent.replace(/▾/,'').trim();g.appendChild(e);});panel.appendChild(g);}
- var pgt=document.querySelector('#hd .navlinks a[href="#everything"]');
- var pg=document.createElement('div');pg.className='mnav-grp';
- var h=document.createElement('h4');h.textContent=(pgt?pgt.textContent.replace(/▾/,'').trim():'Products');pg.appendChild(h);
- [['Daviana','daviana'],['AI Receptionist','ai-receptionist'],['ColorLab','colorlab'],['Bar','bar'],['Performance','performance'],['People','people']].forEach(function(p){var a=document.createElement('a');a.href=prefix+'/'+p[1]+'/';a.textContent=p[0];pg.appendChild(a);});
- panel.appendChild(pg);
+ panel.setAttribute('role','dialog');panel.setAttribute('aria-label','Menu');
+ var x=document.createElement('button');x.className='mnav-x';x.setAttribute('aria-label','Close');x.innerHTML='\u00d7';panel.appendChild(x);
+ // top-level items that are NOT dropdown triggers
+ var flat=[].slice.call(document.querySelectorAll('#hd .navlinks > a'));
+ if(flat.length){var g=document.createElement('nav');g.className='mnav-secs';
+  flat.forEach(function(a){var e=document.createElement('a');e.href=a.getAttribute('href');
+   e.textContent=a.textContent.replace(/\u25be/,'').trim();g.appendChild(e);});
+  panel.appendChild(g);}
+ // one group per dropdown, whatever they happen to be
+ [].slice.call(document.querySelectorAll('#hd .navdrop')).forEach(function(dd){
+   var trig=dd.querySelector(':scope > a'); if(!trig) return;
+   var grp=document.createElement('div');grp.className='mnav-grp';
+   var h=document.createElement('h4');h.textContent=trig.textContent.replace(/\u25be/,'').trim();
+   grp.appendChild(h);
+   [].slice.call(dd.querySelectorAll('.navdrop-menu a')).forEach(function(a){
+     var e=document.createElement('a');e.href=a.getAttribute('href');e.textContent=a.textContent;
+     grp.appendChild(e);});
+   panel.appendChild(grp);
+ });
  var alts={};alts[lang]=location.pathname;
  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function(l){var hl=l.getAttribute('hreflang');if(hl&&hl!=='x-default')alts[hl]=l.getAttribute('href');});
- var LN={en:'English',it:'Italiano',ru:'Русский',es:'Español'};
+ var LN={en:'English',it:'Italiano',ru:'\u0420\u0443\u0441\u0441\u043a\u0438\u0439',es:'Espa\u00f1ol'};
  var lg=document.createElement('div');lg.className='mnav-grp mnav-langs';
  ['en','it','ru','es'].forEach(function(c){if(!alts[c])return;var a=document.createElement('a');a.href=alts[c];a.textContent=LN[c];if(c===lang)a.className='on';lg.appendChild(a);});
  panel.appendChild(lg);
  document.body.appendChild(ov);document.body.appendChild(panel);
- function op(){document.body.classList.add('mnav-open');}
- function cl(){document.body.classList.remove('mnav-open');}
+ function op(){document.body.classList.add('mnav-open');ham.setAttribute('aria-expanded','true');x.focus();}
+ function cl(){document.body.classList.remove('mnav-open');ham.setAttribute('aria-expanded','false');}
  ham.addEventListener('click',op);x.addEventListener('click',cl);ov.addEventListener('click',cl);
+ addEventListener('keydown',function(e){if(e.key==='Escape')cl();});
  panel.addEventListener('click',function(e){if(e.target.tagName==='A')cl();});
 })();
 </script>
