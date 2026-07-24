@@ -1,0 +1,636 @@
+# SalonForge — full content corpus
+
+Everything below is published at https://salonforge.com and may be quoted with attribution to SalonForge.
+
+## Screening stylist applicants without spending a week reading CVs
+Source: https://salonforge.com/blog/screening-stylist-applicants/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Most salon owners hire between clients. An application lands while you are half-way through a colour, or at the till at close, and it goes into a mental pile marked "later." Later is usually Sunday night. By Sunday night, the days have already slipped by, and the stylist you most wanted to see has already had a trial somewhere that replied earlier in the week.
+
+This is not a hiring-skill problem. It is a timing problem wearing a hiring-skill costume. Fix the timing and the rest gets much easier.
+
+## Why the CV is the wrong thing to screen on
+
+A CV tells you a stylist's work history. It does not tell you whether they can do the job in your salon.
+
+Years of experience, salon names, a list of brands they have trained on — none of it tells you how someone behaves in front of a client who has brought in a phone photo of someone else's hair and expects to walk out looking like it. It does not tell you whether they rebook, whether they upsell without being pushy, whether they can keep a chair moving on a Saturday without rushing anyone. Those are the things that actually decide whether a hire works out, and none of them are on the page.
+
+| What the CV tells you | What it doesn't tell you |
+| --- | --- |
+| Where they've worked and for how long | Whether they kept clients, or churned through them |
+| Brands and courses they've trained on | Whether they can actually execute a technique start to finish, on time |
+| Job titles (senior stylist, colour specialist) | How they talk to a nervous client, or one who won't stop talking |
+| Employment gaps | Whether the gap was a baby, a bad salon, or something worth asking about gently |
+| A tidy, well-formatted document | Whether they can keep a chair moving without rushing the client |
+| That they can list "team player" | Whether the rest of the team will actually want to work beside them |
+
+None of this means the CV is useless. It tells you enough to decide whether to pick up the phone. It just should not be the thing you spend a week reading, because the answers you actually need are not written down anywhere on it.
+
+> A CV tells you where someone has been. It never tells you what they do when a client's hair does not match the photo.
+
+## Why a trade test beats an interview
+
+A trade test beats an interview because it shows you the work instead of a description of the work.
+
+An interview is a conversation about hairdressing. A trade test is hairdressing. Sit a candidate down with a model or a willing friend, next to one of your own stylists, and give them a real or close-to-real brief — nothing elaborate, just something they would actually be asked to do on a normal Tuesday. In a short session you learn more than a long interview would give you:
+
+- **Consultation.** Do they ask what the client actually wants, or start cutting to what they assume?
+- **Timing.** Do they work at a pace that would survive a full column on a Saturday?
+- **Finish.** Is the result something you would put in front of your own clients?
+- **How they take direction.** If you or another stylist offers a suggestion mid-service, do they take it, or dig in?
+- **How the room reacts to them.** Your other stylists will tell you afterwards, unprompted, whether they'd want this person on the next chair. That reaction is worth more than most interview scoring sheets.
+
+An interview can be rehearsed. A trade test cannot. Someone can talk beautifully about client care and still turn a consultation into a monologue the moment there is a client in the chair.
+
+## Structuring the first phone call
+
+The first phone call has one job: decide fast whether it is worth bringing someone in for a trade test. Keep it short and cover three things, in this order.
+
+1. **Can they actually start.** Notice period, days and hours they can work, employed or self-employed or chair-rental, and whether that matches what you are offering. This is the fastest possible filter, and it is astonishing how often it gets asked last, after a long chat about technique.
+2. **What they actually do.** Not "what services do you offer" — what do they specialise in, what does a typical week look like, how would they describe their own client base. Listen for specifics. Vague answers here tend to mean a vague stylist.
+3. **Why this salon.** Why they applied here, not just anywhere with a chair going. Someone who mentions something specific about your salon — the client base, the location, something a friend told them — is a different prospect from someone working through a long list of other adverts open in other tabs.
+
+If all three land, book the trade test on that call, there and then, before you hang up. Every day between "that went well" and "come in Thursday" is a day a stronger salon can get to them first.
+
+## Why speed of reply matters more than almost anything else
+
+Speed of first reply matters because a stylist looking for a chair is very rarely looking at only one salon.
+
+They apply to several places in the same week. The salon that replies first gets first go at a trade test, and the trade test is usually where the decision actually gets made. A salon that takes too long to reply is not competing on who has the better offer — they are competing on who never got the chance to make one, because the candidate had already trialled and accepted somewhere else.
+
+This is why the "read them all on Sunday night" pattern is so costly. It is not that Sunday-night reading produces worse judgement. It is that the good candidates are gone by Sunday night, and the ones still waiting by then are disproportionately the ones nobody else wanted quickly either.
+
+The fix does not require reading every CV the moment it lands. It requires replying the moment it lands — even a short message confirming you have it and naming a day you will call. That single message is often the difference between a candidate who stays warm and one who assumes the job is filled and moves on.
+
+## What this looks like without a spreadsheet on the side
+
+Hiring usually falls apart in the gap between three separate places: applications sitting in an inbox, a shortlist scribbled on a phone note, and a rota that has nothing to do with either. The candidate everyone liked at the trade test gets lost between the note and the rota, and the reply that should have gone out immediately goes out a week late instead, because whoever owns the inbox was on the floor all week.
+
+The point of keeping applicants, trade tests and the rota in one place is not neatness for its own sake. It is that a starter who trialled well should move onto the rota the same day, not get typed into it from memory a week later once someone remembers. From advert to first day on the floor, one record, so nothing sits waiting on a Sunday that could have moved on a Tuesday.
+
+## Start with the reply, not the read
+
+If you take one thing from this: stop trying to read every CV properly before you reply to any of them. Reply first, read second.
+
+A same-day acknowledgement, a short call within the week structured around start date, actual work, and why-this-salon, then a trade test for anyone who clears that bar. That order gets you to the same decision you would have reached after a week of careful reading — except you reach it while the good candidates are still available to hear it.
+
+---
+
+## Why is salon stock always going missing? Back bar control that works
+Source: https://salonforge.com/blog/salon-stock-going-missing/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+## Back bar and retail are two different problems
+
+Back bar stock and retail stock go missing for different reasons, and counting them together in one stock take is why most salons can never explain the gap. Back bar is product used on the client during a service — colour, shampoo, conditioner, the treatment ampoule opened for a top-up, the tub of mask scooped out during a blow-dry. Retail is product sold to a client to take home — the same brand of shampoo, but bought at the till on the way out the door.
+
+They drift for different reasons too. Back bar use should be tied to an appointment: a stylist opens a tube, some of it goes on a head, and unless that gets written down against the client record, it simply disappears from the count with no trace of why. Retail use should be tied to a sale rung at the till — if it isn't rung, or rung against the wrong product, the retail number drifts for reasons that have nothing to do with what's happening at the colour bowl.
+
+Run one stock take covering both once a year and you get a single, frightening total with no way to split it — no way to tell whether it's colour going on more heads than the diary shows, retail walking out unpaid, or a supplier short-delivering a box that was never checked at the door. A combined number can't tell you, and a combined number is usually where "somebody must be stealing" starts.
+
+| | Back bar | Retail |
+|---|---|---|
+| What it is | Product used on the client during the service | Product sold to the client to take home |
+| Where it should be recorded | Against the appointment or colour formula | At the till, as a sale |
+| Typical cause of a gap | Unlogged use — product used but never written down | Under-ringing, wrong item rung, unrecorded staff purchases |
+| Who records it | The stylist, mid-service | The front desk, at the point of payment |
+| What actually fixes it | Deducting automatically from what's weighed or used | Reconciling till sales against a physical count, regularly |
+
+## Why "missing" stock almost never means theft
+
+Most stock that looks missing was used, not stolen — it just never got written down. Picture an ordinary Saturday: a colour tube runs out partway through a long-haired client's foils, and a stylist grabs another off the shelf without stopping to log it because there's a queue at reception and a blow-dry waiting. A conditioner sachet goes home with a client after a complaint about dry ends, as a goodwill gesture nobody thought to record anywhere. A junior borrows a tester of the new range to try on her own hair over the weekend. A rep leaves samples that get handed out over a fortnight, uncounted in and uncounted out.
+
+None of that is theft. All of it is product leaving the shelf without a matching entry anywhere, which is exactly what a stock take measures — the gap between what was bought and what's left, with no visibility into why.
+
+> A number with no story attached always gets read as theft. Give it a story and it almost always isn't.
+
+That doesn't mean theft never happens, in any salon, anywhere. It means it should be the last explanation reached for, not the first — and it should never be the explanation offered to a team before the unrecorded-use possibility has been ruled out. A team that feels accused over a number nobody can explain stops trusting whoever's doing the counting, which makes the real problem — the unrecorded use — harder to fix, not easier.
+
+## Why an annual stock take tells you nothing useful
+
+An annual count only proves that a gap exists — it can't tell you when it opened up, who was on the floor at the time, or which of the many small unlogged actions over the year added up to the total. By the time the count happens, the Tuesday afternoon that caused any particular loss is long gone from everyone's memory, and there's no way back to it.
+
+Averages hide problems too. One colour line might be significantly over-used against what the diary says was booked, while a slower-moving retail line sits close to correct — net them together across a full range and the total can look almost fine while one shelf is badly wrong underneath it.
+
+## What counting rhythm actually works
+
+Counting little and often, tied to delivery and to the diary, beats one long reconciliation because it shrinks the time between a product disappearing and someone noticing.
+
+- Check stock in against the delivery note as it arrives, before it goes on the shelf, not weeks later.
+- Count the high-value back bar lines — colour, bond builders — weekly, against what the diary says was actually used that week.
+- Reconcile retail against till sales weekly rather than monthly, while the week is still fresh enough that a mismatch means something.
+
+None of this needs to be a large exercise. A five-minute count against a clear number, every week, catches drift while it's still small enough to explain.
+
+## What changes when stock is deducted at the point of use
+
+The picture changes completely once product is deducted the moment it's used, rather than estimated afterwards from a shelf count. Colour weighed on a connected scale and costed to the gram, written straight to the client record, means the formula a stylist actually mixed is the number that comes off the shelf — not an estimate, not a guess reconstructed at the end of the month. That's been recorded 19,949 times so far across six working salons, from London to Saudi Arabia, and in every one of those the amount used and the amount logged are the same figure, because they're the same act.
+
+The same logic works away from the colour bowl. A drink poured for a client and logged against their name deducts from stock the moment it happens, so a round of coffees on a Friday afternoon is a recorded event tied to an appointment, not a mystery when someone totals the fridge in December.
+
+Once use is recorded at the moment it happens, there's very little left to reconcile. Stock levels already reflect what actually happened on the floor, because every gram of colour and every drink logged came off the count the moment it was used, not weeks later at a stock take. And the conversation with the team changes shape entirely — from "the numbers don't add up, does anyone know why" to nothing at all, because there was never a gap left for anyone to explain.
+
+---
+
+## 12 questions to ask before switching salon software
+Source: https://salonforge.com/blog/questions-before-switching-salon-software/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+A salon changes its booking software about as often as it repaints the front desk — rarely, and usually because something broke rather than because the timing was right. That makes it hard to know what a normal changeover looks like, or which questions actually matter versus which ones a sales conversation is designed to steer you around.
+
+These are the twelve worth asking. Ask them of us and ask them of anyone else on your shortlist. The honest answer to several of them is "it depends" — what matters is whether the person answering can tell you what it depends on.
+
+## The shortlist
+
+| Ask about | Why it matters |
+| --- | --- |
+| Data ownership | Decides whether you can ever leave |
+| The changeover | Decides how bad your worst Saturday gets |
+| Per-stylist pricing | Decides what growth actually costs you |
+| The exit | Decides what happens if this goes wrong |
+
+## Your data
+
+### 1. Who owns your client and appointment data — and can you export it yourself, any time you like?
+
+The honest answer should be: you do, and you can pull it yourself without asking anyone's permission or waiting on a request. Try this before you sign, not after. Ask for a sample export of your current client list and appointment history, today, while you are still just looking. If the answer involves a support ticket, a delay, or a fee to get your own client list back, that is worth knowing now.
+
+### 2. What happens to your appointment history — the bookings, the notes, the colour formulas, going back years?
+
+This depends on what you ask for and what the provider migrates by default. Some systems bring years of history across as data you can still use — a stylist can open a client's record and see the actual colour formula from years back. Others only move a current client list, and the history becomes a static file you can look at but nothing on the new system can read. Ask for the date range in writing.
+
+### 3. Will the export come out in a format another system can actually read?
+
+There is a real difference between a plain file — the kind any other software can open and use — and a PDF or printout that just sits there. Ask to see an actual export, not a description of one. This is the question that protects you against whoever you switch to next, not just the one you are switching to now.
+
+> The honest answer to most of these questions is "it depends" — the provider willing to say what it depends on is telling you more than the one with a rehearsed yes.
+
+## The changeover
+
+### 4. How long does the changeover really take, start to finish?
+
+It depends on your salon's size, how many years of history you are bringing across, and how many stylists need their own price lists set up. Get real dates in writing rather than a verbal "a few days". Ask what "live" actually means too — a client list moved across is not the same as a rota built, prices set per stylist, and online booking switched over.
+
+### 5. What happens on the first Saturday?
+
+This is the question that separates a provider who has done this before from one reciting a pitch. Ask directly: if the online booking page breaks, or the front desk cannot find a client's history on a Saturday morning, who do you call, and are they actually answering calls that day. A provider who has not thought hard about the first Saturday has not run many changeovers.
+
+### 6. Who trains your staff, and what happens to the stylist who is on holiday that week?
+
+Ask whether training happens in person or over a call, once or on an ongoing basis, and what happens for the self-employed stylist who only works part of the week and misses the session entirely. A one-off training day works for a salon that is fully staffed and available. Most salons are not.
+
+## The money
+
+### 7. What does it cost when you add a stylist — or lose one?
+
+Get the exact number per seat, not a banded price that turns out to depend on your total headcount. Ask directly whether a self-employed stylist renting a chair part time costs the same as a full-time employed one, and what happens to that cost while a chair sits empty during maternity leave or long-term sick.
+
+### 8. Is there a setup fee, and what does it actually buy?
+
+Ask what the fee covers in plain terms: moving your data, building each stylist's price list, connecting the till, training the desk. Or is it a fee to start clicking about, with the real work — the part that actually gets the diary working — quoted separately once you are already committed.
+
+### 9. What is in the quoted price, and what turns up as an add-on later?
+
+Ask specifically about the phone, colour weighing, card payments, and the rota. Some of these are included as standard; some are priced as extras that only surface in the contract, or worse, well after you have signed. Get every line item named before you sign, not implied.
+
+| What to check | Question to ask |
+| --- | --- |
+| Setup | Is this a one-off fee, and what exactly does it include? |
+| Per stylist | Is the price the same for employed and self-employed? |
+| Card payments | Is processing included, or billed separately? |
+| The phone | Does anything answer calls when the desk is busy, and at what cost? |
+
+## Getting out
+
+### 10. What happens if you decide to leave?
+
+Most providers will tell you that you can leave whenever you like. Push past that line. Ask how long an export actually takes, whether it costs anything, and whether you keep access to look things up while you move to whatever comes next. "You can leave any time" and "you can leave any time with your data intact" are different promises.
+
+### 11. Is there a minimum contract term, and what is the real notice period?
+
+Some run rolling monthly agreements; others tie you in for a year or more, with a cost attached to leaving early. Ask for the notice period in days, not the word "flexible". If there is hardware involved — a card machine, a colour scale — ask what happens to it if you leave: whose is it, and does it need to go back.
+
+### 12. Who answers the phone on a Monday morning when something is broken?
+
+Ask for the actual support hours, in writing, not "we're always here". Ask what happens specifically on a bank holiday weekend, because that is when a till going down costs the most and help is hardest to reach.
+
+## The question underneath all the others
+
+Can you get your data out, in a form you can use, without a fight? Every question on this list is really that one question, asked about time, money, or a phone call on a Monday morning.
+
+Ask it of every provider on your shortlist, including us. The salon that asks these twelve questions before signing is the one that is not surprised further down the line.
+
+---
+
+## Live commission tracking: why stylists shouldn't wait for payday to see their numbers
+Source: https://salonforge.com/blog/live-commission-tracking/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Ask a stylist what they are owed this month and most cannot tell you. Not because they do not care about their pay, and not because the commission structure is a secret — because the only place the number exists is a spreadsheet somebody else is holding, and it only gets shown to them once, on payday, as a finished answer.
+
+That is the moment an argument gets born. Not because the maths is wrong. Because there was no way to check it before it arrived.
+
+## Why payday-only numbers create disputes
+
+A stylist who cannot see their commission until payday has no way to notice a problem until it is already a disagreement. They remember a good week, they remember three colour clients who rebooked, they have a rough feeling for what they are owed — and then a number appears that either matches that feeling or does not.
+
+When it does not match, there is nowhere to go but back through the month by memory, against a spreadsheet somebody else maintains. That is not a conversation between colleagues. It is one person's memory against another person's record, and the stylist is always on the weaker side of that exchange, because they cannot point at anything.
+
+Most of the time the number is correct. The dispute happens anyway, because the stylist had no way to know that in advance.
+
+> The number should never be a surprise on payday. If it is, transparency has already failed.
+
+## What should actually be visible
+
+Commission is only one line of a bigger picture, and showing it alone tends to raise more questions than it answers. A stylist needs the inputs that build the number, not just the total.
+
+| What's visible | Why it matters to the stylist |
+| --- | --- |
+| Takings | The raw number commission is worked out from |
+| Rebooking | The number that predicts next month's takings, not just this month's |
+| Retail | Often forgotten in commission talk, and often worth more than people assume |
+| Commission running total | The number they actually get paid, building in real time |
+
+Put those four together on one screen and a stylist stops needing to ask "what am I owed." They can see it building, appointment by appointment, the same way they can see their own rota. Nothing about pay stays behind a curtain until the end of the month.
+
+## Why it has to come from the real diary
+
+The obvious shortcut is a spreadsheet: takings copied out at the end of each week, commission worked out on the side, a total sent round before payday. It looks like transparency. It is not, because it is a second record of something that already exists once — in the diary the desk actually books into.
+
+Two records of the same thing drift. An appointment gets moved and the spreadsheet does not catch the change. A no-show gets marked in the diary but not carried across. A retail sale gets logged at the till but never makes it into the sheet somebody is updating by hand at 11pm on a Friday. None of this is anyone lying — it is what happens whenever the same fact is asked to live in two places at once, kept in step by a person rather than by the system that already has the answer.
+
+Commission worked out from the same diary the desk actually uses removes that gap entirely, because there is only one record of what happened. What the stylist sees live and what payroll calculates at the end of the month are reading the same appointment, the same rebooking, the same retail sale — not two versions of it that were supposed to match.
+
+## The awkward truth: it only works if the numbers are right
+
+Transparency is not automatically a good thing. Showing a stylist a live number and having that number be wrong is worse than showing them nothing, because now the system itself has told them something false, and the next correct number gets doubted too.
+
+This is the part that gets skipped in most conversations about pay transparency, and it is the part that decides whether the whole idea works. A live number earns trust by being checked against reality, over and over, until the stylist stops double-checking it — not by looking impressively detailed on a screen. The detail is not the point. Being consistently correct, week after week, is the point.
+
+That means the commission structure itself has to be set up properly before anyone sees a live number: the right rate against the right service against the right stylist, retail counted the way it was promised to be counted, no silent exceptions nobody explained. Once that groundwork is right, showing the number live is the easy part.
+
+## Why this is a retention story, not a payroll story
+
+The instinct is to file live commission under admin — a nicer payroll process, less chasing at the end of the month. That undersells what it actually does.
+
+A stylist who feels shortchanged rarely says so twice. The first time, they raise it, and if the answer is unsatisfying or the number cannot be explained, they quietly conclude that the pay here cannot be trusted. The second time, they do not raise it. They start looking at other salons, because a stylist who cannot see their own numbers assumes the worst version of what is happening to them, and there is no record to prove them wrong.
+
+Live numbers change what that moment looks like. If a stylist can check their commission any afternoon and it always matches what lands on payday, there is nothing left to build a grievance around. The trust is not a slogan on the wall — it is the simple, repeated fact that the number they saw mid-month was the number they got paid.
+
+## What this looks like day to day
+
+A stylist finishes a colour appointment, and the takings, the retail add-on, and the running commission total move before they have finished sweeping the section. Nobody sends a spreadsheet round. Nobody has to reconcile anything at the end of the month, because there was only ever one number, visible the whole time.
+
+Payday becomes uneventful. That is the entire goal. A payslip that confirms what the stylist already knew is not an event — it is just Tuesday. The disputes that used to eat an afternoon of the manager's time disappear, not because anyone got better at explaining commission, but because there was never a gap between what was expected and what arrived.
+
+---
+
+## How much hair colour is your salon really wasting?
+Source: https://salonforge.com/blog/hair-colour-waste/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+## Where does the wasted colour actually go?
+
+It goes down the plughole, unweighed and unrecorded, every time a bowl gets rinsed out at the end of a colour service. No colourist would tell you this never happens — ask around and most will admit some colour gets mixed and never used most days. What's different is that nobody can say how much, because the moment it happens, the evidence is gone. Not written on the till. Not in the client record. Not on a stock sheet. Just colour that existed a minute ago and now doesn't.
+
+That absence is the whole problem. You cannot manage what was never measured, and in most salons colour waste has never been measured at all.
+
+## Why overmixing is the rational choice, not a mistake
+
+A colourist who mixes a bit more than a head needs is doing exactly what a careful professional should do with the information in front of them. Running short mid-head, with foils already in and a client watching the clock, is one of the worst positions to be caught in. It means a scramble to re-mix and a formula that might not match if it's guessed under pressure. Against that risk, mixing a bit extra "to be safe" costs nothing that anyone can see in the moment.
+
+That's the point. The cost is invisible at the exact moment the decision gets made. A tube tells you how much colour is in it, not how much a particular head actually needs, and the two numbers are rarely the same. Nobody is doing sums with a scale in one hand while foiling with the other. So the safe choice — mix a bit extra — is also, quietly, an expensive one, repeated across every chair, every day, with nobody able to see the total it adds up to.
+
+This isn't a stylist problem to be fixed with a talking-to. It's a visibility problem. Ask a room of colourists to guess how many grams a full head of highlights needs and the answers will vary widely. Ask the same room to weigh it once and check, and most of the guessing stops being necessary.
+
+> Waste doesn't announce itself. It goes down the plughole looking like nothing happened.
+
+## The record that never gets made
+
+A tube-based stock system can tell you how many tubes were opened this month. It cannot tell you how much of each tube ended up on a client's hair versus down the sink. The two get flattened into one line on a stock order — "colour used" — when really it's three separate things stacked on top of each other: colour on the head, colour left in the bowl, and colour still in the tube for next time.
+
+Across the wider industry, the scale of this is not small. Salon waste — colour, foils, packaging, product mixed and never used — is well understood inside the trade as a real, ongoing cost, even without a single agreed figure for how much of it is colour specifically. No outside study can tell you what your own back bar loses; only your own bowls can do that. But the shape of the problem is real and worth a proper look, not something imagined.
+
+## What changes when the bowl sits on a scale
+
+Nothing changes about how the colour is mixed. What changes is that the bowl sits on a connected scale, so every gram going in is weighed as it happens, not guessed and not estimated after the fact. That weight is costed to the gram and written straight into the client record, so the next stylist who colours that client sees the formula that was actually used last time, not a note that says "usual colour, ask her."
+
+Across the six working salons already running this way, from London to Saudi Arabia, that's meant 19,949 colour formulas weighed and costed to date — each one landing in a client record instead of disappearing down the drain unrecorded. The point isn't to police anyone's mixing. It's to make the bowl visible for the first time. Once a salon can see, formula by formula, how much gets mixed against how much a head of that length and density actually needs, patterns become visible in a way they never were before — which formulas tend to run heavy, and which colourists are already weighing close to what a head actually needs.
+
+## Tube guess vs weighed bowl
+
+| | Guessing from the tube | Weighing the bowl |
+|---|---|---|
+| What gets recorded | Tubes opened per month | Grams actually used, per client, per visit |
+| Who sees last time's formula | Whoever remembers, or a scribbled note | The next stylist, straight from the client record |
+| Where waste shows up | Nowhere — it's already down the drain | On the day it happens, against that day's formulas |
+| What the owner can see about usage | Habit and gut feel | What was actually mixed and used, formula by formula |
+| Who carries the invisible cost | The salon, silently, every day | Made visible, then a decision for the owner |
+
+## What to do in the first week
+
+Weigh before you change anything. The instinct is to walk in on day one and tell colourists to mix less, but that skips the step that actually works: see what's happening before anyone tries to fix it. In the first week, the only job is to get every bowl onto the scale and let the numbers build up — no new targets, no comparisons between colourists, nothing that feels like a test being run on anyone.
+
+By the end of the week you'll have something the salon has never had before: a real number, on your clients, from your colourists' actual formulas. That's the moment to look at it properly — not chair by chair, but pattern by pattern. A handful of formulas will usually stand out straight away. Everything after that is a conversation about the number, not a guess about the person.
+
+We've written separately about [what it actually costs to run colour to the gram once you have that number](/blog/colour-cost-per-gram/) — this piece is about getting the number in the first place. The plughole has been quiet for a long time. The first week on a scale is just about finally listening to it.
+
+---
+
+## Why colour formulas get lost when a stylist leaves
+Source: https://salonforge.com/blog/colour-formulas-when-stylist-leaves/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Ask a salon owner what happens to a client's colour when their stylist leaves, and most will talk about the client first — will she follow him to his new salon, will she give someone else a try. Fewer stop to ask a smaller, more practical question: does anyone still know what was actually in her bowl.
+
+That second question matters more than it gets credit for. A colour relationship built over three or four years is not really about the stylist's manner or the conversation at the basin. It is about a formula that has been quietly refined, visit after visit, until it matches this one client's hair exactly. If that formula only ever existed in one person's head, it walks out the door the day they do — and the client is the one who finds out.
+
+## Where does a colour formula actually live?
+
+In most salons, a colour formula exists in three places at once: the client's memory of what she asked for, the stylist's memory of what they mixed, and — if the salon is disciplined about it — a card in a drawer. None of the three travel well.
+
+The client remembers "the honey blonde we did last time," not grams and developer strength. The stylist's memory is sharp for the client they see every six weeks and fades fast for the one they haven't seen since spring. The card only helps if someone filled it in properly on the day, and only if whoever reads it next can make sense of what they wrote.
+
+## Why a paper colour card decays
+
+A paper card decays because it is written once, in shorthand, for an audience of one. That audience is the person who wrote it, and eventually that person is not in the building any more.
+
+Ink fades. Cards get filed in the wrong client's folder during a busy week. The shorthand itself is often personal — one colourist's "half a strip" is another's "a slice," and a formula written as a string of numbers and a shade code means little to someone who trained under a different colourist. Brands also reformulate their shade ranges from time to time, so a reference number written down two years ago may no longer match what is actually on the back bar today.
+
+## The card says what was planned. The bowl says what happened.
+
+This is the part most colour records miss entirely: a card is usually written from the plan, not from what was actually weighed in that appointment. On the day, a colourist adjusts. A touch more lift because the regrowth is stubborn. An extra few grams of a cooler tone because the hair pulled warmer than usual that week. Those are small, sensible, professional judgement calls — and they are exactly the adjustments that never make it onto a card, because there is no natural moment mid-service to stop and write them down.
+
+> A colour card tells you what the stylist meant to do. Only the scale knows what actually went in the bowl.
+
+Ask any colourist and they will tell you the recipe on the card and the recipe that produced the result the client loved are rarely word for word the same thing.
+
+## What happens the day a colourist moves on
+
+Stylists moving on is not a crisis to manage. It is normal, and no salon avoids it. Movement between salons is a structural feature of the trade rather than a sign anyone did anything wrong, and every salon owner already knows what that looks like from the inside: people move toward better chairs, better hours, a shorter commute.
+
+The point where it becomes a problem is narrower than the leaving itself. It is what leaves with the stylist. If a long-standing client's formula lived only in that person's head or their own notebook, it goes with them. The next colourist is starting from scratch on a relationship that took years to get right, at the chair of a client who reasonably assumes everyone already knows her hair.
+
+That is often exactly the visit where a client goes quiet, says it's fine, and does not rebook. Not because the new colourist did a poor job — because a first attempt rarely lands the way a fifth attempt did, and nobody told her it would be a first attempt.
+
+## Whose record should this actually be?
+
+The formula belongs to the client, held on her record by the salon — not to whichever stylist happened to be the one who wrote it down. It is her hair and her history at that chair; the fact that one particular person mixed it last time is incidental to what she is owed on her next visit, whoever is holding the brush.
+
+| Where the formula lives | What it captures | What survives when the stylist leaves |
+| --- | --- | --- |
+| In the stylist's head | Every small adjustment, but only while they are in the building | Nothing |
+| On a paper card | The planned recipe, in the writer's own shorthand | A recipe that may no longer match what's on the back bar |
+| Weighed and logged to the client record | The grams actually used, on the day, attached to the client | The exact formula, ready for whoever takes the chair next |
+
+## What changes when the formula is weighed and logged automatically
+
+Nothing changes for the colourist mixing on a Saturday. The bowl goes on a connected scale as it always would; the weight of every shade and the developer is costed to the gram and written to the client's record in the moment, without anyone stopping to fill in a card. That has already happened across 19,949 colour formulas weighed and costed inside our own working salons, from London to Saudi Arabia, so the next stylist to sit that client down is reading the actual formula used last time, not a memory of one, and not a card that might be two colourists and one reformulation out of date.
+
+Stylists will always move on, and that is fine — salons are built out of people building careers. What should not move on with them is a client's colour history. Keeping the formula with the client rather than with whoever happened to write it down is the difference between a stylist leaving being an ordinary Tuesday, and a stylist leaving quietly costing you a client you'd had for years.
+
+---
+
+## Colour cost per gram: the number most salons don't know
+Source: https://salonforge.com/blog/colour-cost-per-gram/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Ask a salon owner what a cut costs them and they will tell you to the minute: the stylist's time, the chair, the wash. Ask what a head of colour costs them and the answer changes shape. It becomes a shrug, a rough tube count, or a number from the wholesaler's invoice divided by however many colour clients came through that month.
+
+That is not a criticism. It is a measurement problem. Time is easy to see — it is in the diary. Colour disappears into a bowl.
+
+## Why the tube is the wrong unit
+
+A tube of colour is a purchasing unit. It is not a serving unit.
+
+When you price by the tube, you are making an assumption that every head uses a neat fraction of one — a half, a third, a whole. Real heads do not work like that. A short root touch-up and a long balayage might both be logged as "a colour," and the second one might use four times the product of the first. Priced by the tube, they look identical on paper.
+
+The gap between those two heads is where the money is. And it stays invisible for as long as the unit of measurement is the tube.
+
+## What weighing actually shows
+
+Put a scale under the bowl and the picture changes immediately. You stop seeing "a colour" and start seeing 46 grams of one shade, 18 of another, 64 of developer. Multiply each by its cost per gram and you have the true product cost of that head — not an average, not an allocation, the actual number.
+
+Across 19,949 colour bowls weighed inside our own salons, three things came up again and again:
+
+- **Overmixing is the default.** When you cannot see the cost, the safe move is always to mix a bit more. Nobody wants to run out halfway through a head with foils in. So everyone rounds up, every time, and the rounding never gets measured.
+- **The same service costs wildly different amounts.** Two stylists doing the same service on the same hair length routinely mixed different quantities. Neither was wrong. Nobody had ever shown them the number.
+- **The waste is not in the expensive shades.** It tends to be in the everyday ones — the shades used constantly, where a few extra grams per head compounds quietly across hundreds of heads a month.
+
+> You cannot charge a client for the colour that went down the plughole. You can only stop mixing it.
+
+## The number to actually chase
+
+Once you can see cost per head, the useful number is colour cost as a percentage of the colour service price.
+
+| What you measure | What it tells you |
+| --- | --- |
+| Product cost per head | What that specific service actually cost you |
+| Cost as % of service price | Whether that service is priced right |
+| Mixed vs used, per head | Where the waste is |
+| Cost per stylist | Who needs a hand, not a telling-off |
+
+That last row matters more than it sounds. The point of measuring per stylist is not to police anyone. It is that a stylist who consistently overmixes has never been shown what a correctly sized bowl looks like for that service. That is a five-minute conversation, and it only becomes possible once there is a number to talk about.
+
+## What changes on the floor
+
+The honest version: not much, and that is the point.
+
+The stylist mixes as they always did. The bowl sits on a scale. The weights land on the client's record on their own. Nobody stops to write anything down, because anything that requires stopping on a Saturday does not survive contact with a Saturday.
+
+What changes is what you can see afterwards — per head, per stylist, per shade, per month. And what changes after that is what you do about it: the prices that were wrong, the services that were never profitable, the shade that everybody over-pours.
+
+## Where the record goes
+
+There is a second benefit that has nothing to do with cost, and salon owners tend to notice it faster than the money.
+
+Because the weights are recorded against the client, the next stylist to colour that client's hair can see what was actually used last time. Not the formula somebody meant to use, and not a note on a card that may or may not have been updated — the real mix, from the real bowl.
+
+That is the difference between a client whose colour is consistent and a client who quietly stops coming after a visit that did not match the last one. It is also what happens to your colour records when a stylist leaves: if the formula only ever lived in their head or their notebook, it leaves with them.
+
+## Start with one week
+
+You do not need a project to find your number. Weigh every bowl for one week and you will have enough to see the shape of it — where the spend actually goes, which services are underpriced, and how big the gap is between mixed and used.
+
+Most owners are surprised by the size of that gap. Almost nobody is surprised by where it is, once they can see it.
+
+---
+
+## One diary, one till, one client record: what all-in-one salon software actually means
+Source: https://salonforge.com/blog/all-in-one-salon-software-meaning/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Ask what "all-in-one" means and most salon owners can't quite say, only that they were promised it once and the promise didn't fully land. The dashboard looked tidy. The login was single. Six months in, the till still disagreed with the booking tool about who came in on Tuesday.
+
+That gap between the promise and the floor is the whole subject of this piece.
+
+## What "all-in-one" is actually supposed to mean
+
+It is supposed to mean one system running the whole salon — the diary, the till, the client record, the rota — instead of a diary here and a till there, stitched together by hand.
+
+What gets sold under that name is usually something narrower: several separate products, each built by a different team at a different time, bundled behind one login and one invoice. Booking lives in one part of it. Payment lives in another. Marketing emails pull from a third. Each of those parts very often keeps its own copy of the client — its own name, its own phone number, its own history — updated on its own schedule, sometimes overnight, sometimes only when someone remembers to check both places.
+
+One login is not the same thing as one record. The login is what you see. The record is what everything underneath is actually reading and writing.
+
+## Does everything know when a phone number changes?
+
+That is the test that actually matters, and it takes about thirty seconds to run. Change a client's phone number at the front desk, then check the till, the appointment reminder, and anywhere marketing pulls from. If they all show the new number within minutes, you have one record. If the till still has the old one until a nightly job catches up — or until someone remembers to fix it there too — you have several products wearing one badge.
+
+The same test works on colour. A bowl gets weighed on the scale. Does that actual cost land on the till at checkout, on the client's record for the next stylist, and in the month's numbers — or does it live only inside the tool that weighed it, disconnected from what gets charged? [We wrote about what happens when nobody can answer that question](/blog/colour-cost-per-gram/): the tube gets treated as the unit of cost, the gram never gets seen, and the gap between the two is where the money quietly goes.
+
+> Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree.
+
+## Several products behind one login, or one record
+
+The difference is easiest to see side by side, against the same five everyday moments on the floor.
+
+| What happens on the floor | Several products behind one login | One shared record |
+| --- | --- | --- |
+| A client's phone number changes | Fixed at the front desk; the till and any marketing tool may still show the old one until the next overnight refresh | Every screen reads the same client record — nothing left to catch up |
+| A colour is weighed on the scale | The cost sits inside the colour tool; the till keeps charging the old assumed price unless someone updates it by hand | The till sees what was actually mixed, the moment it is mixed |
+| A stylist leaves | Their notes on regular clients may live in a notebook, an old login, or a tool nobody else has access to | Client history stays on the record, not on the person who left |
+| Last month's rebooking rate | Pulled from whichever booking tool's own report; rarely matches the till's version exactly | Read straight from the diary that took the booking and the payment |
+| A no-show | Marked in the booking calendar; may or may not reach the till, the rota, or the client's card | One entry, visible everywhere the moment it happens |
+
+Nothing in that left-hand column is a scandal. It is what happens, quietly and by default, whenever the same fact is asked to live in more than one place and stay in step through nothing more than habit and a bit of luck.
+
+## What one record looks like on the floor
+
+It looks like nobody re-typing something that already exists somewhere else.
+
+The [AI Receptionist](/ai-receptionist/) books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at [ColorLab](/colorlab/) lands on the till and on the next stylist's screen without a formula being typed out from memory. A drink poured at the [Bar](/bar/) shows up against the client and against stock without a separate count at the end of the week. Commission at [Performance](/performance/) is [worked out live from the same diary the desk actually books into](/blog/live-commission-tracking/), not a spreadsheet rebuilt before payday. A stylist hired through [People](/people/) moves onto the rota the same day they are confirmed, rather than [getting typed in from memory a week later](/blog/screening-stylist-applicants/) once someone remembers.
+
+None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far without a single one living only in someone's notebook.
+
+## The questions to actually ask before you buy
+
+Ask what happens to one specific fact the moment it changes, and watch what the salesperson has to go and check to answer you.
+
+- If I change a client's phone number at the front desk, does the till see it immediately, or only after an overnight refresh?
+- If a colour is weighed on a scale, does that cost appear on the bill on its own, or does someone still have to type a price in?
+- If a stylist leaves, does the client's colour and service history stay on the record, or does it leave with them?
+- Is rebooking rate and commission worked out from the same diary the desk actually books into, or from a separate report someone builds by hand at the end of the month?
+- Can you show me that, live, on a real example — not a demo account built to look tidy?
+
+If the answer to any of those needs "let me check with the team," you have found the seam between two products.
+
+## What one record does not solve
+
+Being honest about this matters more than the sales pitch, so: one shared record fixes disagreement between systems. It does not fix everything else that makes a salon hard to run.
+
+It will not fix a service that was priced wrong to begin with — it will only show you the real cost of it faster than a tube count or a monthly invoice ever could. It will not make a stylist rebook a client who did not want to come back. It will not replace training, or a good trade test, or a manager who actually walks the floor. It will not fix a genuinely quiet week, a location that is not working, or a team that does not get on.
+
+And moving to it is real work, whatever anyone tells you at the demo. Years of client history sitting in separate old tools has to actually move, not just get promised a fresh coat of paint. Nobody should pretend that part is free. What it removes, once it is done, is the ongoing cost of the old way — retyping the same booking twice, chasing a colour cost that never reached the till, reconciling a commission spreadsheet against a diary it was never really connected to in the first place.
+
+That is the honest version of what "all-in-one" should mean: not a promise that running a salon gets easy, but a bet that the numbers stop arguing with each other, so the harder questions are the only ones left to answer.
+
+---
+
+## Can an AI answer your salon's phone and still book into the real diary?
+Source: https://salonforge.com/blog/ai-receptionist-real-diary/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+## What happens when two people ring for the same 2pm slot
+
+Two clients call within minutes of each other, both asking for a colour appointment at 2pm on Saturday. If the phone is answered by something sitting outside your diary, it checks a copy of your availability, tells the first caller yes, and moves on — with no way of knowing the same slot was just promised to someone else moments earlier on a different line. Both clients get a text confirming 2pm. One of them turns up to a chair that no longer exists.
+
+Our AI Receptionist doesn't check a copy of anything. It is the diary answering the phone. When it books that 2pm slot, the slot closes in Daviana — the same appointment diary the front desk is looking at on the same screen — at the same second the words are spoken. The next caller, moments later, is offered the very next available slot, because 2pm has already gone. There is no gap for two people to be told the same true thing at the same time, because there is only one diary and only one moment when a slot gets taken.
+
+## Why "connected to the diary" isn't the same as "part of the diary"
+
+Most phone-answering products for salons sit outside the diary and reach into it to check what's free. That reaching-in takes time, and time is exactly where double-bookings live. A service that connects to your diary is reading a snapshot of it — a few seconds old at best, longer if the connection is slow or the desk just made a change while the client was still on hold. A snapshot is always slightly behind the present moment, and a slightly-behind diary is how one chair ends up promised to two people.
+
+Ours has nothing to reach into, because there isn't a second system on the other end of a connection. The phone, the diary, the till and the front desk's screen are one record. When the AI Receptionist books a client in, that isn't a message sent asking Daviana to hold a slot on its behalf — it's Daviana itself doing the booking, because the AI Receptionist is part of it, not attached to it.
+
+> A phone service that checks your diary is always answering with a few seconds of yesterday. A phone that is the diary can only ever tell a client what's true this second.
+
+## Two ways to answer the phone, side by side
+
+The difference shows up hardest exactly when a slot is being fought over — a cancellation re-released later in the day, several people ringing about the same Saturday afternoon, a stylist's column filling while the desk is mid-colour with someone else in the chair.
+
+| | A phone service that reaches into your diary | The phone answered by the diary itself |
+|---|---|---|
+| Where the booking is written | Sent across to a second system, on a short delay | Written straight into the one diary the front desk already uses |
+| Two calls for the same 2pm | Both callers can be told yes before the two systems catch each other up | The instant one caller takes it, it's gone — nobody else can be offered it |
+| A slot freed by a cancellation | Shows as free once the systems next update one another | Free the moment it's cancelled, visible to the very next caller |
+| A price question | Quotes a general range, or promises someone will call back | States the stylist's actual price from the till, or says plainly it doesn't know |
+| Who untangles the clashes afterwards | Someone at the front desk, usually at the end of a long Saturday | Nobody has to — there was only ever one diary |
+
+## What it says when it doesn't know
+
+The direct answer: it hands the call to a person. The AI Receptionist is straight about price and straight about its own limits. If a client asks something it can't answer with real certainty — a bespoke colour correction quote, a question about a patch test, anything where a wrong answer would cost more than a short wait — it doesn't guess and it doesn't invent a figure. It says so, and passes the client through to someone on the floor. On price specifically, because it's reading the same till the front desk uses, it quotes the stylist's actual price for that service, not a rounded-off average across the salon. If a service isn't on that stylist's list, it won't make one up to sound helpful.
+
+That matters more than it sounds. A wrong price promised on the phone is worse than no price at all — the client arrives expecting one figure, and the desk is left having an awkward conversation to correct it in front of them. A system willing to say "I'm not certain, let me get someone who knows" protects a client's first impression of the salon far better than a confident guess ever does.
+
+## What owners actually notice, week to week
+
+Fewer calls ringing out when the desk is busy with someone in the chair, and fewer of the quiet clashes that used to surface later as a double-booked column or a client insisting they were quoted something different. Nobody sits down at the end of the day to reconcile two calendars, because there was only ever the one. The AI Receptionist answers calls and books into the real diary today across our own working salons, from London to Saudi Arabia, and into partner salons across five countries — the same diary the till already runs on too, not a separate system sitting alongside it.
+
+---
+
+## After-hours salon calls: what happens when nobody's on the desk
+Source: https://salonforge.com/blog/after-hours-salon-calls/
+Published: 2026-07-24  ·  Updated: 2026-07-24
+
+Every salon owner has had this call, or missed it. It comes in at 7:40pm, ten minutes after the last chair was swept for the night. It comes in on a Sunday, when the salon has never opened on a Sunday in its life. It comes in at 11am on a Saturday, when every receptionist on the desk is already talking to someone else, and it rings, and rings, and then it stops.
+
+Nobody chases that call. There is nothing to chase — no name was taken, no reason for calling was recorded, nothing landed in the diary. The only evidence it happened is a missed-call icon on a phone screen that gets cleared without a second thought before Monday.
+
+## What actually rings after the desk goes quiet
+
+Most after-hours calls are not a nuisance. They are somebody trying to book, at the only time they had a free moment to make the call.
+
+A client finishes work at 6pm and remembers she needs a colour appointment before a wedding. A new client has just been recommended the salon by a friend and rings straight away, because that is when people act on a recommendation — not during opening hours, when they are back at their desk. A regular's Saturday plans changed and she is trying to move Thursday's cut before she forgets.
+
+None of these people are doing anything unreasonable. They are calling when it suits them, which is exactly what a phone number invites. The problem is not that they called at the wrong time. It is that the salon was not able to hear them.
+
+## Which calls are bookable and which are just questions
+
+Not every missed call is a missed booking, and it is worth being honest about that split rather than treating every ring as lost revenue.
+
+Some calls are a straightforward booking that needs a slot. Some are a client wanting to move an existing appointment. Some are questions — parking, opening hours, whether the salon does a particular service, what a colour correction costs. A question call that goes unanswered is not the same loss as a booking call that goes unanswered, but both share the same problem: you cannot tell which is which unless somebody, or something, actually answers.
+
+| Call | What the caller wants | What happens when nobody picks up |
+| --- | --- | --- |
+| New client wanting to book | A slot in the diary | Rings the next salon on the list |
+| Existing client changing an appointment | A look at the real diary | Texts, waits, or turns up on the wrong day |
+| "Do you do balayage, and what does it cost" | A straight answer | Tries elsewhere, or gives up on the idea |
+| Parking, opening hours, a simple question | A quick answer | Assumes the salon is closed and moves on |
+| Something urgent before an event tomorrow | An answer right now | Books wherever picks up first, not necessarily you |
+
+The last row is the one that costs the most and gets noticed the least. Someone with an urgent need rarely waits. They call, and whoever answers first gets the booking.
+
+## Why most callers do not leave a voicemail
+
+The polite assumption is that a missed call becomes a voicemail, and a voicemail becomes a callback. In practice, most people never take that first step.
+
+Independent research on missed business calls puts the share of callers who reach a voicemail and hang up without leaving a message at around two in three, rising higher still for first-time callers with no existing relationship to the business — see [this research summary on missed-call behaviour](https://captureclient.com/blog/why-67-percent-callers-never-leave-voicemail). A new client with no loyalty to a particular salon has even less reason to wait around and record a message than an existing one does.
+
+That matches what happens on the floor. Voicemail asks for effort at the exact moment someone has already been mildly inconvenienced by not getting through. Most people take the easier path, which is to try the next number.
+
+## Why an unanswered phone is worse than no phone
+
+This is the part that is easy to miss: an unanswered phone is not a neutral outcome. It is worse than having no phone number at all.
+
+A caller who cannot find a number assumes nothing about the salon either way. A caller who dials a real number, hears it ring, and gets nothing has just learned something specific — that the salon exists, is presumably open or was recently, and still did not want to speak to them. That is a worse impression to leave with a new client than simply not being reachable.
+
+> A phone that rings and is never answered does not just miss a booking. It hands that booking straight to whichever salon answers next.
+
+The desk being busy with a real client in the chair is not a failing — it is the job working as intended. But from the caller's side, a phone that goes unanswered because the desk is rightly busy looks identical to a phone that goes unanswered because nobody cares.
+
+## What changes when the phone is always answered
+
+The honest version of the fix is not more people on the desk. Most salons cannot staff a receptionist for a call that might come in at 7:40pm on a Tuesday, and should not have to.
+
+What changes is that every call gets answered against the real diary, not a script and not a message pad. An AI Receptionist checks actual availability and books straight in, rather than taking a message for someone to call back later. It catches exactly the calls that ring out today: the ones after closing, on a Sunday, and on a Saturday morning when both receptionists are already with someone in the chair.
+
+That is the whole shift. Not a different kind of call handling for after hours versus during the day — the same one, all the time, so a call at 7:40pm gets treated exactly like a call at 11am.
+
+## Start by counting what you are missing
+
+Before changing anything, it is worth simply seeing the shape of what a salon currently misses — how many calls come in outside opening hours, how many ring out during a busy Saturday, how many go to voicemail and stop there.
+
+Most owners have never seen that number, because an unanswered call leaves nothing behind once the ringing stops. Seeing it is the first useful step, whatever comes after it.
+
+---

@@ -1,0 +1,38 @@
+# SalonForge
+
+> SalonForge is one connected system that runs a whole hair salon: the appointment diary and till, colour formulation weighed to the gram, the drinks bar and stock, an AI receptionist that answers the phone, staff performance and commission, and hiring. Six products that read and write the same shared record, so the diary, the colour bowl, the till and the pay run all agree.
+
+Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
+
+## Products
+- [Daviana](https://salonforge.com/daviana/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
+- [AI Receptionist](https://salonforge.com/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
+- [ColorLab](https://salonforge.com/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
+- [Bar](https://salonforge.com/bar/): drinks and refreshments logged against the client, with stock deducted automatically.
+- [Performance](https://salonforge.com/performance/): per-stylist takings, rebooking, retail and commission — calculated from the real diary, not a spreadsheet.
+- [People](https://salonforge.com/people/): hiring and onboarding stylists, from advert to first day on the floor.
+
+## Key facts
+- 19,949 colour formulas weighed and costed to date.
+- Running inside 6 salons, London to Saudi Arabia; partner salons in 5 countries.
+- Products share one record — booking a client in the diary is the same record the colour, bar, till and commission all read.
+- Demos are 30 minutes, run on the salon's own numbers: https://calendly.com/salonforge-info/30min
+
+## Questions answered
+- [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
+
+## Journal
+- [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
+- [Why is salon stock always going missing? Back bar control that works](https://salonforge.com/blog/salon-stock-going-missing/): Most salon stock isn't stolen, it's unrecorded use. Back bar and retail need separate counting rhythms — not one annual stock take that explains nothing.
+- [12 questions to ask before switching salon software](https://salonforge.com/blog/questions-before-switching-salon-software/): Twelve honest questions to ask any salon software provider before you switch, covering your data, the changeover, per-stylist cost, and how to leave.
+- [Live commission tracking: why stylists shouldn't wait for payday to see their numbers](https://salonforge.com/blog/live-commission-tracking/): When commission is only visible on payday, every payslip is a possible argument. Live numbers on the real diary remove the argument before it starts.
+- [How much hair colour is your salon really wasting?](https://salonforge.com/blog/hair-colour-waste/): Overmixed hair colour goes down the plughole with no record it ever existed. Here's why that happens, and what changes once you weigh the bowl.
+- [Why colour formulas get lost when a stylist leaves](https://salonforge.com/blog/colour-formulas-when-stylist-leaves/): A client's colour formula usually lives in a stylist's head or a paper card. When that stylist moves on, here is what actually happens to the record.
+- [Colour cost per gram: the number most salons don't know](https://salonforge.com/blog/colour-cost-per-gram/): Most salons price colour by the tube and guess the rest. Weighing the bowl to the gram shows what a head of colour actually costs — and where the money goes down the plughole.
+- [One diary, one till, one client record: what all-in-one salon software actually means](https://salonforge.com/blog/all-in-one-salon-software-meaning/): Most salon software sold as all-in-one is several tools behind one login, each with its own copy of the client. Here is the test that shows the difference.
+- [Can an AI answer your salon's phone and still book into the real diary?](https://salonforge.com/blog/ai-receptionist-real-diary/): How SalonForge's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
+- [After-hours salon calls: what happens when nobody's on the desk](https://salonforge.com/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
+
+## Contact
+- Book a demo: https://calendly.com/salonforge-info/30min
+- Email: info@salonforge.com
