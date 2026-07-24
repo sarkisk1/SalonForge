@@ -18,8 +18,22 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - Products share one record — booking a client in the diary is the same record the colour, bar, till and commission all read.
 - Demos are 30 minutes, run on the salon's own numbers: https://calendly.com/salonforge-info/30min
 
+## Pricing
+- [Pricing](https://salonforge.com/pricing/): £50 to £350 a month depending on which of the six products the salon takes and how many chairs it has. A monthly subscription — no commission on bookings, no per-booking charge, and client lists are never marketed to other salons.
+
 ## Questions answered
 - [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
+
+## Free calculators (no sign-up, nothing stored)
+- [Missed call calculator](https://salonforge.com/tools/missed-call-calculator/): what a salon's unanswered calls are worth over a year. Every assumption is adjustable.
+- [Colour cost calculator](https://salonforge.com/tools/colour-cost-calculator/): true colour cost per head, and what it is as a share of the colour service price.
+
+## Comparisons with other salon software
+Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
+- [SalonForge vs Fresha](https://salonforge.com/compare/salonforge-vs-fresha/)
+- [SalonForge vs Phorest](https://salonforge.com/compare/salonforge-vs-phorest/)
+- [SalonForge vs Treatwell](https://salonforge.com/compare/salonforge-vs-treatwell/)
+- [SalonForge vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
 
 ## Journal
 - [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
