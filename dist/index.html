@@ -505,6 +505,25 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
 /* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
 /* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
+/* The dropdown rules below previously existed ONLY on the homepage, because the
+   dropdown used to be a homepage-only JS feature. Now that the markup is static on
+   every page the CSS has to travel with it — without these the menus render inline,
+   dumping every child link into the header. Duplicated harmlessly on the homepage. */
+.navdrop{position:relative;display:inline-flex;align-items:center}
+.navdrop::after{content:'';position:absolute;top:100%;left:-10px;right:-10px;height:16px}
+.navdrop .ncar{font-size:.62em;color:var(--sec);margin-left:5px;transition:transform .2s}
+.navdrop:hover .ncar{transform:rotate(180deg)}
+.navdrop-menu{position:absolute;top:calc(100% + 12px);left:50%;
+  transform:translateX(-50%) translateY(6px);background:var(--white);
+  border:1px solid var(--line);border-radius:15px;box-shadow:0 14px 44px rgba(0,0,0,.13);
+  padding:6px;display:flex;flex-direction:column;min-width:196px;opacity:0;
+  visibility:hidden;transition:opacity .18s,transform .18s;z-index:130}
+.navdrop:hover .navdrop-menu{opacity:1;visibility:visible;
+  transform:translateX(-50%) translateY(0)}
+.navdrop-menu a{padding:9px 14px;border-radius:10px;font-size:.95rem;font-weight:500;
+  color:var(--ink);text-decoration:none;white-space:nowrap;
+  transition:background .14s,color .14s}
+.navdrop-menu a:hover{background:var(--alt);color:var(--blue)}
 .navlinks a{white-space:nowrap}
 .navlinks{gap:clamp(20px,2.4vw,32px);align-items:center}
 .navdrop > a{display:inline-flex;align-items:center}
