@@ -7,21 +7,21 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 <title>SalonForge vs Booksy — an honest comparison</title>
-<meta name="description" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus where Booksy is stronger. Sourced and dated.
+<meta name="description" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus what Booksy does better. Sourced and dated.
 ">
 <link rel="canonical" href="https://salonforge.com/compare/salonforge-vs-booksy/">
 <meta property="og:title" content="SalonForge vs Booksy — an honest comparison">
-<meta property="og:description" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus where Booksy is stronger. Sourced and dated.
+<meta property="og:description" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus what Booksy does better. Sourced and dated.
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://salonforge.com/compare/salonforge-vs-booksy/">
 <meta property="og:image" content="https://salonforge.com/assets/og.jpg">
-<meta property="og:image:alt" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus where Booksy is stronger. Sourced and dated.
+<meta property="og:image:alt" content="SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus what Booksy does better. Sourced and dated.
 ">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://salonforge.com/assets/og.jpg">
 <link rel="alternate" type="application/rss+xml" title="SalonForge journal" href="https://salonforge.com/blog/feed.xml">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SalonForge vs Booksy", "description": "SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus where Booksy is stronger. Sourced and dated.\n", "datePublished": "2026-07-24", "dateModified": "2026-07-24", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://salonforge.com/compare/salonforge-vs-booksy/"}, "author": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/"}, "publisher": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/salonforge-mark.svg", "description": "Six connected products that run the whole salon — booking, colour, bar, phone, performance and hiring."}, "inLanguage": "en", "url": "https://salonforge.com/compare/salonforge-vs-booksy/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SalonForge vs Booksy", "description": "SalonForge vs Booksy for hair salons — subscription, the Boost commission, stock and colour compared, plus what Booksy does better. Sourced and dated.\n", "datePublished": "2026-07-24", "dateModified": "2026-07-24", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://salonforge.com/compare/salonforge-vs-booksy/"}, "author": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/"}, "publisher": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/salonforge-mark.svg", "description": "Six connected products that run the whole salon — booking, colour, bar, phone, performance and hiring."}, "inLanguage": "en", "url": "https://salonforge.com/compare/salonforge-vs-booksy/"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SalonForge", "item": "https://salonforge.com/"}, {"@type": "ListItem", "position": 2, "name": "Compare", "item": "https://salonforge.com/compare/"}, {"@type": "ListItem", "position": 3, "name": "vs Booksy"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Booksy cost in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "£40 a month for a single user plus £5 a month for each additional team member, plus VAT, per their UK pricing page. Boost, the new-client visibility layer, is separate and charges 30% of a new client's first visit with a £5 minimum."}}, {"@type": "Question", "name": "Do I have to pay Booksy commission?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you switch Boost on. A basic listing is included without commission, and direct bookings are not charged. Worth knowing: turning Boost off does not cancel charges already triggered."}}, {"@type": "Question", "name": "Does Booksy handle colour formulas?", "acceptedAnswer": {"@type": "Answer", "text": "There are client notes, as in most systems, but no weighing or gram-costing feature appears in their published feature list. If colour cost is the number you are chasing, notes will not get you there — only a scale will."}}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
@@ -627,10 +627,31 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
   align-items:center}
 .topics a:hover{border-color:var(--blue);color:var(--blue)}
 .topics a.on{background:var(--ink);border-color:var(--ink);color:#fff}
+/* lead article — one piece carries the page, the rest fall in behind it.
+   Ten identical rows reads as a content dump; a lead plus thumbnails reads as a journal. */
+.lead{display:block;margin-bottom:clamp(30px,4vw,44px);group:none}
+.lead-img{position:relative;border-radius:20px;overflow:hidden;margin-bottom:22px;
+  background:var(--alt);aspect-ratio:16/7}
+.lead-img img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s var(--reveal)}
+.lead:hover .lead-img img{transform:scale(1.02)}
+.lead-t{font-size:clamp(1.6rem,3.6vw,2.35rem);line-height:1.12;letter-spacing:-.02em;
+  font-weight:600;margin-bottom:12px;text-wrap:balance;transition:color .2s;max-width:26ch}
+.lead:hover .lead-t{color:var(--blue)}
+.lead p{color:var(--sec);font-size:clamp(1.0625rem,1.9vw,1.1875rem);line-height:1.5;
+  max-width:60ch;text-wrap:pretty}
+.lead .pcard-meta{margin-top:14px}
+
 .plist{display:flex;flex-direction:column}
-.pcard{display:grid;grid-template-columns:1fr auto;gap:20px 34px;align-items:start;
-  padding:clamp(24px,3.2vw,30px) 0;border-bottom:1px solid var(--line);transition:.2s}
+.pcard{display:grid;grid-template-columns:1fr auto auto;gap:20px 26px;align-items:center;
+  padding:clamp(22px,2.8vw,28px) 0;border-bottom:1px solid var(--line);transition:.2s}
 .pcard:first-child{border-top:1px solid var(--line)}
+.pthumb{width:132px;aspect-ratio:16/10;border-radius:11px;overflow:hidden;flex:none;
+  background:var(--alt);align-self:center}
+.pthumb img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s var(--reveal)}
+.pcard:hover .pthumb img{transform:scale(1.05)}
+@media(max-width:600px){.pthumb{width:84px;border-radius:9px}}
 .pcard-t{font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.2;letter-spacing:-.015em;
   font-weight:600;margin-bottom:9px;text-wrap:balance;transition:color .2s}
 .pcard:hover .pcard-t{color:var(--blue)}
@@ -768,10 +789,8 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 <nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">SalonForge</a><span class="sep">/</span><a href="/compare/">Compare</a><span class="sep">/</span><span aria-current="page">vs Booksy</span></nav><div class="cmp"><header class="cmp-head blog-hero" style="border:none;margin:0"><h1>SalonForge vs Booksy</h1><p class="lede">Booksy publishes its pricing plainly and moves quickly. The difference is the optional commission layer for new clients, and what happens to colour.
 </p><p class="cmp-meta">Written by SalonForge. Every Booksy fact below is sourced and dated — checked 2026-07-24. We have tried to be fair; if anything here is out of date, tell us and we will correct it.</p></header><div class="verdict"><div class="vc"><h2>Booksy suits you if</h2><p>You want a clear published price, a large consumer app behind you, and the option to pay for new-client visibility when you want it.
 </p></div><div class="vc us"><h2>SalonForge suits you if</h2><p>Your columns are reasonably full and the leak is colour, the phone, or pay.
-</p></div></div><h2 class="sec" id="side-by-side">Side by side</h2><p>Superscripts link to the source at the foot of the page.</p><div class="tblwrap"><table><thead><tr><th></th><th>SalonForge</th><th>Booksy</th></tr></thead><tbody><tr><th scope="row">Monthly subscription</th><td>£50 to £350 depending on products and salon size</td><td>£40 a month for one user, plus £5 a month per additional team member, plus VAT<sup>1</sup></td></tr><tr><th scope="row">Commission on new clients</th><td>None</td><td>Optional. Their Boost layer takes 30% of a new client&#x27;s first visit, minimum £5, for marketplace-sourced clients only.<sup>1</sup></td></tr><tr><th scope="row">Marketplace</th><td>No</td><td>Yes — a basic listing is included by default, with opt-out<sup>1</sup></td></tr><tr><th scope="row">Colour weighed and costed to the gram</th><td>Yes, built in</td><td>No colour-weighing or scale feature found in their published feature list<sup>2</sup></td></tr><tr><th scope="row">The phone answered by AI</th><td>Yes — books into the same diary</td><td>No such feature found in their published material<sup>2</sup></td></tr><tr><th scope="row">Stock deducted as it is used</th><td>Yes, at the point of use, including drinks</td><td>Yes — stock deducts automatically at checkout<sup>2</sup></td></tr><tr><th scope="row">Minimum term</th><td>None</td><td>None — rolling, with 30 days&#x27; notice<sup>3</sup></td></tr></tbody></table></div><div class="fair"><h2>Where Booksy is the better choice</h2><ul><li><strong>The price is published and simple</strong> — £40 plus £5 a head is easy to work out before you talk to anyone. We publish a range because our products are modular, which is honest but less immediately concrete than a single figure.
-</li><li><strong>A large consumer app that can bring you new clients</strong> — Their marketplace has a very large user base. We have none. If discovery is what you need, that is a genuine reason to pick them.
-</li><li><strong>They ship quickly</strong> — New features land often. Their stock feature is recent and has already been reworked. That pace is a real advantage.
-</li><li><strong>Competitive card processing</strong> — Their published UK card rates are keen, which matters every single day if you take most payments by card.
+</p></div></div><h2 class="sec" id="side-by-side">Side by side</h2><p>Superscripts link to the source at the foot of the page.</p><div class="tblwrap"><table><thead><tr><th></th><th>SalonForge</th><th>Booksy</th></tr></thead><tbody><tr><th scope="row">Monthly subscription</th><td>£50 to £350 depending on products and salon size</td><td>£40 a month for one user, plus £5 a month per additional team member, plus VAT<sup>1</sup></td></tr><tr><th scope="row">Commission on new clients</th><td>None</td><td>Optional. Their Boost layer takes 30% of a new client&#x27;s first visit, minimum £5, for marketplace-sourced clients only.<sup>1</sup></td></tr><tr><th scope="row">Marketplace</th><td>No</td><td>Yes — a basic listing is included by default, with opt-out<sup>1</sup></td></tr><tr><th scope="row">Colour weighed and costed to the gram</th><td>Yes, built in</td><td>No colour-weighing or scale feature found in their published feature list<sup>2</sup></td></tr><tr><th scope="row">The phone answered by AI</th><td>Yes — books into the same diary</td><td>No such feature found in their published material<sup>2</sup></td></tr><tr><th scope="row">Stock deducted as it is used</th><td>Yes, at the point of use, including drinks</td><td>Yes — stock deducts automatically at checkout<sup>2</sup></td></tr><tr><th scope="row">Minimum term</th><td>None</td><td>None — rolling, with 30 days&#x27; notice<sup>3</sup></td></tr></tbody></table></div><div class="fair"><h2>What Booksy does better</h2><ul><li><strong>A single flat price</strong> — £40 plus £5 a head is easy to work out before you talk to anyone. We publish a range because the products are modular.
+</li><li><strong>A consumer app that brings new clients</strong> — Their marketplace has a large user base. We have none. If discovery is what you need, that matters.
 </li></ul></div><h2 class="sec" id="different">Where SalonForge is different</h2><div class="fair" style="border-color:var(--blue)"><ul><li><strong>No commission layer at all</strong> — There is no version of us that takes a share of a client&#x27;s first visit, because there is no marketplace to source them from.
 </li><li><strong>Colour is the thing we do that nobody else here does natively</strong> — Weighing the bowl and costing it to the gram, onto the client record, is built in rather than bought in.
 </li><li><strong>The phone</strong> — A voice that answers, knows your prices, and writes into the diary the desk is looking at.
