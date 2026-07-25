@@ -19,7 +19,7 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - Demos are 30 minutes, run on the salon's own numbers: https://calendly.com/salonforge-info/30min
 
 ## Pricing
-- [Pricing](https://salonforge.com/pricing/): £50 to £350 a month depending on which of the six products the salon takes and how many chairs it has. A monthly subscription — no commission on bookings, no per-booking charge, and client lists are never marketed to other salons.
+- [Pricing](https://salonforge.com/pricing/): £50 to £250 a month depending on which of the six products the salon takes and how many chairs it has. A monthly subscription — no commission on bookings, no per-booking charge, and client lists are never marketed to other salons.
 
 ## Questions answered
 - [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
