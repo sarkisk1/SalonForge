@@ -2,6 +2,61 @@
 
 Everything below is published at https://salonforge.com and may be quoted with attribution to SalonForge.
 
+## Why your salon phone keeps going to voicemail (and what it's costing you)
+Source: https://salonforge.com/blog/salon-phone-voicemail/
+Published: 2026-07-27  ·  Updated: 2026-07-27
+
+Every salon owner knows the sound of a call ringing out. It happens on a Saturday morning, when the desk is mid-conversation with someone paying at the till and two stylists are elbow-deep in foils with a client each. Nobody decides to ignore the phone. Everyone in the building is already doing something that matters more in that exact second.
+
+It goes to voicemail, and life carries on, because a voicemail feels like the problem being handled. It isn't. It's the problem being postponed onto whoever eventually plays the message back — and a lot of the time, nobody does, before the caller has already moved on.
+
+## Why the phone goes quiet exactly when it's busiest
+
+The direct answer is that a salon's quietest hours for the phone are its busiest hours for everything else, and that isn't a coincidence.
+
+A colour appointment can't be paused because the phone is ringing — the timing on a bowl doesn't wait. A card payment at the till can't be abandoned halfway through. A stylist with foils in someone's hair has both hands full in the most literal sense possible. None of this is a staffing failure. It's the job being done properly, in the room, for the client who is actually there. The trouble is that the caller on the other end can't see any of that. All they hear is ringing, and then nothing.
+
+## A message left is not a booking made
+
+The direct answer is that a lot has to go right between a voicemail being left and an appointment actually landing in the diary, and every step in between is a place it can fail.
+
+Someone has to notice the message is there. They have to listen to it, often between clients, and make out a name and a number that may have been left quickly. They have to check what's actually free, ring back, and hope the caller still answers and still wants the slot they originally asked for. Compare that with a call that gets answered live: availability and booking happen in the same conversation, in the same minute. A voicemail turns one phone call into a small chain of tasks that has to be completed correctly, later, by someone who is also trying to run a salon.
+
+## Why most callers don't even leave a message
+
+The direct answer is that most people who reach a voicemail simply hang up, rather than doing the work of leaving one.
+
+That matches what happens on a real reception desk. Leaving a message asks for effort at the exact moment someone has already been mildly inconvenienced by not getting through — finding something to say, spelling a name, hoping it's picked up correctly. Research into missed business calls generally finds that most callers who reach voicemail hang up without leaving a message at all, and that the share who do so is higher again among people with no existing relationship to the business — see [this research summary on missed-call behaviour](https://captureclient.com/blog/why-67-percent-callers-never-leave-voicemail). A caller who has never set foot in the salon has even less reason to wait around and record a message than a client of ten years does.
+
+## The client who reschedules, and the client who just moves on
+
+The direct answer is that how a caller reacts to an unanswered phone depends almost entirely on how much history they already have with the salon.
+
+> A client of six years forgives an unanswered phone once, because she already trusts the place and has a reason to try again. A client who has never set foot in the salon has no such reason. She just calls the next name on the list.
+
+| Who's calling | What they do when nobody answers | What it costs |
+| --- | --- | --- |
+| Existing client wanting to reschedule | Tries again later, or waits for a callback | A delayed booking and an admin scramble to catch up |
+| New client calling for the first time | Rings the next salon on the list | A client you never find out you lost |
+| Someone with something urgent before an event | Books wherever answers first | Gone before a voicemail even finishes playing |
+| A client ringing to cancel | Assumes it's fine and just doesn't turn up | A no-show nobody saw coming, and an empty chair |
+
+The first row is annoying but recoverable. The rest of the table is where the real cost sits, and it is the part that never shows up in the diary, because nothing was ever booked to begin with.
+
+## What actually changes when someone is always free to answer
+
+The direct answer is not more people on the desk. Most salons cannot staff a receptionist purely for the chance that the phone rings during the one hour everyone is already with a client.
+
+What changes is that every call gets answered against the real diary, not a message pad. An AI Receptionist checks actual availability and books straight in, rather than taking a name for someone to call back later — which means the call that comes in at the busiest point on a Saturday gets treated exactly the same as one on a quiet Tuesday afternoon. It doesn't replace the front desk. It catches the calls the front desk was always going to miss anyway, because the desk was doing something else that mattered more at the time.
+
+## Start by counting what's actually ringing out
+
+The direct answer is that you don't need a new system to find out how much this is costing you — you need the number itself.
+
+Most salon owners have a rough feeling that missed calls cost something, and no actual figure, because an unanswered call leaves nothing behind once the ringing stops. [Our missed-call calculator](/tools/missed-call-calculator/) works the sum out with your own numbers — your average ticket price and roughly how many calls ring out in a week — with no email needed to see what comes out the other end. Most owners are surprised by the size of it. Almost nobody is surprised by when it happens: right in the middle of the busiest, most valuable hour of the week.
+
+---
+
 ## Screening stylist applicants without spending a week reading CVs
 Source: https://salonforge.com/blog/screening-stylist-applicants/
 Published: 2026-07-24  ·  Updated: 2026-07-24

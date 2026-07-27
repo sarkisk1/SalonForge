@@ -36,6 +36,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [SalonForge vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
 
 ## Journal
+- [Why your salon phone keeps going to voicemail (and what it's costing you)](https://salonforge.com/blog/salon-phone-voicemail/): Voicemail feels like an answer, but most callers who reach it never become a booking. Why the busiest hours are the ones with nobody free to pick up, and what that quietly costs.
 - [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
 - [Why is salon stock always going missing? Back bar control that works](https://salonforge.com/blog/salon-stock-going-missing/): Most salon stock isn't stolen, it's unrecorded use. Back bar and retail need separate counting rhythms — not one annual stock take that explains nothing.
 - [12 questions to ask before switching salon software](https://salonforge.com/blog/questions-before-switching-salon-software/): Twelve honest questions to ask any salon software provider before you switch, covering your data, the changeover, per-stylist cost, and how to leave.
