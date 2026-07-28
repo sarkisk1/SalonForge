@@ -19,7 +19,9 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - Demos are 30 minutes, run on the salon's own numbers: https://calendly.com/salonforge-info/30min
 
 ## Pricing
-- [Pricing](https://salonforge.com/pricing/): £50 to £250 a month depending on which of the six products the salon takes and how many chairs it has. A monthly subscription — no commission on bookings, no per-booking charge, and client lists are never marketed to other salons.
+- [Pricing](https://salonforge.com/pricing/): two ways to pay — free if the salon buys its colour from us, or a £50 to £250 a month subscription depending on which of the six products the salon takes and how many chairs it has. A monthly subscription — no commission on bookings, no per-booking charge, and client lists are never marketed to other salons.
+- [Free](https://salonforge.com/free/): the whole system free while the salon spends around £3,000 a year on premium colour from Evera and Keyluma — colour it would buy from a wholesaler anyway. No subscription, no catch.
+- [Start a free trial](https://salonforge.com/trial/): a free month of SalonForge — booking, ColorLab and bar — set up for the salon. No card, no call; a confirmation link by email.
 
 ## Questions answered
 - [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
