@@ -38,6 +38,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [SalonForge vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
 
 ## Journal
+- [Double-booked again? Why salon diaries clash and how to stop it](https://salonforge.com/blog/salon-diary-double-booking/): Double-bookings rarely come from a careless receptionist. They come from two systems each holding a different copy of the same diary. Here's where that gap actually opens, and what closes it.
 - [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
 - [Why is salon stock always going missing? Back bar control that works](https://salonforge.com/blog/salon-stock-going-missing/): Most salon stock isn't stolen, it's unrecorded use. Back bar and retail need separate counting rhythms — not one annual stock take that explains nothing.
 - [12 questions to ask before switching salon software](https://salonforge.com/blog/questions-before-switching-salon-software/): Twelve honest questions to ask any salon software provider before you switch, covering your data, the changeover, per-stylist cost, and how to leave.
