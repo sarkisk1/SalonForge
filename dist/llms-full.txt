@@ -2,6 +2,108 @@
 
 Everything below is published at https://salonforge.com and may be quoted with attribution to SalonForge.
 
+## How to reduce no-shows in a UK salon without annoying your clients
+Source: https://salonforge.com/blog/salon-no-shows-deposits-reminders/
+Published: 2026-07-31  ·  Updated: 2026-07-31
+
+A no-show costs a salon in a very particular way: the chair sits empty at exactly the time it was reserved, usually with too little notice to fill it with anyone else. Every owner ends up with their own way of handling it — a line in the booking confirmation, a deposit taken up front, a text sent the night before. None of it gets a salon to zero, and it isn't supposed to. The realistic aim is fewer no-shows, without turning every booking into a negotiation.
+
+## What's the difference between a no-show and a late cancellation?
+
+A no-show is a client who simply doesn't turn up, with no warning at all. A late cancellation is a client who does let you know — just not with enough notice for you to fill the slot. Both leave you with an empty chair at the time it was booked, so the cost to the till is nearly identical. But they aren't the same thing to the client sitting across from you at their next visit, and a policy that charges both at the same rate tends to feel wrong to the person who at least tried to tell you.
+
+Most workable policies draw a line: cancel with more notice than the cut-off (say, 24 or 48 hours) and nothing is charged; cancel inside it, or don't show at all, and the same charge applies to both. That's not because the two are equally bad — it's because once you're inside the cut-off, the chair is equally lost either way.
+
+## Do deposits actually stop no-shows?
+
+Broadly, yes. Asking someone to put money down on a booking makes them more likely to keep it — that's not a controversial claim, it's just what a deposit is for. The part that gets left out of most advice on this is what it costs you to take one.
+
+A deposit is friction at the point of booking, and some clients who would have shown up perfectly reliably will book somewhere else rather than pay one — particularly a first-time client who has no history with you yet and no particular reason to trust the process. You don't get to see those lost bookings; you only see the no-shows you prevented. That's what makes this hard to weigh up from the inside.
+
+> A deposit doesn't remove the choice between a full diary and a protected one. It just moves that choice earlier — to the point of booking, instead of the point where the chair is empty.
+
+There's no single right answer here, and anyone who tells you there is hasn't run a front desk. A busy colour specialist with a six-week waiting list and a high no-show rate is weighing this up very differently from a quiet salon trying to build a client base. Reasonable owners land in different places — deposits on everyone, deposits on new clients only, deposits on long or expensive services only, or no deposits and a harder line on repeat offenders instead. What matters is picking on purpose, rather than copying whatever the salon down the road does.
+
+## Why does reminder timing matter more than what the reminder says?
+
+Because a reminder can only stop a no-show if it arrives while the client can still do something about it — cancel properly, or move the appointment — and that's almost entirely a question of when it lands, not how it's worded.
+
+A message that arrives an hour before the appointment reads as a heads-up, not a chance to act. If the client had already forgotten, an hour isn't enough time to do anything except turn up late or not at all — it confirms attendance for people who were coming anyway and does almost nothing for the ones who weren't. A reminder sent with real notice — the evening before, or a few days out — gives a client who's double-booked themselves, or whose plans changed, an actual window to tell you and free the slot for someone else.
+
+| When the reminder lands | What it can actually catch |
+| --- | --- |
+| An hour or two before | Confirms clients who were already coming; too late for anyone else to act |
+| The evening before | A genuine window to cancel or move — enough notice to still fill the slot |
+| Several days before | Long enough to offer the slot to someone on a waiting list if it's freed up |
+
+A review of studies on hospital appointment reminders — a much bigger and better-researched version of the same problem — found that patients who got a reminder were, on average, about 11% more likely to attend than those who got none, and that sending two reminders spaced apart (roughly a week out, then a few days out) worked better than one message close to the appointment. See [the review on jhmhp.amegroups.org](https://jhmhp.amegroups.org/article/view/10215/html). Hospital bookings aren't salon bookings, but the underlying logic transfers: a reminder that arrives too late to act on can only confirm, never rescue.
+
+## What does a policy clients actually accept look like?
+
+One they hear about before they need it, that's applied the same way regardless of who's on the front desk that day, and that charges for what was actually lost rather than the full service price on principle. A client who finds out about a no-show fee for the first time when they're being charged for it has a fair complaint, even if the policy itself is reasonable — the problem is the surprise, not the fee.
+
+Consistency is the part that quietly breaks down in practice. A deposit taken over the phone that never makes it onto the client's record at the desk is a policy that only exists for whoever happened to answer that call. It's easier to hold together when the deposit, the reminder and the booking itself sit against the same record rather than three separate ones a stylist has to cross-check by memory on a Saturday — which is part of what [Daviana](/daviana/) is built to hold together.
+
+## Where to start
+
+Split your own no-show numbers into the two categories from the first section — true no-shows and late cancellations — before you touch pricing or wording. That split alone usually tells you more than a policy change would: a salon with mostly late cancellations has a reminder-timing problem, and a salon with genuine no-shows has a deposit or a repeat-client problem. They don't get fixed by the same lever, and it's worth knowing which one you actually have before you pick one.
+
+---
+
+## Double-booked again? Why salon diaries clash and how to stop it
+Source: https://salonforge.com/blog/salon-diary-double-booking/
+Published: 2026-07-29  ·  Updated: 2026-07-29
+
+## Why do diaries clash in the first place?
+
+Not because anyone was careless. A double-booking almost always means two systems each held their own version of the diary, and neither one knew what the other had just done.
+
+Picture a normal Saturday morning. A client books a colour appointment online for 2pm. Ten minutes later, someone else rings the desk and asks for the same slot, and whoever answers checks the book — the paper one, or a screen that hasn't caught up with the online page yet — and it still shows 2pm as free. Both clients get a yes. One of them turns up to a chair that's already taken.
+
+Nobody did anything wrong. The person on the phone gave an honest answer, from the version of the diary in front of them. It just wasn't the same version the online page had already changed.
+
+## Where the separate versions actually come from
+
+Most salons run at least three: the online booking page, the phone, and the front desk book — paper, a spreadsheet, or a screen that isn't quite the one clients see. Walk-ins add a fourth, written down after the fact rather than checked against anything first.
+
+Each one is perfectly usable on its own. The trouble starts when a booking made in one of them doesn't reach the others straight away — and "straight away" is the hard part, because it means every one of those places has to be looking at the same diary at the same moment, not a copy of it from five minutes ago.
+
+## What actually happens in the gap
+
+The clash doesn't happen at the moment of booking. It happens in the space between one system taking a slot and the others finding out it's gone.
+
+| Where the booking is made | What it's checking against | How the clash opens up |
+| --- | --- | --- |
+| Online booking page | Whatever the diary showed the last time it loaded | A slot taken seconds ago by phone may not show as gone yet |
+| Phone / front desk | The paper book, or a screen at the desk | Doesn't know what was booked online minutes earlier |
+| Walk-in, written down after | Nothing, until someone copies it across later | Sits outside the diary entirely until someone remembers |
+
+That middle column is the whole problem. Every one of those places is telling the truth about what it can see. None of them can see the others.
+
+> A double-booking isn't two people lying about the same slot. It's two systems each telling the truth, from a version of the diary that's already gone stale.
+
+## Does having more ways to book make this worse?
+
+No — and it's worth saying plainly, because the instinct is often to close down a channel rather than fix the gap. A client being able to book online, by phone or at the desk isn't the risk. The risk is how many separate places that booking can land once it's made.
+
+A salon that only ever took bookings at the desk, in one paper book, could never double-book — there was only ever one version of the diary, and it was sitting right there. The moment a second way to book appears, whether that's an online page, a second desk, or a phone line, the diary either stays one diary that all of them read and write to, or it splits into as many versions as there are ways in. Splitting is what causes the clash, not the number of doors.
+
+Rebooking makes the same point from the other direction. A client who cancels at the desk and a client who reschedules online at the same moment are both changing the same diary — and if the desk and the online page aren't looking at each other, the slot that just opened up can be handed to two different people within minutes of each other. The clash isn't new business colliding with new business. It's just as often a cancellation colliding with someone else's reschedule.
+
+## What one diary actually changes
+
+When the online page, the phone and the front desk are all reading and writing the same diary, the gap in that table above stops existing — not because anyone checks faster, but because there's nothing left to catch up on. A slot taken by phone at 11:04 is gone for the online page at 11:04, because it's the same booking, seen from a different screen. We've written before about [what that looks like when the phone itself is doing the booking](/blog/ai-receptionist-real-diary/): the reason two callers can't be told the same slot is free isn't clever checking, it's that there was only ever one diary to check against.
+
+Nothing changes about how clients book. They still ring, still book online, still walk in. What stops is the front desk finding out about a clash after the fact — from an apologetic phone call, or a client standing at the counter expecting a chair that's already occupied.
+
+## Where to start if this is already happening to you
+
+Count the places a booking can land before it reaches the diary the front desk actually works from. If the honest answer is more than one — online page, phone notes, a paper book, a second screen — that count is your clash risk, not how many clients you're seeing.
+
+You don't need to change how clients reach you to fix it. You need every one of those doors opening onto the same diary, so a slot taken through any of them is gone for all of them, at the same moment, without anyone having to notice.
+
+---
+
 ## Screening stylist applicants without spending a week reading CVs
 Source: https://salonforge.com/blog/screening-stylist-applicants/
 Published: 2026-07-24  ·  Updated: 2026-07-24
