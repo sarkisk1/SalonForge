@@ -696,9 +696,66 @@ a{color:inherit}
 #dv-screen th{text-align:left;font-size:11px;letter-spacing:.07em;color:#8c8c95;padding:0 10px 10px;font-weight:700}
 #dv-screen td{padding:12px 10px;border-top:1px solid var(--line);font-size:13.5px}
 #dv-screen td.num{text-align:right;font-weight:560}
-#dv-screen .pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:650;border-radius:5px;padding:3px 8px}
+#dv-screen .pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:650;border-radius:5px;padding:3px 8px;background:#eeeef1;color:#5c5c66}
 #dv-screen .pill.bar{background:#EFE7DA;color:#7a5c14}
 #dv-screen .pill.cl{background:#E7EFE9;color:#2f6b47}
+#dv-screen .pill.warn{background:#FBE9E4;color:#a8442b}
+
+/* ---- client-record panels ---- */
+#dv-screen .hint-p{margin:0;color:var(--ink-2);font-size:12.5px;line-height:1.55}
+#dv-screen .notebox{
+  margin-top:11px;padding:13px 15px;border:1px solid var(--line);border-radius:9px;
+  background:var(--bg-2);font-size:13.5px;line-height:1.55;min-height:64px;color:#3a3a42;
+}
+#dv-screen .frm{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+@media(max-width:820px){#dv-screen .frm{grid-template-columns:1fr}}
+#dv-screen .frm .f.w{grid-column:1/-1}
+#dv-screen .frm label{display:block;font-size:10.5px;letter-spacing:.09em;font-weight:700;color:#8c8c95;margin-bottom:6px}
+#dv-screen .frm .fv{
+  padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:#fff;
+  font-size:13.5px;min-height:39px;display:flex;align-items:center;
+}
+#dv-screen .frm .ph{color:#b0b0b8}
+#dv-screen .tgl{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid #f0f0f3}
+#dv-screen .tgl:last-child{border:0}
+#dv-screen .tgl b{font-size:13.5px;font-weight:560;display:block}
+#dv-screen .tgl small{display:block;font-size:11.5px;color:#8c8c95;margin-top:2px}
+#dv-screen .tgl .sw{
+  margin-left:auto;flex:none;width:38px;height:22px;border-radius:11px;background:#dcdce1;
+  position:relative;transition:background .2s;
+}
+#dv-screen .tgl .sw.on{background:var(--gold)}
+#dv-screen .tgl .sw i{
+  position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;
+  transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.25);
+}
+#dv-screen .tgl .sw.on i{transform:translateX(16px)}
+#dv-screen .mt{text-align:center;padding:30px 16px}
+#dv-screen .mt-ic{font-size:26px;color:#c2c2ca;margin-bottom:12px}
+#dv-screen .mt b{display:block;font-size:14.5px;letter-spacing:.02em}
+#dv-screen .mt p{margin:8px auto 16px;max-width:400px;color:var(--ink-2);font-size:12.5px;line-height:1.6}
+#dv-screen .chgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+#dv-screen .chgrid .k{display:block;font-size:10.5px;letter-spacing:.09em;color:#8c8c95;font-weight:700;margin-bottom:5px}
+#dv-screen .chgrid b{font-size:14px;font-weight:600}
+#dv-screen .msg{margin-bottom:13px;max-width:78%}
+#dv-screen .msg.out{margin-left:auto;text-align:right}
+#dv-screen .msg .bub{
+  display:inline-block;padding:10px 14px;border-radius:14px;font-size:13.5px;line-height:1.5;text-align:left;
+  background:var(--bg-2);border:1px solid var(--line);
+}
+#dv-screen .msg.out .bub{background:#FCF4E2;border-color:#EBD9AE}
+#dv-screen .msg .meta{font-size:10.5px;color:#9a9aa2;margin-top:4px}
+#dv-screen .note{padding:13px 0;border-bottom:1px solid #f0f0f3}
+#dv-screen .note:last-child{border:0}
+#dv-screen .note .nh{display:flex;gap:10px;align-items:baseline;font-size:12px}
+#dv-screen .note .nh b{font-weight:650}
+#dv-screen .note .nh span{color:#9a9aa2;margin-left:auto}
+#dv-screen .note p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:#3a3a42}
+#dv-screen .prog{height:9px;border-radius:5px;background:#ececed;overflow:hidden;margin-top:14px}
+#dv-screen .prog span{display:block;height:100%;border-radius:5px;background:var(--gold);transition:width .5s cubic-bezier(.2,.9,.3,1)}
+#dv-screen tr.hl td{background:#FCF8EF}
+#dv-screen .recmain .btn.ghost{background:#fff;color:#2b2b31;border:1px solid var(--line);
+  display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:9px;font-size:13.5px;font-weight:650}
 
 /* ---- drag + resize affordances ---- */
 #dv-screen .appt{touch-action:none;user-select:none;-webkit-user-select:none}
@@ -2112,6 +2169,361 @@ function dvDeductions(){
     </div>`;
 }
 
+/* ==========================================================================
+   CLIENT PROFILE — every panel in the record needs something real to show.
+   Derived deterministically from the client's name, so the same person always
+   has the same history, phone number and patch-test date no matter how many
+   times the record is opened.
+   ========================================================================== */
+function hash32(s){
+  let h=2166136261;
+  for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); }
+  return h>>>0;
+}
+function rngFrom(seed){
+  let t=seed>>>0;
+  return ()=>{ t=(t+0x6D2B79F5)>>>0; let x=Math.imul(t^(t>>>15),1|t);
+    x=(x+Math.imul(x^(x>>>7),61|x))^x; return ((x^(x>>>14))>>>0)/4294967296; };
+}
+const pick = (r,a)=>a[Math.floor(r()*a.length)];
+const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function daysAgo(n){ const d=new Date(); d.setDate(d.getDate()-n); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; }
+function daysAhead(n){ const d=new Date(); d.setDate(d.getDate()+n); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; }
+
+const _profiles=new Map();
+function profile(name){
+  if(_profiles.has(name)) return _profiles.get(name);
+  const r=rngFrom(hash32(name));
+  const [fn,ln]=[firstName(name), name.split(" ").slice(1).join(" ")||""];
+  const slug=(fn+"."+ln).toLowerCase().replace(/[^a-z.]/g,"");
+
+  const visits=2+Math.floor(r()*14);
+  /* joined between ~7 months and ~3 years ago — never a date in the future */
+  const joinedD=new Date(); joinedD.setDate(joinedD.getDate()-(210+Math.floor(r()*900)));
+
+  /* a plausible past — built from the real service menu so prices tie up */
+  const past=[];
+  let back=14+Math.floor(r()*20);
+  for(let i=0;i<Math.min(visits,6);i++){
+    const s=SERVICES[Math.floor(r()*SERVICES.length)];
+    const st=STYLISTS[Math.floor(r()*STYLISTS.length)];
+    past.push({when:daysAgo(back), service:s.n, staff:st.name, price:s.p, extra: r()<.45?+(r()*9+2.5).toFixed(2):0});
+    back+=21+Math.floor(r()*35);
+  }
+
+  const patchDays = 20+Math.floor(r()*160);
+
+  return _set(name,{
+    fn, ln,
+    phone:"+44 77"+String(10000000+Math.floor(r()*89999999)).slice(0,8),
+    email:slug?slug+"@example.com":"",
+    gender: pick(r,["Female","Female","Female","Male","Prefer not to say"]),
+    dob: `${1+Math.floor(r()*28)} ${MONTHS[Math.floor(r()*12)]} ${1962+Math.floor(r()*38)}`,
+    since:`${MONTHS[joinedD.getMonth()]} ${joinedD.getFullYear()}`,
+    visits,
+    notifyEmail:r()<.85, notifySMS:r()<.7, notifyWA:r()<.55, marketing:r()<.4,
+
+    notes:[
+      {d:daysAgo(back-18), by:pick(r,STYLISTS).name,
+       t:pick(r,[
+         "Prefers the water cooler than most — mention it at the basin.",
+         "Grows out warm; keep an ash corrector in the root mix.",
+         "Books around the school run, mornings only.",
+         "Sensitive scalp — no bleach directly on the scalp.",
+         "Wants to go two shades lighter by the summer, agreed to do it over three visits.",
+         "Hates a heavy fringe. Keep the face-frame soft."])},
+      {d:daysAgo(back+34), by:pick(r,STYLISTS).name,
+       t:pick(r,[
+         "Took the toner beautifully, repeat the same formula next time.",
+         "Running late is normal for her — she always calls ahead.",
+         "Coming back before the wedding in the spring.",
+         "Asked about the colour subscription — worth a follow-up.",
+         "Swims twice a week; recommend the weekly mask."])}
+    ],
+
+    patch:{ done:daysAgo(patchDays), result: r()<.94?"No reaction":"Mild reaction — retest",
+            due: patchDays>180?"Overdue":daysAhead(180-patchDays) },
+
+    forms:[
+      {n:"Colour consultation", d:daysAgo(patchDays), status:"Completed"},
+      {n:"Allergy & medical declaration", d:daysAgo(patchDays), status:"Completed"},
+      ...(r()<.4?[{n:"Photo consent", d:daysAgo(Math.floor(r()*60)), status:"Awaiting signature"}]:[])
+    ],
+
+    linked: r()<.35 ? [{n:pick(r,["Daughter","Partner","Sister","Mother"]),
+                        who:pick(r,CLIENT_POOL)}] : [],
+
+    pricing: r()<.3 ? [{svc:pick(r,SERVICES).n, note:"10% — long-standing client", off:10}] : [],
+
+    course: r()<.4 ? {n:"Blow dry ×6", used:1+Math.floor(r()*5), total:6, paid:180} : null,
+    wallet: r()<.35 ? +(r()*120+15).toFixed(2) : 0,
+    membership: r()<.25 ? {n:"Colour Club — monthly", since:daysAgo(90+Math.floor(r()*300)), fee:39} : null,
+    gift: r()<.3 ? {code:"GC-"+String(1000+Math.floor(r()*8999)), value:50,
+                    left:+(r()*50).toFixed(2), from:pick(r,CLIENT_POOL)} : null,
+    treat:{ points: Math.floor(r()*260), next:300 },
+    past
+  });
+}
+function _set(k,v){ _profiles.set(k,v); return v; }
+
+/* lifetime numbers combine the generated history with what's happened today */
+function lifetime(name){
+  const p=profile(name);
+  const today=S.appts.filter(a=>a.client===name).reduce((s,a)=>s+apptTotal(a),0);
+  const before=p.past.reduce((s,v)=>s+v.price+v.extra,0);
+  return {today, before, all:today+before};
+}
+
+/* ---- small building blocks shared by the record panels ---- */
+function fRow(label, value, wide){
+  return `<div class="f ${wide?"w":""}"><label>${label}</label><div class="fv">${value||'<span class="ph">—</span>'}</div></div>`;
+}
+function toggleRow(label, on, sub){
+  return `<div class="tgl"><span><b>${esc(label)}</b>${sub?`<small>${esc(sub)}</small>`:""}</span>
+    <span class="sw ${on?"on":""}"><i></i></span></div>`;
+}
+function emptyCard(icon, title, sub, cta){
+  return `<div class="card"><div class="mt">
+    <div class="mt-ic">${icon}</div><b>${esc(title)}</b><p>${esc(sub)}</p>
+    ${cta?`<span class="btn ghost">${esc(cta)}</span>`:""}</div></div>`;
+}
+function statusPill(s){
+  const good=/completed|no reaction|active|paid|redeemed/i.test(s);
+  const warn=/awaiting|overdue|retest|due/i.test(s);
+  return `<span class="pill ${good?"cl":warn?"warn":"bar"}">${esc(s)}</span>`;
+}
+
+/* ---- the panels ---- */
+function recBasic(name,p){
+  return `<h4>CLIENT NOTES</h4>
+    <div class="card">
+      <p class="hint-p">Anything here shows up when you're booking them in.</p>
+      <div class="notebox">${p.notes.length?esc(p.notes[0].t):"Write anything about the client that will help staff"}</div>
+    </div>
+    <h4>BASIC INFORMATION</h4>
+    <div class="card">
+      <div class="frm">
+        ${fRow("FIRST NAME", esc(p.fn))}
+        ${fRow("LAST NAME", esc(p.ln))}
+        ${fRow("GENDER", esc(p.gender))}
+        ${fRow("PHONE NUMBER", esc(p.phone))}
+        ${fRow("EMAIL", esc(p.email))}
+        ${fRow("DATE OF BIRTH", esc(p.dob))}
+      </div>
+    </div>
+    <h4>NOTIFICATIONS</h4>
+    <div class="card">
+      ${toggleRow("Email","","")&&""}
+      ${toggleRow("Appointment reminders by email", p.notifyEmail)}
+      ${toggleRow("Appointment reminders by SMS", p.notifySMS)}
+      ${toggleRow("WhatsApp confirmations", p.notifyWA)}
+      ${toggleRow("Marketing and offers", p.marketing, "Consent recorded "+p.since)}
+    </div>`;
+}
+
+function recComms(name,p){
+  const msgs=[
+    {ch:"WhatsApp", dir:"in",  t:"Hi! Could I move Saturday to the afternoon?", when:"09:41"},
+    {ch:"WhatsApp", dir:"out", t:`Of course — 15:00 with ${p.past[0]?p.past[0].staff.split(" ")[0]:"us"}. Booked you in ✨`, when:"09:44"},
+    {ch:"SMS",      dir:"out", t:"Reminder: your appointment is tomorrow. Reply STOP to opt out.", when:daysAgo(1)},
+    {ch:"Email",    dir:"out", t:"Your receipt from Forge Salon Central", when:daysAgo(1)}
+  ];
+  return `<h4>CHANNELS</h4>
+    <div class="card">
+      <div class="chgrid">
+        <div><span class="k">MOBILE</span><b>${esc(p.phone)}</b></div>
+        <div><span class="k">EMAIL</span><b>${esc(p.email)||"—"}</b></div>
+        <div><span class="k">PREFERRED</span><b>${p.notifyWA?"WhatsApp":p.notifySMS?"SMS":"Email"}</b></div>
+      </div>
+    </div>
+    <h4>RECENT MESSAGES</h4>
+    <div class="card">
+      ${msgs.map(m=>`<div class="msg ${m.dir}">
+        <div class="bub">${esc(m.t)}</div>
+        <div class="meta">${esc(m.ch)} · ${esc(m.when)}</div></div>`).join("")}
+      <p class="hint-p" style="margin-top:14px">Every channel lands in one thread — the client never gets asked the same question twice.</p>
+    </div>`;
+}
+
+function recNotes(name,p){
+  return `<h4>NOTES</h4>
+    <div class="card">
+      ${p.notes.map(n=>`<div class="note">
+        <div class="nh"><b>${esc(n.by)}</b><span>${esc(n.d)}</span></div>
+        <p>${esc(n.t)}</p></div>`).join("")}
+    </div>
+    <h4>COLOUR HISTORY</h4>
+    <div class="card">
+      ${(S.cl.saved.filter(f=>f.client===name).length
+        ? S.cl.saved.filter(f=>f.client===name).map(f=>`<div class="note">
+            <div class="nh"><b>Logged in ColorLab</b><span>today</span></div>
+            <p>${f.lines.map(l=>esc(l[0])+" "+esc(l[1])).join(" · ")}</p></div>`).join("")
+        : `<p class="hint-p">Nothing logged yet today. Weigh a colour for ${esc(firstName(name))} in <b>ColorLab</b> and the formula appears here.</p>`)}
+    </div>`;
+}
+
+function recLinked(name,p){
+  if(!p.linked.length) return emptyCard(GLYPH.people(), "No linked clients",
+    "Link family members so their appointments and reminders can be handled together.", "Link a client");
+  return `<h4>LINKED CLIENTS</h4>
+    <div class="card">${p.linked.map(l=>`<div class="line">
+      <div><div class="nm">${esc(l.who)}</div><div class="src">${esc(l.n)}</div></div>
+      <div class="px"><span class="pill cl">Linked</span></div></div>`).join("")}</div>`;
+}
+
+function recPricing(name,p){
+  if(!p.pricing.length) return emptyCard(GLYPH.card(), "Standard price list",
+    "No custom pricing for this client — they pay the salon's normal rates.", "Add custom price");
+  return `<h4>CUSTOM PRICING</h4>
+    <div class="card"><table>
+      <thead><tr><th>SERVICE</th><th>REASON</th><th style="text-align:right">ADJUSTMENT</th></tr></thead>
+      <tbody>${p.pricing.map(x=>`<tr><td>${esc(x.svc)}</td><td>${esc(x.note)}</td>
+        <td class="num">−${x.off}%</td></tr>`).join("")}</tbody></table></div>`;
+}
+
+function recAppts(name,p,mine){
+  const rows=mine.map(a=>({when:"Today", s:a.service, who:staffOf(a.staff).name, tot:apptTotal(a), now:true}))
+    .concat(p.past.map(v=>({when:v.when, s:v.service, who:v.staff, tot:v.price+v.extra, now:false})));
+  return `<h4>APPOINTMENT HISTORY</h4>
+    <div class="card"><table>
+      <thead><tr><th>DATE</th><th>SERVICE</th><th>WITH</th><th style="text-align:right">TOTAL</th></tr></thead>
+      <tbody>${rows.map(r=>`<tr${r.now?' class="hl"':''}><td>${esc(r.when)}</td><td>${esc(r.s)}</td>
+        <td>${esc(r.who)}</td><td class="num">${money(r.tot)}</td></tr>`).join("")}</tbody>
+    </table>
+    <p class="hint-p" style="margin-top:12px">${p.visits} visits since ${esc(p.since)}.</p></div>`;
+}
+
+const COLOUR_KINDS=["colour","tint"];
+function hasColour(name,p){
+  const today=S.appts.some(a=>a.client===name && COLOUR_KINDS.includes(a.kind));
+  const before=p.past.some(v=>COLOUR_KINDS.includes(svc(v.service).k));
+  return today||before;
+}
+function recPatch(name,p){
+  if(!hasColour(name,p)) return emptyCard(GLYPH.doc(), "No patch test on file",
+    `${firstName(name)} hasn't booked a colour service. A test is required before the first one.`, "Record a patch test");
+  const overdue=p.patch.due==="Overdue";
+  return `<h4>PATCH TESTS</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">LAST TESTED</div><div class="v" style="font-size:19px">${esc(p.patch.done)}</div></div>
+        <div class="kpi"><div class="k">RESULT</div><div class="v" style="font-size:19px">${statusPill(p.patch.result)}</div></div>
+        <div class="kpi"><div class="k">NEXT DUE</div><div class="v" style="font-size:19px">${overdue?statusPill("Overdue"):esc(p.patch.due)}</div></div>
+      </div>
+      <p class="hint-p" style="margin-top:14px">${overdue
+        ? "Colour can't go ahead until this is redone — the diary will warn whoever books her."
+        : "Valid. The diary blocks a colour booking automatically once this lapses."}</p>
+    </div>`;
+}
+
+function recForms(name,p){
+  return `<h4>CONSULTATION FORMS</h4>
+    <div class="card"><table>
+      <thead><tr><th>FORM</th><th>DATE</th><th style="text-align:right">STATUS</th></tr></thead>
+      <tbody>${p.forms.map(f=>`<tr><td>${esc(f.n)}</td><td>${esc(f.d)}</td>
+        <td class="num">${statusPill(f.status)}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
+function recCourses(name,p){
+  if(!p.course) return emptyCard(GLYPH.box(), "No course bought",
+    "Courses are prepaid blocks — six blow dries, a package of treatments. They draw down automatically.", "Sell a course");
+  const c=p.course, left=c.total-c.used;
+  return `<h4>COURSES</h4>
+    <div class="card">
+      <div class="line"><div><div class="nm">${esc(c.n)}</div>
+        <div class="src">Paid ${money(c.paid)} · ${left} of ${c.total} remaining</div></div>
+        <div class="px">${statusPill("Active")}</div></div>
+      <div class="prog"><span style="width:${(c.used/c.total*100).toFixed(0)}%"></span></div>
+      <p class="hint-p" style="margin-top:12px">Each visit draws one down on checkout — nobody has to remember.</p>
+    </div>`;
+}
+
+function recWallet(name,p){
+  if(!p.wallet) return emptyCard(GLYPH.card(), "Wallet is empty",
+    "Credit sits here from deposits, refunds and gift cards, and comes off the next bill automatically.", "Add credit");
+  return `<h4>WALLET</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">BALANCE</div><div class="v">${money(p.wallet)}</div><div class="d">available</div></div>
+      </div>
+      <div class="line" style="margin-top:12px"><div><div class="nm">Deposit carried forward</div>
+        <div class="src">${esc(daysAgo(21))}</div></div><div class="px">${money(p.wallet)}</div></div>
+    </div>`;
+}
+
+function recMemberships(name,p){
+  if(!p.membership) return emptyCard(GLYPH.spark(), "No membership",
+    "Memberships bill monthly and can include a set of services or a standing discount.", "Start a membership");
+  const m=p.membership;
+  return `<h4>MEMBERSHIPS</h4>
+    <div class="card">
+      <div class="line"><div><div class="nm">${esc(m.n)}</div>
+        <div class="src">Member since ${esc(m.since)}</div></div>
+        <div class="px">${money(m.fee)}/mo ${statusPill("Active")}</div></div>
+    </div>`;
+}
+
+function recGift(name,p){
+  if(!p.gift) return emptyCard(GLYPH.spark(), "No gift cards",
+    "Gift cards issued to or redeemed by this client would show here with their remaining balance.", "Issue a gift card");
+  const g=p.gift;
+  return `<h4>GIFT CARDS</h4>
+    <div class="card"><table>
+      <thead><tr><th>CODE</th><th>FROM</th><th>VALUE</th><th style="text-align:right">REMAINING</th></tr></thead>
+      <tbody><tr><td>${esc(g.code)}</td><td>${esc(g.from)}</td><td>${money(g.value)}</td>
+        <td class="num">${money(g.left)}</td></tr></tbody>
+    </table></div>`;
+}
+
+function recTreat(name,p){
+  const t=p.treat, pct=Math.min(100, t.points/t.next*100);
+  return `<h4>TREATCARD</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">POINTS</div><div class="v">${t.points}</div><div class="d">of ${t.next} to the next reward</div></div>
+      </div>
+      <div class="prog" style="margin-top:14px"><span style="width:${pct.toFixed(0)}%"></span></div>
+      <p class="hint-p" style="margin-top:12px">${t.points>=t.next
+        ? "A reward is ready — it'll be offered at checkout."
+        : `${t.next-t.points} points to go. Points accrue on every paid line, including the bar.`}</p>
+    </div>`;
+}
+
+function recSpend(name,p,mine){
+  const lt=lifetime(name);
+  const svcT=mine.reduce((s,a)=>s+a.price,0);
+  const ext=lt.today-svcT;
+  return `<h4>CLIENT SPEND</h4>
+    <div class="kpis">
+      <div class="kpi"><div class="k">LIFETIME</div><div class="v">${money(lt.all)}</div><div class="d">${p.visits} visits</div></div>
+      <div class="kpi"><div class="k">TODAY</div><div class="v">${money(lt.today)}</div><div class="d">${mine.length} appointment${mine.length===1?"":"s"}</div></div>
+      <div class="kpi"><div class="k">AVERAGE VISIT</div><div class="v">${money(lt.all/Math.max(p.visits,1))}</div><div class="d">across her history</div></div>
+    </div>
+    <div class="card"><table><tbody>
+      <tr><td>Services today</td><td class="num">${money(svcT)}</td></tr>
+      <tr><td>Products &amp; extras today</td><td class="num">${money(ext)}</td></tr>
+      <tr><td>Previous visits</td><td class="num">${money(lt.before)}</td></tr>
+      <tr><td><b>Lifetime</b></td><td class="num"><b>${money(lt.all)}</b></td></tr>
+    </tbody></table></div>`;
+}
+
+function recProducts(name,p,extras){
+  const past=p.past.filter(v=>v.extra>0).map(v=>({name:"Retail / bar", price:v.extra, src:"past", at:v.when}));
+  const rows=extras.map(e=>({name:e.name, price:e.price, src:e.src, at:"Today "+e.at})).concat(past);
+  if(!rows.length) return `<h4>CLIENT PRODUCT HISTORY</h4>
+    <div class="card"><div class="mt"><div class="mt-ic">${GLYPH.box()}</div>
+      <b>NO PRODUCT PURCHASES FOUND FOR THIS CLIENT</b>
+      <p>Order a drink in Bar or weigh a colour in ColorLab — it lands here on its own.</p></div></div>`;
+  return `<h4>CLIENT PRODUCT HISTORY</h4>
+    <div class="card"><table>
+      <thead><tr><th>DATE</th><th>ITEM</th><th>SOURCE</th><th style="text-align:right">AMOUNT</th></tr></thead>
+      <tbody>${rows.map(e=>`<tr><td>${esc(e.at)}</td><td>${esc(e.name)}</td>
+        <td>${e.src==="bar"?'<span class="pill bar">Bar</span>':e.src==="colorlab"?'<span class="pill cl">ColorLab</span>':'<span class="pill">Earlier visit</span>'}</td>
+        <td class="num">${money(e.price)}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
 function dvRecord(){
   const name=S.dv.recClient;
   const mine=S.appts.filter(a=>a.client===name);
@@ -2119,47 +2531,32 @@ function dvRecord(){
   const groups=[["CLIENT",["Basic information","Communication","Notes","Linked clients","Custom pricing"]],
                 ["APPOINTMENTS",["Appointment history","Patch Tests"]],
                 ["CONSULTATIONS",["Forms"]],
-                ["PURCHASES",["Courses","Wallet","Memberships","Product history","Spend","Gift Cards"]]];
+                ["PURCHASES",["Courses","Wallet","Memberships","Product history","Spend","Gift Cards"]],
+                ["LOYALTY",["TreatCard"]]];
   const tab=S.dv.recTab;
-  let main="";
-  if(tab==="Product history"){
-    main=`<h4>CLIENT PRODUCT HISTORY</h4>
-      <div class="card">${extras.length?`<table>
-        <thead><tr><th>DATE</th><th>ITEM</th><th>SOURCE</th><th style="text-align:right">AMOUNT</th></tr></thead>
-        <tbody>${extras.map(e=>`<tr>
-          <td>Today ${e.at}</td><td>${esc(e.name)}</td>
-          <td><span class="pill ${e.src==="bar"?"bar":"cl"}">${e.src==="bar"?"Bar":"ColorLab"}</span></td>
-          <td class="num">${money(e.price)}</td></tr>`).join("")}</tbody>
-      </table>`:`<div style="text-align:center;padding:34px 0;color:#9a9aa2">
-        <div style="font-size:26px;margin-bottom:10px">${GLYPH.box()}</div>
-        <b style="letter-spacing:.05em">NO PRODUCT PURCHASES FOUND FOR THIS CLIENT</b></div>`}</div>`;
-  } else if(tab==="Spend"){
-    const total=mine.reduce((s,a)=>s+apptTotal(a),0);
-    const svcT=mine.reduce((s,a)=>s+a.price,0);
-    main=`<h4>CLIENT SPEND</h4>
-      <div class="card"><table><tbody>
-        <tr><td>Services</td><td class="num">${money(svcT)}</td></tr>
-        <tr><td>Products &amp; extras</td><td class="num">${money(total-svcT)}</td></tr>
-        <tr><td><b>Total today</b></td><td class="num"><b>${money(total)}</b></td></tr>
-      </tbody></table></div>`;
-  } else if(tab==="Appointment history"){
-    main=`<h4>APPOINTMENT HISTORY</h4>
-      <div class="card"><table>
-        <thead><tr><th>TIME</th><th>SERVICE</th><th>WITH</th><th style="text-align:right">TOTAL</th></tr></thead>
-        <tbody>${mine.map(a=>`<tr><td>Today ${tm(a.start)}</td><td>${esc(a.service)}</td>
-          <td>${esc(staffOf(a.staff).name)}</td><td class="num">${money(apptTotal(a))}</td></tr>`).join("")
-          ||`<tr><td colspan="4" style="color:#9a9aa2">Nothing booked today.</td></tr>`}</tbody>
-      </table></div>`;
-  } else {
-    main=`<h4>${esc(tab.toUpperCase())}</h4>
-      <div class="card"><div style="color:#9a9aa2;padding:20px 0;text-align:center">
-        This panel is part of the real console. For the demo we kept
-        <b>Product history</b>, <b>Spend</b> and <b>Appointment history</b> live — those are the ones the
-        bar and the colour bar write into.</div></div>`;
-  }
+  const p=profile(name);
+  const PANEL={
+    "Basic information":  ()=>recBasic(name,p),
+    "Communication":      ()=>recComms(name,p),
+    "Notes":              ()=>recNotes(name,p),
+    "Linked clients":     ()=>recLinked(name,p),
+    "Custom pricing":     ()=>recPricing(name,p),
+    "Appointment history":()=>recAppts(name,p,mine),
+    "Patch Tests":        ()=>recPatch(name,p),
+    "Forms":              ()=>recForms(name,p),
+    "Courses":            ()=>recCourses(name,p),
+    "Wallet":             ()=>recWallet(name,p),
+    "Memberships":        ()=>recMemberships(name,p),
+    "Product history":    ()=>recProducts(name,p,extras),
+    "Spend":              ()=>recSpend(name,p,mine),
+    "Gift Cards":         ()=>recGift(name,p),
+    "TreatCard":          ()=>recTreat(name,p)
+  };
+  const main=(PANEL[tab]||PANEL["Basic information"])();
+
   return `<div class="rechead">
       <div class="av">${initials(name)}</div>
-      <div><h3>${esc(name)}</h3><div class="since">Client since Jul 2026</div></div>
+      <div><h3>${esc(name)}</h3><div class="since">Client since ${esc(p.since)} · ${p.visits} visits</div></div>
       <button class="back" data-act="dvback">‹ Back to diary</button>
     </div>
     <div class="rec">
