@@ -10,6 +10,15 @@
 <meta property="og:description" content="Pour a drink, weigh a colour, watch both land on one client record.">
 <meta property="og:url" content="https://salonforge.com/demo/">
 <meta name="robots" content="index,follow">
+<!-- Microsoft Clarity — same project as the rest of salonforge.com, so /demo/
+     shows up in the funnel instead of being a blind spot. -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "s9n5g9pd1b");
+</script>
 <style>
 /* ============================================================================
    SalonForge interactive demo
@@ -1030,8 +1039,8 @@ a{color:inherit}
       <p>Nobody wrote anything down twice. The drink, the colour and the cost found their own way
          onto the bill — because it's one system, not four that email each other.</p>
       <div class="btns">
-        <a class="primary" href="/trial/">Start a free trial</a>
-        <a class="ghost" href="https://calendly.com/salonforge-info/30min">Book a demo instead</a>
+        <a class="primary" href="/trial/" onclick="trackEvent('demo_cta_trial')">Start a free trial</a>
+        <a class="ghost" href="https://calendly.com/salonforge-info/30min" onclick="trackEvent('demo_cta_calendly')">Book a demo instead</a>
       </div>
       <p class="fine">No card. We set it up for your salon, with your services and team already in.</p>
     </div>
@@ -1328,6 +1337,21 @@ function clientsFor(staffId){
 }
 function barStylists(){
   return STYLISTS.filter(s=>S.appts.some(a=>a.staff===s.id)).slice(0,4);
+}
+
+/* ==========================================================================
+   MEASUREMENT — Clarity custom tags, so the question "do people who play
+   actually convert?" is answerable. Defensive: if the tag is blocked or
+   still loading, these are no-ops.
+   ========================================================================== */
+const _tagged=new Set();
+function tag(key, val){
+  if(_tagged.has(key)) return;          /* one flag per session, not a counter */
+  _tagged.add(key);
+  try{ window.clarity && window.clarity("set", key, String(val==null?"1":val)); }catch(e){}
+}
+function trackEvent(name){
+  try{ window.clarity && window.clarity("event", name); }catch(e){}
 }
 
 function toast(title, sub, icon){
@@ -2609,7 +2633,7 @@ function addExtra(apptId, name, price, src){
 }
 
 const ACTIONS = {
-  start(){ $("#intro").classList.add("hidden"); S.started=true; },
+  start(){ $("#intro").classList.add("hidden"); S.started=true; tag("demo_started"); trackEvent("demo_started"); },
   reset(){
     const app=S.app;                    /* stay where you are, just clean the salon */
     S=freshState(); S.started=true; S.app=app;
@@ -2618,6 +2642,7 @@ const ACTIONS = {
 
   app(el){
     S.app=el.dataset.app;
+    tag("demo_app_"+S.app);
     if(S.app==="daviana"){ S.seenDaviana=pendingExtras(); }
     render();
     window.scrollTo({top:0,behavior:"smooth"});
@@ -2658,6 +2683,7 @@ const ACTIONS = {
     b.queue.unshift(order);
     const n=b.basket.length, total=b.basket.reduce((s,i)=>s+i.price,0);
     b.basket=[]; b.client=null; b.showFact=true; b.fact=Math.floor(Math.random()*FACTS.length);
+    tag("demo_bar_order"); trackEvent("demo_bar_order");
     render();
     toast(`${n} drink${n===1?"":"s"} sent to the bar`,
           `${money(total)} on ${appt.client}'s bill in Daviana`, GLYPH.cup());
@@ -2724,6 +2750,7 @@ const ACTIONS = {
     lines.push(["Total in the bowl", t.bowlTotal.toFixed(1)+"g"]);
     lines.push(["Product cost to the salon", money(t.cost)]);
     c.saved.push({client:c.client.client, charge:Math.round(t.charge*100)/100, lines});
+    tag("demo_colour_saved"); trackEvent("demo_colour_saved");
     c.screen="saved"; render();
     toast("Formula saved", `${money(Math.round(t.charge*100)/100)} charged to ${c.client.client} in Daviana`, GLYPH.check());
   },
@@ -2934,7 +2961,9 @@ function render(){
 
   /* The closer is earned: it only appears once they've actually seen the
      cross-app loop land on a bill. Before that it's just another advert. */
-  $("#closer").classList.toggle("hidden", !(S.app==="daviana" && pendingExtras()>0));
+  const showCloser = S.app==="daviana" && pendingExtras()>0;
+  $("#closer").classList.toggle("hidden", !showCloser);
+  if(showCloser){ tag("demo_loop_complete"); trackEvent("demo_loop_complete"); }
 
   renderHint();
 }
