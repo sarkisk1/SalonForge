@@ -1,0 +1,2949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Try SalonForge — a live salon you can play with</title>
+<meta name="description" content="Step into Forge Salon Central. Pour a drink at the bar, weigh a colour to the gram, and watch both land on the same client record. No download, no signup.">
+<link rel="canonical" href="https://salonforge.com/demo/">
+<meta property="og:title" content="Try SalonForge — a live salon you can play with">
+<meta property="og:description" content="Pour a drink, weigh a colour, watch both land on one client record.">
+<meta property="og:url" content="https://salonforge.com/demo/">
+<meta name="robots" content="index,follow">
+<style>
+/* ============================================================================
+   SalonForge interactive demo
+   Three faithful re-creations of the real product UIs, wired to one shared
+   in-memory salon record. Everything is client-side and per-visitor: a reload
+   is a clean salon. Nothing here touches a live system.
+
+   Palettes are lifted from the shipping apps:
+     Bar      — Color+Salon.swift (salonGold/salonDark/salonBlack/salonSlate)
+     ColorLab — warm cream + gold, light mode
+     Daviana  — white console, gold accent
+   ========================================================================== */
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+:root{
+  --page:#0b0b0f;
+  --page-2:#131319;
+  --ink:#f4f2ee;
+  --ink-dim:#a2a0ac;
+  --peach:#D97757;          /* salonforge.com brand */
+  --line:rgba(255,255,255,.12);
+  --shell-radius:22px;
+  --ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif;
+  --futura: Futura, "Futura PT", "Century Gothic", "Avenir Next", "Trebuchet MS", var(--ui);
+}
+body{
+  background:var(--page);
+  color:var(--ink);
+  font-family:var(--ui);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+.hidden{display:none !important}
+
+/* ---------- page chrome ---------------------------------------------------- */
+.top{
+  position:sticky;top:0;z-index:60;
+  display:flex;align-items:center;gap:18px;
+  padding:12px max(16px,3vw);
+  background:rgba(11,11,15,.82);
+  backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:650;letter-spacing:-.01em;font-size:15px;white-space:nowrap}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--peach);box-shadow:0 0 0 4px rgba(217,119,87,.18)}
+.brand small{display:block;font-weight:450;font-size:11px;color:var(--ink-dim);letter-spacing:.02em}
+
+.switch{display:flex;gap:4px;margin-left:auto;background:rgba(255,255,255,.06);padding:4px;border-radius:999px;border:1px solid var(--line)}
+.switch button{
+  position:relative;display:flex;align-items:center;gap:8px;
+  padding:8px 15px;border-radius:999px;font-size:13.5px;font-weight:550;color:var(--ink-dim);
+  transition:color .18s ease, background .18s ease;white-space:nowrap;
+}
+.switch button:hover{color:var(--ink)}
+.switch .nav-ic{display:inline-flex;font-size:15px;opacity:.85}
+#cl-screen .comp .sw,#cl-screen .shade .sw{font-size:11px}
+.switch button[aria-selected="true"]{background:var(--ink);color:#14141a}
+.switch .badge{
+  min-width:17px;height:17px;padding:0 5px;border-radius:9px;background:var(--peach);color:#fff;
+  font-size:10.5px;font-weight:700;display:grid;place-items:center;
+  animation:pop .32s cubic-bezier(.2,1.4,.4,1);
+}
+.switch button[aria-selected="true"] .badge{background:#14141a;color:#fff}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+
+.top .reset{
+  padding:8px 13px;border-radius:999px;border:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-dim);transition:.18s;white-space:nowrap;
+}
+.top .reset:hover{color:var(--ink);border-color:rgba(255,255,255,.28)}
+
+/* ---------- stage ---------------------------------------------------------- */
+.stage{padding:26px max(16px,3vw) 90px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.stage-head{max-width:780px;text-align:center;display:flex;flex-direction:column;gap:7px}
+.stage-head h1{margin:0;font-size:clamp(21px,2.4vw,27px);font-weight:650;letter-spacing:-.02em}
+.stage-head p{margin:0;color:var(--ink-dim);font-size:14.5px;line-height:1.55}
+.stage-head .kicker{
+  align-self:center;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--peach);
+}
+
+/* device frames */
+.device{
+  position:relative;width:100%;
+  border-radius:var(--shell-radius);
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.07);
+  overflow:hidden;
+}
+.device.tablet{max-width:1120px;background:#0e0e13;padding:9px;border-radius:26px}
+.device.tablet .screen{border-radius:18px;overflow:hidden;position:relative;height:min(770px,76vh);min-height:520px}
+.device.browser{max-width:1320px;background:#1b1b21;padding:0;border-radius:14px}
+.device.browser #dv-screen{height:min(770px,76vh);min-height:520px}
+
+.chrome-bar{display:flex;align-items:center;gap:9px;padding:9px 13px;background:#26262e;border-bottom:1px solid rgba(0,0,0,.4)}
+.chrome-bar i{width:11px;height:11px;border-radius:50%;background:#4b4b57;display:block}
+.chrome-bar i:nth-child(1){background:#ff5f57}.chrome-bar i:nth-child(2){background:#febc2e}.chrome-bar i:nth-child(3){background:#28c840}
+.chrome-url{
+  flex:1;margin-left:8px;background:#15151b;border-radius:7px;padding:5px 12px;
+  font-size:11.5px;color:#8d8d9a;display:flex;align-items:center;gap:7px;
+}
+.chrome-url svg{flex:none;opacity:.7}
+
+/* iPad status bar */
+.ios-status{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:9px 22px 3px;font-size:12.5px;font-weight:600;letter-spacing:.01em;
+}
+
+/* ---------- the closer: earned, not shown before they've done the loop ----- */
+.closer{
+  width:100%;max-width:760px;margin:34px auto 0;padding:30px 28px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.11);
+  background:radial-gradient(700px 300px at 50% -20%, rgba(217,119,87,.13), transparent 70%), rgba(255,255,255,.035);
+  text-align:center;animation:closerin .5s cubic-bezier(.2,.9,.3,1);
+}
+@keyframes closerin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.closer h3{margin:0 0 9px;font-size:clamp(19px,2.1vw,23px);font-weight:650;letter-spacing:-.02em}
+.closer p{margin:0 auto 20px;color:var(--ink-dim);font-size:14.5px;line-height:1.6;max-width:520px}
+.closer .btns{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}
+.closer a{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;
+  font-size:14.5px;font-weight:600;text-decoration:none;transition:transform .16s ease;
+}
+.closer a:hover{transform:translateY(-2px)}
+.closer a.primary{background:var(--peach);color:#fff;box-shadow:0 12px 26px -10px rgba(217,119,87,.65)}
+.closer a.ghost{border:1px solid rgba(255,255,255,.2);color:var(--ink)}
+.closer .fine{margin:16px 0 0;font-size:12.5px;color:#6f6d79}
+
+/* ---------- hint chip ------------------------------------------------------ */
+.hint{
+  position:fixed;left:50%;bottom:22px;transform:translateX(-50%);
+  z-index:70;display:flex;align-items:center;gap:10px;
+  padding:11px 18px;border-radius:999px;
+  background:rgba(24,24,31,.94);border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(16px);
+  font-size:13.5px;color:#e9e7e2;
+  box-shadow:0 18px 40px -14px rgba(0,0,0,.8);
+  max-width:min(92vw,620px);
+  transition:opacity .25s ease, transform .25s ease;
+}
+.hint b{color:var(--peach);font-weight:650}
+.hint .pulse{width:7px;height:7px;border-radius:50%;background:var(--peach);flex:none;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.75)}}
+
+/* ---------- toasts --------------------------------------------------------- */
+#toasts{position:fixed;right:18px;top:70px;z-index:90;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{
+  pointer-events:auto;display:flex;gap:12px;align-items:flex-start;
+  padding:13px 16px;border-radius:14px;max-width:340px;
+  background:rgba(24,24,31,.96);border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 20px 45px -16px rgba(0,0,0,.85);
+  animation:slidein .34s cubic-bezier(.2,.9,.3,1);
+}
+.toast.out{animation:slideout .3s ease forwards}
+@keyframes slidein{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+@keyframes slideout{to{opacity:0;transform:translateX(26px)}}
+.toast .ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;flex:none;background:rgba(217,119,87,.18);color:var(--peach);font-size:14px}
+.toast .tx{font-size:13px;line-height:1.45}
+.toast .tx b{display:block;font-weight:620;margin-bottom:2px}
+.toast .tx span{color:var(--ink-dim)}
+
+/* ---------- intro ---------------------------------------------------------- */
+#intro{
+  position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;
+  background:radial-gradient(1000px 600px at 50% 20%, rgba(217,119,87,.10), transparent 62%), rgba(8,8,11,.94);
+  backdrop-filter:blur(10px);
+}
+#intro .card{
+  max-width:560px;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center;
+}
+#intro h2{margin:0;font-size:clamp(25px,3.6vw,36px);font-weight:660;letter-spacing:-.03em;line-height:1.12}
+#intro p{margin:0;color:var(--ink-dim);font-size:15.5px;line-height:1.62;max-width:470px}
+#intro .go{
+  margin-top:6px;padding:14px 30px;border-radius:999px;background:var(--peach);color:#fff;
+  font-weight:620;font-size:15px;box-shadow:0 14px 30px -10px rgba(217,119,87,.7);
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+#intro .go:hover{transform:translateY(-2px);box-shadow:0 20px 40px -12px rgba(217,119,87,.8)}
+#intro .fine{font-size:12.5px;color:#6f6d79}
+#intro .steps{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+#intro .steps div{font-size:12.5px;color:var(--ink-dim);display:flex;align-items:center;gap:7px}
+#intro .steps b{
+  width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.09);
+  display:grid;place-items:center;font-size:11px;color:var(--ink);font-weight:650;
+}
+
+/* ============================================================================
+   1. BAR  — dark, Futura, gold. Mirrors the shipping iPad app.
+   ========================================================================== */
+#bar-screen, #cl-screen{min-height:0}
+.ic-s{width:1em;height:1em;flex:none;vertical-align:-.13em}
+#bar-screen{
+  --gold:#F2D4AD;         /* salonGold  0.95/0.83/0.68 */
+  --deep-gold:#CCA67A;    /* deepGold   0.80/0.65/0.48 */
+  --dark:#262630;         /* salonDark  0.15/0.15/0.19 */
+  --black:#171721;        /* salonBlack 0.09/0.09/0.13 */
+  --slate:#333342;        /* salonSlate 0.20/0.20/0.26 */
+  --green:#61BC80;
+  --danger:#C73838;
+  font-family:var(--futura);
+  color:#fff;
+  background:
+    radial-gradient(120% 90% at 78% 8%, rgba(204,166,122,.10), transparent 60%),
+    linear-gradient(168deg, #16161f 0%, #1b1b26 42%, #101018 100%);
+  min-height:660px;
+  display:flex;flex-direction:column;
+  position:relative;
+}
+#bar-screen .ios-status{color:#fff}
+#bar-screen .seg{
+  align-self:center;display:flex;gap:2px;padding:5px;border-radius:999px;
+  background:rgba(255,255,255,.07);margin:4px 0 10px;
+}
+#bar-screen .seg button{padding:8px 20px;border-radius:999px;font-size:15px;color:#fff;position:relative;transition:.16s}
+#bar-screen .seg button[aria-selected="true"]{background:rgba(255,255,255,.13);color:var(--gold)}
+#bar-screen .seg .qbadge{
+  position:absolute;top:-3px;right:1px;min-width:18px;height:18px;border-radius:9px;background:#ff3b30;
+  color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;font-family:var(--ui);
+  animation:pop .3s cubic-bezier(.2,1.4,.4,1);
+}
+#bar-screen .body{flex:1;overflow-y:auto;padding:6px 20px 130px}
+#bar-screen .body::-webkit-scrollbar{width:0}
+
+#bar-screen .brandrow{display:flex;align-items:center;justify-content:space-between;margin:14px 2px 16px}
+#bar-screen .brandrow .lhs{display:flex;align-items:center;gap:14px}
+#bar-screen .anvil{width:34px;height:20px;flex:none;color:var(--gold)}
+#bar-screen .brandrow h2{margin:0;font-size:20px;letter-spacing:.26em;font-weight:600;color:var(--gold)}
+#bar-screen .live{display:flex;align-items:center;gap:7px;font-size:11.5px;letter-spacing:.12em;color:rgba(255,255,255,.45)}
+#bar-screen .live i{width:7px;height:7px;border-radius:50%;background:var(--green);display:block}
+
+#bar-screen .herenow{
+  border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:13px 16px;
+  background:rgba(255,255,255,.035);max-width:380px;margin-bottom:20px;
+}
+#bar-screen .herenow .t{font-size:12px;letter-spacing:.14em;color:var(--gold);font-weight:600;display:flex;gap:8px;align-items:center}
+#bar-screen .herenow .s{font-size:13px;color:rgba(255,255,255,.45);margin-top:7px}
+#bar-screen .herenow .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+#bar-screen .herenow .chips button{
+  padding:6px 11px;border-radius:9px;background:rgba(242,212,173,.13);color:var(--gold);
+  font-size:12.5px;border:1px solid rgba(242,212,173,.25);
+}
+
+#bar-screen .sechead{
+  display:flex;align-items:center;gap:14px;margin:22px 0 14px;
+  font-size:13px;letter-spacing:.05em;color:var(--gold);white-space:nowrap;
+}
+#bar-screen .sechead::before,#bar-screen .sechead::after{content:"";height:1px;background:rgba(242,212,173,.28);flex:1}
+
+#bar-screen .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px;max-width:760px}
+#bar-screen .tile{
+  min-height:74px;border-radius:10px;border:1px solid rgba(242,212,173,.5);
+  background:rgba(0,0,0,.4);color:var(--gold);font-size:16px;
+  display:grid;place-items:center;padding:8px 10px;text-align:center;
+  transition:transform .14s ease, background .14s ease;
+}
+#bar-screen .tile:hover{transform:translateY(-2px)}
+#bar-screen .tile[aria-pressed="true"]{background:var(--gold);color:#000;border-color:var(--gold)}
+
+#bar-screen .clients{display:flex;gap:12px;flex-wrap:wrap}
+#bar-screen .cchip{
+  min-width:112px;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.42);text-align:center;transition:.14s;
+}
+#bar-screen .cchip:hover{transform:translateY(-2px);border-color:rgba(242,212,173,.5)}
+#bar-screen .cchip[aria-pressed="true"]{border-color:var(--gold);background:rgba(242,212,173,.13)}
+#bar-screen .cchip .tm{font-size:13px;color:#fff;font-weight:500}
+#bar-screen .cchip .nm{font-size:15px;color:#fff;margin-top:2px}
+#bar-screen .cchip .had{font-size:11px;color:var(--gold);margin-top:5px;font-family:var(--ui)}
+#bar-screen .walkin{
+  min-width:112px;padding:12px 14px;border-radius:10px;border:1px dashed rgba(255,255,255,.22);
+  background:transparent;text-align:center;color:rgba(255,255,255,.5);
+}
+#bar-screen .walkin b{display:block;font-size:12.5px;letter-spacing:.06em;color:rgba(255,255,255,.65)}
+#bar-screen .walkin small{font-size:10.5px}
+
+#bar-screen .cats{columns:2;column-gap:16px;max-width:1000px}
+@media(max-width:860px){#bar-screen .cats{columns:1}}
+#bar-screen .cat{
+  break-inside:avoid;margin-bottom:16px;border:1px solid rgba(255,255,255,.09);border-radius:14px;
+  padding:15px;background:rgba(255,255,255,.028);
+}
+#bar-screen .cat h3{
+  margin:0 0 12px;font-size:13px;letter-spacing:.14em;color:var(--gold);font-weight:600;
+  display:flex;align-items:center;gap:9px;
+}
+#bar-screen .cat h3 .n{margin-left:auto;color:rgba(255,255,255,.32);letter-spacing:0;font-size:12px}
+#bar-screen .cat .grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+@media(max-width:520px){#bar-screen .cat .grid{grid-template-columns:1fr}}
+#bar-screen .drink{
+  display:flex;align-items:center;gap:9px;padding:12px 11px;border-radius:10px;
+  background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.07);
+  font-size:14.5px;font-weight:600;text-align:left;transition:.14s;
+}
+#bar-screen .drink:hover{border-color:rgba(242,212,173,.45);transform:translateY(-1px)}
+#bar-screen .drink .gl{color:var(--gold);font-size:15px;flex:none}
+#bar-screen .drink .ch{margin-left:auto;color:rgba(255,255,255,.3);font-size:13px}
+#bar-screen .cat .empty{font-size:13px;color:rgba(255,255,255,.32)}
+
+#bar-screen .quote{
+  border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:26px;text-align:center;
+  background:rgba(255,255,255,.028);margin-top:8px;
+}
+#bar-screen .quote .rule{display:flex;align-items:center;gap:14px;color:var(--gold);margin-bottom:16px}
+#bar-screen .quote .rule::before,#bar-screen .quote .rule::after{content:"";height:1px;background:rgba(255,255,255,.14);flex:1}
+#bar-screen .quote p{margin:0 0 14px;font-size:17px;color:#fff}
+#bar-screen .quote button{font-size:13px;color:rgba(255,255,255,.5);padding:7px 14px;border-radius:9px;background:rgba(255,255,255,.06)}
+
+/* basket */
+#bar-screen .basket{
+  position:absolute;left:20px;right:20px;bottom:18px;
+  border:1px solid rgba(242,212,173,.3);border-radius:16px;
+  background:rgba(18,18,26,.94);backdrop-filter:blur(14px);
+  box-shadow:0 -10px 40px -14px rgba(0,0,0,.9);
+}
+#bar-screen .basket .bhead{display:flex;align-items:center;gap:14px;padding:16px 18px}
+#bar-screen .basket .handle{width:44px;height:4px;border-radius:2px;background:rgba(255,255,255,.28);flex:none}
+#bar-screen .basket .btitle{font-size:14px;letter-spacing:.14em;color:var(--gold);font-weight:600}
+#bar-screen .basket .send{
+  margin-left:auto;padding:11px 22px;border-radius:12px;font-size:14px;letter-spacing:.1em;font-weight:600;
+  background:var(--gold);color:#000;display:flex;align-items:center;gap:8px;transition:.16s;
+}
+#bar-screen .basket .send[disabled]{background:rgba(255,255,255,.08);color:rgba(255,255,255,.35);cursor:not-allowed}
+#bar-screen .basket .send:not([disabled]):hover{transform:translateY(-1px)}
+#bar-screen .basket .items{border-top:1px solid rgba(255,255,255,.09);padding:6px 18px 14px;max-height:190px;overflow:auto}
+#bar-screen .basket .it{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:14.5px}
+#bar-screen .basket .it .px{margin-left:auto;color:var(--gold);font-family:var(--ui);font-size:13.5px}
+#bar-screen .basket .it .rm{color:var(--danger);font-size:17px;padding:0 4px}
+
+/* queue */
+#bar-screen .qrow{
+  display:flex;align-items:center;gap:16px;padding:15px 16px;border-radius:12px;
+  border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.03);margin-bottom:10px;
+  animation:slidein .3s ease;
+}
+#bar-screen .qrow.done{opacity:.45}
+#bar-screen .qrow .who{font-size:16px}
+#bar-screen .qrow .what{font-size:13.5px;color:var(--gold);margin-top:3px}
+#bar-screen .qrow .meta{font-size:11.5px;color:rgba(255,255,255,.4);margin-top:4px;font-family:var(--ui)}
+#bar-screen .qrow .dn{
+  margin-left:auto;padding:9px 18px;border-radius:10px;background:rgba(97,188,128,.16);
+  color:var(--green);border:1px solid rgba(97,188,128,.4);font-size:13px;letter-spacing:.06em;
+}
+#bar-screen .qdiv{display:flex;align-items:center;gap:14px;color:rgba(255,255,255,.3);font-size:11.5px;letter-spacing:.14em;margin:20px 0 12px}
+#bar-screen .qdiv::before,#bar-screen .qdiv::after{content:"";height:1px;background:rgba(255,255,255,.1);flex:1}
+
+/* menu tab */
+#bar-screen .mtag{text-align:center;color:rgba(255,255,255,.5);font-size:14px;margin:0 0 22px}
+#bar-screen .msec{margin-bottom:26px}
+#bar-screen .msec h4{margin:0 0 4px;font-size:13px;letter-spacing:.16em;color:var(--gold);font-weight:600}
+#bar-screen .msec .note{font-size:11.5px;color:rgba(255,255,255,.33);margin-bottom:12px;font-family:var(--ui)}
+#bar-screen .mitem{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+#bar-screen .mitem b{font-size:15px;font-weight:600}
+#bar-screen .mitem .tg{font-size:10.5px;letter-spacing:.1em;color:var(--gold);border:1px solid rgba(242,212,173,.35);border-radius:5px;padding:2px 6px;margin-left:9px;font-family:var(--ui)}
+#bar-screen .mitem p{margin:5px 0 0;font-size:13.5px;color:rgba(255,255,255,.5);font-family:var(--ui);line-height:1.5}
+
+/* reports tab */
+#bar-screen .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:760px;margin-bottom:22px}
+#bar-screen .stat{border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:17px;background:rgba(255,255,255,.03)}
+#bar-screen .stat .k{font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.4)}
+#bar-screen .stat .v{font-size:29px;color:var(--gold);margin-top:7px}
+#bar-screen .stat .sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:3px;font-family:var(--ui)}
+
+/* drink options modal */
+#bar-screen .modal{position:absolute;inset:0;z-index:20;display:grid;place-items:center;padding:20px;background:rgba(6,6,10,.68);backdrop-filter:blur(7px)}
+#bar-screen .modal .box{
+  width:min(560px,100%);border:1px solid rgba(242,212,173,.55);border-radius:18px;
+  background:#1b1b25;padding:26px;animation:pop .22s cubic-bezier(.2,1.2,.4,1);
+}
+#bar-screen .modal h3{margin:0 0 18px;text-align:center;font-size:19px;letter-spacing:.1em;color:var(--gold)}
+#bar-screen .modal .decaf{
+  display:block;margin:0 auto 20px;padding:10px 22px;border-radius:999px;border:1px solid rgba(242,212,173,.55);
+  color:#fff;font-size:15px;display:flex;align-items:center;gap:9px;
+}
+#bar-screen .modal .decaf i{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--gold);display:block}
+#bar-screen .modal .decaf[aria-pressed="true"] i{background:var(--gold)}
+#bar-screen .modal .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:520px){#bar-screen .modal .opts{grid-template-columns:1fr 1fr}}
+#bar-screen .modal .opts button{
+  padding:16px 10px;border-radius:10px;border:1px solid rgba(242,212,173,.5);
+  background:rgba(0,0,0,.3);font-size:14.5px;transition:.14s;
+}
+#bar-screen .modal .opts button:hover{background:var(--gold);color:#000}
+#bar-screen .modal .cancel{display:block;margin:24px auto 0;font-size:13.5px;letter-spacing:.1em;color:rgba(255,255,255,.45)}
+
+/* ============================================================================
+   2. COLORLAB — warm cream, light. Mirrors the shipping iPad app.
+   ========================================================================== */
+#cl-screen{
+  --cream:#FAF7F2;
+  --cream-2:#F3EFE7;
+  --card:#fff;
+  --gold:#A48111;
+  --gold-2:#B8912B;
+  --ink:#2C2825;
+  --ink-2:#6d6660;
+  --ok:#2f7d4f;
+  --no:#b4402f;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:var(--ui);
+  min-height:660px;display:flex;flex-direction:column;position:relative;
+}
+#cl-screen .ios-status{color:var(--ink)}
+#cl-screen .navbar{
+  display:flex;align-items:center;gap:12px;padding:8px 20px 12px;
+  border-bottom:1px solid rgba(0,0,0,.07);
+}
+#cl-screen .navbar .back{color:var(--gold);font-size:15px;display:flex;align-items:center;gap:5px;font-weight:500}
+#cl-screen .navbar .ttl{flex:1;text-align:center;font-size:16px;font-weight:620;letter-spacing:-.01em}
+#cl-screen .navbar .rhs{min-width:64px;display:flex;justify-content:flex-end}
+#cl-screen .body{flex:1;overflow-y:auto;padding:22px 26px 110px}
+/* the weighing screen pins its controls to the bottom, as the app does */
+#cl-screen .wfooter{
+  flex:none;padding:10px 26px 18px;
+  background:linear-gradient(to top, var(--cream) 72%, rgba(250,247,242,0));
+  border-top:1px solid rgba(0,0,0,.05);
+}
+#cl-screen .wfooter .manualrow{margin:6px 0 12px}
+#cl-screen .wfooter .savebar{position:static;left:auto;right:auto;bottom:auto;margin-top:14px;box-shadow:none}
+#cl-screen .body::-webkit-scrollbar{width:0}
+
+#cl-screen h2.big{margin:0;font-size:27px;font-weight:700;letter-spacing:-.02em}
+#cl-screen .sub{color:var(--ink-2);font-size:14.5px;margin-top:4px}
+#cl-screen .lbl{font-size:16px;font-weight:500;margin:22px 0 11px}
+
+#cl-screen .clientlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:18px}
+#cl-screen .clientcard{
+  display:flex;align-items:center;gap:13px;padding:15px;border-radius:14px;background:var(--card);
+  border:1px solid rgba(0,0,0,.07);text-align:left;transition:.15s;
+}
+#cl-screen .clientcard:hover{transform:translateY(-2px);border-color:rgba(164,129,17,.45);box-shadow:0 10px 24px -14px rgba(0,0,0,.3)}
+#cl-screen .clientcard .av{
+  width:44px;height:44px;border-radius:50%;background:#EDE7DA;color:var(--gold);flex:none;
+  display:grid;place-items:center;font-weight:700;font-size:15px;
+}
+#cl-screen .clientcard .nm{font-size:16px;font-weight:600}
+#cl-screen .clientcard .sv{font-size:13px;color:var(--ink-2);margin-top:2px}
+
+#cl-screen .systems{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+#cl-screen .system{
+  padding:22px;border-radius:16px;background:var(--card);border:1px solid rgba(0,0,0,.07);text-align:left;transition:.15s;
+}
+#cl-screen .system:hover{transform:translateY(-3px);border-color:rgba(164,129,17,.5);box-shadow:0 14px 30px -16px rgba(0,0,0,.35)}
+#cl-screen .system b{font-size:19px;font-weight:680;display:block;letter-spacing:-.01em}
+#cl-screen .system span{display:block;color:var(--ink-2);font-size:13.5px;margin-top:6px;line-height:1.5}
+#cl-screen .system .rat{display:inline-block;margin-top:12px;font-size:11.5px;letter-spacing:.08em;color:var(--gold);border:1px solid rgba(164,129,17,.35);border-radius:6px;padding:3px 8px}
+
+#cl-screen .picker-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+#cl-screen .picker-head .rhs{color:var(--ink-2);font-size:15px}
+#cl-screen .meta{font-size:14px;color:var(--ink-2);margin-top:5px}
+#cl-screen .meta .live{color:var(--gold-2)}
+#cl-screen .levels{display:flex;flex-wrap:wrap;gap:10px}
+#cl-screen .levels button{
+  min-width:56px;padding:13px 8px;border-radius:11px;background:var(--cream-2);
+  border:1px solid rgba(0,0,0,.05);font-size:17px;font-weight:500;transition:.14s;
+}
+#cl-screen .levels button:hover{background:#EAE4D6}
+#cl-screen .levels button[aria-pressed="true"]{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+#cl-screen .clear-gloss{
+  display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:13px;
+  border:1px solid rgba(164,129,17,.45);background:rgba(255,255,255,.6);margin:16px 0 4px;width:100%;text-align:left;
+}
+#cl-screen .clear-gloss .sw{width:30px;height:30px;border-radius:50%;background:#E3E7EA;flex:none}
+#cl-screen .clear-gloss b{font-size:16px;font-weight:620}
+#cl-screen .clear-gloss span{display:block;color:var(--ink-2);font-size:13.5px;margin-top:2px}
+#cl-screen .clear-gloss .plus{margin-left:auto;color:var(--gold);font-size:21px}
+
+#cl-screen .shades{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+#cl-screen .shade{
+  display:flex;align-items:center;gap:12px;padding:13px;border-radius:13px;background:var(--cream-2);
+  border:1px solid rgba(0,0,0,.05);text-align:left;transition:.14s;
+}
+#cl-screen .shade:hover{transform:translateY(-2px);background:#fff;border-color:rgba(164,129,17,.45)}
+#cl-screen .shade[aria-pressed="true"]{background:#fff;border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+#cl-screen .shade .sw{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:-.02em}
+#cl-screen .shade .txt{min-width:0}
+#cl-screen .shade .nm{display:block;font-size:15.5px;font-weight:560;letter-spacing:-.01em}
+#cl-screen .shade .st{display:block;font-size:13px;color:var(--gold-2);margin-top:2px;line-height:1.35}
+#cl-screen .clientcard .txt{min-width:0}
+#cl-screen .clientcard .nm{display:block}
+#cl-screen .clientcard .sv{display:block}
+
+#cl-screen .tip{
+  display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:13px;
+  background:#F2ECDD;margin-top:22px;font-size:14.5px;line-height:1.55;color:#4a443c;
+}
+#cl-screen .tip .b{font-size:16px;flex:none}
+
+/* weigh */
+#cl-screen .wtop{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+#cl-screen .wtop .l h2{margin:0;font-size:25px;font-weight:700;letter-spacing:-.02em}
+#cl-screen .wtop .l .tot{color:var(--ink-2);font-size:14.5px;margin-top:3px}
+#cl-screen .wtop .r{text-align:right}
+#cl-screen .manual-badge{
+  display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;
+  background:#fff;border:1px solid rgba(164,129,17,.35);color:var(--gold);font-size:13px;font-weight:650;letter-spacing:.05em;
+}
+#cl-screen .manual-badge i{width:8px;height:8px;border-radius:50%;background:var(--gold);display:block}
+#cl-screen .cost{color:var(--ink-2);font-size:15px;margin-top:12px}
+
+#cl-screen .gauge{display:grid;place-items:center;margin:6px 0 2px;position:relative}
+#cl-screen .gauge svg{transform:rotate(-90deg)}
+#cl-screen .gauge .gtx{position:absolute;text-align:center}
+#cl-screen .gauge .gv{font-size:46px;font-weight:750;letter-spacing:-.04em;line-height:1}
+#cl-screen .gauge .gg{font-size:15px;color:var(--ink-2);margin-top:6px}
+#cl-screen .nowline{text-align:center;font-size:19px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:11px;margin-top:6px}
+#cl-screen .nowline .sw{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:9.5px;font-weight:700}
+#cl-screen .nextline{text-align:center;font-size:14.5px;color:var(--ink-2);margin-top:7px}
+
+#cl-screen .comp{
+  width:100%;
+  display:flex;align-items:center;gap:13px;padding:14px 15px;border-radius:13px;background:var(--cream-2);
+  border:1px solid rgba(0,0,0,.04);margin-bottom:9px;position:relative;overflow:hidden;
+}
+#cl-screen .comp.active{background:#fff;border-color:rgba(164,129,17,.55);box-shadow:0 0 0 1px rgba(164,129,17,.35)}
+#cl-screen .comp.active::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
+#cl-screen .comp .sw{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-size:12.5px;font-weight:700}
+#cl-screen .comp .txt{flex:1;min-width:0;text-align:left}
+#cl-screen .comp .nm{display:block;font-size:16.5px;font-weight:560;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cl-screen .comp .gd{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+#cl-screen .comp .rd{font-size:16px;font-weight:560;white-space:nowrap;flex:none}
+#cl-screen .comp .rd.ok{color:var(--ok)}
+#cl-screen .addprod{
+  width:100%;display:flex;align-items:center;gap:11px;padding:15px;border-radius:13px;
+  border:1.5px dashed rgba(0,0,0,.16);color:var(--ink);font-size:16px;background:transparent;
+}
+#cl-screen .addprod .p{width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+
+#cl-screen .manualrow{display:flex;align-items:center;justify-content:center;gap:12px;margin:26px 0 16px;flex-wrap:wrap}
+#cl-screen .manualrow .tag{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:13px;font-weight:650;letter-spacing:.05em}
+#cl-screen .manualrow input{
+  width:190px;padding:13px 16px;border-radius:11px;border:1px solid rgba(0,0,0,.14);background:#fff;
+  font-size:16px;font-family:inherit;color:var(--ink);
+}
+#cl-screen .manualrow input:focus{outline:2px solid rgba(164,129,17,.4);outline-offset:1px}
+#cl-screen .manualrow .set{padding:13px 24px;border-radius:999px;background:var(--gold);color:#fff;font-size:15px;font-weight:600}
+#cl-screen .manualrow .set[disabled]{background:#E5E0D6;color:#9a948b;cursor:not-allowed}
+#cl-screen .steps{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+#cl-screen .steps .g{display:flex;gap:10px}
+#cl-screen .steps button{padding:13px 20px;border-radius:11px;background:#fff;font-size:15.5px;font-weight:560;border:1px solid}
+#cl-screen .steps .minus{color:var(--no);border-color:rgba(180,64,47,.4)}
+#cl-screen .steps .plus{color:var(--ok);border-color:rgba(47,125,79,.4)}
+#cl-screen .savebar{
+  position:absolute;left:26px;right:26px;bottom:20px;padding:17px;border-radius:14px;background:#fff;
+  border:1px solid rgba(0,0,0,.08);text-align:center;font-size:17px;font-weight:560;
+  display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 -8px 30px -16px rgba(0,0,0,.4);
+}
+#cl-screen .savebar.ready{background:var(--gold);color:#fff;border-color:var(--gold);cursor:pointer}
+#cl-screen .savebar.ready:hover{filter:brightness(1.06)}
+#cl-screen .savebar.idle{color:var(--ink-2);cursor:not-allowed}
+
+#cl-screen .done{max-width:520px;margin:40px auto;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+#cl-screen .done .tick{width:62px;height:62px;border-radius:50%;background:rgba(47,125,79,.12);color:var(--ok);display:grid;place-items:center;font-size:29px}
+#cl-screen .done h2{margin:0;font-size:25px;font-weight:700;letter-spacing:-.02em}
+#cl-screen .done p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.6}
+#cl-screen .done .recap{width:100%;background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;padding:18px;text-align:left;margin-top:6px}
+#cl-screen .done .recap .r{display:flex;justify-content:space-between;padding:8px 0;font-size:14.5px;border-bottom:1px solid rgba(0,0,0,.05)}
+#cl-screen .done .recap .r:last-child{border:0;font-weight:650}
+#cl-screen .done .again{padding:13px 26px;border-radius:999px;background:var(--gold);color:#fff;font-weight:600;font-size:15px;margin-top:4px}
+
+/* ============================================================================
+   3. DAVIANA — the console. Light, white, gold accent.
+   ========================================================================== */
+#dv-screen{
+  --ink:#1b1b1f;
+  --ink-2:#6b6b74;
+  --line:#e6e6ea;
+  --gold:#C0912F;
+  --bg:#fff;
+  --bg-2:#f6f6f8;
+  background:var(--bg);color:var(--ink);font-family:var(--ui);
+  min-height:660px;display:flex;flex-direction:column;font-size:14px;position:relative;
+}
+#dv-screen .dvtop{display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+#dv-screen .burger{font-size:19px;padding:2px 6px;color:#2b2b31}
+#dv-screen .sel{
+  display:flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);border-radius:8px;
+  font-size:13.5px;min-width:130px;
+}
+#dv-screen .sel .cv{margin-left:auto;color:#9a9aa2;font-size:11px}
+#dv-screen .salon{flex:1;text-align:center;font-size:17px;font-weight:650;letter-spacing:-.01em;display:flex;align-items:center;justify-content:center;gap:8px}
+#dv-screen .search{display:flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid var(--line);border-radius:8px;color:#9a9aa2;font-size:13px;min-width:200px}
+#dv-screen .dayweek{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+#dv-screen .dayweek button{padding:8px 18px;font-size:13.5px;color:var(--ink-2)}
+#dv-screen .dayweek button[aria-selected="true"]{background:#F6EFDD;color:#8a6a15;font-weight:600}
+
+#dv-screen .datestrip{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--line);overflow-x:auto}
+#dv-screen .datestrip::-webkit-scrollbar{height:0}
+#dv-screen .nav{padding:8px 13px;border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--ink-2);white-space:nowrap;display:flex;gap:6px;align-items:center}
+#dv-screen .today{padding:8px 16px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;color:#8a6a15;background:#FCF8EF;white-space:nowrap}
+#dv-screen .dchip{
+  padding:6px 15px;border:1px solid var(--line);border-radius:8px;text-align:center;white-space:nowrap;line-height:1.25;
+}
+#dv-screen .dchip small{display:block;font-size:11px;color:#9a9aa2}
+#dv-screen .dchip b{font-size:13.5px;font-weight:560}
+#dv-screen .dchip[aria-selected="true"]{background:#FCF8EF;border-color:#EBD9AE}
+#dv-screen .dchip[aria-selected="true"] b,#dv-screen .dchip[aria-selected="true"] small{color:#8a6a15}
+#dv-screen .dchip.we b,#dv-screen .dchip.we small{color:#b8912b}
+
+#dv-screen .diarywrap{flex:1;display:flex;min-height:0}
+#dv-screen .diary{flex:1;overflow:auto;position:relative}
+#dv-screen .staffrow{display:grid;position:sticky;top:0;z-index:5;background:var(--bg-2);border-bottom:1px solid var(--line)}
+#dv-screen .staffcell{padding:11px 8px 9px;text-align:center;border-right:1px solid var(--line);position:relative}
+#dv-screen .staffcell .av{width:31px;height:31px;border-radius:50%;margin:0 auto 6px;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:700}
+#dv-screen .staffcell .nm{font-size:11.5px;font-weight:700;letter-spacing:.02em}
+#dv-screen .staffcell .rl{font-size:9.5px;color:#8c8c95;letter-spacing:.05em;margin-top:2px}
+#dv-screen .staffcell .ul{position:absolute;left:8px;right:8px;bottom:0;height:2.5px;border-radius:2px}
+#dv-screen .gridbody{display:grid;position:relative}
+#dv-screen .timecol{border-right:1px solid var(--line)}
+#dv-screen .tick{height:26px;font-size:10.5px;color:#9a9aa2;padding:0 8px;text-align:right;position:relative}
+#dv-screen .tick.hour{font-size:11.5px;color:#6b6b74;font-weight:560}
+#dv-screen .col{border-right:1px solid var(--line);position:relative;background-image:repeating-linear-gradient(180deg,transparent 0 25px,#f0f0f3 25px 26px)}
+#dv-screen .appt{
+  display:block;
+  position:absolute;left:3px;right:3px;border-radius:5px;padding:6px 8px;overflow:hidden;
+  border-left:3px solid rgba(0,0,0,.28);cursor:pointer;transition:.14s;text-align:left;
+}
+#dv-screen .appt:hover{filter:brightness(.97);transform:translateX(1px)}
+#dv-screen .appt.sel{box-shadow:0 0 0 2px #1b1b1f}
+#dv-screen .appt .cn{font-size:12px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#dv-screen .appt .sv{font-size:11px;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#dv-screen .appt .tm{font-size:10.5px;margin-top:2px;opacity:.75}
+#dv-screen .appt .flag{
+  display:inline-flex;align-items:center;gap:4px;margin-top:4px;font-size:9.5px;font-weight:700;
+  background:rgba(255,255,255,.75);border-radius:4px;padding:1px 5px;letter-spacing:.03em;
+}
+#dv-screen .nowbar{position:absolute;left:0;right:0;height:2px;background:#e0342c;z-index:4;pointer-events:none}
+#dv-screen .nowbar::before{content:"";position:absolute;left:-4px;top:-3px;width:8px;height:8px;border-radius:50%;background:#e0342c}
+
+/* right detail panel */
+#dv-screen .panel{
+  width:376px;flex:none;border-left:1px solid var(--line);background:var(--bg);
+  display:flex;flex-direction:column;overflow:auto;
+  animation:panelin .26s cubic-bezier(.2,.9,.3,1);
+}
+@keyframes panelin{from{transform:translateX(28px);opacity:0}to{transform:none;opacity:1}}
+#dv-screen .panel .ph{padding:18px 20px;border-bottom:1px solid var(--line)}
+#dv-screen .panel .ph .x{float:right;color:#9a9aa2;font-size:19px;line-height:1}
+#dv-screen .panel .ph h3{margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em}
+#dv-screen .panel .ph .m{color:var(--ink-2);font-size:13px;margin-top:5px}
+#dv-screen .panel .sec{padding:16px 20px;border-bottom:1px solid var(--line)}
+#dv-screen .panel .sec h4{
+  margin:0 0 4px;font-size:11px;letter-spacing:.1em;font-weight:700;color:#3a3a42;
+  padding-bottom:7px;border-bottom:2px solid var(--gold);display:inline-block;
+}
+#dv-screen .line{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid #f0f0f3}
+#dv-screen .line:last-child{border:0}
+#dv-screen .line .nm{font-size:13.5px;font-weight:560}
+#dv-screen .line .src{font-size:11px;color:#8c8c95;margin-top:3px;display:flex;align-items:center;gap:6px}
+#dv-screen .line .src i{width:6px;height:6px;border-radius:50%;display:block}
+#dv-screen .line .px{margin-left:auto;font-size:13.5px;font-weight:560;white-space:nowrap}
+#dv-screen .line.fresh{animation:freshline 1.5s ease}
+@keyframes freshline{0%{background:rgba(192,145,47,.28)}100%{background:transparent}}
+#dv-screen .totalrow{display:flex;padding:15px 20px;font-size:16px;font-weight:700;background:var(--bg-2)}
+#dv-screen .totalrow .px{margin-left:auto}
+#dv-screen .panel .empty{padding:22px 20px;color:#9a9aa2;font-size:13px;line-height:1.6}
+#dv-screen .panel .cta{margin:16px 20px 24px;padding:12px;border:1px solid var(--line);border-radius:9px;font-size:13.5px;text-align:center;color:#3a3a42}
+#dv-screen .panel .cta:hover{background:var(--bg-2)}
+
+/* client record */
+#dv-screen .rec{flex:1;display:flex;min-height:0}
+#dv-screen .recside{width:250px;flex:none;border-right:1px solid var(--line);padding:14px 0;overflow:auto;background:var(--bg)}
+#dv-screen .recside .grp{font-size:10.5px;letter-spacing:.11em;color:#9a9aa2;font-weight:700;padding:16px 20px 7px}
+#dv-screen .recside button{
+  width:100%;display:flex;align-items:center;gap:11px;padding:10px 20px;font-size:13.5px;text-align:left;color:#2b2b31;
+  border-left:3px solid transparent;
+}
+#dv-screen .recside button:hover{background:var(--bg-2)}
+#dv-screen .recside button[aria-current="true"]{background:var(--bg-2);border-left-color:var(--gold);font-weight:650}
+#dv-screen .recmain{flex:1;overflow:auto;background:var(--bg-2);padding:24px}
+#dv-screen .recmain h4{margin:0 0 22px;font-size:13px;letter-spacing:.09em;font-weight:700;padding-bottom:9px;border-bottom:2px solid var(--gold);display:inline-block}
+#dv-screen .card{background:#fff;border:1px solid var(--line);border-radius:9px;padding:20px;margin-bottom:18px}
+#dv-screen .rechead{display:flex;align-items:center;gap:15px;padding:16px 24px;border-bottom:1px solid var(--line);background:#fff}
+#dv-screen .rechead .av{width:56px;height:56px;border-radius:50%;background:#2b2b31;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:700}
+#dv-screen .rechead h3{margin:0;font-size:26px;font-weight:750;letter-spacing:-.03em}
+#dv-screen .rechead .since{color:var(--ink-2);font-size:13px;margin-top:2px}
+#dv-screen .rechead .back{margin-left:auto;padding:9px 15px;border:1px solid var(--line);border-radius:8px;font-size:13px}
+#dv-screen table{width:100%;border-collapse:collapse}
+#dv-screen th{text-align:left;font-size:11px;letter-spacing:.07em;color:#8c8c95;padding:0 10px 10px;font-weight:700}
+#dv-screen td{padding:12px 10px;border-top:1px solid var(--line);font-size:13.5px}
+#dv-screen td.num{text-align:right;font-weight:560}
+#dv-screen .pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:650;border-radius:5px;padding:3px 8px;background:#eeeef1;color:#5c5c66}
+#dv-screen .pill.bar{background:#EFE7DA;color:#7a5c14}
+#dv-screen .pill.cl{background:#E7EFE9;color:#2f6b47}
+#dv-screen .pill.warn{background:#FBE9E4;color:#a8442b}
+
+/* ---- client-record panels ---- */
+#dv-screen .hint-p{margin:0;color:var(--ink-2);font-size:12.5px;line-height:1.55}
+#dv-screen .notebox{
+  margin-top:11px;padding:13px 15px;border:1px solid var(--line);border-radius:9px;
+  background:var(--bg-2);font-size:13.5px;line-height:1.55;min-height:64px;color:#3a3a42;
+}
+#dv-screen .frm{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+@media(max-width:820px){#dv-screen .frm{grid-template-columns:1fr}}
+#dv-screen .frm .f.w{grid-column:1/-1}
+#dv-screen .frm label{display:block;font-size:10.5px;letter-spacing:.09em;font-weight:700;color:#8c8c95;margin-bottom:6px}
+#dv-screen .frm .fv{
+  padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:#fff;
+  font-size:13.5px;min-height:39px;display:flex;align-items:center;
+}
+#dv-screen .frm .ph{color:#b0b0b8}
+#dv-screen .tgl{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid #f0f0f3}
+#dv-screen .tgl:last-child{border:0}
+#dv-screen .tgl b{font-size:13.5px;font-weight:560;display:block}
+#dv-screen .tgl small{display:block;font-size:11.5px;color:#8c8c95;margin-top:2px}
+#dv-screen .tgl .sw{
+  margin-left:auto;flex:none;width:38px;height:22px;border-radius:11px;background:#dcdce1;
+  position:relative;transition:background .2s;
+}
+#dv-screen .tgl .sw.on{background:var(--gold)}
+#dv-screen .tgl .sw i{
+  position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;
+  transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.25);
+}
+#dv-screen .tgl .sw.on i{transform:translateX(16px)}
+#dv-screen .mt{text-align:center;padding:30px 16px}
+#dv-screen .mt-ic{font-size:26px;color:#c2c2ca;margin-bottom:12px}
+#dv-screen .mt b{display:block;font-size:14.5px;letter-spacing:.02em}
+#dv-screen .mt p{margin:8px auto 16px;max-width:400px;color:var(--ink-2);font-size:12.5px;line-height:1.6}
+#dv-screen .chgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+#dv-screen .chgrid .k{display:block;font-size:10.5px;letter-spacing:.09em;color:#8c8c95;font-weight:700;margin-bottom:5px}
+#dv-screen .chgrid b{font-size:14px;font-weight:600}
+#dv-screen .msg{margin-bottom:13px;max-width:78%}
+#dv-screen .msg.out{margin-left:auto;text-align:right}
+#dv-screen .msg .bub{
+  display:inline-block;padding:10px 14px;border-radius:14px;font-size:13.5px;line-height:1.5;text-align:left;
+  background:var(--bg-2);border:1px solid var(--line);
+}
+#dv-screen .msg.out .bub{background:#FCF4E2;border-color:#EBD9AE}
+#dv-screen .msg .meta{font-size:10.5px;color:#9a9aa2;margin-top:4px}
+#dv-screen .note{padding:13px 0;border-bottom:1px solid #f0f0f3}
+#dv-screen .note:last-child{border:0}
+#dv-screen .note .nh{display:flex;gap:10px;align-items:baseline;font-size:12px}
+#dv-screen .note .nh b{font-weight:650}
+#dv-screen .note .nh span{color:#9a9aa2;margin-left:auto}
+#dv-screen .note p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:#3a3a42}
+#dv-screen .prog{height:9px;border-radius:5px;background:#ececed;overflow:hidden;margin-top:14px}
+#dv-screen .prog span{display:block;height:100%;border-radius:5px;background:var(--gold);transition:width .5s cubic-bezier(.2,.9,.3,1)}
+#dv-screen tr.hl td{background:#FCF8EF}
+#dv-screen .recmain .btn.ghost{background:#fff;color:#2b2b31;border:1px solid var(--line);
+  display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:9px;font-size:13.5px;font-weight:650}
+
+/* ---- drag + resize affordances ---- */
+#dv-screen .appt{touch-action:none;user-select:none;-webkit-user-select:none}
+#dv-screen .appt .rz{
+  position:absolute;left:0;right:0;bottom:0;height:9px;cursor:ns-resize;
+  display:flex;align-items:flex-end;justify-content:center;padding-bottom:2px;
+}
+#dv-screen .appt .rz::after{content:"";width:26px;height:3px;border-radius:2px;background:rgba(0,0,0,.28);opacity:0;transition:opacity .15s}
+#dv-screen .appt:hover .rz::after{opacity:1}
+#dv-screen .appt.dragging{z-index:30;opacity:.94;box-shadow:0 14px 30px -8px rgba(0,0,0,.42);cursor:grabbing;transition:none}
+#dv-screen .appt.clash{outline:2px solid #e0342c;outline-offset:-2px}
+#dv-screen .col.hot{background-color:rgba(192,145,47,.07)}
+#dv-screen .dragbadge{
+  position:fixed;z-index:80;pointer-events:none;padding:6px 11px;border-radius:8px;
+  background:#1b1b1f;color:#fff;font-size:12px;font-weight:650;box-shadow:0 8px 20px -6px rgba(0,0,0,.5);
+}
+#dv-screen .col .slot{
+  position:absolute;left:3px;right:3px;border-radius:5px;border:1.5px dashed transparent;
+  display:grid;place-items:center;color:#b0b0b8;font-size:16px;opacity:0;transition:opacity .12s;
+}
+#dv-screen .col:hover .slot:hover{opacity:1;border-color:#d6c08a;background:rgba(192,145,47,.07);cursor:pointer}
+
+/* ---- nav drawer (mirrors the real Daviana drawer) ---- */
+#dv-screen .scrim{position:absolute;inset:0;z-index:40;background:rgba(20,20,24,.42);animation:fade .2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+#dv-screen .drawer{
+  position:absolute;left:0;top:0;bottom:0;width:290px;z-index:41;background:#FBF9F5;
+  border-right:1px solid var(--line);display:flex;flex-direction:column;overflow:auto;
+  animation:drawin .24s cubic-bezier(.2,.9,.3,1);
+}
+@keyframes drawin{from{transform:translateX(-24px);opacity:.4}to{transform:none;opacity:1}}
+#dv-screen .drawer .me{display:flex;align-items:center;gap:12px;padding:18px 18px 12px}
+#dv-screen .drawer .me .av{width:44px;height:44px;border-radius:50%;background:#6a5bd6;color:#fff;display:grid;place-items:center;font-weight:700;font-size:14px}
+#dv-screen .drawer .me .tag{font-size:9.5px;letter-spacing:.12em;font-weight:700;color:#8c8c95}
+#dv-screen .drawer .me .nm{font-size:16px;font-weight:700;letter-spacing:-.01em}
+#dv-screen .drawer .me .rl{font-size:12px;color:var(--ink-2)}
+#dv-screen .drawer .clock{display:flex;align-items:center;gap:12px;padding:4px 20px 14px;color:var(--ink-2)}
+#dv-screen .drawer .clock b{font-size:21px;color:var(--ink);font-weight:650;letter-spacing:-.02em}
+#dv-screen .drawer .clock span{font-size:12px}
+#dv-screen .drawer .loc{
+  margin:0 14px 8px;padding:12px 13px;border-radius:11px;background:#fff;border:1px solid var(--line);
+  display:flex;align-items:center;gap:11px;
+}
+#dv-screen .drawer .loc .ic{width:34px;height:34px;border-radius:9px;background:#FCF4E2;color:var(--gold);display:grid;place-items:center;flex:none}
+#dv-screen .drawer .loc b{display:block;font-size:14px;font-weight:650}
+#dv-screen .drawer .loc small{font-size:11.5px;color:var(--ink-2)}
+#dv-screen .drawer .grp{font-size:10px;letter-spacing:.14em;color:var(--gold);font-weight:700;padding:16px 20px 6px}
+#dv-screen .drawer nav button{
+  width:100%;display:flex;align-items:center;gap:13px;padding:11px 20px;font-size:15px;text-align:left;color:#2b2b31;
+}
+#dv-screen .drawer nav button:hover{background:rgba(0,0,0,.03)}
+#dv-screen .drawer nav button[aria-current="true"]{background:#FCF4E2;font-weight:650}
+#dv-screen .drawer nav button .ic-s{width:19px;height:19px;color:#5c5c66}
+#dv-screen .drawer nav button[aria-current="true"] .ic-s{color:var(--gold)}
+#dv-screen .drawer .foot{margin-top:auto;display:flex;justify-content:space-around;padding:16px 10px;border-top:1px solid var(--line);color:var(--ink-2)}
+#dv-screen .drawer .foot div{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px}
+
+/* ---- generic page shell for the non-diary views ---- */
+#dv-screen .dvhead{flex:none}
+#dv-screen .page{flex:1;overflow:auto;background:var(--bg-2);padding:22px 26px}
+#dv-screen .page .card h4{
+  margin:0 0 14px;font-size:11px;letter-spacing:.09em;font-weight:700;color:#3a3a42;
+  padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;
+}
+#dv-screen .page h2{margin:0 0 3px;font-size:23px;font-weight:750;letter-spacing:-.025em}
+#dv-screen .page .lede{color:var(--ink-2);font-size:13.5px;margin:0 0 20px}
+#dv-screen .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+#dv-screen .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:14px;margin-bottom:18px}
+#dv-screen .kpi{background:#fff;border:1px solid var(--line);border-radius:11px;padding:16px}
+#dv-screen .kpi .k{font-size:10.5px;letter-spacing:.1em;color:#8c8c95;font-weight:700}
+#dv-screen .kpi .v{font-size:27px;font-weight:750;letter-spacing:-.03em;margin-top:7px}
+#dv-screen .kpi .d{font-size:12px;color:var(--ink-2);margin-top:3px}
+#dv-screen .kpi .d.up{color:#2f7d4f}
+#dv-screen .bars{display:flex;flex-direction:column;gap:11px;margin-top:4px}
+#dv-screen .bar{display:flex;align-items:center;gap:11px;font-size:13px}
+#dv-screen .bar .lb{width:106px;flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#dv-screen .bar .tr{display:block;flex:1;height:9px;border-radius:5px;background:#ececed;overflow:hidden}
+#dv-screen .bar .fl{display:block;height:100%;border-radius:5px;transition:width .5s cubic-bezier(.2,.9,.3,1)}
+#dv-screen .bar .vl{width:66px;text-align:right;flex:none;font-weight:600;font-variant-numeric:tabular-nums}
+#dv-screen .spark{display:flex;align-items:flex-end;gap:4px;height:96px;margin-top:8px}
+#dv-screen .spark i{flex:1;background:#E3D3A8;border-radius:3px 3px 0 0;min-height:2px;position:relative;transition:height .5s cubic-bezier(.2,.9,.3,1)}
+#dv-screen .spark i.on{background:var(--gold)}
+#dv-screen .sparkx{display:flex;gap:4px;margin-top:6px;font-size:9.5px;color:#9a9aa2}
+#dv-screen .sparkx span{flex:1;text-align:center}
+#dv-screen .listrow{
+  display:flex;align-items:center;gap:13px;padding:12px 14px;background:#fff;border:1px solid var(--line);
+  border-radius:10px;margin-bottom:9px;width:100%;text-align:left;
+}
+#dv-screen .listrow:hover{border-color:#d6c08a;background:#FEFCF7}
+#dv-screen .listrow .av{width:36px;height:36px;border-radius:50%;background:#2b2b31;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;flex:none}
+#dv-screen .listrow .nm{font-size:14.5px;font-weight:600}
+#dv-screen .listrow .sub{font-size:12px;color:var(--ink-2);margin-top:2px}
+#dv-screen .listrow .rt{margin-left:auto;text-align:right;font-size:13px}
+#dv-screen .qsearch{
+  width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:14px;
+  margin-bottom:16px;background:#fff;color:var(--ink);
+}
+#dv-screen .qsearch:focus{outline:2px solid rgba(192,145,47,.35);outline-offset:1px}
+#dv-screen .btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:9px;
+  background:var(--gold);color:#fff;font-size:13.5px;font-weight:650;
+}
+#dv-screen .btn:hover{filter:brightness(1.06)}
+#dv-screen .btn.ghost{background:#fff;color:#2b2b31;border:1px solid var(--line)}
+#dv-screen .btn.danger{background:#fff;color:#c0392b;border:1px solid rgba(192,57,43,.35)}
+
+/* ---- sheets (new booking / new client) ---- */
+#dv-screen .sheet{position:absolute;inset:0;z-index:50;display:grid;place-items:center;padding:22px;background:rgba(20,20,24,.45)}
+#dv-screen .sheet .box{
+  width:min(560px,100%);max-height:88%;overflow:auto;background:#fff;border-radius:14px;
+  box-shadow:0 30px 70px -22px rgba(0,0,0,.5);animation:pop .22s cubic-bezier(.2,1.2,.4,1);
+}
+#dv-screen .sheet .sh{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+#dv-screen .sheet .sh h3{margin:0;font-size:19px;font-weight:720;letter-spacing:-.02em}
+#dv-screen .sheet .sh .x{margin-left:auto;color:#9a9aa2;font-size:20px;line-height:1}
+#dv-screen .sheet .sb{padding:18px 22px}
+#dv-screen .sheet .sf{padding:14px 22px 20px;display:flex;gap:10px;justify-content:flex-end;border-top:1px solid var(--line)}
+#dv-screen .fld{margin-bottom:15px}
+#dv-screen .fld label{display:block;font-size:10.5px;letter-spacing:.09em;font-weight:700;color:#6b6b74;margin-bottom:6px}
+#dv-screen .fld input,#dv-screen .fld select{
+  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:14px;background:#fff;color:var(--ink);
+}
+#dv-screen .fld input:focus,#dv-screen .fld select:focus{outline:2px solid rgba(192,145,47,.35);outline-offset:1px}
+#dv-screen .fld .row{display:flex;gap:10px}
+#dv-screen .picklist{max-height:210px;overflow:auto;border:1px solid var(--line);border-radius:9px}
+#dv-screen .picklist button{width:100%;text-align:left;padding:11px 14px;font-size:14px;border-bottom:1px solid #f2f2f4}
+#dv-screen .picklist button:last-child{border-bottom:0}
+#dv-screen .picklist button:hover{background:var(--bg-2)}
+#dv-screen .picklist button[aria-pressed="true"]{background:#FCF4E2;font-weight:650}
+
+/* editable rows in the appointment panel */
+#dv-screen .panel .ed{width:100%;display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #f0f0f3;text-align:left}
+#dv-screen .panel .ed:hover{background:#fafafb}
+#dv-screen .panel .ed .k{font-size:11px;letter-spacing:.07em;color:#8c8c95;font-weight:700;width:74px;flex:none}
+#dv-screen .panel .ed .v{font-size:13.5px;font-weight:560}
+#dv-screen .panel .ed .cv{margin-left:auto;color:#b0b0b8;font-size:12px}
+#dv-screen .panel .statusrow{display:flex;gap:7px;padding:12px 20px;border-bottom:1px solid var(--line)}
+#dv-screen .panel .statusrow button{flex:1;padding:8px;border-radius:8px;border:1px solid var(--line);font-size:12px;font-weight:600;color:var(--ink-2)}
+#dv-screen .panel .statusrow button[aria-pressed="true"]{background:#FCF4E2;border-color:#EBD9AE;color:#8a6a15}
+#dv-screen .panel .acts{display:flex;gap:9px;padding:14px 20px 22px}
+#dv-screen .panel .acts .btn{flex:1;justify-content:center}
+
+/* responsive */
+@media(max-width:1000px){
+  #dv-screen .panel{position:absolute;right:0;top:0;bottom:0;z-index:20;box-shadow:-14px 0 40px -18px rgba(0,0,0,.4)}
+  #dv-screen .recside{width:190px}
+}
+@media(max-width:760px){
+  .switch button span.t{display:none}
+  .top{gap:8px;padding:10px 12px}
+  .brand{font-size:13.5px;gap:8px}
+  .brand small{display:none}
+  .switch{padding:3px;gap:2px}
+  .switch button{padding:7px 11px}
+  .top .reset{padding:7px 10px;font-size:11.5px}
+  #bar-screen .seg button{padding:7px 12px;font-size:13.5px}
+  #bar-screen .body{padding-bottom:150px}
+  .stage{padding:18px 12px 90px}
+  #bar-screen .body,#cl-screen .body{padding-left:14px;padding-right:14px}
+  #bar-screen .basket{left:12px;right:12px}
+  #cl-screen .savebar{left:14px;right:14px}
+  #dv-screen .panel{width:min(340px,92vw)}
+  .hint{font-size:12.5px;padding:10px 14px;bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001s !important;transition-duration:.001s !important}}
+</style>
+</head>
+<body>
+
+<div id="intro">
+  <div class="card">
+    <h2>Step into Forge Salon Central</h2>
+    <p>A real salon runs on more than a diary. Pour a drink at the bar, weigh a colour to the gram — and watch both land on the same client record, in front of you.</p>
+    <div class="steps">
+      <div><b>1</b> Order a drink in Bar</div>
+      <div><b>2</b> Weigh a colour in ColorLab</div>
+      <div><b>3</b> Open the client's bill</div>
+    </div>
+    <button class="go" data-act="start">Walk in</button>
+    <div class="fine">No signup, no download. This salon is yours alone — reload for a clean one.</div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="brand">
+    <span class="dot"></span>
+    <span>SalonForge<small>Forge Salon Central — demo</small></span>
+  </div>
+  <nav class="switch" role="tablist" aria-label="Apps">
+    <button role="tab" data-act="app" data-app="bar" aria-selected="true"><span class="nav-ic" data-g="cup"></span><span class="t">Bar</span></button>
+    <button role="tab" data-act="app" data-app="colorlab" aria-selected="false"><span class="nav-ic" data-g="drop"></span><span class="t">ColorLab</span></button>
+    <button role="tab" data-act="app" data-app="daviana" aria-selected="false"><span class="nav-ic" data-g="cal"></span><span class="t">Daviana</span> <span id="dv-badge" class="badge hidden">0</span></button>
+  </nav>
+  <button class="reset" data-act="reset">Reset salon</button>
+</header>
+
+<main>
+  <!-- ===================== BAR ===================== -->
+  <section class="stage" id="stage-bar">
+    <div class="stage-head">
+      <span class="kicker">App 1 of 3 · the bar iPad</span>
+      <h1>Order a drink for a client in the chair</h1>
+      <p>This is the iPad by the coffee machine. Pick the stylist, pick their client, send the order — the drink hits the bar queue and the bill at the same time.</p>
+    </div>
+    <div class="device tablet">
+      <div class="screen" id="bar-screen"></div>
+    </div>
+  </section>
+
+  <!-- ===================== COLORLAB ===================== -->
+  <section class="stage hidden" id="stage-colorlab">
+    <div class="stage-head">
+      <span class="kicker">App 2 of 3 · the colour bar iPad</span>
+      <h1>Weigh a colour and watch it cost itself</h1>
+      <p>In the salon this sits on a Bluetooth scale. Here it runs in <b>manual mode</b> — the same mode the real app uses when no scale is connected — so you can type the grams yourself.</p>
+    </div>
+    <div class="device tablet">
+      <div class="screen" id="cl-screen"></div>
+    </div>
+  </section>
+
+  <!-- ===================== DAVIANA ===================== -->
+  <section class="stage hidden" id="stage-daviana">
+    <div class="stage-head">
+      <span class="kicker">App 3 of 3 · the front desk</span>
+      <h1>One client record, everything on it</h1>
+      <p>The diary the receptionist lives in. Click any appointment to see the bill — the drinks and the colour you just logged are already there.</p>
+    </div>
+    <div class="device browser">
+      <div class="chrome-bar">
+        <i></i><i></i><i></i>
+        <div class="chrome-url">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          daviana.salonforge.com/appointments
+        </div>
+      </div>
+      <div id="dv-screen"></div>
+    </div>
+    <div class="closer hidden" id="closer">
+      <h3>That was one client, in about a minute.</h3>
+      <p>Nobody wrote anything down twice. The drink, the colour and the cost found their own way
+         onto the bill — because it's one system, not four that email each other.</p>
+      <div class="btns">
+        <a class="primary" href="/trial/">Start a free trial</a>
+        <a class="ghost" href="https://calendly.com/salonforge-info/30min">Book a demo instead</a>
+      </div>
+      <p class="fine">No card. We set it up for your salon, with your services and team already in.</p>
+    </div>
+  </section>
+</main>
+
+<div class="hint" id="hint"><span class="pulse"></span><span id="hint-tx"></span></div>
+<div id="toasts"></div>
+
+<script>
+"use strict";
+/* ==========================================================================
+   DATA — modelled on the Forge Salon Central demo tenant
+   ========================================================================== */
+
+const STYLISTS = [
+  {id:"av", name:"Amara Vale",     role:"ART DIRECTOR",       ini:"AV", col:"#7c6cf0"},
+  {id:"dm", name:"Delia Monroe",   role:"SENIOR STYLIST",     ini:"DM", col:"#c86ad0"},
+  {id:"ev", name:"Elena Voss",     role:"SENIOR STYLIST",     ini:"EV", col:"#5b8def"},
+  {id:"mr", name:"Marco Rossi",    role:"STYLIST",            ini:"MR", col:"#35b37e"},
+  {id:"pa", name:"Priya Anand",    role:"COLOUR TECHNICIAN",  ini:"PA", col:"#26bfa5"},
+  {id:"na", name:"Nina Alvarez",   role:"NAIL TECHNICIAN",    ini:"NA", col:"#ef5da8"}
+];
+
+/* pastel block colours, echoing the console's service palette */
+const SVC_COL = {
+  colour:  {bg:"#f6c9cd", bd:"#d9808a", tx:"#4a2429"},
+  cut:     {bg:"#c9ccf3", bd:"#7c80d8", tx:"#25264a"},
+  tint:    {bg:"#eec4e6", bd:"#c07ab4", tx:"#43264a"},
+  barber:  {bg:"#d6d8dc", bd:"#8d9199", tx:"#2b2d31"},
+  nails:   {bg:"#bfe4dc", bd:"#5aab9a", tx:"#1e3f39"},
+  beauty:  {bg:"#c5ddf2", bd:"#6fa4cf", tx:"#1f3549"},
+  blowdry: {bg:"#eddcbc", bd:"#c2a05e", tx:"#443723"}
+};
+
+/* the working day, seeded — mirrors the shape of the real demo diary */
+const SEED = [
+  ["av", "Nadia Wells",       "Full Head Highlights", "10:00", "12:30", 120, "colour"],
+  ["av", "Ruby Hayes",        "Grey Blending",        "13:00", "14:00",  75, "colour"],
+  ["av", "Grace Marsh",       "Balayage",             "14:00", "17:00", 165, "colour"],
+  ["dm", "Rosie Thompson",    "Toner",                "10:00", "10:30",  45, "tint"],
+  ["dm", "Grace Bell",        "Half Head Highlights", "10:30", "12:30",  95, "colour"],
+  ["dm", "Poppy Wells",       "Full Head Highlights", "12:30", "15:00", 120, "colour"],
+  ["dm", "Sophie Walker",     "Ladies Cut & Blow Dry","15:00", "16:00",  65, "cut"],
+  ["ev", "Chloe Pryor",       "Root Tint",            "10:00", "11:30",  70, "tint"],
+  ["ev", "Harry Carter",      "Full Head Highlights", "13:00", "15:30", 120, "colour"],
+  ["ev", "Isla Beaumont",     "Restyle & Blow Dry",   "16:00", "17:15",  75, "cut"],
+  ["mr", "Sienna Thompson",   "Barber Cut",           "10:00", "10:45",  35, "barber"],
+  ["mr", "Imogen Rhodes",     "Beard Trim",           "11:00", "11:30",  20, "barber"],
+  ["mr", "Yasmin Marsh",      "Barber Cut",           "12:00", "12:45",  35, "barber"],
+  ["mr", "Olivia Shaw",       "Skin Fade",            "14:00", "14:45",  38, "barber"],
+  ["pa", "Leila Holt",        "Gel Pedicure",         "11:00", "12:00",  45, "nails"],
+  ["pa", "Jack Nash",         "Signature Facial",     "14:45", "15:45",  80, "beauty"],
+  ["na", "Poppy Wells",       "Gel Manicure",         "11:15", "12:15",  35, "nails"],
+  ["na", "Charlotte Doyle",   "Gel Pedicure",         "14:45", "15:45",  45, "nails"]
+];
+
+/* the salon's service menu — price, default duration, colour family */
+const SERVICES = [
+  {n:"Full Head Highlights",   p:120, d:150, k:"colour"},
+  {n:"Half Head Highlights",   p:95,  d:120, k:"colour"},
+  {n:"Balayage",               p:165, d:180, k:"colour"},
+  {n:"Grey Blending",          p:75,  d:60,  k:"colour"},
+  {n:"Full Colour",            p:98,  d:120, k:"colour"},
+  {n:"Root Tint",              p:70,  d:90,  k:"tint"},
+  {n:"Toner",                  p:45,  d:30,  k:"tint"},
+  {n:"Ladies Cut & Blow Dry",  p:65,  d:60,  k:"cut"},
+  {n:"Restyle & Blow Dry",     p:75,  d:75,  k:"cut"},
+  {n:"Blow Dry",               p:35,  d:45,  k:"blowdry"},
+  {n:"Conditioning Treatment", p:30,  d:30,  k:"blowdry"},
+  {n:"Barber Cut",             p:35,  d:45,  k:"barber"},
+  {n:"Skin Fade",              p:38,  d:45,  k:"barber"},
+  {n:"Beard Trim",             p:20,  d:30,  k:"barber"},
+  {n:"Gel Manicure",           p:35,  d:60,  k:"nails"},
+  {n:"Gel Pedicure",           p:45,  d:60,  k:"nails"},
+  {n:"Signature Facial",       p:80,  d:60,  k:"beauty"}
+];
+const svc = n=>SERVICES.find(s=>s.n===n)||SERVICES[0];
+
+/* clients on file who aren't booked today — for the search / new-booking picker */
+const CLIENT_POOL = [
+  "Amelia Rowe","Freya Lindqvist","Tara Nolan","Bea Hartley","Zoe Ashcroft",
+  "Marisol Vega","Elle Ferrier","Naomi Osei","Cara Whitfield","Nora Bennett"
+];
+
+/* the 13 serve products seeded into the demo tenant */
+const DRINKS = [
+  {c:"COFFEE", n:"Americano",          p:3.00, opts:true},
+  {c:"COFFEE", n:"Cappuccino",         p:3.50, opts:true},
+  {c:"COFFEE", n:"Champagne Glass",    p:9.50, opts:false},
+  {c:"COFFEE", n:"Espresso",           p:2.50, opts:true},
+  {c:"COFFEE", n:"Flat White",         p:3.50, opts:true},
+  {c:"COFFEE", n:"Fresh Orange Juice", p:4.00, opts:false},
+  {c:"COFFEE", n:"Latte",              p:3.50, opts:true},
+  {c:"COFFEE", n:"Prosecco Glass",     p:7.50, opts:false},
+  {c:"COFFEE", n:"White Wine Glass",   p:7.00, opts:false},
+  {c:"TEA",    n:"English Breakfast Tea", p:6.00, opts:false},
+  {c:"TEA",    n:"Green Tea",          p:6.00, opts:false},
+  {c:"SPECIAL",n:null},
+  {c:"REFRESHMENTS", n:"Sparkling Water", p:2.50, opts:false},
+  {c:"REFRESHMENTS", n:"Still Water",     p:2.50, opts:false}
+];
+/* Inline glyphs standing in for the app's SF Symbols — same weight, same gold. */
+function svg(d, o){
+  o=o||{};
+  return `<svg class="ic-s" viewBox="0 0 24 24" fill="${o.fill||"none"}" stroke="${o.fill?"none":"currentColor"}"
+    stroke-width="${o.w||1.7}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+}
+const GLYPH = {
+  cup:    ()=>svg(`<path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9h2.2a2.4 2.4 0 0 1 0 4.8H17"/><path d="M4.5 21.5h12"/>`),
+  leaf:   ()=>svg(`<path d="M4.5 19.5C4.5 11.5 10 5.5 19.5 4.5c0 9.5-5 15-13 15H4.5Z"/><path d="M5 19.5c2.8-4.6 6.6-7.5 10.5-8.6"/>`),
+  spark:  ()=>svg(`<path d="M12 3.2l1.9 5.4 5.4 1.9-5.4 1.9L12 17.8l-1.9-5.4L4.7 10.5l5.4-1.9L12 3.2Z"/>`),
+  drop:   ()=>svg(`<path d="M12 3.2s6.2 6.6 6.2 10.6a6.2 6.2 0 0 1-12.4 0C5.8 9.8 12 3.2 12 3.2Z"/>`),
+  people: ()=>svg(`<circle cx="9.2" cy="8" r="3.2"/><path d="M2.6 20c0-3.4 3-6 6.6-6s6.6 2.6 6.6 6"/><path d="M16.8 4.6a2.9 2.9 0 0 1 0 5.6"/><path d="M18.4 20c0-2.5-.9-4.3-2.4-5.4"/>`),
+  key:    ()=>svg(`<rect x="2.5" y="6.5" width="19" height="11" rx="2.2"/><path d="M6.5 10.5h.01M10 10.5h.01M13.5 10.5h.01M17 10.5h.01M8 14h8"/>`),
+  clock:  ()=>svg(`<circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/>`),
+  check:  ()=>svg(`<path d="M4.5 12.6l4.8 4.8L19.5 7.2"/>`, {w:2.2}),
+  plus:   ()=>svg(`<path d="M12 5.5v13M5.5 12h13"/>`, {w:2}),
+  refresh:()=>svg(`<path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20.4 4v4.4H16"/>`),
+  bulb:   ()=>svg(`<path d="M9.2 17.5h5.6M10 20.5h4"/><path d="M12 3.2a5.8 5.8 0 0 1 3.6 10.4c-.7.6-1.1 1.3-1.1 2.1H9.5c0-.8-.4-1.5-1.1-2.1A5.8 5.8 0 0 1 12 3.2Z"/>`),
+  box:    ()=>svg(`<path d="M12 3.4l8 4.2v8.8l-8 4.2-8-4.2V7.6l8-4.2Z"/><path d="M4 7.6l8 4.2 8-4.2M12 11.8V20.6"/>`),
+  search: ()=>svg(`<circle cx="11" cy="11" r="6.6"/><path d="M16 16l4.4 4.4"/>`),
+  cal:    ()=>svg(`<rect x="3.4" y="5" width="17.2" height="16" rx="2.4"/><path d="M3.4 10h17.2M8 3v4M16 3v4"/>`),
+  chat:   ()=>svg(`<path d="M20.6 12.4c0 4-3.9 7.2-8.6 7.2a10 10 0 0 1-2.8-.4L4.4 21l1.5-3.9a6.9 6.9 0 0 1-2.5-5.2c0-4 3.8-7.2 8.6-7.2s8.6 3.2 8.6 7.7Z"/>`),
+  bell:   ()=>svg(`<path d="M18 9a6 6 0 0 0-12 0c0 5-2.2 6.4-2.2 6.4h16.4S18 14 18 9Z"/><path d="M13.7 19.5a2 2 0 0 1-3.4 0"/>`),
+  chart:  ()=>svg(`<path d="M4.5 20.5V10M10.8 20.5V4.5M17.2 20.5v-7"/>`, {w:2}),
+  trend:  ()=>svg(`<path d="M3.4 16.6l5.4-5.4 3.4 3.4 7-7"/><path d="M14.4 7.6h5.8v5.8"/>`),
+  doc:    ()=>svg(`<path d="M6 3.4h7.6L19 8.8v11.8H6V3.4Z"/><path d="M13.4 3.4v5.6H19M9 13h7M9 16.6h5"/>`),
+  shop:   ()=>svg(`<path d="M4 9.6 5.4 5h13.2L20 9.6M4 9.6h16M4 9.6v10h16v-10"/><path d="M4 9.6a2.6 2.6 0 0 0 5.2 0 2.6 2.6 0 0 0 5.2 0 2.6 2.6 0 0 0 5.2 0"/>`),
+  card:   ()=>svg(`<rect x="2.6" y="5.6" width="18.8" height="12.8" rx="2.4"/><path d="M2.6 10h18.8M6 14.6h3"/>`),
+  help:   ()=>svg(`<circle cx="12" cy="12" r="8.6"/><path d="M9.6 9.6a2.5 2.5 0 1 1 3.3 2.4c-.6.2-.9.8-.9 1.4v.4M12 16.8h.01"/>`),
+  moon:   ()=>svg(`<path d="M20 14.4A8.4 8.4 0 0 1 9.6 4 8.5 8.5 0 1 0 20 14.4Z"/>`),
+  battery:()=>`<svg class="ic-s" style="width:1.55em" viewBox="0 0 26 14" aria-hidden="true">
+      <rect x="1" y="1.6" width="20" height="10.8" rx="3.4" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+      <rect x="2.7" y="3.3" width="16.6" height="7.4" rx="2.1" fill="currentColor"/>
+      <path d="M23 5.4v3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".55"/></svg>`
+};
+const CAT_ICON = {COFFEE:GLYPH.cup, TEA:GLYPH.leaf, SPECIAL:GLYPH.spark, REFRESHMENTS:GLYPH.drop};
+const MILKS = ["Regular Milk","Oat Milk","Almond Milk","Soya Milk","Black / No Milk"];
+
+/* the read-only guest menu — real copy from BarMenuCatalog.swift */
+const MENU = {
+  tagline:"Please let us know what you'd enjoy — it's our pleasure.",
+  sections:[
+    {t:"Coffee", note:null, items:[
+      ["Espresso",null,"A small, intense shot — pure, rich and aromatic."],
+      ["Macchiato",null,"Espresso “stained” with a touch of warm milk."],
+      ["Americano",null,"Espresso lengthened with hot water — smooth and easy."],
+      ["Cappuccino",null,"Equal parts espresso, steamed milk and velvety foam."],
+      ["Flat White",null,"Espresso with silky steamed milk; less foam, more coffee."],
+      ["Latte",null,"Gentle and creamy — espresso with lots of steamed milk."],
+      ["Hot Chocolate","Whittard","Rich, smooth and intense — pure indulgence."]
+    ]},
+    {t:"Tea & Infusions", note:"Whittard of Chelsea", items:[
+      ["Earl Grey",null,"Classic black tea brightened with citrussy bergamot."],
+      ["English Breakfast",null,"Refined and malty — lovely with a splash of milk."],
+      ["English Rose",null,"Smooth black tea with delicate rose and pink rosebuds."],
+      ["Green — Sencha",null,"Elegant Japanese green tea; sweet, fresh and velvety."]
+    ]}
+  ]
+};
+
+const FACTS = [
+  "Belgium is famous for its rich, velvety hot chocolate.",
+  "Espresso has less caffeine per serving than a filter coffee.",
+  "The flat white was born in Australia and New Zealand in the 1980s.",
+  "Bergamot — the citrus that makes Earl Grey — grows almost entirely in Calabria.",
+  "Cappuccino takes its name from the colour of a Capuchin friar's robe.",
+  "Green tea and black tea come from the very same plant."
+];
+
+/* ---- colour systems ------------------------------------------------------ */
+const SHADE_COL = {
+  N:  l=>mix("#12100e","#efe6d6",l), NA: l=>mix("#151719","#e8eaec",l),
+  NB: l=>mix("#1d1109","#efe2d2",l), GN: l=>mix("#131a12","#e2e8dc",l),
+  R:  l=>mix("#2b0a10","#f0d4d6",l), T:  l=>mix("#3a3a3c","#e9e9ea",l),
+  WG: l=>mix("#2a1503","#f2dfba",l), V:  l=>mix("#1b1224","#e6e0ee",l)
+};
+function mix(a,b,l){
+  /* l 1..10 → dark..light. Eased, because real colour swatches stay deep
+     through the mid levels and only open up at 8+. */
+  const t=Math.pow(Math.max(0,Math.min(1,(l-1)/9)), 2.1);
+  const pa=[1,3,5].map(i=>parseInt(a.substr(i,2),16));
+  const pb=[1,3,5].map(i=>parseInt(b.substr(i,2),16));
+  return "#"+pa.map((v,i)=>Math.round(v+(pb[i]-v)*t).toString(16).padStart(2,"0")).join("");
+}
+
+const KEYLUMA = {
+  1:[["N","Obsidian"]],
+  3:[["N","Liquorice"],["NB","Cacao Root"],["T","Salt & Pepper"]],
+  4:[["N","Chestnut"],["NA","Slate Oak"],["R","Garnet"],["WG","Amber Bark"]],
+  5:[["N","Hazel"],["NA","Driftwood"],["NB","Cocoa"],["R","Merlot"]],
+  6:[["GN","Olives"],["N","River Stone"],["NA","Urban Ash"],["NB","Walnut"],["R","Chianti"],["T","Graphite"],["WG","Bronze Silk"]],
+  7:[["N","Sandstone"],["NA","Ash Blond"],["NB","Oat"],["WG","Honeycomb"]],
+  8:[["N","Barley"],["NA","Pearl Ash"],["NB","Vanilla"],["WG","Wheat Gold"]],
+  9:[["N","Champagne"],["NA","Platinum Ash"],["T","Ice"]],
+  10:[["N","Moonstone"],["NA","Frost"],["T","Silver Veil"]]
+};
+const REDKEN = {
+  5:[["N","Brownstone"],["NB","Chocolate"],["R","Cherry"]],
+  6:[["N","Cinnamon"],["NA","Bronze"],["T","Iron"],["V","Violet Brown"]],
+  7:[["N","Maple"],["NA","Chrome"],["WG","Amber"]],
+  8:[["N","Beige Blonde"],["NA","Silver"],["T","Pearl"],["V","Lavender Ice"]],
+  9:[["N","Cream Soda"],["NA","Platinum Ice"],["V","Opal Glow"]],
+  10:[["N","Ivory"],["T","Crystal Clear"]]
+};
+const ORGANIC = {
+  4:[["N","Walnut Shell"],["R","Madder Root"]],
+  5:[["N","Cassia Deep"],["WG","Henna Warm"]],
+  6:[["N","Chamomile Base"],["GN","Indigo Matte"]],
+  7:[["WG","Marigold"],["N","Oat Straw"]]
+};
+
+const SYSTEMS = {
+  keyluma:{
+    key:"keyluma", label:"Keyluma", title:"KEYLUMA PICTO", brand:"Keyluma",
+    strap:"Demi-permanent · Cream Activator (1:1)", ratio:"1:1", act:"Cream Activator",
+    blurb:"Demi-permanent gloss. Deposits stronger — run about half a level lighter.",
+    tip:"Keyluma deposits stronger — run about ½ level lighter than Redken, and it accepts GN (green/matte) correctors Redken doesn't need.",
+    shades:KEYLUMA, costPerG:0.058, chargePerG:0.19, bowl:70
+  },
+  redken:{
+    key:"redken", label:"Redken Shades EQ", title:"SHADES EQ GLOSS", brand:"Redken Shades EQ",
+    strap:"Acidic gloss · Processing Solution (1:1)", ratio:"1:1", act:"Processing Solution",
+    blurb:"Acidic demi gloss. Tone, shine and refresh with no lift.",
+    tip:"Shades EQ is acidic — it tones and shines without lifting, so it's the safe finish on a compromised mid-length.",
+    shades:REDKEN, costPerG:0.071, chargePerG:0.22, bowl:60
+  },
+  organic:{
+    key:"organic", label:"Organic / herbs", title:"ORGANIC HERBS", brand:"Organic",
+    strap:"Plant pigment · Warm water (2:1)", ratio:"2:1", act:"Warm water",
+    blurb:"Plant pigment for clients who want no ammonia at all.",
+    tip:"Plant pigment builds over repeat visits — set the expectation that visit one is the quietest result.",
+    shades:ORGANIC, costPerG:0.049, chargePerG:0.17, bowl:80
+  }
+};
+
+/* ==========================================================================
+   STATE
+   ========================================================================== */
+let S, UID=0;
+function freshState(){
+  UID=0;
+  const appts = SEED.map(r=>({
+    id:"a"+(UID++), staff:r[0], client:r[1], service:r[2],
+    start:hm(r[3]), dur:hm(r[4])-hm(r[3]),   /* minutes — the diary does maths on these */
+    price:r[5], kind:r[6],
+    status:"booked",                          /* booked | arrived | done */
+    extras:[]                                 /* {name, price, src:'bar'|'colorlab', at, fresh} */
+  }));
+  return {
+    app:"bar",
+    appts,
+    seenDaviana:0,             // extras count already viewed in Daviana
+    bar:{tab:"order", stylist:null, client:null, basket:[], queue:[], modal:null, decaf:false, fact:0, showFact:false},
+    cl:{screen:"clients", client:null, sys:null, level:6, comps:[], active:0, entry:"", saved:[]},
+    dv:{
+      view:"diary", nav:false, sel:null,
+      recClient:null, recTab:"Product history",
+      sheet:null,                 /* new-booking / new-client sheet state */
+      clientQ:"", edit:null,      /* which field of the selected appt is being edited */
+      tasks:[
+        {t:"Call Grace Marsh about her patch test", done:false},
+        {t:"Order more 6N — two tubes left", done:false},
+        {t:"Confirm Saturday's double-booking with Elena", done:true}
+      ]
+    },
+    started:false
+  };
+}
+
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+const $  = s=>document.querySelector(s);
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = n=>"£"+n.toFixed(2);
+const hm  = t=>{const[a,b]=t.split(":").map(Number);return a*60+b;};       /* "10:30" → 630 */
+const tm  = m=>String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+const endOf = a=>a.start+a.dur;
+const nowStr = ()=>{const d=new Date();return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");};
+const staffOf = id=>STYLISTS.find(s=>s.id===id);
+const initials = n=>n.split(" ").map(w=>w[0]).join("").slice(0,2).toUpperCase();
+const firstName = n=>n.split(" ")[0];
+
+function apptById(id){return S.appts.find(a=>a.id===id);}
+function apptTotal(a){return a.price + a.extras.reduce((s,e)=>s+e.price,0);}
+function pendingExtras(){return S.appts.reduce((n,a)=>n+a.extras.length,0);}
+
+/* “checked in” = appointment overlapping the current demo moment, or simply
+   the first three of each stylist so the picker is never empty. */
+function clientsFor(staffId){
+  return S.appts.filter(a=>a.staff===staffId).slice(0,4);
+}
+function barStylists(){
+  return STYLISTS.filter(s=>S.appts.some(a=>a.staff===s.id)).slice(0,4);
+}
+
+function toast(title, sub, icon){
+  const w=$("#toasts");
+  const el=document.createElement("div");
+  el.className="toast";
+  el.innerHTML=`<div class="ic">${icon||"✓"}</div><div class="tx"><b>${esc(title)}</b><span>${esc(sub||"")}</span></div>`;
+  w.appendChild(el);
+  setTimeout(()=>{el.classList.add("out");setTimeout(()=>el.remove(),320);},4200);
+}
+
+/* ==========================================================================
+   HINTS — a one-line coach mark so nobody gets lost
+   ========================================================================== */
+function hintText(){
+  if(S.app==="bar"){
+    const b=S.bar;
+    if(b.tab==="queue") return "This is what the bar sees. Hit <b>Done</b> when a drink is made — then head to <b>ColorLab</b>.";
+    if(b.tab!=="order") return "Have a look around, then come back to <b>New Order</b>.";
+    if(!b.stylist) return "Pick a stylist to see who's in their chair.";
+    if(!b.client)  return "Now pick the client sitting with them.";
+    if(!b.basket.length) return "Tap a drink. The ones with a <b>›</b> ask how they take it.";
+    return "Hit <b>SEND</b> — it goes to the bar and onto the client's bill at once.";
+  }
+  if(S.app==="colorlab"){
+    const c=S.cl;
+    if(c.screen==="clients") return "Pick the client you're colouring.";
+    if(c.screen==="system")  return "Choose the colour system you're mixing from.";
+    if(c.screen==="shades")  return "Pick a level, then a shade.";
+    if(c.screen==="weigh"){
+      if(clReady()) return "That's costed to the gram — <b>save it</b> and the charge lands on the bill.";
+      return "No scale here, so type the grams (or use <b>+5g</b>). Any amount will do.";
+    }
+    return "Saved. Open <b>Daviana</b> to see where it landed.";
+  }
+  if(S.dv.view==="record") return "Every drink and every gram, on the one record. Nobody typed any of it twice.";
+  if(!S.dv.sel) return "Click any appointment to open the bill.";
+  return "That's the point: the bar and the colour bar both wrote here — no double entry.";
+}
+function renderHint(){
+  const h=$("#hint-tx"); h.innerHTML=hintText();
+}
+
+/* ==========================================================================
+   RENDER: BAR
+   ========================================================================== */
+function anvil(){
+  return `<svg class="anvil" viewBox="0 0 62 32" fill="currentColor" aria-hidden="true">
+    <path d="M4 5.5H44L58.5 9 44 12.8H34.5V20H40.5L45 27.5H13L17.5 20H23.5V12.8H4V5.5Z"/>
+  </svg>`;
+}
+function statusBar(place){
+  return `<div class="ios-status"><span>${nowStr()} &nbsp;${esc(place)}</span>
+    <span style="display:inline-flex;align-items:center;gap:6px">100% ${GLYPH.battery()}</span></div>`;
+}
+
+function renderBar(){
+  const b=S.bar;
+  const qPending=b.queue.filter(o=>!o.done).length;
+  const tabs=[["order","New Order"],["menu","Menu"],["queue","Bar Queue"],["reports","Reports"]];
+
+  let body="";
+  if(b.tab==="order")   body=barOrder();
+  if(b.tab==="menu")    body=barMenu();
+  if(b.tab==="queue")   body=barQueue();
+  if(b.tab==="reports") body=barReports();
+
+  $("#bar-screen").innerHTML=`
+    ${statusBar("Forge Central")}
+    <div class="seg" role="tablist">
+      ${tabs.map(([k,l])=>`<button role="tab" data-act="bartab" data-tab="${k}" aria-selected="${b.tab===k}">${l}${
+        k==="queue"&&qPending?`<span class="qbadge">${qPending}</span>`:""}</button>`).join("")}
+    </div>
+    <div class="body">${body}</div>
+    ${b.tab==="order"?barBasket():""}
+    ${b.modal?barModal():""}
+  `;
+}
+
+function barOrder(){
+  const b=S.bar;
+  const sty=barStylists();
+  let h=`
+    <div class="brandrow">
+      <div class="lhs">${anvil()}<h2>BAR REQUEST</h2></div>
+      <div class="live"><i></i>LIVE</div>
+    </div>
+    <div class="herenow">
+      <div class="t">${GLYPH.people()} HERE NOW</div>
+      ${b.client
+        ? `<div class="s">${esc(b.client.client)} is with ${esc(staffOf(b.client.staff).name)}.</div>`
+        : `<div class="s">No checked-in guests waiting for a drink.</div>`}
+    </div>
+    <div class="sechead">1. SELECT STYLIST (FORGE SALON CENTRAL)</div>
+    <div class="tiles">
+      ${sty.map(s=>`<button class="tile" data-act="barstylist" data-id="${s.id}" aria-pressed="${b.stylist===s.id}">${esc(s.name)}</button>`).join("")}
+    </div>`;
+
+  if(b.stylist){
+    const list=clientsFor(b.stylist);
+    h+=`<div class="sechead">2. SELECT CLIENT FOR ${esc(staffOf(b.stylist).name.toUpperCase())}</div>
+      <div class="clients">
+        ${list.map(a=>{
+          const had=a.extras.filter(e=>e.src==="bar").map(e=>e.name).join(", ");
+          return `<button class="cchip" data-act="barclient" data-id="${a.id}" aria-pressed="${b.client&&b.client.id===a.id}">
+            <div class="tm">${a.from}</div><div class="nm">${esc(a.client)}</div>
+            ${had?`<div class="had">${esc(had)}</div>`:""}
+          </button>`;
+        }).join("")}
+        <button class="walkin" data-act="noop"><b>WALK-IN</b><small>Hold to register</small></button>
+      </div>`;
+  }
+
+  if(b.showFact){
+    h+=`<div class="quote">
+      <div class="rule">${GLYPH.cup()}</div>
+      <p>"${esc(FACTS[b.fact%FACTS.length])}"</p>
+      <button data-act="barfact">${GLYPH.refresh()} Tap for another</button>
+    </div>`;
+  } else if(b.client){
+    const cats=["COFFEE","TEA","SPECIAL","REFRESHMENTS"];
+    h+=`<div class="sechead">3. SELECT DRINKS FOR ${esc(firstName(b.client.client).toUpperCase())}</div>
+      <div class="cats">
+        ${cats.map(c=>{
+          const items=DRINKS.filter(d=>d.c===c&&d.n);
+          return `<div class="cat">
+            <h3>${CAT_ICON[c]()} ${c}<span class="n">${items.length}</span></h3>
+            ${items.length?`<div class="grid">${items.map(d=>`
+              <button class="drink" data-act="bardrink" data-n="${esc(d.n)}">
+                <span class="gl">${CAT_ICON[c]()}</span>${esc(d.n)}${d.opts?`<span class="ch">›</span>`:""}
+              </button>`).join("")}</div>`
+            :`<div class="empty">No items in this category.</div>`}
+          </div>`;
+        }).join("")}
+      </div>`;
+  }
+  return h;
+}
+
+function barBasket(){
+  const b=S.bar;
+  const total=b.basket.reduce((s,i)=>s+i.price,0);
+  const title=b.basket.length?`BASKET (${b.basket.length})`:(b.client?"BASKET":"BASKET (Select client)");
+  return `<div class="basket">
+    <div class="bhead">
+      <span class="handle"></span>
+      <span class="btitle">${title}</span>
+      ${b.basket.length?`<span style="color:var(--gold);font-family:var(--ui);font-size:14px">${money(total)}</span>`:""}
+      <button class="send" data-act="barsend" ${b.basket.length?"":"disabled"}>SEND ➤</button>
+    </div>
+    ${b.basket.length?`<div class="items">${b.basket.map((i,ix)=>`
+      <div class="it"><span>${esc(i.label)}</span><span class="px">${money(i.price)}</span>
+      <button class="rm" data-act="barrm" data-i="${ix}" aria-label="Remove">×</button></div>`).join("")}</div>`:""}
+  </div>`;
+}
+
+function barModal(){
+  const b=S.bar, d=DRINKS.find(x=>x.n===b.modal);
+  return `<div class="modal" data-act="barclose"><div class="box" data-stop="1">
+    <h3>${esc(b.modal.toUpperCase())}</h3>
+    <button class="decaf" data-act="bardecaf" aria-pressed="${b.decaf}"><i></i>Decaf</button>
+    <div class="opts">${MILKS.map(m=>`<button data-act="barmilk" data-m="${esc(m)}">${esc(m)}</button>`).join("")}</div>
+    <button class="cancel" data-act="barclose">CANCEL</button>
+  </div></div>`;
+}
+
+function barQueue(){
+  const b=S.bar;
+  const pend=b.queue.filter(o=>!o.done), done=b.queue.filter(o=>o.done);
+  if(!b.queue.length) return `<div class="brandrow"><div class="lhs">${anvil()}<h2>BAR QUEUE</h2></div></div>
+    <p style="color:rgba(255,255,255,.4);font-size:15px">No orders yet today. Send one from <b style="color:var(--gold)">New Order</b>.</p>`;
+  const row=o=>`<div class="qrow ${o.done?"done":""}">
+      <div><div class="who">${esc(o.client)}</div><div class="what">${esc(o.items.join(" · "))}</div>
+      <div class="meta">${esc(o.stylist)} · ${o.at}</div></div>
+      ${o.done?`<span style="margin-left:auto;color:var(--green)">✓</span>`
+              :`<button class="dn" data-act="bardone" data-id="${o.id}">DONE</button>`}
+    </div>`;
+  return `<div class="brandrow"><div class="lhs">${anvil()}<h2>BAR QUEUE</h2></div><div class="live"><i></i>LIVE</div></div>
+    ${pend.map(row).join("")}
+    ${done.length?`<div class="qdiv">COMPLETED</div>${done.map(row).join("")}`:""}`;
+}
+
+function barMenu(){
+  return `<div class="brandrow"><div class="lhs">${anvil()}<h2>MENU</h2></div></div>
+    <p class="mtag">${esc(MENU.tagline)}</p>
+    ${MENU.sections.map(s=>`<div class="msec">
+      <h4>${esc(s.t.toUpperCase())}</h4>
+      ${s.note?`<div class="note">${esc(s.note)}</div>`:""}
+      ${s.items.map(([n,tag,bl])=>`<div class="mitem"><b>${esc(n)}</b>${tag?`<span class="tg">${esc(tag)}</span>`:""}<p>${esc(bl)}</p></div>`).join("")}
+    </div>`).join("")}`;
+}
+
+function barReports(){
+  const b=S.bar;
+  const all=b.queue.flatMap(o=>o.items);
+  const tally={}; all.forEach(i=>{const k=i.split(" (")[0]; tally[k]=(tally[k]||0)+1;});
+  const top=Object.entries(tally).sort((a,c)=>c[1]-a[1])[0];
+  const rev=S.appts.flatMap(a=>a.extras).filter(e=>e.src==="bar").reduce((s,e)=>s+e.price,0);
+  return `<div class="brandrow"><div class="lhs">${anvil()}<h2>REPORTS</h2></div></div>
+    <div class="stats">
+      <div class="stat"><div class="k">DRINKS TODAY</div><div class="v">${all.length}</div><div class="sub">across ${b.queue.length} order${b.queue.length===1?"":"s"}</div></div>
+      <div class="stat"><div class="k">ON BILLS</div><div class="v">${money(rev)}</div><div class="sub">posted to Daviana</div></div>
+      <div class="stat"><div class="k">MOST ORDERED</div><div class="v" style="font-size:20px;line-height:1.3;padding-top:6px">${top?esc(top[0]):"—"}</div><div class="sub">${top?top[1]+" served":"nothing yet"}</div></div>
+    </div>
+    <p style="color:rgba(255,255,255,.4);font-size:14px;max-width:620px;line-height:1.6;font-family:var(--ui)">
+      In the salon this is the number nobody had: hospitality actually costs something, and it shows up
+      against the client who drank it — not in a shrug at the end of the month.</p>`;
+}
+
+/* ==========================================================================
+   RENDER: COLORLAB
+   ========================================================================== */
+function shadeCode(sys,l,fam){return l+fam;}
+function shadeList(sys,l){
+  const raw=SYSTEMS[sys].shades[l]||[];
+  return raw.map(([fam,name])=>({
+    code:shadeCode(sys,l,fam), fam, name, level:l,
+    col:(SHADE_COL[fam]||SHADE_COL.N)(l),
+    stock:2+((l*7+fam.length*3)%6), ml:[120,240,300,360][(l+fam.length)%4]
+  }));
+}
+
+function renderCL(){
+  const c=S.cl;
+  let title="ColorLab", back=null, body="";
+  if(c.screen==="clients"){ title="ColorLab"; body=clClients(); }
+  if(c.screen==="system"){  title=esc(c.client.client); back="clients"; body=clSystems(); }
+  if(c.screen==="shades"){  title=SYSTEMS[c.sys].label; back="system"; body=clShades(); }
+  if(c.screen==="weigh"){   title=`${SYSTEMS[c.sys].brand} · ${esc(firstName(c.client.client))}`; back="shades"; body=clWeigh(); }
+  if(c.screen==="saved"){   title="Saved"; body=clSaved(); }
+
+  $("#cl-screen").innerHTML=`
+    ${statusBar("Colour bar")}
+    <div class="navbar">
+      <div style="min-width:64px">${back?`<button class="back" data-act="clback" data-to="${back}">‹ Back</button>`:""}</div>
+      <div class="ttl">${title}</div>
+      <div class="rhs"></div>
+    </div>
+    <div class="body">${body}</div>
+    ${c.screen==="weigh"?`<div class="wfooter">${clWeighFooter()}</div>`:""}`;
+}
+
+function clClients(){
+  const colourish=S.appts.filter(a=>["colour","tint"].includes(a.kind));
+  return `<h2 class="big">Who are you colouring?</h2>
+    <div class="sub">Today's colour appointments at Forge Salon Central.</div>
+    <div class="clientlist">
+      ${colourish.map(a=>`<button class="clientcard" data-act="clclient" data-id="${a.id}">
+        <span class="av">${initials(a.client)}</span>
+        <span class="txt"><span class="nm">${esc(a.client)}</span><span class="sv">${a.from} · ${esc(a.service)}</span></span>
+      </button>`).join("")}
+    </div>`;
+}
+
+function clSystems(){
+  const c=S.cl;
+  return `<h2 class="big">Choose system</h2>
+    <div class="sub">${esc(c.client.client)} — ${esc(c.client.service)} at ${c.client.from}</div>
+    <div class="systems">
+      ${Object.values(SYSTEMS).map(s=>`<button class="system" data-act="clsys" data-k="${s.key}">
+        <b>${esc(s.label)}</b><span>${esc(s.blurb)}</span><span class="rat">${esc(s.act)} ${s.ratio}</span>
+      </button>`).join("")}
+    </div>`;
+}
+
+function clShades(){
+  const c=S.cl, sys=SYSTEMS[c.sys];
+  const levels=Object.keys(sys.shades).map(Number).sort((a,b)=>a-b);
+  const lv = sys.shades[c.level] ? c.level : levels[Math.floor(levels.length/2)];
+  const shades=shadeList(c.sys,lv);
+  return `<div class="picker-head">
+      <div><h2 class="big">${esc(sys.title)}</h2>
+        <div class="meta">${esc(sys.strap)} · <span class="live">live stock</span></div></div>
+      <div class="rhs">${esc(c.client.service)} with ${esc(sys.brand)}</div>
+    </div>
+    <div class="lbl">Pick level</div>
+    <div class="levels">
+      ${levels.map(l=>`<button data-act="cllevel" data-l="${l}" aria-pressed="${l===lv}">${l}</button>`).join("")}
+      <button data-act="noop">Int.</button>
+    </div>
+    <button class="clear-gloss" data-act="clclear">
+      <span class="sw"></span>
+      <span><b>Clear gloss</b><span>Dilute / soften a shade, or use on its own</span></span>
+      <span class="plus">⊕</span>
+    </button>
+    <div class="lbl">Pick shade</div>
+    <div class="shades">
+      ${shades.map(s=>`<button class="shade" data-act="clshade" data-code="${s.code}" data-l="${s.level}" data-f="${s.fam}">
+        <span class="sw" style="background:${s.col}">${s.code}</span>
+        <span class="txt"><span class="nm">${esc(s.name)}</span><span class="st">${s.stock} in stock · ${s.ml} ml</span></span>
+      </button>`).join("")}
+    </div>
+    <div class="tip"><span class="b">${GLYPH.bulb()}</span><span>${esc(sys.tip)}</span></div>`;
+}
+
+/* The activator is added at the system's ratio to whatever colour is actually
+   in the bowl — so its guide tracks the pour rather than sitting at a fixed
+   number. 1:1 → equal parts; 2:1 → half. Mirrors "add after colour". */
+function actMultiplier(ratio){
+  const [a,b]=ratio.split(":").map(Number);
+  return b/a;
+}
+function syncActivator(){
+  const c=S.cl; if(!c.sys) return;
+  const sys=SYSTEMS[c.sys];
+  const colour=c.comps.filter(x=>!x.act).reduce((s,x)=>s+x.g,0);
+  const act=c.comps.find(x=>x.act);
+  if(act){
+    act.guide=Math.round(colour*actMultiplier(sys.ratio)*10)/10;
+    if(act.g>act.guide) act.g=act.guide;
+  }
+}
+function clTotals(){
+  const c=S.cl, sys=SYSTEMS[c.sys];
+  const colour=c.comps.filter(x=>!x.act).reduce((s,x)=>s+x.g,0);
+  const bowlTotal=c.comps.reduce((s,x)=>s+x.g,0);
+  return {colour, bowlTotal, cost:colour*sys.costPerG, charge:colour*sys.chargePerG, bowl:sys.bowl};
+}
+/* "Pour a colour to save" means exactly that: anything in the bowl can be
+   saved. The guides are guidance, not a gate — a stylist who deliberately
+   mixes 42g shouldn't be locked out of their own formula. */
+function clReady(){
+  return S.cl.comps.filter(x=>!x.act).reduce((s,x)=>s+x.g,0) > 0;
+}
+
+function clWeigh(){
+  const c=S.cl, sys=SYSTEMS[c.sys], t=clTotals();
+  const act=c.comps[c.active] || c.comps[0];
+  const nxt=c.comps.find((x,i)=>i>c.active && x.g<x.guide-0.05);
+  const pct=act? Math.max(0,Math.min(1, act.g/act.guide)) : 0;
+  const R=88, C=2*Math.PI*R;
+
+  return `<div class="wtop">
+      <div class="l"><h2>New Formula</h2><div class="tot">Total ${t.colour.toFixed(0)} / ${t.bowl}g</div></div>
+      <div class="r">
+        <span class="manual-badge"><i></i>MANUAL</span>
+        <div class="cost">Product cost ${money(t.cost)}</div>
+      </div>
+    </div>
+
+    <div class="gauge">
+      <svg width="210" height="210" viewBox="0 0 210 210">
+        <circle cx="105" cy="105" r="${R}" fill="none" stroke="#E7E0CE" stroke-width="15"/>
+        <circle cx="105" cy="105" r="${R}" fill="none" stroke="${pct>=1?"#2f7d4f":"#A48111"}" stroke-width="15"
+          stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"
+          style="transition:stroke-dashoffset .45s cubic-bezier(.2,.9,.3,1), stroke .3s"/>
+      </svg>
+      <div class="gtx">
+        <div class="gv">${(act?act.g:0).toFixed(1)}g</div>
+        <div class="gg">guide ${(act?act.guide:0).toFixed(1)}g</div>
+      </div>
+    </div>
+    <div class="nowline">
+      ${act?`<span class="sw" style="background:${act.col};color:${act.swTx||"#fff"}">${esc(act.sw||"")}</span> NOW · ${esc(act.label)}`:"—"}
+    </div>
+    <div class="nextline">${nxt?`NEXT · ${esc(nxt.label)}&nbsp; ${nxt.g.toFixed(0)}/${nxt.guide.toFixed(0)}g`:"&nbsp;"}</div>
+
+    <div style="margin-top:14px">
+      ${c.comps.map((x,i)=>`<button class="comp ${i===c.active?"active":""}" data-act="clsel" data-i="${i}">
+        <span class="sw" style="background:${x.col};color:${x.swTx||"#fff"}">${esc(x.sw||"")}</span>
+        <span class="txt"><span class="nm">${esc(x.label)}</span>
+        <span class="gd">${x.act?`${SYSTEMS[c.sys].ratio} — add after colour`:`Guide ${x.guide.toFixed(1)}g`}</span></span>
+        <span class="rd ${x.g>=x.guide-0.05?"ok":""}">${x.g.toFixed(1)} / ${x.guide.toFixed(1)}g</span>
+      </button>`).join("")}
+      <button class="addprod" data-act="claddback"><span class="p">+</span>Add product</button>
+    </div>`;
+}
+
+function clWeighFooter(){
+  const c=S.cl;
+  return `<div class="manualrow">
+      <span class="tag">${GLYPH.key()} MANUAL</span>
+      <input id="cl-entry" type="number" step="0.1" min="0" placeholder="Type grams" value="${c.entry}">
+      <button class="set" data-act="clset">Set</button>
+    </div>
+    <div class="steps">
+      <div class="g">
+        <button class="minus" data-act="clstep" data-d="-5">−5g</button>
+        <button class="minus" data-act="clstep" data-d="-0.1">−0.1g</button>
+      </div>
+      <div class="g">
+        <button class="plus" data-act="clstep" data-d="0.1">+0.1g</button>
+        <button class="plus" data-act="clstep" data-d="5">+5g</button>
+      </div>
+    </div>
+    ${clSaveBar()}`;
+}
+
+function clSaveBar(){
+  const ready=clReady(), t=clTotals();
+  return ready
+    ? `<button class="savebar ready" data-act="clsave">${GLYPH.check()} Save formula — charge ${money(t.charge)}</button>`
+    : `<div class="savebar idle">${GLYPH.clock()} Pour a colour to save</div>`;
+}
+
+function clSaved(){
+  const c=S.cl, last=c.saved[c.saved.length-1];
+  if(!last) return "";
+  return `<div class="done">
+    <div class="tick">✓</div>
+    <h2>Logged to ${esc(last.client)}</h2>
+    <p>Weighed, costed and charged — in one action. Nobody writes this on a card.</p>
+    <div class="recap">
+      ${last.lines.map(l=>`<div class="r"><span>${esc(l[0])}</span><span>${l[1]}</span></div>`).join("")}
+      <div class="r"><span>Colour charge on the bill</span><span>${money(last.charge)}</span></div>
+    </div>
+    <button class="again" data-act="clagain">Colour someone else</button>
+    <button style="color:var(--gold);font-size:14.5px;margin-top:2px" data-act="app" data-app="daviana">See it on the bill →</button>
+  </div>`;
+}
+
+/* ==========================================================================
+   RENDER: DAVIANA — the console.
+   The diary is genuinely editable: drag to move, drag the bottom edge to
+   stretch, click empty space to book, and every other view reads off the same
+   appointment list, so the reports move when the visitor moves an appointment.
+   ========================================================================== */
+const DAY_START=9*60, DAY_END=19*60, PX=26/15;   // 26px per 15 min
+
+const DV_NAV = [
+  ["MAIN", [
+    ["diary",   "Appointments",   "cal"],
+    ["clients", "Clients",        "people"],
+    ["comms",   "Communication",  "chat"],
+    ["tasks",   "Tasks",          "bell"]
+  ]],
+  ["BUSINESS", [
+    ["deductions","Deductions",   "box"],
+    ["manager",   "Manager",      "chart"],
+    ["perf",      "My Performance","trend"],
+    ["reports",   "Reports",      "doc"]
+  ]]
+];
+
+function renderDV(){
+  const d=S.dv;
+  let inner="";
+  if(d.view==="record")      inner=dvRecord();
+  else if(d.view==="diary")  inner=dvDiary();
+  else                       inner=`<div class="dvhead">${dvTopBar(true)}</div><div class="page">${dvPage()}</div>`;
+
+  $("#dv-screen").innerHTML = inner
+    + (d.nav?`<div class="scrim" data-act="dvnavclose"></div>${dvDrawer()}`:"")
+    + (d.sheet?dvSheet():"");
+}
+
+function dvTopBar(simple){
+  const d=S.dv;
+  return `<div class="dvtop">
+      <button class="burger" data-act="dvnav">☰</button>
+      ${simple?`<div class="salon" style="text-align:left;justify-content:flex-start">${esc(dvTitle())}</div>`
+      :`<div class="sel">All Staff<span class="cv">▾</span></div>
+        <div class="salon">Forge Salon Central <span style="color:#9a9aa2;font-size:12px">▾</span></div>`}
+      <div class="search">${GLYPH.search()} Search name, phone or…</div>
+      ${simple?"":`<div class="dayweek"><button aria-selected="true">Day</button><button aria-selected="false">Week</button></div>`}
+    </div>`;
+}
+function dvTitle(){
+  const m={clients:"Clients",comms:"Communication",tasks:"Tasks",deductions:"Deductions",
+           manager:"Manager",perf:"My Performance",reports:"Reports"};
+  return m[S.dv.view]||"Daviana";
+}
+
+function dvDrawer(){
+  const now=new Date();
+  const DN=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return `<aside class="drawer">
+    <div class="me">
+      <span class="av">TO</span>
+      <span><span class="tag">PERSONAL</span><span class="nm">TestSalon Owner</span><span class="rl">Art Director</span></span>
+    </div>
+    <div class="clock">${GLYPH.clock()}<span><b>${nowStr()}</b><br><span>${DN[now.getDay()]}, ${now.getDate()} ${MN[now.getMonth()]} ${now.getFullYear()}</span></span></div>
+    <div class="loc"><span class="ic">${GLYPH.shop()}</span><span><b>Forge Salon Central</b><small>Salon location</small></span></div>
+    ${DV_NAV.map(([g,items])=>`<div class="grp">${g}</div><nav>${items.map(([k,label,ic])=>`
+      <button data-act="dvgo" data-v="${k}" aria-current="${S.dv.view===k}">${GLYPH[ic]()}${label}</button>`).join("")}</nav>`).join("")}
+    <div class="grp">SYSTEM</div>
+    <nav><button data-act="noop">${GLYPH.card()}DavianaTips</button></nav>
+    <div class="foot">
+      <div>${GLYPH.help()}Support</div><div>${GLYPH.refresh()}Sync</div><div>${GLYPH.moon()}Theme</div>
+    </div>
+  </aside>`;
+}
+
+/* ---------------------------------------------------------------- diary --- */
+function dvDiary(){
+  const d=new Date();
+  const days=[]; for(let i=-1;i<6;i++){const x=new Date(d);x.setDate(d.getDate()+i);days.push(x);}
+  const DN=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"], MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const gridCols=`64px repeat(${STYLISTS.length},minmax(126px,1fr))`;
+
+  const ticks=[];
+  for(let m=DAY_START;m<DAY_END;m+=15){
+    const mm=m%60;
+    ticks.push(`<div class="tick ${mm===0?"hour":""}">${mm===0?tm(m):String(mm).padStart(2,"0")}</div>`);
+  }
+  const nowM=d.getHours()*60+d.getMinutes();
+  const showNow=nowM>DAY_START&&nowM<DAY_END;
+  const sel=S.dv.sel?apptById(S.dv.sel):null;
+
+  return `<div class="dvhead">
+    ${dvTopBar(false)}
+    <div class="datestrip">
+      <button class="nav">« Week</button><button class="nav">‹ Day</button>
+      <button class="nav">${GLYPH.people()} Bookable</button>
+      <button class="today">Today</button>
+      ${days.map((x,i)=>`<button class="dchip ${[0,6].includes(x.getDay())?"we":""}" aria-selected="${i===1}">
+        <small>${DN[x.getDay()]}</small><b>${x.getDate()} ${MN[x.getMonth()]}</b></button>`).join("")}
+      <button class="nav">Day ›</button><button class="nav">Week »</button>
+      <button class="btn" style="margin-left:auto;white-space:nowrap" data-act="dvnewbtn">${GLYPH.plus()} New appointment</button>
+    </div>
+  </div>
+  <div class="diarywrap">
+    <div class="diary" id="dv-diary">
+      <div class="staffrow" style="grid-template-columns:${gridCols}">
+        <div class="staffcell"></div>
+        ${STYLISTS.map(s=>`<div class="staffcell">
+          <div class="av" style="background:${s.col}">${s.ini}</div>
+          <div class="nm">${esc(s.name.split(" ")[0].toUpperCase())} ${s.name.split(" ")[1][0]}.</div>
+          <div class="rl">${s.role}</div>
+          <div class="ul" style="background:${s.col}"></div>
+        </div>`).join("")}
+      </div>
+      <div class="gridbody" id="dv-grid" style="grid-template-columns:${gridCols}">
+        <div class="timecol">${ticks.join("")}</div>
+        ${STYLISTS.map(s=>`<div class="col" data-staff="${s.id}">
+          ${dvSlots(s.id)}
+          ${S.appts.filter(a=>a.staff===s.id).map(a=>dvBlock(a)).join("")}
+        </div>`).join("")}
+        ${showNow?`<div class="nowbar" style="top:${(nowM-DAY_START)*PX}px"></div>`:""}
+      </div>
+    </div>
+    ${sel?dvPanel(sel):""}
+  </div>`;
+}
+
+/* empty 30-min click targets for booking into a gap */
+function dvSlots(staffId){
+  let out="";
+  for(let m=DAY_START;m<DAY_END;m+=30){
+    const busy=S.appts.some(a=>a.staff===staffId && m<endOf(a) && (m+30)>a.start);
+    if(busy) continue;
+    out+=`<div class="slot" data-act="dvnew" data-staff="${staffId}" data-m="${m}"
+      style="top:${(m-DAY_START)*PX}px;height:${30*PX-2}px">+</div>`;
+  }
+  return out;
+}
+
+function dvBlock(a){
+  const top=(a.start-DAY_START)*PX, h=Math.max(a.dur*PX-2, 24);
+  const c=SVC_COL[a.kind]||SVC_COL.cut;
+  const n=a.extras.length;
+  const clash=S.appts.some(o=>o!==a && o.staff===a.staff && a.start<endOf(o) && endOf(a)>o.start);
+  return `<div class="appt ${S.dv.sel===a.id?"sel":""} ${clash?"clash":""}" data-appt="${a.id}" role="button" tabindex="0"
+      style="top:${top}px;height:${h}px;background:${c.bg};border-left-color:${c.bd};color:${c.tx}">
+      <div class="cn">${esc(a.client)}${a.status==="arrived"?" ·":""}</div>
+      <div class="sv">${esc(a.service)}</div>
+      ${h>58?`<div class="tm">${tm(a.start)} - ${tm(endOf(a))}</div>`:""}
+      ${n&&h>74?`<div class="flag">＋${n} on bill</div>`:""}
+      <div class="rz" data-rz="${a.id}"></div>
+    </div>`;
+}
+
+function dvPanel(a){
+  const s=staffOf(a.staff);
+  return `<aside class="panel">
+    <div class="ph">
+      <button class="x" data-act="dvclose">×</button>
+      <h3>${esc(a.client)}</h3>
+      <div class="m">${tm(a.start)}–${tm(endOf(a))} · ${esc(s.name)}</div>
+    </div>
+    <div class="statusrow">
+      ${[["booked","Booked"],["arrived","Arrived"],["done","Checked out"]].map(([k,l])=>
+        `<button data-act="dvstatus" data-id="${a.id}" data-s="${k}" aria-pressed="${a.status===k}">${l}</button>`).join("")}
+    </div>
+    <div class="sec">
+      <h4>APPOINTMENT</h4>
+      <button class="ed" data-act="dvedit" data-f="service" data-id="${a.id}">
+        <span class="k">SERVICE</span><span class="v">${esc(a.service)}</span><span class="cv">change ›</span></button>
+      <button class="ed" data-act="dvedit" data-f="staff" data-id="${a.id}">
+        <span class="k">WITH</span><span class="v">${esc(s.name)}</span><span class="cv">change ›</span></button>
+      <button class="ed" data-act="dvedit" data-f="time" data-id="${a.id}">
+        <span class="k">TIME</span><span class="v">${tm(a.start)} · ${a.dur} min</span><span class="cv">change ›</span></button>
+    </div>
+    <div class="sec">
+      <h4>SERVICES</h4>
+      <div class="line"><div><div class="nm">${esc(a.service)}</div>
+        <div class="src"><i style="background:${s.col}"></i>${esc(s.name)}</div></div>
+        <div class="px">${money(a.price)}</div></div>
+    </div>
+    <div class="sec">
+      <h4>PRODUCTS &amp; EXTRAS</h4>
+      ${a.extras.length?a.extras.map(e=>`
+        <div class="line ${e.fresh?"fresh":""}">
+          <div><div class="nm">${esc(e.name)}</div>
+            <div class="src"><i style="background:${e.src==="bar"?"#C0912F":"#2f7d4f"}"></i>${e.src==="bar"?"Bar":"ColorLab"} · ${e.at}</div></div>
+          <div class="px">${money(e.price)}</div>
+        </div>`).join("")
+      :`<div class="empty" style="padding:14px 0 4px">Nothing added yet.<br>Order a drink in <b>Bar</b> or weigh a colour in <b>ColorLab</b> — it appears here on its own.</div>`}
+    </div>
+    <div class="totalrow"><span>Total</span><span class="px">${money(apptTotal(a))}</span></div>
+    <div class="acts">
+      <button class="btn ghost" data-act="dvrecord" data-c="${esc(a.client)}">Client record</button>
+      <button class="btn danger" data-act="dvcancel" data-id="${a.id}">Cancel</button>
+    </div>
+  </aside>`;
+}
+
+/* ------------------------------------------------------------- sheets ----- */
+function dvSheet(){
+  const sh=S.dv.sheet;
+  if(sh.kind==="new")      return dvSheetNew(sh);
+  if(sh.kind==="client")   return dvSheetClient(sh);
+  if(sh.kind==="pick")     return dvSheetPick(sh);
+  return "";
+}
+
+function dvSheetNew(sh){
+  const known=[...new Set(S.appts.map(a=>a.client))].concat(CLIENT_POOL).sort();
+  const q=(sh.q||"").toLowerCase();
+  const hits=known.filter(n=>n.toLowerCase().includes(q)).slice(0,7);
+  return `<div class="sheet" data-act="dvsheetclose"><div class="box" data-stop="1">
+    <div class="sh"><h3>New appointment</h3><button class="x" data-act="dvsheetclose">×</button></div>
+    <div class="sb">
+      <div class="fld"><label>CLIENT</label>
+        <input id="dv-q" placeholder="Search clients…" value="${esc(sh.q||"")}" autocomplete="off">
+        ${sh.client?`<div style="margin-top:9px;font-size:14px">Booking for <b>${esc(sh.client)}</b>
+          <button style="color:var(--gold);margin-left:8px;font-size:13px" data-act="dvpickclear">change</button></div>`
+        :`<div class="picklist" style="margin-top:9px">
+            ${hits.map(n=>`<button data-act="dvpickclient" data-n="${esc(n)}">${esc(n)}</button>`).join("")||
+              `<button data-act="noop" style="color:#9a9aa2">No match</button>`}
+          </div>
+          <button class="btn ghost" style="margin-top:10px" data-act="dvnewclient">${GLYPH.plus()} New client</button>`}
+      </div>
+      <div class="fld"><label>SERVICE</label>
+        <select id="dv-svc">${SERVICES.map(s=>`<option value="${esc(s.n)}" ${sh.service===s.n?"selected":""}>${esc(s.n)} — ${money(s.p)} · ${s.d} min</option>`).join("")}</select>
+      </div>
+      <div class="fld"><label>WITH</label>
+        <select id="dv-staff">${STYLISTS.map(s=>`<option value="${s.id}" ${sh.staff===s.id?"selected":""}>${esc(s.name)} — ${s.role.toLowerCase()}</option>`).join("")}</select>
+      </div>
+      <div class="fld"><label>STARTS</label>
+        <div class="row">
+          <select id="dv-start">${timeOptions().map(m=>`<option value="${m}" ${sh.start===m?"selected":""}>${tm(m)}</option>`).join("")}</select>
+          <select id="dv-dur">${[15,30,45,60,75,90,120,150,180].map(m=>`<option value="${m}" ${sh.dur===m?"selected":""}>${m} min</option>`).join("")}</select>
+        </div>
+      </div>
+    </div>
+    <div class="sf">
+      <button class="btn ghost" data-act="dvsheetclose">Cancel</button>
+      <button class="btn" data-act="dvcreate">Book it</button>
+    </div>
+  </div></div>`;
+}
+
+function dvSheetClient(sh){
+  return `<div class="sheet" data-act="dvsheetclose"><div class="box" data-stop="1">
+    <div class="sh"><h3>New client</h3><button class="x" data-act="dvsheetclose">×</button></div>
+    <div class="sb">
+      <div class="fld"><label>FIRST NAME</label><input id="dv-fn" placeholder="Grace" value="${esc(sh.fn||"")}"></div>
+      <div class="fld"><label>LAST NAME</label><input id="dv-ln" placeholder="Marsh" value="${esc(sh.ln||"")}"></div>
+      <div class="fld"><label>MOBILE</label><input id="dv-ph" placeholder="+44 7700 900000" value="${esc(sh.ph||"")}"></div>
+      <div class="fld"><label>EMAIL</label><input id="dv-em" placeholder="grace@example.com" value="${esc(sh.em||"")}"></div>
+    </div>
+    <div class="sf">
+      <button class="btn ghost" data-act="dvsheetclose">Cancel</button>
+      <button class="btn" data-act="dvsaveclient">Save client</button>
+    </div>
+  </div></div>`;
+}
+
+/* one sheet handles "change the service / stylist / time" from the panel */
+function dvSheetPick(sh){
+  const a=apptById(sh.id); if(!a) return "";
+  let body="";
+  if(sh.field==="service") body=`<div class="picklist">${SERVICES.map(s=>`
+      <button data-act="dvsetsvc" data-id="${a.id}" data-n="${esc(s.n)}" aria-pressed="${a.service===s.n}">
+        ${esc(s.n)} <span style="float:right;color:#8c8c95">${money(s.p)} · ${s.d}m</span></button>`).join("")}</div>`;
+  if(sh.field==="staff") body=`<div class="picklist">${STYLISTS.map(s=>`
+      <button data-act="dvsetstaff" data-id="${a.id}" data-s="${s.id}" aria-pressed="${a.staff===s.id}">
+        ${esc(s.name)} <span style="float:right;color:#8c8c95">${s.role.toLowerCase()}</span></button>`).join("")}</div>`;
+  if(sh.field==="time") body=`
+      <div class="fld"><label>STARTS</label>
+        <select id="dv-start2">${timeOptions().map(m=>`<option value="${m}" ${a.start===m?"selected":""}>${tm(m)}</option>`).join("")}</select></div>
+      <div class="fld"><label>LASTS</label>
+        <select id="dv-dur2">${[15,30,45,60,75,90,120,150,180].map(m=>`<option value="${m}" ${a.dur===m?"selected":""}>${m} min</option>`).join("")}</select></div>
+      <button class="btn" data-act="dvsettime" data-id="${a.id}">Move it</button>`;
+  const title={service:"Change service",staff:"Change stylist",time:"Change time"}[sh.field];
+  return `<div class="sheet" data-act="dvsheetclose"><div class="box" data-stop="1">
+    <div class="sh"><h3>${title}</h3><button class="x" data-act="dvsheetclose">×</button></div>
+    <div class="sb">${body}</div>
+  </div></div>`;
+}
+
+function timeOptions(){
+  const out=[]; for(let m=DAY_START;m<DAY_END;m+=15) out.push(m); return out;
+}
+
+/* ------------------------------------------------------------- pages ------ */
+function dvPage(){
+  const v=S.dv.view;
+  if(v==="clients")    return dvClients();
+  if(v==="reports")    return dvReports();
+  if(v==="manager")    return dvManager();
+  if(v==="perf")       return dvPerf();
+  if(v==="tasks")      return dvTasks();
+  if(v==="comms")      return dvComms();
+  if(v==="deductions") return dvDeductions();
+  return "";
+}
+
+function dvClients(){
+  const q=S.dv.clientQ.toLowerCase();
+  const booked=[...new Set(S.appts.map(a=>a.client))];
+  const all=[...new Set(booked.concat(CLIENT_POOL))].sort();
+  const list=all.filter(n=>n.toLowerCase().includes(q));
+  return `<h2>Clients</h2><p class="lede">${all.length} on file · ${booked.length} in today</p>
+    <input class="qsearch" id="dv-cq" placeholder="Search by name…" value="${esc(S.dv.clientQ)}" autocomplete="off">
+    <button class="btn" style="margin-bottom:16px" data-act="dvnewclient">${GLYPH.plus()} New client</button>
+    ${list.map(n=>{
+      const mine=S.appts.filter(a=>a.client===n);
+      const spend=mine.reduce((s,a)=>s+apptTotal(a),0);
+      return `<button class="listrow" data-act="dvrecord" data-c="${esc(n)}">
+        <span class="av">${initials(n)}</span>
+        <span><span class="nm">${esc(n)}</span><span class="sub">${mine.length?`In today · ${esc(mine[0].service)} at ${tm(mine[0].start)}`:"No appointment booked"}</span></span>
+        <span class="rt">${mine.length?`<b>${money(spend)}</b><div style="color:#8c8c95;font-size:11.5px">today</div>`:`<span style="color:#9a9aa2">—</span>`}</span>
+      </button>`;
+    }).join("")||`<div style="color:#9a9aa2">No client matches “${esc(S.dv.clientQ)}”.</div>`}`;
+}
+
+function dvStats(){
+  const svcRev=S.appts.reduce((s,a)=>s+a.price,0);
+  const extras=S.appts.flatMap(a=>a.extras);
+  const barRev=extras.filter(e=>e.src==="bar").reduce((s,e)=>s+e.price,0);
+  const clRev =extras.filter(e=>e.src==="colorlab").reduce((s,e)=>s+e.price,0);
+  const total=svcRev+barRev+clRev;
+  const byStaff=STYLISTS.map(s=>{
+    const mine=S.appts.filter(a=>a.staff===s.id);
+    return {s, n:mine.length, rev:mine.reduce((t,a)=>t+apptTotal(a),0),
+            mins:mine.reduce((t,a)=>t+a.dur,0)};
+  });
+  const bySvc={};
+  S.appts.forEach(a=>{bySvc[a.service]=(bySvc[a.service]||0)+apptTotal(a);});
+  const hours=[];
+  for(let h=9;h<19;h++){
+    hours.push({h, n:S.appts.filter(a=>a.start< (h+1)*60 && endOf(a)> h*60).length});
+  }
+  return {svcRev, barRev, clRev, total, byStaff, bySvc, hours,
+          count:S.appts.length, avg:S.appts.length?total/S.appts.length:0};
+}
+
+function bars(rows, colour){
+  const max=Math.max(...rows.map(r=>r.v), 1);
+  return `<div class="bars">${rows.map(r=>`<div class="bar">
+    <span class="lb">${esc(r.k)}</span>
+    <span class="tr"><span class="fl" style="width:${(r.v/max*100).toFixed(1)}%;background:${r.c||colour||"#C0912F"}"></span></span>
+    <span class="vl">${r.t}</span></div>`).join("")}</div>`;
+}
+
+function dvReports(){
+  const st=dvStats();
+  const maxH=Math.max(...st.hours.map(h=>h.n),1);
+  return `<h2>Reports</h2><p class="lede">Today at Forge Salon Central — moves as you move the diary.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="k">TAKINGS TODAY</div><div class="v">${money(st.total)}</div>
+        <div class="d">${st.count} appointments</div></div>
+      <div class="kpi"><div class="k">AVERAGE BILL</div><div class="v">${money(st.avg)}</div>
+        <div class="d">per client</div></div>
+      <div class="kpi"><div class="k">FROM THE BAR</div><div class="v">${money(st.barRev)}</div>
+        <div class="d ${st.barRev?"up":""}">${st.barRev?"hospitality, now billed":"nothing yet"}</div></div>
+      <div class="kpi"><div class="k">COLOUR CHARGES</div><div class="v">${money(st.clRev)}</div>
+        <div class="d ${st.clRev?"up":""}">${st.clRev?"weighed to the gram":"nothing yet"}</div></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h4>TAKINGS BY STYLIST</h4>
+        ${bars(st.byStaff.map(b=>({k:b.s.name, v:b.rev, t:money(b.rev), c:b.s.col})))}</div>
+      <div class="card"><h4>TOP SERVICES</h4>
+        ${bars(Object.entries(st.bySvc).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([k,v])=>({k, v, t:money(v)})))}</div>
+    </div>
+    <div class="card"><h4>HOW BUSY, BY HOUR</h4>
+      <div class="spark">${st.hours.map(h=>`<i class="${h.n>=maxH?"on":""}" style="height:${Math.max(h.n/maxH*100,3)}%"></i>`).join("")}</div>
+      <div class="sparkx">${st.hours.map(h=>`<span>${h.h}</span>`).join("")}</div>
+    </div>
+    <div class="card"><h4>WHERE THE MONEY CAME FROM</h4>
+      ${bars([
+        {k:"Services", v:st.svcRev, t:money(st.svcRev), c:"#7c6cf0"},
+        {k:"Bar",      v:st.barRev, t:money(st.barRev), c:"#C0912F"},
+        {k:"Colour",   v:st.clRev,  t:money(st.clRev),  c:"#2f7d4f"}
+      ])}
+      <p style="color:var(--ink-2);font-size:12.5px;margin:14px 0 0;line-height:1.55">
+        The bar and colour lines are the ones most salons never see. They aren't a separate system
+        reporting in — they're the same records the stylists made on the floor.</p>
+    </div>`;
+}
+
+function dvManager(){
+  const st=dvStats();
+  const util=st.byStaff.map(b=>({k:b.s.name, v:b.mins, t:Math.round(b.mins/600*100)+"%", c:b.s.col}));
+  return `<h2>Manager</h2><p class="lede">Floor view — who's loaded, who's free.</p>
+    <div class="card"><h4>CHAIR UTILISATION (10-HOUR DAY)</h4>${bars(util)}</div>
+    <div class="grid2">
+      ${st.byStaff.map(b=>`<div class="card">
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <span style="width:34px;height:34px;border-radius:50%;background:${b.s.col};color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700">${b.s.ini}</span>
+          <span><b style="font-size:15px">${esc(b.s.name)}</b><div style="font-size:11.5px;color:#8c8c95">${b.s.role}</div></span>
+        </div>
+        <div style="display:flex;gap:18px;font-size:13px">
+          <span><b style="font-size:19px">${b.n}</b><div style="color:#8c8c95;font-size:11.5px">clients</div></span>
+          <span><b style="font-size:19px">${money(b.rev)}</b><div style="color:#8c8c95;font-size:11.5px">takings</div></span>
+          <span><b style="font-size:19px">${Math.round(b.mins/60)}h</b><div style="color:#8c8c95;font-size:11.5px">booked</div></span>
+        </div></div>`).join("")}
+    </div>`;
+}
+
+function dvPerf(){
+  const me=STYLISTS[0];
+  const mine=S.appts.filter(a=>a.staff===me.id);
+  const rev=mine.reduce((s,a)=>s+apptTotal(a),0);
+  const colour=mine.flatMap(a=>a.extras).filter(e=>e.src==="colorlab").reduce((s,e)=>s+e.price,0);
+  return `<h2>My Performance</h2><p class="lede">${esc(me.name)} · ${me.role.toLowerCase()}</p>
+    <div class="kpis">
+      <div class="kpi"><div class="k">CLIENTS TODAY</div><div class="v">${mine.length}</div><div class="d">on your column</div></div>
+      <div class="kpi"><div class="k">TAKINGS</div><div class="v">${money(rev)}</div><div class="d">services + extras</div></div>
+      <div class="kpi"><div class="k">COLOUR CHARGED</div><div class="v">${money(colour)}</div><div class="d">${colour?"to the gram":"weigh one in ColorLab"}</div></div>
+      <div class="kpi"><div class="k">HOURS BOOKED</div><div class="v">${(mine.reduce((s,a)=>s+a.dur,0)/60).toFixed(1)}</div><div class="d">of 10</div></div>
+    </div>
+    <div class="card"><h4>YOUR DAY</h4>
+      ${mine.sort((a,b)=>a.start-b.start).map(a=>`<div class="line">
+        <div><div class="nm">${tm(a.start)} · ${esc(a.client)}</div><div class="src">${esc(a.service)}</div></div>
+        <div class="px">${money(apptTotal(a))}</div></div>`).join("")||`<div style="color:#9a9aa2;padding:12px 0">Nothing booked.</div>`}
+    </div>`;
+}
+
+function dvTasks(){
+  return `<h2>Tasks</h2><p class="lede">The jobs that don't fit in a diary slot.</p>
+    ${S.dv.tasks.map((t,i)=>`<button class="listrow" data-act="dvtask" data-i="${i}">
+      <span style="width:20px;height:20px;border-radius:6px;border:1.5px solid ${t.done?"#2f7d4f":"#c9c9cf"};background:${t.done?"#2f7d4f":"transparent"};color:#fff;display:grid;place-items:center;font-size:12px;flex:none">${t.done?"✓":""}</span>
+      <span><span class="nm" style="${t.done?"text-decoration:line-through;color:#9a9aa2":""}">${esc(t.t)}</span></span>
+    </button>`).join("")}
+    <p style="color:var(--ink-2);font-size:12.5px;margin-top:14px">In the live product these arrive on their own — a missed call, a review, a stock count that came up short.</p>`;
+}
+
+function dvComms(){
+  const rows=[
+    ["Grace Marsh","Confirmed — see you Saturday ✨","WhatsApp","09:41"],
+    ["Poppy Wells","Can I move to the afternoon?","WhatsApp","10:02"],
+    ["Harry Carter","Thanks — booked.","SMS","10:18"],
+    ["Leila Holt","Missed call — no voicemail","Phone","10:55"]
+  ];
+  return `<h2>Communication</h2><p class="lede">Every channel in one thread per client.</p>
+    ${rows.map(([n,msg,ch,t])=>`<div class="listrow">
+      <span class="av">${initials(n)}</span>
+      <span><span class="nm">${esc(n)}</span><span class="sub">${esc(msg)}</span></span>
+      <span class="rt"><span class="pill ${ch==="Phone"?"cl":"bar"}">${ch}</span><div style="color:#8c8c95;font-size:11.5px;margin-top:4px">${t}</div></span>
+    </div>`).join("")}`;
+}
+
+function dvDeductions(){
+  const cl=S.appts.flatMap(a=>a.extras).filter(e=>e.src==="colorlab");
+  const bar=S.appts.flatMap(a=>a.extras).filter(e=>e.src==="bar");
+  return `<h2>Deductions</h2><p class="lede">What the day actually consumed.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="k">COLOUR CHARGED</div><div class="v">${money(cl.reduce((s,e)=>s+e.price,0))}</div><div class="d">${cl.length} formula${cl.length===1?"":"s"}</div></div>
+      <div class="kpi"><div class="k">BAR SERVED</div><div class="v">${money(bar.reduce((s,e)=>s+e.price,0))}</div><div class="d">${bar.length} item${bar.length===1?"":"s"}</div></div>
+    </div>
+    <div class="card"><h4>TODAY'S LINES</h4>
+      ${[...cl,...bar].length?[...cl,...bar].map(e=>`<div class="line">
+        <div><div class="nm">${esc(e.name)}</div><div class="src">${e.src==="bar"?"Bar":"ColorLab"} · ${e.at}</div></div>
+        <div class="px">${money(e.price)}</div></div>`).join("")
+      :`<div style="color:#9a9aa2;padding:14px 0">Nothing yet — pour a drink or weigh a colour and it lands here.</div>`}
+    </div>`;
+}
+
+/* ==========================================================================
+   CLIENT PROFILE — every panel in the record needs something real to show.
+   Derived deterministically from the client's name, so the same person always
+   has the same history, phone number and patch-test date no matter how many
+   times the record is opened.
+   ========================================================================== */
+function hash32(s){
+  let h=2166136261;
+  for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); }
+  return h>>>0;
+}
+function rngFrom(seed){
+  let t=seed>>>0;
+  return ()=>{ t=(t+0x6D2B79F5)>>>0; let x=Math.imul(t^(t>>>15),1|t);
+    x=(x+Math.imul(x^(x>>>7),61|x))^x; return ((x^(x>>>14))>>>0)/4294967296; };
+}
+const pick = (r,a)=>a[Math.floor(r()*a.length)];
+const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function daysAgo(n){ const d=new Date(); d.setDate(d.getDate()-n); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; }
+function daysAhead(n){ const d=new Date(); d.setDate(d.getDate()+n); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; }
+
+const _profiles=new Map();
+function profile(name){
+  if(_profiles.has(name)) return _profiles.get(name);
+  const r=rngFrom(hash32(name));
+  const [fn,ln]=[firstName(name), name.split(" ").slice(1).join(" ")||""];
+  const slug=(fn+"."+ln).toLowerCase().replace(/[^a-z.]/g,"");
+
+  const visits=2+Math.floor(r()*14);
+  /* joined between ~7 months and ~3 years ago — never a date in the future */
+  const joinedD=new Date(); joinedD.setDate(joinedD.getDate()-(210+Math.floor(r()*900)));
+
+  /* a plausible past — built from the real service menu so prices tie up */
+  const past=[];
+  let back=14+Math.floor(r()*20);
+  for(let i=0;i<Math.min(visits,6);i++){
+    const s=SERVICES[Math.floor(r()*SERVICES.length)];
+    const st=STYLISTS[Math.floor(r()*STYLISTS.length)];
+    past.push({when:daysAgo(back), service:s.n, staff:st.name, price:s.p, extra: r()<.45?+(r()*9+2.5).toFixed(2):0});
+    back+=21+Math.floor(r()*35);
+  }
+
+  const patchDays = 20+Math.floor(r()*160);
+
+  return _set(name,{
+    fn, ln,
+    phone:"+44 77"+String(10000000+Math.floor(r()*89999999)).slice(0,8),
+    email:slug?slug+"@example.com":"",
+    gender: pick(r,["Female","Female","Female","Male","Prefer not to say"]),
+    dob: `${1+Math.floor(r()*28)} ${MONTHS[Math.floor(r()*12)]} ${1962+Math.floor(r()*38)}`,
+    since:`${MONTHS[joinedD.getMonth()]} ${joinedD.getFullYear()}`,
+    visits,
+    notifyEmail:r()<.85, notifySMS:r()<.7, notifyWA:r()<.55, marketing:r()<.4,
+
+    notes:[
+      {d:daysAgo(back-18), by:pick(r,STYLISTS).name,
+       t:pick(r,[
+         "Prefers the water cooler than most — mention it at the basin.",
+         "Grows out warm; keep an ash corrector in the root mix.",
+         "Books around the school run, mornings only.",
+         "Sensitive scalp — no bleach directly on the scalp.",
+         "Wants to go two shades lighter by the summer, agreed to do it over three visits.",
+         "Hates a heavy fringe. Keep the face-frame soft."])},
+      {d:daysAgo(back+34), by:pick(r,STYLISTS).name,
+       t:pick(r,[
+         "Took the toner beautifully, repeat the same formula next time.",
+         "Running late is normal for her — she always calls ahead.",
+         "Coming back before the wedding in the spring.",
+         "Asked about the colour subscription — worth a follow-up.",
+         "Swims twice a week; recommend the weekly mask."])}
+    ],
+
+    patch:{ done:daysAgo(patchDays), result: r()<.94?"No reaction":"Mild reaction — retest",
+            due: patchDays>180?"Overdue":daysAhead(180-patchDays) },
+
+    forms:[
+      {n:"Colour consultation", d:daysAgo(patchDays), status:"Completed"},
+      {n:"Allergy & medical declaration", d:daysAgo(patchDays), status:"Completed"},
+      ...(r()<.4?[{n:"Photo consent", d:daysAgo(Math.floor(r()*60)), status:"Awaiting signature"}]:[])
+    ],
+
+    linked: r()<.35 ? [{n:pick(r,["Daughter","Partner","Sister","Mother"]),
+                        who:pick(r,CLIENT_POOL)}] : [],
+
+    pricing: r()<.3 ? [{svc:pick(r,SERVICES).n, note:"10% — long-standing client", off:10}] : [],
+
+    course: r()<.4 ? {n:"Blow dry ×6", used:1+Math.floor(r()*5), total:6, paid:180} : null,
+    wallet: r()<.35 ? +(r()*120+15).toFixed(2) : 0,
+    membership: r()<.25 ? {n:"Colour Club — monthly", since:daysAgo(90+Math.floor(r()*300)), fee:39} : null,
+    gift: r()<.3 ? {code:"GC-"+String(1000+Math.floor(r()*8999)), value:50,
+                    left:+(r()*50).toFixed(2), from:pick(r,CLIENT_POOL)} : null,
+    treat:{ points: Math.floor(r()*260), next:300 },
+    past
+  });
+}
+function _set(k,v){ _profiles.set(k,v); return v; }
+
+/* lifetime numbers combine the generated history with what's happened today */
+function lifetime(name){
+  const p=profile(name);
+  const today=S.appts.filter(a=>a.client===name).reduce((s,a)=>s+apptTotal(a),0);
+  const before=p.past.reduce((s,v)=>s+v.price+v.extra,0);
+  return {today, before, all:today+before};
+}
+
+/* ---- small building blocks shared by the record panels ---- */
+function fRow(label, value, wide){
+  return `<div class="f ${wide?"w":""}"><label>${label}</label><div class="fv">${value||'<span class="ph">—</span>'}</div></div>`;
+}
+function toggleRow(label, on, sub){
+  return `<div class="tgl"><span><b>${esc(label)}</b>${sub?`<small>${esc(sub)}</small>`:""}</span>
+    <span class="sw ${on?"on":""}"><i></i></span></div>`;
+}
+function emptyCard(icon, title, sub, cta){
+  return `<div class="card"><div class="mt">
+    <div class="mt-ic">${icon}</div><b>${esc(title)}</b><p>${esc(sub)}</p>
+    ${cta?`<span class="btn ghost">${esc(cta)}</span>`:""}</div></div>`;
+}
+function statusPill(s){
+  const good=/completed|no reaction|active|paid|redeemed/i.test(s);
+  const warn=/awaiting|overdue|retest|due/i.test(s);
+  return `<span class="pill ${good?"cl":warn?"warn":"bar"}">${esc(s)}</span>`;
+}
+
+/* ---- the panels ---- */
+function recBasic(name,p){
+  return `<h4>CLIENT NOTES</h4>
+    <div class="card">
+      <p class="hint-p">Anything here shows up when you're booking them in.</p>
+      <div class="notebox">${p.notes.length?esc(p.notes[0].t):"Write anything about the client that will help staff"}</div>
+    </div>
+    <h4>BASIC INFORMATION</h4>
+    <div class="card">
+      <div class="frm">
+        ${fRow("FIRST NAME", esc(p.fn))}
+        ${fRow("LAST NAME", esc(p.ln))}
+        ${fRow("GENDER", esc(p.gender))}
+        ${fRow("PHONE NUMBER", esc(p.phone))}
+        ${fRow("EMAIL", esc(p.email))}
+        ${fRow("DATE OF BIRTH", esc(p.dob))}
+      </div>
+    </div>
+    <h4>NOTIFICATIONS</h4>
+    <div class="card">
+      ${toggleRow("Email","","")&&""}
+      ${toggleRow("Appointment reminders by email", p.notifyEmail)}
+      ${toggleRow("Appointment reminders by SMS", p.notifySMS)}
+      ${toggleRow("WhatsApp confirmations", p.notifyWA)}
+      ${toggleRow("Marketing and offers", p.marketing, "Consent recorded "+p.since)}
+    </div>`;
+}
+
+function recComms(name,p){
+  const msgs=[
+    {ch:"WhatsApp", dir:"in",  t:"Hi! Could I move Saturday to the afternoon?", when:"09:41"},
+    {ch:"WhatsApp", dir:"out", t:`Of course — 15:00 with ${p.past[0]?p.past[0].staff.split(" ")[0]:"us"}. Booked you in ✨`, when:"09:44"},
+    {ch:"SMS",      dir:"out", t:"Reminder: your appointment is tomorrow. Reply STOP to opt out.", when:daysAgo(1)},
+    {ch:"Email",    dir:"out", t:"Your receipt from Forge Salon Central", when:daysAgo(1)}
+  ];
+  return `<h4>CHANNELS</h4>
+    <div class="card">
+      <div class="chgrid">
+        <div><span class="k">MOBILE</span><b>${esc(p.phone)}</b></div>
+        <div><span class="k">EMAIL</span><b>${esc(p.email)||"—"}</b></div>
+        <div><span class="k">PREFERRED</span><b>${p.notifyWA?"WhatsApp":p.notifySMS?"SMS":"Email"}</b></div>
+      </div>
+    </div>
+    <h4>RECENT MESSAGES</h4>
+    <div class="card">
+      ${msgs.map(m=>`<div class="msg ${m.dir}">
+        <div class="bub">${esc(m.t)}</div>
+        <div class="meta">${esc(m.ch)} · ${esc(m.when)}</div></div>`).join("")}
+      <p class="hint-p" style="margin-top:14px">Every channel lands in one thread — the client never gets asked the same question twice.</p>
+    </div>`;
+}
+
+function recNotes(name,p){
+  return `<h4>NOTES</h4>
+    <div class="card">
+      ${p.notes.map(n=>`<div class="note">
+        <div class="nh"><b>${esc(n.by)}</b><span>${esc(n.d)}</span></div>
+        <p>${esc(n.t)}</p></div>`).join("")}
+    </div>
+    <h4>COLOUR HISTORY</h4>
+    <div class="card">
+      ${(S.cl.saved.filter(f=>f.client===name).length
+        ? S.cl.saved.filter(f=>f.client===name).map(f=>`<div class="note">
+            <div class="nh"><b>Logged in ColorLab</b><span>today</span></div>
+            <p>${f.lines.map(l=>esc(l[0])+" "+esc(l[1])).join(" · ")}</p></div>`).join("")
+        : `<p class="hint-p">Nothing logged yet today. Weigh a colour for ${esc(firstName(name))} in <b>ColorLab</b> and the formula appears here.</p>`)}
+    </div>`;
+}
+
+function recLinked(name,p){
+  if(!p.linked.length) return emptyCard(GLYPH.people(), "No linked clients",
+    "Link family members so their appointments and reminders can be handled together.", "Link a client");
+  return `<h4>LINKED CLIENTS</h4>
+    <div class="card">${p.linked.map(l=>`<div class="line">
+      <div><div class="nm">${esc(l.who)}</div><div class="src">${esc(l.n)}</div></div>
+      <div class="px"><span class="pill cl">Linked</span></div></div>`).join("")}</div>`;
+}
+
+function recPricing(name,p){
+  if(!p.pricing.length) return emptyCard(GLYPH.card(), "Standard price list",
+    "No custom pricing for this client — they pay the salon's normal rates.", "Add custom price");
+  return `<h4>CUSTOM PRICING</h4>
+    <div class="card"><table>
+      <thead><tr><th>SERVICE</th><th>REASON</th><th style="text-align:right">ADJUSTMENT</th></tr></thead>
+      <tbody>${p.pricing.map(x=>`<tr><td>${esc(x.svc)}</td><td>${esc(x.note)}</td>
+        <td class="num">−${x.off}%</td></tr>`).join("")}</tbody></table></div>`;
+}
+
+function recAppts(name,p,mine){
+  const rows=mine.map(a=>({when:"Today", s:a.service, who:staffOf(a.staff).name, tot:apptTotal(a), now:true}))
+    .concat(p.past.map(v=>({when:v.when, s:v.service, who:v.staff, tot:v.price+v.extra, now:false})));
+  return `<h4>APPOINTMENT HISTORY</h4>
+    <div class="card"><table>
+      <thead><tr><th>DATE</th><th>SERVICE</th><th>WITH</th><th style="text-align:right">TOTAL</th></tr></thead>
+      <tbody>${rows.map(r=>`<tr${r.now?' class="hl"':''}><td>${esc(r.when)}</td><td>${esc(r.s)}</td>
+        <td>${esc(r.who)}</td><td class="num">${money(r.tot)}</td></tr>`).join("")}</tbody>
+    </table>
+    <p class="hint-p" style="margin-top:12px">${p.visits} visits since ${esc(p.since)}.</p></div>`;
+}
+
+const COLOUR_KINDS=["colour","tint"];
+function hasColour(name,p){
+  const today=S.appts.some(a=>a.client===name && COLOUR_KINDS.includes(a.kind));
+  const before=p.past.some(v=>COLOUR_KINDS.includes(svc(v.service).k));
+  return today||before;
+}
+function recPatch(name,p){
+  if(!hasColour(name,p)) return emptyCard(GLYPH.doc(), "No patch test on file",
+    `${firstName(name)} hasn't booked a colour service. A test is required before the first one.`, "Record a patch test");
+  const overdue=p.patch.due==="Overdue";
+  return `<h4>PATCH TESTS</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">LAST TESTED</div><div class="v" style="font-size:19px">${esc(p.patch.done)}</div></div>
+        <div class="kpi"><div class="k">RESULT</div><div class="v" style="font-size:19px">${statusPill(p.patch.result)}</div></div>
+        <div class="kpi"><div class="k">NEXT DUE</div><div class="v" style="font-size:19px">${overdue?statusPill("Overdue"):esc(p.patch.due)}</div></div>
+      </div>
+      <p class="hint-p" style="margin-top:14px">${overdue
+        ? "Colour can't go ahead until this is redone — the diary will warn whoever books her."
+        : "Valid. The diary blocks a colour booking automatically once this lapses."}</p>
+    </div>`;
+}
+
+function recForms(name,p){
+  return `<h4>CONSULTATION FORMS</h4>
+    <div class="card"><table>
+      <thead><tr><th>FORM</th><th>DATE</th><th style="text-align:right">STATUS</th></tr></thead>
+      <tbody>${p.forms.map(f=>`<tr><td>${esc(f.n)}</td><td>${esc(f.d)}</td>
+        <td class="num">${statusPill(f.status)}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
+function recCourses(name,p){
+  if(!p.course) return emptyCard(GLYPH.box(), "No course bought",
+    "Courses are prepaid blocks — six blow dries, a package of treatments. They draw down automatically.", "Sell a course");
+  const c=p.course, left=c.total-c.used;
+  return `<h4>COURSES</h4>
+    <div class="card">
+      <div class="line"><div><div class="nm">${esc(c.n)}</div>
+        <div class="src">Paid ${money(c.paid)} · ${left} of ${c.total} remaining</div></div>
+        <div class="px">${statusPill("Active")}</div></div>
+      <div class="prog"><span style="width:${(c.used/c.total*100).toFixed(0)}%"></span></div>
+      <p class="hint-p" style="margin-top:12px">Each visit draws one down on checkout — nobody has to remember.</p>
+    </div>`;
+}
+
+function recWallet(name,p){
+  if(!p.wallet) return emptyCard(GLYPH.card(), "Wallet is empty",
+    "Credit sits here from deposits, refunds and gift cards, and comes off the next bill automatically.", "Add credit");
+  return `<h4>WALLET</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">BALANCE</div><div class="v">${money(p.wallet)}</div><div class="d">available</div></div>
+      </div>
+      <div class="line" style="margin-top:12px"><div><div class="nm">Deposit carried forward</div>
+        <div class="src">${esc(daysAgo(21))}</div></div><div class="px">${money(p.wallet)}</div></div>
+    </div>`;
+}
+
+function recMemberships(name,p){
+  if(!p.membership) return emptyCard(GLYPH.spark(), "No membership",
+    "Memberships bill monthly and can include a set of services or a standing discount.", "Start a membership");
+  const m=p.membership;
+  return `<h4>MEMBERSHIPS</h4>
+    <div class="card">
+      <div class="line"><div><div class="nm">${esc(m.n)}</div>
+        <div class="src">Member since ${esc(m.since)}</div></div>
+        <div class="px">${money(m.fee)}/mo ${statusPill("Active")}</div></div>
+    </div>`;
+}
+
+function recGift(name,p){
+  if(!p.gift) return emptyCard(GLYPH.spark(), "No gift cards",
+    "Gift cards issued to or redeemed by this client would show here with their remaining balance.", "Issue a gift card");
+  const g=p.gift;
+  return `<h4>GIFT CARDS</h4>
+    <div class="card"><table>
+      <thead><tr><th>CODE</th><th>FROM</th><th>VALUE</th><th style="text-align:right">REMAINING</th></tr></thead>
+      <tbody><tr><td>${esc(g.code)}</td><td>${esc(g.from)}</td><td>${money(g.value)}</td>
+        <td class="num">${money(g.left)}</td></tr></tbody>
+    </table></div>`;
+}
+
+function recTreat(name,p){
+  const t=p.treat, pct=Math.min(100, t.points/t.next*100);
+  return `<h4>TREATCARD</h4>
+    <div class="card">
+      <div class="kpis" style="margin-bottom:0">
+        <div class="kpi"><div class="k">POINTS</div><div class="v">${t.points}</div><div class="d">of ${t.next} to the next reward</div></div>
+      </div>
+      <div class="prog" style="margin-top:14px"><span style="width:${pct.toFixed(0)}%"></span></div>
+      <p class="hint-p" style="margin-top:12px">${t.points>=t.next
+        ? "A reward is ready — it'll be offered at checkout."
+        : `${t.next-t.points} points to go. Points accrue on every paid line, including the bar.`}</p>
+    </div>`;
+}
+
+function recSpend(name,p,mine){
+  const lt=lifetime(name);
+  const svcT=mine.reduce((s,a)=>s+a.price,0);
+  const ext=lt.today-svcT;
+  return `<h4>CLIENT SPEND</h4>
+    <div class="kpis">
+      <div class="kpi"><div class="k">LIFETIME</div><div class="v">${money(lt.all)}</div><div class="d">${p.visits} visits</div></div>
+      <div class="kpi"><div class="k">TODAY</div><div class="v">${money(lt.today)}</div><div class="d">${mine.length} appointment${mine.length===1?"":"s"}</div></div>
+      <div class="kpi"><div class="k">AVERAGE VISIT</div><div class="v">${money(lt.all/Math.max(p.visits,1))}</div><div class="d">across her history</div></div>
+    </div>
+    <div class="card"><table><tbody>
+      <tr><td>Services today</td><td class="num">${money(svcT)}</td></tr>
+      <tr><td>Products &amp; extras today</td><td class="num">${money(ext)}</td></tr>
+      <tr><td>Previous visits</td><td class="num">${money(lt.before)}</td></tr>
+      <tr><td><b>Lifetime</b></td><td class="num"><b>${money(lt.all)}</b></td></tr>
+    </tbody></table></div>`;
+}
+
+function recProducts(name,p,extras){
+  const past=p.past.filter(v=>v.extra>0).map(v=>({name:"Retail / bar", price:v.extra, src:"past", at:v.when}));
+  const rows=extras.map(e=>({name:e.name, price:e.price, src:e.src, at:"Today "+e.at})).concat(past);
+  if(!rows.length) return `<h4>CLIENT PRODUCT HISTORY</h4>
+    <div class="card"><div class="mt"><div class="mt-ic">${GLYPH.box()}</div>
+      <b>NO PRODUCT PURCHASES FOUND FOR THIS CLIENT</b>
+      <p>Order a drink in Bar or weigh a colour in ColorLab — it lands here on its own.</p></div></div>`;
+  return `<h4>CLIENT PRODUCT HISTORY</h4>
+    <div class="card"><table>
+      <thead><tr><th>DATE</th><th>ITEM</th><th>SOURCE</th><th style="text-align:right">AMOUNT</th></tr></thead>
+      <tbody>${rows.map(e=>`<tr><td>${esc(e.at)}</td><td>${esc(e.name)}</td>
+        <td>${e.src==="bar"?'<span class="pill bar">Bar</span>':e.src==="colorlab"?'<span class="pill cl">ColorLab</span>':'<span class="pill">Earlier visit</span>'}</td>
+        <td class="num">${money(e.price)}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
+function dvRecord(){
+  const name=S.dv.recClient;
+  const mine=S.appts.filter(a=>a.client===name);
+  const extras=mine.flatMap(a=>a.extras.map(e=>({...e, appt:a})));
+  const groups=[["CLIENT",["Basic information","Communication","Notes","Linked clients","Custom pricing"]],
+                ["APPOINTMENTS",["Appointment history","Patch Tests"]],
+                ["CONSULTATIONS",["Forms"]],
+                ["PURCHASES",["Courses","Wallet","Memberships","Product history","Spend","Gift Cards"]],
+                ["LOYALTY",["TreatCard"]]];
+  const tab=S.dv.recTab;
+  const p=profile(name);
+  const PANEL={
+    "Basic information":  ()=>recBasic(name,p),
+    "Communication":      ()=>recComms(name,p),
+    "Notes":              ()=>recNotes(name,p),
+    "Linked clients":     ()=>recLinked(name,p),
+    "Custom pricing":     ()=>recPricing(name,p),
+    "Appointment history":()=>recAppts(name,p,mine),
+    "Patch Tests":        ()=>recPatch(name,p),
+    "Forms":              ()=>recForms(name,p),
+    "Courses":            ()=>recCourses(name,p),
+    "Wallet":             ()=>recWallet(name,p),
+    "Memberships":        ()=>recMemberships(name,p),
+    "Product history":    ()=>recProducts(name,p,extras),
+    "Spend":              ()=>recSpend(name,p,mine),
+    "Gift Cards":         ()=>recGift(name,p),
+    "TreatCard":          ()=>recTreat(name,p)
+  };
+  const main=(PANEL[tab]||PANEL["Basic information"])();
+
+  return `<div class="rechead">
+      <div class="av">${initials(name)}</div>
+      <div><h3>${esc(name)}</h3><div class="since">Client since ${esc(p.since)} · ${p.visits} visits</div></div>
+      <button class="back" data-act="dvback">‹ Back to diary</button>
+    </div>
+    <div class="rec">
+      <div class="recside">
+        ${groups.map(([g,items])=>`<div class="grp">${g}</div>
+          ${items.map(i=>`<button data-act="dvrectab" data-t="${esc(i)}" aria-current="${i===tab}">${esc(i)}</button>`).join("")}`).join("")}
+      </div>
+      <div class="recmain">${main}</div>
+    </div>`;
+}
+
+/* ==========================================================================
+   ACTIONS
+   ========================================================================== */
+function addExtra(apptId, name, price, src){
+  const a=apptById(apptId); if(!a) return;
+  a.extras.forEach(e=>e.fresh=false);
+  a.extras.push({name, price, src, at:nowStr(), fresh:true});
+}
+
+const ACTIONS = {
+  start(){ $("#intro").classList.add("hidden"); S.started=true; },
+  reset(){
+    const app=S.app;                    /* stay where you are, just clean the salon */
+    S=freshState(); S.started=true; S.app=app;
+    render(); toast("Salon reset","Fresh diary, empty bills.",GLYPH.refresh());
+  },
+
+  app(el){
+    S.app=el.dataset.app;
+    if(S.app==="daviana"){ S.seenDaviana=pendingExtras(); }
+    render();
+    window.scrollTo({top:0,behavior:"smooth"});
+  },
+
+  /* ---- bar ---- */
+  bartab(el){ S.bar.tab=el.dataset.tab; render(); },
+  barstylist(el){
+    const id=el.dataset.id;
+    S.bar.stylist = S.bar.stylist===id?null:id;
+    S.bar.client=null; S.bar.basket=[]; S.bar.showFact=false; render();
+  },
+  barclient(el){
+    S.bar.client=apptById(el.dataset.id); S.bar.basket=[]; S.bar.showFact=false; render();
+  },
+  bardrink(el){
+    const d=DRINKS.find(x=>x.n===el.dataset.n);
+    if(d.opts){ S.bar.modal=d.n; S.bar.decaf=false; render(); }
+    else { S.bar.basket.push({label:d.n, name:d.n, price:d.p}); render(); }
+  },
+  bardecaf(){ S.bar.decaf=!S.bar.decaf; render(); },
+  barmilk(el){
+    const d=DRINKS.find(x=>x.n===S.bar.modal);
+    const bits=[]; if(S.bar.decaf) bits.push("Decaf");
+    if(el.dataset.m!=="Regular Milk") bits.push(el.dataset.m);
+    const label=d.n+(bits.length?` (${bits.join(", ")})`:"");
+    S.bar.basket.push({label, name:d.n, price:d.p});
+    S.bar.modal=null; render();
+  },
+  barclose(){ S.bar.modal=null; render(); },
+  barrm(el){ S.bar.basket.splice(+el.dataset.i,1); render(); },
+  barsend(){
+    const b=S.bar; if(!b.basket.length||!b.client) return;
+    const appt=b.client;
+    b.basket.forEach(i=>addExtra(appt.id, i.label, i.price, "bar"));
+    const order={id:"o"+Date.now(), client:appt.client, stylist:staffOf(appt.staff).name,
+                 items:b.basket.map(i=>i.label), at:nowStr(), done:false};
+    b.queue.unshift(order);
+    const n=b.basket.length, total=b.basket.reduce((s,i)=>s+i.price,0);
+    b.basket=[]; b.client=null; b.showFact=true; b.fact=Math.floor(Math.random()*FACTS.length);
+    render();
+    toast(`${n} drink${n===1?"":"s"} sent to the bar`,
+          `${money(total)} on ${appt.client}'s bill in Daviana`, GLYPH.cup());
+  },
+  bardone(el){
+    const o=S.bar.queue.find(x=>x.id===el.dataset.id); if(o) o.done=true; render();
+  },
+  barfact(){ S.bar.fact=(S.bar.fact+1)%FACTS.length; render(); },
+
+  /* ---- colorlab ---- */
+  clclient(el){ S.cl.client=apptById(el.dataset.id); S.cl.screen="system"; render(); },
+  clsys(el){
+    S.cl.sys=el.dataset.k;
+    const levels=Object.keys(SYSTEMS[S.cl.sys].shades).map(Number).sort((a,b)=>a-b);
+    S.cl.level = levels.includes(6)?6:levels[Math.floor(levels.length/2)];
+    S.cl.screen="shades"; render();
+  },
+  cllevel(el){ S.cl.level=+el.dataset.l; render(); },
+  clclear(){
+    /* clear gloss behaves as an extra component you can add alongside a shade */
+    ACTIONS.clshade({dataset:{code:"CLR", l:9, f:"T", name:"Clear gloss"}}, true);
+  },
+  clshade(el){
+    const c=S.cl, sys=SYSTEMS[c.sys];
+    const code=el.dataset.code, l=+el.dataset.l, fam=el.dataset.f;
+    const name=el.dataset.name || (shadeList(c.sys,l).find(s=>s.code===code)||{}).name || "Clear gloss";
+    const col=code==="CLR"?"#E3E7EA":(SHADE_COL[fam]||SHADE_COL.N)(l);
+    const comp={code, sw:code==="CLR"?"":code, label:code==="CLR"?name:`${code} ${name}`, col, g:0, guide:0, act:false};
+    /* keep any already-picked colour components, add this one, then re-split the bowl */
+    const colours=c.comps.filter(x=>!x.act).concat([comp]);
+    const per=sys.bowl/colours.length;
+    colours.forEach(x=>{x.guide=per; if(x.g>per) x.g=per;});
+    const prevAct=c.comps.find(x=>x.act);
+    const activator=prevAct||{code:"ACT", sw:"ACT", swTx:"#5c564d", label:sys.act, col:"#CFC7B6", g:0, guide:0, act:true};
+    c.comps=colours.concat([activator]);
+    c.active=colours.length-1;
+    syncActivator();
+    c.entry=""; c.screen="weigh"; render();
+  },
+  claddback(){ S.cl.screen="shades"; render(); },
+  clsel(el){ S.cl.active=+el.dataset.i; S.cl.entry=""; render(); },
+  clstep(el){
+    const c=S.cl, x=c.comps[c.active]; if(!x) return;
+    x.g=Math.max(0, Math.round((x.g+parseFloat(el.dataset.d))*10)/10);
+    autoAdvance(); render();
+  },
+  clset(){
+    const v=parseFloat($("#cl-entry").value);
+    const c=S.cl, x=c.comps[c.active];
+    if(!isNaN(v)&&x){ x.g=Math.max(0,Math.round(v*10)/10); c.entry=""; autoAdvance(); }
+    render();
+  },
+  clback(el){
+    const to=el.dataset.to;
+    if(to==="clients"){ S.cl={...S.cl, screen:"clients", client:null, sys:null, comps:[], active:0}; }
+    else if(to==="system"){ S.cl={...S.cl, screen:"system", sys:null, comps:[], active:0}; }
+    else S.cl.screen=to;
+    render();
+  },
+  clsave(){
+    const c=S.cl, sys=SYSTEMS[c.sys], t=clTotals();
+    addExtra(c.client.id, `Colour charge — ${sys.brand}`, Math.round(t.charge*100)/100, "colorlab");
+    const lines=c.comps.filter(x=>x.g>0).map(x=>[x.label, x.g.toFixed(1)+"g"]);
+    lines.push(["Total in the bowl", t.bowlTotal.toFixed(1)+"g"]);
+    lines.push(["Product cost to the salon", money(t.cost)]);
+    c.saved.push({client:c.client.client, charge:Math.round(t.charge*100)/100, lines});
+    c.screen="saved"; render();
+    toast("Formula saved", `${money(Math.round(t.charge*100)/100)} charged to ${c.client.client} in Daviana`, GLYPH.check());
+  },
+  clagain(){ S.cl={...S.cl, screen:"clients", client:null, sys:null, comps:[], active:0, entry:""}; render(); },
+
+  /* ---- daviana ---- */
+  dvnav(){ S.dv.nav=true; render(); },
+  dvnavclose(){ S.dv.nav=false; render(); },
+  dvgo(el){ S.dv.view=el.dataset.v; S.dv.nav=false; S.dv.sel=null; render(); },
+  dvclose(){ S.dv.sel=null; render(); },
+  dvrecord(el){ S.dv.view="record"; S.dv.recClient=el.dataset.c; S.dv.recTab="Product history"; render(); },
+  dvrectab(el){ S.dv.recTab=el.dataset.t; render(); },
+  dvback(){ S.dv.view="diary"; render(); },
+  dvtask(el){ const t=S.dv.tasks[+el.dataset.i]; t.done=!t.done; render(); },
+
+  dvstatus(el){
+    const a=apptById(el.dataset.id); if(!a) return;
+    a.status=el.dataset.s; render();
+    if(a.status==="arrived") toast(`${firstName(a.client)} marked arrived`, "The bar iPad sees them under Here Now.", GLYPH.people());
+  },
+  dvcancel(el){
+    const a=apptById(el.dataset.id); if(!a) return;
+    S.appts=S.appts.filter(x=>x!==a); S.dv.sel=null; render();
+    toast("Appointment cancelled", `${a.client}'s slot is free again.`, GLYPH.refresh());
+  },
+
+  /* new booking / new client sheets */
+  dvnew(el){
+    S.dv.sheet={kind:"new", staff:el.dataset.staff, start:+el.dataset.m,
+                service:SERVICES[0].n, dur:SERVICES[0].d, q:"", client:null};
+    render();
+  },
+  dvnewbtn(){
+    S.dv.sheet={kind:"new", staff:STYLISTS[0].id, start:12*60,
+                service:SERVICES[0].n, dur:SERVICES[0].d, q:"", client:null};
+    render();
+  },
+  dvsheetclose(){ S.dv.sheet=null; render(); },
+  dvpickclient(el){ readSheet(); S.dv.sheet.client=el.dataset.n; render(); },
+  dvpickclear(){ readSheet(); S.dv.sheet.client=null; S.dv.sheet.q=""; render(); },
+  dvnewclient(){ S.dv.sheet={kind:"client", back:S.dv.sheet}; render(); },
+  dvsaveclient(){
+    const fn=($("#dv-fn")||{}).value||"", ln=($("#dv-ln")||{}).value||"";
+    const name=(fn.trim()+" "+ln.trim()).trim();
+    if(!name){ toast("Needs a name","First name at least.", GLYPH.people()); return; }
+    if(!CLIENT_POOL.includes(name)) CLIENT_POOL.push(name);
+    const back=S.dv.sheet.back;
+    S.dv.sheet = back ? {...back, client:name, q:name} : null;
+    render();
+    toast("Client saved", `${name} is on file.`, GLYPH.check());
+  },
+  dvcreate(){
+    readSheet();
+    const sh=S.dv.sheet;
+    if(!sh.client){ toast("Pick a client","Search for one, or add a new client.", GLYPH.people()); return; }
+    const s=svc(sh.service);
+    S.appts.push({id:"a"+(UID++), staff:sh.staff, client:sh.client, service:s.n,
+                  start:sh.start, dur:sh.dur||s.d, price:s.p, kind:s.k, status:"booked", extras:[]});
+    S.dv.sheet=null; S.dv.sel="a"+(UID-1); render();
+    toast("Booked", `${sh.client} · ${s.n} at ${tm(sh.start)}`, GLYPH.cal());
+  },
+
+  /* edit an existing appointment from the panel */
+  dvedit(el){ S.dv.sheet={kind:"pick", field:el.dataset.f, id:el.dataset.id}; render(); },
+  dvsetsvc(el){
+    const a=apptById(el.dataset.id), s=svc(el.dataset.n);
+    a.service=s.n; a.price=s.p; a.kind=s.k; a.dur=s.d;
+    S.dv.sheet=null; render();
+    toast("Service changed", `${s.n} — ${money(s.p)}, ${s.d} min.`, GLYPH.check());
+  },
+  dvsetstaff(el){
+    const a=apptById(el.dataset.id);
+    a.staff=el.dataset.s; S.dv.sheet=null; render();
+    toast("Moved stylist", `${a.client} is now with ${staffOf(a.staff).name}.`, GLYPH.people());
+  },
+  dvsettime(el){
+    const a=apptById(el.dataset.id);
+    const st=$("#dv-start2"), du=$("#dv-dur2");
+    if(st) a.start=+st.value; if(du) a.dur=+du.value;
+    S.dv.sheet=null; render();
+    toast("Moved", `${a.client} → ${tm(a.start)}–${tm(endOf(a))}.`, GLYPH.clock());
+  },
+  noop(){}
+};
+
+/* keep the new-booking sheet's fields when it re-renders */
+function readSheet(){
+  const sh=S.dv.sheet; if(!sh||sh.kind!=="new") return;
+  const q=$("#dv-q"), sv=$("#dv-svc"), st=$("#dv-staff"), start=$("#dv-start"), dur=$("#dv-dur");
+  if(q) sh.q=q.value;
+  if(sv && sv.value!==sh.service){ sh.service=sv.value; sh.dur=svc(sv.value).d; }
+  else if(dur) sh.dur=+dur.value;
+  if(st) sh.staff=st.value;
+  if(start) sh.start=+start.value;
+}
+
+/* ==========================================================================
+   DIARY DRAG — move an appointment between columns/times, or drag its bottom
+   edge to stretch it. Pointer events so it works with a mouse and a finger.
+   ========================================================================== */
+const drag = {on:false};
+
+function snap(m){ return Math.round(m/15)*15; }
+
+function dvPointerDown(e){
+  if(S.app!=="daviana" || S.dv.view!=="diary") return;
+  const rz=e.target.closest("[data-rz]");
+  const block=e.target.closest("[data-appt]");
+  if(!block) return;
+  const a=apptById(block.dataset.appt); if(!a) return;
+
+  const grid=$("#dv-grid"); if(!grid) return;
+  drag.on=true; drag.mode=rz?"resize":"move"; drag.a=a; drag.el=block;
+  drag.y0=e.clientY; drag.x0=e.clientX;
+  drag.start0=a.start; drag.dur0=a.dur; drag.staff0=a.staff;
+  drag.moved=false;
+  drag.cols=[...grid.querySelectorAll(".col")].map(c=>({id:c.dataset.staff, el:c, r:c.getBoundingClientRect()}));
+  block.setPointerCapture(e.pointerId);
+  block.classList.add("dragging");
+  e.preventDefault();
+}
+
+function dvPointerMove(e){
+  if(!drag.on) return;
+  const dy=e.clientY-drag.y0, dx=e.clientX-drag.x0;
+  if(Math.abs(dy)>3||Math.abs(dx)>3) drag.moved=true;
+  const dMin=snap(dy/PX);
+  const a=drag.a;
+
+  if(drag.mode==="resize"){
+    a.dur=Math.max(15, Math.min(DAY_END-a.start, drag.dur0+dMin));
+  } else {
+    a.start=Math.max(DAY_START, Math.min(DAY_END-a.dur, drag.start0+dMin));
+    const hit=drag.cols.find(c=>e.clientX>=c.r.left && e.clientX<=c.r.right);
+    if(hit) a.staff=hit.id;
+    drag.cols.forEach(c=>c.el.classList.toggle("hot", hit&&c.id===hit.id));
+  }
+
+  /* move the element directly — re-rendering the whole diary each frame would stutter */
+  drag.el.style.top=((a.start-DAY_START)*PX)+"px";
+  drag.el.style.height=Math.max(a.dur*PX-2,24)+"px";
+  const col=drag.cols.find(c=>c.id===a.staff);
+  if(col && drag.mode==="move" && col.el!==drag.el.parentElement) col.el.appendChild(drag.el);
+
+  let b=$("#dv-dragbadge");
+  if(!b){ b=document.createElement("div"); b.id="dv-dragbadge"; b.className="dragbadge"; document.body.appendChild(b); }
+  b.textContent = drag.mode==="resize"
+    ? `${a.dur} min · ends ${tm(endOf(a))}`
+    : `${tm(a.start)} · ${staffOf(a.staff).name}`;
+  b.style.left=(e.clientX+14)+"px"; b.style.top=(e.clientY-34)+"px";
+}
+
+function dvPointerUp(){
+  if(!drag.on) return;
+  const a=drag.a, moved=drag.moved;
+  const changedTime = a.start!==drag.start0 || a.dur!==drag.dur0;
+  const changedStaff= a.staff!==drag.staff0;
+  drag.on=false;
+  drag.el.classList.remove("dragging");
+  drag.cols.forEach(c=>c.el.classList.remove("hot"));
+  const b=$("#dv-dragbadge"); if(b) b.remove();
+
+  if(!moved){                       /* a plain click selects it */
+    S.dv.sel = S.dv.sel===a.id?null:a.id;
+    if(S.dv.sel) a.extras.forEach(e=>setTimeout(()=>{e.fresh=false;},1600));
+  }
+  render();
+
+  if(moved && (changedTime||changedStaff)){
+    const bits=[];
+    if(changedTime)  bits.push(`${tm(a.start)}–${tm(endOf(a))}`);
+    if(changedStaff) bits.push(`with ${staffOf(a.staff).name}`);
+    toast(`${firstName(a.client)} moved`, bits.join(" · ")+". Reports updated.", GLYPH.clock());
+  }
+}
+
+document.addEventListener("pointerdown", dvPointerDown);
+document.addEventListener("pointermove", dvPointerMove);
+document.addEventListener("pointerup", dvPointerUp);
+document.addEventListener("pointercancel", dvPointerUp);
+
+function autoAdvance(){
+  const c=S.cl;
+  syncActivator();
+  const x=c.comps[c.active];
+  if(x && x.guide>0 && x.g>=x.guide-0.05){
+    const nx=c.comps.findIndex((y,i)=>i>c.active && (y.guide<=0 || y.g<y.guide-0.05));
+    if(nx>-1) c.active=nx;
+  }
+}
+
+/* ==========================================================================
+   RENDER + WIRING
+   ========================================================================== */
+function render(){
+  /* tabs + stages */
+  document.querySelectorAll(".switch button").forEach(b=>b.setAttribute("aria-selected", b.dataset.app===S.app));
+  ["bar","colorlab","daviana"].forEach(k=>$("#stage-"+k).classList.toggle("hidden", S.app!==k));
+
+  /* the badge counts what Daviana hasn't been shown yet */
+  const unseen=Math.max(0, pendingExtras()-S.seenDaviana);
+  const badge=$("#dv-badge");
+  badge.textContent=unseen; badge.classList.toggle("hidden", unseen===0);
+
+  if(S.app==="bar") renderBar();
+  if(S.app==="colorlab") renderCL();
+  if(S.app==="daviana") renderDV();
+
+  /* The closer is earned: it only appears once they've actually seen the
+     cross-app loop land on a bill. Before that it's just another advert. */
+  $("#closer").classList.toggle("hidden", !(S.app==="daviana" && pendingExtras()>0));
+
+  renderHint();
+}
+
+document.addEventListener("click", e=>{
+  const el=e.target.closest("[data-act]"); if(!el) return;
+  /* clicks inside the modal box shouldn't close it */
+  if(el.dataset.act==="barclose" && e.target.closest("[data-stop]") && e.target!==el) return;
+  const fn=ACTIONS[el.dataset.act];
+  if(fn){ e.preventDefault(); fn(el); }
+});
+
+document.addEventListener("input", e=>{
+  if(e.target.id==="cl-entry") S.cl.entry=e.target.value;
+  if(e.target.id==="dv-cq"){
+    S.dv.clientQ=e.target.value;
+    const at=e.target.selectionStart; render();
+    const f=$("#dv-cq"); if(f){ f.focus(); f.setSelectionRange(at,at); }
+  }
+  if(e.target.id==="dv-q"){
+    S.dv.sheet.q=e.target.value;
+    const at=e.target.selectionStart; render();
+    const f=$("#dv-q"); if(f){ f.focus(); f.setSelectionRange(at,at); }
+  }
+});
+document.addEventListener("change", e=>{
+  if(["dv-svc","dv-staff","dv-start","dv-dur"].includes(e.target.id)){ readSheet(); render(); }
+});
+document.addEventListener("keydown", e=>{
+  if(e.target.id==="cl-entry" && e.key==="Enter"){ e.preventDefault(); ACTIONS.clset(); }
+  if(e.key==="Escape"){
+    if(S.bar.modal){ S.bar.modal=null; render(); }
+    else if(S.dv.sel){ S.dv.sel=null; render(); }
+  }
+});
+
+document.querySelectorAll(".nav-ic").forEach(el=>{el.innerHTML=GLYPH[el.dataset.g]();});
+
+S=freshState();
+render();
+</script>
+</body>
+</html>
