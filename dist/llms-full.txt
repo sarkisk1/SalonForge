@@ -2,6 +2,400 @@
 
 Everything below is published at https://salonforge.com and may be quoted with attribution to SalonForge.
 
+## From application to first shift: a hiring plan for a small salon
+Source: https://salonforge.com/blog/hiring-plan-first-shift/
+Published: 2026-08-12  ·  Updated: 2026-08-12
+
+There is no single hard part of hiring a stylist. There are six small ones, each easy enough to do between a blow-dry and a colour consultation: write the advert, reply to the application, make the call, run the trade test, send the offer, get the first day right. Almost every hiring process that drags on for months hasn't failed at any one of those steps - it has stalled at one of them, usually because it was waiting for a desk and a spare hour that a working salon rarely has.
+
+This is the sequence laid out in order, with what "good" looks like at each stage, and more detail on the step most owners get wrong without realising it: the trade test.
+
+## What the whole sequence looks like
+
+Six steps, and each one has its own short deadline that has nothing to do with how busy the salon is that week.
+
+| Step | What good looks like | How long it should take |
+| --- | --- | --- |
+| Advert | The real room, the rota pattern and the pay structure, stated plainly | Reviewed daily, however long it runs |
+| First reply | A message sent the same day it lands, even a short one | Same day |
+| Phone call | Three questions in order: can they start, what they do, why this salon | About ten minutes |
+| Trade test | Real or model client, alongside a working stylist, on an ordinary-Tuesday brief | 60-90 minutes |
+| Offer | Days, pay, notice period and start date, confirmed in writing | Within a day of the trade test |
+| First day | Chair ready, rota entry made, someone assigned to show them round | Arranged before they arrive |
+
+None of this is complicated on its own. What breaks it is one step sitting untouched for a week, because the only time anyone had to think about hiring was a Sunday evening that never quite arrived.
+
+## The advert and the first reply: both move within a day
+
+The advert has one job: get an application from someone who could actually do the work on offer, so say plainly what the work is. Use a photo of the real room, not a stock image; the actual rota pattern, not "flexible hours"; and the pay structure, not a range so wide it tells a stylist nothing about what they'd actually take home. A vague advert doesn't attract fewer people - it attracts the wrong ones, who find out at the phone call that the job was never what they thought it was.
+
+The reply matters more than the advert did. Whoever applied is almost certainly applying elsewhere too, and the salon that answers first is the one still in the running by the time a trade test gets booked. A reply sent from a phone at the till - "got this, will call you Thursday" - beats a well-written message sent four days later. Answer it the day it lands, not the day there's finally time to write something good.
+
+## What should the phone call actually cover?
+
+Three things, in this order: can they actually start, what they actually do, and why this salon rather than any salon with a chair going. Notice period and the days on offer come first, because there's no point discussing technique with someone who can't work your rota. What they specialise in, and how they describe their own clients, comes second - a vague answer here is usually a sign of a vague stylist. Why this salon comes last, because someone who mentions something specific about the place is a different prospect from someone working down a list of open tabs. Ten minutes is enough. If all three land, book the trade test before you hang up.
+
+## What does a good trade test actually look like?
+
+A short, real session - not a performance, and not your hardest technical case. Sixty to ninety minutes, on a real or model client, alongside one of your own stylists, given the kind of brief they'd actually get on an ordinary Tuesday. If you can pay them for the time, do - it's work, even if it's short, and a paid trial tells a candidate you take the process as seriously as you're asking them to.
+
+What you're watching for is mostly things you can see rather than things they say. Do they check in with the client partway through, or carry on regardless of what was actually asked for? Does their station stay usable, or does it spread across the whole back bar? Do they clean up without being asked? And, worth more than any of it, what does the rest of the team say about them once they've gone, unprompted - that reaction tends to be a better predictor than anything said in the call.
+
+> A trade test isn't there to catch someone out. It's there to answer one question honestly: could this person be in front of my clients tomorrow?
+
+Debrief with whoever they worked alongside the same day, while it's still fresh. A verdict formed a week later, from memory, isn't much better than no trade test at all.
+
+## The offer: what needs to be pinned down before anyone gives notice
+
+Four things, in writing, within a day of the trade test: days and hours, how the pay actually works, the notice period, and a start date. This is where good intentions turn into a candidate who quietly stops replying - not because the money was wrong, but because nothing was confirmed while a clearer offer came in from somewhere else. Put the same four things in writing every time, whether the role is employed, commission or chair rental, so nobody is negotiating from memory a week later.
+
+## The first day: what makes it feel planned, not lucky
+
+A chair that's actually ready, a name on the rota, and someone whose job it is to show them round - all decided before the trade test is even finished, not worked out at the front desk while they're stood there in their coat. Getting someone from an application to standing at a chair on a real first shift is the exact span SalonForge's [People](/people/) product is built to cover, so the trade test notes and the rota entry are the same record rather than a note on a phone that has to be typed in from memory later.
+
+None of the six steps here need a recruitment background or a quiet afternoon. They need doing on the day they come up, in the gaps between clients, in the order above. That's usually the whole difference between a chair that fills in a fortnight and one that's been advertised since spring.
+
+---
+
+## Why can't I find hairdressers? Recruiting stylists in 2026
+Source: https://salonforge.com/blog/recruiting-stylists-shortage/
+Published: 2026-08-10  ·  Updated: 2026-08-10
+
+If the chair has been sitting in your advert since spring and the applications are either thin or wrong for the room, it is worth saying plainly: it isn't just you, and it probably isn't the advert either. Hairdressing is short of people, and it has been getting shorter for a while.
+
+That doesn't make the empty chair any less expensive. It does change what's worth fixing. If the problem were your wording, a better headline would solve it. It won't, because the wording was never really the constraint.
+
+## Is there actually a shortage of hairdressers?
+
+Yes, and it shows up in the numbers behind apprenticeships and vacancies, not just in how the chair-hunt feels.
+
+Apprentice numbers in hairdressing and beauty fell from around 16,000 to 6,000 between 2016 and 2023, according to [research by CBI Economics for the British Hair Consortium](https://feweek.co.uk/hairdressing-apprenticeships-face-extinction-under-labour-tax-rises-says-report/), which forecasts that on current trends the number could fall to zero by 2027. Separately, the NHBF's [Careers at the Cutting Edge report](https://hji.co.uk/how-to-tackle-the-hair-industrys-skills-and-recruitment-crisis) found that 57% of hair and beauty businesses have unfilled vacancies, and more than half of those vacancies take over 16 weeks to fill.
+
+That second figure is the one worth sitting with. Sixteen weeks is not "we'll find someone eventually." It's most of a school term, most of a busy season, most of the runway a struggling column needs before it starts costing you clients as well as chair time.
+
+## Where do stylists actually look for a chair?
+
+Mostly not on a general job board. Word of mouth, social media and other salons are where the search actually happens.
+
+A stylist thinking about moving usually hears about a chair from another stylist first — someone they trained with, someone who used to work down the road, someone in a shared industry Facebook group. After that, they'll look at a salon's own social feed, because it tells them more about the room than a job spec does: who's on the floor, what the work looks like, whether the place feels like somewhere they'd want to be on a Saturday. Local colleges are worth a real relationship rather than an occasional work-experience slot — the good ones you meet at 17 are still good at 22, and by then they're not cheap or easy to find any other way.
+
+A general job listing still has a place. It just isn't where the strongest candidates start looking, because in a genuine shortage the best people aren't scrolling adverts — they're already employed, and moving only for a chair someone told them about directly.
+
+## Why speed of reply beats advert wording
+
+Because a stylist worth having is rarely reading only your advert, and the salon that replies first gets first go at a trial.
+
+They're usually weighing up two or three chairs at once. None of that comparison happens on the strength of the sentence describing the role — it happens on who actually gets back to them, and how quickly. A same-day reply, even a short one confirming you've seen the application and naming a day you'll call, keeps you in that comparison. Silence takes you out of it, and it does that regardless of how good the advert underneath was.
+
+> A stylist choosing between three unanswered adverts and one salon that called back by the end of the day isn't choosing on wording. They're choosing on who called back.
+
+This is also why polishing the advert usually isn't the fix people hope it is. A stronger headline gets you a few more applications into the same slow reply process. It doesn't touch the part that's actually losing you candidates.
+
+## What a chair needs to offer beyond pay
+
+Pay gets the advert read. What keeps someone in the chair, and keeps them applying to begin with, is usually something else.
+
+In a genuine shortage, most chairs on offer are paying something reasonable — a rate on its own rarely separates one advert from another. What does separate them is whether the rest of the offer holds up once someone's actually in the room.
+
+| What gets someone to apply | What keeps them once they're in the chair |
+| --- | --- |
+| The headline rate | Whether they can see their own numbers, not take a payslip on trust |
+| A tidy job description | A rota that doesn't swallow the week without warning |
+| A salon they've heard of | Ongoing education, not a one-off induction |
+| A photo of a nice interior | Being told plainly where they stand and what moves them up |
+
+None of the right-hand column replaces fair pay. It's what makes the pay worth staying for, once the novelty of a new chair has worn off.
+
+## Why the salons that reply within a day hire best
+
+Not because they're doing anything clever — because they aren't losing candidates to whoever replied first.
+
+Most of what separates a salon that hires well from one that doesn't isn't a better read on talent. It's that the good candidates are still available to be read at all. Reply within a day, structure a short call around whether someone can actually start, what they do, and why this salon specifically, and you're making the same decision a slower process would have reached — while the strongest people are still on the table.
+
+## Start with the reply
+
+If the advert isn't the problem, don't spend another week rewriting it. Spend that time on how fast an application actually gets a reply, because that's the step where candidates are being lost before you ever get to judge their work.
+
+We've written before in more detail about [what that first-day reply and the trade test that follows should actually look like](/blog/screening-stylist-applicants/) — this piece is about getting someone through the door in a market that's short of people to begin with. The shortage isn't going away on its own. Being the salon that replies today, in a market where most don't, is still one of the few advantages entirely within your own control.
+
+---
+
+## Hybrid pay: mixing rent, commission and salary without the maths falling apart
+Source: https://salonforge.com/blog/hybrid-pay-rent-commission-salary/
+Published: 2026-08-07  ·  Updated: 2026-08-07
+
+Ask a salon owner how they pay their team and the honest answer is rarely one word. It's usually "the two senior colourists are on commission, the juniors are on salary, and the barber at the end rents his own chair" — three different arrangements, running side by side, under one roof.
+
+That's not disorganised. It's what a salon that's grown over several years actually looks like. The trouble starts somewhere else entirely: not in having three models, but in three models each drawing on a different version of what was actually taken that week.
+
+## Why does hybrid pay usually go wrong?
+
+It goes wrong when the takings feeding each pay rule aren't the same figures for every chair. A salon with one employed team and one till has a single number everyone trusts. Add a rented chair with its own card machine, or a junior whose retail gets logged separately "to keep it simple," and you now have several versions of the truth sitting in different corners of the business — a diary total here, a till total there, a notebook for the chair that rents.
+
+Nobody sets out to build it that way. It happens gradually: a new stylist joins on a different deal than everyone else, a rented chair keeps their own float, a locum comes in for a month on a rate nobody's used before. Each change is reasonable on its own. Together, they mean payroll day involves reconciling several different records instead of reading one.
+
+> The problem was never having three pay models. It was having three versions of what actually got taken.
+
+## What has to be true before hybrid pay works?
+
+One set of takings that every pay rule reads from, whatever that chair's arrangement is. It doesn't matter whether a stylist is on salary, commission, or paying rent — the figure of what they actually took that day needs to come from the same place: the till, not a memory, not a side notebook, not an estimate carried over from last month because nobody had time to check.
+
+Once that's true, applying different rules to different chairs stops being complicated. Rent doesn't move with a quiet week; commission does. A salary is fixed regardless of takings; a rented chair's income to the owner is fixed regardless of the stylist's takings. None of that is hard maths. It only gets hard when the number each rule is being applied to isn't reliable in the first place.
+
+| Pay model | What moves with takings | What the owner is owed |
+| --- | --- | --- |
+| Salary | Nothing — fixed pay regardless of the week | The full service price, minus costs |
+| Commission | The stylist's take-home | A share of every service, set by the rate |
+| Chair rental | Nothing for the owner — rent is fixed | A fixed rent, whatever the chair took |
+
+## Why do written-down rules matter more than clever spreadsheets?
+
+Because a rule that only exists in someone's head gets applied differently under pressure. A commission rate that's "roughly 40%, more for colour, a bit different for retail" sounds fine in conversation and falls apart the moment two stylists compare payslips and the maths doesn't quite match between them. Not because anyone was cutting corners — because nobody wrote the rule down precisely enough for it to be applied the same way twice.
+
+This matters more, not less, once you're mixing models. A salon running one pay structure for everyone can get away with an informal rule staying roughly consistent, because everyone's watching the same thing happen to everyone else. A salon running three structures at once has no such safety net — a junior on salary has no way to sanity-check whether the senior colourist's commission was worked out correctly, so the only thing protecting that number from drifting is whether the rule was actually written down and applied the same way every time.
+
+Written down doesn't have to mean complicated. It means: this rate, on this service type, for this chair, calculated from this number — set once, applied consistently, not re-decided from memory on a Friday afternoon.
+
+## Why does it help for stylists to see the number before payday?
+
+Because a number that only appears once, on payday, gives a stylist nothing to check it against. Whatever their pay model, most stylists have a rough feeling for how their month is going — a good run of colour clients, a quiet fortnight, a big retail week. If the figure that eventually lands on their payslip has never been visible before that moment, there's no way for them to notice a mistake, or trust that there isn't one.
+
+That's true across every model in a hybrid set-up, not just commission. A salaried stylist wants to see their targets and bonus thresholds moving through the month. A chair-rental stylist wants to see, at a glance, that the rent being taken matches the agreement rather than a figure they have to take on trust. Visibility isn't a nice extra bolted onto one pay type — it's what stops payday being the first moment anyone finds out whether the maths held up.
+
+## What does this actually look like on a normal payroll day?
+
+Quiet, mostly. Each chair's takings for the month are already sitting in one place, because that's where the till has been recording them all along — not reconstructed from three different logs the night before payroll is due. The rent rule runs against the rented chairs. The commission rule runs against the commissioned ones. Salaries go out as agreed. Nobody is cross-referencing a paper diary against a spreadsheet against a card machine total to work out who took what.
+
+The interesting work happens earlier in the month, not on payroll day itself — deciding whether a rate is still right, whether a chair should move from commission to rental, whether a junior is ready to come off a training wage. Those are business decisions. They only get to be business decisions, rather than arguments about whose figures are correct, once the underlying takings are something everyone already agrees on. [Performance](/performance/) reads every sale straight from the till so rent, commission and salary are all worked out from the same figures, whatever mix of models a salon is actually running.
+
+## Where to start
+
+Write down, chair by chair, which model applies and what the exact rule is — not roughly, precisely enough that two people would calculate the same payslip from the same week's takings. Most of the maths in hybrid pay was never the hard part. Getting everyone to agree on the number it started from was.
+
+---
+
+## Chair rental vs employed stylists: what UK salon owners are weighing up in 2026
+Source: https://salonforge.com/blog/chair-rental-vs-employed-stylists/
+Published: 2026-08-05  ·  Updated: 2026-08-05
+
+Ask five salon owners whether to employ their stylists or rent them chairs and you'll get five confident, different answers. That's not because one side is wrong — it's because both models genuinely work, for salons chasing different things. This isn't a debate with a correct answer. It's a set of trade-offs, and the trade you're actually making is usually not the one people argue about loudest.
+
+## What's actually different between the two models?
+
+The stylist's status changes who controls what, more than it changes how much money moves. Under an employed model, the salon sets prices, decides the treatment menu, owns the client list, and pays a wage — plus holiday pay, sick pay and the rest — whether the week is heaving or dead. In return, the salon keeps everything the chair takes.
+
+Under chair rental, the stylist is effectively a small business paying to use your space. They set their own prices, choose their own hours, take their own bookings and usually keep their own client list. In return, you get a fixed rent — or an agreed percentage — that doesn't move much whether their diary is full or half-empty.
+
+| | Employed stylist | Chair rental |
+| --- | --- | --- |
+| Who sets the price | The salon | The stylist |
+| Who owns the client relationship | The salon | Usually the stylist |
+| Who carries the risk on a quiet week | The owner — wages still due | The stylist — rent still due |
+| Who controls standards and brand | The salon | Limited — a genuine rental can't dictate this |
+| What the owner keeps | The full service price, minus costs | A fixed rent or share, however busy the chair is |
+
+## What does each model do to your cash flow?
+
+It decides whether your income moves with the diary or sits apart from it. Employed stylists mean your takings rise and fall with how busy the salon actually is — good on a booked-out Saturday, painful in a quiet January when wages are still due regardless. Chair rental flattens that: the rent comes in whether the stylist's day is full or empty, so your income is steadier, but you no longer see a share of their brilliant week either. You've swapped upside for certainty.
+
+## Who ends up owning the client?
+
+Usually the stylist, under chair rental — and that's the trade owners tend to underestimate most. A stylist who rents a chair typically built, or brought, their own client book, keeps their own contact details, and takes bookings directly. If they leave, in most genuine rental set-ups their clients go with them, because the relationship was always theirs rather than the salon's.
+
+> A chair-rental salon doesn't lose a stylist when someone leaves. It loses a stylist and their diary, on the same day.
+
+Under employment, the salon usually holds the client record instead, so a stylist leaving is a staffing gap rather than a client exodus — though a well-liked stylist can still take some loyalty with them regardless of what the contract says on paper.
+
+## Can you keep the salon's standards the same either way?
+
+Not to the same degree. An employed stylist can be asked to follow the salon's protocols — the retail line they promote, the finish they're trained to deliver, the hours they're expected to keep. A genuine chair-rental stylist is running their own business inside your building, which means you can offer guidance but can't require it without risking the arrangement no longer looking like a rental at all. Salons that care deeply about one consistent standard across every chair tend to lean employed; salons happy to be a collection of independent specialists under one roof tend to lean rental.
+
+## Where does chair rental cross into being an employment relationship?
+
+This is the part worth being careful about, and it isn't a call to make on habit or on what the salon down the road happens to do. HMRC has published dedicated guidance for the hair and beauty sector because the two arrangements get blurred so often in practice — a stylist who "rents" a chair but is told what to charge, which hours to work and which clients to take is, in substance, being treated as an employee, whatever the paperwork says. Getting that wrong has real consequences on both sides: unpaid holiday pay, National Minimum Wage claims, and tax liabilities that land after the fact rather than at the time.
+
+We're not going to tell you where that line sits for your salon — that's a job for an accountant or an employment specialist who can look at your actual agreement and how it plays out day to day, not a blog post. [GOV.UK's guidance for hair and beauty](https://www.gov.uk/guidance/check-employment-status-if-you-work-in-hair-and-beauty) is a reasonable place to start before you set an arrangement up, and worth revisiting if an existing one has drifted from what's written down.
+
+Self-employment is already the default across the sector rather than the exception. Across hairdressing and barbering, [58% of the workforce is self-employed](https://www.nhbf.co.uk/advice-and-resources/hair-and-beauty-industry-statistics/), according to NHBF's industry figures — chair and room renters among them, alongside mobile and home-based stylists. The question for most owners isn't really whether to allow it. It's how much of the salon to run that way, and how carefully the arrangement is set up.
+
+## Which model actually suits your salon?
+
+It depends on what you're trying to protect — consistency or flexibility. A salon built around a strong single brand, a tight retail push and a house style tends to do better employed, because that's the model that actually lets you enforce those things. A salon built around a handful of established names who each bring their own following — a senior colourist, a specialist barber — often does better letting them rent, because trying to fold an established independent operator into a uniform structure usually just causes friction. Most salons that have been trading a while end up running some version of both, which is its own kind of complicated and a subject for another day.
+
+## What stays true whichever model you choose?
+
+You still need one clear number for what each chair actually took, whoever it belongs to. A mix of employed and rented chairs means rent, commission and wages are being worked out differently for different people under the same roof, and that's exactly the kind of thing that goes wrong quietly on a spreadsheet — a rent payment missed, a commission calculated on the wrong week, a stylist who can't see their own numbers and has to take the salon's word for it. Whichever model, or mix, you run, [Performance](/performance/) reads every sale straight from the till, so rent, commission and take-home are worked out from what actually happened at the chair, not from a tally someone reconstructs at the end of the month.
+
+## Where to start
+
+Write down, honestly, what you're trying to protect — brand consistency, cash flow certainty, or the freedom to bring in a specialist without putting them on payroll. That answer points you toward a model faster than any comparison table can, this one included. Then get the paperwork checked by someone qualified before you rely on it.
+
+---
+
+## Back bar vs retail: keeping salon stock numbers honest
+Source: https://salonforge.com/blog/back-bar-vs-retail-stock/
+Published: 2026-08-03  ·  Updated: 2026-08-03
+
+Ask a salon owner what retail took last month and they'll have it from the till in seconds. Ask what went out the back door in services — the colour, the conditioner, the wax scooped out during a blow-dry — and the answer gets vaguer fast, because none of it was ever rung anywhere. It was just used.
+
+That's where most stock confusion starts: two different kinds of product, counted the same way, or not really counted at all. Split the counting properly and most of the confusion goes with it.
+
+## What's the difference between back bar and retail stock?
+
+Back bar is product used on a client during a service; retail is product sold for a client to take home. The same bottle can be either, depending on which shelf it leaves from — poured into a jug at the basin, it's back bar; boxed up at the till, it's retail. The product itself doesn't decide which one it is. What happens to it does.
+
+That's why the two can't be counted the same way. Back bar use is tied to an appointment, with no separate transaction to catch it. Retail use is tied to a sale, and should be rung at the till with a price and a receipt, the same as stock in any other shop.
+
+## Why one number covering both tells you nothing
+
+A single combined stock figure blends two problems that have nothing in common, which is exactly why nobody can act on it.
+
+| Question | One combined number | Back bar and retail counted apart |
+| --- | --- | --- |
+| Is a stylist overusing product in services? | Invisible, lost in the total | Visible, per stylist, per week |
+| Is retail walking out unpaid or under-rung? | Invisible, lost in the total | Visible against till receipts |
+| Which shelf needs attention first? | Unanswerable | Whichever count is furthest out |
+
+> A number that covers two different shelves can only ever tell you that something's wrong somewhere. It can't tell you where to look next.
+
+## Counting the back bar
+
+Tie back bar counts to what the diary says was used, not to what's physically left on the shelf.
+
+Back bar has no till transaction of its own, so a shelf count on its own only proves the total is down — it can't say why. The workable fix is recording use at the moment it happens: a stylist logs what went on a head against that appointment, or the amount is weighed, so the figure written down and the amount actually used are the same act rather than two steps that can quietly drift apart over a month.
+
+In practice that means counting the high-value back bar lines — colour, bond builders, the treatment used on nearly every head — weekly, against what that week's appointments say should have gone out. A gap found weekly is small enough to trace back to an actual day. A gap found once a year is just a number with no story attached.
+
+## Counting retail
+
+Tie retail counts to till sales every week, not to a single check against the original delivery note months later.
+
+Retail should behave like stock in any shop: a barcode, a price, a receipt. The count that matters is till sales against physical stock — how many left the shelf against how many were rung as sold. When the two don't match, the usual explanations are mundane rather than dramatic: something rung under the wrong code, a staff purchase that was never logged, a bottle moved onto the back bar shelf by someone in a hurry between clients. Things sold or poured at the chair — a coffee, a glass of something — belong in the same weekly reconciliation, which is the whole idea behind how the [Bar](/bar/) in SalonForge logs a drink against the client and the stock the moment it's poured, rather than leaving it for someone to remember at the end of the week.
+
+## When the two get blurred
+
+Back bar and retail blur every time a product crosses from one shelf to the other without anyone writing it down.
+
+A retail sachet handed to a client having a bad day with their colour is a kind gesture and a back bar use — but if it's never logged, it reads as a retail loss with no service to explain it. A back bar bottle running low at the basin gets topped up from a retail bottle pulled off the shelf because nobody reordered in time — retail goes down, back bar looks fine, and neither number reflects what actually happened.
+
+None of this is theft or carelessness. It's what happens by default when moving a bottle from one shelf to the other takes no more effort than moving it, and writing it down takes a spare minute nobody has on a Saturday.
+
+## A rhythm that holds up on a Saturday
+
+Little and often, split by shelf, beats one large count that mixes both.
+
+| When | Back bar | Retail |
+| --- | --- | --- |
+| At delivery | Check against the delivery note before it's shelved | Check in against the delivery note before it's priced up |
+| Weekly | Count high-value lines against what the diary says was used | Reconcile against till sales for the week |
+| Monthly | Spot-check the rest of the range | Full shelf count against the till report |
+
+Splitting the count isn't extra work — it's the same work sorted into the right pile. A back bar gap points you at the diary and the week it opened up. A retail gap points you at the till and the shelf it came from. Keep them apart from the start, and the number you end up with is one you can actually do something about.
+
+---
+
+## How to reduce no-shows in a UK salon without annoying your clients
+Source: https://salonforge.com/blog/salon-no-shows-deposits-reminders/
+Published: 2026-07-31  ·  Updated: 2026-07-31
+
+A no-show costs a salon in a very particular way: the chair sits empty at exactly the time it was reserved, usually with too little notice to fill it with anyone else. Every owner ends up with their own way of handling it — a line in the booking confirmation, a deposit taken up front, a text sent the night before. None of it gets a salon to zero, and it isn't supposed to. The realistic aim is fewer no-shows, without turning every booking into a negotiation.
+
+## What's the difference between a no-show and a late cancellation?
+
+A no-show is a client who simply doesn't turn up, with no warning at all. A late cancellation is a client who does let you know — just not with enough notice for you to fill the slot. Both leave you with an empty chair at the time it was booked, so the cost to the till is nearly identical. But they aren't the same thing to the client sitting across from you at their next visit, and a policy that charges both at the same rate tends to feel wrong to the person who at least tried to tell you.
+
+Most workable policies draw a line: cancel with more notice than the cut-off (say, 24 or 48 hours) and nothing is charged; cancel inside it, or don't show at all, and the same charge applies to both. That's not because the two are equally bad — it's because once you're inside the cut-off, the chair is equally lost either way.
+
+## Do deposits actually stop no-shows?
+
+Broadly, yes. Asking someone to put money down on a booking makes them more likely to keep it — that's not a controversial claim, it's just what a deposit is for. The part that gets left out of most advice on this is what it costs you to take one.
+
+A deposit is friction at the point of booking, and some clients who would have shown up perfectly reliably will book somewhere else rather than pay one — particularly a first-time client who has no history with you yet and no particular reason to trust the process. You don't get to see those lost bookings; you only see the no-shows you prevented. That's what makes this hard to weigh up from the inside.
+
+> A deposit doesn't remove the choice between a full diary and a protected one. It just moves that choice earlier — to the point of booking, instead of the point where the chair is empty.
+
+There's no single right answer here, and anyone who tells you there is hasn't run a front desk. A busy colour specialist with a six-week waiting list and a high no-show rate is weighing this up very differently from a quiet salon trying to build a client base. Reasonable owners land in different places — deposits on everyone, deposits on new clients only, deposits on long or expensive services only, or no deposits and a harder line on repeat offenders instead. What matters is picking on purpose, rather than copying whatever the salon down the road does.
+
+## Why does reminder timing matter more than what the reminder says?
+
+Because a reminder can only stop a no-show if it arrives while the client can still do something about it — cancel properly, or move the appointment — and that's almost entirely a question of when it lands, not how it's worded.
+
+A message that arrives an hour before the appointment reads as a heads-up, not a chance to act. If the client had already forgotten, an hour isn't enough time to do anything except turn up late or not at all — it confirms attendance for people who were coming anyway and does almost nothing for the ones who weren't. A reminder sent with real notice — the evening before, or a few days out — gives a client who's double-booked themselves, or whose plans changed, an actual window to tell you and free the slot for someone else.
+
+| When the reminder lands | What it can actually catch |
+| --- | --- |
+| An hour or two before | Confirms clients who were already coming; too late for anyone else to act |
+| The evening before | A genuine window to cancel or move — enough notice to still fill the slot |
+| Several days before | Long enough to offer the slot to someone on a waiting list if it's freed up |
+
+A review of studies on hospital appointment reminders — a much bigger and better-researched version of the same problem — found that patients who got a reminder were, on average, about 11% more likely to attend than those who got none, and that sending two reminders spaced apart (roughly a week out, then a few days out) worked better than one message close to the appointment. See [the review on jhmhp.amegroups.org](https://jhmhp.amegroups.org/article/view/10215/html). Hospital bookings aren't salon bookings, but the underlying logic transfers: a reminder that arrives too late to act on can only confirm, never rescue.
+
+## What does a policy clients actually accept look like?
+
+One they hear about before they need it, that's applied the same way regardless of who's on the front desk that day, and that charges for what was actually lost rather than the full service price on principle. A client who finds out about a no-show fee for the first time when they're being charged for it has a fair complaint, even if the policy itself is reasonable — the problem is the surprise, not the fee.
+
+Consistency is the part that quietly breaks down in practice. A deposit taken over the phone that never makes it onto the client's record at the desk is a policy that only exists for whoever happened to answer that call. It's easier to hold together when the deposit, the reminder and the booking itself sit against the same record rather than three separate ones a stylist has to cross-check by memory on a Saturday — which is part of what [Daviana](/daviana/) is built to hold together.
+
+## Where to start
+
+Split your own no-show numbers into the two categories from the first section — true no-shows and late cancellations — before you touch pricing or wording. That split alone usually tells you more than a policy change would: a salon with mostly late cancellations has a reminder-timing problem, and a salon with genuine no-shows has a deposit or a repeat-client problem. They don't get fixed by the same lever, and it's worth knowing which one you actually have before you pick one.
+
+---
+
+## Double-booked again? Why salon diaries clash and how to stop it
+Source: https://salonforge.com/blog/salon-diary-double-booking/
+Published: 2026-07-29  ·  Updated: 2026-07-29
+
+## Why do diaries clash in the first place?
+
+Not because anyone was careless. A double-booking almost always means two systems each held their own version of the diary, and neither one knew what the other had just done.
+
+Picture a normal Saturday morning. A client books a colour appointment online for 2pm. Ten minutes later, someone else rings the desk and asks for the same slot, and whoever answers checks the book — the paper one, or a screen that hasn't caught up with the online page yet — and it still shows 2pm as free. Both clients get a yes. One of them turns up to a chair that's already taken.
+
+Nobody did anything wrong. The person on the phone gave an honest answer, from the version of the diary in front of them. It just wasn't the same version the online page had already changed.
+
+## Where the separate versions actually come from
+
+Most salons run at least three: the online booking page, the phone, and the front desk book — paper, a spreadsheet, or a screen that isn't quite the one clients see. Walk-ins add a fourth, written down after the fact rather than checked against anything first.
+
+Each one is perfectly usable on its own. The trouble starts when a booking made in one of them doesn't reach the others straight away — and "straight away" is the hard part, because it means every one of those places has to be looking at the same diary at the same moment, not a copy of it from five minutes ago.
+
+## What actually happens in the gap
+
+The clash doesn't happen at the moment of booking. It happens in the space between one system taking a slot and the others finding out it's gone.
+
+| Where the booking is made | What it's checking against | How the clash opens up |
+| --- | --- | --- |
+| Online booking page | Whatever the diary showed the last time it loaded | A slot taken seconds ago by phone may not show as gone yet |
+| Phone / front desk | The paper book, or a screen at the desk | Doesn't know what was booked online minutes earlier |
+| Walk-in, written down after | Nothing, until someone copies it across later | Sits outside the diary entirely until someone remembers |
+
+That middle column is the whole problem. Every one of those places is telling the truth about what it can see. None of them can see the others.
+
+> A double-booking isn't two people lying about the same slot. It's two systems each telling the truth, from a version of the diary that's already gone stale.
+
+## Does having more ways to book make this worse?
+
+No — and it's worth saying plainly, because the instinct is often to close down a channel rather than fix the gap. A client being able to book online, by phone or at the desk isn't the risk. The risk is how many separate places that booking can land once it's made.
+
+A salon that only ever took bookings at the desk, in one paper book, could never double-book — there was only ever one version of the diary, and it was sitting right there. The moment a second way to book appears, whether that's an online page, a second desk, or a phone line, the diary either stays one diary that all of them read and write to, or it splits into as many versions as there are ways in. Splitting is what causes the clash, not the number of doors.
+
+Rebooking makes the same point from the other direction. A client who cancels at the desk and a client who reschedules online at the same moment are both changing the same diary — and if the desk and the online page aren't looking at each other, the slot that just opened up can be handed to two different people within minutes of each other. The clash isn't new business colliding with new business. It's just as often a cancellation colliding with someone else's reschedule.
+
+## What one diary actually changes
+
+When the online page, the phone and the front desk are all reading and writing the same diary, the gap in that table above stops existing — not because anyone checks faster, but because there's nothing left to catch up on. A slot taken by phone at 11:04 is gone for the online page at 11:04, because it's the same booking, seen from a different screen. We've written before about [what that looks like when the phone itself is doing the booking](/blog/ai-receptionist-real-diary/): the reason two callers can't be told the same slot is free isn't clever checking, it's that there was only ever one diary to check against.
+
+Nothing changes about how clients book. They still ring, still book online, still walk in. What stops is the front desk finding out about a clash after the fact — from an apologetic phone call, or a client standing at the counter expecting a chair that's already occupied.
+
+## Where to start if this is already happening to you
+
+Count the places a booking can land before it reaches the diary the front desk actually works from. If the honest answer is more than one — online page, phone notes, a paper book, a second screen — that count is your clash risk, not how many clients you're seeing.
+
+You don't need to change how clients reach you to fix it. You need every one of those doors opening onto the same diary, so a slot taken through any of them is gone for all of them, at the same moment, without anyone having to notice.
+
+---
+
 ## Screening stylist applicants without spending a week reading CVs
 Source: https://salonforge.com/blog/screening-stylist-applicants/
 Published: 2026-07-24  ·  Updated: 2026-07-24
