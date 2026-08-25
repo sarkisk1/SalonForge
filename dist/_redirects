@@ -1,7 +1,17 @@
-/services /
-
-/marketing-automation /
-
-/live-chat /
-
-/lead-generation /
+# Legacy URLs from the previous (Astro) build.
+#
+# 301, not 302: a 302 tells Google the old URL is still the canonical one, so the
+# stale pre-2026 pages stayed in the index instead of passing their equity to /.
+# Cloudflare Pages defaults to 302 when the status code is omitted — it was.
+#
+# NOTE: the www.salonforge.com -> salonforge.com 301 CANNOT live in this file.
+# Cloudflare Pages _redirects only accepts a file path as [source]; domain-level
+# redirects are explicitly unsupported
+# (https://developers.cloudflare.com/pages/configuration/redirects/ — "Domain-level
+# redirects ❌"). That one needs a Bulk Redirect or a Redirect Rule in the dashboard.
+#
+# Format: [source] [destination] [code]
+/services / 301
+/marketing-automation / 301
+/live-chat / 301
+/lead-generation / 301
