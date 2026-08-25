@@ -613,6 +613,16 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 .callit-done .steps{list-style:none;margin:16px 0 0;display:grid;gap:10px}
 .callit-done .steps li{position:relative;padding-left:30px;font-size:1rem;font-weight:500;color:var(--ink)}
 .callit-done .steps li i{position:absolute;left:0;top:.05em;width:21px;height:21px;border-radius:50%;background:var(--blue);color:#fff;font-style:normal;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* ── THE THREE STEPS (journey) ───────────────────────────────────────── */
+/* Reuses the page's own .gcard component; 3 → 1 column (never a 2+1 orphan). */
+.jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.jsteps{grid-template-columns:1fr}}
+.jstep .sn{width:38px;height:38px;border-radius:12px;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;color:var(--blue);font-size:1.0625rem;font-weight:700;font-variant-numeric:tabular-nums;flex:none}
+.jstep p{color:var(--sec);font-size:1.125rem;line-height:1.5;margin-top:18px}
+.jstep p strong{color:var(--ink);font-weight:600}
+/* ── THE RESOLUTION (higher purpose, closing band) ───────────────────── */
+.cta p.cta-purpose{margin:clamp(30px,4.2vw,44px) auto 0;max-width:45ch;font-size:1.0625rem;line-height:1.5;color:var(--sec)}
+.cta p.cta-purpose strong{color:var(--ink);font-weight:600}
 </style>
 </head>
 <body>
@@ -654,7 +664,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <p class="eyebrow reveal">Booking · colour · stock · the phone — one system</p>
         <h1 class="reveal d1">The booking system <span class="hl sw">built around you</span>.</h1>
         <p class="lede lede-1 reveal d2">Records every call, integrated with WhatsApp — AI receptionist and colour management, all in one place.</p>
-        <p class="lede lede-2 reveal d3">Everything writes to one record — so the leaks show up, then stop.</p>
+        <p class="lede lede-2 reveal d3">Everything you do writes to one record — so your leaks show up, then stop.</p>
         <div class="actions reveal d4">
           <a class="btn btn-g" href="#call-it">Hear it answer your phone</a>
           <a class="btn btn-o" href="/demo/">Try it now</a>
@@ -715,7 +725,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
     <div class="chapter reveal"><span class="ix">01</span><span class="lbl">The colour bar</span><span class="end">Weighed, costed, on the bill</span></div>
     <div class="sec-head reveal">
       <h2>Colour down the sink is <span class="hl">money down the sink</span>.</h2>
-      <p class="lede">Every gram is weighed on the scale and costed as it's mixed — while the client is still in the chair.</p>
+      <p class="lede">You see every gram weighed on the scale and costed as it's mixed — while the client is still in the chair.</p>
     </div>
     <ul class="factlist">
       <li class="reveal">See what every colour service really costs.</li>
@@ -816,7 +826,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
     <div class="chapter reveal"><span class="ix">04</span><span class="lbl">The phone</span><span class="end">Answered, not missed</span></div>
     <div class="sec-head reveal">
       <h2>The calls you miss are <span class="hl">bookings you lose</span>.</h2>
-      <p class="lede">An AI receptionist takes the whole conversation and books it straight into the diary.</p>
+      <p class="lede">An AI receptionist answers for you — it takes the whole conversation and books it straight into the diary.</p>
     </div>
     <ul class="factlist">
       <li class="reveal">Answers when the desk can't.</li>
@@ -835,7 +845,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
       <div>
         <div class="sec-head reveal">
           <h2>Don't take our word for it. <span class="hl">Call it.</span></h2>
-          <p class="lede">This is a live demonstration line — our AI receptionist, Aria, answering a working salon diary. Anyone can ring it.</p>
+          <p class="lede">Ring this line right now — Aria, the AI receptionist, answers a working salon diary. Anyone can call it.</p>
         </div>
         <a class="callit-num reveal d1" href="tel:+447460096908">+44 7460 096908 <span class="callit-live"><span class="dot"></span>Live</span></a>
         <p class="callit-sub reveal d2">Start the free trial and it goes one better: confirm your email, add your mobile, and this same line answers as <strong>your salon</strong> — by name. One personalised call a day, two calls a day per number.</p>
@@ -856,7 +866,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         </form>
         <div class="callit-done" id="ci-done" aria-live="polite">
           <div class="big">Check your inbox ✉️</div>
-          <p>We've sent a confirmation link to your email.</p>
+          <p>Your confirmation link is on its way.</p>
           <ol class="steps">
             <li><i>1</i>Confirm your email</li>
             <li><i>2</i>Add the mobile you'll call from</li>
@@ -868,9 +878,35 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
   </div>
 </section>
 
+<!-- CH 06 · THE THREE STEPS (story-formula part 5: the journey) -->
+<section class="band cres" id="journey">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">06</span><span class="lbl">How you start</span><span class="end">Three steps, no card</span></div>
+    <div class="sec-head reveal">
+      <h2>You're three steps from <span class="hl">one record</span>.</h2>
+      <p class="lede">Hear it answer first, then a person sets you up. No card. No sales call.</p>
+    </div>
+    <div class="jsteps">
+      <div class="gcard jstep reveal">
+        <div class="top"><span class="sn">1</span><span class="zone">Right now</span></div>
+        <p><strong>Call it</strong> — hear the receptionist answer as your salon.</p>
+      </div>
+      <div class="gcard jstep reveal d1">
+        <div class="top"><span class="sn">2</span><span class="zone">Next</span></div>
+        <p><strong>We set you up</strong> — your services and team already in.</p>
+      </div>
+      <div class="gcard jstep reveal d2">
+        <div class="top"><span class="sn">3</span><span class="zone">Every day after</span></div>
+        <p><strong>Run the whole salon</strong> on one record.</p>
+      </div>
+    </div>
+    <div class="plinks reveal d3"><a class="plink" href="#call-it">Start with the call <span class="arw">&rarr;</span></a></div>
+  </div>
+</section>
+
 <section class="band band--2" id="proof">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">06</span><span class="lbl">Earned, not claimed</span><span class="end">By a working salon group</span></div>
+    <div class="chapter reveal"><span class="ix">07</span><span class="lbl">Earned, not claimed</span><span class="end">By a working salon group</span></div>
     <div class="sec-head reveal">
       <h2>Built and run by a working salon group.</h2>
     </div>
@@ -887,7 +923,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 <span id="everything" style="display:block;scroll-margin-top:90px"></span>
 <section class="band" id="products">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">07</span><span class="lbl">The six, up close</span><span class="end">Each one, plugged into the spine</span></div>
+    <div class="chapter reveal"><span class="ix">08</span><span class="lbl">The six, up close</span><span class="end">Each one, plugged into the spine</span></div>
 
     <!-- Daviana -->
     <div class="beat reveal">
@@ -895,7 +931,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><a class="kicker" href="/daviana/">Daviana <span class="arw">&rarr;</span></a></div>
         <h3>The booking spine.</h3>
         <p>The appointment diary, till and payments, client records and per-stylist pricing — the operating core of the salon floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>The one source every other product reads and writes.</p></div>
+        <div class="beat-add"><span>What you get</span><p>The one source every other product reads and writes.</p></div>
       </div>
       <div class="beat-viz"><div class="viz dav-viz">
         <div class="dav" aria-hidden="true">
@@ -933,7 +969,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><a class="kicker" href="/ai-receptionist/">AI Receptionist <span class="arw">&rarr;</span></a></div>
         <h3>Answers the phone after hours.</h3>
         <p>Handles multi-service bookings, reschedules and questions in a natural voice — and never puts a caller on hold.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real AI voice that books straight into the diary.</p></div>
+        <div class="beat-add"><span>What you get</span><p>A real AI voice that books straight into the diary.</p></div>
       </div>
       <div class="beat-viz"><div class="viz ai-viz">
         <video class="rcp" src="assets/receptionist.mp4" poster="assets/poster-receptionist.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
@@ -948,7 +984,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><a class="kicker" href="/colorlab/">ColorLab <span class="arw">&rarr;</span></a></div>
         <h3>Every bowl, weighed and costed.</h3>
         <p>Precision Bluetooth-scale weighing, snap-a-photo AI formula and one-tap repeat — with the true cost of every gram.</p>
-        <div class="beat-add"><span>Our addition</span><p>Every bowl weighed and costed to the gram, tied to the booking.</p></div>
+        <div class="beat-add"><span>What you get</span><p>Every bowl weighed and costed to the gram, tied to the booking.</p></div>
       </div>
       <div class="beat-viz"><div class="viz cl-viz">
         <video class="clv" src="assets/colorlab.mp4" poster="assets/poster-colorlab.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
@@ -966,7 +1002,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><a class="kicker" href="/performance/">Performance <span class="arw">&rarr;</span></a></div>
         <h3>The app the team opens daily.</h3>
         <p>Live revenue and leaderboards, commission and self-employed settlement, tips and gamified training — all from the same sales.</p>
-        <div class="beat-add"><span>Our addition</span><p>The pay run updates itself — no Sunday spreadsheet.</p></div>
+        <div class="beat-add"><span>What you get</span><p>The pay run updates itself — no Sunday spreadsheet.</p></div>
       </div>
       <div class="beat-viz"><div class="viz" id="perfviz">
         <div class="bars">
@@ -986,7 +1022,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><a class="kicker" href="/people/">People <span class="arw">&rarr;</span></a></div>
         <h3>The whole team, in one place.</h3>
         <p>An AI-screened hiring funnel, onboarding, rota, contracts, payroll and leave — from first application to first shift.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real people-ops product, not an afterthought.</p></div>
+        <div class="beat-add"><span>What you get</span><p>A real people-ops product, not an afterthought.</p></div>
       </div>
       <div class="beat-viz"><div class="viz pa-viz">
         <div class="pa" aria-hidden="true">
@@ -1044,7 +1080,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
         <div class="head"><div class="tile"><svg><use href="#ic-bar"/></svg></div><a class="kicker" href="/bar/">Bar <span class="arw">&rarr;</span></a></div>
         <h3>A drink to the chair.</h3>
         <p>Order a coffee or a glass of something to the client at the chair — the guest experience, handled without leaving the floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>It posts to the client's bill and deducts stock, instantly.</p></div>
+        <div class="beat-add"><span>What you get</span><p>It posts to the client's bill and deducts stock, instantly.</p></div>
       </div>
       <div class="beat-viz"><div class="viz vid-viz">
         <video src="assets/bar.mp4" poster="assets/poster-bar.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
@@ -1057,7 +1093,7 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 
 <section class="band tryband">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">08</span><span class="lbl">Try it yourself</span><span class="end">No signup</span></div>
+    <div class="chapter reveal"><span class="ix">09</span><span class="lbl">Try it yourself</span><span class="end">No signup</span></div>
     <h2 class="reveal d1">Walk into the salon before you talk to anyone.</h2>
     <p class="reveal d2">Order a drink at the bar, weigh a colour to the gram, then open the client's bill and find both already on it. About a minute, and nothing to install.</p>
     <div class="actions reveal d3">
@@ -1076,14 +1112,15 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
     </svg>
   </div>
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">09</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
+    <div class="chapter reveal"><span class="ix">10</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
     <h2 class="reveal d1">See it running on your salon.</h2>
-    <p class="reveal d2">We'll walk you through SalonForge running a real salon floor — the diary, the colour bench, the pay run and the bar — on one connected system.</p>
+    <p class="reveal d2">You'll see SalonForge running a real salon floor — the diary, the colour bench, the pay run and the bar — on one connected system.</p>
     <div class="actions reveal d3">
       <a class="btn btn-g" href="/demo/">Open the demo salon</a>
       <a class="btn btn-o" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a>
       <a href="mailto:info@salonforge.com?subject=SalonForge%20%E2%80%94%20talk%20to%20the%20team" class="btn btn-o">Talk to the team</a>
     </div>
+    <p class="cta-purpose reveal d4">Independent salons should keep what their craft earns. <strong>Software built by salon people, not software people.</strong></p>
   </div>
 </section>
 
