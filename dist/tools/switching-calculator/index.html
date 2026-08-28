@@ -20,7 +20,7 @@
 <link rel="alternate" type="application/rss+xml" title="SalonForge journal" href="https://salonforge.com/blog/feed.xml">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Salon software switching calculator — what moving actually saves | SalonForge", "url": "https://salonforge.com/tools/switching-calculator/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "description": "Work out what moving your salon software actually saves, beyond the difference in subscriptions. Every assumption is yours to change — no hidden maths, no email required.", "publisher": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/salonforge-mark.svg", "description": "Six connected products that run the whole salon — booking, colour, bar, phone, performance and hiring."}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SalonForge", "item": "https://salonforge.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://salonforge.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "What does switching your salon software actually save?"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the saving bigger than the difference in subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "Because the subscription is the smallest line in the decision. Comparing one monthly bill against another ignores the chair time lost to no-shows, the colour that goes down the sink, and the fact that on the colour route the subscription disappears altogether rather than shrinking. This calculator counts all four."}}, {"@type": "Question", "name": "Where do the default numbers come from?", "acceptedAnswer": {"@type": "Answer", "text": "They are typical figures for a mid-sized salon, not measured facts about yours, and they are all adjustable for exactly that reason. The two worth replacing first are your no-show rate, which your current system will report, and what your software actually costs you a year."}}, {"@type": "Question", "name": "Why is the colour cost difference set to zero?", "acceptedAnswer": {"@type": "Answer", "text": "Because we are not going to put a number on what our colour saves you until you have weighed it against your own invoice. Ask us for a trial kit, price it yourself, and then set that line honestly. Everything else on this page stands whether or not you ever move your colour."}}, {"@type": "Question", "name": "Why separate cost savings from recovered revenue?", "acceptedAnswer": {"@type": "Answer", "text": "They are not the same kind of money. Cash you stop spending is yours. Revenue that comes back through the door still carries a stylist's time and product with it, so it is not profit. Adding them into one headline figure would flatter the total and we would rather you trusted it."}}, {"@type": "Question", "name": "Does this calculator send my numbers anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs entirely in your browser, nothing is submitted, and there is no form to fill in to see the result."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the saving bigger than the difference in subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "Because the subscription is the smallest line in the decision. Comparing one monthly bill against another ignores the chair time lost to no-shows, the colour that goes down the sink, and the fact that on the colour route the subscription disappears altogether rather than shrinking. This calculator counts all four."}}, {"@type": "Question", "name": "What exactly makes the software free?", "acceptedAnswer": {"@type": "Answer", "text": "Spending £3,000 a year or more on Evera and Keyluma products. At or above that, the subscription for booking, ColorLab and the bar is £0 a month — nothing for the whole year, not a reduced rate. It is a threshold rather than a commitment: there is no minimum you are obliged to buy and no shortfall charge if you spend less, you simply pay the subscription instead. Set your colour spend below £3,000 in the calculator and it costs it that way."}}, {"@type": "Question", "name": "Where do the default numbers come from?", "acceptedAnswer": {"@type": "Answer", "text": "They are typical figures for a mid-sized salon, not measured facts about yours, and they are all adjustable for exactly that reason. The two worth replacing first are your no-show rate, which your current system will report, and what your software actually costs you a year."}}, {"@type": "Question", "name": "Why is the colour cost difference set to zero?", "acceptedAnswer": {"@type": "Answer", "text": "Because we are not going to put a number on what our colour saves you until you have weighed it against your own invoice. Ask us for a trial kit, price it yourself, and then set that line honestly. Everything else on this page stands whether or not you ever move your colour."}}, {"@type": "Question", "name": "Why separate cost savings from recovered revenue?", "acceptedAnswer": {"@type": "Answer", "text": "They are not the same kind of money. Cash you stop spending is yours. Revenue that comes back through the door still carries a stylist's time and product with it, so it is not profit. Adding them into one headline figure would flatter the total and we would rather you trusted it."}}, {"@type": "Question", "name": "Does this calculator send my numbers anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs entirely in your browser, nothing is submitted, and there is no form to fill in to see the result."}}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -782,6 +782,9 @@ details.assump[open]>summary::before{transform:rotate(90deg)}
 details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outline-offset:3px;border-radius:4px}
 .assump-body{padding-top:16px}
 .assump-intro{font-size:.86rem;color:var(--sec,#726A63);line-height:1.5;margin:0 0 16px}
+.thresh{display:none;background:rgba(138,106,47,.10);border:1px solid rgba(138,106,47,.30);
+  border-radius:9px;padding:11px 14px;font-size:.86rem;line-height:1.5;margin:0 0 16px}
+.thresh.on{display:block}
 .prefill{display:none;background:rgba(217,119,87,.10);border:1px solid rgba(217,119,87,.28);
   color:var(--ink,#1F1C1A);border-radius:9px;padding:11px 14px;font-size:.88rem;line-height:1.5;margin:0 0 18px}
 .prefill.on{display:block}
@@ -817,7 +820,8 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
 <nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">SalonForge</a><span class="sep">/</span><a href="/tools/">Tools</a><span class="sep">/</span><span aria-current="page">What does switching your salon software actually save?</span></nav><div class="calc"><header class="calc-head blog-hero" style="border:none;margin:0"><h1>What does switching your salon software actually save?</h1><p>Most salons price this decision by putting one monthly subscription next to another. The number comes out small, and the move looks like it is not worth the upheaval. That comparison leaves out three larger things. Every assumption below is yours to change.</p></header><div class="calc-grid"><div class="calc-panel"><h2>Your salon</h2>
 <div class="prefill" id="prefill">These figures were set for your salon before the link was sent to you. They are a starting point, not a fixed quote &mdash; change anything that does not match.</div>
 <div class="rtoggle" role="group" aria-label="Choose route"><button type="button" id="r-colour" aria-pressed="true">Colour route</button><button type="button" id="r-sub" aria-pressed="false">Subscription route</button></div>
-<p class="rtoggle-cap" id="rcap">Buy your colour from us and the booking, colour and bar software is free. There is no subscription to pay at all.</p>
+<p class="rtoggle-cap" id="rcap">Spend &pound;3,000 a year or more on Evera and Keyluma products &mdash; colour you are buying from a wholesaler anyway &mdash; and the subscription is &pound;0 a month. Nothing for the whole year.</p>
+<div class="thresh" id="thresh"></div>
 <div class="fld"><label for="bookings">Bookings a week <span class="val" id="bookings-v">100</span></label><input type="range" id="bookings" min="20" max="400" step="1" value="100"><span class="hint">Across every stylist, in an ordinary week.</span></div>
 <div class="fld"><label for="value">Average booking value <span class="val" id="value-v">&pound;65</span></label><input type="range" id="value" min="15" max="300" step="1" value="65"><span class="hint">Your average bill, not your top service.</span></div>
 <div class="fld"><label for="noshow">No-shows and late cancellations <span class="val" id="noshow-v">8%</span></label><input type="range" id="noshow" min="0" max="25" step="0.5" value="8"><span class="hint">Your current system will report this. Worth checking rather than guessing &mdash; it moves the total more than anything else here.</span></div>
@@ -830,7 +834,7 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
 <div class="fld"><label for="waste">Colour currently over-mixed <span class="val" id="waste-v">15%</span></label><input type="range" id="waste" min="0" max="35" step="1" value="15"><span class="hint">How much of a bowl typically goes down the sink when it is measured by eye rather than weighed.</span></div>
 </div></details>
 </div><div class="calc-out"><div class="big-lbl">A year, on your figures</div><div class="big" id="o-total">&mdash;</div><div class="calc-rows">
-<div class="crow"><span id="l-software">Software &mdash; nothing to pay at all</span><span id="o-software">&mdash;</span></div>
+<div class="crow"><span id="l-software">Software &mdash; &pound;0 a month, nothing for the year</span><span id="o-software">&mdash;</span></div>
 <div class="crow"><span>Colour weighed to the gram, not guessed</span><span id="o-waste">&mdash;</span></div>
 <div class="crow muted"><span id="l-colour">Colour cost difference &mdash; until you have tried it</span><span id="o-colour">&mdash;</span></div>
 <div class="crow sub-t"><span>Total off your costs</span><span id="o-cost">&mdash;</span></div>
@@ -843,7 +847,7 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
 <p>Put two subscriptions side by side and the difference is usually a few hundred pounds a year &mdash; not enough to justify moving a salon onto a new system, which is the correct conclusion from that comparison. It is just the wrong comparison.</p>
 <p>Three things sit outside it, and all three are larger:</p>
 <ul>
-<li><strong>The subscription can go to nothing.</strong> On the colour route you buy your colour from us &mdash; colour you were buying from a wholesaler anyway &mdash; and the booking, colour and bar software costs nothing. That is the whole bill gone, not a discount on it.</li>
+<li><strong>The subscription can go to nothing.</strong> Spend &pound;3,000 a year or more on Evera and Keyluma products &mdash; colour you were buying from a wholesaler anyway &mdash; and the booking, colour and bar software is &pound;0 a month. That is the whole bill gone for the year, not a discount on it.</li>
 <li><strong>No-shows are chair time you have already paid for.</strong> The stylist is in, the slot is gone, and nothing came through the till. Reminders that go out early enough turn some of those into a cancellation you can still refill.</li>
 <li><strong>Colour measured by eye is colour paid for twice.</strong> What goes down the sink was bought at full price. Weighing to the gram makes the over-mix visible as a number instead of a habit.</li>
 </ul>
@@ -860,7 +864,7 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
 <p>The AI receptionist that answers the phone when nobody can, the performance and rewards tools, and the hiring tools are all paid add-ons and none of them is counted above. Nor is card processing or online deposits. The number on this page is deliberately the conservative one.</p>
 <p>If you want the phone side costed too, the <a href="/tools/missed-call-calculator/">missed call calculator</a> does that separately, and the <a href="/tools/colour-cost-calculator/">colour cost calculator</a> works out what a head of colour really costs you.</p>
 </div>
-<section class="calc-expl"><h2>Questions about this calculator</h2><div class="faq-list"><details class="qa"><summary>Why is the saving bigger than the difference in subscriptions?</summary><div class="qa-body"><p>Because the subscription is the smallest line in the decision. Comparing one monthly bill against another ignores the chair time lost to no-shows, the colour that goes down the sink, and the fact that on the colour route the subscription disappears altogether rather than shrinking. This calculator counts all four.</p></div></details><details class="qa"><summary>Where do the default numbers come from?</summary><div class="qa-body"><p>They are typical figures for a mid-sized salon, not measured facts about yours, and they are all adjustable for exactly that reason. The two worth replacing first are your no-show rate, which your current system will report, and what your software actually costs you a year.</p></div></details><details class="qa"><summary>Why is the colour cost difference set to zero?</summary><div class="qa-body"><p>Because we are not going to put a number on what our colour saves you until you have weighed it against your own invoice. Ask us for a trial kit, price it yourself, and then set that line honestly. Everything else on this page stands whether or not you ever move your colour.</p></div></details><details class="qa"><summary>Why separate cost savings from recovered revenue?</summary><div class="qa-body"><p>They are not the same kind of money. Cash you stop spending is yours. Revenue that comes back through the door still carries a stylist's time and product with it, so it is not profit. Adding them into one headline figure would flatter the total and we would rather you trusted it.</p></div></details><details class="qa"><summary>Does this calculator send my numbers anywhere?</summary><div class="qa-body"><p>No. It runs entirely in your browser, nothing is submitted, and there is no form to fill in to see the result.</p></div></details></div></section></div><script>
+<section class="calc-expl"><h2>Questions about this calculator</h2><div class="faq-list"><details class="qa"><summary>Why is the saving bigger than the difference in subscriptions?</summary><div class="qa-body"><p>Because the subscription is the smallest line in the decision. Comparing one monthly bill against another ignores the chair time lost to no-shows, the colour that goes down the sink, and the fact that on the colour route the subscription disappears altogether rather than shrinking. This calculator counts all four.</p></div></details><details class="qa"><summary>What exactly makes the software free?</summary><div class="qa-body"><p>Spending £3,000 a year or more on Evera and Keyluma products. At or above that, the subscription for booking, ColorLab and the bar is £0 a month — nothing for the whole year, not a reduced rate. It is a threshold rather than a commitment: there is no minimum you are obliged to buy and no shortfall charge if you spend less, you simply pay the subscription instead. Set your colour spend below £3,000 in the calculator and it costs it that way.</p></div></details><details class="qa"><summary>Where do the default numbers come from?</summary><div class="qa-body"><p>They are typical figures for a mid-sized salon, not measured facts about yours, and they are all adjustable for exactly that reason. The two worth replacing first are your no-show rate, which your current system will report, and what your software actually costs you a year.</p></div></details><details class="qa"><summary>Why is the colour cost difference set to zero?</summary><div class="qa-body"><p>Because we are not going to put a number on what our colour saves you until you have weighed it against your own invoice. Ask us for a trial kit, price it yourself, and then set that line honestly. Everything else on this page stands whether or not you ever move your colour.</p></div></details><details class="qa"><summary>Why separate cost savings from recovered revenue?</summary><div class="qa-body"><p>They are not the same kind of money. Cash you stop spending is yours. Revenue that comes back through the door still carries a stylist's time and product with it, so it is not profit. Adding them into one headline figure would flatter the total and we would rather you trusted it.</p></div></details><details class="qa"><summary>Does this calculator send my numbers anywhere?</summary><div class="qa-body"><p>No. It runs entirely in your browser, nothing is submitted, and there is no form to fill in to see the result.</p></div></details></div></section></div><script>
 (function(){
  var F=['bookings','value','noshow','software','colour','sub','weeks','reminders','waste'],el={};
  F.forEach(function(k){el[k]=document.getElementById(k);el[k+'v']=document.getElementById(k+'-v')});
@@ -879,19 +883,33 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
  if(q.get('route')==='sub'||q.get('route')==='subscription'){route='sub';touched=true;}
  if(touched) document.getElementById('prefill').classList.add('on');
 
- function paint(){
+ var FREE_AT=3000; /* Evera/Keyluma spend a year that makes the subscription zero */
+
+ function paint(col){
+  var below=(route==='colour' && col<FREE_AT);
   document.getElementById('r-colour').setAttribute('aria-pressed',route==='colour');
   document.getElementById('r-sub').setAttribute('aria-pressed',route==='sub');
-  document.getElementById('fld-sub').style.display=(route==='sub')?'':'none';
-  document.getElementById('rcap').textContent=(route==='colour')
-    ? 'Buy your colour from us and the booking, colour and bar software is free. There is no subscription to pay at all.'
-    : 'Keep your current colour supplier and pay a monthly subscription instead. Both routes are on the pricing page.';
+  /* the subscription slider matters on the sub route, and on the colour route
+     when their spend is under the threshold and they would be paying after all */
+  document.getElementById('fld-sub').style.display=(route==='sub'||below)?'':'none';
+  document.getElementById('rcap').innerHTML=(route==='colour')
+    ? 'Spend £3,000 a year or more on Evera and Keyluma products — colour you are buying from a wholesaler anyway — and the subscription is £0 a month. Nothing for the whole year.'
+    : 'Keep your current colour supplier and pay a monthly subscription instead. Both routes are on the <a href="/pricing/">pricing page</a>.';
+  var th=document.getElementById('thresh');
+  if(below){
+    th.classList.add('on');
+    th.innerHTML='You have put your colour spend at '+gbp(col)+' a year, which is under the '
+      +gbp(FREE_AT)+' that makes the software free. At that level you would be on the subscription, '
+      +'so we have costed it that way rather than show you a saving you could not have. '
+      +'Evera and Keyluma retail stock counts towards the same '+gbp(FREE_AT)+', so if you buy those too you may clear it.';
+  } else { th.classList.remove('on'); th.innerHTML=''; }
   document.getElementById('l-software').textContent=(route==='colour')
-    ? '\u0053oftware \u2014 nothing to pay at all'
-    : 'Software \u2014 the difference in subscriptions';
+    ? (below ? 'Software — the difference in subscriptions' : 'Software — £0 a month, nothing for the year')
+    : 'Software — the difference in subscriptions';
   document.getElementById('l-colour').textContent=(route==='colour')
-    ? 'Colour cost difference \u2014 until you have tried it'
-    : 'Colour cost difference \u2014 not applicable on this route';
+    ? 'Colour cost difference — until you have tried it'
+    : 'Colour cost difference — not applicable on this route';
+  return below;
  }
 
  function calc(){
@@ -912,7 +930,8 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
   var recovered=(bk*wk*av)*ns*rem;
   var waste=col*wst;
   var colourDelta=(route==='colour')?col*COLOUR_DELTA:0;
-  var software=(route==='colour')?sw:Math.max(0,sw-sb*12);
+  var below=paint(col);
+  var software=(route==='colour'&&!below)?sw:Math.max(0,sw-sb*12);
   var cost=software+waste+colourDelta;
 
   document.getElementById('o-software').textContent=gbp(software);
@@ -925,9 +944,9 @@ details.assump>summary:focus-visible{outline:2px solid var(--blue,#D97757);outli
  }
 
  F.forEach(function(k){el[k].addEventListener('input',calc)});
- document.getElementById('r-colour').addEventListener('click',function(){route='colour';paint();calc();});
- document.getElementById('r-sub').addEventListener('click',function(){route='sub';paint();calc();});
- paint();calc();
+ document.getElementById('r-colour').addEventListener('click',function(){route='colour';calc();});
+ document.getElementById('r-sub').addEventListener('click',function(){route='sub';calc();});
+ calc();
 })();
 </script>
 <footer><div class="wrap">
