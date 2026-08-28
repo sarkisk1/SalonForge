@@ -1,7 +1,8 @@
 /services /
-
 /marketing-automation /
-
 /live-chat /
-
 /lead-generation /
+/demo/ /trial/ 301
+/demo /trial/ 301
+/free/ /pricing/ 301
+/free /pricing/ 301
