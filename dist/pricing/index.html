@@ -6,10 +6,10 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
-<title>Pricing — free, or £50 to £250 a month | SalonForge</title>
+<title>Pricing — one subscription, £50 to £250 a month | SalonForge</title>
 <meta name="description" content="One subscription, £50 to £250 a month depending on which of the six products the salon takes and how many chairs it has. No commission on bookings, no lock-in. Try it free for a month in your own salon, then go live on the plan that fits.">
 <link rel="canonical" href="https://salonforge.com/pricing/">
-<meta property="og:title" content="Pricing — free, or £50 to £250 a month | SalonForge">
+<meta property="og:title" content="Pricing — one subscription, £50 to £250 a month | SalonForge">
 <meta property="og:description" content="One subscription, £50 to £250 a month depending on which of the six products the salon takes and how many chairs it has. No commission on bookings, no lock-in. Try it free for a month in your own salon, then go live on the plan that fits.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://salonforge.com/pricing/">
@@ -844,7 +844,10 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');window.SF_AW_CONV_TRIAL='AW-
   var API = "https://salonforge-trial.long-moon-952c.workers.dev/plan";
   var sel = document.getElementById('pr-plan');
   var links = document.querySelectorAll('a[data-plan]');
-  for (var i=0;i<links.length;i++){ links[i].addEventListener('click', function(){ if (sel) sel.value = this.getAttribute('data-plan'); }); }
+  var target = document.getElementById('go-live');
+  function goLive(plan){ if (sel && plan) sel.value = plan; if (target) { target.scrollIntoView({behavior:'smooth', block:'start'}); var em = target.querySelector('input[type=email]'); if (em) setTimeout(function(){ em.focus(); }, 500); } }
+  for (var i=0;i<links.length;i++){ links[i].addEventListener('click', function(ev){ ev.preventDefault(); goLive(this.getAttribute('data-plan')); history.replaceState(null, '', '#go-live'); }); }
+  if (location.hash === '#go-live') { setTimeout(function(){ goLive(null); }, 300); }
   var f = document.getElementById('pr-golive'); if (!f) return;
   var msg = document.getElementById('pr-gl-msg');
   f.addEventListener('submit', async function(ev){
