@@ -1,8 +1,13 @@
-/services /
-/marketing-automation /
-/live-chat /
-/lead-generation /
+/services / 301
+/marketing-automation / 301
+/live-chat / 301
+/lead-generation / 301
 /demo/ /trial/ 301
 /demo /trial/ 301
 /free/ /pricing/ 301
 /free /pricing/ 301
+/virtual-receptionist/* /ai-receptionist/ 301
+/booking-bots/* /daviana/ 301
+/website-design/* / 301
+/blog-seo/* /blog/ 301
+/recruitment-automation/* / 301
