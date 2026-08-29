@@ -1,13 +1,61 @@
+# Legacy Astro URLs from the pre-SalonForge site. Explicit 301s: without a code
+# Cloudflare Pages emits 302, which keeps the stale URL canonical in Google.
 /services / 301
 /marketing-automation / 301
 /live-chat / 301
 /lead-generation / 301
-/demo/ /trial/ 301
-/demo /trial/ 301
+
+# /demo/ is a REAL page again from 2026-08-29 — the two 301s that pointed it at
+# /trial/ are gone. Do not re-add them: a Google sitelink ("Try a live salon,
+# no signup") lands here, and the page is the only on-domain demo conversion.
+
+# /free/ retired 2026-08-28: the free-with-colour offer returns with onboarding.
 /free/ /pricing/ 301
 /free /pricing/ 301
+
+# The five legacy Astro pages: fabricated testimonials + a fake "demo request
+# submitted" modal posting to an n8n webhook nobody owns. Removed 2026-08-28.
 /virtual-receptionist/* /ai-receptionist/ 301
 /booking-bots/* /daviana/ 301
 /website-design/* / 301
 /blog-seo/* /blog/ 301
 /recruitment-automation/* / 301
+
+# Bar, Performance and People came off the site 2026-08-29 (owner): they are
+# onboarding topics now, not things a stranger is sold. Two lines each — with and
+# without the trailing slash — because that is the convention this file is proven
+# on; splat behaviour on a bare directory is untested here.
+# Bar is a paid product, so it goes to the price list. /people/ (hiring) and
+# /performance/ (commission) are topical mismatches for /pricing/ and Google
+# commonly soft-404s those, so they go to the homepage instead.
+/bar/ /pricing/ 301
+/bar /pricing/ 301
+/people/ / 301
+/people / 301
+/performance/ / 301
+/performance / 301
+/it/bar/ /pricing/ 301
+/it/bar /pricing/ 301
+/it/people/ / 301
+/it/people / 301
+/it/performance/ / 301
+/it/performance / 301
+/ru/bar/ /pricing/ 301
+/ru/bar /pricing/ 301
+/ru/people/ / 301
+/ru/people / 301
+/ru/performance/ / 301
+/ru/performance / 301
+/es/bar/ /pricing/ 301
+/es/bar /pricing/ 301
+/es/people/ / 301
+/es/people / 301
+/es/performance/ / 301
+/es/performance / 301
+
+# /tools/switching-calculator/ was built entirely on the retired £3,000
+# free-colour offer, down to its own FAQPage JSON-LD and a 50-250 price slider.
+# It has no generator — it exists only in the deploy repo — and deploy-sync has no
+# --delete, so nothing can regenerate it away. Retired with the offer.
+/tools/switching-calculator/ /tools/ 301
+/tools/switching-calculator /tools/ 301
