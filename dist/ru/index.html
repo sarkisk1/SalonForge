@@ -7,7 +7,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 <title>SalonForge — одна система для управления всем салоном</title>
-<meta name="description" content="Шесть продуктов, единый источник данных в реальном времени. Запись, окрашивание, платежи, персонал и телефон — одна связанная система для всего салона.">
+<meta name="description" content="Три продукта, единый источник данных в реальном времени. Запись, окрашивание, платежи, персонал и телефон — одна связанная система для всего салона.">
 <link rel="canonical" href="https://salonforge.com/ru/">
 <meta property="og:image" content="https://salonforge.com/assets/og.jpg">
 <meta property="og:image:secure_url" content="https://salonforge.com/assets/og.jpg">
@@ -22,7 +22,7 @@
 <link rel="alternate" hreflang="es" href="https://salonforge.com/es/">
 <link rel="alternate" hreflang="x-default" href="https://salonforge.com/">
 <meta property="og:title" content="SalonForge — одна система для управления всем салоном">
-<meta property="og:description" content="Шесть продуктов, единый источник данных в реальном времени. Запись, окрашивание, платежи, персонал и телефон — одна связанная система для всего салона.">
+<meta property="og:description" content="Три продукта, единый источник данных в реальном времени. Запись, окрашивание, платежи, персонал и телефон — одна связанная система для всего салона.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://salonforge.com/ru/">
 <meta name="twitter:card" content="summary_large_image">
@@ -508,7 +508,10 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 @media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
 @media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
-/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
+/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}.foot-social{display:flex;gap:22px;justify-content:center;margin:26px 0 0}
+.foot-social a{color:var(--sec);font-size:.9375rem;font-weight:500;text-decoration:none}
+.foot-social a:hover{color:var(--blue)}
+
 /* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
 /* The dropdown rules below previously existed ONLY on the homepage, because the
    dropdown used to be a homepage-only JS feature. Now that the markup is static on
@@ -544,7 +547,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .navdrop:focus-within .navdrop-menu{opacity:1;visibility:visible;
   transform:translateX(-50%) translateY(0)}
 .navdrop:focus-within .ncar{transform:rotate(180deg)}
-.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}</style>
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "ru"}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -564,6 +567,18 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922');window.SF_AW_CONV_TRIAL='AW-941092922/rY-jCO3-uuccELrg38AD';
+</script><!-- sf-attrib: first-landing ad attribution --><script>
+(function(){try{
+var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+       'gclid','gbraid','wbraid','fbclid'];
+var q=new URLSearchParams(location.search),o={},got=false;
+K.forEach(function(k){var v=q.get(k);if(v){o[k]=v.slice(0,512);got=true;}});
+if(!got)return;
+var prev=null;try{prev=sessionStorage.getItem('sf_attrib');}catch(e){}
+if(prev)return;                       /* first landing wins, always */
+o.landing_url=location.href.slice(0,512);
+sessionStorage.setItem('sf_attrib',JSON.stringify(o));
+}catch(e){}})();
 </script></head>
 <body>
 
@@ -589,8 +604,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></div>
   <nav class="navlinks">
     <span class="navdrop"><a href="#system">Система<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="#system">Система</a><a href="#connect">Как всё связано</a><a href="#proof">Почему мы</a></div></span>
-    <span class="navdrop"><a href="#everything">Продукты<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/ru/daviana/">Daviana</a><a href="/ru/ai-receptionist/">AI Receptionist</a><a href="/ru/colorlab/">ColorLab</a><a href="/ru/bar/">Bar</a><a href="/ru/performance/">Performance</a><a href="/ru/people/">People</a></div></span>
-    <span class="navdrop"><a href="/pricing/">Цены<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Цены</a><a href="/trial/">Пробный период</a></div></span>
+    <span class="navdrop"><a href="#everything">Продукты<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/ru/daviana/">Daviana</a><a href="/ru/ai-receptionist/">AI Receptionist</a><a href="/ru/colorlab/">ColorLab</a></div></span>
+    <span class="navdrop"><a href="/pricing/">Цены<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Цены</a><a href="/trial/">Пробный период</a><a href="/demo/">Заказать демо</a></div></span>
     <span class="navdrop"><a href="/blog/">Ресурсы<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Журнал</a><a href="/tools/">Калькуляторы</a><a href="/compare/">Сравнение</a><a href="/faq/">Вопросы</a></div></span>
   </nav>
   <a class="btn btn-g" href="/trial/">Начать бесплатно</a>
@@ -601,7 +616,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-inner">
-        <p class="eyebrow reveal">Шесть продуктов · одна связанная система</p>
+        <p class="eyebrow reveal">Три продукта · одна связанная система</p>
         <h1 class="reveal d1">Одна система управляет <span class="hl sw">всем</span> салоном.</h1>
         <p class="lede lede-1 reveal d2">Вы создали салон. Дайте ему работать самому.</p>
         <p class="lede lede-2 reveal d3">Запись, окрашивание, платежи, персонал и телефон — шесть продуктов на едином источнике данных в реальном времени.</p>
@@ -724,7 +739,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
 <!-- EVERYTHING GRID -->
 <section class="band" id="everything">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Шесть продуктов, одна система</span><span class="end">Весь день салона</span></div>
+    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Три продукта, одна система</span><span class="end">Весь день салона</span></div>
     <div class="sec-head reveal">
       <h2>Всё, что нужно салону, от начала и до конца.</h2>
       <p>От первого звонка до последнего грамма краски — по продукту на каждый этап дня, и все они связаны друг с другом.</p>
@@ -749,27 +764,9 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <div class="prod">ColorLab</div>
         <p>Формулы, взвешенные на Bluetooth-весах, распознанные с фото и рассчитанные до грамма под конкретную запись.</p>
       </div>
-      <div class="gcard reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="zone">Впечатления гостя</div></div>
-        <h3>Бар, добавленный в счёт</h3>
-        <div class="prod">Bar</div>
-        <p>Напиток, поданный к креслу, автоматически попадает в счёт клиента и списывается с остатков.</p>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Выплаты команде</div></div>
-        <h3>Показатели и выплаты</h3>
-        <div class="prod">Performance</div>
-        <p>Выручка в реальном времени, рейтинги, комиссионные, расчёты с самозанятыми и чаевые — из тех же продаж.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="zone">Формирование команды</div></div>
-        <h3>Найм, график и зарплата</h3>
-        <div class="prod">People</div>
-        <p>Воронка найма с ИИ-отбором, онбординг, договоры, график, зарплата и отпуска — вся команда в одном месте.</p>
-      </div>
     </div>
     <div class="grid-foot reveal">
-      <p class="line">Шесть продуктов. <span class="hl sw">Одна</span> система, на которой работает весь ваш салон.</p>
+      <p class="line">Три продукта. <span class="hl sw">Одна</span> система, на которой работает весь ваш салон.</p>
       <a href="#connect" class="btn btn-o">Посмотреть, как всё связано <span class="ar">&rsaquo;</span></a>
     </div>
   </div>
@@ -787,28 +784,19 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
       <div class="flow-diagram">
         <svg class="flow-net" viewBox="0 0 1000 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
           <g class="wires">
-            <path class="wire" style="--len:400" d="M220,60 C360,60 380,140 474,162"/>
             <path class="wire" style="--len:400" d="M220,170 C360,170 400,170 474,170"/>
-            <path class="wire" style="--len:400" d="M220,280 C360,280 380,200 474,178"/>
-            <path class="wire" style="--len:400" d="M780,95 C640,95 600,145 526,164"/>
-            <path class="wire" style="--len:400" d="M780,245 C640,245 600,195 526,176"/>
+            <path class="wire" style="--len:400" d="M780,170 C640,170 600,170 526,170"/>
           </g>
           <g class="pulses">
-            <path class="pulse" style="--d:0s"     d="M220,60 C360,60 380,140 474,162"/>
-            <path class="pulse" style="--d:-.55s"  d="M220,170 C360,170 400,170 474,170"/>
-            <path class="pulse" style="--d:-1.1s"  d="M220,280 C360,280 380,200 474,178"/>
-            <path class="pulse" style="--d:-.8s"   d="M780,95 C640,95 600,145 526,164"/>
-            <path class="pulse" style="--d:-1.5s"  d="M780,245 C640,245 600,195 526,176"/>
+            <path class="pulse" style="--d:0s"     d="M220,170 C360,170 400,170 474,170"/>
+            <path class="pulse" style="--d:-.8s"   d="M780,170 C640,170 600,170 526,170"/>
           </g>
           <circle class="node-glow" cx="500" cy="170" r="30"/>
           <circle class="node-ring" cx="500" cy="170" r="26" fill="#ffffff" stroke="#D97757" stroke-width="2.6"/>
           <use href="#ic-daviana" x="482" y="152" width="36" height="36" color="#D97757"/>
         </svg>
-        <div class="fl-label l" style="top:17.6%"><b>AI Receptionist</b><span>записывает → в журнал</span></div>
-        <div class="fl-label l" style="top:50%"><b>Bar</b><span>напиток → попадает в счёт</span></div>
-        <div class="fl-label l" style="top:82.4%"><b>People</b><span>задаёт → кто в графике</span></div>
-        <div class="fl-label r" style="top:27.9%"><b>ColorLab</b><span>фиксирует себестоимость → в счёт клиента</span></div>
-        <div class="fl-label r" style="top:72%"><b>Performance</b><span>читает → выручку и комиссионные</span></div>
+        <div class="fl-label l" style="top:50%"><b>AI Receptionist</b><span>записывает → в журнал</span></div>
+        <div class="fl-label r" style="top:50%"><b>ColorLab</b><span>фиксирует себестоимость → в счёт клиента</span></div>
         <div class="fl-label center"><b>Daviana</b><span>единый источник данных</span></div>
       </div>
     </div>
@@ -818,7 +806,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
 <!-- PER-PRODUCT BEATS -->
 <section class="band" id="products">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">Шесть продуктов вблизи</span><span class="end">Каждый подключён к опоре</span></div>
+    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">Три продукта вблизи</span><span class="end">Каждый подключён к опоре</span></div>
 
     <!-- Daviana -->
     <div class="beat reveal">
@@ -892,96 +880,10 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
 
     <!-- Performance -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><a class="kicker" href="/ru/performance/">Performance <span class="arw">&rarr;</span></a></div>
-        <h3>Приложение, которое команда открывает каждый день.</h3>
-        <p>Выручка и рейтинги в реальном времени, комиссионные и расчёты с самозанятыми, чаевые и обучение в игровой форме — всё из тех же продаж.</p>
-        <div class="beat-add"><span>Что добавили мы</span><p>Расчёт зарплаты обновляется сам — без воскресных таблиц.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz" id="perfviz">
-        <div class="bars">
-          <div class="b" style="height:0" data-h="42%"></div>
-          <div class="b" style="height:0" data-h="60%"></div>
-          <div class="b" style="height:0" data-h="50%"></div>
-          <div class="b peak" style="height:0" data-h="88%"></div>
-          <div class="b" style="height:0" data-h="70%"></div>
-        </div>
-        <svg class="spark" viewBox="0 0 100 60" preserveAspectRatio="none"><polyline points="6,34 30,20 54,26 78,6 94,14"/></svg>
-      </div></div>
-    </div>
 
     <!-- People -->
-    <div class="beat reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><a class="kicker" href="/ru/people/">People <span class="arw">&rarr;</span></a></div>
-        <h3>Вся команда в одном месте.</h3>
-        <p>Воронка найма с ИИ-отбором, онбординг, график, договоры, зарплата и отпуска — от первой заявки до первой смены.</p>
-        <div class="beat-add"><span>Что добавили мы</span><p>Полноценный продукт для работы с персоналом, а не запоздалое дополнение.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz pa-viz">
-        <div class="pa" aria-hidden="true">
-          <div class="pa-nav">
-            <span class="pa-pill" data-k="hire">Нанимать</span>
-            <span class="pa-pill" data-k="fire">Увольнять</span>
-            <span class="pa-pill" data-k="track">Отслеживать</span>
-            <span class="pa-pill" data-k="organise">Организовывать</span>
-          </div>
-          <div class="pa-body">
-            <div class="pa-screen" data-k="organise">
-              <div class="pa-h"><b>График</b> · эта неделя</div>
-              <div class="pa-rota">
-                <span></span><span class="d">M</span><span class="d">T</span><span class="d">W</span><span class="d">T</span><span class="d">F</span>
-                <span class="nm">Paolo C.</span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span>
-                <span class="nm">Gabriela V.</span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span>
-                <span class="nm">Veronica O.</span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="track">
-              <div class="pa-h"><b>Найм</b> · в реальном времени</div>
-              <div class="pa-stats">
-                <div class="pa-stat"><b>1 495</b><span>кандидатов</span></div>
-                <div class="pa-stat"><b>14</b><span>на стажировке</span></div>
-                <div class="pa-stat hl"><b>&pound;21</b><span>на кандидата</span></div>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="fire">
-              <div class="pa-h"><b>Увольнение</b></div>
-              <div class="pa-row"><b>Marco Vialli</b><span>ушёл &middot; 30 июн</span><i class="mut">P45 &check;</i></div>
-              <div class="pa-row"><b>Lena Ford</b><span>ушла &middot; 12 июн</span><i class="mut">P45 &check;</i></div>
-            </div>
-            <div class="pa-screen" data-k="hire">
-              <div class="pa-h"><b>Открытые вакансии</b> · 3</div>
-              <div class="pa-row"><b>Младший стилист</b><span>все салоны</span><i class="ok">ОТКРЫТА</i></div>
-              <div class="pa-row"><b>Администратор</b><span>Wimbledon</span><i class="ok">ОТКРЫТА</i></div>
-              <div class="pa-row"><b>Уборщица</b><span>все салоны</span><i class="ok">ОТКРЫТА</i></div>
-            </div>
-            <div class="pa-screen" data-k="sign">
-              <div class="pa-h"><b>Договор</b></div>
-              <div class="pa-doc">
-                <div class="pa-doc-t"><b>Трудовой договор</b><span>Sofia Marchetti · Старший стилист</span></div>
-                <div class="pa-sig"><svg viewBox="0 0 92 28" aria-hidden="true"><path d="M4 20 C11 5 15 24 23 13 S35 4 43 17 53 22 61 9 75 7 88 15"/></svg></div>
-                <div class="pa-stamp">ПОДПИСАН</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></div>
-    </div>
 
     <!-- Bar -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-bar"/></svg></div><a class="kicker" href="/ru/bar/">Bar <span class="arw">&rarr;</span></a></div>
-        <h3>Напиток прямо к креслу.</h3>
-        <p>Закажите клиенту кофе или бокал чего-нибудь прямо у кресла — забота о госте, не отходя от рабочего места.</p>
-        <div class="beat-add"><span>Что добавили мы</span><p>Всё сразу попадает в счёт клиента и списывается с остатков, мгновенно.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz vid-viz">
-        <video src="/assets/bar.mp4" poster="/assets/poster-bar.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
-        <div class="vid-scrim"></div>
-      </div></div>
-    </div>
 
   </div>
 </section>
@@ -993,13 +895,12 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     <div class="sec-head reveal">
       <h2>Создано и работает в действующей сети салонов.</h2>
     </div>
-    <div class="nums nums--4">
+    <div class="nums">
       <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="6">0</div><div class="l">Салонов — от Лондона до Саудовской Аравии</div></a>
       <a class="num stat-link reveal d1" href="/ru/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Формул окрашивания взвешено и просчитано</div></a>
       <a class="num stat-link reveal d2" href="/ru/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Реальных звонков в обучении</div></a>
-      <a class="num stat-link reveal d3" href="/ru/people/"><div class="n"><span style="color:var(--sec);font-size:.55em">~</span><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/мес</span></div><div class="l">Кандидатов в месяц</div></a>
     </div>
-    <div class="num num-solo reveal d4"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Продуктов, один источник данных</div></div>
+    <div class="num num-solo reveal d4"><div class="n"><span data-count="3">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Продуктов, один источник данных</div></div>
     <p class="nums-foot reveal">Мы сделали ПО, которое было нужно нам самим — и запустили на нём собственные салоны.</p>
   </div>
 </section>
@@ -1009,7 +910,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="wrap">
     <div class="cr-copy reveal">
       <p class="eyebrow">Одна связанная система</p>
-      <h2>Шесть продуктов, один источник данных.</h2>
+      <h2>Три продукта, один источник данных.</h2>
       <p class="cr-lede">Каждая запись, продажа, окрашивание и смена записываются в одно ядро Daviana. Так весь салон остаётся синхронизированным, и никому не нужно вводить данные дважды.</p>
     </div>
     <!-- living constellation — atmospheric, unlabeled (relocated from the hero) -->
@@ -1025,22 +926,14 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <line class="hc-conn" x1="50"   y1="14"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <line class="hc-conn" x1="84.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <line class="hc-conn" x1="71.4" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="28.6" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="15.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <circle class="hc-ring" cx="50" cy="50" r="27"/>
         <circle class="hc-ring b" cx="50" cy="50" r="31"/>
         <line class="hubpulse" style="--d:0s"    x1="50"   y1="14" x2="50" y2="50"/>
         <line class="hubpulse" style="--d:-.4s"  x1="84.5" y1="39" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-.8s"  x1="71.4" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.2s" x1="28.6" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.6s" x1="15.5" y1="39" x2="50" y2="50"/>
       </svg>
       <div class="cnode core" style="left:50%;top:50%"><svg><use href="#ic-daviana"/></svg></div>
       <div class="cnode" style="left:50%;top:14%"><svg><use href="#ic-ai"/></svg></div>
       <div class="cnode" style="left:84.5%;top:39%"><svg><use href="#ic-color"/></svg></div>
-      <div class="cnode" style="left:71.4%;top:80%"><svg><use href="#ic-perf"/></svg></div>
-      <div class="cnode" style="left:28.6%;top:80%"><svg><use href="#ic-people"/></svg></div>
-      <div class="cnode" style="left:15.5%;top:39%"><svg><use href="#ic-bar"/></svg></div>
     </div>
   </div>
 </section>
@@ -1089,9 +982,6 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
       <a href="/ru/daviana/">Daviana</a>
       <a href="/ru/ai-receptionist/">AI Receptionist</a>
       <a href="/ru/colorlab/">ColorLab</a>
-      <a href="/ru/performance/">Performance</a>
-      <a href="/ru/people/">People</a>
-      <a href="/ru/bar/">Bar</a>
     </div>
     <div class="cols">
       <a href="/pricing/">Цены</a>
@@ -1103,7 +993,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
   </div>
   <div class="foot-partner"><div class="fp-txt">Создано и проверяется каждый день в салонах <a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a> — наш партнёр-основатель.</div><div class="foot-fam"><span>Семья GA</span><a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a><a href="https://everahair.com" target="_blank" rel="noopener">Evera</a><a href="https://colorlab.co.uk" target="_blank" rel="noopener">ColorLab</a></div></div>
-  <div class="foot-base">© 2026 SalonForge · Шесть продуктов, единый источник данных в реальном времени.</div>
+  <div class="foot-social"><a href="https://www.instagram.com/salonforge" target="_blank" rel="noopener me">Instagram</a><a href="https://www.youtube.com/@salonforge" target="_blank" rel="noopener me">YouTube</a></div>
+  <div class="foot-base">© 2026 SalonForge · Три продукта, единый источник данных в реальном времени.</div>
 </div></footer>
 
 <!-- docked mini-spine -->

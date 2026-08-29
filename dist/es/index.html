@@ -7,7 +7,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 <title>SalonForge — un sistema para todo el salón</title>
-<meta name="description" content="Seis productos, una única fuente de datos en vivo. Reservas, color, pagos, equipo y el teléfono: un sistema conectado que hace funcionar todo el salón.">
+<meta name="description" content="Tres productos, una única fuente de datos en vivo. Reservas, color, pagos, equipo y el teléfono: un sistema conectado que hace funcionar todo el salón.">
 <link rel="canonical" href="https://salonforge.com/es/">
 <meta property="og:image" content="https://salonforge.com/assets/og.jpg">
 <meta property="og:image:secure_url" content="https://salonforge.com/assets/og.jpg">
@@ -22,7 +22,7 @@
 <link rel="alternate" hreflang="es" href="https://salonforge.com/es/">
 <link rel="alternate" hreflang="x-default" href="https://salonforge.com/">
 <meta property="og:title" content="SalonForge — un sistema para todo el salón">
-<meta property="og:description" content="Seis productos, una única fuente de datos en vivo. Reservas, color, pagos, equipo y el teléfono: un sistema conectado que hace funcionar todo el salón.">
+<meta property="og:description" content="Tres productos, una única fuente de datos en vivo. Reservas, color, pagos, equipo y el teléfono: un sistema conectado que hace funcionar todo el salón.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://salonforge.com/es/">
 <meta name="twitter:card" content="summary_large_image">
@@ -508,7 +508,10 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 @media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
 @media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
-/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
+/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}.foot-social{display:flex;gap:22px;justify-content:center;margin:26px 0 0}
+.foot-social a{color:var(--sec);font-size:.9375rem;font-weight:500;text-decoration:none}
+.foot-social a:hover{color:var(--blue)}
+
 /* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
 /* The dropdown rules below previously existed ONLY on the homepage, because the
    dropdown used to be a homepage-only JS feature. Now that the markup is static on
@@ -544,7 +547,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .navdrop:focus-within .navdrop-menu{opacity:1;visibility:visible;
   transform:translateX(-50%) translateY(0)}
 .navdrop:focus-within .ncar{transform:rotate(180deg)}
-.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}</style>
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "es"}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -564,6 +567,18 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922');window.SF_AW_CONV_TRIAL='AW-941092922/rY-jCO3-uuccELrg38AD';
+</script><!-- sf-attrib: first-landing ad attribution --><script>
+(function(){try{
+var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+       'gclid','gbraid','wbraid','fbclid'];
+var q=new URLSearchParams(location.search),o={},got=false;
+K.forEach(function(k){var v=q.get(k);if(v){o[k]=v.slice(0,512);got=true;}});
+if(!got)return;
+var prev=null;try{prev=sessionStorage.getItem('sf_attrib');}catch(e){}
+if(prev)return;                       /* first landing wins, always */
+o.landing_url=location.href.slice(0,512);
+sessionStorage.setItem('sf_attrib',JSON.stringify(o));
+}catch(e){}})();
 </script></head>
 <body>
 
@@ -589,8 +604,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></div>
   <nav class="navlinks">
     <span class="navdrop"><a href="#system">El sistema<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="#system">El sistema</a><a href="#connect">Cómo se conecta</a><a href="#proof">Por qué nosotros</a></div></span>
-    <span class="navdrop"><a href="#everything">Productos<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/es/daviana/">Daviana</a><a href="/es/ai-receptionist/">AI Receptionist</a><a href="/es/colorlab/">ColorLab</a><a href="/es/bar/">Bar</a><a href="/es/performance/">Performance</a><a href="/es/people/">People</a></div></span>
-    <span class="navdrop"><a href="/pricing/">Precios<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Precios</a><a href="/trial/">Prueba gratis</a></div></span>
+    <span class="navdrop"><a href="#everything">Productos<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/es/daviana/">Daviana</a><a href="/es/ai-receptionist/">AI Receptionist</a><a href="/es/colorlab/">ColorLab</a></div></span>
+    <span class="navdrop"><a href="/pricing/">Precios<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Precios</a><a href="/trial/">Prueba gratis</a><a href="/demo/">Reservar una demo</a></div></span>
     <span class="navdrop"><a href="/blog/">Recursos<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculadoras</a><a href="/compare/">Comparar</a><a href="/faq/">Preguntas</a></div></span>
   </nav>
   <a class="btn btn-g" href="/trial/">Empieza gratis</a>
@@ -601,10 +616,10 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-inner">
-        <p class="eyebrow reveal">Seis productos · un sistema conectado</p>
+        <p class="eyebrow reveal">Tres productos · un sistema conectado</p>
         <h1 class="reveal d1">Un sistema hace funcionar <span class="hl sw">todo</span> el salón.</h1>
         <p class="lede lede-1 reveal d2">Creaste el salón. Deja que funcione solo.</p>
-        <p class="lede lede-2 reveal d3">Reservas, color, pagos, equipo y el teléfono: seis productos sobre una única fuente de datos en vivo.</p>
+        <p class="lede lede-2 reveal d3">Reservas, color, pagos, equipo y el teléfono: tres productos sobre una única fuente de datos en vivo.</p>
         <div class="actions reveal d4">
           <a class="btn btn-g" href="/trial/">Empieza gratis</a>
           <a class="btn btn-o" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Reserva una demo</a>
@@ -724,7 +739,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
 <!-- EVERYTHING GRID -->
 <section class="band" id="everything">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Seis productos, un sistema</span><span class="end">Toda la jornada del salón</span></div>
+    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Tres productos, un sistema</span><span class="end">Toda la jornada del salón</span></div>
     <div class="sec-head reveal">
       <h2>Todo lo que un salón necesita, de principio a fin.</h2>
       <p>Desde la primera llamada hasta el último gramo de color: un producto para cada momento del día, todos conectados entre sí.</p>
@@ -749,27 +764,9 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <div class="prod">ColorLab</div>
         <p>Fórmulas pesadas en una báscula Bluetooth, capturadas desde una foto y con coste al gramo frente a la reserva.</p>
       </div>
-      <div class="gcard reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="zone">Experiencia del cliente</div></div>
-        <h3>El Bar, en la cuenta</h3>
-        <div class="prod">Bar</div>
-        <p>Una bebida pedida en el sillón se añade a la cuenta del cliente y se descuenta del stock automáticamente.</p>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Cobra</div></div>
-        <h3>Performance y pagos</h3>
-        <div class="prod">Performance</div>
-        <p>Ingresos en vivo, rankings, comisiones, pagos a los autónomos y propinas: todo desde las mismas ventas.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="zone">Construye el equipo</div></div>
-        <h3>Contratación, turnos y nóminas</h3>
-        <div class="prod">People</div>
-        <p>Un embudo de contratación filtrado por IA, onboarding, contratos, turnos, nóminas y vacaciones: todo el equipo, en un solo lugar.</p>
-      </div>
     </div>
     <div class="grid-foot reveal">
-      <p class="line">Seis productos. <span class="hl sw">Un</span> sistema sobre el que funciona todo tu salón.</p>
+      <p class="line">Tres productos. <span class="hl sw">Un</span> sistema sobre el que funciona todo tu salón.</p>
       <a href="#connect" class="btn btn-o">Descubre cómo se conecta <span class="ar">&rsaquo;</span></a>
     </div>
   </div>
@@ -787,28 +784,19 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
       <div class="flow-diagram">
         <svg class="flow-net" viewBox="0 0 1000 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
           <g class="wires">
-            <path class="wire" style="--len:400" d="M220,60 C360,60 380,140 474,162"/>
             <path class="wire" style="--len:400" d="M220,170 C360,170 400,170 474,170"/>
-            <path class="wire" style="--len:400" d="M220,280 C360,280 380,200 474,178"/>
-            <path class="wire" style="--len:400" d="M780,95 C640,95 600,145 526,164"/>
-            <path class="wire" style="--len:400" d="M780,245 C640,245 600,195 526,176"/>
+            <path class="wire" style="--len:400" d="M780,170 C640,170 600,170 526,170"/>
           </g>
           <g class="pulses">
-            <path class="pulse" style="--d:0s"     d="M220,60 C360,60 380,140 474,162"/>
-            <path class="pulse" style="--d:-.55s"  d="M220,170 C360,170 400,170 474,170"/>
-            <path class="pulse" style="--d:-1.1s"  d="M220,280 C360,280 380,200 474,178"/>
-            <path class="pulse" style="--d:-.8s"   d="M780,95 C640,95 600,145 526,164"/>
-            <path class="pulse" style="--d:-1.5s"  d="M780,245 C640,245 600,195 526,176"/>
+            <path class="pulse" style="--d:0s"     d="M220,170 C360,170 400,170 474,170"/>
+            <path class="pulse" style="--d:-.8s"   d="M780,170 C640,170 600,170 526,170"/>
           </g>
           <circle class="node-glow" cx="500" cy="170" r="30"/>
           <circle class="node-ring" cx="500" cy="170" r="26" fill="#ffffff" stroke="#D97757" stroke-width="2.6"/>
           <use href="#ic-daviana" x="482" y="152" width="36" height="36" color="#D97757"/>
         </svg>
-        <div class="fl-label l" style="top:17.6%"><b>AI Receptionist</b><span>reserva → la agenda</span></div>
-        <div class="fl-label l" style="top:50%"><b>Bar</b><span>bebida → se añade a la cuenta</span></div>
-        <div class="fl-label l" style="top:82.4%"><b>People</b><span>define → quién está de turno</span></div>
-        <div class="fl-label r" style="top:27.9%"><b>ColorLab</b><span>registra el coste → la cuenta del cliente</span></div>
-        <div class="fl-label r" style="top:72%"><b>Performance</b><span>lee → ingresos y comisiones</span></div>
+        <div class="fl-label l" style="top:50%"><b>AI Receptionist</b><span>reserva → la agenda</span></div>
+        <div class="fl-label r" style="top:50%"><b>ColorLab</b><span>registra el coste → la cuenta del cliente</span></div>
         <div class="fl-label center"><b>Daviana</b><span>una única fuente de datos</span></div>
       </div>
     </div>
@@ -892,96 +880,10 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
 
     <!-- Performance -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><a class="kicker" href="/es/performance/">Performance <span class="arw">&rarr;</span></a></div>
-        <h3>La app que el equipo abre cada día.</h3>
-        <p>Ingresos y rankings en vivo, comisiones y pagos a los autónomos, propinas y formación gamificada: todo desde las mismas ventas.</p>
-        <div class="beat-add"><span>Lo que aportamos</span><p>La nómina se actualiza sola, sin la hoja de cálculo del domingo.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz" id="perfviz">
-        <div class="bars">
-          <div class="b" style="height:0" data-h="42%"></div>
-          <div class="b" style="height:0" data-h="60%"></div>
-          <div class="b" style="height:0" data-h="50%"></div>
-          <div class="b peak" style="height:0" data-h="88%"></div>
-          <div class="b" style="height:0" data-h="70%"></div>
-        </div>
-        <svg class="spark" viewBox="0 0 100 60" preserveAspectRatio="none"><polyline points="6,34 30,20 54,26 78,6 94,14"/></svg>
-      </div></div>
-    </div>
 
     <!-- People -->
-    <div class="beat reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><a class="kicker" href="/es/people/">People <span class="arw">&rarr;</span></a></div>
-        <h3>Todo el equipo, en un solo lugar.</h3>
-        <p>Un embudo de contratación filtrado por IA, onboarding, turnos, contratos, nóminas y vacaciones: de la primera candidatura al primer turno.</p>
-        <div class="beat-add"><span>Lo que aportamos</span><p>Un verdadero producto de gestión de personas, no un añadido de última hora.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz pa-viz">
-        <div class="pa" aria-hidden="true">
-          <div class="pa-nav">
-            <span class="pa-pill" data-k="hire">Contratar</span>
-            <span class="pa-pill" data-k="fire">Dar de baja</span>
-            <span class="pa-pill" data-k="track">Seguir</span>
-            <span class="pa-pill" data-k="organise">Organizar</span>
-          </div>
-          <div class="pa-body">
-            <div class="pa-screen" data-k="organise">
-              <div class="pa-h"><b>Turnos</b> · esta semana</div>
-              <div class="pa-rota">
-                <span></span><span class="d">L</span><span class="d">M</span><span class="d">X</span><span class="d">J</span><span class="d">V</span>
-                <span class="nm">Paolo C.</span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span>
-                <span class="nm">Gabriela V.</span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span>
-                <span class="nm">Veronica O.</span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="track">
-              <div class="pa-h"><b>Contratación</b> · en vivo</div>
-              <div class="pa-stats">
-                <div class="pa-stat"><b>1.495</b><span>candidatos</span></div>
-                <div class="pa-stat"><b>14</b><span>en prueba</span></div>
-                <div class="pa-stat hl"><b>&pound;21</b><span>por candidato</span></div>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="fire">
-              <div class="pa-h"><b>Bajas</b></div>
-              <div class="pa-row"><b>Marco Vialli</b><span>baja &middot; 30 jun</span><i class="mut">Finiquito &check;</i></div>
-              <div class="pa-row"><b>Lena Ford</b><span>baja &middot; 12 jun</span><i class="mut">Finiquito &check;</i></div>
-            </div>
-            <div class="pa-screen" data-k="hire">
-              <div class="pa-h"><b>Vacantes abiertas</b> · 3</div>
-              <div class="pa-row"><b>Estilista junior</b><span>todos los salones</span><i class="ok">ABIERTA</i></div>
-              <div class="pa-row"><b>Recepcionista</b><span>Wimbledon</span><i class="ok">ABIERTA</i></div>
-              <div class="pa-row"><b>Personal de limpieza</b><span>todos los salones</span><i class="ok">ABIERTA</i></div>
-            </div>
-            <div class="pa-screen" data-k="sign">
-              <div class="pa-h"><b>Contrato</b></div>
-              <div class="pa-doc">
-                <div class="pa-doc-t"><b>Contrato laboral</b><span>Sofia Marchetti · Estilista sénior</span></div>
-                <div class="pa-sig"><svg viewBox="0 0 92 28" aria-hidden="true"><path d="M4 20 C11 5 15 24 23 13 S35 4 43 17 53 22 61 9 75 7 88 15"/></svg></div>
-                <div class="pa-stamp">FIRMADO</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></div>
-    </div>
 
     <!-- Bar -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-bar"/></svg></div><a class="kicker" href="/es/bar/">Bar <span class="arw">&rarr;</span></a></div>
-        <h3>Una bebida al sillón.</h3>
-        <p>Pide un café o una copa para el cliente en el sillón: la experiencia del cliente, resuelta sin salir de la sala.</p>
-        <div class="beat-add"><span>Lo que aportamos</span><p>Se añade a la cuenta del cliente y descuenta stock al instante.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz vid-viz">
-        <video src="/assets/bar.mp4" poster="/assets/poster-bar.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
-        <div class="vid-scrim"></div>
-      </div></div>
-    </div>
 
   </div>
 </section>
@@ -993,13 +895,12 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     <div class="sec-head reveal">
       <h2>Creado y usado por un grupo de salones en activo.</h2>
     </div>
-    <div class="nums nums--4">
+    <div class="nums">
       <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="6">0</div><div class="l">Salones, de Londres a Arabia Saudí</div></a>
       <a class="num stat-link reveal d1" href="/es/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Fórmulas de color pesadas y calculadas</div></a>
       <a class="num stat-link reveal d2" href="/es/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Llamadas reales de las que aprendió</div></a>
-      <a class="num stat-link reveal d3" href="/es/people/"><div class="n"><span style="color:var(--sec);font-size:.55em">~</span><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/mes</span></div><div class="l">Candidatos al mes</div></a>
     </div>
-    <div class="num num-solo reveal d4"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Productos, una única fuente de datos</div></div>
+    <div class="num num-solo reveal d4"><div class="n"><span data-count="3">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Productos, una única fuente de datos</div></div>
     <p class="nums-foot reveal">Necesitábamos este software, así que lo creamos, y luego hicimos funcionar nuestros propios salones con él.</p>
   </div>
 </section>
@@ -1009,7 +910,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="wrap">
     <div class="cr-copy reveal">
       <p class="eyebrow">Un sistema conectado</p>
-      <h2>Seis productos, una única fuente de datos.</h2>
+      <h2>Tres productos, una única fuente de datos.</h2>
       <p class="cr-lede">Cada reserva, venta, color y turno se escribe en el mismo núcleo de Daviana. Así todo el salón se mantiene sincronizado, sin que nadie tenga que introducir los datos dos veces.</p>
     </div>
     <!-- living constellation — atmospheric, unlabeled (relocated from the hero) -->
@@ -1025,22 +926,14 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <line class="hc-conn" x1="50"   y1="14"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <line class="hc-conn" x1="84.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <line class="hc-conn" x1="71.4" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="28.6" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="15.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
         <circle class="hc-ring" cx="50" cy="50" r="27"/>
         <circle class="hc-ring b" cx="50" cy="50" r="31"/>
         <line class="hubpulse" style="--d:0s"    x1="50"   y1="14" x2="50" y2="50"/>
         <line class="hubpulse" style="--d:-.4s"  x1="84.5" y1="39" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-.8s"  x1="71.4" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.2s" x1="28.6" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.6s" x1="15.5" y1="39" x2="50" y2="50"/>
       </svg>
       <div class="cnode core" style="left:50%;top:50%"><svg><use href="#ic-daviana"/></svg></div>
       <div class="cnode" style="left:50%;top:14%"><svg><use href="#ic-ai"/></svg></div>
       <div class="cnode" style="left:84.5%;top:39%"><svg><use href="#ic-color"/></svg></div>
-      <div class="cnode" style="left:71.4%;top:80%"><svg><use href="#ic-perf"/></svg></div>
-      <div class="cnode" style="left:28.6%;top:80%"><svg><use href="#ic-people"/></svg></div>
-      <div class="cnode" style="left:15.5%;top:39%"><svg><use href="#ic-bar"/></svg></div>
     </div>
   </div>
 </section>
@@ -1089,9 +982,6 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
       <a href="/es/daviana/">Daviana</a>
       <a href="/es/ai-receptionist/">AI Receptionist</a>
       <a href="/es/colorlab/">ColorLab</a>
-      <a href="/es/performance/">Performance</a>
-      <a href="/es/people/">People</a>
-      <a href="/es/bar/">Bar</a>
     </div>
     <div class="cols">
       <a href="/pricing/">Precios</a>
@@ -1103,7 +993,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
   </div>
   <div class="foot-partner"><div class="fp-txt">Creado y probado cada día en los salones <a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a> — nuestro socio fundador.</div><div class="foot-fam"><span>La familia GA</span><a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a><a href="https://everahair.com" target="_blank" rel="noopener">Evera</a><a href="https://colorlab.co.uk" target="_blank" rel="noopener">ColorLab</a></div></div>
-  <div class="foot-base">© 2026 SalonForge · Seis productos, una única fuente de datos en vivo.</div>
+  <div class="foot-social"><a href="https://www.instagram.com/salonforge" target="_blank" rel="noopener me">Instagram</a><a href="https://www.youtube.com/@salonforge" target="_blank" rel="noopener me">YouTube</a></div>
+  <div class="foot-base">© 2026 SalonForge · Tres productos, una única fuente de datos en vivo.</div>
 </div></footer>
 
 <!-- docked mini-spine -->
