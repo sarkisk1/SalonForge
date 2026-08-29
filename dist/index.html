@@ -7,7 +7,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
 <title>SalonForge — one system runs the whole salon</title>
-<meta name="description" content="Six products, one connected system. Booking, colour, payments, people and the phone — all talking to each other, running the whole salon.">
+<meta name="description" content="Three products, one connected system. Booking, colour, payments, people and the phone — all talking to each other, running the whole salon.">
 <link rel="canonical" href="https://salonforge.com/">
 <meta property="og:image" content="https://salonforge.com/assets/og.jpg">
 <meta property="og:image:secure_url" content="https://salonforge.com/assets/og.jpg">
@@ -22,7 +22,7 @@
 <link rel="alternate" hreflang="es" href="https://salonforge.com/es/">
 <link rel="alternate" hreflang="x-default" href="https://salonforge.com/">
 <meta property="og:title" content="SalonForge — one system runs the whole salon">
-<meta property="og:description" content="Six products, one connected system. Booking, colour, payments, people and the phone — all talking to each other, running the whole salon.">
+<meta property="og:description" content="Three products, one connected system. Booking, colour, payments, people and the phone — all talking to each other, running the whole salon.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://salonforge.com/">
 <meta name="twitter:card" content="summary_large_image">
@@ -178,7 +178,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 .hub-head{text-align:center;max-width:60ch;margin:0 auto clamp(28px,5vw,52px)}
 .hub-head h2{font-size:clamp(2rem,4.4vw,3.4rem);margin:14px 0 0;color:#fff;letter-spacing:-.02em}
 .hub-head .hl{color:var(--blue-d)}
-.hub{position:relative;width:min(640px,92vw);margin:0 auto;aspect-ratio:1/1}
+.hub{position:relative;width:min(640px,92vw);margin:0 auto;aspect-ratio:1/.5}
 .hub-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .conn{stroke:url(#spokeGrad);stroke-width:1.15;opacity:.8;fill:none;stroke-linecap:round;transition:opacity .3s var(--hover),stroke .3s var(--hover),stroke-width .3s var(--hover)}
 .conn.lit{stroke:var(--blue-d);opacity:1;stroke-width:1.7;filter:drop-shadow(0 0 4px rgba(232,148,111,.85))}
@@ -514,11 +514,14 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .stat-link .l{transition:color .2s}
 .stat-link:hover .l{color:var(--ink)}
 .nums--4{grid-template-columns:repeat(4,1fr);max-width:1060px;gap:22px}
+.foot-social{display:flex;gap:22px;justify-content:center;margin:26px 0 0}
+.foot-social a{color:var(--sec);font-size:.9375rem;font-weight:500;text-decoration:none}
+.foot-social a:hover{color:var(--blue)}
 .nums--4 .n{font-size:clamp(2.5rem,4.6vw,3.8rem)}
 @media(max-width:900px){.nums--4{grid-template-columns:repeat(2,1fr);gap:44px 22px}}
 @media(max-width:640px){.nums--4{grid-template-columns:1fr;gap:40px}}
 .num-solo{text-align:center;margin:clamp(36px,5vw,54px) auto 0;max-width:420px;padding:0 10px}
-/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}
+/* c9 tap targets */ .hero-back,.ghost{display:inline-flex;align-items:center;min-height:44px}/* brand lockup */.brand{gap:0;align-items:center!important}.brand .bmark{margin-right:9px}.brand .bmark{width:29px;height:29px;display:block;border-radius:8px;flex:none}.brand .bf{color:var(--blue)}.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}
 /* ---- nav rebuild: 4 top-level items, never wrap a label mid-phrase ---- */
 /* The dropdown rules below previously existed ONLY on the homepage, because the
    dropdown used to be a homepage-only JS feature. Now that the markup is static on
@@ -554,8 +557,8 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .navdrop:focus-within .navdrop-menu{opacity:1;visibility:visible;
   transform:translateX(-50%) translateY(0)}
 .navdrop:focus-within .ncar{transform:rotate(180deg)}
-.hero-fine{margin:14px 0 0;font-size:13.5px;color:var(--sec,#86868b);letter-spacing:-.01em}.tryband{text-align:center}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "en"}]}</script>
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/", "logo": "https://salonforge.com/assets/og.jpg", "sameAs": ["https://www.gasalons.com", "https://www.instagram.com/salonforge", "https://www.youtube.com/@salonforge"]}, {"@type": "WebSite", "name": "SalonForge", "url": "https://salonforge.com/", "inLanguage": "en"}]}</script>
 <!-- Microsoft Clarity --><script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -574,6 +577,72 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922');window.SF_AW_CONV_TRIAL='AW-941092922/rY-jCO3-uuccELrg38AD';
+</script>
+<style>
+/* ── CRESCENDO CHAPTERS ─────────────────────────────────────────────── */
+/* Tighter drumbeat than the showcase sections — the crescendo must MOVE. */
+.cres{--sec-pad:clamp(56px,7.5vw,92px)}
+.cres .sec-head{margin-bottom:clamp(26px,3.5vw,38px)}
+.cres .sec-head h2{font-size:clamp(1.8rem,3.8vw,2.7rem)}
+.factlist{list-style:none;margin:0 auto;display:grid;gap:13px;max-width:430px}
+.factlist li{position:relative;padding-left:27px;font-size:1.0625rem;font-weight:500;text-align:left}
+.factlist li::before{content:"";position:absolute;left:0;top:.4em;width:11px;height:11px;border-radius:3.5px;background:var(--blue)}
+.cres .plinks{display:flex;gap:26px;flex-wrap:wrap;margin-top:30px;justify-content:center}
+.cres .plink{font-weight:600;color:var(--blue)}
+.cres .plink:hover{color:var(--blue-h)}
+.cres .plink .arw{display:inline-block;transition:transform .2s}
+.cres .plink:hover .arw{transform:translateX(3px)}
+/* ── CALL-IT (the peak) ─────────────────────────────────────────────── */
+.callit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.callit-grid .sec-head{margin:0 0 18px;text-align:left}
+.callit-grid .sec-head p{margin:0}
+@media(max-width:860px){.callit-grid{grid-template-columns:1fr}}
+.callit-num{display:inline-flex;align-items:center;gap:14px;margin:22px 0 10px;font-size:clamp(1.6rem,4.2vw,2.4rem);font-weight:600;letter-spacing:.01em;color:var(--ink);text-decoration:none;font-variant-numeric:tabular-nums}
+.callit-num:hover{color:var(--blue)}
+.callit-live{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.08em}
+.callit-live .dot{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:ci-pulse 1.8s ease-out infinite}
+@keyframes ci-pulse{0%{box-shadow:0 0 0 0 rgba(217,119,87,.45)}70%{box-shadow:0 0 0 9px rgba(217,119,87,0)}100%{box-shadow:0 0 0 0 rgba(217,119,87,0)}}
+.callit-sub{color:var(--sec);max-width:52ch;font-size:1.02rem}
+.callit-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:clamp(24px,3.4vw,36px);box-shadow:0 22px 64px rgba(var(--sh),.10)}
+.callit-card h3{font-size:1.28rem;margin-bottom:6px}
+.callit-card .ch{color:var(--sec);font-size:.98rem;margin-bottom:18px}
+.callit-card label{display:block;font-size:.8125rem;font-weight:600;color:var(--sec);margin:13px 0 6px}
+.callit-card input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:var(--white);color:var(--ink);font:inherit;font-size:1rem;transition:border-color .2s}
+.callit-card input:focus{outline:none;border-color:var(--blue)}
+.callit-card .btn{width:100%;margin-top:20px;justify-content:center}
+.callit-fine{font-size:.85rem;color:var(--sec);margin-top:12px;text-align:center}
+.callit-err{display:none;margin-top:12px;font-size:.92rem;color:#b3452c}
+.callit-err.on{display:block}
+.callit-done{display:none;text-align:left}
+.callit-done.on{display:block}
+.callit-done .big{font-size:1.28rem;font-weight:600;margin-bottom:10px}
+.callit-done p{color:var(--sec);font-size:1rem}
+.callit-done .steps{list-style:none;margin:16px 0 0;display:grid;gap:10px}
+.callit-done .steps li{position:relative;padding-left:30px;font-size:1rem;font-weight:500;color:var(--ink)}
+.callit-done .steps li i{position:absolute;left:0;top:.05em;width:21px;height:21px;border-radius:50%;background:var(--blue);color:#fff;font-style:normal;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* ── THE THREE STEPS (journey) ───────────────────────────────────────── */
+/* Reuses the page's own .gcard component; 3 → 1 column (never a 2+1 orphan). */
+.jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.jsteps{grid-template-columns:1fr}}
+.jstep .sn{width:38px;height:38px;border-radius:12px;background:var(--white);border:1px solid var(--line);display:grid;place-items:center;color:var(--blue);font-size:1.0625rem;font-weight:700;font-variant-numeric:tabular-nums;flex:none}
+.jstep p{color:var(--sec);font-size:1.125rem;line-height:1.5;margin-top:18px}
+.jstep p strong{color:var(--ink);font-weight:600}
+/* ── THE RESOLUTION (higher purpose, closing band) ───────────────────── */
+.cta p.cta-purpose{margin:clamp(30px,4.2vw,44px) auto 0;max-width:45ch;font-size:1.0625rem;line-height:1.5;color:var(--sec)}
+.cta p.cta-purpose strong{color:var(--ink);font-weight:600}
+</style>
+<!-- sf-attrib: first-landing ad attribution --><script>
+(function(){try{
+var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+       'gclid','gbraid','wbraid','fbclid'];
+var q=new URLSearchParams(location.search),o={},got=false;
+K.forEach(function(k){var v=q.get(k);if(v){o[k]=v.slice(0,512);got=true;}});
+if(!got)return;
+var prev=null;try{prev=sessionStorage.getItem('sf_attrib');}catch(e){}
+if(prev)return;                       /* first landing wins, always */
+o.landing_url=location.href.slice(0,512);
+sessionStorage.setItem('sf_attrib',JSON.stringify(o));
+}catch(e){}})();
 </script></head>
 <body>
 
@@ -599,8 +668,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></div>
   <nav class="navlinks">
     <span class="navdrop"><a href="#system">The system<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="#system">The system</a><a href="#connect">How it connects</a><a href="#proof">Why us</a></div></span>
-    <span class="navdrop"><a href="#everything">Products<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/daviana/">Daviana</a><a href="/ai-receptionist/">AI Receptionist</a><a href="/colorlab/">ColorLab</a><a href="/bar/">Bar</a><a href="/performance/">Performance</a><a href="/people/">People</a></div></span>
-    <span class="navdrop"><a href="/pricing/">Pricing<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Pricing</a><a href="/trial/">Start a trial</a><a href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a></div></span>
+    <span class="navdrop"><a href="#everything">Products<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/daviana/">Daviana</a><a href="/ai-receptionist/">AI Receptionist</a><a href="/colorlab/">ColorLab</a></div></span>
+    <span class="navdrop"><a href="/pricing/">Pricing<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Pricing</a><a href="/trial/">Start a trial</a><a href="/demo/">Book a demo</a></div></span>
     <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/compare/">Compare</a><a href="/faq/">Questions</a></div></span>
   </nav>
   <a class="btn btn-g" href="/trial/">Start free trial</a>
@@ -611,15 +680,15 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-inner">
-        <p class="eyebrow reveal">Six products · one connected system</p>
-        <h1 class="reveal d1">One system runs the <span class="hl sw">whole</span> salon.</h1>
-        <p class="lede lede-1 reveal d2">You built the salon. Let it run itself.</p>
-        <p class="lede lede-2 reveal d3">Booking, colour, payments, people and the phone — all talking to each other, all in one place.</p>
+        <p class="eyebrow reveal">Booking · colour · stock · the phone — one system</p>
+        <h1 class="reveal d1">The booking system <span class="hl sw">built around you</span>.</h1>
+        <p class="lede lede-1 reveal d2">Records every call, integrated with WhatsApp — AI receptionist and colour management, all in one place.</p>
+        <p class="lede lede-2 reveal d3">Everything you do writes to one record — so your leaks show up, then stop.</p>
         <div class="actions reveal d4">
-          <a class="btn btn-g" href="/trial/">Start free trial</a>
-          <a class="btn btn-o" href="/pricing/">See the pricing</a>
+          <a class="btn btn-g" href="#call-it">Hear it answer your phone</a>
+          <a class="btn btn-o" href="/trial/">Start free trial</a>
         </div>
-        <p class="hero-fine reveal d4">Your own salon to try — set up within a day, becomes your live salon when you're ready.</p>
+        <p class="hero-fine reveal d4">A live demonstration line — and your own salon to try, set up within a day.</p>
       </div>
 
       <!-- HERO ARTIFACT: the live Daviana diary — same mockup the /daviana/ page leads with -->
@@ -668,35 +737,69 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   </div>
 </div>
 
+
+<!-- CH 01 · THE COLOUR BAR -->
+<section class="band cres" id="leak">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">The colour bar</span><span class="end">Weighed, costed, on the bill</span></div>
+    <div class="sec-head reveal">
+      <h2>Colour down the sink is <span class="hl">money down the sink</span>.</h2>
+      <p class="lede">You see every gram weighed on the scale and costed as it's mixed — while the client is still in the chair.</p>
+    </div>
+    <ul class="factlist">
+      <li class="reveal">See what every colour service really costs.</li>
+      <li class="reveal d1">Charge for what you actually use.</li>
+      <li class="reveal d2">19,949 formulas weighed &amp; costed so far.</li>
+    </ul>
+    <div class="plinks reveal d3"><a class="plink" href="/colorlab/">See ColorLab <span class="arw">→</span></a></div>
+  </div>
+</section>
+
+<!-- CH 02 · THE SOFTWARE STACK -->
+<section class="band band--2 cres" id="bill">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">The software stack</span><span class="end">One price, not per-seat</span></div>
+    <div class="sec-head reveal">
+      <h2>Your software bill grows <span class="hl">every time you hire</span>.</h2>
+      <p class="lede">One flat price runs the whole salon — booking, colour bar and stock included.</p>
+    </div>
+    <ul class="factlist">
+      <li class="reveal">£59 the diary, £45 the phone, £59 ColorLab — take one, take all three.</li>
+      <li class="reveal d1">No commission on your bookings.</li>
+      <li class="reveal d2">Try it free for a month, in your own salon.</li>
+    </ul>
+    <div class="plinks reveal d3">
+      <a class="plink" href="/pricing/">Pricing <span class="arw">→</span></a>
+      <a class="plink" href="/trial/">Start free trial <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<span id="connect" style="display:block;scroll-margin-top:90px"></span>
+
 <!-- SYSTEM HUB -->
 <section class="hub-sec" id="system">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">The one connected system</span><span class="end">Everything writes to Daviana</span></div>
+    <div class="chapter reveal"><span class="ix">03</span><span class="lbl">One system, not three</span><span class="end">Everything writes to Daviana</span></div>
     <div class="hub-head reveal">
       <p class="eyebrow">The core · read &amp; write</p>
       <h2>Every product reads &amp; writes the <span class="hl">same</span> record.</h2>
     </div>
     <div class="hub reveal d1" id="hub">
-      <svg class="hub-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <svg class="hub-svg" viewBox="0 0 100 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
         <defs>
-          <radialGradient id="spokeGrad" cx="50" cy="50" r="40" gradientUnits="userSpaceOnUse">
+          <radialGradient id="spokeGrad" cx="50" cy="25" r="38" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#E8946F" stop-opacity=".98"/>
             <stop offset=".5" stop-color="#EFB197" stop-opacity=".6"/>
             <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
           </radialGradient>
         </defs>
-        <line class="conn" data-c="ai"     x1="50"   y1="12"   x2="50" y2="50"/>
-        <line class="conn" data-c="color"  x1="86.1" y1="38.3" x2="50" y2="50"/>
-        <line class="conn" data-c="perf"   x1="72.3" y1="80.7" x2="50" y2="50"/>
-        <line class="conn" data-c="people" x1="27.7" y1="80.7" x2="50" y2="50"/>
-        <line class="conn" data-c="bar"    x1="13.9" y1="38.3" x2="50" y2="50"/>
-        <circle class="core-ring" cx="50" cy="50" r="17"/>
-        <circle class="core-ring b" cx="50" cy="50" r="21"/>
-        <line class="hubpulse" data-c="ai"     style="--d:0s"     x1="50"   y1="12"   x2="50" y2="50"/>
-        <line class="hubpulse" data-c="color"  style="--d:-.44s"  x1="86.1" y1="38.3" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="perf"   style="--d:-.88s"  x1="72.3" y1="80.7" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="people" style="--d:-1.32s" x1="27.7" y1="80.7" x2="50" y2="50"/>
-        <line class="hubpulse" data-c="bar"    style="--d:-1.76s" x1="13.9" y1="38.3" x2="50" y2="50"/>
+        <line class="conn" data-c="ai"     x1="14" y1="25" x2="50" y2="25"/>
+        <line class="conn" data-c="color"  x1="86" y1="25" x2="50" y2="25"/>
+        <circle class="core-ring" cx="50" cy="25" r="17"/>
+        <circle class="core-ring b" cx="50" cy="25" r="21"/>
+        <line class="hubpulse" data-c="ai"     style="--d:0s"    x1="14" y1="25" x2="50" y2="25"/>
+        <line class="hubpulse" data-c="color"  style="--d:-1.1s" x1="86" y1="25" x2="50" y2="25"/>
       </svg>
 
       <div class="hub-node core" style="left:50%;top:50%">
@@ -710,124 +813,120 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         </div></div>
         <div><div class="nm">Daviana</div><div class="tag">The spine</div></div>
       </div>
-      <div class="hub-node" data-p="ai" style="left:50%;top:12%">
+      <div class="hub-node" data-p="ai" style="left:14%;top:50%">
         <div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="nm">AI Receptionist</div>
       </div>
-      <div class="hub-node" data-p="color" style="left:86.1%;top:38.3%">
+      <div class="hub-node" data-p="color" style="left:86%;top:50%">
         <div class="tile"><svg><use href="#ic-color"/></svg></div><div class="nm">ColorLab</div>
-      </div>
-      <div class="hub-node" data-p="perf" style="left:72.3%;top:80.7%">
-        <div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="nm">Performance</div>
-      </div>
-      <div class="hub-node" data-p="people" style="left:27.7%;top:80.7%">
-        <div class="tile"><svg><use href="#ic-people"/></svg></div><div class="nm">People</div>
-      </div>
-      <div class="hub-node" data-p="bar" style="left:13.9%;top:38.3%">
-        <div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="nm">Bar</div>
       </div>
     </div>
     <p class="hub-cap reveal d2" id="hubcap"><b>One shared record.</b> Every product reads and writes Daviana — one client record, one till, one stock count.</p>
   </div>
 </section>
 
-<!-- EVERYTHING GRID -->
-<section class="band" id="everything">
+<!-- CH 04 · THE PHONE -->
+<section class="band band--2 cres" id="phonech">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Six products, one system</span><span class="end">The whole salon day</span></div>
+    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">The phone</span><span class="end">Answered, not missed</span></div>
     <div class="sec-head reveal">
-      <h2>Everything a salon needs, end to end.</h2>
-      <p>From the first phone call to the last gram of colour — one product for every part of the day, each one wired into all the others.</p>
+      <h2>The calls you miss are <span class="hl">bookings you lose</span>.</h2>
+      <p class="lede">An AI receptionist answers for you — it takes the whole conversation and books it straight into the diary.</p>
     </div>
-    <div class="grid6">
-      <div class="gcard hero-card reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="zone">Get booked</div></div>
-        <h3>Booking, till &amp; clients</h3>
-        <div class="prod">Daviana</div>
-        <p>The diary, payments, client history and per-stylist pricing that every other product reads from.</p>
-        <div class="spine-badge"><i></i>The shared record</div>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-ai"/></svg></div><div class="zone">Never miss a call</div></div>
-        <h3>The phone, answered</h3>
-        <div class="prod">AI Receptionist</div>
-        <p>Books, reschedules and answers questions after hours — straight into the diary, in a real voice.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="zone">Run the chair</div></div>
-        <h3>Colour &amp; real cost</h3>
-        <div class="prod">ColorLab</div>
-        <p>Formulas weighed on a Bluetooth scale, snapped from a photo, and costed to the gram against the booking.</p>
-      </div>
-      <div class="gcard reveal">
-        <div class="top"><div class="tile"><svg><use href="#ic-bar"/></svg></div><div class="zone">Guest experience</div></div>
-        <h3>The bar, on the tab</h3>
-        <div class="prod">Bar</div>
-        <p>A drink ordered to the chair posts to the client's bill and deducts from stock automatically.</p>
-      </div>
-      <div class="gcard reveal d1">
-        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Get paid</div></div>
-        <h3>Performance &amp; pay</h3>
-        <div class="prod">Performance</div>
-        <p>Live revenue, leaderboards, commission, self-employed settlement and tips — from the same sales.</p>
-      </div>
-      <div class="gcard reveal d2">
-        <div class="top"><div class="tile"><svg><use href="#ic-people"/></svg></div><div class="zone">Build the team</div></div>
-        <h3>Hiring, rota &amp; payroll</h3>
-        <div class="prod">People</div>
-        <p>An AI-screened hiring funnel, onboarding, contracts, rota, payroll and leave — the whole team, in one place.</p>
-      </div>
-    </div>
-    <div class="grid-foot reveal">
-      <p class="line">Six products. <span class="hl sw">One</span> system your whole salon runs on.</p>
-      <a href="#connect" class="btn btn-o">See how it connects <span class="ar">&rsaquo;</span></a>
-    </div>
+    <ul class="factlist">
+      <li class="reveal">Answers when the desk can't.</li>
+      <li class="reveal d1">Handles the whole visit and books it in.</li>
+      <li class="reveal d2">Learned from 4,106 real salon calls.</li>
+    </ul>
+    <div class="plinks reveal d3"><a class="plink" href="/ai-receptionist/">Meet the receptionist <span class="arw">→</span></a></div>
   </div>
 </section>
 
-<!-- DATA SPINE FLOW -->
-<section class="band band--2" id="connect">
+<!-- CH 05 · CALL IT (the crescendo's peak) -->
+<section class="band cres" id="call-it" style="scroll-margin-top:70px">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">03</span><span class="lbl">How it all connects</span><span class="end">One spine · read &amp; write</span></div>
-    <div class="sec-head reveal">
-      <h2>Not modules bolted together.</h2>
-      <p>One spine every product reads and writes — so nothing is ever entered twice.</p>
-    </div>
-    <div class="flow reveal">
-      <div class="flow-diagram">
-        <svg class="flow-net" viewBox="0 0 1000 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <g class="wires">
-            <path class="wire" style="--len:400" d="M220,60 C360,60 380,140 474,162"/>
-            <path class="wire" style="--len:400" d="M220,170 C360,170 400,170 474,170"/>
-            <path class="wire" style="--len:400" d="M220,280 C360,280 380,200 474,178"/>
-            <path class="wire" style="--len:400" d="M780,95 C640,95 600,145 526,164"/>
-            <path class="wire" style="--len:400" d="M780,245 C640,245 600,195 526,176"/>
-          </g>
-          <g class="pulses">
-            <path class="pulse" style="--d:0s"     d="M220,60 C360,60 380,140 474,162"/>
-            <path class="pulse" style="--d:-.55s"  d="M220,170 C360,170 400,170 474,170"/>
-            <path class="pulse" style="--d:-1.1s"  d="M220,280 C360,280 380,200 474,178"/>
-            <path class="pulse" style="--d:-.8s"   d="M780,95 C640,95 600,145 526,164"/>
-            <path class="pulse" style="--d:-1.5s"  d="M780,245 C640,245 600,195 526,176"/>
-          </g>
-          <circle class="node-glow" cx="500" cy="170" r="30"/>
-          <circle class="node-ring" cx="500" cy="170" r="26" fill="#ffffff" stroke="#D97757" stroke-width="2.6"/>
-          <use href="#ic-daviana" x="482" y="152" width="36" height="36" color="#D97757"/>
-        </svg>
-        <div class="fl-label l" style="top:17.6%"><b>AI Receptionist</b><span>books → the diary</span></div>
-        <div class="fl-label l" style="top:50%"><b>Bar</b><span>drink → posts to the bill</span></div>
-        <div class="fl-label l" style="top:82.4%"><b>People</b><span>sets → who's on the rota</span></div>
-        <div class="fl-label r" style="top:27.9%"><b>ColorLab</b><span>logs cost → the client bill</span></div>
-        <div class="fl-label r" style="top:72%"><b>Performance</b><span>reads → revenue &amp; commission</span></div>
-        <div class="fl-label center"><b>Daviana</b><span>one shared record</span></div>
+    <div class="chapter reveal"><span class="ix">05</span><span class="lbl">Don't take our word for it</span><span class="end">A live line, right now</span></div>
+    <div class="callit-grid">
+      <div>
+        <div class="sec-head reveal">
+          <h2>Don't take our word for it. <span class="hl">Call it.</span></h2>
+          <p class="lede">Ring this line right now — Aria, the AI receptionist, answers a working salon diary. Anyone can call it.</p>
+        </div>
+        <a class="callit-num reveal d1" href="tel:+447460096908">+44 7460 096908 <span class="callit-live"><span class="dot"></span>Live</span></a>
+        <p class="callit-sub reveal d2">Start the free trial and it goes one better: confirm your email, add your mobile, and this same line answers as <strong>your salon</strong> — by name. One personalised call a day, two calls a day per number.</p>
+      </div>
+      <div class="callit-card reveal d2">
+        <form id="callit-form" novalidate>
+          <h3>Hear it answer as <em>your</em> salon</h3>
+          <p class="ch">Three fields, no card — this also starts your one-month free trial.</p>
+          <label for="ci-name">Your name</label>
+          <input id="ci-name" name="name_" type="text" autocomplete="name" required>
+          <label for="ci-email">Email</label>
+          <input id="ci-email" name="email" type="email" autocomplete="email" required>
+          <label for="ci-salon">Salon name</label>
+          <input id="ci-salon" name="salon" type="text" autocomplete="organization" required>
+          <button class="btn btn-g" type="submit" id="ci-btn">Set up my call</button>
+          <p class="callit-fine">A human sets you up — your services and team already in.</p>
+          <p class="callit-err" id="ci-err" role="alert"></p>
+        </form>
+        <div class="callit-done" id="ci-done" aria-live="polite">
+          <div class="big">Check your inbox ✉️</div>
+          <p>Your confirmation link is on its way.</p>
+          <ol class="steps">
+            <li><i>1</i>Confirm your email</li>
+            <li><i>2</i>Add the mobile you'll call from</li>
+            <li><i>3</i>Ring the line — Aria answers as <strong id="ci-salon-echo">your salon</strong></li>
+          </ol>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PER-PRODUCT BEATS -->
+<!-- CH 06 · THE THREE STEPS (story-formula part 5: the journey) -->
+<section class="band cres" id="journey">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">06</span><span class="lbl">How you start</span><span class="end">Three steps, no card</span></div>
+    <div class="sec-head reveal">
+      <h2>You're three steps from <span class="hl">one record</span>.</h2>
+      <p class="lede">Hear it answer first, then a person sets you up. No card. No sales call.</p>
+    </div>
+    <div class="jsteps">
+      <div class="gcard jstep reveal">
+        <div class="top"><span class="sn">1</span><span class="zone">Right now</span></div>
+        <p><strong>Call it</strong> — hear Aria answer a working salon diary.</p>
+      </div>
+      <div class="gcard jstep reveal d1">
+        <div class="top"><span class="sn">2</span><span class="zone">Next</span></div>
+        <p><strong>We set you up</strong> — your services and team already in.</p>
+      </div>
+      <div class="gcard jstep reveal d2">
+        <div class="top"><span class="sn">3</span><span class="zone">Every day after</span></div>
+        <p><strong>Run the whole salon</strong> on one record.</p>
+      </div>
+    </div>
+    <div class="plinks reveal d3"><a class="plink" href="#call-it">Start with the call <span class="arw">&rarr;</span></a></div>
+  </div>
+</section>
+
+<section class="band band--2" id="proof">
+  <div class="wrap">
+    <div class="chapter reveal"><span class="ix">07</span><span class="lbl">Earned, not claimed</span><span class="end">By a working salon group</span></div>
+    <div class="sec-head reveal">
+      <h2>Built and run by a working salon group.</h2>
+    </div>
+    <div class="nums">
+      <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="6">0</div><div class="l">Salons, London to Saudi</div></a>
+      <a class="num stat-link reveal d1" href="/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Colour formulas weighed &amp; costed</div></a>
+      <a class="num stat-link reveal d2" href="/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Real salon calls learned from</div></a>
+    </div>
+    <div class="num num-solo reveal d4"><div class="n"><span data-count="3">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Products, one shared record</div></div>
+    <p class="nums-foot reveal">The software we needed, so we made it — then we ran our own salons on it.</p>
+  </div>
+</section>
+<span id="everything" style="display:block;scroll-margin-top:90px"></span>
 <section class="band" id="products">
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">04</span><span class="lbl">The six, up close</span><span class="end">Each one, plugged into the spine</span></div>
+    <div class="chapter reveal"><span class="ix">08</span><span class="lbl">The three, up close</span><span class="end">Each one, plugged into the spine</span></div>
 
     <!-- Daviana -->
     <div class="beat reveal">
@@ -835,7 +934,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <div class="head"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><a class="kicker" href="/daviana/">Daviana <span class="arw">&rarr;</span></a></div>
         <h3>The booking spine.</h3>
         <p>The appointment diary, till and payments, client records and per-stylist pricing — the operating core of the salon floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>The one source every other product reads and writes.</p></div>
+        <div class="beat-add"><span>What you get</span><p>The one source every other product reads and writes.</p></div>
       </div>
       <div class="beat-viz"><div class="viz dav-viz">
         <div class="dav" aria-hidden="true">
@@ -873,7 +972,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <div class="head"><div class="tile"><svg><use href="#ic-ai"/></svg></div><a class="kicker" href="/ai-receptionist/">AI Receptionist <span class="arw">&rarr;</span></a></div>
         <h3>Answers the phone after hours.</h3>
         <p>Handles multi-service bookings, reschedules and questions in a natural voice — and never puts a caller on hold.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real AI voice that books straight into the diary.</p></div>
+        <div class="beat-add"><span>What you get</span><p>A real AI voice that books straight into the diary.</p></div>
       </div>
       <div class="beat-viz"><div class="viz ai-viz">
         <video class="rcp" src="assets/receptionist.mp4" poster="assets/poster-receptionist.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
@@ -888,7 +987,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
         <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><a class="kicker" href="/colorlab/">ColorLab <span class="arw">&rarr;</span></a></div>
         <h3>Every bowl, weighed and costed.</h3>
         <p>Precision Bluetooth-scale weighing, snap-a-photo AI formula and one-tap repeat — with the true cost of every gram.</p>
-        <div class="beat-add"><span>Our addition</span><p>Every bowl weighed and costed to the gram, tied to the booking.</p></div>
+        <div class="beat-add"><span>What you get</span><p>Every bowl weighed and costed to the gram, tied to the booking.</p></div>
       </div>
       <div class="beat-viz"><div class="viz cl-viz">
         <video class="clv" src="assets/colorlab.mp4" poster="assets/poster-colorlab.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
@@ -901,166 +1000,19 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
 
     <!-- Performance -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-perf"/></svg></div><a class="kicker" href="/performance/">Performance <span class="arw">&rarr;</span></a></div>
-        <h3>The app the team opens daily.</h3>
-        <p>Live revenue and leaderboards, commission and self-employed settlement, tips and gamified training — all from the same sales.</p>
-        <div class="beat-add"><span>Our addition</span><p>The pay run updates itself — no Sunday spreadsheet.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz" id="perfviz">
-        <div class="bars">
-          <div class="b" style="height:0" data-h="42%"></div>
-          <div class="b" style="height:0" data-h="60%"></div>
-          <div class="b" style="height:0" data-h="50%"></div>
-          <div class="b peak" style="height:0" data-h="88%"></div>
-          <div class="b" style="height:0" data-h="70%"></div>
-        </div>
-        <svg class="spark" viewBox="0 0 100 60" preserveAspectRatio="none"><polyline points="6,34 30,20 54,26 78,6 94,14"/></svg>
-      </div></div>
-    </div>
 
     <!-- People -->
-    <div class="beat reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-people"/></svg></div><a class="kicker" href="/people/">People <span class="arw">&rarr;</span></a></div>
-        <h3>The whole team, in one place.</h3>
-        <p>An AI-screened hiring funnel, onboarding, rota, contracts, payroll and leave — from first application to first shift.</p>
-        <div class="beat-add"><span>Our addition</span><p>A real people-ops product, not an afterthought.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz pa-viz">
-        <div class="pa" aria-hidden="true">
-          <div class="pa-nav">
-            <span class="pa-pill" data-k="hire">Hire</span>
-            <span class="pa-pill" data-k="fire">Fire</span>
-            <span class="pa-pill" data-k="track">Track</span>
-            <span class="pa-pill" data-k="organise">Organise</span>
-          </div>
-          <div class="pa-body">
-            <div class="pa-screen" data-k="organise">
-              <div class="pa-h"><b>Rota</b> · this week</div>
-              <div class="pa-rota">
-                <span></span><span class="d">M</span><span class="d">T</span><span class="d">W</span><span class="d">T</span><span class="d">F</span>
-                <span class="nm">Paolo C.</span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span>
-                <span class="nm">Gabriela V.</span><span class="c sh"></span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span>
-                <span class="nm">Veronica O.</span><span class="c"></span><span class="c sh"></span><span class="c sh"></span><span class="c"></span><span class="c sh"></span>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="track">
-              <div class="pa-h"><b>Hiring</b> · live</div>
-              <div class="pa-stats">
-                <div class="pa-stat"><b>1,495</b><span>applicants</span></div>
-                <div class="pa-stat"><b>14</b><span>in trial</span></div>
-                <div class="pa-stat hl"><b>&pound;21</b><span>per applicant</span></div>
-              </div>
-            </div>
-            <div class="pa-screen" data-k="fire">
-              <div class="pa-h"><b>Offboarding</b></div>
-              <div class="pa-row"><b>Marco Vialli</b><span>left &middot; 30 Jun</span><i class="mut">P45 &check;</i></div>
-              <div class="pa-row"><b>Lena Ford</b><span>left &middot; 12 Jun</span><i class="mut">P45 &check;</i></div>
-            </div>
-            <div class="pa-screen" data-k="hire">
-              <div class="pa-h"><b>Open vacancies</b> · 3</div>
-              <div class="pa-row"><b>Junior Stylist</b><span>all salons</span><i class="ok">OPEN</i></div>
-              <div class="pa-row"><b>Receptionist</b><span>Wimbledon</span><i class="ok">OPEN</i></div>
-              <div class="pa-row"><b>Housekeeper</b><span>all salons</span><i class="ok">OPEN</i></div>
-            </div>
-            <div class="pa-screen" data-k="sign">
-              <div class="pa-h"><b>Contract</b></div>
-              <div class="pa-doc">
-                <div class="pa-doc-t"><b>Employment Contract</b><span>Sofia Marchetti · Senior Stylist</span></div>
-                <div class="pa-sig"><svg viewBox="0 0 92 28" aria-hidden="true"><path d="M4 20 C11 5 15 24 23 13 S35 4 43 17 53 22 61 9 75 7 88 15"/></svg></div>
-                <div class="pa-stamp">SIGNED</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></div>
-    </div>
 
     <!-- Bar -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-bar"/></svg></div><a class="kicker" href="/bar/">Bar <span class="arw">&rarr;</span></a></div>
-        <h3>A drink to the chair.</h3>
-        <p>Order a coffee or a glass of something to the client at the chair — the guest experience, handled without leaving the floor.</p>
-        <div class="beat-add"><span>Our addition</span><p>It posts to the client's bill and deducts stock, instantly.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz vid-viz">
-        <video src="assets/bar.mp4" poster="assets/poster-bar.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
-        <div class="vid-scrim"></div>
-      </div></div>
-    </div>
 
   </div>
 </section>
 
-<!-- NUMBERS -->
-<section class="band band--2" id="proof">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">05</span><span class="lbl">Earned, not claimed</span><span class="end">By a working salon group</span></div>
-    <div class="sec-head reveal">
-      <h2>Built and run by a working salon group.</h2>
-    </div>
-    <div class="nums nums--4">
-      <a class="num stat-link reveal" href="https://www.gasalons.com" target="_blank" rel="noopener"><div class="n" data-count="6">0</div><div class="l">Salons, London to Saudi</div></a>
-      <a class="num stat-link reveal d1" href="/colorlab/"><div class="n" data-count="19949">0</div><div class="l">Colour formulas weighed &amp; costed</div></a>
-      <a class="num stat-link reveal d2" href="/ai-receptionist/"><div class="n" data-count="4106">0</div><div class="l">Real salon calls learned from</div></a>
-      <a class="num stat-link reveal d3" href="/people/"><div class="n"><span data-count="1000">0</span><span style="color:var(--sec);font-size:.45em">/mo</span></div><div class="l">Applicants a month</div></a>
-    </div>
-    <div class="num num-solo reveal d4"><div class="n"><span data-count="6">0</span> <span style="color:var(--sec);font-size:.5em">/</span> 1</div><div class="l">Products, one shared record</div></div>
-    <p class="nums-foot reveal">The software we needed, so we made it — then we ran our own salons on it.</p>
-  </div>
-</section>
-
-<!-- CONNECTED-SYSTEM REPRISE (demoted hero constellation) -->
-<section class="band connreprise">
-  <div class="wrap">
-    <div class="cr-copy reveal">
-      <p class="eyebrow">One connected system</p>
-      <h2>Six products, one shared record.</h2>
-      <p class="cr-lede">Every booking, sale, colour and shift writes back to the same Daviana core. That is how the whole salon stays in step, without anyone keying it in twice.</p>
-    </div>
-    <!-- living constellation — atmospheric, unlabeled (relocated from the hero) -->
-    <div class="hero-cluster cr-cluster reveal d2" aria-hidden="true">
-      <svg class="hc-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-        <defs>
-          <radialGradient id="heroSpoke2" cx="50" cy="50" r="38" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#E8946F" stop-opacity=".95"/>
-            <stop offset=".55" stop-color="#EFB197" stop-opacity=".6"/>
-            <stop offset="1" stop-color="#D97757" stop-opacity=".18"/>
-          </radialGradient>
-        </defs>
-        <line class="hc-conn" x1="50"   y1="14"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="84.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="71.4" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="28.6" y1="80"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <line class="hc-conn" x1="15.5" y1="39"   x2="50" y2="50" style="stroke:url(#heroSpoke2)"/>
-        <circle class="hc-ring" cx="50" cy="50" r="27"/>
-        <circle class="hc-ring b" cx="50" cy="50" r="31"/>
-        <line class="hubpulse" style="--d:0s"    x1="50"   y1="14" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-.4s"  x1="84.5" y1="39" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-.8s"  x1="71.4" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.2s" x1="28.6" y1="80" x2="50" y2="50"/>
-        <line class="hubpulse" style="--d:-1.6s" x1="15.5" y1="39" x2="50" y2="50"/>
-      </svg>
-      <div class="cnode core" style="left:50%;top:50%"><svg><use href="#ic-daviana"/></svg></div>
-      <div class="cnode" style="left:50%;top:14%"><svg><use href="#ic-ai"/></svg></div>
-      <div class="cnode" style="left:84.5%;top:39%"><svg><use href="#ic-color"/></svg></div>
-      <div class="cnode" style="left:71.4%;top:80%"><svg><use href="#ic-perf"/></svg></div>
-      <div class="cnode" style="left:28.6%;top:80%"><svg><use href="#ic-people"/></svg></div>
-      <div class="cnode" style="left:15.5%;top:39%"><svg><use href="#ic-bar"/></svg></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TRY IT — the demo band. Zero-commitment proof, placed before the ask. -->
 <section class="band tryband">
 <div class="wrap">
-<div class="chapter reveal"><span class="ix">05</span><span class="lbl">Try it yourself</span><span class="end">Your own salon</span></div>
+<div class="chapter reveal"><span class="ix">09</span><span class="lbl">Try it yourself</span><span class="end">Your own salon</span></div>
 <h2 class="reveal d1">Your own salon, ready within a day.</h2>
-<p class="reveal d2">A real SalonForge account — diary, ColorLab and bar — with sample clients to play with. Order a drink to the chair, weigh a colour to the gram, find both on the bill. When you're ready, it becomes your live salon: nothing to migrate, nothing shared.</p>
+<p class="reveal d2">A real SalonForge account — the diary, the phone and ColorLab — with sample clients to play with. Take a booking, weigh a colour to the gram, find both on the bill. When you're ready, it becomes your live salon: nothing to migrate, nothing shared.</p>
 <div class="actions reveal d3">
 <a class="btn btn-g" href="/trial/">Start your free trial</a>
 </div>
@@ -1077,14 +1029,15 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </svg>
   </div>
   <div class="wrap">
-    <div class="chapter reveal"><span class="ix">06</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
+    <div class="chapter reveal"><span class="ix">10</span><span class="lbl">See it live</span><span class="end">A guided walkthrough</span></div>
     <h2 class="reveal d1">See it running on your salon.</h2>
-    <p class="reveal d2">We'll walk you through SalonForge running a real salon floor — the diary, the colour bench, the pay run and the bar — on one connected system.</p>
+    <p class="reveal d2">You'll see SalonForge running a real salon floor — the diary, the phone and the colour bench — on one connected system.</p>
     <div class="actions reveal d3">
       <a class="btn btn-g" href="/trial/">Start your free trial</a>
-      <a class="btn btn-o" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Book a demo</a>
+      <a class="btn btn-o" href="/demo/">Book a demo</a>
       <a href="mailto:info@salonforge.com?subject=SalonForge%20%E2%80%94%20talk%20to%20the%20team" class="btn btn-o">Talk to the team</a>
     </div>
+    <p class="cta-purpose reveal d4">Independent salons should keep what their craft earns. <strong>Software built by salon people, not software people.</strong></p>
   </div>
 </section>
 
@@ -1098,9 +1051,6 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
       <a href="/daviana/">Daviana</a>
       <a href="/ai-receptionist/">AI Receptionist</a>
       <a href="/colorlab/">ColorLab</a>
-      <a href="/performance/">Performance</a>
-      <a href="/people/">People</a>
-      <a href="/bar/">Bar</a>
     </div>
     <div class="cols">
       <a href="/pricing/">Pricing</a>
@@ -1112,7 +1062,8 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
     </div>
   </div>
   <div class="foot-partner"><div class="fp-txt">Built and proven every day inside <a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a> — our founding partner.</div><div class="foot-fam"><span>The GA family</span><a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a><a href="https://everahair.com" target="_blank" rel="noopener">Evera</a><a href="https://colorlab.co.uk" target="_blank" rel="noopener">ColorLab</a></div></div>
-  <div class="foot-base">© 2026 SalonForge · Six products, one connected system.</div>
+  <div class="foot-social"><a href="https://www.instagram.com/salonforge" target="_blank" rel="noopener me">Instagram</a><a href="https://www.youtube.com/@salonforge" target="_blank" rel="noopener me">YouTube</a></div>
+  <div class="foot-base">© 2026 SalonForge · Three products, one connected system.</div>
 </div></footer>
 
 <!-- docked mini-spine -->
@@ -1163,10 +1114,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
 
   var caps={
     ai:'<b>AI Receptionist</b> answers the phone after hours and books straight into the diary.',
-    color:'<b>ColorLab</b> weighs and costs every bowl to the gram, tied to the booking.',
-    perf:'<b>Performance</b> reads live revenue, commission, settlement and tips as they happen.',
-    people:'<b>People</b> runs hiring, onboarding, rota, contracts, payroll and leave.',
-    bar:'<b>Bar</b> sends a drink to the chair — it posts to the bill and deducts stock.'
+    color:'<b>ColorLab</b> weighs and costs every bowl to the gram, tied to the booking.'
   };
   var defCap = (document.getElementById('hubcap')||{}).innerHTML || '';
   var hubcap = document.getElementById('hubcap');
@@ -1337,6 +1285,56 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
   document.addEventListener("visibilitychange", function(){
     if (document.hidden) {
       for (var m = 0; m < vids.length; m++) { vids[m].pause(); }
+    }
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var sec = document.getElementById('call-it');
+  var form = document.getElementById('callit-form');
+  if(!sec || !form) return;
+  function clx(n){ try{ if(typeof clarity === 'function') clarity('event', n); }catch(e){} }
+  new IntersectionObserver(function(es,ob){es.forEach(function(e){
+    if(e.isIntersecting){ clx('callit_view'); ob.unobserve(e.target); }
+  })},{threshold:.4}).observe(sec);
+
+  var btn = document.getElementById('ci-btn');
+  var err = document.getElementById('ci-err');
+  var done = document.getElementById('ci-done');
+  var API = 'https://salonforge-trial.long-moon-952c.workers.dev/signup';
+  form.addEventListener('submit', async function(ev){
+    ev.preventDefault();
+    err.classList.remove('on');
+    var name = document.getElementById('ci-name').value.trim();
+    var email = document.getElementById('ci-email').value.trim();
+    var salon = document.getElementById('ci-salon').value.trim();
+    if(!name || !email || !salon){ err.textContent='All three fields are needed.'; err.classList.add('on'); return; }
+    clx('callit_submit');
+    var eventId = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random());
+    var ck = function(n){ var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)'); return m ? m.pop() : ''; };
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try{
+      var res = await fetch(API, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ name:name, email:email, salon:salon, event_id:eventId, fbp:ck('_fbp'), fbc:ck('_fbc') })
+      });
+      if(!res.ok) throw new Error('bad status ' + res.status);
+      if (window.fbq) { fbq('track','Lead',{content_name:'call_it_signup'},{eventID:eventId}); }
+      if (window.gtag) {
+        gtag('event','generate_lead',{event_category:'call_it'});
+        if (window.SF_AW_CONV_TRIAL) gtag('event','conversion',{send_to:window.SF_AW_CONV_TRIAL});
+      }
+      clx('callit_success');
+      var echo = document.getElementById('ci-salon-echo'); if(echo && salon) echo.textContent = salon;
+      form.style.display = 'none';
+      done.classList.add('on');
+    }catch(ex){
+      btn.disabled = false; btn.textContent = 'Set up my call';
+      err.textContent = "Something went wrong sending that. Please try again, or email info@salonforge.com and we'll set you up.";
+      err.classList.add('on');
     }
   });
 })();

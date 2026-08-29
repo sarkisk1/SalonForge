@@ -486,7 +486,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 .navdrop:hover .ncar{transform:rotate(180deg)}
 .navdrop-menu{position:absolute;top:calc(100% + 12px);left:50%;
   transform:translateX(-50%) translateY(6px);background:var(--white);
-  border:1px solid var(--line);border-radius:15px;box-shadow:0 14px 44px rgba(0,0,0,.13);
+  border:1px solid var(--line);border-radius:15px;box-shadow:0 14px 44px rgba(var(--sh),.13);
   padding:6px;display:flex;flex-direction:column;min-width:196px;opacity:0;
   visibility:hidden;transition:opacity .18s,transform .18s;z-index:130}
 .navdrop:hover .navdrop-menu{opacity:1;visibility:visible;
@@ -548,6 +548,18 @@ src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></
 src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF"></script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922');window.SF_AW_CONV_TRIAL='AW-941092922/rY-jCO3-uuccELrg38AD';
+</script><!-- sf-attrib: first-landing ad attribution --><script>
+(function(){try{
+var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+       'gclid','gbraid','wbraid','fbclid'];
+var q=new URLSearchParams(location.search),o={},got=false;
+K.forEach(function(k){var v=q.get(k);if(v){o[k]=v.slice(0,512);got=true;}});
+if(!got)return;
+var prev=null;try{prev=sessionStorage.getItem('sf_attrib');}catch(e){}
+if(prev)return;                       /* first landing wins, always */
+o.landing_url=location.href.slice(0,512);
+sessionStorage.setItem('sf_attrib',JSON.stringify(o));
+}catch(e){}})();
 </script></head>
 <body>
 
@@ -577,7 +589,7 @@ gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','AW-941092922'
 </main>
 
 <footer class="nf-foot"><div class="wrap">
-  <span>© 2026 SalonForge · Six products, one live source of truth.</span>
+  <span>© 2026 SalonForge · Three products, one live source of truth.</span>
   <span><a href="/" style="color:var(--sec)">salonforge.com</a></span>
 </div></footer>
 

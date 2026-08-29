@@ -1,6 +1,6 @@
 # SalonForge
 
-> SalonForge is one connected system that runs a whole hair salon: the appointment diary and till, colour formulation weighed to the gram, the drinks bar and stock, an AI receptionist that answers the phone, staff performance and commission, and hiring. Six products that read and write the same shared record, so the diary, the colour bowl, the till and the pay run all agree.
+> SalonForge is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, and colour formulation weighed and costed to the gram. Three products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
 
 Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
 
@@ -8,19 +8,17 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - [Daviana](https://salonforge.com/daviana/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
 - [AI Receptionist](https://salonforge.com/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
 - [ColorLab](https://salonforge.com/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
-- [Bar](https://salonforge.com/bar/): drinks and refreshments logged against the client, with stock deducted automatically.
-- [Performance](https://salonforge.com/performance/): per-stylist takings, rebooking, retail and commission — calculated from the real diary, not a spreadsheet.
-- [People](https://salonforge.com/people/): hiring and onboarding stylists, from advert to first day on the floor.
 
 ## Key facts
 - 19,949 colour formulas weighed and costed to date.
 - Running inside 6 salons, London to Saudi Arabia; partner salons in 5 countries.
-- Products share one record — booking a client in the diary is the same record the colour, bar, till and commission all read.
-- Demos are 30 minutes, run on the salon's own numbers: https://calendly.com/salonforge-info/30min
+- Products share one record — booking a client in the diary is the same record the colour and the till read.
+- A live demonstration line anyone can ring, no signup: +44 7460 096908.
+- Demos are 20 minutes on the phone, run on the salon's own numbers. Ask for one at https://salonforge.com/demo/
 
 ## Pricing
-- [Pricing](https://salonforge.com/pricing/): one subscription — £50 to £250 a month depending on which of the six products the salon takes and how many chairs it has. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
-- [Start a free trial](https://salonforge.com/trial/): your own SalonForge salon with sample clients to play with — diary, ColorLab and bar. Free for a month, no card; when the salon is ready it becomes the live account, nothing to migrate.
+- [Pricing](https://salonforge.com/pricing/): priced per product — Daviana £59 a month, the AI Receptionist £45 a month, ColorLab £59 a month. Take one, take all three. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
+- [Start a free trial](https://salonforge.com/trial/): leave a salon name, a mobile and an email; someone rings within one working day and moves the clients, services and prices across by hand. Free for a month, no card.
 
 ## Questions answered
 - [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
