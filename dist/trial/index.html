@@ -798,7 +798,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
   // with the signup. These keys must stay in step with the worker's MODULE_PRICES: an
   // unknown key is coerced to NULL by handleSignup with no error anywhere.
   var PLAN = (function(){ var m = (location.hash + location.search).match(/plan=(daviana|receptionist|colorlab)/); return m ? m[1] : ''; })();
-  var PLAN_LABEL = {daviana:'Daviana — £59 a month', receptionist:'AI Receptionist — £45 a month', colorlab:'ColorLab — £59 a month'};
+  var PLAN_LABEL = {daviana:'Daviana — £80 a month inc VAT', receptionist:'AI Receptionist — £60 a month inc VAT', colorlab:'ColorLab — £80 a month inc VAT'};
   var chip = document.getElementById('tr-plan'); if (chip && PLAN) { chip.textContent = 'You picked: ' + PLAN_LABEL[PLAN] + '. Change it any time.'; chip.hidden = false; }
   if(!form) return;
   const site = document.getElementById('tr-website');
