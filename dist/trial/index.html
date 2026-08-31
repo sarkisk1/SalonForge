@@ -809,9 +809,11 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <button type="button" class="qz-opt" data-v="rings out">It rings out</button>
 <button type="button" class="qz-opt" data-v="someone drops everything">Someone drops everything to answer</button>
 <button type="button" class="qz-opt" data-v="voicemail">Voicemail — we ring back later</button>
-<button type="button" class="qz-opt" data-v="whatsapp later">They find us on WhatsApp eventually</button></div>
+<button type="button" class="qz-opt" data-v="whatsapp later">They find us on WhatsApp eventually</button>
+<button type="button" class="qz-opt" data-v="reception picks up">Reception picks up</button></div>
 <div class="qz-step" data-q="bookings"><p class="qz-q">Where do your bookings live right now?</p>
 <button type="button" class="qz-opt" data-v="fresha/booksy/treatwell">Fresha, Booksy or Treatwell</button>
+<button type="button" class="qz-opt" data-v="phorest/zenoti/vagaro">Phorest, Zenoti or Vagaro</button>
 <button type="button" class="qz-opt" data-v="phone+whatsapp">Phone + WhatsApp</button>
 <button type="button" class="qz-opt" data-v="instagram dms">Instagram DMs</button>
 <button type="button" class="qz-opt" data-v="paper diary">A paper diary</button>
@@ -828,7 +830,8 @@ count=document.getElementById('qz-count'),back=document.getElementById('qz-back'
 var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Aria answers every one — last step: where do we send your free month?',
 'someone drops everything':'Nobody should drop a colour for the phone. Aria answers it for you — last step: where do we send your free month?',
 'voicemail':'Most callers never leave a voicemail — they ring the next salon. Aria answers live — where do we send your free month?',
-'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?'};
+'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?',
+'reception picks up':'Lovely — then Aria is your receptionist\u2019s cover: lunch, evenings, and the second line ringing. Last step: where do we send your free month?'};
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
 fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
 if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
