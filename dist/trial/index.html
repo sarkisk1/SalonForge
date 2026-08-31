@@ -822,7 +822,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <button type="button" class="qz-opt" data-v="solo">Just me</button>
 <button type="button" class="qz-opt" data-v="2-4">2–4 of us</button>
 <button type="button" class="qz-opt" data-v="5+">5 or more</button></div>
-<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Last step — where do we send your free month?</p><div class="tr-field"><label for="tr-salon">Salon name</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="The salon’s name"></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(optional — only if you’d like us to ring you)</span></label><input id="tr-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900123"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="jane@yoursalon.com"></div><div class="tr-field" hidden><label for="tr-website">Salon website</label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="yoursalon.com"></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></div>
+<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Last step — where do we send your free month?</p><div class="tr-field"><label for="tr-name">Your name</label><input id="tr-name" name="name" type="text" autocomplete="name" required placeholder="Name and surname"></div><div class="tr-field"><label for="tr-salon">Salon name</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="The salon’s name"></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(optional — only if you’d like us to ring you)</span></label><input id="tr-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900123"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="jane@yoursalon.com"></div><div class="tr-field" hidden><label for="tr-website">Salon website</label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="yoursalon.com"></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></div>
 <button type="button" class="qz-back" id="qz-back" hidden>← Back</button></form>
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
@@ -835,7 +835,7 @@ var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Ari
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
 fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
 if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
-setTimeout(function(){var s=document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
+setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
 try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
 steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
 if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
@@ -898,6 +898,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
     // explicitly in the body.
     const data = Object.assign(attrib(), {
       salon:  form.salon.value.trim(),
+      fullName: (form.name && form.name.value ? form.name.value.trim() : ''),
       mobile: form.mobile.value.trim(),
       email:  form.email.value.trim(),
       website: normaliseSite(site.value),
