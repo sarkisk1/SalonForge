@@ -790,7 +790,58 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
   </nav>
   <a class="btn btn-g" href="/trial/">Start free trial</a>
 </div></header>
-<nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">SalonForge</a><span class="sep">/</span><span aria-current="page">Start a trial</span></nav><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><div class="tr-film"><video id="sf-film" controls playsinline preload="metadata" poster="/assets/salonforge-film-poster.jpg"><source src="/assets/salonforge-film.mp4" type="video/mp4"></video></div><h1>Free for a month, no card.</h1><p class="sub">Two minutes here, and we do the rest. One of us emails you within one working day to set your salon up, and we move your clients, services and prices into your new diary by hand — you type none of it.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card"><div class="tr-err" id="tr-err" role="alert"></div><form class="tr-form" id="tr-form"><div class="tr-field"><label for="tr-salon">Salon name</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="The salon's name"></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(optional — only if you’d like us to ring you)</span></label><input id="tr-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900123"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="jane@yoursalon.com"></div><div class="tr-field"><label for="tr-website">Salon website <span style="font-weight:400;color:var(--sec)">(optional)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="yoursalon.com"></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></form><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>You’re in.</h2><p>One of us emails you within one working day to set your salon up — and rings you if you left a mobile. Have your current client list and price list to hand and we move them across for you; there’s nothing to do before then.</p><p class="tr-call">Want to hear the AI receptionist first? Ring <a href="tel:+447460096908">+44 7460 096908</a> now — it answers live.</p></div></div></div><script>
+<nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">SalonForge</a><span class="sep">/</span><span aria-current="page">Start a trial</span></nav><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><div class="tr-film"><video id="sf-film" controls playsinline preload="metadata" poster="/assets/salonforge-film-poster.jpg"><source src="/assets/salonforge-film.mp4" type="video/mp4"></video></div><h1>Free for a month, no card.</h1><p class="sub">Two minutes here, and we do the rest. One of us emails you within one working day to set your salon up, and we move your clients, services and prices into your new diary by hand — you type none of it.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card"><div class="tr-err" id="tr-err" role="alert"></div><style>
+.qz-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.qz-bar{flex:1;height:6px;border-radius:3px;background:rgba(20,12,8,.08);overflow:hidden}
+.qz-bar i{display:block;height:100%;width:25%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
+.qz-count{font-size:13px;color:var(--sec);white-space:nowrap}
+.qz-step{display:none;min-height:298px}
+.qz-step.on{display:block;animation:qzin .25s ease}
+@keyframes qzin{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+.qz-q{font-weight:700;font-size:19px;line-height:1.3;margin:0 0 14px}
+.qz-opt{display:block;width:100%;text-align:left;padding:14px 16px;margin:0 0 10px;border:1.5px solid rgba(20,12,8,.14);border-radius:12px;background:#fff;font:inherit;font-size:16px;cursor:pointer;transition:border-color .15s,background .15s}
+.qz-opt:hover{border-color:var(--g,#c96f4a)}
+.qz-opt.sel{border-color:var(--g,#c96f4a);background:rgba(201,111,74,.07);font-weight:600}
+.qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
+.qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
+</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 of 4</span></div>
+<div class="qz-step on" data-q="phone"><p class="qz-q">It’s 2pm, your hands are in foils — and the phone rings. What actually happens?</p>
+<button type="button" class="qz-opt" data-v="rings out">It rings out</button>
+<button type="button" class="qz-opt" data-v="someone drops everything">Someone drops everything to answer</button>
+<button type="button" class="qz-opt" data-v="voicemail">Voicemail — we ring back later</button>
+<button type="button" class="qz-opt" data-v="whatsapp later">They find us on WhatsApp eventually</button></div>
+<div class="qz-step" data-q="bookings"><p class="qz-q">Where do your bookings live right now?</p>
+<button type="button" class="qz-opt" data-v="fresha/booksy/treatwell">Fresha, Booksy or Treatwell</button>
+<button type="button" class="qz-opt" data-v="phone+whatsapp">Phone + WhatsApp</button>
+<button type="button" class="qz-opt" data-v="instagram dms">Instagram DMs</button>
+<button type="button" class="qz-opt" data-v="paper diary">A paper diary</button>
+<button type="button" class="qz-opt" data-v="other system">Another system</button></div>
+<div class="qz-step" data-q="team"><p class="qz-q">How many of you work in the salon?</p>
+<button type="button" class="qz-opt" data-v="solo">Just me</button>
+<button type="button" class="qz-opt" data-v="2-4">2–4 of us</button>
+<button type="button" class="qz-opt" data-v="5+">5 or more</button></div>
+<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Last step — where do we send your free month?</p><div class="tr-field"><label for="tr-salon">Salon name</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="The salon’s name"></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(optional — only if you’d like us to ring you)</span></label><input id="tr-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900123"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="jane@yoursalon.com"></div><div class="tr-field" hidden><label for="tr-website">Salon website</label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="yoursalon.com"></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></div>
+<button type="button" class="qz-back" id="qz-back" hidden>← Back</button></form>
+<script>(function(){
+var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
+count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
+var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Aria answers every one — last step: where do we send your free month?',
+'someone drops everything':'Nobody should drop a colour for the phone. Aria answers it for you — last step: where do we send your free month?',
+'voicemail':'Most callers never leave a voicemail — they ring the next salon. Aria answers live — where do we send your free month?',
+'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?'};
+function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
+fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
+if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
+setTimeout(function(){var s=document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
+try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
+steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
+if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
+s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
+ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
+if(idx<3)setTimeout(function(){show(idx+1)},180);})});
+back.addEventListener('click',function(){if(cur>0)show(cur-1)});
+window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+})();</script><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>You’re in.</h2><p>One of us emails you within one working day to set your salon up — and rings you if you left a mobile. Have your current client list and price list to hand and we move them across for you; there’s nothing to do before then.</p><p class="tr-call">Want to hear the AI receptionist first? Ring <a href="tel:+447460096908">+44 7460 096908</a> now — it answers live.</p></div></div></div><script>
 (function(){
   const TRIAL_API = "https://salonforge-trial.long-moon-952c.workers.dev/signup";
   const form = document.getElementById('tr-form');
@@ -851,7 +902,8 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
       // name for the NOT NULL column. country + current_system: worker derives them.
       event_id: eventId,
       fbp: ck('_fbp'),
-      fbc: ck('_fbc')
+      fbc: ck('_fbc'),
+      current_system: (window.SF_QUIZ ? window.SF_QUIZ() : '')
     });
     btn.disabled = true; btn.textContent = 'Sending…';
     try {
