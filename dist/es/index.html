@@ -859,7 +859,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
         <div class="cl-scrim"></div>
         <div class="cl-readout">
           <div class="rd"><div class="v" data-grams="62">0</div><div class="u">gramos</div></div>
-          <div class="rd"><div class="v c">£<span data-cost="4.80">0.00</span></div><div class="u">coste</div></div>
+          <div class="rd"><div class="v c"><span data-cost="4.80">0,00</span>&nbsp;€</div><div class="u">coste</div></div>
         </div>
       </div></div>
     </div>
@@ -1025,7 +1025,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
     var t=+el.dataset.grams; watchCount(el,function(){ if(rm){el.textContent=t;return;} countEl(el,t,1600,function(v){return Math.round(v);}); });
   });
   document.querySelectorAll('[data-cost]').forEach(function(el){
-    var t=+el.dataset.cost; watchCount(el,function(){ if(rm){el.textContent=t.toFixed(2);return;} countEl(el,t,1600,function(v){return v.toFixed(2);}); });
+    var t=+el.dataset.cost; watchCount(el,function(){ if(rm){el.textContent=t.toFixed(2).replace('.',',');return;} countEl(el,t,1600,function(v){return v.toFixed(2).replace('.',',');}); });
   });
 
   var caps={
