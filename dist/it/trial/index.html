@@ -6,26 +6,29 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
-<title>ColorLab — ogni ciotola, pesata e con costo calcolato | SalonForge</title>
-<meta name="description" content="ColorLab pesa ogni colore su una bilancia di precisione Bluetooth, suggerisce una formula da una foto, ripete l'ultimo colore della cliente con un tocco e calcola il costo di ogni grammo — tutto collegato alla prenotazione.">
-<link rel="canonical" href="https://salonforge.com/it/colorlab/">
-<meta property="og:image" content="https://salonforge.com/assets/og-colorlab.jpg">
-<meta property="og:image:secure_url" content="https://salonforge.com/assets/og-colorlab.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ColorLab">
-<meta name="twitter:image" content="https://salonforge.com/assets/og-colorlab.jpg">
-<link rel="alternate" hreflang="en" href="https://salonforge.com/colorlab/">
-<link rel="alternate" hreflang="it" href="https://salonforge.com/it/colorlab/">
-<link rel="alternate" hreflang="ru" href="https://salonforge.com/ru/colorlab/">
-<link rel="alternate" hreflang="es" href="https://salonforge.com/es/colorlab/">
-<link rel="alternate" hreflang="x-default" href="https://salonforge.com/colorlab/">
-<meta property="og:title" content="ColorLab — ogni ciotola, pesata e con costo calcolato | SalonForge">
-<meta property="og:description" content="Pesalo, salvalo, calcolane il costo. Il cervello del colore che elimina gli sprechi, non perde mai una formula e sa esattamente quanto costa ogni ciotola.">
+<title>Un mese gratis, senza carta | SalonForge</title>
+<meta name="description" content="Due minuti qui e al resto pensiamo noi: spostiamo a mano clienti, servizi e listino nella tua nuova agenda. Un mese gratis, senza carta, senza contratto.">
+<link rel="canonical" href="https://salonforge.com/it/trial/">
+<link rel="alternate" hreflang="en" href="https://salonforge.com/trial/">
+<link rel="alternate" hreflang="it" href="https://salonforge.com/it/trial/">
+<link rel="alternate" hreflang="x-default" href="https://salonforge.com/trial/">
+<meta property="og:title" content="Dicci dove chiamarti | SalonForge">
+<meta property="og:description" content="Due minuti qui e al resto pensiamo noi: spostiamo a mano clienti, servizi e listino nella tua nuova agenda. Un mese gratis, senza carta, senza contratto.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://salonforge.com/it/colorlab/">
+<meta property="og:url" content="https://salonforge.com/it/trial/">
+<meta property="og:image" content="https://salonforge.com/assets/og.jpg">
+<meta property="og:image:alt" content="Due minuti qui e al resto pensiamo noi: spostiamo a mano clienti, servizi e listino nella tua nuova agenda. Un mese gratis, senza carta, senza contratto.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://salonforge.com/assets/og.jpg">
+<link rel="alternate" type="application/rss+xml" title="SalonForge journal" href="https://salonforge.com/blog/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SalonForge", "item": "https://salonforge.com/"}, {"@type": "ListItem", "position": 2, "name": "Prova gratuita"}]}</script>
+<!-- Microsoft Clarity --><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "s9n5g9pd1b");
+</script>
 <style>
 :root{
   --white:#FDFBFA; --alt:#F5F1ED; --ink:#1F1C1A; --sec:#726A63; --line:#E7E0D9;
@@ -496,22 +499,249 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
 .navdrop:focus-within .ncar{transform:rotate(180deg)}
 </style>
 <style>
-/* colorlab overview — minimal additions */
-.viz.shot{background:#f3ede9}
-.viz.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:20px;display:block}
-.back-link{display:inline-flex;align-items:center;gap:6px;font-size:.9375rem;color:var(--sec);font-weight:500;transition:color .22s var(--hover)}
-.back-link:hover{color:var(--blue)}
-.hero .actions .btn-o{color:var(--blue)}
-.beat-copy .prod{font-size:1.0625rem;color:var(--blue);font-weight:500;margin-top:6px}
+/* ============ CONTENT ENGINE — article + index + faq ============ */
+/* The shared system styles a BARE `header` selector as position:fixed (it assumes
+   the only header on a page is the site nav). Content pages use semantic
+   <header> inside <article>, so undo that inheritance or they fly to the top. */
+.art-head,.blog-hero{position:static;inset:auto;z-index:auto;transition:none}
+.pgw{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.875rem;color:var(--sec);
+  padding-top:clamp(96px,11vw,132px)}
+.crumb a{color:var(--sec);text-decoration:none;transition:color .2s}
+.crumb a:hover{color:var(--blue)}
+.crumb .sep{opacity:.5}
+.crumb [aria-current]{color:var(--ink)}
+.crumb--art{max-width:calc(720px + var(--gutter) * 2)}
+@media(max-width:640px){.crumb [aria-current]{display:none}.crumb .sep:last-of-type{display:none}}
+
+/* --- article --- */
+.art{max-width:720px;margin:0 auto;padding:0 var(--gutter) clamp(72px,10vw,116px)}
+.art-head{padding:22px 0 clamp(30px,4vw,42px);border-bottom:1px solid var(--line);
+  margin-bottom:clamp(32px,4.5vw,46px)}
+.art-kicker{font-size:.8125rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:14px}
+.art h1{font-size:clamp(2.1rem,5.4vw,3.25rem);line-height:1.05;letter-spacing:-.022em;margin-bottom:20px}
+.art-standfirst{font-size:clamp(1.125rem,2.2vw,1.3125rem);line-height:1.5;color:var(--sec);
+  text-wrap:pretty;margin-bottom:24px}
+.art-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.875rem;color:var(--sec)}
+.art-meta .dot{opacity:.45}
+.art-meta strong{color:var(--ink);font-weight:600}
+
+/* hero image — breaks out past the 720px measure for a bit of air */
+.art-hero{margin:0 0 clamp(32px,4.5vw,46px);width:min(100vw - var(--gutter) * 2, 940px);
+  margin-left:50%;transform:translateX(-50%)}
+.art-hero img{width:100%;height:auto;border-radius:18px;display:block;
+  box-shadow:0 1px 2px rgba(var(--sh),.05),0 20px 50px -22px rgba(var(--sh),.3)}
+.art-hero figcaption{font-size:.8125rem;color:var(--sec);margin-top:11px;text-align:center;
+  text-wrap:pretty}
+@media(max-width:820px){.art-hero{width:100%;margin-left:0;transform:none}}
+
+/* key takeaways — the block LLMs quote */
+.takeaway{background:linear-gradient(180deg,#f8f4f0 0%,#f3efeb 100%);
+  border:1px solid rgba(217,119,87,.22);border-radius:18px;
+  padding:clamp(22px,3.4vw,30px);margin:0 0 clamp(32px,4.5vw,44px)}
+.takeaway h2{font-size:.8125rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:14px;line-height:1.2}
+.takeaway ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin:0;padding:0}
+.takeaway li{position:relative;padding-left:26px;font-size:1.0625rem;line-height:1.5;text-wrap:pretty}
+.takeaway li::before{content:"";position:absolute;left:6px;top:.62em;width:7px;height:7px;
+  border-radius:50%;background:var(--blue)}
+
+/* table of contents */
+.toc{border-left:2px solid var(--line);padding:2px 0 2px 20px;margin:0 0 clamp(32px,4.5vw,42px)}
+.toc h2{font-size:.78rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase;
+  color:var(--sec);margin-bottom:11px;line-height:1.2}
+.toc ol{list-style:none;counter-reset:t;display:flex;flex-direction:column;gap:8px;margin:0;padding:0}
+.toc li{counter-increment:t;font-size:.96rem;line-height:1.4}
+.toc a{color:var(--sec);text-decoration:none;transition:color .2s}
+.toc a:hover{color:var(--blue)}
+.toc li::before{content:counter(t) ". ";color:var(--blue);font-variant-numeric:tabular-nums}
+
+/* prose */
+.prose{font-size:1.0625rem;line-height:1.62}
+.prose > * + *{margin-top:1.3em}
+.prose h2{font-size:clamp(1.45rem,3.1vw,1.85rem);line-height:1.16;letter-spacing:-.016em;
+  margin-top:2.1em;scroll-margin-top:92px;text-wrap:balance}
+.prose h3{font-size:clamp(1.14rem,2.3vw,1.3rem);line-height:1.25;letter-spacing:-.012em;
+  margin-top:1.75em;scroll-margin-top:92px;text-wrap:balance}
+.prose p{text-wrap:pretty}
+.prose a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(217,119,87,.4);
+  transition:border-color .2s,color .2s}
+.prose a:hover{color:var(--blue-h);border-bottom-color:var(--blue-h)}
+.prose ul,.prose ol{padding-left:1.35em;display:flex;flex-direction:column;gap:.55em}
+.prose li{padding-left:.2em;text-wrap:pretty}
+.prose li::marker{color:var(--blue)}
+.prose strong{font-weight:600}
+.prose blockquote{background:rgba(217,119,87,.06);border:1px solid rgba(217,119,87,.18);border-radius:12px;padding:clamp(16px,2.2vw,22px);margin:clamp(24px,3vw,30px) 0;
+  font-size:1.15rem;line-height:1.45;letter-spacing:-.008em;color:var(--ink);text-wrap:pretty}
+.prose blockquote p + p{margin-top:.7em}
+.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;
+  background:var(--alt);padding:.16em .4em;border-radius:5px}
+.prose hr{border:none;border-top:1px solid var(--line);margin:2.4em 0}
+.prose img{max-width:100%;height:auto;border-radius:14px;display:block}
+.prose figure{margin:2em 0}
+.prose figcaption{font-size:.875rem;color:var(--sec);margin-top:10px;text-align:center}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.8em 0}
+.prose table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:460px}
+.prose th,.prose td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);
+  vertical-align:top}
+.prose th{font-weight:600;font-size:.8125rem;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--sec)}
+.prose tbody tr:last-child td{border-bottom:none}
+
+/* inline CTA */
+.art-cta{margin-top:clamp(46px,6vw,64px);padding:clamp(28px,4vw,38px);border-radius:20px;
+  background:linear-gradient(180deg,#f8f4f0 0%,#f3efeb 100%);border:1px solid var(--line);
+  box-shadow:0 1px 2px rgba(var(--sh),.05),0 12px 34px -14px rgba(var(--sh),.16)}
+.art-cta h2{font-size:clamp(1.3rem,2.7vw,1.6rem);line-height:1.16;letter-spacing:-.015em;
+  margin-bottom:11px;text-wrap:balance}
+.art-cta p{color:var(--sec);margin-bottom:20px;text-wrap:pretty;font-size:1.0625rem}
+
+/* author / trust */
+.art-author{display:flex;gap:15px;align-items:flex-start;margin-top:clamp(40px,5vw,54px);
+  padding-top:26px;border-top:1px solid var(--line);font-size:.9375rem;color:var(--sec);
+  text-wrap:pretty}
+.art-author .ava{width:42px;height:42px;border-radius:12px;flex:none;
+  background:linear-gradient(150deg,var(--blue) 0%,var(--blue-h) 100%);
+  display:grid;place-items:center;color:#fff;font-weight:600;font-size:.95rem}
+.art-author strong{display:block;color:var(--ink);font-weight:600;margin-bottom:3px}
+
+/* related */
+.rel{margin-top:clamp(44px,5.5vw,60px);padding-top:26px;border-top:1px solid var(--line)}
+.rel h2{font-size:.8125rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase;
+  color:var(--sec);margin-bottom:16px;line-height:1.2}
+.rel-list{display:flex;flex-direction:column;gap:2px}
+.rel-list a{display:block;padding:13px 0;border-bottom:1px solid var(--line);
+  font-size:1.0625rem;font-weight:500;line-height:1.35;transition:color .2s;text-wrap:pretty}
+.rel-list a:last-child{border-bottom:none}
+.rel-list a:hover{color:var(--blue)}
+
+/* --- blog index --- */
+.blog-hero{padding:22px 0 clamp(34px,4.6vw,48px);border-bottom:1px solid var(--line);
+  margin-bottom:clamp(30px,4vw,44px)}
+.blog-hero h1{font-size:clamp(2.3rem,6vw,3.6rem);line-height:1.04;letter-spacing:-.024em;
+  margin-bottom:16px}
+.blog-hero p{font-size:clamp(1.0625rem,2.1vw,1.25rem);color:var(--sec);max-width:60ch;
+  text-wrap:pretty;line-height:1.5}
+.topics{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:clamp(34px,4.4vw,46px)}
+.topics a{font-size:.9rem;font-weight:500;padding:8px 15px;border:1px solid var(--line);
+  border-radius:999px;color:var(--sec);transition:.2s;min-height:38px;display:inline-flex;
+  align-items:center}
+.topics a:hover{border-color:var(--blue);color:var(--blue)}
+.topics a.on{background:var(--ink);border-color:var(--ink);color:#fff}
+/* lead article — one piece carries the page, the rest fall in behind it.
+   Ten identical rows reads as a content dump; a lead plus thumbnails reads as a journal. */
+.lead{display:block;margin-bottom:clamp(30px,4vw,44px);group:none}
+.lead-img{position:relative;border-radius:20px;overflow:hidden;margin-bottom:22px;
+  background:var(--alt);aspect-ratio:16/7}
+.lead-img img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s var(--reveal)}
+.lead:hover .lead-img img{transform:scale(1.02)}
+.lead-t{font-size:clamp(1.6rem,3.6vw,2.35rem);line-height:1.12;letter-spacing:-.02em;
+  font-weight:600;margin-bottom:12px;text-wrap:balance;transition:color .2s;max-width:26ch}
+.lead:hover .lead-t{color:var(--blue)}
+.lead p{color:var(--sec);font-size:clamp(1.0625rem,1.9vw,1.1875rem);line-height:1.5;
+  max-width:60ch;text-wrap:pretty}
+.lead .pcard-meta{margin-top:14px}
+
+.plist{display:flex;flex-direction:column}
+.pcard{display:grid;grid-template-columns:1fr auto auto;gap:20px 26px;align-items:center;
+  padding:clamp(22px,2.8vw,28px) 0;border-bottom:1px solid var(--line);transition:.2s}
+.pcard:first-child{border-top:1px solid var(--line)}
+.pthumb{width:132px;aspect-ratio:16/10;border-radius:11px;overflow:hidden;flex:none;
+  background:var(--alt);align-self:center}
+.pthumb img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s var(--reveal)}
+.pcard:hover .pthumb img{transform:scale(1.05)}
+@media(max-width:600px){.pthumb{width:84px;border-radius:9px}}
+.pcard-t{font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.2;letter-spacing:-.015em;
+  font-weight:600;margin-bottom:9px;text-wrap:balance;transition:color .2s}
+.pcard:hover .pcard-t{color:var(--blue)}
+.pcard p{color:var(--sec);font-size:1rem;line-height:1.5;text-wrap:pretty;max-width:62ch}
+.pcard-meta{display:flex;flex-wrap:wrap;gap:9px;align-items:center;font-size:.8125rem;
+  color:var(--sec);margin-top:11px}
+.pcard-tag{font-weight:600;color:var(--blue)}
+.pcard-arrow{align-self:center;color:var(--line);transition:.24s var(--hover);flex:none}
+.pcard:hover .pcard-arrow{color:var(--blue);transform:translateX(4px)}
+@media(max-width:600px){.pcard{grid-template-columns:1fr}.pcard-arrow{display:none}}
+
+/* --- faq --- */
+.faq-list{max-width:760px;margin:0 auto}
+.faq-grp{margin-bottom:clamp(38px,5vw,54px)}
+.faq-grp > h2{font-size:clamp(1.35rem,2.9vw,1.7rem);line-height:1.18;letter-spacing:-.016em;
+  margin-bottom:6px;scroll-margin-top:92px}
+.faq-grp > .gsub{color:var(--sec);font-size:1rem;margin-bottom:18px;text-wrap:pretty}
+.qa{border-bottom:1px solid var(--line)}
+.qa:first-of-type{border-top:1px solid var(--line)}
+.qa summary{cursor:pointer;list-style:none;padding:19px 44px 19px 0;position:relative;
+  font-size:1.0625rem;font-weight:600;line-height:1.4;letter-spacing:-.006em;
+  transition:color .2s;text-wrap:pretty;min-height:44px;display:flex;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{color:var(--blue)}
+.qa summary::after{content:"";position:absolute;right:6px;top:50%;width:10px;height:10px;
+  border-right:2px solid var(--sec);border-bottom:2px solid var(--sec);border-radius:1px;
+  transform:translateY(-70%) rotate(45deg);transition:transform .26s var(--hover),border-color .2s}
+.qa[open] summary::after{transform:translateY(-30%) rotate(225deg);border-color:var(--blue)}
+.qa-body{padding:0 0 22px;color:var(--sec);font-size:1.0625rem;line-height:1.6;
+  max-width:66ch;text-wrap:pretty}
+.qa-body > * + *{margin-top:.85em}
+.qa-body a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(217,119,87,.4)}
+.qa-body ul{padding-left:1.3em;display:flex;flex-direction:column;gap:.45em}
+.qa-body li::marker{color:var(--blue)}
+@media(prefers-reduced-motion:reduce){
+  .qa summary::after,.pcard-arrow{transition:none}
+}
+
+.tr-wrap{max-width:640px;margin:0 auto;padding:0 var(--gutter)}
+.tr-hero{text-align:center;padding:clamp(30px,4vw,44px) 0 clamp(26px,3.4vw,38px)}
+.tr-hero h1{font-size:clamp(2.3rem,6vw,3.6rem);line-height:1.04;letter-spacing:-.026em;
+  margin:0 auto 18px;max-width:16ch}
+.tr-hero .sub{font-size:clamp(1.0625rem,2.1vw,1.25rem);color:var(--sec);line-height:1.5;
+  max-width:50ch;margin:0 auto;text-wrap:pretty}
+.tr-card{background:var(--white);border:1px solid var(--line);border-radius:22px;
+  padding:clamp(24px,3.4vw,36px);
+  box-shadow:0 1px 2px rgba(var(--sh),.05),0 18px 44px -22px rgba(var(--sh),.22)}
+.tr-field{display:flex;flex-direction:column;gap:7px;margin-bottom:17px}
+.tr-field > label{font-size:.9375rem;font-weight:600;color:var(--ink)}
+.tr-field input,.tr-field select{font-family:var(--ui);font-size:1rem;padding:12px 14px;
+  border:1px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);
+  width:100%;min-height:46px;-webkit-appearance:none;appearance:none;transition:border-color .18s,box-shadow .18s}
+.tr-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%2386868b' stroke-width='1.6' d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 15px center;padding-right:38px}
+.tr-field input:focus,.tr-field select:focus{outline:none;border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(217,119,87,.16)}
+.tr-field input:disabled{background:var(--alt);color:var(--sec);cursor:not-allowed}
+.tr-check{display:flex;align-items:center;gap:9px;margin-top:9px;font-size:.9375rem;
+  color:var(--sec);cursor:pointer;min-height:30px}
+.tr-check input{width:17px;height:17px;min-height:0;accent-color:var(--blue);cursor:pointer}
+.tr-plan{margin:14px auto 0;max-width:52ch;font-size:.9375rem;color:var(--ink);background:var(--alt);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.tr-plan[hidden]{display:none}
+.tr-form .btn-g{width:100%;justify-content:center;margin-top:6px;min-height:50px;font-size:1.09rem}
+.tr-form .btn-g[disabled]{opacity:.6;cursor:progress}
+.tr-err{display:none;margin:0 0 16px;padding:12px 15px;border-radius:12px;font-size:.9375rem;
+  line-height:1.45;background:rgba(217,119,87,.10);border:1px solid rgba(217,119,87,.3);
+  color:var(--blue-h)}
+.tr-err.on{display:block}
+.tr-reassure{margin:16px auto 0;max-width:52ch;text-align:center;font-size:.875rem;
+  color:var(--sec);line-height:1.5;text-wrap:pretty}
+/* success state — swaps in for the form */
+.tr-done{display:none;text-align:center;padding:clamp(30px,5vw,52px) clamp(20px,3vw,32px)}
+.tr-done.on{display:block}
+.tr-done .tick{width:58px;height:58px;margin:0 auto 20px;border-radius:50%;
+  background:rgba(217,119,87,.12);display:grid;place-items:center}
+.tr-done .tick svg{width:28px;height:28px;color:var(--blue)}
+.tr-done h2{font-size:clamp(1.5rem,3.4vw,2rem);letter-spacing:-.016em;line-height:1.16;
+  margin-bottom:12px;text-wrap:balance}
+.tr-done p{color:var(--sec);font-size:1.0625rem;line-height:1.55;max-width:46ch;
+  margin:0 auto;text-wrap:pretty}
+.tr-call{margin:18px auto 0;max-width:46ch;color:var(--sec);font-size:1rem;
+  line-height:1.55;text-wrap:pretty}
+.tr-call a{color:var(--blue);font-weight:600;text-decoration:none;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.tr-call a:hover{color:var(--blue-h)}
+.tr-foot{padding:0 0 clamp(72px,10vw,116px)}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "ColorLab", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Web", "url": "https://salonforge.com/it/colorlab/", "description": "ColorLab pesa ogni colore su una bilancia di precisione Bluetooth, suggerisce una formula da una foto, ripete l'ultimo colore della cliente con un tocco e calcola il costo di ogni grammo — tutto collegato alla prenotazione.", "inLanguage": "it", "publisher": {"@type": "Organization", "name": "SalonForge", "url": "https://salonforge.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SalonForge", "item": "https://salonforge.com/it/"}, {"@type": "ListItem", "position": 2, "name": "ColorLab", "item": "https://salonforge.com/it/colorlab/"}]}]}</script>
-<!-- Microsoft Clarity --><script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "s9n5g9pd1b");
-</script><!-- Meta Pixel --><script>
+<!-- Meta Pixel --><script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -537,8 +767,6 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 }catch(e){}})();
 </script></head>
 <body>
-
-<!-- ICON SYMBOLS — clean SF-Symbols-style line icons -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
  <!-- Daviana: calendar (Lucide) -->
@@ -555,154 +783,169 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
  <symbol id="ic-bar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></g></symbol>
 </defs>
 </svg>
-
 <header id="hd"><div class="wrap nav">
-  <a href="/it/" class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></a>
+  <a class="brand" href="/"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></a>
   <nav class="navlinks">
     <span class="navdrop"><a href="/it/#system">Il sistema<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/it/#system">Il sistema</a><a href="/it/#connect">Come si connette</a><a href="/it/#proof">Perché noi</a></div></span>
     <span class="navdrop"><a href="/it/#everything">Prodotti<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/it/daviana/">Daviana</a><a href="/it/ai-receptionist/">AI Receptionist</a><a href="/it/colorlab/">ColorLab</a></div></span>
     <span class="navdrop"><a href="/pricing/">Prezzi<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Prezzi</a><a href="/it/trial/">Prova gratuita</a><a href="/demo/">Prenota una demo</a></div></span>
     <span class="navdrop"><a href="/blog/">Risorse<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calcolatori</a><a href="/compare/">Confronta</a><a href="/faq/">Domande</a></div></span>
   </nav>
-  <a class="btn btn-g" href="/it/trial/">Prova gratis</a>
+  <a class="btn btn-g" href="#start" onclick="try{document.getElementById('start').scrollIntoView({behavior:'smooth'});if(window.gtag)gtag('event','skip_to_quiz',{event_category:'trial',event_label:'nav'});}catch(e){}return false;">Prova gratis</a>
 </div></header>
+<nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">SalonForge</a><span class="sep">/</span><span aria-current="page">Prova gratuita</span></nav><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><style>#start{scroll-margin-top:96px}.tr-hero h1{margin:4px 0 14px}@media(max-width:859px){.tr-hero h1{font-size:2rem}}</style><h1>Un mese gratis, senza carta.</h1><div class="tr-film"><video id="sf-film" controls playsinline preload="metadata" poster="/assets/salonforge-film-poster.jpg"><source src="/assets/salonforge-film.mp4" type="video/mp4"></video></div><p class="sub">Due minuti qui e al resto pensiamo noi. Lascia il cellulare e Aria — la nostra receptionist AI — ti chiama entro un minuto, in italiano. Poi configuriamo il tuo salone e spostiamo noi clienti, servizi e listino — così non devi pensare a nulla.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card" id="start"><p class="tr-trust" style="margin:0 0 16px;text-align:center;font-size:.875rem;color:#8a8177">60 secondi · Senza carta · Disdici quando vuoi · <span id="tr-fam" data-count="6">6</span> saloni nella famiglia Forge</p><div class="tr-err" id="tr-err" role="alert"></div><style>
+.qz-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.qz-bar{flex:1;height:6px;border-radius:3px;background:rgba(20,12,8,.08);overflow:hidden}
+.qz-bar i{display:block;height:100%;width:25%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
+.qz-count{font-size:13px;color:var(--sec);white-space:nowrap}
+.qz-step{display:none;min-height:298px}
+.qz-step.on{display:block;animation:qzin .25s ease}
+@keyframes qzin{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+.qz-q{font-weight:700;font-size:19px;line-height:1.3;margin:0 0 14px}
+.qz-opt{display:block;width:100%;text-align:left;padding:14px 16px;margin:0 0 10px;border:1.5px solid rgba(20,12,8,.14);border-radius:12px;background:#fff;font:inherit;font-size:16px;cursor:pointer;transition:border-color .15s,background .15s}
+.qz-opt:hover{border-color:var(--g,#c96f4a)}
+.qz-opt.sel{border-color:var(--g,#c96f4a);background:rgba(201,111,74,.07);font-weight:600}
+.qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
+.qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
+</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 di 4</span></div>
+<div class="qz-step on" data-q="phone"><p class="qz-q">Sono le 14, hai le mani nelle stagnole — e squilla il telefono. Cosa succede davvero?</p>
+<button type="button" class="qz-opt" data-v="rings out">Squilla a vuoto</button>
+<button type="button" class="qz-opt" data-v="someone drops everything">Qualcuno molla tutto per rispondere</button>
+<button type="button" class="qz-opt" data-v="voicemail">Segreteria — richiamiamo dopo</button>
+<button type="button" class="qz-opt" data-v="whatsapp later">Prima o poi ci trovano su WhatsApp</button>
+<button type="button" class="qz-opt" data-v="reception picks up">Risponde la reception</button></div>
+<div class="qz-step" data-q="bookings"><p class="qz-q">Dove stanno le tue prenotazioni adesso?</p>
+<button type="button" class="qz-opt" data-v="fresha/booksy/treatwell">Fresha, Booksy o Treatwell</button>
+<button type="button" class="qz-opt" data-v="phorest/zenoti/vagaro">Phorest, Zenoti o Vagaro</button>
+<button type="button" class="qz-opt" data-v="phone+whatsapp">Telefono + WhatsApp</button>
+<button type="button" class="qz-opt" data-v="instagram dms">Messaggi Instagram</button>
+<button type="button" class="qz-opt" data-v="paper diary">Un’agenda di carta</button>
+<button type="button" class="qz-opt" data-v="other system">Un altro gestionale</button></div>
+<div class="qz-step" data-q="team"><p class="qz-q">In quanti lavorate nel salone?</p>
+<button type="button" class="qz-opt" data-v="solo">Solo io</button>
+<button type="button" class="qz-opt" data-v="2-4">Siamo in 2–4</button>
+<button type="button" class="qz-opt" data-v="5+">5 o più</button></div>
+<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Ultimo passo — dove ti mandiamo il mese gratis?</p><div class="tr-field"><label for="tr-name">Il tuo nome</label><input id="tr-name" name="name" type="text" autocomplete="name" required placeholder="Nome e cognome"></div><div class="tr-field"><label for="tr-salon">Nome del salone</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Il nome del salone"></div><div class="tr-field"><label for="tr-mobile">Cellulare <span style="font-weight:400;color:var(--sec)">(lascialo e Aria ti chiama entro un minuto, 9–22 ora italiana)</span></label><input id="tr-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900123"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="giulia@iltuosalone.it"></div><div class="tr-field" hidden><label for="tr-website">Sito del salone</label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="iltuosalone.it"></div><p class="tr-reassure">Ti configura uno di noi — un titolare di salone, non un venditore. Senza carta, senza contratto, nessun dato condiviso con nessuno.</p><button class="btn btn-g" type="submit">Attiva il mio salone</button></div>
+<button type="button" class="qz-back" id="qz-back" hidden>← Indietro</button></form>
+<script>(function(){
+var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
+count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
+var FINAL={'rings out':'Ogni chiamata a vuoto è una prenotazione che va a qualcun altro. Aria risponde a tutte — ultimo passo: dove ti mandiamo il mese gratis?',
+'someone drops everything':'Nessuno dovrebbe mollare un colore per il telefono. Risponde Aria per te — ultimo passo: dove ti mandiamo il mese gratis?',
+'voicemail':'Quasi nessuno lascia un messaggio in segreteria — chiama il salone dopo. Aria risponde dal vivo — dove ti mandiamo il mese gratis?',
+'whatsapp later':'Aria risponde al telefono E tiene i tuoi WhatsApp in un unico posto — ultimo passo: dove ti mandiamo il mese gratis?',
+'reception picks up':'Perfetto — allora Aria copre la tua reception: pausa pranzo, sera e la seconda linea che squilla. Ultimo passo: dove ti mandiamo il mese gratis?'};
+function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
+fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' di 4';back.hidden=(n===0);
+if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
+setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
+try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
+steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
+if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
+s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
+ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
+if(idx<3)setTimeout(function(){show(idx+1)},180);})});
+back.addEventListener('click',function(){if(cur>0)show(cur-1)});
+window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+})();</script><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>Ci sei.</h2><p>Se hai lasciato il cellulare, Aria ti sta chiamando proprio ora. Poi uno di noi configura il tuo salone entro un giorno lavorativo — tieni a portata di mano la lista clienti e il listino attuali e li spostiamo noi; prima di allora non devi fare nulla.</p><p class="tr-call">Vuoi prima sentire la receptionist AI? Chiama <a href="tel:"></a> adesso — risponde dal vivo.</p></div></div></div><script>
+(function(){
+  const TRIAL_API = "https://salonforge-trial.long-moon-952c.workers.dev/signup";
+  const form = document.getElementById('tr-form');
+  // Module chosen on /pricing/ (#plan=daviana|receptionist|colorlab) — shown, and sent
+  // with the signup. These keys must stay in step with the worker's MODULE_PRICES: an
+  // unknown key is coerced to NULL by handleSignup with no error anywhere.
+  var PLAN = (function(){ var m = (location.hash + location.search).match(/plan=(daviana|receptionist|colorlab)/); return m ? m[1] : ''; })();
+  var PLAN_LABEL = {daviana:'Daviana — 80 £ al mese IVA inclusa', receptionist:'AI Receptionist — 60 £ al mese IVA inclusa', colorlab:'ColorLab — 80 £ al mese IVA inclusa'};
+  var chip = document.getElementById('tr-plan'); if (chip && PLAN) { chip.textContent = 'Hai scelto: ' + PLAN_LABEL[PLAN] + '. Puoi cambiarlo quando vuoi.'; chip.hidden = false; }
+  if(!form) return;
+  const site = document.getElementById('tr-website');
+  // Owners type "www.mysalon.co.uk" — never a scheme. Accept anything, add https:// ourselves.
+  function normaliseSite(v){ v = (v || '').trim(); if (!v) return ''; if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(v)) v = 'https://' + v.replace(/^\/+/, ''); return v; }
+  const err = document.getElementById('tr-err');
+  const done = document.getElementById('tr-done');
+  const btn = form.querySelector('button[type=submit]');
+  // The ONE place the button's label lives. It used to be written twice — the markup
+  // said "Create my salon" and the failure path reset it to "Start free trial", so one
+  // failed submit silently renamed the button.
+  const BTN_LABEL = btn ? btn.textContent : '';
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-inner">
-        <p class="eyebrow reveal">ColorLab</p>
-        <h1 class="reveal d1">Ogni ciotola, <span class="hl sw">pesata</span> e con costo calcolato.</h1>
-        <p class="lede lede-1 reveal d2">Pesalo. Salvalo. Calcolane il costo.</p>
-        <p class="lede lede-2 reveal d3">Il cervello del colore alla poltrona — una bilancia di precisione Bluetooth, una formula da una foto e il costo reale di ogni grammo, tutto collegato alla prenotazione.</p>
-        <div class="actions reveal d4">
-          <a class="btn btn-g" href="https://colorlab.co.uk" target="_blank" rel="noopener">Scopri ColorLab <span class="ar">&rsaquo;</span></a>
-          <a href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener" class="ghost">Prenota una demo <span class="ar">&rsaquo;</span></a>
-        </div>
-        <p style="margin-top:26px"><a href="/it/" class="back-link">&lsaquo; Tutti i prodotti</a></p>
-      </div>
+  const ck = function(n){
+    const m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+    return m ? m.pop() : '';
+  };
+  // Ad attribution. attribgen.py stashed the FIRST landing's parameters in
+  // sessionStorage (they are gone from the URL by the time anyone reaches this page);
+  // a live ?gclid= on this very URL wins over the stash; _gcl_aw is Google's own
+  // cookie and is the last resort when the linker rewrote the URL.
+  function attrib(){
+    var o = {};
+    try { o = JSON.parse(sessionStorage.getItem('sf_attrib') || '{}') || {}; } catch (e) { o = {}; }
+    var q = new URLSearchParams(location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+     'gclid','gbraid','wbraid','fbclid'].forEach(function(k){
+       var v = q.get(k); if (v) o[k] = v.slice(0, 512); });
+    var gcl = ck('_gcl_aw');
+    if (gcl && !o.gclid) { var parts = gcl.split('.'); o.gclid = parts[parts.length - 1]; }
+    o.landing_url = o.landing_url || location.href.slice(0, 512);
+    return o;
+  }
 
-      <div class="hero-cluster reveal d3" style="aspect-ratio:auto;transform:none" aria-hidden="false">
-        <div class="viz cl-viz" style="max-width:none;width:100%">
-          <video class="clv" src="/assets/colorlab.mp4" poster="/assets/poster-colorlab.jpg" preload="none" muted loop playsinline data-lazyvid="1"></video>
-          <div class="cl-scrim"></div>
-          <div class="cl-readout">
-            <div class="rd"><div class="v" data-grams="62">0</div><div class="u">grammi</div></div>
-            <div class="rd"><div class="v c">£<span data-cost="4.80">0.00</span></div><div class="u">costo</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROOF RIBBON -->
-<div class="ribbon band--2">
-  <div class="wrap">
-    <span class="fact"><span class="live"></span> Sviluppato e utilizzato in <span class="n">6</span> saloni, da Londra all'Arabia Saudita</span>
-    <span class="sep"></span>
-    <span class="fact"><span class="n">19.949</span> formule colore pesate e con costo calcolato</span>
-    <span class="sep"></span>
-    <span class="fact">Redken, Keyluma, Organic e colpi di sole &mdash; <span class="n">un'unica</span> app</span>
-  </div>
-</div>
-
-<!-- WHY / VALUE POINTS -->
-<section class="band" id="why">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">01</span><span class="lbl">Perché ColorLab</span><span class="end">Pesalo · salvalo · calcolane il costo</span></div>
-    <div class="sec-head reveal">
-      <h2>Il colore è lo spreco più grande di un salone. Non più.</h2>
-      <p>La maggior parte degli stilisti dosa il colore a occhio, non registra mai la formula e tira a indovinare sulle scorte. ColorLab risolve tutti e tre i problemi &mdash; con un ciclo semplice: apri la cliente, ottieni la formula, pesa, salva.</p>
-    </div>
-
-    <!-- 1. Weigh it -->
-    <div class="beat reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="kicker">Pesalo</div></div>
-        <h3>Grammi esatti, non stime.</h3>
-        <p>Una bilancia Acaia nera si collega via Bluetooth e guida ogni dose al grammo &mdash; <em>&ldquo;aggiungi 9&thinsp;g&hellip; stop&rdquo;</em>. Gli stilisti smettono di preparare troppo prodotto e il colore che finiva nel cestino resta nella ciotola.</p>
-        <div class="beat-add"><span>Il punto</span><p>Misurato, non stimato a occhio &mdash; migliaia di sterline di colore risparmiate ogni anno.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz shot"><img src="/assets/colorlab-service.png" alt="ColorLab che guida la pesatura di un colore sulla bilancia Bluetooth" loading="lazy"></div></div>
-    </div>
-
-    <!-- 2. Save it -->
-    <div class="beat rev reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="kicker">Salvalo</div></div>
-        <h3>Scatta una foto. Ripeti con un tocco.</h3>
-        <p>Fotografa i capelli e l'AI li analizza &mdash; insieme allo storico colore della cliente &mdash; e suggerisce le nuance e i grammi, con regole di sicurezza che invitano a &ldquo;confermare&rdquo; invece di tirare a indovinare. L'ultima formula di una cliente che ritorna si ricarica con un tocco. Ogni colore viene salvato sulla cliente per sempre, in ogni sede.</p>
-        <div class="beat-add"><span>Il punto</span><p>Una formula non esce mai dalla porta insieme allo stilista.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz shot"><img src="/assets/colorlab-keyluma.png" alt="Selettore di nuance ColorLab con Keyluma, Redken, Organic e colpi di sole" loading="lazy"></div></div>
-    </div>
-
-    <!-- 3. Cost it -->
-    <div class="beat reveal">
-      <div class="beat-copy">
-        <div class="head"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="kicker">Calcolane il costo</div></div>
-        <h3>Il costo reale di ogni grammo.</h3>
-        <p>Ogni formula mostra il suo costo di prodotto reale nel momento in cui viene pesata &mdash; e il risparmio rispetto al vecchio metodo a occhio. Il prodotto utilizzato viene scalato dalle scorte, così il riordino segue ciò che è stato davvero versato, non un'intuizione.</p>
-        <div class="beat-add"><span>Il punto</span><p>Il dato concreto sul ROI che un titolare può finalmente vedere.</p></div>
-      </div>
-      <div class="beat-viz"><div class="viz shot"><img src="/assets/colorlab-home.png" alt="Elenco clienti e panoramica dei costi di ColorLab" loading="lazy"></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PART OF ONE SYSTEM -->
-<section class="band band--2" id="system">
-  <div class="wrap">
-    <div class="chapter reveal"><span class="ix">02</span><span class="lbl">Parte di un unico sistema</span><span class="end">Tutto legge e scrive su Daviana</span></div>
-    <div class="sec-head reveal">
-      <h2>Integrato in tutto il salone.</h2>
-      <p>ColorLab non è una semplice bilancia a sé stante. Legge e scrive su <b>Daviana</b> &mdash; l'unica fonte di verità in tempo reale condivisa da ogni prodotto SalonForge.</p>
-    </div>
-    <div class="grid6 reveal d1">
-      <div class="gcard hero-card">
-        <div class="top"><div class="tile"><svg><use href="#ic-daviana"/></svg></div><div class="zone">Legge</div></div>
-        <h3>La poltrona di oggi, pronta</h3>
-        <p>Le clienti prenotate per il colore, il loro storico e i prezzi per singolo stilista arrivano direttamente da Daviana &mdash; tocca una cliente e le sue formule sono lì.</p>
-        <div class="spine-badge"><i></i>La fonte di verità</div>
-      </div>
-      <div class="gcard">
-        <div class="top"><div class="tile"><svg><use href="#ic-color"/></svg></div><div class="zone">Scrive</div></div>
-        <h3>Il costo sulla prenotazione</h3>
-        <p>Ogni ciotola pesata viene salvata sulla cliente e, dove il salone lo abilita, l'importo del colore viene riportato sull'appuntamento &mdash; il conto riflette ciò che è stato davvero utilizzato.</p>
-      </div>
-      <div class="gcard">
-        <div class="top"><div class="tile"><svg><use href="#ic-perf"/></svg></div><div class="zone">Alimenta</div></div>
-        <h3>Scorte e riordino</h3>
-        <p>Il prodotto versato viene scalato dal conteggio delle scorte, così il riordino &mdash; e il consumo per singolo stilista &mdash; è guidato dal consumo reale, non da una stima.</p>
-      </div>
-    </div>
-    <div class="grid-foot reveal d2">
-      <p class="line">Una scheda cliente. Una cassa. Un conteggio delle scorte.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="band cta">
-  <div class="wrap">
-    <p class="eyebrow reveal">ColorLab</p>
-    <h2 class="reveal d1">Guardalo pesare una ciotola.</h2>
-    <p class="reveal d2">Anche ColorLab ha la sua casa &mdash; la storia completa, la libreria delle nuance e i prezzi sono su colorlab.co.uk.</p>
-    <div class="actions reveal d3">
-      <a class="btn btn-g" href="https://colorlab.co.uk" target="_blank" rel="noopener">Scopri ColorLab <span class="ar">&rsaquo;</span></a>
-      <a class="btn btn-o" href="https://calendly.com/salonforge-info/30min" target="_blank" rel="noopener">Prenota una demo</a>
-    </div>
-    <p style="margin-top:26px" class="reveal d3"><a href="/it/" class="back-link">&lsaquo; Tutti i prodotti</a></p>
-  </div>
-</section>
-
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    err.classList.remove('on');
+    // One id shared by the browser pixel and the worker's server-side CAPI event,
+    // so Meta dedupes them into ONE conversion instead of counting two.
+    const eventId = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random());
+    // _fbp / _fbc can't reach the worker as cookies (it's a cross-origin POST to
+    // workers.dev), and they're the biggest match-quality lever — so pass them
+    // explicitly in the body.
+    const data = Object.assign(attrib(), {
+      salon:  form.salon.value.trim(),
+      fullName: (form.name && form.name.value ? form.name.value.trim() : ''),
+      mobile: form.mobile.value.trim(),
+      email:  form.email.value.trim(),
+      website: normaliseSite(site.value),
+      // "Your full name" is gone from the form — the worker falls back to the salon
+      // name for the NOT NULL column. country + current_system: worker derives them.
+      event_id: eventId,
+      fbp: ck('_fbp'),
+      fbc: ck('_fbc'),
+      current_system: (window.SF_QUIZ ? window.SF_QUIZ() : '')
+    });
+    btn.disabled = true; btn.textContent = 'Invio in corso…';
+    try {
+      if (PLAN) data.plan = PLAN;
+      const res = await fetch(TRIAL_API, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(data)
+      });
+      if(!res.ok) throw new Error('bad status ' + res.status);
+      // Fire ONLY on a confirmed 2xx — a Lead counted on a failed POST teaches
+      // Meta to buy traffic that never actually reached the database.
+      if (window.fbq) { fbq('track', 'Lead', {content_name: 'trial_signup'}, {eventID: eventId}); }
+      // Google mirror of the same rule: named event always (harmless if gtag absent),
+      // AW conversion send only when gtaggen.py defined SF_AW_CONV_TRIAL (account exists).
+      if (window.gtag) {
+        gtag('event', 'generate_lead', {event_category: 'trial'});
+        if (window.SF_AW_CONV_TRIAL) gtag('event', 'conversion', {send_to: window.SF_AW_CONV_TRIAL});
+      }
+      form.style.display = 'none';
+      done.classList.add('on');
+      done.scrollIntoView({behavior:'smooth', block:'center'});
+    } catch(ex) {
+      btn.disabled = false; btn.textContent = BTN_LABEL;
+      err.textContent = "Qualcosa è andato storto nell'invio. Riprova, oppure scrivi a hello@salonforge.com e ti configuriamo noi.";
+      err.classList.add('on');
+    }
+  });
+})();
+</script>
 <footer><div class="wrap">
   <div class="foot">
     <div>
-      <a href="/it/" class="brand"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></a>
-      <div class="tag">Un unico sistema connesso per tutto il salone.</div>
+      <a class="brand" href="/"><img class="bmark" src="/assets/salonforge-mark.svg" alt="" width="29" height="29">Salon<span class="bf">Forge</span></a>
+      <div class="tag">Un solo sistema connesso per tutto il salone.</div>
     </div>
     <div class="cols">
       <a href="/it/daviana/">Daviana</a>
@@ -719,37 +962,21 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
       <a href="/privacy/">Privacy</a>
     </div>
   </div>
-  <div class="foot-partner"><div class="fp-txt">Creato e collaudato ogni giorno nei saloni <a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a> — il nostro partner fondatore.</div><div class="foot-fam"><span>La famiglia GA</span><a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a><a href="https://everahair.com" target="_blank" rel="noopener">Evera</a><a href="https://colorlab.co.uk" target="_blank" rel="noopener">ColorLab</a></div></div>
+  <div class="foot-partner"><div class="fp-txt">Creato e usato ogni giorno in <a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a> — il nostro partner fondatore.</div><div class="foot-fam"><span>La famiglia GA</span><a href="https://www.gasalons.com" target="_blank" rel="noopener">GA Salons</a><a href="https://everahair.com" target="_blank" rel="noopener">Evera</a><a href="https://colorlab.co.uk" target="_blank" rel="noopener">ColorLab</a></div></div>
   <div class="foot-social"><a href="https://www.instagram.com/salonforge" target="_blank" rel="noopener me">Instagram</a><a href="https://www.youtube.com/@salonforge" target="_blank" rel="noopener me">YouTube</a></div>
-  <div class="foot-base">© 2026 SalonForge · Tre prodotti, un'unica fonte di verità in tempo reale.</div>
+  <div class="foot-base">© 2026 SalonForge · Tre prodotti, un solo sistema connesso.</div>
 </div></footer>
-
 <script>
 (function(){
   var rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
   var hd = document.getElementById('hd');
   addEventListener('scroll',function(){hd.classList.toggle('sc',scrollY>18)},{passive:true});
-
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.14, rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-
   document.querySelectorAll('.viz').forEach(function(el){
     new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ob.unobserve(e.target);}})},{threshold:.3}).observe(el);
-  });
-
-  function countEl(el,target,dur,fmt){
-    var start=performance.now();
-    function step(t){var p=Math.min(1,(t-start)/dur);var e=1-Math.pow(1-p,3);var v=target*e;el.textContent=fmt(v);if(p<1)requestAnimationFrame(step);}
-    requestAnimationFrame(step);
-  }
-  function watchCount(el,run){ new IntersectionObserver(function(es,ob){es.forEach(function(e){if(e.isIntersecting){run();ob.unobserve(e.target);}})},{threshold:.5}).observe(el); }
-  document.querySelectorAll('[data-grams]').forEach(function(el){
-    var t=+el.dataset.grams; watchCount(el,function(){ if(rm){el.textContent=t;return;} countEl(el,t,1600,function(v){return Math.round(v);}); });
-  });
-  document.querySelectorAll('[data-cost]').forEach(function(el){
-    var t=+el.dataset.cost; watchCount(el,function(){ if(rm){el.textContent=t.toFixed(2);return;} countEl(el,t,1600,function(v){return v.toFixed(2);}); });
   });
 })();
 </script>
@@ -824,31 +1051,5 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
  panel.addEventListener('click',function(e){if(e.target.tagName==='A')cl();});
 })();
 </script>
-
-<script>
-(function(){
-  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { return; }
-  var vids = document.querySelectorAll("[data-lazyvid]");
-  if (!("IntersectionObserver" in window)) {
-    for (var i = 0; i < vids.length; i++) { vids[i].play().catch(function(){}); }
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    for (var j = 0; j < entries.length; j++) {
-      if (entries[j].isIntersecting) {
-        var v = entries[j].target;
-        v.play().catch(function(){});
-        io.unobserve(v);
-      }
-    }
-  }, { rootMargin: "200px" });
-  for (var k = 0; k < vids.length; k++) { io.observe(vids[k]); }
-  document.addEventListener("visibilitychange", function(){
-    if (document.hidden) {
-      for (var m = 0; m < vids.length; m++) { vids[m].pause(); }
-    }
-  });
-})();
-</script>
-</body>
+<script>(function(){var v=document.getElementById('sf-film');if(!v)return;var f=false;v.addEventListener('play',function(){if(f)return;f=true;try{if(window.gtag)gtag('event','video_play',{event_category:'trial',event_label:'film-v1'});if(window.fbq)fbq('trackCustom','FilmPlay');}catch(e){}});})();</script><style>@media(max-width:859px){.tr-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(250,247,244,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;flex-direction:column;gap:5px;align-items:center;transition:transform .28s ease}.tr-sticky[data-off]{transform:translateY(110%)}.tr-sticky .btn{width:100%;justify-content:center;font-size:1.0625rem;padding:14px 22px;text-decoration:none}.tr-sticky small{color:#8a8177;font-size:.8125rem}}@media(min-width:860px){.tr-sticky{display:none}}</style><div class="tr-sticky" id="tr-sticky"><a class="btn btn-g" href="#start">Inizia — 60 secondi</a><small>Senza carta · Disdici quando vuoi</small></div><script>(function(){var bar=document.getElementById('tr-sticky'),card=document.getElementById('start');if(!bar||!card)return;bar.querySelector('a').addEventListener('click',function(e){e.preventDefault();try{card.scrollIntoView({behavior:'smooth'});if(window.gtag)gtag('event','skip_to_quiz',{event_category:'trial',event_label:'sticky'});if(window.fbq)fbq('trackCustom','SkipToQuiz');}catch(_){card.scrollIntoView();}});if('IntersectionObserver'in window){new IntersectionObserver(function(en){if(en[0].isIntersecting)bar.setAttribute('data-off','');else bar.removeAttribute('data-off');},{threshold:0.12}).observe(card);}})();</script><script>(function(){try{fetch("https://salonforge-trial.long-moon-952c.workers.dev/stats").then(function(r){return r.json()}).then(function(d){var el=document.getElementById("tr-fam");if(el&&d&&d.family&&d.family>=parseInt(el.getAttribute("data-count")||"0",10))el.textContent=d.family;}).catch(function(){})}catch(e){}})();</script><script src="/assets/formguard.js"></script><script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=sfTurnstileReady&render=explicit" async defer></script></body>
 </html>
