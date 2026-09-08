@@ -857,7 +857,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
   if(!form) return;
   const site = document.getElementById('tr-website');
   // Owners type "www.mysalon.co.uk" — never a scheme. Accept anything, add https:// ourselves.
-  function normaliseSite(v){ v = (v || '').trim(); if (!v) return ''; if (!/^[a-z][a-z0-9+.-]*:\/\//i.test(v)) v = 'https://' + v.replace(/^\/+/, ''); return v; }
+  function normaliseSite(v){ v = (v || '').trim(); if (!v) return ''; if (v.indexOf('@') > -1 || /\s/.test(v)) return null; var host = v.replace(/^[a-z][a-z0-9+.-]*:\/\//i, '').replace(/^\/+/, '').split(/[\/?#]/)[0].replace(/\.$/, ''); if (!/^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i.test(host)) return null; if (!/\.[a-z]{2,}$/i.test(host)) return null; return /^[a-z][a-z0-9+.-]*:\/\//i.test(v) ? v : 'https://' + v.replace(/^\/+/, ''); }
   const err = document.getElementById('tr-err');
   const done = document.getElementById('tr-done');
   const btn = form.querySelector('button[type=submit]');
@@ -889,7 +889,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
 
   form.addEventListener('submit', async function(e){
     e.preventDefault();
-    err.classList.remove('on');
+    err.classList.remove('on'); const siteVal = normaliseSite(site.value); if (siteVal === null) { err.textContent = site.value.indexOf('@') > -1 ? 'That looks like an email address. This box wants your salon\u2019s website \u2014 or leave it empty.' : 'That does not look like a website. Try yoursalon.co.uk \u2014 or leave it empty.'; err.classList.add('on'); site.focus(); return; }
     // One id shared by the browser pixel and the worker's server-side CAPI event,
     // so Meta dedupes them into ONE conversion instead of counting two.
     const eventId = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random());
@@ -901,7 +901,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       fullName: (form.name && form.name.value ? form.name.value.trim() : ''),
       mobile: form.mobile.value.trim(),
       email:  form.email.value.trim(),
-      website: normaliseSite(site.value),
+      website: siteVal,
       // "Your full name" is gone from the form — the worker falls back to the salon
       // name for the NOT NULL column. country + current_system: worker derives them.
       event_id: eventId,
