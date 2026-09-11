@@ -46,6 +46,10 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Can an AI answer your salon's phone and still book into the real diary?](https://salonforge.com/blog/ai-receptionist-real-diary/): How SalonForge's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
 - [After-hours salon calls: what happens when nobody's on the desk](https://salonforge.com/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
 
+## Legal
+- [Terms of service](https://salonforge.com/terms/): the terms for using SalonForge's products, including how payment links, deposits and tips work.
+- [Contact](https://salonforge.com/contact/): how to reach SalonForge, and what to do if your question is about a specific salon booking.
+
 ## Contact
 - Book a demo: https://calendly.com/salonforge-info/30min
 - Email: info@salonforge.com
