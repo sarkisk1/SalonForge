@@ -1013,9 +1013,9 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
   var root=document.querySelector('#hd .nav'); if(!root) return;
   if(root.querySelector('.langsw')) return;
   var cur=(document.documentElement.lang||'en').slice(0,2);
-  var label={en:'English',it:'Italiano',ru:'\u0420\u0443\u0441\u0441\u043a\u0438\u0439',es:'Espa\u00f1ol'};
-  var code={en:'EN',it:'IT',ru:'RU',es:'ES'};
-  var order=['en','it','ru','es'];
+  var label={en:'English',it:'Italiano',ru:'\u0420\u0443\u0441\u0441\u043a\u0438\u0439',es:'Espa\u00f1ol',fr:'Fran\u00e7ais',de:'Deutsch'};
+  var code={en:'EN',it:'IT',ru:'RU',es:'ES',fr:'FR',de:'DE'};
+  var order=['en','it','es','fr','de','ru'];
   var alts={}; alts[cur]=location.pathname;
   document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function(l){
     var h=l.getAttribute('hreflang'); if(h&&h!=='x-default') alts[h]=l.getAttribute('href');
