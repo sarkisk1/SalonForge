@@ -1,4 +1,4 @@
-# https://salonforge.com
+# https://daviana.app
 # Search and AI-answer retrieval crawlers are welcome. Training crawlers are
 # handled by the zone's managed content-signal policy (ai-train=no).
 
@@ -41,4 +41,4 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://salonforge.com/sitemap.xml
+Sitemap: https://daviana.app/sitemap.xml
