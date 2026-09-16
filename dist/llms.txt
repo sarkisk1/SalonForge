@@ -1,13 +1,15 @@
 # Daviana
 
-> Daviana is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, and colour formulation weighed and costed to the gram. Three products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
+> Daviana is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, colour formulation weighed and costed to the gram, a drink to the chair, and the app the team opens daily for takings and pay. Five products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
 
 Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
 
 ## Products
-- [Daviana](https://daviana.app/daviana/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
-- [AI Receptionist](https://daviana.app/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
-- [ColorLab](https://daviana.app/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
+- [Daviana Diary](https://daviana.app/diary/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
+- [Daviana Aria (AI Receptionist)](https://daviana.app/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
+- [Daviana ColorLab](https://daviana.app/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
+- [Daviana Bar](https://daviana.app/bar/): a drink to the chair — posts to the client's bill and deducts stock, instantly, without leaving the floor.
+- [Daviana Performance](https://daviana.app/performance/): the app the team opens daily — live revenue and leaderboards, commission and self-employed settlement, tips and gamified training.
 
 ## Key facts
 - 19,949 colour formulas weighed and costed to date.
@@ -17,7 +19,7 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - Demos are 20 minutes on the phone, run on the salon's own numbers. Ask for one at https://daviana.app/demo/
 
 ## Pricing
-- [Pricing](https://daviana.app/pricing/): priced per product — Daviana £80 a month, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. Take one, take all three. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
+- [Pricing](https://daviana.app/pricing/): priced per product — Daviana Diary £80 a month, the AI Receptionist £60 a month, ColorLab £80 a month. Bar and Performance are included free once you take the Diary. All prices include VAT. Take one, take all five. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
 - [Start a free trial](https://daviana.app/trial/): leave a salon name, a mobile and an email; someone rings within one working day and moves the clients, services and prices across by hand. Free for a month, no card.
 
 ## Questions answered
@@ -43,7 +45,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Why colour formulas get lost when a stylist leaves](https://daviana.app/blog/colour-formulas-when-stylist-leaves/): A client's colour formula usually lives in a stylist's head or a paper card. When that stylist moves on, here is what actually happens to the record.
 - [Colour cost per gram: the number most salons don't know](https://daviana.app/blog/colour-cost-per-gram/): Most salons price colour by the tube and guess the rest. Weighing the bowl to the gram shows what a head of colour actually costs — and where the money goes down the plughole.
 - [One diary, one till, one client record: what all-in-one salon software actually means](https://daviana.app/blog/all-in-one-salon-software-meaning/): Most salon software sold as all-in-one is several tools behind one login, each with its own copy of the client. Here is the test that shows the difference.
-- [Can an AI answer your salon's phone and still book into the real diary?](https://daviana.app/blog/ai-receptionist-real-diary/): How Daviana's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
+- [Can an AI answer your salon's phone and still book into the real diary?](https://daviana.app/blog/ai-receptionist-real-diary/): How Daviana's AI Receptionist books straight into the real Daviana Diary, and why that stops the double-bookings a bolted-on phone service can't.
 - [After-hours salon calls: what happens when nobody's on the desk](https://daviana.app/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
 
 ## Legal
