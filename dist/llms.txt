@@ -1,6 +1,6 @@
-# SalonForge
+# Daviana
 
-> SalonForge is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, and colour formulation weighed and costed to the gram. Three products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
+> Daviana is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, and colour formulation weighed and costed to the gram. Three products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
 
 Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
 
@@ -29,10 +29,10 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 
 ## Comparisons with other salon software
 Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
-- [SalonForge vs Fresha](https://salonforge.com/compare/salonforge-vs-fresha/)
-- [SalonForge vs Phorest](https://salonforge.com/compare/salonforge-vs-phorest/)
-- [SalonForge vs Treatwell](https://salonforge.com/compare/salonforge-vs-treatwell/)
-- [SalonForge vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
+- [Daviana vs Fresha](https://salonforge.com/compare/salonforge-vs-fresha/)
+- [Daviana vs Phorest](https://salonforge.com/compare/salonforge-vs-phorest/)
+- [Daviana vs Treatwell](https://salonforge.com/compare/salonforge-vs-treatwell/)
+- [Daviana vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
 
 ## Journal
 - [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
@@ -43,12 +43,12 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Why colour formulas get lost when a stylist leaves](https://salonforge.com/blog/colour-formulas-when-stylist-leaves/): A client's colour formula usually lives in a stylist's head or a paper card. When that stylist moves on, here is what actually happens to the record.
 - [Colour cost per gram: the number most salons don't know](https://salonforge.com/blog/colour-cost-per-gram/): Most salons price colour by the tube and guess the rest. Weighing the bowl to the gram shows what a head of colour actually costs — and where the money goes down the plughole.
 - [One diary, one till, one client record: what all-in-one salon software actually means](https://salonforge.com/blog/all-in-one-salon-software-meaning/): Most salon software sold as all-in-one is several tools behind one login, each with its own copy of the client. Here is the test that shows the difference.
-- [Can an AI answer your salon's phone and still book into the real diary?](https://salonforge.com/blog/ai-receptionist-real-diary/): How SalonForge's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
+- [Can an AI answer your salon's phone and still book into the real diary?](https://salonforge.com/blog/ai-receptionist-real-diary/): How Daviana's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
 - [After-hours salon calls: what happens when nobody's on the desk](https://salonforge.com/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
 
 ## Legal
-- [Terms of service](https://salonforge.com/terms/): the terms for using SalonForge's products, including how payment links, deposits and tips work.
-- [Contact](https://salonforge.com/contact/): how to reach SalonForge, and what to do if your question is about a specific salon booking.
+- [Terms of service](https://salonforge.com/terms/): the terms for using Daviana's products, including how payment links, deposits and tips work.
+- [Contact](https://salonforge.com/contact/): how to reach Daviana, and what to do if your question is about a specific salon booking.
 
 ## Contact
 - Book a demo: https://calendly.com/salonforge-info/30min
