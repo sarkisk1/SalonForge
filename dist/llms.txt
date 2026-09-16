@@ -29,10 +29,10 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 
 ## Comparisons with other salon software
 Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
-- [Daviana vs Fresha](https://salonforge.com/compare/salonforge-vs-fresha/)
-- [Daviana vs Phorest](https://salonforge.com/compare/salonforge-vs-phorest/)
-- [Daviana vs Treatwell](https://salonforge.com/compare/salonforge-vs-treatwell/)
-- [Daviana vs Booksy](https://salonforge.com/compare/salonforge-vs-booksy/)
+- [Daviana vs Fresha](https://salonforge.com/compare/daviana-vs-fresha/)
+- [Daviana vs Phorest](https://salonforge.com/compare/daviana-vs-phorest/)
+- [Daviana vs Treatwell](https://salonforge.com/compare/daviana-vs-treatwell/)
+- [Daviana vs Booksy](https://salonforge.com/compare/daviana-vs-booksy/)
 
 ## Journal
 - [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.

@@ -60,3 +60,20 @@
 # --delete, so nothing can regenerate it away. Retired with the offer.
 /tools/switching-calculator/ /tools/ 301
 /tools/switching-calculator /tools/ 301
+
+# daviana.app (16 Sep 2026): Sarkis's interim copy used /diary/ for the booking product and
+# daviana-vs-* compare slugs. The product page is /daviana/ (Daviana Booking); compare pages
+# now live at /compare/daviana-vs-*/ and the old salonforge-vs-* slugs come home.
+/diary/ /daviana/ 301
+/diary /daviana/ 301
+/it/diary/ /it/daviana/ 301
+/es/diary/ /es/daviana/ 301
+/ru/diary/ /ru/daviana/ 301
+/compare/salonforge-vs-booksy/ /compare/daviana-vs-booksy/ 301
+/compare/salonforge-vs-fresha/ /compare/daviana-vs-fresha/ 301
+/compare/salonforge-vs-phorest/ /compare/daviana-vs-phorest/ 301
+/compare/salonforge-vs-treatwell/ /compare/daviana-vs-treatwell/ 301
+/bar/* /pricing/ 301
+/performance/* /pricing/ 301
+/blog-seo/* /blog/ 301
+/recruitment-automation/* / 301
