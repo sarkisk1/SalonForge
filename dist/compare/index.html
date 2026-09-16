@@ -30,7 +30,7 @@
 <style>
 :root{
   --white:#FDFBFA; --alt:#F5F1ED; --ink:#1F1C1A; --sec:#726A63; --line:#E7E0D9;
-  --blue:#D97757; --blue-h:#C15F3C; --blue-d:#E8946F;
+  --blue:#B84E2C; --blue-h:#A5431F; --blue-d:#D9874B;
   --sh:38,22,14; /* warm-brown depth base */
   --ui:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
   --container:1080px; --gutter:clamp(22px,6vw,80px); --sec-pad:clamp(72px,10vw,128px);
@@ -346,12 +346,12 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 .pa-rota .d{color:rgba(255,255,255,.38);text-align:center;font-weight:600}
 .pa-rota .nm{color:rgba(255,255,255,.72);font-weight:600;white-space:nowrap}
 .pa-rota .c{height:15px;border-radius:3px;background:rgba(255,255,255,.05)}
-.pa-rota .c.sh{background:linear-gradient(180deg,#E8946F,#c96b45);box-shadow:0 0 8px -3px rgba(232,148,111,.7)}
+.pa-rota .c.sh{background:linear-gradient(180deg,#D9874B,#A5431F);box-shadow:0 0 8px -3px rgba(232,148,111,.7)}
 .pa-stats{display:flex;gap:8px}
 .pa-stat{flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:9px;padding:11px 8px}
 .pa-stat b{display:block;font-size:22px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .pa-stat span{display:block;font-size:7.5px;color:rgba(255,255,255,.5);margin-top:5px;text-transform:uppercase;letter-spacing:.05em}
-.pa-stat.hl b{color:#E8946F}
+.pa-stat.hl b{color:#D9874B}
 .pa-row{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:8px 10px;margin-bottom:6px}
 .pa-row b{font-size:10px;font-weight:600;color:#fff}
 .pa-row span{font-size:8px;color:rgba(255,255,255,.42);margin-left:auto}
@@ -363,7 +363,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 .pa-doc-t span{font-size:8.5px;color:rgba(255,255,255,.5)}
 .pa-sig{margin-top:16px;height:32px;border-top:1px dashed rgba(255,255,255,.2);position:relative}
 .pa-sig svg{position:absolute;left:6px;top:3px;width:92px;height:28px}
-.pa-sig path{fill:none;stroke:#E8946F;stroke-width:2;stroke-linecap:round;stroke-dasharray:230;stroke-dashoffset:230}
+.pa-sig path{fill:none;stroke:#D9874B;stroke-width:2;stroke-linecap:round;stroke-dasharray:230;stroke-dashoffset:230}
 .pa-screen.on[data-k="sign"] .pa-sig path{animation:sigDraw 1.1s var(--reveal) .35s forwards}
 @keyframes sigDraw{to{stroke-dashoffset:0}}
 .pa-stamp{position:absolute;right:12px;bottom:12px;font-size:11px;font-weight:800;letter-spacing:.08em;color:#7fe3ac;border:2px solid #7fe3ac;border-radius:7px;padding:3px 9px;transform:scale(1.6) rotate(-8deg);opacity:0}
@@ -374,7 +374,7 @@ header .btn-g{padding:8px 16px;font-size:.9375rem;font-weight:500}
 /* viz: scale readout (ColorLab) */
 .scale{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:30px}
 .scale .bowl{width:132px;height:108px;border-radius:0 0 66px 66px;border:2px solid var(--line);border-top:none;position:relative;overflow:hidden;background:var(--white)}
-.scale .fill{position:absolute;left:0;right:0;bottom:0;height:14%;background:linear-gradient(180deg,#EFB197,#D97757);transition:height 1.6s var(--reveal)}
+.scale .fill{position:absolute;left:0;right:0;bottom:0;height:14%;background:linear-gradient(180deg,#EFB197,#B84E2C);transition:height 1.6s var(--reveal)}
 .scale.in .fill{height:74%}
 .scale .drop{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:11px;height:14px;border-radius:0 50% 50% 50%;background:var(--blue);rotate:45deg;box-shadow:0 0 12px -1px rgba(217,119,87,.6);animation:dropb 2.4s ease-in-out infinite}
 @keyframes dropb{0%,100%{transform:translateX(-50%) rotate(45deg) translateY(0)}50%{transform:translateX(-50%) rotate(45deg) translateY(4px)}}
@@ -480,7 +480,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
   color:var(--ink);text-decoration:none;white-space:nowrap;
   transition:background .14s,color .14s}
 .navdrop-menu a:hover{background:var(--alt);color:var(--blue)}
-.navlinks a{white-space:nowrap}
+.navlinks a{white-space:nowrap}.hd-login{font-family:var(--ui);font-size:.9375rem;font-weight:500;color:var(--sec);opacity:.9;margin-right:18px;white-space:nowrap;transition:color .2s}.hd-login:hover{color:var(--blue);opacity:1}
 .navlinks{gap:clamp(20px,2.4vw,32px);align-items:center}
 .navdrop > a{display:inline-flex;align-items:center}
 /* Switch to the menu button before the bar gets crowded. The old 900px breakpoint
@@ -808,7 +808,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
     <span class="navdrop"><a href="/pricing/">Pricing<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Pricing</a><a href="/trial/">Start a trial</a><a href="/demo/">Book a demo</a></div></span>
     <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/compare/">Compare</a><a href="/faq/">Questions</a></div></span>
   </nav>
-  <a class="btn btn-g" href="/trial/">Start free trial</a>
+  <a class="hd-login" href="https://my.daviana.app/login">Log in</a><a class="btn btn-g" href="/trial/">Start free trial</a>
 </div></header>
 <nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">Daviana</a><span class="sep">/</span><span aria-current="page">Compare</span></nav><div class="pgw"><header class="blog-hero"><h1>Honest comparisons</h1><p>If you are choosing salon software you deserve a straight answer, including when the answer is someone else. Every fact about another company is sourced from their own published information and dated, and every page says plainly where they are the better choice.</p></header><div class="plist"><a class="pcard" href="/compare/daviana-vs-fresha/"><div><div class="pcard-t">Daviana vs Fresha</div><p>Fresha is a marketplace with software attached; Daviana is software with no marketplace. That single difference drives most of the others, including who owns the client relationship and what a new client costs you.
 </p><div class="pcard-meta"><span class="pcard-tag">Comparison</span><span class="dot">·</span>Sources checked 2026-07-24</div></div><svg class="pcard-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="pcard" href="/compare/daviana-vs-phorest/"><div><div class="pcard-t">Daviana vs Phorest</div><p>Phorest is the established, salon-only system with the deepest multi-site tooling of the group. The honest comparison is maturity and support against colour costing, the phone, and a one-year contract.

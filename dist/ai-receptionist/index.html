@@ -29,7 +29,7 @@
 <style>
 :root{
   --white:#FDFBFA; --alt:#F5F1ED; --ink:#1F1C1A; --sec:#726A63; --line:#E7E0D9;
-  --blue:#D97757; --blue-h:#C15F3C; --blue-d:#E8946F;
+  --blue:#B84E2C; --blue-h:#A5431F; --blue-d:#D9874B;
   --sh:38,22,14; /* warm-brown depth base */
   --ui:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
   --container:1080px; --gutter:clamp(22px,6vw,80px); --sec-pad:clamp(72px,10vw,128px);
@@ -251,7 +251,7 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:linear-gr
   color:var(--ink);text-decoration:none;white-space:nowrap;
   transition:background .14s,color .14s}
 .navdrop-menu a:hover{background:var(--alt);color:var(--blue)}
-.navlinks a{white-space:nowrap}
+.navlinks a{white-space:nowrap}.hd-login{font-family:var(--ui);font-size:.9375rem;font-weight:500;color:var(--sec);opacity:.9;margin-right:18px;white-space:nowrap;transition:color .2s}.hd-login:hover{color:var(--blue);opacity:1}
 .navlinks{gap:clamp(20px,2.4vw,32px);align-items:center}
 .navdrop > a{display:inline-flex;align-items:center}
 /* Switch to the menu button before the bar gets crowded. The old 900px breakpoint
@@ -318,7 +318,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
     <span class="navdrop"><a href="/pricing/">Pricing<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/pricing/">Pricing</a><a href="/trial/">Start a trial</a><a href="/demo/">Book a demo</a></div></span>
     <span class="navdrop"><a href="/blog/">Resources<span class="ncar">▾</span></a><div class="navdrop-menu"><a href="/blog/">Journal</a><a href="/tools/">Calculators</a><a href="/compare/">Compare</a><a href="/faq/">Questions</a></div></span>
   </nav>
-  <a class="btn btn-g" href="/trial/">Start free trial</a>
+  <a class="hd-login" href="https://my.daviana.app/login">Log in</a><a class="btn btn-g" href="/trial/">Start free trial</a>
 </div></header>
 
 <!-- HERO -->
@@ -478,7 +478,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <section class="band cta">
   <div class="cta-glyph" aria-hidden="true">
     <svg viewBox="0 0 760 400" preserveAspectRatio="xMidYMax slice">
-      <defs><linearGradient id="ctaG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#D97757" stop-opacity=".28"/><stop offset="1" stop-color="#D97757" stop-opacity="0"/></linearGradient></defs>
+      <defs><linearGradient id="ctaG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#B84E2C" stop-opacity=".28"/><stop offset="1" stop-color="#B84E2C" stop-opacity="0"/></linearGradient></defs>
       <line x1="380" y1="400" x2="380" y2="40" stroke="url(#ctaG)" stroke-width="2.4"/>
       <g stroke="rgba(0,0,0,.05)" stroke-width="1"><line x1="280" y1="120" x2="480" y2="120"/><line x1="280" y1="220" x2="480" y2="220"/><line x1="280" y1="320" x2="480" y2="320"/></g>
     </svg>
