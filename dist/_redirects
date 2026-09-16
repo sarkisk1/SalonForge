@@ -15,6 +15,7 @@
 
 # The five legacy Astro pages: fabricated testimonials + a fake "demo request
 # submitted" modal posting to an n8n webhook nobody owns. Removed 2026-08-28.
+/virtual-receptionist /ai-receptionist/ 301
 /virtual-receptionist/* /ai-receptionist/ 301
 /booking-bots/* /daviana/ 301
 /website-design/* / 301
