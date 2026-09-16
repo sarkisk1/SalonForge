@@ -705,7 +705,7 @@ footer{background:var(--alt);border-top:1px solid var(--line)}
 .btn{letter-spacing:.02em;padding-left:22px;padding-right:22px}
 .hero .eyebrow{letter-spacing:.14em;font-size:.68rem}
 .hero .actions{flex-wrap:nowrap}
-</style><style>.hd-login{font-family:var(--ui);font-size:.9375rem;font-weight:500;color:var(--sec);opacity:.9;margin-left:16px;margin-right:18px;white-space:nowrap;transition:color .2s}.hd-login:hover{color:var(--blue);opacity:1}@media (max-width:900px){.hd-login{display:none}}</style></head>
+</style><style>.hd-login{font-family:var(--ui);font-size:.9375rem;font-weight:500;color:var(--sec);opacity:.9;margin-left:16px;margin-right:18px;white-space:nowrap;transition:color .2s}.hd-login:hover{color:var(--blue);opacity:1}@media (max-width:900px){.hd-login{display:none}}#hd .wrap{max-width:1240px}</style></head>
 <body>
 
 <!-- ICON SYMBOLS — clean SF-Symbols-style line icons -->
@@ -812,8 +812,41 @@ footer{background:var(--alt);border-top:1px solid var(--line)}
 </section>
 
 
-<!-- PROOF RIBBON -->
-</div>
+<span id="connect" style="display:block;scroll-margin-top:90px"></span>
+
+<!-- SYSTEM HUB -->
+<section class="hub-sec" id="system">
+  <div class="wrap">
+    <div class="hub-head reveal">
+      <p class="eyebrow">The core &middot; read &amp; write</p>
+      <h2>Every product reads &amp; writes the <span class="hl">same</span> record.</h2>
+    </div>
+    <div class="hub reveal d1" id="hub">
+      <svg class="hub-svg" viewBox="0 0 100 50" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <defs>
+          <radialGradient id="spokeGrad" cx="50" cy="25" r="38" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#D9874B" stop-opacity=".98"/>
+            <stop offset=".5" stop-color="#EFB197" stop-opacity=".6"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity=".2"/>
+          </radialGradient>
+        </defs>
+        <line class="conn" data-c="ai"     x1="14" y1="25" x2="50" y2="25"/>
+        <line class="conn" data-c="color"  x1="86" y1="25" x2="50" y2="25"/>
+        <circle class="core-ring" cx="50" cy="25" r="17"/>
+        <circle class="core-ring b" cx="50" cy="25" r="21"/>
+        <line class="hubpulse" data-c="ai"     style="--d:0s"    x1="14" y1="25" x2="50" y2="25"/>
+        <line class="hubpulse" data-c="color"  style="--d:-1.1s" x1="86" y1="25" x2="50" y2="25"/>
+      </svg>
+
+      <div class="hub-node core" style="left:50%;top:50%">
+        <div class="tile"><div class="minidav">
+          <div class="md-top"></div>
+          <div class="md-cols">
+            <div class="md-col"><i class="md-b g" style="--i:.15s;top:4%;height:26%"></i><i class="md-b g" style="--i:.55s;top:36%;height:22%"></i><i class="md-b g" style="--i:.95s;top:64%;height:30%"></i></div>
+            <div class="md-col"><i class="md-b g" style="--i:.3s;top:12%;height:24%"></i><i class="md-b p" style="--i:.75s;top:44%;height:34%"></i></div>
+            <div class="md-col"><i class="md-b p" style="--i:.2s;top:6%;height:26%"></i><i class="md-b g" style="--i:1.05s;top:40%;height:22%"></i><i class="md-b g live" style="top:80%;height:15%"></i></div>
+          </div>
+        </div></div>
         <div><div class="nm">Daviana Booking</div><div class="tag">The spine</div></div>
       </div>
       <div class="hub-node" data-p="ai" style="left:14%;top:50%">
