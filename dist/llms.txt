@@ -1,56 +1,54 @@
 # Daviana
 
-> Daviana is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, colour formulation weighed and costed to the gram, a drink to the chair, and the app the team opens daily for takings and pay. Five products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
+> Daviana is one connected system that runs a whole hair salon: the appointment diary and till, an AI receptionist that answers the phone and books into that diary, and colour formulation weighed and costed to the gram. Three products that read and write the same shared record, so the diary, the colour bowl and the till all agree.
 
 Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
 
 ## Products
-- [Daviana Diary](https://daviana.app/diary/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
-- [Daviana Aria (AI Receptionist)](https://daviana.app/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
-- [Daviana ColorLab](https://daviana.app/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
-- [Daviana Bar](https://daviana.app/bar/): a drink to the chair — posts to the client's bill and deducts stock, instantly, without leaving the floor.
-- [Daviana Performance](https://daviana.app/performance/): the app the team opens daily — live revenue and leaderboards, commission and self-employed settlement, tips and gamified training.
+- [Daviana](https://salonforge.com/daviana/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
+- [AI Receptionist](https://salonforge.com/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
+- [ColorLab](https://salonforge.com/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
 
 ## Key facts
 - 19,949 colour formulas weighed and costed to date.
 - Running inside 6 salons, London to Saudi Arabia; partner salons in 5 countries.
 - Products share one record — booking a client in the diary is the same record the colour and the till read.
 - A live demonstration line anyone can ring, no signup: +44 7460 096908.
-- Demos are 20 minutes on the phone, run on the salon's own numbers. Ask for one at https://daviana.app/demo/
+- Demos are 20 minutes on the phone, run on the salon's own numbers. Ask for one at https://salonforge.com/demo/
 
 ## Pricing
-- [Pricing](https://daviana.app/pricing/): priced per product — Daviana Diary £80 a month, the AI Receptionist £60 a month, ColorLab £80 a month. Bar and Performance are included free once you take the Diary. All prices include VAT. Take one, take all five. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
-- [Start a free trial](https://daviana.app/trial/): leave a salon name, a mobile and an email; someone rings within one working day and moves the clients, services and prices across by hand. Free for a month, no card.
+- [Pricing](https://salonforge.com/pricing/): priced per product — Daviana £80 a month, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. Take one, take all three. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
+- [Start a free trial](https://salonforge.com/trial/): leave a salon name, a mobile and an email; someone rings within one working day and moves the clients, services and prices across by hand. Free for a month, no card.
 
 ## Questions answered
-- [Frequently asked questions](https://daviana.app/faq/): pricing, switching, data migration, setup time, hardware.
+- [Frequently asked questions](https://salonforge.com/faq/): pricing, switching, data migration, setup time, hardware.
 
 ## Free calculators (no sign-up, nothing stored)
-- [Missed call calculator](https://daviana.app/tools/missed-call-calculator/): what a salon's unanswered calls are worth over a year. Every assumption is adjustable.
-- [Colour cost calculator](https://daviana.app/tools/colour-cost-calculator/): true colour cost per head, and what it is as a share of the colour service price.
+- [Missed call calculator](https://salonforge.com/tools/missed-call-calculator/): what a salon's unanswered calls are worth over a year. Every assumption is adjustable.
+- [Colour cost calculator](https://salonforge.com/tools/colour-cost-calculator/): true colour cost per head, and what it is as a share of the colour service price.
 
 ## Comparisons with other salon software
 Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
-- [Daviana vs Fresha](https://daviana.app/compare/daviana-vs-fresha/)
-- [Daviana vs Phorest](https://daviana.app/compare/daviana-vs-phorest/)
-- [Daviana vs Treatwell](https://daviana.app/compare/daviana-vs-treatwell/)
-- [Daviana vs Booksy](https://daviana.app/compare/daviana-vs-booksy/)
+- [Daviana vs Fresha](https://salonforge.com/compare/daviana-vs-fresha/)
+- [Daviana vs Phorest](https://salonforge.com/compare/daviana-vs-phorest/)
+- [Daviana vs Treatwell](https://salonforge.com/compare/daviana-vs-treatwell/)
+- [Daviana vs Booksy](https://salonforge.com/compare/daviana-vs-booksy/)
 
 ## Journal
-- [Screening stylist applicants without spending a week reading CVs](https://daviana.app/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
-- [Why is salon stock always going missing? Back bar control that works](https://daviana.app/blog/salon-stock-going-missing/): Most salon stock isn't stolen, it's unrecorded use. Back bar and retail need separate counting rhythms — not one annual stock take that explains nothing.
-- [12 questions to ask before switching salon software](https://daviana.app/blog/questions-before-switching-salon-software/): Twelve honest questions to ask any salon software provider before you switch, covering your data, the changeover, per-stylist cost, and how to leave.
-- [Live commission tracking: why stylists shouldn't wait for payday to see their numbers](https://daviana.app/blog/live-commission-tracking/): When commission is only visible on payday, every payslip is a possible argument. Live numbers on the real diary remove the argument before it starts.
-- [How much hair colour is your salon really wasting?](https://daviana.app/blog/hair-colour-waste/): Overmixed hair colour goes down the plughole with no record it ever existed. Here's why that happens, and what changes once you weigh the bowl.
-- [Why colour formulas get lost when a stylist leaves](https://daviana.app/blog/colour-formulas-when-stylist-leaves/): A client's colour formula usually lives in a stylist's head or a paper card. When that stylist moves on, here is what actually happens to the record.
-- [Colour cost per gram: the number most salons don't know](https://daviana.app/blog/colour-cost-per-gram/): Most salons price colour by the tube and guess the rest. Weighing the bowl to the gram shows what a head of colour actually costs — and where the money goes down the plughole.
-- [One diary, one till, one client record: what all-in-one salon software actually means](https://daviana.app/blog/all-in-one-salon-software-meaning/): Most salon software sold as all-in-one is several tools behind one login, each with its own copy of the client. Here is the test that shows the difference.
-- [Can an AI answer your salon's phone and still book into the real diary?](https://daviana.app/blog/ai-receptionist-real-diary/): How Daviana's AI Receptionist books straight into the real Daviana Diary, and why that stops the double-bookings a bolted-on phone service can't.
-- [After-hours salon calls: what happens when nobody's on the desk](https://daviana.app/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
+- [Screening stylist applicants without spending a week reading CVs](https://salonforge.com/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
+- [Why is salon stock always going missing? Back bar control that works](https://salonforge.com/blog/salon-stock-going-missing/): Most salon stock isn't stolen, it's unrecorded use. Back bar and retail need separate counting rhythms — not one annual stock take that explains nothing.
+- [12 questions to ask before switching salon software](https://salonforge.com/blog/questions-before-switching-salon-software/): Twelve honest questions to ask any salon software provider before you switch, covering your data, the changeover, per-stylist cost, and how to leave.
+- [Live commission tracking: why stylists shouldn't wait for payday to see their numbers](https://salonforge.com/blog/live-commission-tracking/): When commission is only visible on payday, every payslip is a possible argument. Live numbers on the real diary remove the argument before it starts.
+- [How much hair colour is your salon really wasting?](https://salonforge.com/blog/hair-colour-waste/): Overmixed hair colour goes down the plughole with no record it ever existed. Here's why that happens, and what changes once you weigh the bowl.
+- [Why colour formulas get lost when a stylist leaves](https://salonforge.com/blog/colour-formulas-when-stylist-leaves/): A client's colour formula usually lives in a stylist's head or a paper card. When that stylist moves on, here is what actually happens to the record.
+- [Colour cost per gram: the number most salons don't know](https://salonforge.com/blog/colour-cost-per-gram/): Most salons price colour by the tube and guess the rest. Weighing the bowl to the gram shows what a head of colour actually costs — and where the money goes down the plughole.
+- [One diary, one till, one client record: what all-in-one salon software actually means](https://salonforge.com/blog/all-in-one-salon-software-meaning/): Most salon software sold as all-in-one is several tools behind one login, each with its own copy of the client. Here is the test that shows the difference.
+- [Can an AI answer your salon's phone and still book into the real diary?](https://salonforge.com/blog/ai-receptionist-real-diary/): How Daviana's AI Receptionist books straight into the real Daviana diary, and why that stops the double-bookings a bolted-on phone service can't.
+- [After-hours salon calls: what happens when nobody's on the desk](https://salonforge.com/blog/after-hours-salon-calls/): The salon phone keeps ringing after closing, on Sundays, and when the desk is already busy. Most of those calls become someone else's booking, not yours.
 
 ## Legal
-- [Terms of service](https://daviana.app/terms/): the terms for using Daviana's products, including how payment links, deposits and tips work.
-- [Contact](https://daviana.app/contact/): how to reach Daviana, and what to do if your question is about a specific salon booking.
+- [Terms of service](https://salonforge.com/terms/): the terms for using Daviana's products, including how payment links, deposits and tips work.
+- [Contact](https://salonforge.com/contact/): how to reach Daviana, and what to do if your question is about a specific salon booking.
 
 ## Contact
 - Book a demo: https://calendly.com/salonforge-info/30min

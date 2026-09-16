@@ -1,4 +1,4 @@
-# Legacy Astro URLs from the pre-Daviana site. Explicit 301s: without a code
+# Legacy Astro URLs from the pre-SalonForge site. Explicit 301s: without a code
 # Cloudflare Pages emits 302, which keeps the stale URL canonical in Google.
 /services / 301
 /marketing-automation / 301
@@ -15,48 +15,44 @@
 
 # The five legacy Astro pages: fabricated testimonials + a fake "demo request
 # submitted" modal posting to an n8n webhook nobody owns. Removed 2026-08-28.
+/virtual-receptionist /ai-receptionist/ 301
 /virtual-receptionist/* /ai-receptionist/ 301
-/booking-bots/* /diary/ 301
+/booking-bots/* /daviana/ 301
 /website-design/* / 301
 /blog-seo/* /blog/ 301
 /recruitment-automation/* / 301
 
-# Daviana rebrand (2026-09-15): the diary product moved from /daviana/ to
-# /diary/. Bar and Performance are back as sold products, so their retirement
-# redirects below are removed. /people/ (hiring) stays retired.
-/daviana/ /diary/ 301
-/daviana /diary/ 301
-/it/daviana/ /it/diary/ 301
-/it/daviana /it/diary/ 301
-/es/daviana/ /es/diary/ 301
-/es/daviana /es/diary/ 301
-/ru/daviana/ /ru/diary/ 301
-/ru/daviana /ru/diary/ 301
-
-# Comparison pages renamed with the brand: salonforge-vs-<x> -> daviana-vs-<x>.
-/compare/salonforge-vs-booksy/ /compare/daviana-vs-booksy/ 301
-/compare/salonforge-vs-booksy /compare/daviana-vs-booksy/ 301
-/compare/salonforge-vs-fresha/ /compare/daviana-vs-fresha/ 301
-/compare/salonforge-vs-fresha /compare/daviana-vs-fresha/ 301
-/compare/salonforge-vs-phorest/ /compare/daviana-vs-phorest/ 301
-/compare/salonforge-vs-phorest /compare/daviana-vs-phorest/ 301
-/compare/salonforge-vs-treatwell/ /compare/daviana-vs-treatwell/ 301
-/compare/salonforge-vs-treatwell /compare/daviana-vs-treatwell/ 301
-
-# People came off the site 2026-08-29 (owner): it is an onboarding topic now,
-# not something a stranger is sold. Two lines each — with and without the
-# trailing slash — because that is the convention this file is proven on;
-# splat behaviour on a bare directory is untested here. /people/ (hiring) is a
-# topical mismatch for /pricing/ and Google commonly soft-404s that, so it
-# goes to the homepage instead.
+# Bar, Performance and People came off the site 2026-08-29 (owner): they are
+# onboarding topics now, not things a stranger is sold. Two lines each — with and
+# without the trailing slash — because that is the convention this file is proven
+# on; splat behaviour on a bare directory is untested here.
+# Bar is a paid product, so it goes to the price list. /people/ (hiring) and
+# /performance/ (commission) are topical mismatches for /pricing/ and Google
+# commonly soft-404s those, so they go to the homepage instead.
+/bar/ /pricing/ 301
+/bar /pricing/ 301
 /people/ / 301
 /people / 301
+/performance/ / 301
+/performance / 301
+/it/bar/ /pricing/ 301
+/it/bar /pricing/ 301
 /it/people/ / 301
 /it/people / 301
+/it/performance/ / 301
+/it/performance / 301
+/ru/bar/ /pricing/ 301
+/ru/bar /pricing/ 301
 /ru/people/ / 301
 /ru/people / 301
+/ru/performance/ / 301
+/ru/performance / 301
+/es/bar/ /pricing/ 301
+/es/bar /pricing/ 301
 /es/people/ / 301
 /es/people / 301
+/es/performance/ / 301
+/es/performance / 301
 
 # /tools/switching-calculator/ was built entirely on the retired £3,000
 # free-colour offer, down to its own FAQPage JSON-LD and a 50-250 price slider.
@@ -64,3 +60,20 @@
 # --delete, so nothing can regenerate it away. Retired with the offer.
 /tools/switching-calculator/ /tools/ 301
 /tools/switching-calculator /tools/ 301
+
+# daviana.app (16 Sep 2026): Sarkis's interim copy used /diary/ for the booking product and
+# daviana-vs-* compare slugs. The product page is /daviana/ (Daviana Booking); compare pages
+# now live at /compare/daviana-vs-*/ and the old salonforge-vs-* slugs come home.
+/diary/ /daviana/ 301
+/diary /daviana/ 301
+/it/diary/ /it/daviana/ 301
+/es/diary/ /es/daviana/ 301
+/ru/diary/ /ru/daviana/ 301
+/compare/salonforge-vs-booksy/ /compare/daviana-vs-booksy/ 301
+/compare/salonforge-vs-fresha/ /compare/daviana-vs-fresha/ 301
+/compare/salonforge-vs-phorest/ /compare/daviana-vs-phorest/ 301
+/compare/salonforge-vs-treatwell/ /compare/daviana-vs-treatwell/ 301
+/bar/* /pricing/ 301
+/performance/* /pricing/ 301
+/blog-seo/* /blog/ 301
+/recruitment-automation/* / 301

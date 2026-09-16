@@ -1,9 +1,9 @@
 # Daviana — full content corpus
 
-Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
+Everything below is published at https://salonforge.com and may be quoted with attribution to Daviana.
 
 ## Screening stylist applicants without spending a week reading CVs
-Source: https://daviana.app/blog/screening-stylist-applicants/
+Source: https://salonforge.com/blog/screening-stylist-applicants/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Most salon owners hire between clients. An application lands while you are half-way through a colour, or at the till at close, and it goes into a mental pile marked "later." Later is usually Sunday night. By Sunday night, the days have already slipped by, and the stylist you most wanted to see has already had a trial somewhere that replied earlier in the week.
@@ -78,7 +78,7 @@ A same-day acknowledgement, a short call within the week structured around start
 ---
 
 ## Why is salon stock always going missing? Back bar control that works
-Source: https://daviana.app/blog/salon-stock-going-missing/
+Source: https://salonforge.com/blog/salon-stock-going-missing/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 ## Back bar and retail are two different problems
@@ -134,7 +134,7 @@ Once use is recorded at the moment it happens, there's very little left to recon
 ---
 
 ## 12 questions to ask before switching salon software
-Source: https://daviana.app/blog/questions-before-switching-salon-software/
+Source: https://salonforge.com/blog/questions-before-switching-salon-software/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 A salon changes its booking software about as often as it repaints the front desk — rarely, and usually because something broke rather than because the timing was right. That makes it hard to know what a normal changeover looks like, or which questions actually matter versus which ones a sales conversation is designed to steer you around.
@@ -224,7 +224,7 @@ Ask it of every provider on your shortlist, including us. The salon that asks th
 ---
 
 ## Live commission tracking: why stylists shouldn't wait for payday to see their numbers
-Source: https://daviana.app/blog/live-commission-tracking/
+Source: https://salonforge.com/blog/live-commission-tracking/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Ask a stylist what they are owed this month and most cannot tell you. Not because they do not care about their pay, and not because the commission structure is a secret — because the only place the number exists is a spreadsheet somebody else is holding, and it only gets shown to them once, on payday, as a finished answer.
@@ -287,7 +287,7 @@ Payday becomes uneventful. That is the entire goal. A payslip that confirms what
 ---
 
 ## How much hair colour is your salon really wasting?
-Source: https://daviana.app/blog/hair-colour-waste/
+Source: https://salonforge.com/blog/hair-colour-waste/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 ## Where does the wasted colour actually go?
@@ -339,7 +339,7 @@ We've written separately about [what it actually costs to run colour to the gram
 ---
 
 ## Why colour formulas get lost when a stylist leaves
-Source: https://daviana.app/blog/colour-formulas-when-stylist-leaves/
+Source: https://salonforge.com/blog/colour-formulas-when-stylist-leaves/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Ask a salon owner what happens to a client's colour when their stylist leaves, and most will talk about the client first — will she follow him to his new salon, will she give someone else a try. Fewer stop to ask a smaller, more practical question: does anyone still know what was actually in her bowl.
@@ -393,7 +393,7 @@ Stylists will always move on, and that is fine — salons are built out of peopl
 ---
 
 ## Colour cost per gram: the number most salons don't know
-Source: https://daviana.app/blog/colour-cost-per-gram/
+Source: https://salonforge.com/blog/colour-cost-per-gram/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Ask a salon owner what a cut costs them and they will tell you to the minute: the stylist's time, the chair, the wash. Ask what a head of colour costs them and the answer changes shape. It becomes a shrug, a rough tube count, or a number from the wholesaler's invoice divided by however many colour clients came through that month.
@@ -458,7 +458,7 @@ Most owners are surprised by the size of that gap. Almost nobody is surprised by
 ---
 
 ## One diary, one till, one client record: what all-in-one salon software actually means
-Source: https://daviana.app/blog/all-in-one-salon-software-meaning/
+Source: https://salonforge.com/blog/all-in-one-salon-software-meaning/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Ask what "all-in-one" means and most salon owners can't quite say, only that they were promised it once and the promise didn't fully land. The dashboard looked tidy. The login was single. Six months in, the till still disagreed with the booking tool about who came in on Tuesday.
@@ -499,7 +499,7 @@ Nothing in that left-hand column is a scandal. It is what happens, quietly and b
 
 It looks like nobody re-typing something that already exists somewhere else.
 
-The [AI Receptionist](/ai-receptionist/) books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at [ColorLab](/colorlab/) lands on the till and on the next stylist's screen without a formula being typed out from memory, and the stock it came out of goes down by the gram rather than by a count at the end of the week. Commission is [worked out live from the same diary the desk actually books into](/blog/live-commission-tracking/), not a spreadsheet rebuilt before payday. The client record the [diary](/diary/) holds is the one the colour, the till and the pay run all read.
+The [AI Receptionist](/ai-receptionist/) books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at [ColorLab](/colorlab/) lands on the till and on the next stylist's screen without a formula being typed out from memory, and the stock it came out of goes down by the gram rather than by a count at the end of the week. Commission is [worked out live from the same diary the desk actually books into](/blog/live-commission-tracking/), not a spreadsheet rebuilt before payday. The client record the [diary](/daviana/) holds is the one the colour, the till and the pay run all read.
 
 None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far without a single one living only in someone's notebook.
 
@@ -528,20 +528,20 @@ That is the honest version of what "all-in-one" should mean: not a promise that 
 ---
 
 ## Can an AI answer your salon's phone and still book into the real diary?
-Source: https://daviana.app/blog/ai-receptionist-real-diary/
+Source: https://salonforge.com/blog/ai-receptionist-real-diary/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 ## What happens when two people ring for the same 2pm slot
 
 Two clients call within minutes of each other, both asking for a colour appointment at 2pm on Saturday. If the phone is answered by something sitting outside your diary, it checks a copy of your availability, tells the first caller yes, and moves on — with no way of knowing the same slot was just promised to someone else moments earlier on a different line. Both clients get a text confirming 2pm. One of them turns up to a chair that no longer exists.
 
-Our AI Receptionist doesn't check a copy of anything. It is the diary answering the phone. When it books that 2pm slot, the slot closes in Daviana Diary — the same appointment diary the front desk is looking at on the same screen — at the same second the words are spoken. The next caller, moments later, is offered the very next available slot, because 2pm has already gone. There is no gap for two people to be told the same true thing at the same time, because there is only one diary and only one moment when a slot gets taken.
+Our AI Receptionist doesn't check a copy of anything. It is the diary answering the phone. When it books that 2pm slot, the slot closes in Daviana — the same appointment diary the front desk is looking at on the same screen — at the same second the words are spoken. The next caller, moments later, is offered the very next available slot, because 2pm has already gone. There is no gap for two people to be told the same true thing at the same time, because there is only one diary and only one moment when a slot gets taken.
 
 ## Why "connected to the diary" isn't the same as "part of the diary"
 
 Most phone-answering products for salons sit outside the diary and reach into it to check what's free. That reaching-in takes time, and time is exactly where double-bookings live. A service that connects to your diary is reading a snapshot of it — a few seconds old at best, longer if the connection is slow or the desk just made a change while the client was still on hold. A snapshot is always slightly behind the present moment, and a slightly-behind diary is how one chair ends up promised to two people.
 
-Ours has nothing to reach into, because there isn't a second system on the other end of a connection. The phone, the diary, the till and the front desk's screen are one record. When the AI Receptionist books a client in, that isn't a message sent asking Daviana Diary to hold a slot on its behalf — it's Daviana Diary itself doing the booking, because the AI Receptionist is part of it, not attached to it.
+Ours has nothing to reach into, because there isn't a second system on the other end of a connection. The phone, the diary, the till and the front desk's screen are one record. When the AI Receptionist books a client in, that isn't a message sent asking Daviana to hold a slot on its behalf — it's Daviana itself doing the booking, because the AI Receptionist is part of it, not attached to it.
 
 > A phone service that checks your diary is always answering with a few seconds of yesterday. A phone that is the diary can only ever tell a client what's true this second.
 
@@ -570,7 +570,7 @@ Fewer calls ringing out when the desk is busy with someone in the chair, and few
 ---
 
 ## After-hours salon calls: what happens when nobody's on the desk
-Source: https://daviana.app/blog/after-hours-salon-calls/
+Source: https://salonforge.com/blog/after-hours-salon-calls/
 Published: 2026-07-24  ·  Updated: 2026-07-24
 
 Every salon owner has had this call, or missed it. It comes in at 7:40pm, ten minutes after the last chair was swept for the night. It comes in on a Sunday, when the salon has never opened on a Sunday in its life. It comes in at 11am on a Saturday, when every receptionist on the desk is already talking to someone else, and it rings, and rings, and then it stops.
