@@ -2,7 +2,7 @@
 """Add the PostHog loader to every built page (idempotent)."""
 import sys, pathlib
 DIST = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "dist")
-TAG = '<script defer src="/assets/analytics.js?v=1"></script>'
+TAG = '<script defer src="/assets/analytics.js?v=2"></script>'
 n = 0
 for f in DIST.rglob("index.html"):
     s = f.read_text()
