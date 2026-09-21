@@ -78,3 +78,7 @@ html:not([data-page="index"]) body .wrap,
 html:not([data-page="index"]) body .pgw{width:min(1240px,calc(100% - 96px));max-width:1240px;margin-inline:auto;padding-left:0;padding-right:0;box-sizing:border-box}
 @media(max-width:900px){html:not([data-page="index"]) body .wrap,html:not([data-page="index"]) body .pgw{width:calc(100% - 40px)}}
 @media(max-width:600px){html:not([data-page="index"]) body .wrap,html:not([data-page="index"]) body .pgw{width:calc(100% - 32px)}}
+
+/* Journal posts: the 720px article column only needs side padding once the screen is narrower than the column. */
+@media(max-width:720px){html:not([data-page="index"]) article.art{--gutter:20px}}
+@media(max-width:600px){html:not([data-page="index"]) article.art{--gutter:16px}}
