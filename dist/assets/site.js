@@ -47,8 +47,7 @@ document.querySelectorAll('[data-site-shell="header"]').forEach(host=>{
  matchMedia('(min-width:901px)').addEventListener('change',close);
  window.addEventListener('orientationchange',close);
 });
-let saved='en';try{saved=localStorage.getItem('daviana-language')||'en';}catch{}
-applyLanguage(new URL(location.href).searchParams.get('lang')||saved,{persist:false});
+applyLanguage(new URL(location.href).searchParams.get('lang')||'en',{persist:false});
 window.addEventListener('popstate',()=>applyLanguage(new URL(location.href).searchParams.get('lang')||'en',{persist:false}));
 })();
 

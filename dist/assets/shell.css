@@ -40,3 +40,7 @@ header .wrap.nav{width:calc(100% - 96px);max-width:1240px;padding-inline:0}
 .nav .brand picture{display:block;line-height:0}
 @media(min-width:1101px){.nav .brand{width:180px;flex:0 0 180px}.nav .brand img{width:180px!important;height:46px!important}.nav{gap:24px!important}.navlinks{gap:24px!important}}
 @media(max-width:900px){header .wrap.nav,:host(.content-inset) header .wrap.nav{width:calc(100% - 32px);padding-inline:0}.navlinks{left:0;right:0}}
+
+/* One page measure: inner-page header/footer sit on the same 1240px column as the home page. */
+:host(.content-inset) header .wrap.nav{width:min(1240px,calc(100% - 96px));max-width:1240px;padding-inline:0}
+@media(max-width:900px){:host(.content-inset) header .wrap.nav{width:calc(100% - 32px)}}
