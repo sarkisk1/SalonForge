@@ -23,10 +23,16 @@
       api_host: "https://eu.i.posthog.com", ui_host: "https://eu.posthog.com",
       defaults: "2025-05-24", persistence: "sessionStorage", person_profiles: "identified_only",
       disable_session_recording: true, respect_dnt: true, capture_pageview: true, capture_pageleave: true,
+      before_send: function (ev) { if (ev && ev.event === "$pageview") window.__phPV = true; return ev; },
       autocapture: { dom_event_allowlist: ["click", "submit"], capture_copied_text: false },
       loaded: function (ph) {
         ph.register({ site: "marketing", page_lang: document.documentElement.lang || "en" });
         while (q.length) { var e = q.shift(); ph.capture(e[0], e[1]); }
+        // posthog-js does not raise the first $pageview when it is initialised from this loader
+        // (verified: zero events on a bare page). If the library has not sent one shortly after
+        // load, send it ourselves. The before_send flag stops a double count if a library
+        // update starts doing it again.
+        setTimeout(function () { if (!window.__phPV) ph.capture("$pageview"); }, 1500);
       }
     });
   };
