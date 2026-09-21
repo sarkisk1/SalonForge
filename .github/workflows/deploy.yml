@@ -20,3 +20,18 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=daviana --branch=main
+
+      # Deploy marker: one PostHog event per deploy so traffic changes can be lined up with what
+      # shipped. Uses only the PUBLIC project key already served in dist/assets/analytics.js -
+      # no secret is stored in this repo. Never fails the deploy.
+      - name: Record the deploy in PostHog
+        if: success()
+        continue-on-error: true
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          KEY=$(grep -o 'phc_[A-Za-z0-9]\{30,\}' dist/assets/analytics.js | head -1)
+          jq -n --arg key "$KEY" --arg sha "$GITHUB_SHA" --arg actor "$GITHUB_ACTOR" --arg msg "$(echo "$COMMIT_MSG" | head -1)" \
+            '{api_key:$key, event:"site_deployed", distinct_id:"github-actions",
+              properties:{site:"marketing", sha:$sha, actor:$actor, message:$msg, "$process_person_profile":false}}' \
+          | curl -sS -m 15 -X POST https://eu.i.posthog.com/capture/ -H 'Content-Type: application/json' -d @-

@@ -70,6 +70,9 @@ INSIGHTS = {
  "What people click (top buttons and links)": trends(
      [{"kind": "EventsNode", "event": "$autocapture", "name": "Clicks", "math": "total"}], display="ActionsTable", breakdown="$el_text", limit=25,
      props={"type": "AND", "values": [{"type": "AND", "values": [*SITE_VALUES, prop("$event_type", "click")]}]}),
+ "Site deploys (what shipped, when)": trends(
+     [{"kind": "EventsNode", "event": "site_deployed", "name": "Deploys", "math": "total"}], display="ActionsBar",
+     props={"type": "AND", "values": [{"type": "AND", "values": [prop("site", "marketing")]}]}),
  "Device types": trends([PV()], display="ActionsPie", breakdown="$device_type"),
 }
 
