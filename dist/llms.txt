@@ -5,11 +5,13 @@
 Built and run every day inside six working salons from London to Saudi Arabia, with partner salons across five countries. Not adapted from generic appointment software — written on the salon floor.
 
 ## Products
-- [Daviana Diary](https://daviana.app/diary/): the booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
+- [Daviana Booking, also called Daviana Diary](https://daviana.app/diary/): the salon booking system and booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
 - [Daviana Aria (AI Receptionist)](https://daviana.app/ai-receptionist/): answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
 - [Daviana ColorLab](https://daviana.app/colorlab/): colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
 - [Daviana Bar](https://daviana.app/bar/): a drink to the chair — posts to the client's bill and deducts stock, instantly, without leaving the floor.
 - [Daviana Performance](https://daviana.app/performance/): the app the team opens daily — live revenue and leaderboards, commission and self-employed settlement, tips and gamified training.
+
+- [More tools](https://daviana.app/other-software/): team performance, the salon bar and the free calculators, in one place.
 
 ## Key facts
 - 19,949 colour formulas weighed and costed to date.

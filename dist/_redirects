@@ -64,3 +64,11 @@
 # --delete, so nothing can regenerate it away. Retired with the offer.
 /tools/switching-calculator/ /tools/ 301
 /tools/switching-calculator /tools/ 301
+
+# 2026-09-21 redesign: the diary product is sold as 'Daviana Booking'. The URL
+# stays /diary/ (it is the indexed one); these catch people typing the name.
+/booking /diary/ 301
+/booking/ /diary/ 301
+/booking-system /diary/ 301
+/booking-system/ /diary/ 301
+/aria-demo /ai-receptionist/#call-it 301
