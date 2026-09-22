@@ -24,6 +24,9 @@
     return g && g.apply(this, arguments);
   };
 
+  var CONV = /^(\/(es|fr|de|it|ru)\/)?\/?(trial|demo|pricing|free|contact|welcome)\//.test(location.pathname.replace(/^\/(es|fr|de|it|ru)\//, "/"));
+  var RECORD = CONV || Math.random() < 0.25;
+
   var s = document.createElement("script");
   s.async = true; s.src = "https://eu-assets.i.posthog.com/static/array.js";
   s.onload = function () {
@@ -31,11 +34,17 @@
     posthog.init(KEY, {
       api_host: "https://eu.i.posthog.com", ui_host: "https://eu.posthog.com",
       defaults: "2025-05-24", persistence: "sessionStorage", person_profiles: "identified_only",
-      disable_session_recording: true, respect_dnt: true, capture_pageview: true, capture_pageleave: true,
+      // Session replay (masked inputs — phone/email/name are never recorded): every visit to a
+      // conversion page (trial/demo/pricing/free/contact, any language), 1 in 4 elsewhere, so the
+      // replay quota lasts the month. Heatmaps ride on the same stream.
+      disable_session_recording: !RECORD, respect_dnt: true, capture_pageview: true, capture_pageleave: true,
+      session_recording: { maskAllInputs: true, maskTextSelector: "input, textarea, [data-ph-mask]", recordCrossOriginIframes: false },
+      enable_heatmaps: true,
       before_send: function (ev) { if (ev && ev.event === "$pageview") window.__phPV = true; return ev; },
       autocapture: { dom_event_allowlist: ["click", "submit"], capture_copied_text: false },
       loaded: function (ph) {
         ph.register({ site: "marketing", page_lang: document.documentElement.lang || "en" });
+        try { window.__phId = ph.get_distinct_id(); } catch (e) {}   // sent with form posts so the worker can stitch server-side events to this browser
         while (q.length) { var e = q.shift(); ph.capture(e[0], e[1]); }
         // posthog-js does not raise the first $pageview when it is initialised from this loader
         // (verified: zero events on a bare page). If the library has not sent one shortly after

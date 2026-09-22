@@ -767,7 +767,7 @@ o.landing_url=location.href.slice(0,512);
 sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 }catch(e){}})();
 </script><link rel="alternate" hreflang="en" href="https://daviana.app/trial/"><link rel="alternate" hreflang="it" href="https://daviana.app/it/trial/"><link rel="alternate" hreflang="es" href="https://daviana.app/es/trial/"><link rel="alternate" hreflang="fr" href="https://daviana.app/fr/trial/"><link rel="alternate" hreflang="de" href="https://daviana.app/de/trial/"><link rel="alternate" hreflang="x-default" href="https://daviana.app/trial/"><style>body{padding-top:0!important} [data-site-shell="header" class="content-inset"]{position:sticky;top:0;z-index:100} .reveal,.viz{opacity:1!important;transform:none!important}</style><link href="/assets/mobile.css?v=w2" rel="stylesheet"/><script defer src="/assets/translations.js?v=1"></script><script defer src="/assets/site.js?v=3"></script>
-<script defer src="/assets/analytics.js?v=3"></script>
+<script defer src="/assets/analytics.js?v=4"></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1011,7 +1011,8 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       event_id: eventId,
       fbp: ck('_fbp'),
       fbc: ck('_fbc'),
-      current_system: (window.SF_QUIZ ? window.SF_QUIZ() : '')
+      current_system: (window.SF_QUIZ ? window.SF_QUIZ() : ''),
+      ph_id: (window.__phId || '')
     });
     btn.disabled = true; btn.textContent = 'Invio in corso…';
     try {
@@ -1037,6 +1038,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       done.classList.add('on');
       done.scrollIntoView({behavior:'smooth', block:'center'});
     } catch(ex) {
+      try { if (window.gtag) gtag('event', 'lead_submit_failed', {event_category: 'trial', event_label: String(ex && ex.message || 'error').slice(0, 80)}); } catch (_) {}
       btn.disabled = false; btn.textContent = BTN_LABEL;
       err.textContent = (ex && ex.userMessage) || "Qualcosa è andato storto nell'invio. Riprova, oppure scrivi a hello@salonforge.com e ti configuriamo noi.";
       err.classList.add('on');
