@@ -62,6 +62,7 @@ INSIGHTS = {
      ["Any page", "Opened pricing", "Submitted plan"]),
  "Leads by form (daily)": trends([{"kind": "EventsNode", "event": "lead_submitted", "name": "lead_submitted", "math": "total"}],
                                 display="ActionsBar", breakdown="form"),
+ "Form errors (daily) — a submit that never reached the worker": trends([{"kind": "EventsNode", "event": "lead_submit_failed", "name": "lead_submit_failed", "math": "total"}], breakdown="form"),
  "Top pages (30 days)": trends([PV()], display="ActionsTable", breakdown="$pathname", limit=25),
  "Where visitors come from (referrer)": trends(
      [PV()], display="ActionsTable", breakdown="$referring_domain", limit=20,
