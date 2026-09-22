@@ -53,6 +53,10 @@ INSIGHTS = {
  "Trial funnel: visit → Trial page → submitted": funnel(
      [("$pageview", None), ("$pageview", path_is("/trial/")), ("lead_submitted", [prop("form", "trial")])],
      ["Any page", "Opened trial page", "Submitted trial"]),
+ "Trial quiz, step by step (any /trial/ page)": funnel(
+     [("$pageview", [prop("$pathname", "/trial/", "icontains")]), ("quiz_start", None), ("quiz_step", None), ("lead_submitted", [prop("form", "trial")])],
+     ["Opened a trial page", "Started the quiz", "Answered a question", "Submitted trial"]),
+ "Quiz steps reached (daily)": trends([{"kind": "EventsNode", "event": "quiz_step", "name": "quiz_step", "math": "total"}], breakdown="label"),
  "Pricing funnel: visit → Pricing page → plan submitted": funnel(
      [("$pageview", None), ("$pageview", path_is("/pricing/")), ("lead_submitted", [prop("form", "pricing")])],
      ["Any page", "Opened pricing", "Submitted plan"]),
