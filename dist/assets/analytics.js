@@ -11,7 +11,16 @@
   // that instead of editing five form handlers: same trigger, so counts line up with Ads.
   var g = window.gtag;
   window.gtag = function () {
-    try { if (arguments[0] === "event" && arguments[1] === "generate_lead") cap("lead_submitted", { form: (arguments[2] || {}).event_category }); } catch (e) {}
+    try {
+      if (arguments[0] === "event") {
+        var name = arguments[1], p = arguments[2] || {};
+        if (name === "generate_lead") cap("lead_submitted", { form: p.event_category });
+        // Every other on-page event the forms already raise (quiz_start, quiz_step, quiz_skip,
+        // skip_to_quiz, video_play, recall_requested; 'conversion' is the Ads duplicate of
+        // generate_lead) is mirrored so the trial funnel can be read step by step in PostHog.
+        else if (name !== "conversion") cap(name, { form: p.event_category, label: p.event_label });
+      }
+    } catch (e) {}
     return g && g.apply(this, arguments);
   };
 
