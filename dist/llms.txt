@@ -37,6 +37,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Daviana vs Phorest](https://daviana.app/compare/daviana-vs-phorest/)
 - [Daviana vs Treatwell](https://daviana.app/compare/daviana-vs-treatwell/)
 - [Daviana vs Booksy](https://daviana.app/compare/daviana-vs-booksy/)
+- [Daviana vs Timely](https://daviana.app/compare/daviana-vs-timely/)
 
 ## Journal
 - [Screening stylist applicants without spending a week reading CVs](https://daviana.app/blog/screening-stylist-applicants/): Applications arrive all week and get read on Sunday night, by which point the best candidates have taken another job. A faster way to screen.
