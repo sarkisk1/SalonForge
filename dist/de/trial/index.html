@@ -784,7 +784,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <header id="hd"><div class="wrap nav"><a class="brand" href="/"><img class="bmark" src="/assets/daviana-mark.svg" alt="" width="29" height="29"><img class="bword" src="/assets/daviana-wordmark.svg" alt="Daviana" height="26"></a></div></header><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><style>#start{scroll-margin-top:96px}.tr-hero h1{margin:4px 0 14px}@media(max-width:859px){.tr-hero h1{font-size:2rem}}</style><h1>Einen Monat gratis, ohne Karte.</h1><p class="sub">Tragen Sie unten Ihre Handynummer ein. Wir schicken einen Code, Aria ruft Sie zurück, und dann richten wir Ihren Salon ein — von Hand, an einem Werktag.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card" id="start"><p class="tr-trust" style="margin:0 0 16px;text-align:center;font-size:.875rem;color:#8a8177">60 Sekunden · Ohne Karte · Jederzeit kündbar · <span id="tr-fam" data-count="6">6</span> Salons in der Daviana-Familie</p><div class="tr-err" id="tr-err" role="alert"></div><style>
 .qz-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
 .qz-bar{flex:1;height:6px;border-radius:3px;background:rgba(20,12,8,.08);overflow:hidden}
-.qz-bar i{display:block;height:100%;width:25%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
+.qz-bar i{display:block;height:100%;width:20%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
 .qz-count{font-size:13px;color:var(--sec);white-space:nowrap}
 .qz-step{display:none;min-height:298px}
 .qz-step.on{display:block;animation:qzin .25s ease}
@@ -795,8 +795,13 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 .qz-opt.sel{border-color:var(--g,#c96f4a);background:rgba(201,111,74,.07);font-weight:600}
 .qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
 .qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
-</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 of 4</span></div>
-<div class="qz-step on" data-q="phone"><p class="qz-q">14 Uhr, Ihre Hände stecken in Folien — und das Telefon klingelt. Was passiert dann wirklich?</p>
+</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 of 5</span></div>
+<div class="qz-step on" data-q="interest"><p class="qz-q">Wofür interessieren Sie sich am meisten?</p>
+<button type="button" class="qz-opt" data-v="aria">Aria — die KI-Rezeptionistin</button>
+<button type="button" class="qz-opt" data-v="booking">Kalender und Kasse</button>
+<button type="button" class="qz-opt" data-v="colorlab">ColorLab — Farbe auf der Rechnung</button>
+<button type="button" class="qz-opt" data-v="all">Alle drei</button></div>
+<div class="qz-step" data-q="phone"><p class="qz-q">14 Uhr, Ihre Hände stecken in Folien — und das Telefon klingelt. Was passiert dann wirklich?</p>
 <button type="button" class="qz-opt" data-v="rings out">Es klingelt ins Leere</button>
 <button type="button" class="qz-opt" data-v="someone drops everything">Jemand lässt alles liegen und geht ran</button>
 <button type="button" class="qz-opt" data-v="voicemail">Mailbox — wir rufen später zurück</button>
@@ -818,23 +823,25 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
 count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
+var NSTEPS=steps.length,LAST=NSTEPS-1;
 var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Aria answers every one — last step: where do we send your free month?',
 'someone drops everything':'Nobody should drop a colour for the phone. Aria answers it for you — last step: where do we send your free month?',
 'voicemail':'Most callers never leave a voicemail — they ring the next salon. Aria answers live — where do we send your free month?',
 'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?',
 'reception picks up':'Lovely — then Aria is your receptionist\u2019s cover: lunch, evenings, and the second line ringing. Last step: where do we send your free month?'};
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
-fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
-if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
+fill.style.width=((n+1)*(100/NSTEPS))+'%';count.textContent=(n+1)+' of '+NSTEPS;back.hidden=(n===0);
+if(n===LAST){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
 setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
 try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
 steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
 if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
 s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
 ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
-if(idx<3)setTimeout(function(){show(idx+1)},180);})});
-back.addEventListener('click',function(){if(cur>0)show(cur-1)});var skip=document.getElementById('qz-skip');if(skip)skip.addEventListener('click',function(){show(3);skip.style.display='none';try{if(window.gtag)gtag('event','quiz_skip',{event_category:'trial'})}catch(e){}});
-window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+if(idx<LAST)setTimeout(function(){show(idx+1)},180);})});
+back.addEventListener('click',function(){if(cur>0)show(cur-1)});var skip=document.getElementById('qz-skip');if(skip)skip.addEventListener('click',function(){show(LAST);skip.style.display='none';try{if(window.gtag)gtag('event','quiz_skip',{event_category:'trial'})}catch(e){}});
+window.SF_INTEREST=function(){return ans.interest||''};
+window.SF_QUIZ=function(){var p=['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')];if(ans.interest)p.push('interest:'+ans.interest);return p.join(' · ')};
 })();</script><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>Geschafft.</h2><p>Schauen Sie auf Ihr Telefon: Wir haben Ihnen gerade einen sechsstelligen Code geschickt. Antworten Sie auf diese SMS mit dem Code, und Aria ruft Sie an (8–21 Uhr). Einer von uns richtet Ihren Salon dann an einem Werktag ein — halten Sie Ihre Kundenliste und Ihre Preise bereit, wir übertragen sie für Sie; bis dahin gibt es nichts zu tun.</p><p class="tr-call">Keine SMS nach ein paar Minuten? Schreiben Sie an hello@salonforge.com und wir rufen Sie an.</p></div></div></div><style>
 .tr-next{max-width:760px;margin:clamp(34px,5vw,54px) auto 0;padding:0 16px}
 .tr-next h2,.tr-what h2{font-size:clamp(1.35rem,3vw,1.75rem);letter-spacing:-.015em;margin-bottom:6px}
@@ -924,6 +931,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       fbp: ck('_fbp'),
       fbc: ck('_fbc'),
       current_system: (window.SF_QUIZ ? window.SF_QUIZ() : ''),
+      interest: (window.SF_INTEREST ? window.SF_INTEREST() : ''),
       ph_id: (window.__phId || '')
     });
     btn.disabled = true; btn.textContent = 'Sending…';
