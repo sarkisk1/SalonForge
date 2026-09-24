@@ -72,3 +72,10 @@
 /booking-system /diary/ 301
 /booking-system/ /diary/ 301
 /aria-demo /ai-receptionist/#call-it 301
+
+# fr/de have trial landing pages only (Meta ads), no homepage yet. Send the
+# bare language roots home instead of a 404. Temporary until /fr/ and /de/ exist.
+/fr/ / 302
+/fr / 302
+/de/ / 302
+/de / 302
