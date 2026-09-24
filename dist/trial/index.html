@@ -1063,7 +1063,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
 <script>(function(){var v=document.getElementById('sf-film');if(!v)return;var f=false;v.addEventListener('play',function(){if(f)return;f=true;try{if(window.gtag)gtag('event','video_play',{event_category:'trial',event_label:'film-v1'});if(window.fbq)fbq('trackCustom','FilmPlay');}catch(e){}});})();</script>
 <script>(function(){var bar=document.getElementById('tr-sticky'),card=document.getElementById('start');if(!bar||!card)return;bar.querySelector('a').addEventListener('click',function(e){e.preventDefault();try{card.scrollIntoView({behavior:'smooth'});if(window.gtag)gtag('event','skip_to_quiz',{event_category:'trial',event_label:'sticky'});if(window.fbq)fbq('trackCustom','SkipToQuiz');}catch(_){card.scrollIntoView();}});if('IntersectionObserver'in window){new IntersectionObserver(function(en){if(en[0].isIntersecting)bar.setAttribute('data-off','');else bar.removeAttribute('data-off');},{threshold:0.12}).observe(card);}})();</script>
 <script>(function(){try{fetch("https://salonforge-trial.long-moon-952c.workers.dev/stats").then(function(r){return r.json()}).then(function(d){var el=document.getElementById("tr-fam");if(el&&d&&d.family&&d.family>=parseInt(el.getAttribute("data-count")||"0",10))el.textContent=d.family;}).catch(function(){})}catch(e){}})();</script>
-<script src="/assets/formguard.js"></script>
+<script src="/assets/formguard.js"></script><script src="/assets/leadfix.js?v=1"></script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=sfTurnstileReady&render=explicit" async defer></script>
 <script>
 /* 15 Sep 2026: the English trial page now takes ads from Ireland, Australia and the US.
