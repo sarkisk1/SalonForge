@@ -3,8 +3,8 @@
    Country comes from Cloudflare (/cdn-cgi/trace, same origin, no cookie).
    Only our own list prices are swapped (£80, £60, £220) plus the live total
    on /pricing/. Not loaded on /compare/ pages: those set our prices against
-   competitors' UK £ prices, and a mixed €/£ table would mislead. Also
-   on /pricing/. Worked examples, calculators and competitor prices stay £.
+   competitors' UK £ prices, and a mixed €/£ table would mislead. Worked
+   examples and calculators stay £.
    Test with ?currency=eur or ?currency=gbp. */
 (function () {
   var EU = 'AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO CH AD MC SM VA ME XK'.split(' ');
