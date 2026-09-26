@@ -2,6 +2,256 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
+## What Daviana is
+
+Daviana is one connected system that runs a whole hair salon. Its five products read and write the same shared client record, so the diary, the colour bowl and the till all agree. It is built and run every day inside six working salons, from London to Saudi Arabia.
+
+- **Daviana Diary** (https://daviana.app/diary/): salon booking software. The appointment diary, till, client records, per-stylist pricing, rota and online booking in one system. Every other Daviana product reads and writes the same client record. £80 a month.
+- **Daviana AI Receptionist, Aria** (https://daviana.app/ai-receptionist/): a real AI voice that answers the salon phone when the desk can't. It handles the whole visit and books it straight into the Daviana diary, even while the salon sleeps. £60 a month.
+- **Daviana ColorLab** (https://daviana.app/colorlab/): colour management software for hair salons. A Bluetooth precision scale weighs every bowl, a formula can start from a photo, and the true cost of every gram is tied to the booking. £80 a month.
+- **Daviana Bar** (https://daviana.app/bar/): drinks ordering for the salon floor. Each drink posts to the client's bill and deducts the stock, to the ingredient, the instant you tap. Included free with the Diary.
+- **Daviana Performance** (https://daviana.app/performance/): the team app for salon staff. Live revenue, leaderboards, commission, self-employed settlement and tips for every stylist, read straight from the sales the salon already rang up. Included free with the Diary.
+
+All prices include VAT. No commission on bookings, no per-booking charge, no lock-in. Full details: https://daviana.app/pricing/ . Free trial for a month, no card: https://daviana.app/trial/
+
+---
+
+## How should a UK salon structure stylist commission?
+
+Source: https://daviana.app/blog/salon-commission-structure/
+Published: 2026-09-24  ·  Updated: 2026-09-24
+
+Most UK salons pay employed stylists in one of three ways: a flat percentage of service takings, a basic wage plus commission on takings above a target, or tiered rates that rise as takings rise. Pay retail at its own rate, agree up front whether product cost comes off, and check every pay period still clears minimum wage.
+
+### The short answer
+
+- There are three common structures: a flat percentage of service takings, a basic wage plus commission above a target, and tiered rates. Each moves the risk of a quiet month to a different person.
+- Run your own last two months through each structure before you choose. The wage cost as a share of takings is the number that decides whether it works.
+- Pay retail at a separate rate. Mixing it into service takings hides whether anyone is actually selling.
+- Commission counts towards minimum wage but tips do not, and the check is made each pay period, not averaged over the year.
+- Write the structure down, including whether product cost comes off, before a stylist starts. Most commission disputes come from a rule nobody wrote down.
+
+Commission is the part of salon pay that causes the most arguments, and most of those arguments start with a structure that was agreed verbally years ago and never written down. Picking a structure deliberately, and testing it on your own numbers first, saves a lot of awkward conversations later.
+
+This guide is for employed stylists. Self-employed and chair-rental stylists are a different arrangement, covered briefly near the end.
+
+## What are the main salon commission structures?
+
+Nearly every UK salon uses one of these three, sometimes with retail commission added on top.
+
+| Structure | How it works | Who carries a quiet month |
+| --- | --- | --- |
+| Flat percentage | The stylist earns a fixed share of every pound of service takings, with no basic wage. | The stylist, until pay falls below minimum wage, then the salon has to top up. |
+| Basic plus commission above a target | A fixed basic wage, plus a percentage of service takings above a monthly target. | The salon. The basic is paid whatever the diary looks like. |
+| Tiered | The rate rises in steps as takings pass set thresholds, for example one rate on the first slice and a higher rate above it. | Shared. Busy stylists earn more per pound, quiet months pay the lower rate. |
+
+None of them is right for every salon. A new stylist building a column usually needs the security of a basic. A senior stylist with a full diary often prefers a structure where a busy month is visibly rewarded.
+
+## How do you work out which structure you can afford? A worked example
+
+Take one stylist and write down four figures from your own records:
+
+- service takings in a busy month,
+- service takings in a quiet month,
+- retail sales in a typical month,
+- the hours they are contracted to work in a month.
+
+Say the busy month is £7,500, the quiet month is £5,000, retail is £500 and hours are 160. Here are three structures, run on both months, before retail:
+
+| Structure | Busy month (£7,500) | Quiet month (£5,000) |
+| --- | --- | --- |
+| A: 30% of service takings, no basic | £2,250 (30% of takings) | £1,500 (30%), about £9.38 an hour |
+| B: £2,200 basic plus 15% above £6,000 | £2,200 + £225 = £2,425 (32%) | £2,200 (44%) |
+| C: 25% on the first £5,000, 35% above it | £1,250 + £875 = £2,125 (28%) | £1,250 (25%), about £7.81 an hour |
+
+The busy month looks similar across all three. The quiet month is where they split. Structures A and C pay well under the National Living Wage for 160 hours, so the salon has to top the stylist up anyway, and the percentage in brackets understates what the month really cost. Structure B is safe for the stylist but costs the salon 44% of takings in a slow month.
+
+Add retail at, say, 10%, and the stylist earns another £50 in every structure. Keeping it separate means you can see who is selling, which a single blended rate hides.
+
+Now replace the example figures with yours. The question to answer is simple: across a busy and a quiet month, what share of service takings goes on this stylist's pay, and can the salon live with the worse of the two?
+
+## What goes wrong with tiered commission?
+
+Tiers are popular because they reward a full column, but one detail decides whether they work: does the higher rate apply only to takings above the threshold, or to everything once the threshold is passed?
+
+In the example above, 35% applies only to the slice above £5,000. If instead the whole month jumped to 35% once the stylist passed £5,000, a stylist on £4,990 would earn £1,247.50 and one on £5,010 would earn £1,753.50. That is £506 more pay for £20 more takings. Cliff edges like that encourage moving appointments between months and leave the stylist who falls just short feeling cheated. If you use tiers, apply each rate to its own slice and write that down.
+
+## Should commission come off takings before or after product cost?
+
+Some salons pay commission on gross service takings. Others take the cost of the colour used off first, on the basis that a stylist who overmixes should not be paid on product that went down the sink.
+
+Either can be fair, but the second only works if the cost is measured. In the busy month above, if £600 of colour is deducted first under structure A, commission falls from £2,250 to £2,070. A stylist will accept that £180 if they can see what was used on each client. They will not accept a flat amount knocked off every colour service. Weighing the bowl to the gram, which is what [ColorLab](https://daviana.app/colorlab/) does, turns the deduction into a record rather than a guess, and our [colour cost calculator](https://daviana.app/tools/colour-cost-calculator/) shows what a typical head of colour costs you before you decide.
+
+## Does commission have to meet minimum wage?
+
+Yes, for employed stylists. [GOV.UK guidance on calculating the minimum wage](https://www.gov.uk/guidance/calculating-the-minimum-wage/calculating-the-minimum-wage) says sales commission and other performance-related pay count towards minimum wage pay, but tips, gratuities and service charges do not. The check is made over each pay reference period, which is never longer than a month. A great December does not make up for a thin January.
+
+Holiday pay is the other rule salons often miss. [GOV.UK guidance on holiday pay](https://www.gov.uk/holiday-entitlement-rights/holiday-pay-the-basics) says at least 4 weeks of statutory holiday for regular-hours workers must be paid at the normal rate of pay, and the normal rate includes commission. A stylist paid mostly in commission should not see their pay collapse when they take a week off.
+
+This is a practical summary, not legal or tax advice. Check the current minimum wage rates for each stylist's age on GOV.UK, and ask an accountant or employment adviser if you are unsure.
+
+## What about self-employed and chair-rental stylists?
+
+Self-employed stylists are usually not paid commission by the salon at all. They keep their own takings and pay the salon rent, or a share, for the chair. Whether someone is genuinely self-employed depends on how they actually work, not on what the contract calls them, and HMRC has a [tool to check employment status](https://www.gov.uk/guidance/check-employment-status-for-tax). Many salons run both arrangements side by side, which is exactly where a spreadsheet starts to struggle.
+
+## What should your salon software do for you?
+
+Whatever structure you pick, it has to be calculated the same way every month without someone rebuilding it by hand. Things worth checking in any system:
+
+- Can you set a service rate, a separate retail rate, and override the rate for particular service categories?
+- Does it support tiers, and are they applied slice by slice?
+- Is commission worked out from the same diary and till the desk uses, not an export?
+- Can employed commission and self-employed settlement be handled side by side?
+
+In [Daviana Performance](https://daviana.app/performance/), commission levels combine a flat service rate, tiered retail commission and category overrides, and a running commission ledger builds itself from every sale, with employed rates and self-employed settlement side by side. Stylists see their own numbers as the month goes, which is why we think [live commission tracking](https://daviana.app/blog/live-commission-tracking/) matters as much as the structure itself.
+
+## Questions salon owners ask
+
+### What is a normal commission rate for a hairdresser in the UK?
+
+There is no single standard rate. It depends on whether you also pay a basic wage, whether product cost comes off first, and what share of service takings your salon can afford to spend on wages. Work backwards from that share using your own takings, rather than copying another salon's percentage.
+
+### Does commission count towards the National Minimum Wage?
+
+Yes. GOV.UK guidance says sales commission and other performance-related pay count towards minimum wage pay. Tips, gratuities and service charges do not. The check is made over each pay reference period, which is never longer than a month, so a strong month cannot cover for a quiet one.
+
+### Should holiday pay include commission?
+
+For employed stylists, yes. GOV.UK guidance says at least 4 weeks of statutory holiday for regular-hours workers must be paid at the normal rate of pay, and the normal rate includes commission. For irregular-hours workers, all statutory leave is paid at the normal rate.
+
+### Can a salon deduct product costs before paying commission?
+
+Yes, if it is written into the stylist's pay terms before they start and the pay still clears minimum wage. It is only fair when the cost is measured, for example by weighing colour to the gram, rather than a flat guess taken off every colour service.
+
+---
+
+## What should a salon no-show policy say? A UK template you can copy
+
+Source: https://daviana.app/blog/salon-no-show-policy/
+Published: 2026-09-22  ·  Updated: 2026-09-22
+
+A good salon no-show policy says four things in plain words: how much notice a client must give to cancel, what happens if they give less, what happens if they do not turn up, and which bookings need a deposit. Keep it short, show it before the client books, and never charge more than the empty chair actually costs you.
+
+### The short answer
+
+- A no-show policy only works if the client saw it before they booked. A rule they first hear about when you charge them is an argument, not a policy.
+- Four parts are enough: the notice window, the late cancellation charge, the no-show charge, and which services need a deposit.
+- Take deposits on the long, expensive bookings that are hard to refill at short notice, not on every trim.
+- In the UK a cancellation charge has to be fair and transparent. A fee well above what you actually lose is at risk of being unenforceable.
+- Enforce it the same way for everyone, but give the desk one discretionary waiver per client for genuine emergencies.
+
+Every salon owner knows the feeling: a three-hour colour slot at 10am, a stylist ready, a bowl about to be mixed, and nobody walks in. The chair time is gone, and unlike a product on a shelf, it cannot be sold tomorrow.
+
+A written no-show policy will not stop every missed appointment. What it does is turn an awkward conversation into a rule the client already agreed to, and give your desk something to point at.
+
+## What should a salon no-show policy include?
+
+Keep it to four parts. Anything longer does not get read, and a policy the client did not read is hard to enforce.
+
+1. **The notice window.** How many hours before the appointment a client can cancel or move it without charge. 24 or 48 hours is typical.
+2. **The late cancellation charge.** What happens if they cancel inside the window. Usually the deposit is kept, or a percentage of the booking is charged.
+3. **The no-show charge.** What happens if they simply do not arrive. Usually the same as a late cancellation, sometimes higher.
+4. **Which bookings need a deposit.** A clear rule, such as all colour services or any booking over a set value.
+
+Add one line on lateness (for example, arriving more than 15 minutes late may mean a shorter service or rebooking) and one line on how to cancel. That is the whole policy.
+
+## Is there a salon no-show policy template I can copy?
+
+Yes. Edit the numbers in square brackets to suit your salon, then put it on your booking page, in your confirmation email and on the wall at reception.
+
+> **Cancellations and missed appointments**
+>
+> We keep your time just for you, so we ask for at least [48] hours’ notice if you need to cancel or move your appointment. You can do this [online, by phone or by replying to your confirmation].
+>
+> A deposit of [25]% is taken when you book any [colour service / appointment of £100 or more]. It comes off your bill on the day.
+>
+> If you cancel with less than [48] hours’ notice, your deposit is kept. If there is no deposit on your booking, a charge of [50]% of the service price may apply.
+>
+> If you miss your appointment without letting us know, your deposit is kept and we may ask for a deposit on future bookings.
+>
+> If you are running more than [15] minutes late, please call us. We will do our best, but we may need to shorten your service or rebook you.
+>
+> We understand emergencies happen. Please talk to us.
+
+The last line matters more than it looks. It tells the client the policy is about protecting chair time, not about catching them out, and it gives the desk room to use judgement.
+
+## How much deposit should a salon take? A worked example
+
+Start from your own numbers, not from what another salon charges. Take last month and write down three figures:
+
+- the number of no-shows,
+- the average value of a booking that did not turn up,
+- the number of late cancellations the desk could not refill, and their average value.
+
+Say you had 12 no-shows averaging £85, and 6 unfilled late cancellations averaging £70. That is 12 × £85 = £1,020 plus 6 × £70 = £420, so £1,440 of chair time lost in a month, or £17,280 over a year if the month is typical.
+
+Now look at where that money sits. In most salons it is concentrated in the long bookings: full head colour, balayage, extensions, restyles. A cut and finish that goes missing is irritating but can often be refilled from a walk-in or a waiting list. A three-hour colour slot at short notice usually cannot.
+
+| Rule you might set | What it covers | What you keep from one no-show |
+| --- | --- | --- |
+| No deposit under £100 | Cuts, blow-dries, toners | Nothing, rely on the notice window |
+| 25% on bookings of £100 or more | Most colour work | £35 on a £140 booking |
+| 50% on bookings of £200 or more | Long colour, extensions | £110 on a £220 booking |
+
+In the example, if 5 of the 12 no-shows were £140 colour bookings, a 25% deposit keeps 5 × £35 = £175 that month. That will not cover the whole loss, and it is not supposed to. The bigger effect is that a client who has paid something upfront has a reason to pick up the phone when plans change, and a phone call 48 hours out gives the desk time to refill the chair.
+
+## Is it legal to charge a no-show fee in the UK?
+
+Generally yes, with two conditions. First, the client must have been told before they booked. A term they only discover afterwards is unlikely to hold. Second, the charge must be fair. The Consumer Rights Act 2015 says terms in consumer contracts must be fair and transparent, and the Competition and Markets Authority’s [guidance on unfair contract terms (CMA37)](https://www.gov.uk/government/publications/unfair-contract-terms-cma37) treats cancellation charges that go well beyond the business’s likely loss as a warning sign.
+
+In practice that means:
+
+- keep the charge in proportion to the chair time you lose, which is why a percentage of the booking is easier to defend than a large flat fee;
+- show the policy on the booking page and in the confirmation, not only on a sign in the salon;
+- refund a deposit if you are the one who cancels or cannot deliver the service;
+- keep a record of when the client booked, what they were shown and when they cancelled.
+
+This is a practical summary, not legal advice. If you are unsure about a specific charge, check the guidance or ask a solicitor.
+
+## How do you enforce a no-show policy without losing good clients?
+
+The policy is the easy part. Applying it consistently at the desk is where most salons give up, usually because the person on reception does not want an awkward conversation with a regular.
+
+A few habits make it easier:
+
+- **Take the deposit at booking, not afterwards.** Asking for money after a missed appointment is a confrontation. A deposit already paid is simply kept.
+- **Remind clients before the window closes.** A reminder the day before a 48-hour window has already shut is too late to be useful. Send it before the notice period starts.
+- **Give the desk one waiver per client, and log it.** Genuine emergencies get goodwill. The second missed appointment does not, and the record shows it was the second.
+- **Make cancelling easy.** If the only way to cancel is a phone that nobody answers after 6pm, clients who meant to give notice end up as no-shows.
+
+That last point is the one salons most often miss. A client who tries to cancel at 9pm and reaches voicemail has done the right thing, and still leaves you with an empty chair unless someone hears the message in time. Our [piece on after-hours salon calls](https://daviana.app/blog/after-hours-salon-calls/) covers how much of that happens outside opening hours.
+
+## What should your booking system do for you?
+
+A policy lives or dies on whether the [booking system](https://daviana.app/diary/) backs it up without the desk having to remember. The things worth checking in any salon software:
+
+- Can it take a deposit when the client books online, with rules by percentage and booking value?
+- When a client cancels, can the desk choose to keep or refund the deposit, with the reason recorded?
+- Does an unpaid deposit hold release the slot automatically, so the diary is not blocked by a booking nobody paid for?
+- Is a no-show a status on the appointment, so you can see who has missed before and report on it?
+
+In Daviana, deposits are taken at online booking into the same diary the desk uses, and are set by percentage, minimum and booking threshold. On cancellation the desk chooses whether to retain or refund the deposit, unpaid deposit holds expire on their own, and no-shows and cancellations show up in reporting. If a client calls to cancel at the last minute, [Aria, the AI receptionist](https://daviana.app/ai-receptionist/), reads back the real appointment and offers to reschedule; on anything to do with fees it takes a message for the team rather than deciding. If you are comparing systems, our [questions to ask before switching salon software](https://daviana.app/blog/questions-before-switching-salon-software/) are a good place to start.
+
+## Questions salon owners ask
+
+### Can a UK salon charge a client for not turning up?
+
+Yes, if the charge was clearly shown to the client before they booked and it is fair. Under the Consumer Rights Act 2015 a cancellation or no-show charge should broadly reflect what the salon loses, such as the value of chair time it could not resell. A charge far above that loss risks being treated as an unfair term.
+
+### How much deposit should a salon take?
+
+Most salons take a percentage of the booking, often somewhere between 20 and 50 per cent, and only on services that are long, expensive or hard to refill at short notice. A flat rule such as 25 per cent on bookings of £100 or more is easy for clients to understand and for the desk to apply.
+
+### How much notice should a salon ask for when a client cancels?
+
+24 or 48 hours is the most common window. Pick the shortest window in which your desk can realistically refill the slot. Long colour appointments usually justify 48 hours; a cut and finish can often be refilled with 24.
+
+### Should a salon charge a regular client who misses one appointment?
+
+The policy should apply to everyone, but it helps to give the desk one discretionary waiver per client for a genuine emergency, logged against the client record. That keeps goodwill with loyal clients while making repeat no-shows visible.
+
+---
+
 ## Screening stylist applicants without spending a week reading CVs
 Source: https://daviana.app/blog/screening-stylist-applicants/
 Published: 2026-07-24  ·  Updated: 2026-07-24
