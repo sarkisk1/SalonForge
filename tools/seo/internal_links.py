@@ -18,7 +18,8 @@ RULES = [
     ("/performance/", [r"live commission", r"commission tracking"]),
     ("/bar/", [r"back[- ]?bar"]),
     ("/diary/", [r"appointment diary", r"booking system"]),
-    ("/pricing/", [r"pricing"]),
+    # only our own pricing: "its own UK pricing page" in a competitor comparison must not link here
+    ("/pricing/", [r"(?<=our )pricing", r"(?<=Daviana )pricing", r"(?<=Daviana's )pricing"]),
     ("/faq/", [r"frequently asked questions", r"common questions"]),
 ]
 def link_text_segments(p, dest, pats):
