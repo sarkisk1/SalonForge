@@ -872,7 +872,7 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 <nav class="pgw crumb" aria-label="Breadcrumb"><a href="/">Daviana</a><span class="sep">/</span><span aria-current="page">Prova gratuita</span></nav><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><style>#start{scroll-margin-top:96px}.tr-hero h1{margin:4px 0 14px}@media(max-width:859px){.tr-hero h1{font-size:2rem}}</style><h1>Un mese gratis, senza carta.</h1><p class="sub">Lascia il cellulare qui sotto. Ti mandiamo un codice, Aria ti richiama e poi configuriamo noi il tuo salone — a mano, entro un giorno lavorativo.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card" id="start"><p class="tr-trust" style="margin:0 0 16px;text-align:center;font-size:.875rem;color:#8a8177">60 secondi · Senza carta · Disdici quando vuoi · <span id="tr-fam" data-count="6">6</span> saloni nella famiglia Daviana</p><div class="tr-err" id="tr-err" role="alert"></div><style>
 .qz-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
 .qz-bar{flex:1;height:6px;border-radius:3px;background:rgba(20,12,8,.08);overflow:hidden}
-.qz-bar i{display:block;height:100%;width:25%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
+.qz-bar i{display:block;height:100%;width:20%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
 .qz-count{font-size:13px;color:var(--sec);white-space:nowrap}
 .qz-step{display:none;min-height:298px}
 .qz-step.on{display:block;animation:qzin .25s ease}
@@ -883,8 +883,13 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 .qz-opt.sel{border-color:var(--g,#c96f4a);background:rgba(201,111,74,.07);font-weight:600}
 .qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
 .qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
-</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 di 4</span></div>
-<div class="qz-step on" data-q="phone"><p class="qz-q">Sono le 14, hai le mani nelle stagnole — e squilla il telefono. Cosa succede davvero?</p>
+</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 di 5</span></div>
+<div class="qz-step on" data-q="interest"><p class="qz-q">Che cosa ti interessa di più?</p>
+<button type="button" class="qz-opt" data-v="aria">Aria — la receptionist AI</button>
+<button type="button" class="qz-opt" data-v="booking">L'agenda e la cassa</button>
+<button type="button" class="qz-opt" data-v="colorlab">ColorLab — il colore sul conto</button>
+<button type="button" class="qz-opt" data-v="all">Tutti e tre</button></div>
+<div class="qz-step" data-q="phone"><p class="qz-q">Sono le 14, hai le mani nelle stagnole — e squilla il telefono. Cosa succede davvero?</p>
 <button type="button" class="qz-opt" data-v="rings out">Squilla a vuoto</button>
 <button type="button" class="qz-opt" data-v="someone drops everything">Qualcuno molla tutto per rispondere</button>
 <button type="button" class="qz-opt" data-v="voicemail">Segreteria — richiamiamo dopo</button>
@@ -906,23 +911,25 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
 count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
+var NSTEPS=steps.length,LAST=NSTEPS-1;
 var FINAL={'rings out':'Ogni chiamata a vuoto è una prenotazione che va a qualcun altro. Aria risponde a tutte — ultimo passo: dove ti mandiamo il mese gratis?',
 'someone drops everything':'Nessuno dovrebbe mollare un colore per il telefono. Risponde Aria per te — ultimo passo: dove ti mandiamo il mese gratis?',
 'voicemail':'Quasi nessuno lascia un messaggio in segreteria — chiama il salone dopo. Aria risponde dal vivo — dove ti mandiamo il mese gratis?',
 'whatsapp later':'Aria risponde al telefono E tiene i tuoi WhatsApp in un unico posto — ultimo passo: dove ti mandiamo il mese gratis?',
 'reception picks up':'Perfetto — allora Aria copre la tua reception: pausa pranzo, sera e la seconda linea che squilla. Ultimo passo: dove ti mandiamo il mese gratis?'};
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
-fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' di 4';back.hidden=(n===0);
-if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
+fill.style.width=((n+1)*(100/NSTEPS))+'%';count.textContent=(n+1)+' di '+NSTEPS;back.hidden=(n===0);
+if(n===LAST){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
 setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
 try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
 steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
 if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
 s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
 ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
-if(idx<3)setTimeout(function(){show(idx+1)},180);})});
-back.addEventListener('click',function(){if(cur>0)show(cur-1)});var skip=document.getElementById('qz-skip');if(skip)skip.addEventListener('click',function(){show(3);skip.style.display='none';try{if(window.gtag)gtag('event','quiz_skip',{event_category:'trial'})}catch(e){}});
-window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+if(idx<LAST)setTimeout(function(){show(idx+1)},180);})});
+back.addEventListener('click',function(){if(cur>0)show(cur-1)});var skip=document.getElementById('qz-skip');if(skip)skip.addEventListener('click',function(){show(LAST);skip.style.display='none';try{if(window.gtag)gtag('event','quiz_skip',{event_category:'trial'})}catch(e){}});
+window.SF_INTEREST=function(){return ans.interest||''};
+window.SF_QUIZ=function(){var p=['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')];if(ans.interest)p.push('interest:'+ans.interest);return p.join(' · ')};
 })();</script><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>Ci sei.</h2><p>Controlla il telefono: ti abbiamo appena mandato un codice di sei cifre via SMS. Rispondi a quel messaggio con il codice e Aria ti chiama (8–21, ora tua). Poi uno di noi configura il tuo salone entro un giorno lavorativo — tieni a portata di mano la lista clienti e il listino attuali e li spostiamo noi; prima di allora non devi fare nulla.</p><p class="tr-call">Nessun SMS entro un paio di minuti? Scrivi a hello@salonforge.com e ti chiamiamo noi.</p></div></div></div><style>
 .tr-next{max-width:760px;margin:clamp(34px,5vw,54px) auto 0;padding:0 16px}
 .tr-next h2,.tr-what h2{font-size:clamp(1.35rem,3vw,1.75rem);letter-spacing:-.015em;margin-bottom:6px}
@@ -1012,6 +1019,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       fbp: ck('_fbp'),
       fbc: ck('_fbc'),
       current_system: (window.SF_QUIZ ? window.SF_QUIZ() : ''),
+      interest: (window.SF_INTEREST ? window.SF_INTEREST() : ''),
       ph_id: (window.__phId || '')
     });
     btn.disabled = true; btn.textContent = 'Invio in corso…';
