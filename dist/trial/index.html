@@ -882,12 +882,14 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 .qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
 .qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
 </style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 of 4</span></div>
-<div class="qz-step on" data-q="phone"><p class="qz-q">It’s 2pm, your hands are in foils — and the phone rings. What actually happens?</p>
-<button class="qz-opt" data-v="rings out" type="button">It rings out</button>
-<button class="qz-opt" data-v="someone drops everything" type="button">Someone drops everything to answer</button>
-<button class="qz-opt" data-v="voicemail" type="button">Voicemail — we ring back later</button>
-<button class="qz-opt" data-v="whatsapp later" type="button">They find us on WhatsApp eventually</button>
-<button class="qz-opt" data-v="reception picks up" type="button">Reception picks up</button></div>
+<div class="qz-step on" data-q="specialism"><p class="qz-q">What does your salon specialise in?</p>
+<button class="qz-opt" data-v="hair" type="button">Hair</button>
+<button class="qz-opt" data-v="beauty" type="button">Beauty</button>
+<button class="qz-opt" data-v="hair and beauty" type="button">Hair and beauty</button>
+<button class="qz-opt" data-v="nails" type="button">Nails</button>
+<button class="qz-opt" data-v="barbering" type="button">Barbering</button>
+<button class="qz-opt" data-v="other" type="button">Something else</button>
+<div class="qz-other" id="qz-other" hidden><label for="qz-other-in">Tell us what you do</label><div class="qz-other-row"><input id="qz-other-in" type="text" maxlength="80" placeholder="e.g. lashes and brows, aesthetics, spa" autocomplete="off"/><button class="btn btn-g" id="qz-other-go" type="button">Next</button></div></div></div>
 <div class="qz-step" data-q="bookings"><p class="qz-q">Where do your bookings live right now?</p>
 <button class="qz-opt" data-v="fresha/booksy/treatwell" type="button">Fresha, Booksy or Treatwell</button>
 <button class="qz-opt" data-v="phorest/zenoti/vagaro" type="button">Phorest, Zenoti or Vagaro</button>
@@ -899,7 +901,7 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 <button class="qz-opt" data-v="solo" type="button">Just me</button>
 <button class="qz-opt" data-v="2-4" type="button">2–4 of us</button>
 <button class="qz-opt" data-v="5+" type="button">5 or more</button></div>
-<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Last step — where do we send your free month?</p><div class="tr-field"><label for="tr-name">Your name <span style="font-weight:400;color:var(--sec)">(optional)</span></label><input autocomplete="name" id="tr-name" name="name" placeholder="Name and surname" type="text"/></div><div class="tr-field"><label for="tr-salon">Salon name</label><input autocomplete="organization" id="tr-salon" name="salon" placeholder="The salon’s name" required="" type="text"/></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(we text you a code to confirm it’s you)</span></label><input autocomplete="tel" id="tr-mobile" inputmode="tel" name="mobile" placeholder="07700 900123" required="" type="tel"/></div><div class="tr-field"><label for="tr-email">Email</label><input autocomplete="email" id="tr-email" name="email" placeholder="jane@yoursalon.com" required="" type="email"/></div><div class="tr-field"><label for="tr-website">Salon website <span style="font-weight:400;color:var(--sec)">(optional — it is how Aria learns your prices)</span></label><input autocapitalize="off" autocomplete="url" id="tr-website" inputmode="url" name="website" placeholder="yoursalon.com" type="text"/></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></div>
+<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Last step — where do we send your free month?</p><div class="tr-field"><label for="tr-name">Your name</label><input autocomplete="name" id="tr-name" name="name" placeholder="Name and surname" required="" type="text"/></div><div class="tr-field" id="tr-spec-f" hidden><label for="tr-spec">What you specialise in</label><input id="tr-spec" name="specialism" placeholder="Hair, beauty, nails, barbering…" maxlength="80" type="text"/></div><div class="tr-field"><label for="tr-salon">Salon name</label><input autocomplete="organization" id="tr-salon" name="salon" placeholder="The salon’s name" required="" type="text"/></div><div class="tr-field"><label for="tr-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(we text you a code to confirm it’s you)</span></label><input autocomplete="tel" id="tr-mobile" inputmode="tel" name="mobile" placeholder="07700 900123" required="" type="tel"/></div><div class="tr-field"><label for="tr-email">Email</label><input autocomplete="email" id="tr-email" name="email" placeholder="jane@yoursalon.com" required="" type="email"/></div><div class="tr-field"><label for="tr-website">Salon website <span style="font-weight:400;color:var(--sec)">(optional — we use it to set up your services and prices)</span></label><input autocapitalize="off" autocomplete="url" id="tr-website" inputmode="url" name="website" placeholder="yoursalon.com" type="text"/></div><p class="tr-reassure">One of us — a salon owner, not a salesperson — sets you up. No card, no contract, nothing shared with anyone.</p><button class="btn btn-g" type="submit">Get set up</button></div>
 <button class="qz-skip" id="qz-skip" type="button">Skip the questions</button><button class="qz-back" hidden="" id="qz-back" type="button">← Back</button></form><p class="trf-legal"><a href="/privacy/">Privacy</a></p>
 <div class="tr-done" id="tr-done"><div class="tick"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg></div><h2 id="dc-h">You’re in. Now pick a time for your call.</h2><p id="dc-lead">One of our salon managers rings you for a 30-minute walkthrough: your diary, Aria and moving your clients and prices across. Pick whatever suits you.</p><div class="ss" id="ss" hidden><div id="ss-code"><div class="tr-field"><label for="ss-otp">6-digit code</label><input autocomplete="one-time-code" id="ss-otp" inputmode="numeric" maxlength="8" placeholder="123456" type="text"/></div><button class="btn btn-g ss-go" id="ss-otp-go" type="button">Confirm my number</button><p class="ss-small"><button class="ss-link" id="ss-resend" type="button">Text me a new code</button> · <button class="ss-link" id="ss-skip" type="button">Skip, book a call instead</button></p></div><div class="ss-choose" id="ss-choose" hidden><button class="ss-card" id="ss-pick-self" type="button"><b>Set it up myself: about 5 minutes</b><span>Add your team, branches and opening hours, then download Daviana and log in straight away.</span></button><button class="ss-card" id="ss-pick-call" type="button"><b>Book a call and we do it for you</b><span>30 minutes with one of our salon managers. We move your clients, services and prices across.</span></button></div><div class="ss-form" id="ss-form" hidden><h3>You</h3><div class="ss-row"><div class="tr-field"><label for="ss-first">First name</label><input autocomplete="given-name" id="ss-first" type="text"/></div><div class="tr-field"><label for="ss-last">Surname</label><input autocomplete="family-name" id="ss-last" type="text"/></div></div><h3>Branches</h3><div id="ss-branches"></div><button class="ss-link ss-add" id="ss-add-branch" type="button">+ Add another branch</button><h3>Your team</h3><p class="ss-hint">You’re added as the owner. Add everyone else who needs a column in the diary or their own login.</p><div id="ss-staff"></div><button class="ss-link ss-add" id="ss-add-staff" type="button">+ Add a person</button><h3>Opening hours</h3><div id="ss-hours"></div><h3>Moving across</h3><div class="tr-field"><label for="ss-sw">What do you use for bookings today?</label><select id="ss-sw"><option value="">Choose one</option><option>Fresha</option><option>Booksy</option><option>Treatwell</option><option>Phorest</option><option>Timely</option><option>Shortcuts</option><option>Zenoti</option><option>Vagaro</option><option>Paper diary / phone</option><option>Something else</option><option>Nothing yet</option></select></div><label class="ss-check"><input id="ss-import" type="checkbox"/> Move my clients and services across for me</label><button class="btn btn-g ss-go" id="ss-submit" type="button">Create my salon</button><p class="dc-err" id="ss-err" role="alert"></p></div><div class="ss-ready" id="ss-ready" hidden><p class="ss-small" id="ss-keynote"></p><div class="ss-dl"><a class="btn btn-g" data-os="mac" id="ss-mac" href="#">Download for Mac</a><a class="btn ss-alt" data-os="win" id="ss-win" href="#">Download for Windows</a></div><ol class="ss-steps"><li>Install Daviana and open it.</li><li>Enter the licence key from your text or email.</li><li>Add your service menu first: bookings open once it’s in.</li></ol><p class="ss-small">Want a hand? <button class="ss-link" id="ss-ready-call" type="button">Book a 30-minute call</button></p></div><p class="dc-err" id="ss-code-err" role="alert"></p></div><div class="dc" id="dc" hidden><div class="dc-me" id="dc-me" hidden><div class="tr-field"><label for="dc-salon">Salon name</label><input autocomplete="organization" id="dc-salon" type="text" placeholder="The salon’s name"/></div><div class="tr-field"><label for="dc-name">Your name <span style="font-weight:400;color:var(--sec)">(optional)</span></label><input autocomplete="name" id="dc-name" type="text" placeholder="Name and surname"/></div><div class="tr-field"><label for="dc-mobile">Mobile <span style="font-weight:400;color:var(--sec)">(we ring you on this)</span></label><input autocomplete="tel" id="dc-mobile" inputmode="tel" type="tel" placeholder="07700 900123"/></div><div class="tr-field"><label for="dc-email">Email</label><input autocomplete="email" id="dc-email" type="email" placeholder="jane@yoursalon.com"/></div></div><div class="dc-days" id="dc-days" role="tablist" aria-label="Day"></div><div class="dc-times" id="dc-times"></div><button class="btn btn-g dc-book" id="dc-book" type="button" disabled>Pick a time above</button><p class="dc-err" id="dc-err" role="alert"></p></div><p class="dc-wait" id="dc-wait">Loading free times…</p><div class="dc-ok" id="dc-ok" hidden><p class="dc-ok-t" id="dc-ok-t"></p><p id="dc-ok-s"></p></div><p class="tr-call" id="dc-sms">Questions? Email <a href="mailto:info@daviana.app">info@daviana.app</a>.</p></div></div></div></div><style>
 .tr-next{max-width:760px;margin:clamp(34px,5vw,54px) auto 0;padding:0 16px}
@@ -928,23 +930,24 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
 count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
-var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Aria answers every one — last step: where do we send your free month?',
-'someone drops everything':'Nobody should drop a colour for the phone. Aria answers it for you — last step: where do we send your free month?',
-'voicemail':'Most callers never leave a voicemail — they ring the next salon. Aria answers live — where do we send your free month?',
-'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?',
-'reception picks up':'Lovely — then Aria is your receptionist\u2019s cover: lunch, evenings, and the second line ringing. Last step: where do we send your free month?'};
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
 fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
-if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
+if(n===3){var sf=document.getElementById('tr-spec-f');if(sf)sf.hidden=!!ans.specialism;
 setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
 try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
 steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
 if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
 s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
-ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
+var q=s.getAttribute('data-q'),v=b.getAttribute('data-v'),oth=s.querySelector('.qz-other');
+if(oth){oth.hidden=(v!=='other');if(v==='other'){delete ans[q];var oi=s.querySelector('#qz-other-in');if(oi)setTimeout(function(){oi.focus()},60);return;}}
+ans[q]=v;
 if(idx<3)setTimeout(function(){show(idx+1)},180);})});
+var oin=document.getElementById('qz-other-in'),ogo=document.getElementById('qz-other-go');
+function otherNext(){var v=(oin.value||'').trim();if(!v){oin.focus();return;}ans.specialism=v.slice(0,80);show(1);}
+if(ogo)ogo.addEventListener('click',otherNext);if(oin)oin.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();otherNext();}});
 back.addEventListener('click',function(){if(cur>0)show(cur-1)});var skip=document.getElementById('qz-skip');if(skip)skip.addEventListener('click',function(){show(3);skip.style.display='none';try{if(window.gtag)gtag('event','quiz_skip',{event_category:'trial'})}catch(e){}});
-window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+window.SF_SPEC=function(){return (ans.specialism||((document.getElementById('tr-spec')||{}).value||'').trim()).slice(0,80)};
+window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-spec')||{}).value||'').trim();return ['specialism:'+(sp||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
 })();</script>
 <script>
 (function(){
@@ -1007,6 +1010,7 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       mobile: form.mobile.value.trim(),
       email:  form.email.value.trim(),
       website: siteVal,
+      specialism: (window.SF_SPEC ? window.SF_SPEC() : ''),
       // "Your full name" is gone from the form — the worker falls back to the salon
       // name for the NOT NULL column. country + current_system: worker derives them.
       event_id: eventId,
@@ -1511,6 +1515,43 @@ body:has(.qz-step[data-q="capture"].on) .qz-skip{display:none!important}
 .qz-back,.qz-skip{min-height:32px!important;padding-top:0!important;padding-bottom:0!important;line-height:32px}
 @media(max-height:760px){.tr-reassure{display:none}}
 @media(max-height:620px){.qz-final{display:none}.tr-card .tr-trust{display:none}.tr-foot{padding-bottom:4px!important}}
+</style>
+<style id="tr-roomy">
+/* /trial: centre the card in the window and give the form room to breathe */
+.qz-other{margin:6px 0 0;display:flex;flex-direction:column;gap:8px}
+.qz-other[hidden]{display:none}
+.qz-other label{font-size:.9375rem;font-weight:600}
+.qz-other-row{display:flex;gap:8px}
+.qz-other-row input{flex:1;min-width:0;font:inherit;font-size:1rem;padding:11px 14px;border:1.5px solid rgba(20,12,8,.14);border-radius:12px;min-height:46px}
+.qz-other-row input:focus{outline:none;border-color:var(--g,#c96f4a);box-shadow:0 0 0 3px rgba(217,119,87,.16)}
+.tr-form .qz-other-row .btn{width:auto!important;flex:0 0 auto;min-height:46px!important;margin:0!important;padding:0 22px;white-space:nowrap}
+.tr-field[hidden]{display:none!important}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+body>.tr-wrap.tr-foot{flex:1 0 auto;width:100%;display:flex;flex-direction:column;justify-content:center}
+@media(min-width:860px) and (min-height:800px){
+ .trf-bar{padding-top:22px}
+ .tr-foot{padding:20px var(--gutter) 40px!important}
+ .tr-hero{padding:0 0 28px!important}
+ .tr-hero h1{margin:0 auto 12px!important}
+ .tr-card{padding:34px 40px 28px!important}
+ .tr-card .tr-trust{margin:0 0 22px!important}
+ .qz-top{margin-bottom:24px!important}
+ .qz-q{font-size:20px!important;margin:0 0 20px!important}
+ .qz-opt{padding:15px 18px!important;margin:0 0 12px!important;font-size:16px!important}
+ .qz-final{margin:0 0 22px!important;font-size:1rem!important}
+ .tr-field{margin-bottom:16px!important;gap:8px!important}
+ .tr-field>label{font-size:.9375rem!important}
+ .tr-field input{min-height:48px!important;padding-top:11px!important;padding-bottom:11px!important}
+ .tr-reassure{margin:8px 0 18px!important;font-size:.875rem!important}
+ .tr-form .btn-g{min-height:52px!important;margin-top:4px!important}
+ .qz-skip,.qz-back{margin-top:14px!important}
+ .trf-legal{bottom:32px}
+}
+/* skipped the questions: one extra field, so keep the details step on one screen */
+@media(min-width:860px) and (min-height:800px) and (max-height:1000px){
+ body:has(#tr-spec-f:not([hidden])) .tr-field{margin-bottom:12px!important}
+ body:has(#tr-spec-f:not([hidden])) .tr-reassure{display:none}
+}
 </style>
 </body>
 </html>
