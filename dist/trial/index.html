@@ -951,7 +951,9 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
 })();</script>
 <script>
 (function(){
-  const TRIAL_API = "https://salonforge-trial.long-moon-952c.workers.dev/signup";
+  // 29 Sep 2026: sign-ups go to Daviana, not the external trial worker. The worker texted its
+  // own "reply with this code" SMS from +447886071244 on top of our code, so owners got two.
+  const TRIAL_API = "https://my.daviana.app/api/public/trial/lead";
   const form = document.getElementById('tr-form');
   // Module chosen on /pricing/ (#plan=daviana|receptionist|colorlab) — shown, and sent
   // with the signup. These keys must stay in step with the worker's MODULE_PRICES: an
