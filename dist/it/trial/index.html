@@ -769,7 +769,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 </script><link rel="alternate" hreflang="en" href="https://daviana.app/trial/"><link rel="alternate" hreflang="it" href="https://daviana.app/it/trial/"><link rel="alternate" hreflang="es" href="https://daviana.app/es/trial/"><link rel="alternate" hreflang="fr" href="https://daviana.app/fr/trial/"><link rel="alternate" hreflang="de" href="https://daviana.app/de/trial/"><link rel="alternate" hreflang="x-default" href="https://daviana.app/trial/"><style>body{padding-top:0!important} [data-site-shell="header" class="content-inset"]{position:sticky;top:0;z-index:100} .reveal,.viz{opacity:1!important;transform:none!important}</style><link href="/assets/mobile.css?v=w2" rel="stylesheet"/><script defer src="/assets/translations.js?v=1"></script><script defer src="/assets/site.js?v=3"></script>
 <script defer src="/assets/analytics.js?v=4"></script>
 </head>
-<body>
+<body><div class="trf-bar"><a href="/it/" aria-label="Daviana"><img src="/assets/daviana-mark.svg" alt="" width="26" height="26"><img src="/assets/daviana-wordmark.svg" alt="Daviana" width="117" height="26"></a></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
  <!-- Daviana: calendar (Lucide) -->
@@ -902,7 +902,7 @@ header{position:relative}footer{margin:0}a{cursor:pointer}</style><header><nav a
 <button type="button" class="qz-opt" data-v="2-4">Siamo in 2–4</button>
 <button type="button" class="qz-opt" data-v="5+">5 o più</button></div>
 <div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Ultimo passo — dove ti mandiamo il mese gratis?</p><div class="tr-field"><label for="tr-name">Il tuo nome <span style="font-weight:400;color:var(--sec)">(facoltativo)</span></label><input id="tr-name" name="name" type="text" autocomplete="name" placeholder="Nome e cognome"></div><div class="tr-field"><label for="tr-salon">Nome del salone</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Il nome del salone"></div><div class="tr-field"><label for="tr-mobile">Cellulare <span style="font-weight:400;color:var(--sec)">(ti mandiamo un codice via SMS, rispondi e Aria ti chiama, 8–21, ora tua)</span></label><input id="tr-mobile" name="mobile" required type="tel" autocomplete="tel" inputmode="tel" placeholder="340 123 4567"></div><div class="tr-field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="giulia@iltuosalone.it"></div><div class="tr-field"><label for="tr-website">Sito del salone <span style="font-weight:400;color:var(--sec)">(facoltativo — così Aria impara i tuoi prezzi)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="iltuosalone.it"></div><p class="tr-reassure">Ti configura uno di noi — un titolare di salone, non un venditore. Senza carta, senza contratto, nessun dato condiviso con nessuno.</p><button class="btn btn-g" type="submit">Attiva il mio salone</button></div>
-<button type="button" class="qz-skip" id="qz-skip">Salta le domande</button><button type="button" class="qz-back" id="qz-back" hidden>← Indietro</button></form>
+<button type="button" class="qz-skip" id="qz-skip">Salta le domande</button><button type="button" class="qz-back" id="qz-back" hidden>← Indietro</button></form><p class="trf-legal"><a href="/privacy/">Privacy</a></p>
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
 count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
@@ -1158,5 +1158,60 @@ footer{background:#fff!important;color:var(--ink);padding:48px 0 24px}
   });
 })();
 </script>
-<script>(function(){var v=document.getElementById('sf-film');if(!v)return;var f=false;v.addEventListener('play',function(){if(f)return;f=true;try{if(window.gtag)gtag('event','video_play',{event_category:'trial',event_label:'film-v1'});if(window.fbq)fbq('trackCustom','FilmPlay');}catch(e){}});})();</script><style>@media(max-width:859px){.tr-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(250,247,244,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;flex-direction:column;gap:5px;align-items:center;transition:transform .28s ease}.tr-sticky[data-off]{transform:translateY(110%)}.tr-sticky .btn{width:100%;justify-content:center;font-size:1.0625rem;padding:14px 22px;text-decoration:none}.tr-sticky small{color:#8a8177;font-size:.8125rem}}@media(min-width:860px){.tr-sticky{display:none}}</style><div class="tr-sticky" id="tr-sticky"><a class="btn btn-g" href="#start">Inizia — 60 secondi</a><small>Senza carta · Disdici quando vuoi</small></div><script>(function(){var bar=document.getElementById('tr-sticky'),card=document.getElementById('start');if(!bar||!card)return;bar.querySelector('a').addEventListener('click',function(e){e.preventDefault();try{card.scrollIntoView({behavior:'smooth'});if(window.gtag)gtag('event','skip_to_quiz',{event_category:'trial',event_label:'sticky'});if(window.fbq)fbq('trackCustom','SkipToQuiz');}catch(_){card.scrollIntoView();}});if('IntersectionObserver'in window){new IntersectionObserver(function(en){if(en[0].isIntersecting)bar.setAttribute('data-off','');else bar.removeAttribute('data-off');},{threshold:0.12}).observe(card);}})();</script><script>(function(){try{fetch("https://salonforge-trial.long-moon-952c.workers.dev/stats").then(function(r){return r.json()}).then(function(d){var el=document.getElementById("tr-fam");if(el&&d&&d.family&&d.family>=parseInt(el.getAttribute("data-count")||"0",10))el.textContent=d.family;}).catch(function(){})}catch(e){}})();</script><script src="/assets/formguard.js"></script><script src="/assets/leadfix.js?v=1"></script><script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=sfTurnstileReady&render=explicit" async defer></script></body>
+<script>(function(){var v=document.getElementById('sf-film');if(!v)return;var f=false;v.addEventListener('play',function(){if(f)return;f=true;try{if(window.gtag)gtag('event','video_play',{event_category:'trial',event_label:'film-v1'});if(window.fbq)fbq('trackCustom','FilmPlay');}catch(e){}});})();</script><style>@media(max-width:859px){.tr-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(250,247,244,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;flex-direction:column;gap:5px;align-items:center;transition:transform .28s ease}.tr-sticky[data-off]{transform:translateY(110%)}.tr-sticky .btn{width:100%;justify-content:center;font-size:1.0625rem;padding:14px 22px;text-decoration:none}.tr-sticky small{color:#8a8177;font-size:.8125rem}}@media(min-width:860px){.tr-sticky{display:none}}</style><div class="tr-sticky" id="tr-sticky"><a class="btn btn-g" href="#start">Inizia — 60 secondi</a><small>Senza carta · Disdici quando vuoi</small></div><script>(function(){var bar=document.getElementById('tr-sticky'),card=document.getElementById('start');if(!bar||!card)return;bar.querySelector('a').addEventListener('click',function(e){e.preventDefault();try{card.scrollIntoView({behavior:'smooth'});if(window.gtag)gtag('event','skip_to_quiz',{event_category:'trial',event_label:'sticky'});if(window.fbq)fbq('trackCustom','SkipToQuiz');}catch(_){card.scrollIntoView();}});if('IntersectionObserver'in window){new IntersectionObserver(function(en){if(en[0].isIntersecting)bar.setAttribute('data-off','');else bar.removeAttribute('data-off');},{threshold:0.12}).observe(card);}})();</script><script>(function(){try{fetch("https://salonforge-trial.long-moon-952c.workers.dev/stats").then(function(r){return r.json()}).then(function(d){var el=document.getElementById("tr-fam");if(el&&d&&d.family&&d.family>=parseInt(el.getAttribute("data-count")||"0",10))el.textContent=d.family;}).catch(function(){})}catch(e){}})();</script><script src="/assets/formguard.js"></script><script src="/assets/leadfix.js?v=1"></script><script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=sfTurnstileReady&render=explicit" async defer></script><style id="tr-focus">
+/* /trial focus mode: one screen, quiz only, no scrolling before submit */
+[data-site-shell="header"],header#hd,[data-site-shell="footer"],body>footer,.crumb,.tr-next,.tr-what,.tr-filmsec,#tr-sticky{display:none!important}
+body{padding-bottom:0!important}
+.trf-bar{display:flex;justify-content:center;align-items:center;padding:clamp(12px,2.2vh,22px) 16px 0}
+.trf-bar a{display:inline-flex;align-items:center;gap:9px;text-decoration:none}
+.trf-bar img{display:block;height:26px;width:auto}
+.tr-foot{padding:0 0 clamp(14px,2.5vh,28px)!important}
+.tr-hero{padding:clamp(10px,2.6vh,28px) 0 clamp(12px,2.2vh,22px)!important}
+.tr-hero h1{font-size:clamp(1.75rem,3.4vw,2.5rem)!important;line-height:1.08!important;margin:0 auto 8px!important;letter-spacing:-.02em;max-width:22ch!important;text-align:center}
+.tr-hero .sub{font-size:1rem;line-height:1.45;max-width:46ch;margin:0 auto}
+.tr-card{padding:clamp(16px,2.6vh,26px) clamp(18px,3vw,30px)!important}
+.tr-card .tr-trust{margin:0 0 12px!important;font-size:.8125rem!important}
+.qz-top{margin-bottom:12px!important}
+.qz-step{min-height:0!important}
+.qz-q{font-size:18px!important;margin:0 0 12px!important}
+.qz-opt{padding:12px 16px!important;margin:0 0 8px!important;font-size:15.5px!important}
+.qz-final{margin:0 0 10px!important;font-size:.9375rem!important}
+.tr-field{margin-bottom:9px!important;gap:4px!important}
+.tr-field>label{font-size:.875rem!important}
+.tr-field input{min-height:42px!important;padding-top:8px!important;padding-bottom:8px!important}
+.tr-reassure{font-size:.8125rem!important;margin:2px 0 8px!important;max-width:none!important;text-align:center}
+.tr-form .btn-g{min-height:48px!important;margin-top:2px!important}
+.qz-skip{margin-top:6px!important;font-size:.875rem!important}
+.qz-back{margin-top:0!important}
+.trf-legal{margin:6px 0 0;text-align:center;font-size:.75rem;color:var(--sec,#8a8177)}
+.trf-legal a{color:inherit}
+/* details step: the card already says "last step", so drop the repeated headline and trust line */
+body:has(.qz-step[data-q="capture"].on) .tr-card .tr-trust{display:none}
+@media(max-height:940px){body:has(.qz-step[data-q="capture"].on) .tr-hero{display:none}
+ body:has(.qz-step[data-q="capture"].on) .tr-foot{padding-top:14px!important}}
+@media(max-height:760px){.tr-hero .sub{display:none}.qz-opt{padding:10px 14px!important;margin:0 0 7px!important}}
+@media(max-width:859px){
+ .trf-bar{padding-top:10px}.trf-bar img{height:22px}
+ .tr-hero{padding:8px 0 10px!important}
+ .tr-hero h1{font-size:1.55rem!important;margin:0 auto!important}
+ .tr-hero .sub{display:none}
+ .tr-card{padding:14px 16px!important;border-radius:16px}
+ .tr-card .tr-trust{margin:0 0 10px!important}
+ .qz-q{font-size:17px!important;margin:0 0 10px!important}
+ .qz-opt{padding:10px 14px!important;margin:0 0 7px!important}
+ .tr-reassure{display:none}
+ .tr-field>label>span{display:none}
+ .tr-field{margin-bottom:8px!important}
+ .qz-final{font-size:.875rem!important;line-height:1.4!important}
+}
+body:has(.qz-step[data-q="capture"].on) .qz-skip{display:none!important}
+.qz-skip{margin-right:18px!important}
+@media(max-height:620px){.tr-hero h1{font-size:1.35rem!important}.qz-q{font-size:16px!important}.qz-opt{padding:9px 13px!important;margin:0 0 6px!important;font-size:15px!important}.tr-field input{min-height:40px!important}.tr-field{margin-bottom:6px!important}.trf-bar{padding-top:8px}.tr-hero{padding:6px 0 8px!important}}
+.tr-card{position:relative}
+.trf-legal{position:absolute;right:clamp(16px,3vw,30px);bottom:clamp(14px,2.4vh,24px);margin:0!important;line-height:32px}
+.qz-back,.qz-skip{min-height:32px!important;padding-top:0!important;padding-bottom:0!important;line-height:32px}
+@media(max-height:760px){.tr-reassure{display:none}}
+@media(max-height:620px){.qz-final{display:none}.tr-card .tr-trust{display:none}.tr-foot{padding-bottom:4px!important}}
+</style>
+</body>
 </html>
