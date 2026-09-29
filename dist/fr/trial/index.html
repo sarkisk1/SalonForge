@@ -781,7 +781,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
  <symbol id="ic-bar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></g></symbol>
 </defs>
 </svg>
-<header id="hd"><div class="wrap nav"><a class="brand" href="/"><img class="bmark" src="/assets/daviana-mark.svg" alt="" width="29" height="29"><img class="bword" src="/assets/daviana-wordmark.svg" alt="Daviana" width="117" height="26"></a></div></header><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><style>#start{scroll-margin-top:96px}.tr-hero h1{margin:4px 0 14px}@media(max-width:859px){.tr-hero h1{font-size:2rem}}</style><h1>Qui répond à votre téléphone à 21h ?</h1><p class="sub">Aria, notre réceptionniste IA, répond au nom de votre salon et prend le rendez-vous. Essayez-la un mois gratuit, sans carte : laissez votre portable ci-dessous et Aria vous appelle pour que vous l’entendiez.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card" id="start"><p class="tr-trust" style="margin:0 0 16px;text-align:center;font-size:.875rem;color:#8a8177">60 secondes · Sans carte · Résiliable à tout moment · <span id="tr-fam" data-count="6">6</span> salons dans la famille Daviana</p><div class="tr-err" id="tr-err" role="alert"></div><style>
+<header id="hd"><div class="wrap nav"><a class="brand" href="/"><img class="bmark" src="/assets/daviana-mark.svg" alt="" width="29" height="29"><img class="bword" src="/assets/daviana-wordmark.svg" alt="Daviana" width="117" height="26"></a></div></header><div class="tr-wrap tr-foot"><div class="tr-hero"><style>.tr-film{max-width:860px;margin:6px auto 30px;padding:0 16px}.tr-film video{width:100%;display:block;border-radius:14px;box-shadow:0 12px 40px rgba(20,12,8,.18);background:#000}</style><style>#start{scroll-margin-top:96px}.tr-hero h1{margin:4px 0 14px}@media(max-width:859px){.tr-hero h1{font-size:2rem}}</style><h1>Qui répond à votre téléphone à 21h ?</h1><p class="sub">Aria, notre réceptionniste IA, répond au nom de votre salon et prend le rendez-vous. Essayez Daviana un mois gratuit, sans carte : quatre clics, puis nous vous envoyons un code pour confirmer que c’est bien vous.</p><p class="tr-plan" id="tr-plan" hidden></p></div><div class="tr-card" id="start"><p class="tr-trust" style="margin:0 0 16px;text-align:center;font-size:.875rem;color:#8a8177">60 secondes · Sans carte · Résiliable à tout moment · <span id="tr-fam" data-count="6">6</span> salons dans la famille Daviana</p><div class="tr-err" id="tr-err" role="alert"></div><style>
 .qz-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
 .qz-bar{flex:1;height:6px;border-radius:3px;background:rgba(20,12,8,.08);overflow:hidden}
 .qz-bar i{display:block;height:100%;width:25%;border-radius:3px;background:var(--g,#c96f4a);transition:width .3s ease}
@@ -795,13 +795,15 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 .qz-opt.sel{border-color:var(--g,#c96f4a);background:rgba(201,111,74,.07);font-weight:600}
 .qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
 .qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
-</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 of 4</span></div>
-<div class="qz-step on" data-q="phone"><p class="qz-q">14 h, vous avez les mains dans les mèches — et le téléphone sonne. Que se passe-t-il vraiment ?</p>
-<button type="button" class="qz-opt" data-v="rings out">Ça sonne dans le vide</button>
-<button type="button" class="qz-opt" data-v="someone drops everything">Quelqu’un lâche tout pour répondre</button>
-<button type="button" class="qz-opt" data-v="voicemail">Messagerie — on rappelle plus tard</button>
-<button type="button" class="qz-opt" data-v="whatsapp later">Ils finissent par nous écrire sur WhatsApp</button>
-<button type="button" class="qz-opt" data-v="reception picks up">La réception décroche</button></div>
+</style><form class="tr-form" id="tr-form"><div class="qz-top"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 sur 4</span></div>
+<div class="qz-step on" data-q="specialism"><p class="qz-q">Quelle est la spécialité de votre salon ?</p>
+<button class="qz-opt" data-v="hair" type="button">Coiffure</button>
+<button class="qz-opt" data-v="beauty" type="button">Esthétique</button>
+<button class="qz-opt" data-v="hair and beauty" type="button">Coiffure et esthétique</button>
+<button class="qz-opt" data-v="nails" type="button">Ongles</button>
+<button class="qz-opt" data-v="barbering" type="button">Barbier</button>
+<button class="qz-opt" data-v="other" type="button">Autre chose</button>
+<div class="qz-other" id="qz-other" hidden><label for="qz-other-in">Dites-nous ce que vous faites</label><div class="qz-other-row"><input id="qz-other-in" type="text" maxlength="80" placeholder="p. ex. cils et sourcils, médecine esthétique, spa" autocomplete="off"/><button class="btn btn-g" id="qz-other-go" type="button">Suivant</button></div></div></div>
 <div class="qz-step" data-q="bookings"><p class="qz-q">Où sont vos rendez-vous aujourd’hui ?</p>
 <button type="button" class="qz-opt" data-v="fresha/booksy/treatwell">Fresha, Booksy ou Treatwell</button>
 <button type="button" class="qz-opt" data-v="phorest/zenoti/vagaro">Phorest, Zenoti ou Vagaro</button>
@@ -813,29 +815,30 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 <button type="button" class="qz-opt" data-v="solo">Juste moi</button>
 <button type="button" class="qz-opt" data-v="2-4">2 à 4</button>
 <button type="button" class="qz-opt" data-v="5+">5 ou plus</button></div>
-<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Dernière étape — où envoyons-nous votre mois gratuit ?</p><div class="tr-field"><label for="tr-name">Votre nom <span style="font-weight:400;color:var(--sec)">(facultatif)</span></label><input id="tr-name" name="name" type="text" autocomplete="name" required placeholder="Nom et prénom"></div><div class="tr-field"><label for="tr-salon">Nom du salon</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Le nom du salon"></div><div class="tr-field"><label for="tr-mobile">Portable <span style="font-weight:400;color:var(--sec)">(nous envoyons un code, vous répondez, Aria vous appelle, 8h–21h chez vous)</span></label><input id="tr-mobile" name="mobile" required type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78"></div><div class="tr-field"><label for="tr-email">E-mail</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="marie@votresalon.fr"></div><div class="tr-field"><label for="tr-website">Site du salon <span style="font-weight:400;color:var(--sec)">(facultatif — c’est ainsi qu’Aria apprend vos tarifs)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="votresalon.fr"></div><p class="tr-reassure">L’un de nous — un patron de salon, pas un commercial — vous installe. Sans carte, sans contrat, rien n’est partagé.</p><button class="btn btn-g" type="submit">Je m’installe</button></div>
+<div class="qz-step" data-q="capture"><p class="qz-final" id="qz-final">Dernière étape — où envoyons-nous votre mois gratuit ?</p><div class="tr-row2"><div class="tr-field"><label for="tr-first">Prénom</label><input autocomplete="given-name" id="tr-first" name="firstName" placeholder="Marie" required="" type="text"/></div><div class="tr-field"><label for="tr-last">Nom</label><input autocomplete="family-name" id="tr-last" name="lastName" placeholder="Dubois" required="" type="text"/></div></div><div class="tr-field"><label for="tr-salon">Nom du salon</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Le nom du salon"></div><div class="tr-field"><label for="tr-mobile">Portable <span style="font-weight:400;color:var(--sec)">(nous vous envoyons un code pour confirmer que c’est bien vous)</span></label><input id="tr-mobile" name="mobile" required type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78"></div><div class="tr-field"><label for="tr-email">E-mail</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="marie@votresalon.fr"></div><div class="tr-field"><label for="tr-website">Site du salon <span style="font-weight:400;color:var(--sec)">(facultatif — il nous sert à configurer vos prestations et tarifs)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="votresalon.fr"></div><p class="tr-reassure">L’un de nous — un patron de salon, pas un commercial — vous installe. Sans carte, sans contrat, rien n’est partagé.</p><button class="btn btn-g" type="submit">Je m’installe</button></div>
 <button type="button" class="qz-back" id="qz-back" hidden>← Retour</button></form><p class="trf-legal"><a href="/privacy/">Confidentialité</a></p>
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
 count=document.getElementById('qz-count'),back=document.getElementById('qz-back'),cur=0,ans={},started=false;
-var FINAL={'rings out':'Those rung-out calls are bookings someone else gets. Aria answers every one — last step: where do we send your free month?',
-'someone drops everything':'Nobody should drop a colour for the phone. Aria answers it for you — last step: where do we send your free month?',
-'voicemail':'Most callers never leave a voicemail — they ring the next salon. Aria answers live — where do we send your free month?',
-'whatsapp later':'Aria answers the phone AND keeps your WhatsApps in one place — last step: where do we send your free month?',
-'reception picks up':'Lovely — then Aria is your receptionist\u2019s cover: lunch, evenings, and the second line ringing. Last step: where do we send your free month?'};
 function show(n){cur=n;steps.forEach(function(s,idx){s.classList.toggle('on',idx===n)});
-fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' of 4';back.hidden=(n===0);
-if(n===3){var f=document.getElementById('qz-final');if(f&&FINAL[ans.phone])f.textContent=FINAL[ans.phone];
-setTimeout(function(){var s=document.getElementById('tr-name')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
+fill.style.width=((n+1)*25)+'%';count.textContent=(n+1)+' sur 4';back.hidden=(n===0);
+if(n===3){var sf=document.getElementById('tr-spec-f');if(sf)sf.hidden=!!ans.specialism;
+setTimeout(function(){var s=document.getElementById('tr-first')||document.getElementById('tr-salon');if(s)s.focus({preventScroll:true})},260);}
 try{if(window.gtag){if(!started&&n===0){}else gtag('event','quiz_step',{event_category:'trial',event_label:'step_'+(n+1)});}}catch(e){}}
 steps.forEach(function(s,idx){s.addEventListener('click',function(e){var b=e.target.closest('.qz-opt');if(!b)return;
 if(!started){started=true;try{if(window.gtag)gtag('event','quiz_start',{event_category:'trial'})}catch(e2){}}
 s.querySelectorAll('.qz-opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');
-ans[s.getAttribute('data-q')]=b.getAttribute('data-v');
+var q=s.getAttribute('data-q'),v=b.getAttribute('data-v'),oth=s.querySelector('.qz-other');
+if(oth){oth.hidden=(v!=='other');if(v==='other'){delete ans[q];var oi=s.querySelector('#qz-other-in');if(oi)setTimeout(function(){oi.focus()},60);return;}}
+ans[q]=v;
 if(idx<3)setTimeout(function(){show(idx+1)},180);})});
+var oin=document.getElementById('qz-other-in'),ogo=document.getElementById('qz-other-go');
+function otherNext(){var v=(oin.value||'').trim();if(!v){oin.focus();return;}ans.specialism=v.slice(0,80);show(1);}
+if(ogo)ogo.addEventListener('click',otherNext);if(oin)oin.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();otherNext();}});
 back.addEventListener('click',function(){if(cur>0)show(cur-1)});window.SF_QUIZ_MISSING=function(){for(var i=0;i<steps.length-1;i++){if(!ans[steps[i].getAttribute('data-q')]){show(i);return true;}}return false};
-window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
-})();</script><div class="tr-done" id="tr-done"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div><h2>C’est fait.</h2><p>Regardez votre téléphone : nous venons de vous envoyer un code à six chiffres. Répondez à ce SMS avec le code et Aria vous appelle (8h–21h). L’un de nous installe ensuite votre salon en un jour ouvré — ayez votre liste de clients et vos tarifs sous la main, nous les transférons pour vous ; il n’y a rien à faire d’ici là.</p><p class="tr-call">Pas de SMS d’ici deux minutes ? Écrivez à info@daviana.app et nous vous appelons.</p></div></div></div><style>
+window.SF_SPEC=function(){return (ans.specialism||((document.getElementById('tr-spec')||{}).value||'').trim()).slice(0,80)};
+window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-spec')||{}).value||'').trim();return ['specialism:'+(sp||'-'),'bookings:'+(ans.bookings||'-'),'team:'+(ans.team||'-')].join(' · ')};
+})();</script><div class="tr-done" id="tr-done"><div class="tick"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg></div><h2 id="dc-h">C’est fait. Choisissez maintenant un créneau pour votre appel.</h2><p id="dc-lead">Une de nos responsables de salon vous appelle pour une présentation de 30 minutes : votre agenda, Aria et le transfert de vos clients et tarifs. Choisissez ce qui vous convient.</p><div class="ss" id="ss" hidden><div id="ss-code"><div class="tr-field"><label for="ss-otp">Code à 6 chiffres</label><input autocomplete="one-time-code" id="ss-otp" inputmode="numeric" maxlength="8" placeholder="123456" type="text"/></div><button class="btn btn-g ss-go" id="ss-otp-go" type="button">Confirmer mon numéro</button><p class="ss-small"><button class="ss-link" id="ss-resend" type="button">M’envoyer un nouveau code</button> · <button class="ss-link" id="ss-skip" type="button">Passer et réserver un appel</button></p></div><div class="ss-choose" id="ss-choose" hidden><button class="ss-card" id="ss-pick-self" type="button"><b>Le configurer moi-même : environ 5 minutes</b><span>Ajoutez vos établissements et vos horaires, puis téléchargez Daviana et connectez-vous tout de suite.</span></button><button class="ss-card" id="ss-pick-call" type="button"><b>Réservez un appel, on s’occupe de tout</b><span>30 minutes avec une de nos responsables de salon. Nous transférons vos clients, prestations et tarifs.</span></button></div><div class="ss-form" id="ss-form" hidden><h3>Vous</h3><div class="ss-row"><div class="tr-field"><label for="ss-first">Prénom</label><input autocomplete="given-name" id="ss-first" type="text"/></div><div class="tr-field"><label for="ss-last">Nom</label><input autocomplete="family-name" id="ss-last" type="text"/></div></div><div class="tr-field"><label for="ss-salon">Nom du salon</label><input autocomplete="organization" id="ss-salon" type="text" placeholder="Le nom du salon"/></div><h3>Établissements</h3><p class="ss-hint">Ajoutez chaque établissement avec son adresse et ses horaires.</p><div id="ss-branches"></div><button class="ss-link ss-add" id="ss-add-branch" type="button">+ Ajouter un établissement</button><datalist id="ss-countries"><option>France</option><option>Belgique</option><option>Suisse</option><option>Luxembourg</option><option>Monaco</option><option>Royaume-Uni</option><option>Irlande</option><option>Espagne</option><option>Italie</option><option>Allemagne</option><option>Pays-Bas</option><option>Portugal</option><option>Grèce</option><option>Chypre</option><option>Arabie saoudite</option><option>Émirats arabes unis</option><option>Qatar</option><option>Koweït</option><option>États-Unis</option></datalist><h3>Passer à Daviana</h3><div class="tr-field"><label for="ss-sw">Qu’utilisez-vous aujourd’hui pour les rendez-vous ?</label><select id="ss-sw"><option value="">Choisissez</option><option>Fresha</option><option>Booksy</option><option>Treatwell</option><option>Phorest</option><option>Timely</option><option>Shortcuts</option><option>Zenoti</option><option>Vagaro</option><option>Agenda papier / téléphone</option><option>Autre chose</option><option>Rien pour l’instant</option></select></div><div class="tr-field" id="ss-sw-other-f" hidden><label for="ss-sw-other">Comment s’appelle-t-il ?</label><input id="ss-sw-other" type="text" maxlength="100" placeholder="Nom de votre logiciel de réservation"/></div><label class="ss-check"><input id="ss-import" type="checkbox"/> Transférez mes clients et prestations pour moi</label><button class="btn btn-g ss-go" id="ss-submit" type="button">Créer mon salon</button><p class="dc-err" id="ss-err" role="alert"></p></div><div class="ss-ready" id="ss-ready" hidden><p class="ss-small" id="ss-keynote"></p><div class="ss-dl"><a class="btn btn-g" data-os="mac" id="ss-mac" href="#">Télécharger pour Mac</a><a class="btn ss-alt" data-os="win" id="ss-win" href="#">Télécharger pour Windows</a></div><ol class="ss-steps"><li>Installez Daviana et ouvrez-le.</li><li>Saisissez la clé de licence reçue par SMS ou e-mail.</li><li>Ajoutez d’abord vos prestations : les réservations s’ouvrent dès qu’elles y sont.</li></ol><p class="ss-small">Besoin d’un coup de main ? <button class="ss-link" id="ss-ready-call" type="button">Réserver un appel de 30 minutes</button></p></div><p class="dc-err" id="ss-code-err" role="alert"></p></div><div class="dc" id="dc" hidden><div class="dc-me" id="dc-me" hidden><div class="tr-field"><label for="dc-salon">Nom du salon</label><input autocomplete="organization" id="dc-salon" type="text" placeholder="Le nom du salon"/></div><div class="tr-row2"><div class="tr-field"><label for="dc-first">Prénom</label><input autocomplete="given-name" id="dc-first" required="" type="text" placeholder="Jane"/></div><div class="tr-field"><label for="dc-last">Nom</label><input autocomplete="family-name" id="dc-last" required="" type="text" placeholder="Smith"/></div></div><div class="tr-field"><label for="dc-mobile">Portable <span style="font-weight:400;color:var(--sec)">(nous vous appelons sur ce numéro)</span></label><input autocomplete="tel" id="dc-mobile" inputmode="tel" type="tel" placeholder="07700 900123"/></div><div class="tr-field"><label for="dc-email">E-mail</label><input autocomplete="email" id="dc-email" type="email" placeholder="jane@yoursalon.com"/></div></div><div class="dc-days" id="dc-days" role="tablist" aria-label="Jour"></div><div class="dc-times" id="dc-times"></div><button class="btn btn-g dc-book" id="dc-book" type="button" disabled>Choisissez un créneau ci-dessus</button><p class="dc-err" id="dc-err" role="alert"></p></div><p class="dc-wait" id="dc-wait">Chargement des créneaux…</p><div class="dc-ok" id="dc-ok" hidden><p class="dc-ok-t" id="dc-ok-t"></p><p id="dc-ok-s"></p></div><p class="tr-call" id="dc-sms">Des questions ? Écrivez à <a href="mailto:info@daviana.app">info@daviana.app</a>.</p></div></div></div><style>
 .tr-next{max-width:760px;margin:clamp(34px,5vw,54px) auto 0;padding:0 16px}
 .tr-next h2,.tr-what h2{font-size:clamp(1.35rem,3vw,1.75rem);letter-spacing:-.015em;margin-bottom:6px}
 .tr-next .lede,.tr-what .lede{color:var(--sec);margin-bottom:22px}
@@ -859,7 +862,9 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
 .qz-skip:hover{color:var(--ink)}
 </style><div class="tr-next"><h2>Ce qui se passe maintenant</h2><ol class="tr-steps"><li><b>Nous vous envoyons un code à six chiffres.</b>Répondez à ce SMS. C’est ainsi que nous savons que le numéro est le vôtre — personne n’est appelé avant.</li><li><b>Aria vous appelle.</b>Notre réceptionniste IA, en moins d’une minute, de 8h à 21h chez vous. Demandez-lui ce que vous demanderiez à une réceptionniste.</li><li><b>Nous installons votre salon.</b>L’un de nous — un patron de salon, pas un commercial — en un jour ouvré. Nous transférons vos clients, vos prestations et vos tarifs à la main. Rien à installer.</li></ol></div><div class="tr-what"><h2>Ce que vous obtenez, gratuit pendant un mois</h2><p class="lede">Sans carte, rien à résilier par téléphone. Après le mois gratuit, prenez un produit ou les trois.</p><div class="tr-prods"><div class="tr-prod"><span class="pp">80 £ par mois TTC</span><span class="pn">Daviana</span><p>L’agenda, la caisse et la fiche client — la colonne vertébrale du reste.</p></div><div class="tr-prod"><span class="pp">60 £ par mois TTC</span><span class="pn">AI Receptionist</span><p>Le téléphone décroché jour et nuit, avec le rendez-vous posé dans le même agenda.</p></div><div class="tr-prod"><span class="pp">80 £ par mois TTC</span><span class="pn">ColorLab</span><p>Chaque bol pesé et chiffré au gramme, sur la note du client.</p></div></div><p class="foot">Les trois ensemble : 220 £ par mois TTC. Aucune commission sur vos rendez-vous, aucun frais par réservation, résiliable chaque mois.</p></div><div class="tr-filmsec"><h2>Voyez-le fonctionner</h2><p class="lede">Deux minutes, tournées dans nos salons (en anglais).</p><div class="tr-film"><video id="sf-film" controls playsinline preload="metadata" poster="/assets/salonforge-film-poster.jpg"><source src="/assets/salonforge-film.mp4" type="video/mp4"></video></div></div><script>
 (function(){
-  const TRIAL_API = "https://salonforge-trial.long-moon-952c.workers.dev/signup";
+  // 29 Sep 2026: sign-ups go to Daviana, not the external trial worker. The worker texted its
+  // own "reply with this code" SMS from +447886071244 on top of our code, so owners got two.
+  const TRIAL_API = "https://my.daviana.app/api/public/trial/lead";
   const form = document.getElementById('tr-form');
   // Module chosen on /pricing/ (#plan=daviana|receptionist|colorlab) — shown, and sent
   // with the signup. These keys must stay in step with the worker's MODULE_PRICES: an
@@ -919,10 +924,13 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
     // explicitly in the body.
     const data = Object.assign(attrib(), {
       salon:  form.salon.value.trim(),
-      fullName: (form.name && form.name.value ? form.name.value.trim() : ''),
+      firstName: form.firstName.value.trim(),
+      lastName: form.lastName.value.trim(),
+      fullName: (form.firstName.value.trim() + ' ' + form.lastName.value.trim()).trim(),
       mobile: form.mobile.value.trim(),
       email:  form.email.value.trim(),
       website: siteVal,
+      specialism: (window.SF_SPEC ? window.SF_SPEC() : ''),
       // "Your full name" is gone from the form — the worker falls back to the salon
       // name for the NOT NULL column. country + current_system: worker derives them.
       event_id: eventId,
@@ -953,13 +961,294 @@ window.SF_QUIZ=function(){return ['phone:'+(ans.phone||'-'),'bookings:'+(ans.boo
       }
       form.style.display = 'none';
       done.classList.add('on');
+      try { if (window.SF_VERIFY) window.SF_VERIFY(data); else if (window.SF_DEMO) window.SF_DEMO(data); } catch (_) { try { if (window.SF_DEMO) window.SF_DEMO(data); } catch (__) {} }
       done.scrollIntoView({behavior:'smooth', block:'center'});
     } catch(ex) {
       try { if (window.gtag) gtag('event', 'lead_submit_failed', {event_category: 'trial', event_label: String(ex && ex.message || 'error').slice(0, 80)}); } catch (_) {}
       btn.disabled = false; btn.textContent = BTN_LABEL;
-      err.textContent = (ex && ex.userMessage) || "L’envoi a échoué. Réessayez, ou écrivez à info@daviana.app et nous nous en occupons.";
+      err.textContent = "L’envoi a échoué. Vérifiez votre portable et votre e-mail puis réessayez, ou écrivez à info@daviana.app et nous nous en occupons.";
       err.classList.add('on');
     }
+  });
+})();
+</script><script>
+/* 27 Sep 2026: after signing up, people were left on a static "you're in" panel and kept
+   tapping the sticky "Start" bar looking for a next step. Now they book a 30-minute call
+   straight into a manager's Daviana diary (my.daviana.app/api/public/demo-call). If that
+   API is down or there are no free times, the panel falls back to "we'll ring you". */
+(function(){
+  var API = 'https://my.daviana.app/api/public/demo-call';
+  function $(id){ return document.getElementById(id); }
+  function ev(n, l){ try { if (window.gtag) gtag('event', n, {event_category:'trial', event_label: l || ''}); } catch (_) {} }
+  var WD = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"], MO = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
+  function dayLabel(d){ var p = d.split('-').map(Number), dt = new Date(Date.UTC(p[0], p[1]-1, p[2])); return {w: WD[dt.getUTCDay()], d: p[2] + ' ' + MO[p[1]-1]}; }
+  function fallback(ask){
+    $('dc-wait').hidden = true; $('dc').hidden = true;
+    if (ask) {
+      $('dc-h').textContent = 'La réservation en ligne est saturée pour le moment.';
+      $('dc-lead').innerHTML = 'Écrivez à <a href="mailto:info@daviana.app">info@daviana.app</a> avec le nom du salon, votre portable et un créneau qui vous arrange, et une de nos responsables de salon vous appellera.';
+      return;
+    }
+    $('dc-h').textContent = 'C’est fait.';
+    $('dc-lead').textContent = 'Une de nos responsables de salon vous appellera sous un jour ouvré pour une présentation de 30 minutes. Gardez vos tarifs et votre liste de clients à portée de main, nous les transférons pour vous.';
+  }
+  window.SF_DEMO = function(lead){
+    var bar = $('tr-sticky'); if (bar) bar.style.display = 'none';
+    $('dc-wait').hidden = false;
+    var ask = !lead; if (ask) $('dc-me').hidden = false;
+    var pick = null, byDay = {}, days = [];
+    function renderTimes(day){
+      var box = $('dc-times'); box.innerHTML = '';
+      [].forEach.call($('dc-days').children, function(b){ b.setAttribute('aria-selected', b.getAttribute('data-d') === day ? 'true' : 'false'); });
+      byDay[day].forEach(function(s){
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'dc-t'; b.textContent = s.time; b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', function(){
+          [].forEach.call(box.children, function(x){ x.setAttribute('aria-pressed', 'false'); });
+          b.setAttribute('aria-pressed', 'true'); pick = s;
+          var L = dayLabel(s.date), btn = $('dc-book'); btn.disabled = false; btn.textContent = 'Réserver ' + L.w + ' ' + L.d + ', ' + s.time;
+          ev('demo_slot_picked', s.date + ' ' + s.time);
+        });
+        box.appendChild(b);
+      });
+    }
+    fetch(API, {method:'GET'}).then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
+      (d.slots || []).forEach(function(s){ if (!byDay[s.date]) { byDay[s.date] = []; days.push(s.date); } byDay[s.date].push(s); });
+      if (!days.length) { ev('demo_slots_none'); return fallback(ask); }
+      days = days.slice(0, 7);
+      var wrap = $('dc-days');
+      days.forEach(function(day){
+        var L = dayLabel(day), b = document.createElement('button'); b.type = 'button'; b.className = 'dc-day'; b.setAttribute('role', 'tab'); b.setAttribute('data-d', day);
+        b.innerHTML = '<b></b><span></span>'; b.firstChild.textContent = L.w; b.lastChild.textContent = L.d;
+        b.addEventListener('click', function(){ renderTimes(day); });
+        wrap.appendChild(b);
+      });
+      $('dc-wait').hidden = true; $('dc').hidden = false; renderTimes(days[0]);
+      ev('demo_slots_shown', String(days.length));
+    }).catch(function(){ ev('demo_slots_failed'); fallback(ask); });
+
+    $('dc-book').addEventListener('click', function(){
+      if (!pick) return;
+      var btn = $('dc-book'), err = $('dc-err'); err.classList.remove('on');
+      if (ask) {
+        var fn = $('dc-first').value.trim(), ln = $('dc-last').value.trim();
+        lead = {salon: $('dc-salon').value.trim(), firstName: fn, lastName: ln, fullName: (fn + ' ' + ln).trim(), mobile: $('dc-mobile').value.trim(), email: $('dc-email').value.trim(), website: ''};
+        var q = new URLSearchParams(location.search); ['utm_source','utm_campaign','utm_content'].forEach(function(k){ lead[k] = q.get(k) || ''; }); if (!lead.utm_source) lead.utm_source = 'book-link';
+        if (!fn || !ln || !lead.salon || !/^[+0-9 ()-]{6,}$/.test(lead.mobile) || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(lead.email)) { err.textContent = 'Indiquez ci-dessus votre prénom, votre nom, le nom du salon, votre portable et votre e-mail.'; err.classList.add('on'); lead = null; return; }
+      }
+      btn.disabled = true; btn.textContent = 'Booking…';
+      var src = [lead.utm_source, lead.utm_campaign, lead.utm_content].filter(Boolean).join(' / ');
+      fetch(API, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
+        start: pick.start, salon: lead.salon, name: lead.fullName || '', mobile: lead.mobile, email: lead.email,
+        website: lead.website || '', source: src.slice(0, 200)
+      })}).then(function(r){ return r.json().then(function(j){ return {ok: r.ok, status: r.status, j: j}; }); }).then(function(x){
+        if (!x.ok) {
+          ev('demo_call_failed', String(x.status));
+          err.textContent = 'Impossible de réserver ce créneau. Choisissez-en un autre.'; err.classList.add('on');
+          if (ask) lead = null;
+          if (x.status === 409) {
+            var gone = document.querySelector('.dc-t[aria-pressed=true]'); if (gone) gone.remove();
+            pick = null; btn.textContent = 'Choisissez un créneau ci-dessus'; return;
+          }
+          btn.disabled = false; btn.textContent = 'Réessayer'; if (ask) lead = null; return;
+        }
+        ev('demo_call_booked', x.j.alreadyBooked ? 'already' : 'new');
+        $('dc').hidden = true; $('dc-lead').hidden = true; $('dc-sms').hidden = ask;
+        $('dc-h').textContent = x.j.alreadyBooked ? 'Vous avez déjà un appel réservé.' : 'C’est réservé. À bientôt.';
+        $('dc-ok-t').textContent = x.j.label + ' (heure du Royaume-Uni)';
+        $('dc-ok-s').textContent = x.j['with'] + ' vous appellera au ' + lead.mobile + '. Nous vous avons envoyé les détails par e-mail. Besoin d’un autre créneau ? Répondez à cet e-mail.';
+        $('dc-ok').hidden = false;
+      }).catch(function(){
+        ev('demo_call_failed', 'network'); if (ask) lead = null;
+        btn.disabled = false; btn.textContent = 'Réessayer';
+        err.textContent = 'Connexion impossible. Veuillez réessayer.'; err.classList.add('on');
+      });
+    });
+  };
+  // daviana.app/trial/#book — straight to the picker, no trial signup. For leads who already
+  // signed up (the walkthrough email links here) and for testing without creating a signup.
+  if (location.hash === '#book') {
+    var f = $('tr-form'), d = $('tr-done');
+    if (f && d) {
+      f.style.display = 'none'; d.classList.add('on'); $('dc-sms').hidden = true;
+      $('dc-h').textContent = 'Choisissez un créneau pour votre appel de 30 minutes.';
+      $('dc-lead').textContent = 'Une de nos responsables de salon vous appelle pour une présentation : votre agenda, Aria et le transfert de vos clients et tarifs.';
+      var tk = d.querySelector('.tick'); if (tk) tk.style.display = 'none';
+      window.SF_DEMO(null); ev('demo_book_link');
+      setTimeout(function(){ d.scrollIntoView({block:'start'}); }, 50);
+    }
+  }
+})();
+</script><style>.ss [hidden],.ss[hidden]{display:none!important}.ss{margin:22px auto 0;max-width:520px;text-align:left}.ss h3{font-size:1.0625rem;margin:22px 0 10px}.ss-go{width:100%;justify-content:center;margin-top:12px}.ss-small{font-size:.9375rem!important;color:var(--sec);margin:14px auto 0!important;text-align:center}.ss-link{background:none;border:0;padding:0;font:inherit;color:var(--blue);text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ss-add{display:inline-block;margin:2px 0 4px;font-size:.9375rem}.ss-hint{font-size:.9375rem!important;margin:0 0 10px!important;max-width:none!important}.ss-choose{display:grid;gap:12px}.ss-card{display:block;width:100%;text-align:left;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;background:#fff;font:inherit;cursor:pointer}.ss-card:hover{border-color:var(--blue)}.ss-card b{display:block;font-size:1.0625rem;color:var(--ink,#1d1d1f);margin-bottom:4px}.ss-card span{color:var(--sec);font-size:.9375rem;line-height:1.45}.ss-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ss-line{display:grid;grid-template-columns:1.3fr 1fr 1.1fr auto;gap:8px;align-items:center;margin-bottom:8px}.ss-line.br{grid-template-columns:1.6fr 1fr auto}.ss-line input,.ss-line select,.ss select,.ss-h input[type=time]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;min-width:0}.ss-x{background:none;border:0;font-size:1.25rem;line-height:1;color:var(--sec);cursor:pointer;padding:6px}.ss-h{display:grid;grid-template-columns:5.5em auto 1fr 1fr;gap:8px;align-items:center;margin-bottom:6px;font-size:.9375rem}.ss-h input[type=time]:disabled{opacity:.4}.ss-check{display:flex;gap:10px;align-items:center;margin:6px 0 4px;font-size:.9375rem}.ss-dl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 6px}.ss-dl .btn{min-width:220px;justify-content:center}.ss-alt{background:#fff;border:1.5px solid var(--line);color:var(--ink,#1d1d1f)}.ss-steps{text-align:left;max-width:34ch;margin:14px auto 0;color:var(--sec);line-height:1.6}@media(max-width:560px){.ss-line{grid-template-columns:1fr 1fr}.ss-line select{grid-column:1/2}.ss-line.br{grid-template-columns:1fr 1fr auto}.ss-row{grid-template-columns:1fr}}</style><script>
+/* 28 Sep 2026: after the signup form, the owner types in the SMS code on this page
+   (my.daviana.app/api/public/trial/phone/*), then chooses: set the salon up themselves
+   (team, branches, hours → /api/public/trial/setup, which texts + emails their licence
+   key) or book a call (SF_DEMO). If our API is unreachable at any step, it falls back to
+   the call picker, so nobody is stranded. */
+(function(){
+  var API = 'https://my.daviana.app/api/public/trial';
+  var DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var ROLES = [['stylist','Stylist'],['colourist','Colourist'],['barber','Barber'],['therapist','Therapist'],['reception','Reception'],['manager','Manager'],['other','Other']];
+  function $(id){ return document.getElementById(id); }
+  function ev(n, l){ try { if (window.gtag) gtag('event', n, {event_category:'trial', event_label: l || ''}); } catch (_) {} }
+  function post(path, body){
+    return fetch(API + path, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)})
+      .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ return {ok: r.ok, status: r.status, j: j}; }); });
+  }
+  function err(id, msg){ var e = $(id); e.textContent = msg || ''; e.classList.toggle('on', !!msg); }
+  function el(tag, attrs, kids){ var n = document.createElement(tag); for (var k in attrs) { if (k === 'text') n.textContent = attrs[k]; else n.setAttribute(k, attrs[k]); } (kids || []).forEach(function(c){ n.appendChild(c); }); return n; }
+  function panel(which){ ['ss-code','ss-choose','ss-form','ss-ready'].forEach(function(id){ $(id).hidden = (id !== which); }); err('ss-code-err', ''); }
+
+  var lead = null, token = '';
+
+  function toCall(){
+    $('ss').hidden = true;
+    $('dc-h').textContent = 'Choisissez un créneau pour votre appel.';
+    $('dc-lead').hidden = false;
+    $('dc-lead').textContent = 'Une de nos responsables de salon vous appelle pour une présentation de 30 minutes : votre agenda, Aria et le transfert de vos clients et tarifs.';
+    if (window.SF_DEMO) window.SF_DEMO(lead);
+  }
+
+  function sendCode(first){
+    return post('/phone/send', {mobile: lead.mobile}).then(function(x){
+      if (x.ok) { if (first) ev('otp_sent'); return true; }
+      ev('otp_send_failed', String(x.status));
+      if (first) { toCall(); return false; }
+      err('ss-code-err', 'Nous n’avons pas pu envoyer le code. Veuillez réessayer.');
+      return false;
+    }).catch(function(){ ev('otp_send_failed', 'network'); if (first) toCall(); return false; });
+  }
+
+  window.SF_VERIFY = function(data){
+    lead = data;
+    var bar = $('tr-sticky'); if (bar) bar.style.display = 'none';
+    $('dc-wait').hidden = true; $('dc-sms').hidden = true;
+    $('dc-h').textContent = 'Regardez votre téléphone.';
+    $('dc-lead').textContent = 'Nous avons envoyé un code à 6 chiffres au ' + data.mobile + '. Saisissez-le pour confirmer que le numéro est bien le vôtre.';
+    $('ss').hidden = false; panel('ss-code');
+    sendCode(true);
+    setTimeout(function(){ try { $('ss-otp').focus({preventScroll:true}); } catch (_) {} }, 300);
+  };
+
+  $('ss-otp-go').addEventListener('click', function(){
+    var code = ($('ss-otp').value || '').replace(/\D/g, '');
+    if (code.length < 4) { err('ss-code-err', 'Saisissez le code à 6 chiffres reçu par SMS.'); return; }
+    var b = $('ss-otp-go'); b.disabled = true; b.textContent = 'Checking…';
+    post('/phone/check', {mobile: lead.mobile, email: lead.email, code: code}).then(function(x){
+      b.disabled = false; b.textContent = 'Confirmer mon numéro';
+      if (!x.ok || !x.j.token) { ev('otp_wrong', String(x.status)); err('ss-code-err', 'Ce code n’est pas bon. Veuillez réessayer.'); return; }
+      token = x.j.token; ev('otp_verified');
+      try { if (window.fbq) fbq('trackCustom', 'PhoneVerified'); } catch (_) {}
+      $('dc-h').textContent = 'Numéro confirmé. Comment voulez-vous commencer ?';
+      $('dc-lead').textContent = 'Dans les deux cas, votre mois gratuit commence aujourd’hui. Sans carte.';
+      panel('ss-choose');
+    }).catch(function(){ b.disabled = false; b.textContent = 'Confirmer mon numéro'; err('ss-code-err', 'Connexion impossible. Veuillez réessayer.'); });
+  });
+  $('ss-otp').addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); $('ss-otp-go').click(); } });
+  $('ss-resend').addEventListener('click', function(){ ev('otp_resend'); sendCode(false).then(function(ok){ if (ok) err('ss-code-err', ''); if (ok) $('dc-lead').textContent = 'Nous avons envoyé un nouveau code au ' + lead.mobile + '.'; }); });
+  $('ss-skip').addEventListener('click', function(){ ev('call_chosen', 'skip_code'); toCall(); });
+  $('ss-pick-call').addEventListener('click', function(){ ev('call_chosen', 'verified'); toCall(); });
+  $('ss-ready-call').addEventListener('click', function(){ ev('call_chosen', 'after_setup'); $('ss').hidden = true; $('dc-lead').hidden = false; $('dc-h').textContent = 'Choisissez un créneau pour votre appel.'; $('dc-lead').textContent = 'Une de nos responsables de salon vous présente l’agenda et transfère vos clients et tarifs.'; if (window.SF_DEMO) window.SF_DEMO(lead); });
+
+  // ── Setup form ──────────────────────────────────────────────────────────
+  function removable(row){ var x = el('button', {type:'button', 'class':'ss-x', 'aria-label':'Supprimer', text:'×'}); x.addEventListener('click', function(){ row.remove(); syncRemove(); }); return x; }
+  function addBranch(){
+    var card = el('div', {'class':'ss-branch'});
+    var head = el('div', {'class':'ss-bhead'});
+    head.appendChild(el('input', {type:'text', placeholder:'Nom de l’établissement, p. ex. Centre', 'data-k':'name', 'aria-label':'Nom de l’établissement'}));
+    var x = removable(card); head.appendChild(x);
+    card.appendChild(head);
+    var addr = el('div', {'class':'ss-addr'});
+    [['address1','Adresse','address-line1'],['address2','Complément d’adresse (facultatif)','address-line2'],['city','Ville','address-level2'],['postcode','Code postal','postal-code'],['country','Pays','country-name']].forEach(function(f){
+      var i = el('input', {type:'text', placeholder:f[1], 'data-k':f[0], 'aria-label':f[1], autocomplete:f[2]});
+      if (f[0] === 'country') { i.setAttribute('list', 'ss-countries'); i.value = "France"; }
+      if (f[0] === 'postcode') i.setAttribute('autocapitalize', 'characters');
+      addr.appendChild(i);
+    });
+    card.appendChild(addr);
+    card.appendChild(el('p', {'class':'ss-bsub', text:'Horaires d’ouverture'}));
+    var hrs = el('div', {'class':'ss-hours'}); buildHours(hrs); card.appendChild(hrs);
+    $('ss-branches').appendChild(card);
+    syncRemove();
+  }
+  function syncRemove(){ var cards = $('ss-branches').children; [].forEach.call(cards, function(c){ var x = c.querySelector('.ss-x'); if (x) x.hidden = cards.length < 2; }); }
+  function buildHours(box){
+    box.innerHTML = '';
+    DAYS.forEach(function(d){
+      var open = d !== 'Sunday';
+      var row = el('div', {'class':'ss-h', 'data-day':d});
+      var cb = el('input', {type:'checkbox', 'aria-label':d + ' open'}); cb.checked = open;
+      var o = el('input', {type:'time', value:'09:00', 'aria-label':d + ' opens'}), c = el('input', {type:'time', value: d === 'Saturday' ? '17:00' : '18:00', 'aria-label':d + ' closes'});
+      function sync(){ o.disabled = c.disabled = !cb.checked; }
+      cb.addEventListener('change', sync); sync();
+      row.appendChild(el('span', {text:({"Monday": "Lun", "Tuesday": "Mar", "Wednesday": "Mer", "Thursday": "Jeu", "Friday": "Ven", "Saturday": "Sam", "Sunday": "Dim"})[d]})); row.appendChild(cb); row.appendChild(o); row.appendChild(c);
+      box.appendChild(row);
+    });
+  }
+  var SW = {'fresha/booksy/treatwell':'Fresha','phorest/zenoti/vagaro':'Phorest','phone+whatsapp':'Agenda papier / téléphone','paper diary':'Agenda papier / téléphone','instagram dms':'Rien pour l’instant','other system':'Autre chose'};
+
+  $('ss-pick-self').addEventListener('click', function(){
+    ev('self_setup_chosen');
+    var parts = (lead.fullName || '').trim().split(/\s+/);
+    $('ss-first').value = lead.firstName || parts[0] || ''; $('ss-last').value = lead.lastName || parts.slice(1).join(' ');
+    $('ss-salon').value = lead.salon || '';
+    $('ss-branches').innerHTML = ''; addBranch();
+    var quiz = (window.SF_QUIZ ? window.SF_QUIZ() : '');
+    var bk = (quiz.match(/bookings:([^·]+)/) || [])[1]; bk = bk ? bk.trim() : '';
+    if (SW[bk]) $('ss-sw').value = SW[bk];
+    syncSw();
+    $('dc-h').textContent = 'Configurer ' + (lead.salon || 'votre salon') + '.';
+    $('dc-lead').textContent = 'Environ cinq minutes. Vous pourrez tout modifier plus tard dans l’application.';
+    panel('ss-form');
+  });
+  $('ss-add-branch').addEventListener('click', function(){ addBranch(); });
+  function syncSw(){ $('ss-sw-other-f').hidden = $('ss-sw').value !== 'Autre chose'; }
+  $('ss-sw').addEventListener('change', function(){ syncSw(); if (!$('ss-sw-other-f').hidden) $('ss-sw-other').focus(); });
+
+  function rows(boxId){ return [].map.call($(boxId).children, function(r){ var o = {}; [].forEach.call(r.querySelectorAll('[data-k]'), function(i){ o[i.getAttribute('data-k')] = (i.value || '').trim(); }); return o; }); }
+
+  $('ss-submit').addEventListener('click', function(){
+    err('ss-err', '');
+    var first = $('ss-first').value.trim(), last = $('ss-last').value.trim();
+    var salonName = $('ss-salon').value.trim();
+    function hoursOf(box){ var h = {}; [].forEach.call(box.children, function(r){ var i = r.querySelectorAll('input'); h[r.getAttribute('data-day')] = {isOpen: i[0].checked, openTime: i[1].value, closeTime: i[2].value}; }); return h; }
+    var branches = [].map.call($('ss-branches').children, function(c){ var o = {}; [].forEach.call(c.querySelectorAll('[data-k]'), function(i){ o[i.getAttribute('data-k')] = (i.value || '').trim(); }); o.openingHours = hoursOf(c.querySelector('.ss-hours')); return o; });
+    var sw = $('ss-sw').value, swOther = $('ss-sw-other').value.trim();
+    if (!first || !last) { err('ss-err', 'Indiquez votre prénom et votre nom.'); return; }
+    if (!salonName) { err('ss-err', 'Indiquez le nom du salon.'); return; }
+    if (!branches.length) { err('ss-err', 'Ajoutez au moins un établissement.'); return; }
+    for (var bi = 0; bi < branches.length; bi++) { var br = branches[bi]; if (!br.name || !br.address1 || !br.city || !br.postcode || !br.country) { err('ss-err', 'Indiquez le nom, l’adresse, la ville, le code postal et le pays pour ' + (br.name || 'chaque établissement') + '.'); return; } }
+    if (!sw) { err('ss-err', 'Dites-nous ce que vous utilisez aujourd’hui pour les rendez-vous.'); $('ss-sw').focus(); return; }
+    if (sw === 'Autre chose' && !swOther) { err('ss-err', 'Indiquez le logiciel de réservation que vous utilisez.'); $('ss-sw-other').focus(); return; }
+    lead.salon = salonName;
+    var b = $('ss-submit'); b.disabled = true; b.textContent = 'Création de votre salon…';
+    post('/setup', {
+      token: token, mobile: lead.mobile, email: lead.email, salonName: salonName,
+      ownerFirstName: first, ownerLastName: last, branches: branches, openingHours: branches[0].openingHours,
+      currentSoftware: sw === 'Autre chose' ? swOther : sw, wantsImport: $('ss-import').checked
+    }).then(function(x){
+      b.disabled = false; b.textContent = 'Créer mon salon';
+      if (!x.ok) {
+        ev('self_setup_failed', String(x.status));
+        if (x.j && x.j.code === 'phone_unverified') { panel('ss-code'); sendCode(false); }
+        err(x.j && x.j.code === 'phone_unverified' ? 'ss-code-err' : 'ss-err', 'Un problème est survenu. Réessayez ou écrivez à info@daviana.app.');
+        return;
+      }
+      ev('self_setup_done');
+      try { if (window.fbq) fbq('track', 'CompleteRegistration', {content_name: 'trial_self_setup'}); } catch (_) {}
+      try { if (window.gtag) gtag('event', 'sign_up', {method: 'self_setup'}); } catch (_) {}
+      var by = x.j.keySentBy || {};
+      $('dc-h').textContent = lead.salon + ' est prêt.';
+      $('dc-lead').textContent = 'Téléchargez Daviana, puis connectez-vous avec votre clé de licence.';
+      $('ss-keynote').textContent = by.sms || by.email
+        ? 'Nous vous avons envoyé votre clé de licence ' + (by.sms && by.email ? 'par SMS et e-mail' : by.sms ? 'par SMS au ' + lead.mobile : 'à ' + lead.email) + '.'
+        : 'Votre clé de licence arrive : nous vous l’envoyons par SMS sous peu.';
+      $('ss-mac').href = x.j.downloads.mac; $('ss-win').href = x.j.downloads.windows;
+      var isWin = /Win/i.test(navigator.platform || navigator.userAgent);
+      if (isWin) { $('ss-win').className = 'btn btn-g'; $('ss-mac').className = 'btn ss-alt'; $('ss-win').parentNode.insertBefore($('ss-win'), $('ss-mac')); }
+      [$('ss-mac'), $('ss-win')].forEach(function(a){ a.addEventListener('click', function(){ ev('app_download', a.getAttribute('data-os')); }); });
+      panel('ss-ready');
+      $('tr-done').scrollIntoView({behavior:'smooth', block:'start'});
+    }).catch(function(){ b.disabled = false; b.textContent = 'Créer mon salon'; err('ss-err', 'Connexion impossible. Veuillez réessayer.'); });
   });
 })();
 </script>
@@ -1103,6 +1392,57 @@ body:has(.qz-step[data-q="capture"].on) .qz-skip{display:none!important}
 .qz-back,.qz-skip{min-height:32px!important;padding-top:0!important;padding-bottom:0!important;line-height:32px}
 @media(max-height:760px){.tr-reassure{display:none}}
 @media(max-height:620px){.qz-final{display:none}.tr-card .tr-trust{display:none}.tr-foot{padding-bottom:4px!important}}
+</style>
+<style id="tr-roomy">
+.dc{margin:22px auto 0;max-width:520px;text-align:left}.dc-days{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.dc-days::-webkit-scrollbar{display:none}.dc-day{flex:0 0 auto;min-width:74px;padding:9px 10px;border-radius:12px;border:1px solid var(--line);background:#fff;font:inherit;font-size:.875rem;line-height:1.25;color:var(--ink,#1d1d1f);cursor:pointer;text-align:center}.dc-day b{display:block;font-size:1rem}.dc-day[aria-selected=true]{border-color:var(--blue);background:rgba(217,119,87,.10);color:var(--blue)}.dc-times{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr));gap:8px;margin-top:6px}.dc-t{padding:11px 6px;border-radius:10px;border:1px solid var(--line);background:#fff;font:inherit;font-size:1rem;font-variant-numeric:tabular-nums;cursor:pointer;color:var(--ink,#1d1d1f)}.dc-t[aria-pressed=true]{border-color:var(--blue);background:var(--blue);color:#fff}.dc-book{width:100%;justify-content:center;margin-top:16px}.dc-book[disabled]{opacity:.55;cursor:default}.dc-err{display:none;margin-top:12px;color:#b3261e;font-size:.9375rem;text-align:center}.dc-err.on{display:block}.dc-wait{margin-top:18px;font-size:.9375rem}.dc-me{margin-bottom:14px}.dc-ok{margin:22px auto 0;max-width:46ch;padding:18px;border-radius:14px;background:rgba(217,119,87,.10)}.dc-ok-t{color:var(--ink,#1d1d1f)!important;font-weight:600;font-size:1.125rem!important;margin-bottom:6px!important}
+.ss-branch{border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;display:flex;flex-direction:column;gap:8px;background:#fff}
+.ss-bhead{display:flex;gap:8px;align-items:center}
+.ss-bhead input{flex:1;min-width:0;font-weight:600}
+.ss-bhead .ss-x[hidden]{display:none}
+.ss-addr{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ss-addr input[data-k="address1"],.ss-addr input[data-k="address2"]{grid-column:1/-1}
+.ss-branch input[type=text]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;min-width:0}
+.ss-bsub{margin:6px 0 0!important;font-size:.875rem!important;font-weight:600;color:var(--ink)!important}
+@media(max-width:340px){.ss-addr{grid-template-columns:1fr}}
+@media(max-width:560px){.ss-branch{padding:10px}.ss-branch .ss-h{grid-template-columns:2.6em auto 1fr 1fr;gap:6px}.ss-branch .ss-h input[type=time]{padding:9px 6px;font-size:.9375rem}}
+.tr-row2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.tr-row2>.tr-field{min-width:0}
+@media(max-width:340px){.tr-row2{grid-template-columns:1fr}}
+/* /trial: centre the card in the window and give the form room to breathe */
+.qz-other{margin:6px 0 0;display:flex;flex-direction:column;gap:8px}
+.qz-other[hidden]{display:none}
+.qz-other label{font-size:.9375rem;font-weight:600}
+.qz-other-row{display:flex;gap:8px}
+.qz-other-row input{flex:1;min-width:0;font:inherit;font-size:1rem;padding:11px 14px;border:1.5px solid rgba(20,12,8,.14);border-radius:12px;min-height:46px}
+.qz-other-row input:focus{outline:none;border-color:var(--g,#c96f4a);box-shadow:0 0 0 3px rgba(217,119,87,.16)}
+.tr-form .qz-other-row .btn{width:auto!important;flex:0 0 auto;min-height:46px!important;margin:0!important;padding:0 22px;white-space:nowrap}
+.tr-field[hidden]{display:none!important}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+body>.tr-wrap.tr-foot{flex:1 0 auto;width:100%;display:flex;flex-direction:column;justify-content:center}
+@media(min-width:860px) and (min-height:800px){
+ .trf-bar{padding-top:22px}
+ .tr-foot{padding:20px var(--gutter) 40px!important}
+ .tr-hero{padding:0 0 28px!important}
+ .tr-hero h1{margin:0 auto 12px!important}
+ .tr-card{padding:34px 40px 28px!important}
+ .tr-card .tr-trust{margin:0 0 22px!important}
+ .qz-top{margin-bottom:24px!important}
+ .qz-q{font-size:20px!important;margin:0 0 20px!important}
+ .qz-opt{padding:15px 18px!important;margin:0 0 12px!important;font-size:16px!important}
+ .qz-final{margin:0 0 22px!important;font-size:1rem!important}
+ .tr-field{margin-bottom:16px!important;gap:8px!important}
+ .tr-field>label{font-size:.9375rem!important}
+ .tr-field input{min-height:48px!important;padding-top:11px!important;padding-bottom:11px!important}
+ .tr-reassure{margin:8px 0 18px!important;font-size:.875rem!important}
+ .tr-form .btn-g{min-height:52px!important;margin-top:4px!important}
+ .qz-skip,.qz-back{margin-top:14px!important}
+ .trf-legal{bottom:32px}
+}
+/* skipped the questions: one extra field, so keep the details step on one screen */
+@media(min-width:860px) and (min-height:800px) and (max-height:1000px){
+ body:has(#tr-spec-f:not([hidden])) .tr-field{margin-bottom:12px!important}
+ body:has(#tr-spec-f:not([hidden])) .tr-reassure{display:none}
+}
 </style>
 </body>
 </html>
