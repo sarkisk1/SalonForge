@@ -5,9 +5,11 @@
 /live-chat / 301
 /lead-generation / 301
 
-# /demo/ is a REAL page again from 2026-08-29 — the two 301s that pointed it at
-# /trial/ are gone. Do not re-add them: a Google sitelink ("Try a live salon,
-# no signup") lands here, and the page is the only on-domain demo conversion.
+# /demo/ -> /trial/ again from 2026-10-01 (Sarkis): every "Book a demo" button
+# now goes straight to the trial. This replaces the 2026-08-29 decision to keep
+# /demo/ as a real page; the Google sitelink that landed there now follows the 301.
+/demo/ /trial/ 301
+/demo /trial/ 301
 
 # /free/ retired 2026-08-28: the free-with-colour offer returns with onboarding.
 /free/ /pricing/ 301
