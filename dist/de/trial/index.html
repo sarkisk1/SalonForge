@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<!-- sf-resume: opened from the "one step away" reminder (?r=<token>). Take the token out of the URL before any analytics tag can record it. --><script>(function(){try{var q=new URLSearchParams(location.search),r=q.get('r');if(!r)return;q.delete('r');var s=q.toString();history.replaceState(null,'',location.pathname+(s?'?'+s:'')+location.hash);if(/^[A-Za-z0-9_-]{38}$/.test(r))window.SF_RESUME=r;}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -1480,5 +1481,41 @@ body>.tr-wrap.tr-foot{flex:1 0 auto;width:100%;display:flex;flex-direction:colum
  body:has(#tr-spec-f:not([hidden])) .tr-reassure{display:none}
 }
 </style>
+<!-- sf-resume: fill the form back in from the reminder link (my.daviana.app/api/public/trial/lead/resume) --><script>
+(function(){
+  var r = window.SF_RESUME; if (!r) return;
+  var HELLO = {
+    en: 'Welcome back, {first}. Your details are filled in: check them, then tap the button and we\u2019ll text you a new code.',
+    it: 'Bentornato, {first}. I tuoi dati sono gi\u00e0 compilati: controllali, poi tocca il pulsante e ti mandiamo un nuovo codice.',
+    fr: 'Bon retour, {first}. Vos informations sont d\u00e9j\u00e0 remplies : v\u00e9rifiez-les, puis touchez le bouton et nous vous enverrons un nouveau code.',
+    de: 'Willkommen zur\u00fcck, {first}. Ihre Angaben sind bereits ausgef\u00fcllt: Pr\u00fcfen Sie sie und tippen Sie dann auf die Schaltfl\u00e4che, wir schicken Ihnen einen neuen Code.',
+    es: 'Hola de nuevo, {first}. Tus datos ya est\u00e1n rellenados: rev\u00edsalos, toca el bot\u00f3n y te enviamos un c\u00f3digo nuevo.'
+  };
+  function $(id){ return document.getElementById(id); }
+  function set(id, v){ var e = $(id); if (e && v && !e.value) e.value = v; }
+  fetch('https://my.daviana.app/api/public/trial/lead/resume', {
+    method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({token: r})
+  }).then(function(x){ return x.ok ? x.json() : null; }).then(function(j){
+    if (!j || !j.lead) return;
+    var L = j.lead;
+    set('tr-first', L.firstName); set('tr-last', L.lastName); set('tr-salon', L.salon);
+    set('tr-salon-phone', L.salonPhone); set('tr-email', L.email); set('tr-website', L.website);
+    set('tr-mobile', /^\+447\d{9}$/.test(L.mobile || '') ? '0' + L.mobile.slice(3) : L.mobile);
+    var sw = $('tr-sw');
+    if (sw && L.currentSoftware && !sw.value) {
+      var listed = [].some.call(sw.options, function(o){ return o.value === L.currentSoftware; });
+      sw.value = listed ? L.currentSoftware : 'Something else';
+      sw.dispatchEvent(new Event('change'));
+      if (!listed) set('tr-sw-other', L.currentSoftware);
+    }
+    if (L.wantsImport && $('tr-import') && !$('tr-import-f').hidden) $('tr-import').checked = true;
+    // Keep the original ad on the re-sent sign-up (first landing wins, as in sf-attrib).
+    try { if (j.attribution && Object.keys(j.attribution).length && !sessionStorage.getItem('sf_attrib')) sessionStorage.setItem('sf_attrib', JSON.stringify(j.attribution)); } catch (_) {}
+    var lang = (document.documentElement.lang || 'en').slice(0, 2), msg = HELLO[lang] || HELLO.en, fin = $('qz-final');
+    if (fin) fin.textContent = msg.replace('{first}', L.firstName || '');
+    try { if (window.posthog) posthog.capture('trial_resume_opened'); else if (window.sfLater) sfLater(function(){ if (window.posthog) posthog.capture('trial_resume_opened'); }); } catch (_) {}
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>
