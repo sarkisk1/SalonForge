@@ -536,16 +536,15 @@ footer{border-top:1px solid var(--line);padding:52px 0 40px;background:var(--alt
 .nf-foot{border-top:1px solid var(--line);background:var(--alt);padding:26px 0}
 .nf-foot .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;font-size:.8125rem;color:var(--sec)}
 </style>
-<!-- Meta Pixel --><script>
+<!-- sf-later: third-party tags load on first interaction or 3 s after load --><script>(function(w){var q=[],done=0,o={passive:true,capture:true},ev=["pointerdown","keydown","touchstart","scroll","mousemove"];function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});while(q.length){try{q.shift()()}catch(x){}}}ev.forEach(function(e){w.addEventListener(e,go,o)});if(document.readyState==="complete")setTimeout(go,3000);else w.addEventListener("load",function(){setTimeout(go,3000)});w.sfLater=function(f){done?f():q.push(f)}})(window);</script><!-- Meta Pixel --><script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+t.src=v;sfLater(function(){b.head.appendChild(t)})}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','1073465021859582');fbq('track','PageView');
 </script><noscript><img height="1" width="1" style="display:none" alt=""
-src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></noscript><!-- Google tag (gtag.js) --><script async
-src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF"></script><script>
+src="https://www.facebook.com/tr?id=1073465021859582&ev=PageView&noscript=1"/></noscript><!-- Google tag (gtag.js) --><script>sfLater(function(){var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-XLPY3YD0NF";document.head.appendChild(s)});</script><script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-XLPY3YD0NF');gtag('config','G-PXG6NJYEEM');gtag('config','AW-941092922');window.SF_AW_CONV_TRIAL='AW-941092922/rY-jCO3-uuccELrg38AD';window.SF_AW_CONV_DEMO='AW-941092922/ePMMCP3x-4kdELrg38AD';window.SF_AW_CONV_PLAN='AW-941092922/tJyrCIDy-4kdELrg38AD';
 </script><!-- sf-attrib: first-landing ad attribution --><script>
@@ -560,7 +559,7 @@ if(prev)return;                       /* first landing wins, always */
 o.landing_url=location.href.slice(0,512);
 sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 }catch(e){}})();
-</script><script defer src="/assets/analytics.js?v=4"></script></head>
+</script><script defer src="/assets/analytics.js?v=5"></script></head>
 <body>
 
 <div class="nf">

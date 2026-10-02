@@ -54,5 +54,7 @@
       }
     });
   };
-  document.head.appendChild(s);
+  // Loaded via the sf-later helper in <head>: first interaction or 3 s after load, so the
+  // third-party tags stay off the critical path (PageSpeed mobile LCP 10.3 s on 2026-10-02).
+  (window.sfLater || function (f) { f(); })(function () { document.head.appendChild(s); });
 })();
