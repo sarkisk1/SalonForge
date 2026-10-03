@@ -7,6 +7,7 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 ## Products
 - [Daviana Booking, also called Daviana Diary](https://daviana.app/diary/): the salon booking system and booking spine — appointment diary, till, client records, per-stylist pricing, rota and online booking. Every other product reads and writes this one shared record.
 - [Daviana Aria (AI Receptionist)](https://daviana.app/ai-receptionist/): an AI receptionist for hair salons. Answers the salon phone, books into the real diary, answers questions and is straight about price. Catches the calls that ring out when the desk is busy.
+- [Hear Aria answer as your salon](https://daviana.app/aria/): give a salon name, mobile and website, and Aria rings you back as that salon's own receptionist, knowing its services and prices. Keep her free for 14 days.
 - [Daviana ColorLab](https://daviana.app/colorlab/): hair colour management software. Colour weighed on a connected scale, costed to the gram, and written to the client record so the next stylist sees the actual formula used.
 - [Daviana Bar](https://daviana.app/bar/): a drink to the chair — posts to the client's bill and deducts stock, instantly, without leaving the floor.
 - [Daviana Performance](https://daviana.app/performance/): the app the team opens daily — live revenue and leaderboards, commission and self-employed settlement, tips and gamified training.
@@ -22,17 +23,20 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 
 ## Pricing
 - [Pricing](https://daviana.app/pricing/): priced per product — Daviana Diary £80 a month, the AI Receptionist £60 a month, ColorLab £80 a month. Bar and Performance are included free once you take the Diary. All prices include VAT. Take one, take all five. No commission on bookings, no per-booking charge, no lock-in, and client lists are never marketed to other salons.
-- [Start a free trial](https://daviana.app/trial/): leave a salon name, a mobile and an email; someone rings within one working day and moves the clients, services and prices across by hand. Free for a month, no card.
+- [Start a free trial](https://daviana.app/trial/): fill in your details and confirm your mobile with a six-digit text code. Then either set the salon up yourself in about 5 minutes (add your branches and opening hours, download Daviana for Mac or Windows and log in), or book a 30-minute call where one of our salon managers moves your clients, services and prices across. Free for a month, no card, no contract.
 
 ## Questions answered
 - [Frequently asked questions](https://daviana.app/faq/): pricing, switching, data migration, setup time, hardware.
+- [Full text of this site](https://daviana.app/llms-full.txt): every journal post, every comparison page and every product FAQ in one plain-text file.
 
 ## Free calculators (no sign-up, nothing stored)
+- [All free tools](https://daviana.app/tools/)
 - [Missed call calculator](https://daviana.app/tools/missed-call-calculator/): what a salon's unanswered calls are worth over a year. Every assumption is adjustable.
 - [Colour cost calculator](https://daviana.app/tools/colour-cost-calculator/): true colour cost per head, and what it is as a share of the colour service price.
 
 ## Comparisons with other salon software
 Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
+- [All comparisons](https://daviana.app/compare/)
 - [Daviana vs Fresha](https://daviana.app/compare/daviana-vs-fresha/)
 - [Daviana vs Phorest](https://daviana.app/compare/daviana-vs-phorest/)
 - [Daviana vs Treatwell](https://daviana.app/compare/daviana-vs-treatwell/)
@@ -46,6 +50,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Daviana vs Timely](https://daviana.app/compare/daviana-vs-timely/)
 
 ## Journal
+- [All journal posts](https://daviana.app/blog/): practical writing for salon owners on booking, colour cost, missed calls, stock and pay.
 - [What is the best hair colour management software for UK salons?](https://daviana.app/blog/best-hair-colour-management-software/): Vish, SalonScale, Color Bar Manager and Daviana ColorLab compared for UK salons: prices, scales, booking system fit, and which suits which salon.
 - [What is the best AI receptionist for a UK salon?](https://daviana.app/blog/best-ai-receptionist-for-salons-uk/): AI receptionists for UK hair, nail and beauty salons compared: Treatwell, Salon Agent, Zenoti, Qlient and Daviana Aria. Prices, and which diary each books into.
 - [What is the best salon software in the UK?](https://daviana.app/blog/best-salon-software-uk/): Fresha, Treatwell, Booksy, Timely, SalonIQ, Phorest and Daviana compared for UK hair, nail and beauty salons: real prices, contracts and new-client fees.
