@@ -796,7 +796,7 @@ sessionStorage.setItem('sf_attrib',JSON.stringify(o));
 .qz-back{background:none;border:none;font:inherit;font-size:14px;color:var(--sec);cursor:pointer;padding:6px 0;margin-top:4px}
 .qz-final{font-size:15px;line-height:1.45;color:var(--sec);margin:0 0 14px}
 </style><form class="tr-form" id="tr-form" style="padding-bottom:44px"><div class="qz-top" hidden style="display:none"><div class="qz-bar"><i id="qz-fill"></i></div><span class="qz-count" id="qz-count">1 sur 4</span></div>
-<div class="qz-step on" data-q="capture"><p class="qz-final" id="qz-final">Un mois gratuit, sans carte. Parlez-nous de vous et de votre salon.</p><div class="tr-row2"><div class="tr-field"><label for="tr-first">Prénom</label><input autocomplete="given-name" id="tr-first" name="firstName" placeholder="Marie" required="" type="text"/></div><div class="tr-field"><label for="tr-last">Nom</label><input autocomplete="family-name" id="tr-last" name="lastName" placeholder="Dubois" required="" type="text"/></div></div><div class="tr-field"><label for="tr-salon">Nom du salon</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Le nom du salon"></div><div class="tr-field"><label for="tr-salon-phone">Téléphone du salon <span style="font-weight:400;color:var(--sec)">(facultatif)</span></label><input autocomplete="tel" id="tr-salon-phone" inputmode="tel" name="salonPhone" type="tel"/></div><div class="tr-field"><label for="tr-mobile">Portable <span style="font-weight:400;color:var(--sec)">(nous vous envoyons un code pour confirmer que c’est bien vous)</span></label><input id="tr-mobile" name="mobile" required type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78"></div><div class="tr-field"><label for="tr-email">E-mail</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="marie@votresalon.fr"></div><div class="tr-field"><label for="tr-website">Site du salon <span style="font-weight:400;color:var(--sec)">(facultatif — il nous sert à configurer vos prestations et tarifs)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="votresalon.fr"></div><div class="tr-field"><label for="tr-sw">Qu’utilisez-vous aujourd’hui pour les rendez-vous ?</label><select id="tr-sw" name="currentSoftware" required=""><option value="">Choisissez</option><option value="Fresha">Fresha</option><option value="Booksy">Booksy</option><option value="Treatwell">Treatwell</option><option value="Phorest">Phorest</option><option value="Timely">Timely</option><option value="Shortcuts">Shortcuts</option><option value="Zenoti">Zenoti</option><option value="Vagaro">Vagaro</option><option value="Paper diary / phone">Agenda papier / téléphone</option><option value="Something else">Autre chose</option><option value="Nothing yet">Rien pour l’instant</option></select></div><div class="tr-field" id="tr-sw-other-f" hidden><label for="tr-sw-other">Comment s’appelle-t-il ?</label><input id="tr-sw-other" name="currentSoftwareOther" type="text" maxlength="100" placeholder="Nom de votre logiciel de réservation"/></div><label class="ss-check" id="tr-import-f"><input id="tr-import" name="wantsImport" type="checkbox"/> Transférez toutes mes données pour moi : clients, prestations et tarifs</label><script>(function(){var s=document.getElementById("tr-sw"),of=document.getElementById("tr-sw-other-f"),o=document.getElementById("tr-sw-other"),im=document.getElementById("tr-import-f");function sync(){var other=s.value==="Something else";of.hidden=!other;o.required=other;im.hidden=s.value==="Nothing yet";if(im.hidden)document.getElementById("tr-import").checked=false;}s.addEventListener("change",function(){sync();if(!of.hidden)o.focus();});sync();})();</script><p class="tr-reassure">Sans carte, sans contrat, rien n’est partagé.</p><button class="btn btn-g" type="submit">Je m’installe</button></div>
+<div class="qz-step on" data-q="capture"><p class="qz-final" id="qz-final">Un mois gratuit, sans carte. Parlez-nous de vous et de votre salon.</p><div class="tr-row2"><div class="tr-field"><label for="tr-first">Prénom</label><input autocomplete="given-name" id="tr-first" name="firstName" placeholder="Marie" required="" type="text"/></div><div class="tr-field"><label for="tr-last">Nom</label><input autocomplete="family-name" id="tr-last" name="lastName" placeholder="Dubois" required="" type="text"/></div></div><div class="tr-field"><label for="tr-salon">Nom du salon</label><input id="tr-salon" name="salon" type="text" autocomplete="organization" required placeholder="Le nom du salon"></div><div class="tr-field"><label for="tr-salon-phone">Téléphone du salon <span style="font-weight:400;color:var(--sec)">(facultatif)</span></label><input autocomplete="tel" id="tr-salon-phone" inputmode="tel" name="salonPhone" type="tel"/></div><div class="tr-field"><label for="tr-mobile">Portable <span style="font-weight:400;color:var(--sec)">(nous vous envoyons un code pour confirmer que c’est bien vous)</span></label><input id="tr-mobile" name="mobile" required type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78"></div><div class="tr-field"><label for="tr-email">E-mail</label><input id="tr-email" name="email" type="email" autocomplete="email" required placeholder="marie@votresalon.fr"></div><div class="tr-field"><label for="tr-website">Site du salon <span style="font-weight:400;color:var(--sec)">(facultatif — il nous sert à configurer vos prestations et tarifs)</span></label><input id="tr-website" name="website" type="text" inputmode="url" autocapitalize="off" autocomplete="url" placeholder="votresalon.fr"></div><div class="tr-field"><label for="tr-sw">Qu’utilisez-vous aujourd’hui pour les rendez-vous ?</label><select id="tr-sw" name="currentSoftware" required=""><option value="">Choisissez</option><option value="Fresha">Fresha</option><option value="Booksy">Booksy</option><option value="Treatwell">Treatwell</option><option value="Phorest">Phorest</option><option value="Timely">Timely</option><option value="Shortcuts">Shortcuts</option><option value="Zenoti">Zenoti</option><option value="Vagaro">Vagaro</option><option value="Paper diary / phone">Agenda papier / téléphone</option><option value="Something else">Autre chose</option><option value="Nothing yet">Rien pour l’instant</option></select></div><div class="tr-field" id="tr-sw-other-f" hidden><label for="tr-sw-other">Comment s’appelle-t-il ?</label><input id="tr-sw-other" name="currentSoftwareOther" type="text" maxlength="100" placeholder="Nom de votre logiciel de réservation"/></div><label class="ss-check" id="tr-import-f"><input id="tr-import" name="wantsImport" type="checkbox"/> Transférez toutes mes données pour moi : clients, prestations et tarifs</label><script>(function(){var s=document.getElementById("tr-sw"),of=document.getElementById("tr-sw-other-f"),o=document.getElementById("tr-sw-other"),im=document.getElementById("tr-import-f");function sync(){var other=s.value==="Something else";of.hidden=!other;o.required=other;im.hidden=s.value==="Nothing yet";if(im.hidden)document.getElementById("tr-import").checked=false;}s.addEventListener("change",function(){sync();if(!of.hidden)o.focus();});sync();})();</script><p class="tr-reassure">Sans carte, sans contrat, rien n’est partagé.</p><button class="btn btn-g" type="submit">Je m’installe</button><p class="tr-reassure tr-codehint">Nous vous enverrons un code à 6 chiffres par SMS. Gardez cette page ouverte pour le saisir.</p></div>
 <button type="button" class="qz-back" id="qz-back" hidden>← Retour</button></form><p class="trf-legal"><a href="/privacy/" target="_blank" rel="noopener">Confidentialité</a></p>
 <script>(function(){
 var steps=[].slice.call(document.querySelectorAll('.qz-step')),fill=document.getElementById('qz-fill'),
@@ -1149,14 +1149,21 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     });
   }
 
-  window.SF_VERIFY = function(data){
+  // 4 Oct 2026: on a phone the owner leaves to read the text, and Facebook/Instagram's
+  // in-app browser often reloads the page when they come back, so the code box was gone.
+  // The step is kept in this browser for 30 minutes and reopened without a new text.
+  var STEP_KEY = 'sf_code_step', STEP_MS = 30 * 60 * 1000;
+  function keepStep(d){ try { localStorage.setItem(STEP_KEY, JSON.stringify({at: Date.now(), lead: d})); } catch (_) {} }
+  function dropStep(){ try { localStorage.removeItem(STEP_KEY); } catch (_) {} }
+  window.SF_VERIFY = function(data, restored){
     lead = data;
+    keepStep(data);
     var bar = $('tr-sticky'); if (bar) bar.style.display = 'none';
     $('dc-wait').hidden = true; $('dc-sms').hidden = true;
     $('dc-h').textContent = 'Regardez votre téléphone.';
     $('dc-lead').textContent = 'Nous avons envoyé un code à 6 chiffres au ' + data.mobile + '. Saisissez-le pour confirmer que le numéro est bien le vôtre.';
     $('ss').hidden = false; panel('ss-code');
-    sendCode(true);
+    if (restored) ev('otp_step_restored'); else sendCode(true);
     setTimeout(function(){ try { $('ss-otp').focus({preventScroll:true}); } catch (_) {} }, 300);
   };
 
@@ -1167,7 +1174,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     post('/phone/check', {mobile: lead.mobile, email: lead.email, code: code}).then(function(x){
       b.disabled = false; b.textContent = 'Confirmer mon numéro';
       if (!x.ok || !x.j.token) { ev('otp_wrong', String(x.status)); err('ss-code-err', 'Ce code n’est pas bon. Veuillez réessayer.'); return; }
-      token = x.j.token; ev('otp_verified');
+      token = x.j.token; ev('otp_verified'); dropStep();
       try { if (window.fbq) fbq('trackCustom', 'PhoneVerified'); } catch (_) {}
       createSalon();
     }).catch(function(){ b.disabled = false; b.textContent = 'Confirmer mon numéro'; err('ss-code-err', 'Connexion impossible. Veuillez réessayer.'); });
@@ -1199,6 +1206,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   // 30 Sep 2026: no skipping the code. Every sign-up confirms its mobile before it can book a
   // call or set the salon up; a wrong number goes back to the form to be corrected.
   $('ss-change').addEventListener('click', function(){
+    dropStep();
     ev('otp_change_number');
     var f = $('tr-form'), d = $('tr-done'); if (!f || !d) return;
     $('ss').hidden = true; $('ss-otp').value = ''; d.classList.remove('on'); f.style.display = '';
@@ -1207,6 +1215,16 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   });
   $('ss-pick-call').addEventListener('click', function(){ ev('call_chosen', 'verified'); toCall(); });
   $('ss-ready-call').addEventListener('click', function(){ ev('call_chosen', 'after_setup'); $('ss').hidden = true; $('dc-lead').hidden = false; $('dc-h').textContent = 'Choisissez un créneau pour votre appel.'; $('dc-lead').textContent = 'Une de nos responsables de salon vous présente l’agenda et transfère vos clients et tarifs.'; if (window.SF_DEMO) window.SF_DEMO(lead); });
+
+  (function restoreStep(){
+    if (window.SF_RESUME || location.hash === '#book') return;
+    var saved = null; try { saved = JSON.parse(localStorage.getItem(STEP_KEY) || 'null'); } catch (_) {}
+    if (!saved || !saved.lead || !saved.lead.mobile || !(Date.now() - saved.at < STEP_MS)) { dropStep(); return; }
+    var f = $('tr-form'), d = $('tr-done'); if (!f || !d) return;
+    f.style.display = 'none'; d.classList.add('on');
+    window.SF_VERIFY(saved.lead, true);
+    setTimeout(function(){ try { d.scrollIntoView({block:'start'}); } catch (_) {} }, 50);
+  })();
 
   // ── Setup form ──────────────────────────────────────────────────────────
   function removable(row){ var x = el('button', {type:'button', 'class':'ss-x', 'aria-label':'Supprimer', text:'×'}); x.addEventListener('click', function(){ row.remove(); syncRemove(); }); return x; }
