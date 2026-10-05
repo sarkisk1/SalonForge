@@ -1065,7 +1065,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     }
   }
 })();
-</script><style>.ss [hidden],.ss[hidden]{display:none!important}.ss{margin:22px auto 0;max-width:520px;text-align:left}.ss h3{font-size:1.0625rem;margin:22px 0 10px}.ss-go{width:100%;justify-content:center;margin-top:12px}.ss-small{font-size:.9375rem!important;color:var(--sec);margin:14px auto 0!important;text-align:center}.ss-link{background:none;border:0;padding:0;font:inherit;color:var(--blue);text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ss-add{display:inline-block;margin:2px 0 4px;font-size:.9375rem}.ss-hint{font-size:.9375rem!important;margin:0 0 10px!important;max-width:none!important}.ss-choose{display:grid;gap:12px}.ss-card{display:block;width:100%;text-align:left;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;background:#fff;font:inherit;cursor:pointer}.ss-card:hover{border-color:var(--blue)}.ss-card b{display:block;font-size:1.0625rem;color:var(--ink,#1d1d1f);margin-bottom:4px}.ss-card span{color:var(--sec);font-size:.9375rem;line-height:1.45}.ss-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ss-line{display:grid;grid-template-columns:1.3fr 1fr 1.1fr auto;gap:8px;align-items:center;margin-bottom:8px}.ss-line.br{grid-template-columns:1.6fr 1fr auto}.ss-line input,.ss-line select,.ss select,.ss-h input[type=time]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;min-width:0}.ss-x{background:none;border:0;font-size:1.25rem;line-height:1;color:var(--sec);cursor:pointer;padding:6px}.ss-h{display:grid;grid-template-columns:5.5em auto 1fr 1fr;gap:8px;align-items:center;margin-bottom:6px;font-size:.9375rem}.ss-h input[type=time]:disabled{opacity:.4}.ss-check{display:flex;gap:10px;align-items:center;margin:6px 0 4px;font-size:.9375rem}.ss-dl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 6px}.ss-dl .btn{min-width:220px;justify-content:center}.ss-alt{background:#fff;border:1.5px solid var(--line);color:var(--ink,#1d1d1f)}.ss-steps{text-align:left;max-width:34ch;margin:14px auto 0;color:var(--sec);line-height:1.6}@media(max-width:560px){.ss-line{grid-template-columns:1fr 1fr}.ss-line select{grid-column:1/2}.ss-line.br{grid-template-columns:1fr 1fr auto}.ss-row{grid-template-columns:1fr}}</style><script>
+</script><style>.ss [hidden],.ss[hidden]{display:none!important}.ss-link:disabled{color:var(--sec);text-decoration:none;cursor:default}.ss{margin:22px auto 0;max-width:520px;text-align:left}.ss h3{font-size:1.0625rem;margin:22px 0 10px}.ss-go{width:100%;justify-content:center;margin-top:12px}.ss-small{font-size:.9375rem!important;color:var(--sec);margin:14px auto 0!important;text-align:center}.ss-link{background:none;border:0;padding:0;font:inherit;color:var(--blue);text-decoration:underline;text-underline-offset:3px;cursor:pointer}.ss-add{display:inline-block;margin:2px 0 4px;font-size:.9375rem}.ss-hint{font-size:.9375rem!important;margin:0 0 10px!important;max-width:none!important}.ss-choose{display:grid;gap:12px}.ss-card{display:block;width:100%;text-align:left;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;background:#fff;font:inherit;cursor:pointer}.ss-card:hover{border-color:var(--blue)}.ss-card b{display:block;font-size:1.0625rem;color:var(--ink,#1d1d1f);margin-bottom:4px}.ss-card span{color:var(--sec);font-size:.9375rem;line-height:1.45}.ss-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ss-line{display:grid;grid-template-columns:1.3fr 1fr 1.1fr auto;gap:8px;align-items:center;margin-bottom:8px}.ss-line.br{grid-template-columns:1.6fr 1fr auto}.ss-line input,.ss-line select,.ss select,.ss-h input[type=time]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;min-width:0}.ss-x{background:none;border:0;font-size:1.25rem;line-height:1;color:var(--sec);cursor:pointer;padding:6px}.ss-h{display:grid;grid-template-columns:5.5em auto 1fr 1fr;gap:8px;align-items:center;margin-bottom:6px;font-size:.9375rem}.ss-h input[type=time]:disabled{opacity:.4}.ss-check{display:flex;gap:10px;align-items:center;margin:6px 0 4px;font-size:.9375rem}.ss-dl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 6px}.ss-dl .btn{min-width:220px;justify-content:center}.ss-alt{background:#fff;border:1.5px solid var(--line);color:var(--ink,#1d1d1f)}.ss-steps{text-align:left;max-width:34ch;margin:14px auto 0;color:var(--sec);line-height:1.6}@media(max-width:560px){.ss-line{grid-template-columns:1fr 1fr}.ss-line select{grid-column:1/2}.ss-line.br{grid-template-columns:1fr 1fr auto}.ss-row{grid-template-columns:1fr}}</style><script>
 /* 28 Sep 2026: after the signup form, the owner types in the SMS code on this page
    (my.daviana.app/api/public/trial/phone/*), then chooses: set the salon up themselves
    (team, branches, hours → /api/public/trial/setup, which texts + emails their licence
@@ -1155,9 +1155,24 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   var STEP_KEY = 'sf_code_step', STEP_MS = 30 * 60 * 1000;
   function keepStep(d){ try { localStorage.setItem(STEP_KEY, JSON.stringify({at: Date.now(), lead: d})); } catch (_) {} }
   function dropStep(){ try { localStorage.removeItem(STEP_KEY); } catch (_) {} }
-  window.SF_VERIFY = function(data, restored){
+  // 5 Oct 2026: one text per sign-up. "New code" stays greyed out for 45 s after a code
+  // goes out (the server also refuses a second text inside that window).
+  var RESEND_MS = 45 * 1000, resendTimer = null, RESEND_LABEL = null;
+  function lockResend(until){
+    var b = $('ss-resend'); if (!b) return;
+    if (RESEND_LABEL === null) RESEND_LABEL = b.textContent;
+    clearInterval(resendTimer);
+    function tick(){
+      var left = Math.ceil((until - Date.now()) / 1000);
+      if (left <= 0) { clearInterval(resendTimer); b.disabled = false; b.textContent = RESEND_LABEL; return; }
+      b.disabled = true; b.textContent = RESEND_LABEL + ' (' + left + 's)';
+    }
+    tick(); resendTimer = setInterval(tick, 1000);
+  }
+  window.SF_VERIFY = function(data, restored, sentAt){
     lead = data;
-    keepStep(data);
+    if (!restored) keepStep(data);
+    lockResend((sentAt || Date.now()) + RESEND_MS);
     var bar = $('tr-sticky'); if (bar) bar.style.display = 'none';
     $('dc-wait').hidden = true; $('dc-sms').hidden = true;
     $('dc-h').textContent = 'Regardez votre téléphone.';
@@ -1180,7 +1195,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     }).catch(function(){ b.disabled = false; b.textContent = 'Confirmer mon numéro'; err('ss-code-err', 'Connexion impossible. Veuillez réessayer.'); });
   });
   $('ss-otp').addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); $('ss-otp-go').click(); } });
-  $('ss-resend').addEventListener('click', function(){ ev('otp_resend'); if (++RESENDS >= 2) { showFail('resend_twice'); return; } sendCode(false).then(function(ok){ if (ok) err('ss-code-err', ''); if (ok) $('dc-lead').textContent = 'Nous avons envoyé un nouveau code au ' + lead.mobile + '.'; }); });
+  $('ss-resend').addEventListener('click', function(){ ev('otp_resend'); if (++RESENDS >= 2) { showFail('resend_twice'); return; } sendCode(false).then(function(ok){ if (ok) lockResend(Date.now() + RESEND_MS); if (ok) err('ss-code-err', ''); if (ok) $('dc-lead').textContent = 'Nous avons envoyé un nouveau code au ' + lead.mobile + '.'; }); });
   // 4 Oct 2026: when the code can't be texted (the send failed, or a second "new code"
   // request), the visitor is never left on "Check your phone". They can book a call (no code
   // needed for a call; the licence key still waits for a confirmed number), get the code by
@@ -1222,7 +1237,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     if (!saved || !saved.lead || !saved.lead.mobile || !(Date.now() - saved.at < STEP_MS)) { dropStep(); return; }
     var f = $('tr-form'), d = $('tr-done'); if (!f || !d) return;
     f.style.display = 'none'; d.classList.add('on');
-    window.SF_VERIFY(saved.lead, true);
+    window.SF_VERIFY(saved.lead, true, saved.at);
     setTimeout(function(){ try { d.scrollIntoView({block:'start'}); } catch (_) {} }, 50);
   })();
 
