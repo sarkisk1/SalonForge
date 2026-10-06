@@ -1395,11 +1395,11 @@ Written by Daviana. Every fact about another company is taken from that company'
 ## Daviana vs Fresha
 
 Source: https://daviana.app/compare/daviana-vs-fresha/
-Published: 2026-07-24  ·  Updated: 2026-07-24
+Published: 2026-07-24  ·  Updated: 2026-10-06
 
 Fresha is a marketplace with software attached; Daviana is software with no marketplace. That single difference drives most of the others, including who owns the client relationship and what a new client costs you.
 
-Written by Daviana. Every Fresha fact below is sourced and dated — checked 2026-09-01. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+Written by Daviana. Every Fresha fact below is sourced and dated — checked 2026-10-06. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
 
 ### Fresha suits you if
 
@@ -1466,9 +1466,9 @@ Weighing up more than one option? See all five Fresha alternatives for UK salons
 
 ### Sources
 
-- Fresha — Pricing — checked 2026-09-01
-- Fresha — features for hair salons — checked 2026-09-01
-- Fresha — Partner terms of service — checked 2026-09-01
+- Fresha — Pricing — checked 2026-10-06
+- Fresha — features for hair salons — checked 2026-10-06
+- Fresha — Partner terms of service — checked 2026-10-06
 
 Fresha is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Fresha may since have changed what it offers, so check with them directly before deciding.
 
@@ -1477,11 +1477,11 @@ Fresha is a trademark of its owner. We are not affiliated with, endorsed by or p
 ## Daviana vs Phorest
 
 Source: https://daviana.app/compare/daviana-vs-phorest/
-Published: 2026-07-24  ·  Updated: 2026-07-24
+Published: 2026-07-24  ·  Updated: 2026-10-06
 
 Phorest is the established, salon-only system with the deepest multi-site tooling of the group. The honest comparison is maturity and support against colour costing, the phone, and a one-year contract.
 
-Written by Daviana. Every Phorest fact below is sourced and dated — checked 2026-07-24. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+Written by Daviana. Every Phorest fact below is sourced and dated — checked 2026-10-06. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
 
 ### Phorest suits you if
 
@@ -1501,7 +1501,7 @@ Superscripts link to the source at the foot of the page.
 | Minimum term | None | One year, auto-renewing, with two months' written notice to cancel |
 | Marketplace | No | No — Phorest is explicit that bookings are between the client and the salon |
 | Colour weighed and costed to the gram | Yes, built in | Not natively. Available through a third-party integration. |
-| The phone answered by AI | Yes — answers calls and books into the same diary | Their FrontDesk AI is text and WhatsApp based rather than voice, and was in early access at the time of checking |
+| The phone answered by AI | Yes — answers calls and books into the same diary | Their Front Desk AI answers SMS and WhatsApp messages, not voice calls. It is now an add-on to any plan, priced on quote |
 | Back-bar stock deducted as it is used | Yes, at the point of use | Retail deducts automatically. Professional stock needs a staff member to deduct it. |
 | Commission and mixed pay models | Yes — employed, self-employed and chair rental in one place | Yes, including self-employed setup and a cost-of-service deduction before commission is calculated |
 
@@ -1534,12 +1534,12 @@ Weighing up more than one option? See all five Phorest alternatives for UK salon
 
 ### Sources
 
-- Phorest — UK pricing — checked 2026-07-24
-- Phorest — UK terms and conditions — checked 2026-07-24
-- Phorest — integrations — checked 2026-07-24
-- Phorest — AI features — checked 2026-07-24
-- Phorest — stock management — checked 2026-07-24
-- Phorest — payroll and commission — checked 2026-07-24
+- Phorest — UK pricing — checked 2026-10-06
+- Phorest — UK terms and conditions — checked 2026-10-06
+- Phorest — integrations — checked 2026-10-06
+- Phorest — AI features — checked 2026-10-06
+- Phorest — stock management — checked 2026-10-06
+- Phorest — payroll and commission — checked 2026-10-06
 
 Phorest is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Phorest may since have changed what it offers, so check with them directly before deciding.
 
@@ -1548,11 +1548,11 @@ Phorest is a trademark of its owner. We are not affiliated with, endorsed by or 
 ## Daviana vs Treatwell
 
 Source: https://daviana.app/compare/daviana-vs-treatwell/
-Published: 2026-07-24  ·  Updated: 2026-07-24
+Published: 2026-07-24  ·  Updated: 2026-10-06
 
 Treatwell is a booking marketplace first. The comparison is really a question about your business: are you buying new clients, or running the ones you have better?
 
-Written by Daviana. Every Treatwell fact below is sourced and dated — checked 2026-09-01. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+Written by Daviana. Every Treatwell fact below is sourced and dated — checked 2026-10-06. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
 
 ### Treatwell suits you if
 
@@ -1571,6 +1571,7 @@ Superscripts link to the source at the foot of the page.
 | What you pay | £80 the diary, £60 the phone, £80 colour, all inc VAT. No commission, ever. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
 | Monthly software fee | That is the subscription above | Not published for the UK |
 | Marketplace | No | Yes — it is the business. Treatwell acts as your booking agent for marketplace clients. |
+| The phone answered by AI | Yes — answers calls and books into the same diary, £60 a month inc VAT | Yes, since 7 September 2026. Their AI Receptionist answers calls and manages appointments in the Treatwell calendar, from £69 a month |
 | Who the client belongs to | You. No marketplace, and you can export your list. | Salon-owned per their terms, though Treatwell states it has access to the data and may pass it to third parties where needed to run the service |
 | Colour weighed and costed to the gram | Yes, built in | No evidence of any weighing or scale feature in published material |
 | Stock deducted as it is used | Yes, at the point of use | Order and manual-log based; no automatic point-of-use deduction found |
@@ -1586,7 +1587,7 @@ Superscripts link to the source at the foot of the page.
 
 - A subscription instead of a share of your takings — At 35% plus VAT on first bookings, a busy month costs you more with them and the same with us. Which is cheaper genuinely depends on how many new clients you get. Work it out on your own numbers rather than taking anyone's word.
 - We are not between you and your client — There is no marketplace, so there is no mechanism by which your client is shown another salon.
-- The parts a marketplace does not touch — Colour cost and the phone are not what a booking marketplace is for. That is the whole of what we do.
+- The parts a marketplace does not touch — Weighing colour to the gram and taking it off stock as it is used is not what a booking marketplace is for. Both of us now answer the phone with AI; ours books into the same diary that costs the colour.
 
 ### Questions about Treatwell and Daviana
 
@@ -1606,9 +1607,10 @@ Weighing up more than one option? See all five Treatwell alternatives for UK sal
 
 ### Sources
 
-- Treatwell for Partners — pricing and commission — checked 2026-09-01
-- Treatwell — partner terms of business — checked 2026-09-01
-- Treatwell Pro — features — checked 2026-09-01
+- Treatwell for Partners — pricing and commission — checked 2026-10-06
+- Treatwell — partner terms of business — checked 2026-10-06
+- Treatwell Pro — features — checked 2026-10-06
+- IT Brief UK — Treatwell launches AI receptionist for salons across Europe (7 September 2026) — checked 2026-10-06
 
 Treatwell is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Treatwell may since have changed what it offers, so check with them directly before deciding.
 
@@ -1617,11 +1619,11 @@ Treatwell is a trademark of its owner. We are not affiliated with, endorsed by o
 ## Daviana vs Booksy
 
 Source: https://daviana.app/compare/daviana-vs-booksy/
-Published: 2026-07-24  ·  Updated: 2026-07-24
+Published: 2026-07-24  ·  Updated: 2026-10-06
 
 Booksy publishes its pricing plainly and moves quickly. The difference is the optional commission layer for new clients, and what happens to colour.
 
-Written by Daviana. Every Booksy fact below is sourced and dated — checked 2026-07-24. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+Written by Daviana. Every Booksy fact below is sourced and dated — checked 2026-10-06. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
 
 ### Booksy suits you if
 
@@ -1641,7 +1643,7 @@ Superscripts link to the source at the foot of the page.
 | Commission on new clients | None | Optional. Their Boost layer takes 30% of a new client's first visit, minimum £5, for marketplace-sourced clients only. |
 | Marketplace | No | Yes — a basic listing is included by default, with opt-out |
 | Colour weighed and costed to the gram | Yes, built in | No colour-weighing or scale feature found in their published feature list |
-| The phone answered by AI | Yes — books into the same diary | No such feature found in their published material |
+| The phone answered by AI | Yes — books into the same diary | In beta. Their AI Receptionist picks up calls and books them, in English or Spanish. Early-access sign-up, and it does not yet book appointments that need a deposit |
 | Stock deducted as it is used | Yes, at the point of use — every gram weighed out of the tube | Yes — stock deducts automatically at checkout |
 | Minimum term | None | None — rolling, with 30 days' notice |
 
@@ -1654,7 +1656,7 @@ Superscripts link to the source at the foot of the page.
 
 - No commission layer at all — There is no version of us that takes a share of a client's first visit, because there is no marketplace to source them from.
 - Colour is the thing we do that nobody else here does natively — Weighing the bowl and costing it to the gram, onto the client record, is built in rather than bought in.
-- The phone — A voice that answers, knows your prices, and writes into the diary the desk is looking at.
+- The phone, out of beta — A voice that answers, knows your prices, and writes into the diary the desk is looking at. Booksy has started on the same idea; theirs is still in beta.
 
 ### Questions about Booksy and Daviana
 
@@ -1674,9 +1676,10 @@ Weighing up more than one option? See all five Booksy alternatives for UK salons
 
 ### Sources
 
-- Booksy Biz — UK pricing — checked 2026-07-24
-- Booksy Biz — features — checked 2026-07-24
-- Booksy — terms of service — checked 2026-07-24
+- Booksy Biz — UK pricing — checked 2026-10-06
+- Booksy Biz — features — checked 2026-10-06
+- Booksy — terms of service — checked 2026-10-06
+- Booksy Biz — AI Receptionist (beta) — checked 2026-10-06
 
 Booksy is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Booksy may since have changed what it offers, so check with them directly before deciding.
 
