@@ -316,15 +316,15 @@ Fresha, Treatwell, Booksy, Timely, SalonIQ and Phorest are trademarks of their o
 ## What is the best AI receptionist for a UK salon?
 
 Source: https://daviana.app/blog/best-ai-receptionist-for-salons-uk/
-Published: 2026-09-26  ·  Updated: 2026-09-26
+Published: 2026-09-26  ·  Updated: 2026-10-07
 
-The best AI receptionist for your salon is the one that books straight into the diary you already use. Treatwell's books into the Treatwell calendar, Salon Agent books into Phorest, Meevo and Square, Zenoti's works inside Zenoti, and Daviana's Aria books into the Daviana diary. After that, compare how it handles multi-service visits, prices, and the calls it should hand to a person.
+The best AI receptionist for your salon is the one that books straight into the diary you already use. Fresha's AI Concierge books into the Fresha calendar, Booksy's (in beta) into Booksy, Treatwell's into the Treatwell calendar, Salon Agent books into Phorest, Meevo and Square, Zenoti's works inside Zenoti, and Daviana's Aria books into the Daviana diary. After that, compare how it handles multi-service visits, prices, and the calls it should hand to a person.
 
 ### The short answer
 
 - An AI receptionist answers the salon phone with a natural voice when nobody on the desk can, and books, moves or cancels appointments during the call.
 - The deciding question is the diary. One that books live into your booking system is a receptionist; one that only takes a message is voicemail with better manners.
-- For UK salons the realistic shortlist is Treatwell (for Treatwell partners), Salon Agent (Phorest, Meevo, Square), Zenoti, Qlient and Daviana Aria.
+- For UK salons the realistic shortlist is the one your booking system already offers (Fresha, Booksy in beta, Treatwell, Zenoti), Salon Agent (Phorest, Meevo, Square), Qlient and Daviana Aria.
 - Nail and beauty salons should test multi-service bookings hardest: a gel manicure while colour develops, or two therapists for one client.
 - Work out what unanswered calls cost you first. If the number is small, a better voicemail message may be enough.
 
