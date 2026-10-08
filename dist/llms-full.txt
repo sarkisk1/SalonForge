@@ -216,7 +216,7 @@ Yes, if it gives each person their own column, knows who does which treatment, a
 ## What is the best salon software in the UK?
 
 Source: https://daviana.app/blog/best-salon-software-uk/
-Published: 2026-09-26  ·  Updated: 2026-09-26
+Published: 2026-09-26  ·  Updated: 2026-10-08
 
 There is no single best salon software. The right one depends on whether you want new clients from a marketplace app, how big your team is, and what you will pay for over a year. Fresha, Treatwell and Booksy bring marketplace clients for a fee. Timely is the cheapest to start without a marketplace. Phorest and SalonIQ are established UK systems for larger salons. Daviana suits salons that also want colour costing and an AI receptionist on the same record.
 
@@ -225,10 +225,11 @@ There is no single best salon software. The right one depends on whether you wan
 - Decide first whether you want a marketplace. Fresha, Treatwell and Booksy can bring new clients, and charge a fee on each one; the rest do not.
 - Compare a year of total cost, not the headline price: subscription, card fees, paid texts and any new-client commission.
 - Read the contract. Most are monthly, but Phorest's UK terms are a one-year contract that renews automatically.
+- If missed calls cost you bookings, check the AI receptionist too. Treatwell, Fresha and SalonIQ now sell one, Booksy has one in beta, and each books only into its own diary.
 - Hair, nail and beauty salons need the same basics: a diary per staff member, online booking with deposits, and treatment lengths that are right. Test your longest and most awkward service on the demo.
 - Ask how your clients and history come across, and how you would take them out again if you left.
 
-Salon software is the diary, the till and the client record your whole day runs on, so switching is a big decision and a bad fit is expensive. Search for the best salon software and most of the lists you find are written by one of the companies on them. This one is too. We make Daviana. So every fact about another company below comes from its own UK pricing or terms page, checked on 26 September 2026 and listed at the end, and we have said plainly where each one is the better choice.
+Salon software is the diary, the till and the client record your whole day runs on, so switching is a big decision and a bad fit is expensive. Search for the best salon software and most of the lists you find are written by one of the companies on them. This one is too. We make Daviana. So every fact about another company below comes from its own UK pricing, product or terms page, last checked between 6 and 8 October 2026 and listed at the end with the date of each check, and we have said plainly where each one is the better choice.
 
 ### How do the main UK salon booking systems compare on price?
 
@@ -240,7 +241,7 @@ Prices are as each company publishes them for the UK. Superscripts link to the s
 | Treatwell | Monthly fee not stated on its pricing page | 30 days' notice. 35% on a new marketplace client's first booking, 0% on repeat bookings, 2.5% on online prepayments, all plus VAT |
 | Booksy | £40 a month plus £5 a month per extra team member, plus VAT | No commitment. New-client fee only with Boost on: 30% of the first visit, minimum £5 |
 | Timely | From £4, £7 or £9 a week by plan, adjusting with bookings; unlimited team members | No contract, 14 days' notice. No new client fees |
-| SalonIQ | From £47 a month for a solo stylist; setup from £175 plus VAT | 12-month initial term, then 90 days' written notice, per its terms. No marketplace |
+| SalonIQ | From £47 a month for a solo stylist; setup from £175 plus VAT | Its pricing page says no long-term contracts, cancel with 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice, so ask which applies to you. No marketplace |
 | Phorest | Quote only; no free trial | One year, renewing automatically unless you give two months' notice. No marketplace |
 | Daviana | £80 a month including VAT for the diary and till; first month free | No minimum term; cancel any month. No marketplace, no commission on bookings |
 
@@ -250,6 +251,22 @@ Prices are as each company publishes them for the UK. Superscripts link to the s
 - You want the lowest price with no marketplace. Timely starts from £4 a week with unlimited team members and no new client fees, though the weekly price rises with bookings. See Daviana vs Timely.
 - You are a larger salon or a group that wants an established UK system. Phorest and SalonIQ both fit. Phorest is priced by quote on a one-year contract; SalonIQ publishes a starting price and a setup fee. See Daviana vs Phorest and Daviana vs SalonIQ.
 - You want the diary, colour costing and the phone in one system. Daviana's salon booking system is £80 a month including VAT with no marketplace and no minimum term. Its ColorLab weighs and costs colour to the gram, and its AI receptionist books calls into the same diary. It costs more than Fresha or Timely for a small team.
+
+### Which salon software can answer the phone with AI?
+
+Most of the big UK systems now offer an AI front desk of some kind. Each one books only into its own diary, so the receptionist follows the booking system you choose, not the other way round. They are paid add-ons, so put them in the year's total too.
+
+|  | AI on the phone or messages | Published price |
+| --- | --- | --- |
+| Treatwell | AI Receptionist, launched 7 September 2026. Answers calls and manages appointments in the Treatwell calendar9 | From £69 a month9 |
+| Fresha | AI Concierge. Books, moves and cancels in the Fresha calendar on the call, and answers messages10 | £79.95 a location a month plus VAT, with 200 minutes and 500 messages included, then 48p a minute and 3p a message1 |
+| Booksy | AI Receptionist, in beta. Books into Booksy in English or Spanish, but not yet appointments protected by a deposit11 | Free for at least 12 months for the first 500 providers to sign up. The beta page is written for the US, so ask Booksy about UK access11 |
+| SalonIQ | IQ Connect, powered by Callpad.ai. Answers calls, checks the live SalonIQ diary and books there and then12 | Not published12 |
+| Phorest | Front Desk AI answers SMS and WhatsApp messages, not voice calls13 | An add-on to any plan, priced on quote7 |
+| Timely | No voice receptionist of its own found. Its AI tool, Textie Bestie, helps write SMS messages to clients14 | None listed5 |
+| Daviana | Aria answers calls and books single services or whole multi-service visits into the diary the front desk uses | £60 a month including VAT |
+
+The difference that matters is whether the AI takes the call and books it there and then, or only handles messages. If the phone is your main problem, our guide to AI receptionists for salons (https://daviana.app/blog/best-ai-receptionist-for-salons-uk/) compares them in more detail, including tools that work with other booking systems.
 
 ### What should nail and beauty salons look for?
 
@@ -288,7 +305,11 @@ Timely says it has no new client fees, and SalonIQ, Phorest and Daviana have no 
 
 #### Which salon booking systems tie you into a contract?
 
-Phorest's UK terms are a one-year contract that renews automatically unless you give two months' notice. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and Daviana are monthly. SalonIQ's terms set a 12-month initial term, then 90 days' written notice.
+Phorest's UK terms are a one-year contract that renews automatically unless you give two months' notice. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and Daviana are monthly. SalonIQ's pricing page says no long-term contracts with 60 days' notice, while its terms set a 12-month initial term, then 90 days' written notice, so ask which applies.
+
+#### Which salon software has an AI receptionist?
+
+Treatwell, Fresha and SalonIQ each sell an AI receptionist that answers calls and books into their own diary, and Booksy has one in beta. Phorest's Front Desk AI answers texts and WhatsApp messages rather than calls, and we found no voice receptionist of Timely's own. Daviana's Aria answers calls and books into the Daviana diary for £60 a month including VAT.
 
 #### What is the best booking system for a nail salon in the UK?
 
