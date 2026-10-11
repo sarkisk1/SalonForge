@@ -1164,7 +1164,7 @@ Stylists will always move on, and that is fine — salons are built out of peopl
 
 ## Colour cost per gram: the number most salons don't know
 Source: https://daviana.app/blog/colour-cost-per-gram/
-Published: 2026-07-24  ·  Updated: 2026-07-24
+Published: 2026-07-24  ·  Updated: 2026-10-11
 
 Ask a salon owner what a cut costs them and they will tell you to the minute: the stylist's time, the chair, the wash. Ask what a head of colour costs them and the answer changes shape. It becomes a shrug, a rough tube count, or a number from the wholesaler's invoice divided by however many colour clients came through that month.
 
@@ -1189,6 +1189,17 @@ Across 19,949 colour bowls weighed inside our own salons, three things came up a
 - **The waste is not in the expensive shades.** It tends to be in the everyday ones — the shades used constantly, where a few extra grams per head compounds quietly across hundreds of heads a month.
 
 > You cannot charge a client for the colour that went down the plughole. You can only stop mixing it.
+
+## How much does a head of colour cost? A worked example
+
+Example figures; swap in your own from your wholesaler invoice.
+
+1. Cost per gram: a 60 g tube bought at £8.40 is 14p a gram. A 1 litre bottle of developer bought at £9 is 0.9p a gram.
+2. Cost the bowl: 40 g of shade A (£5.60) + 20 g of shade B (£2.80) + 60 g of developer (£0.54) = £8.94 product cost for that head.
+3. Compare with the price: on a £95 colour service, £8.94 is 9.4%.
+4. Price the leftovers: if 15 g of the 120 g bowl is left at the end, that is about £1.12 on this head; at 60 colour heads a week, roughly £67 a week or about £3,500 a year.
+
+Without a scale, monthly colour and developer spend × 12 ÷ (colour heads a week × 52) gives an average cost per head: £2,400 a month across 60 heads a week is £9.23 a head. The free calculator at https://daviana.app/tools/colour-cost-calculator/ does the sum. Daviana ColorLab (£80 a month including VAT, first month free) weighs each bowl on an Acaia Bluetooth scale, shows the bowl's product cost as it is weighed, and takes what was poured off the stock count.
 
 ## The number to actually chase
 
