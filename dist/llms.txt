@@ -74,5 +74,5 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Contact](https://daviana.app/contact/): how to reach Daviana, and what to do if your question is about a specific salon booking.
 
 ## Contact
-- Book a demo: https://calendly.com/salonforge-info/30min
+- Book a demo (30-minute call, booked on the free-month page): https://daviana.app/trial/#book
 - Email: info@salonforge.com
