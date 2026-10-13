@@ -213,6 +213,116 @@ Yes, if it gives each person their own column, knows who does which treatment, a
 
 ---
 
+## How much does salon software cost in the UK?
+
+Source: https://daviana.app/blog/how-much-does-salon-software-cost-uk/
+Published: 2026-10-13
+
+Salon software in the UK costs from £14.95 a month for one person on Fresha, or £4 a week on Timely, up to £80 a month or more for a team. The subscription is rarely the biggest cost, though. Card fees, paid texts, marketplace commission and setup fees usually add more, so compare a full year, not the headline price.
+
+### The short answer
+
+- The subscription is often the smallest line. On £12,000 a month of card takings, published UK card rates come to around £200 a month.
+- Per-person pricing adds up: Fresha charges £9.95 per bookable team member and Booksy £5 per extra member plus VAT, while Timely includes unlimited team members.
+- Marketplace commission brings new clients but grows with them: 20% on Fresha, 35% of the first booking on Treatwell, 30% on Booksy with Boost on.
+- Check setup fees and notice periods before you sign. A one-year contract that renews automatically is a cost if the system turns out wrong.
+- Work out a full year for each system on your shortlist, with your own takings and team size.
+
+Ask a salon software company what it costs and you will usually hear one number: the monthly subscription. It is the easiest number to compare and the least useful one. For most salons it is a small part of what the system costs over a year.
+
+We make Daviana, so we are one of the companies in this article. Every price for another company below comes from its own UK pricing or terms page, with the date we checked it listed at the end. Where a rival is cheaper, we say so.
+
+### What do you actually pay for with salon software?
+
+Almost every salon system bills you through some mix of these seven lines. Put each one in your sums, not just the first.
+
+- The subscription. A flat monthly or weekly fee, sometimes by plan.
+- Per-person seats. Many systems charge for each bookable team member, so the bill grows with the team.
+- Card processing. A percentage plus a few pence on every card payment, in the salon and online.
+- Text messages. Some reminders are free, then each extra text or marketing message is charged.
+- New-client commission. Marketplaces charge a share of a new client's first booking.
+- Setup and moving your data. A one-off fee on some systems, free on others.
+- Add-ons and hardware. An AI receptionist, a card reader, a colour scale.
+
+Then there is the notice period. A one-year contract that renews automatically is a cost too, because it is what you pay if the system turns out to be the wrong one.
+
+### What do the main UK salon systems charge?
+
+These are the published UK prices. Superscripts link to the sources at the end. A dash means the company does not publish that figure on the page we checked.
+
+|   | Subscription | Card payments | Texts | New-client fee | Contract and setup |
+| --- | --- | --- | --- | --- | --- |
+| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | In person 1.19% + 20p; online 1.40% + 25p | 20 free a month (20 per member on Team), then 6p a text; marketing texts 8p | 20% of a new marketplace client's booking, minimum £4 | No minimum commitment |
+| Booksy | £40 a month plus £5 per extra team member, plus VAT | Mobile payments 1.29% + 20p + VAT; Tap to Pay 0.99% + 20p + VAT | Reminders free; 500 marketing texts a month included, then 5p | Only with Boost on: 30% of the first visit, minimum £5 | No commitment |
+| Timely | £4, £7 or £9 a week by plan, adjusting with bookings; unlimited team members | In salon 1.59% + 5p; online 1.85% + 30p | Extra texts 8p, 5p or 4p by plan | None | 14 days' notice |
+| SalonIQ | From £47 a month for a solo stylist | – | Two-way SMS is a paid upgrade | No marketplace | Setup from £175 plus VAT. Pricing page: cancel with 60 days' notice; terms: 12-month initial term, then 90 days |
+| Treatwell | Not stated on its pricing page | 2.5% on online prepayments, plus VAT | – | 35% of a new marketplace client's first booking, 0% on repeats, plus VAT | 30 days' notice |
+| Phorest | Quote only | – | – | No marketplace | One year, renewing automatically unless you give two months' notice |
+| Daviana | £80 a month including VAT for the diary and till | Taken through Stripe; ask us for the current rate | – | No marketplace, no commission | No minimum term; data moved across for you at no charge; first month free |
+
+Two things stand out. Fresha and Booksy charge per person, so a growing team pays more each month, while Timely includes unlimited team members. And the in-salon card rates sit in the same range, around 1% to 1.6% plus a few pence, which on a busy salon's takings adds up to far more than any subscription.
+
+### How do you work out a year's cost? A worked example
+
+Here is the sum to run for each system on your shortlist:
+
+- Subscription × 12, including every team member you pay for
+- + card fees: your monthly card takings × the percentage, plus the per-payment pence × your number of payments, × 12
+- + paid texts beyond the free allowance
+- + new-client commission: new marketplace clients a month × average first visit × the rate, × 12
+- + setup fee, and any add-ons you will actually use
+
+Now an example. Take a salon with four people, £12,000 a month paid by card in the salon across 300 payments, and 10 new clients a month from a marketplace, each spending £60 on a first visit. Put your own figures in place of ours.
+
+On Fresha's Team plan: 4 × £9.95 is £39.80 a month. Card fees are 1.19% of £12,000 (£142.80) plus 300 × 20p (£60), so £202.80. Commission is 10 × £60 × 20%, so £120. That is £362.60 a month, or £4,351.20 a year, before texts.
+
+On Timely's Run plan: £4 a week is £208 a year. Card fees are 1.59% of £12,000 (£190.80) plus 300 × 5p (£15), so £205.80 a month. There are no new client fees. That is £2,677.60 a year, before texts, and the weekly price can rise as bookings grow.
+
+Notice where the money goes. Card fees come to about £2,450 a year on both, far more than either subscription. The real gap between the two is the £1,440 a year of commission, and that commission buys something: ten new clients a month that Timely, with no marketplace, would not send you. If you need those clients, the commission may be worth paying. If your book is full, it is a cost you can avoid.
+
+For Daviana, the diary and till is £960 a year including VAT. Ask us for the card rate and add it to the same sum, so you are comparing like with like. Our pricing page lists every product.
+
+### Which salon software costs are easy to miss?
+
+- Setup and moving your data. SalonIQ lists setup from £175 plus VAT. Ask every supplier what moving your clients, history and colour formulas costs, and who does the work.
+- The notice period. Phorest's UK terms are a one-year contract that renews unless you give two months' notice. If you might switch again, that is money at risk.
+- An AI receptionist. Most systems now sell one as an add-on: Treatwell's starts at £69 a month, and Fresha's AI Concierge is £79.95 a location a month plus VAT. Our guide to the best AI receptionist for salons compares them.
+- Adding a stylist. On Fresha's Team plan each new bookable person adds £9.95 a month; on Booksy, £5 plus VAT.
+- Hardware. A card reader or a colour scale may be bought, rented or tied to the contract. Ask whose it is if you leave.
+- The calls you miss. Not a fee, but a cost. If the phone rings out while everyone is with a client, those bookings go somewhere else. The free missed call calculator puts a number on it.
+
+### Is the cheapest salon software the best value?
+
+Sometimes, yes. If you work on your own and want new clients from an app, Fresha at £14.95 a month is hard to beat. If you want the lowest price without a marketplace, Timely starts at £4 a week. For a small team, both cost less than Daviana's £80 a month.
+
+The cheapest headline is not always the cheapest year, though, and price is not the only thing you are buying. Daviana makes sense when you would use more than the diary: ColorLab to cost colour to the gram, or Aria, the AI receptionist, to answer the phone and book into the same salon booking system the desk uses. You pay only for the products you switch on, and Bar and Performance come with the diary.
+
+If you are comparing systems side by side, our guide to the best salon software in the UK covers features and fit, and our 12 questions to ask before switching salon software covers what to get in writing.
+
+### Questions salon owners ask
+
+#### How much does salon software cost per month in the UK?
+
+On published UK prices, from £14.95 a month for one person on Fresha, or from £4 a week on Timely. For a team of four, subscriptions run from about £17 a month on Timely to £39.80 on Fresha, £66 on Booksy including VAT and £80 including VAT on Daviana. SalonIQ starts at £47 a month for a solo stylist, and Phorest and Treatwell do not publish a monthly price.
+
+#### Do salon booking systems charge commission?
+
+Only the ones with a consumer marketplace, and only on new clients the marketplace sends you. Fresha charges 20% (minimum £4), Treatwell 35% of the first booking plus VAT, and Booksy 30% of the first visit (minimum £5) when Boost is on. Timely, SalonIQ, Phorest and Daviana have no marketplace commission.
+
+#### What are the hidden costs of salon software?
+
+Card processing is usually the largest: on £12,000 a month of card takings, published UK rates come to roughly £200 a month. After that come paid text messages, per-person seats as the team grows, setup fees, add-ons such as an AI receptionist, hardware, and the notice period you pay through if you leave.
+
+#### Is there salon software with no contract?
+
+Yes. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and Daviana are monthly. Phorest's UK terms are a one-year contract that renews automatically unless you give two months' notice. SalonIQ's pricing page says cancel with 60 days' notice, while its terms set a 12-month initial term, so ask which applies to you.
+
+#### How much does Daviana cost?
+
+The Daviana diary and till is £80 a month including VAT. Aria, the AI receptionist, is £60 a month and ColorLab is £80 a month, both including VAT, and Bar and Performance are included with the diary. There is no commission on bookings and no minimum term, moving your data across is included, and the first month is free.
+
+---
+
 ## What is the best salon software in the UK?
 
 Source: https://daviana.app/blog/best-salon-software-uk/
