@@ -13,6 +13,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Deploy dist/ to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
@@ -20,6 +22,35 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=daviana --branch=main
+
+      # IndexNow: tell Bing, Yandex, Seznam, Naver and Yep which pages changed in this push
+      # (Google does not use IndexNow; it reads the sitemap in robots.txt). Only URLs listed in
+      # dist/sitemap.xml are sent. A manual run (workflow_dispatch) sends the whole sitemap.
+      # The key is public by design (it is served at /<key>.txt). Never fails the deploy.
+      - name: Submit changed URLs to IndexNow
+        if: success()
+        continue-on-error: true
+        env:
+          BEFORE: ${{ github.event.before }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          KEY=bb195de17e146700403ee3f25a54ee88
+          grep -o '<loc>[^<]*</loc>' dist/sitemap.xml | sed -e 's#<loc>##' -e 's#</loc>##' | sort -u > sitemap_urls.txt
+          if [ "$EVENT" = "push" ] && [ -n "$BEFORE" ] && git cat-file -e "$BEFORE^{commit}" 2>&1; then
+            git diff --name-only "$BEFORE" "$GITHUB_SHA" -- 'dist/*.html' \
+              | sed -e 's#^dist/##' -e 's#index\.html$##' -e 's#\.html$##' -e 's#^#https://daviana.app/#' \
+              | sort -u > changed_urls.txt
+            comm -12 changed_urls.txt sitemap_urls.txt > submit_urls.txt
+          else
+            cp sitemap_urls.txt submit_urls.txt
+          fi
+          echo "IndexNow: $(wc -l < submit_urls.txt) URL(s)"; cat submit_urls.txt
+          if [ -s submit_urls.txt ]; then
+            jq -R . submit_urls.txt | jq -s --arg key "$KEY" \
+              '{host:"daviana.app", key:$key, keyLocation:("https://daviana.app/"+$key+".txt"), urlList:.}' \
+            | curl -sS -m 20 -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+                -H 'Content-Type: application/json; charset=utf-8' -d @-
+          fi
 
       # Deploy marker: one PostHog event per deploy so traffic changes can be lined up with what
       # shipped. Uses only the PUBLIC project key already served in dist/assets/analytics.js -
