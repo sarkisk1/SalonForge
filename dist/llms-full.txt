@@ -213,6 +213,20 @@ Yes, if it gives each person their own column, knows who does which treatment, a
 
 ---
 
+## How much do card machine fees cost a UK salon?
+
+Source: https://daviana.app/blog/salon-card-machine-fees-uk/
+Published: 2026-10-15
+
+Most UK salons pay between about 1% and 1.75% of every card payment, sometimes plus 5p to 20p, and £19 to £229 for the reader. On £12,000 a month of card takings that is roughly £140 to £260 a month. Which machine is cheapest depends on your average bill and on whether it connects to your booking system.
+
+- Published in-person rates (checked October 2026): Stripe Terminal 1.4% + 10p (EEA cards); SumUp 1.69% pay as you go, or 0.99% on UK debit and credit cards with Payments Plus at £19 a month; Square 1.75%; Zettle 1.75%; Fresha 1.19% + 20p; Booksy 1.29% + 20p + VAT (Tap to Pay 0.99% + 20p + VAT); Timely 1.59% + 5p; Vagaro 1.15% + 20p.
+- Worked example, £12,000 a month across 300 payments: from £137.80 a month (SumUp Payments Plus) to £257.76 (Booksy mobile payments).
+- Below about £29 a payment, a flat 1.75% costs less than 1.4% + 10p.
+- Daviana's till takes cards, deposits and payment links through Stripe on a Stripe reader, records tips per stylist and reconciles against Stripe nightly. Ask Daviana for the current card rate.
+
+---
+
 ## How much does salon software cost in the UK?
 
 Source: https://daviana.app/blog/how-much-does-salon-software-cost-uk/
