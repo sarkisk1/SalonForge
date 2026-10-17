@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-03. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-17. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -220,10 +220,129 @@ Published: 2026-10-15
 
 Most UK salons pay between about 1% and 1.75% of every card payment, sometimes plus 5p to 20p, and £19 to £229 for the reader. On £12,000 a month of card takings that is roughly £140 to £260 a month. Which machine is cheapest depends on your average bill and on whether it connects to your booking system.
 
-- Published in-person rates (checked October 2026): Stripe Terminal 1.4% + 10p (EEA cards); SumUp 1.69% pay as you go, or 0.99% on UK debit and credit cards with Payments Plus at £19 a month; Square 1.75%; Zettle 1.75%; Fresha 1.19% + 20p; Booksy 1.29% + 20p + VAT (Tap to Pay 0.99% + 20p + VAT); Timely 1.59% + 5p; Vagaro 1.15% + 20p.
-- Worked example, £12,000 a month across 300 payments: from £137.80 a month (SumUp Payments Plus) to £257.76 (Booksy mobile payments).
-- Below about £29 a payment, a flat 1.75% costs less than 1.4% + 10p.
-- Daviana's till takes cards, deposits and payment links through Stripe on a Stripe reader, records tips per stylist and reconciles against Stripe nightly. Ask Daviana for the current card rate.
+### The short answer
+
+- Published in-person rates run from 0.99% (SumUp, with its £19 a month plan) to 1.75% (Square and Zettle). Several add 5p to 20p to every payment.
+- The pence matter on small bills. Below about £29 a payment, a flat 1.75% costs less than 1.4% + 10p; above it, the reverse.
+- Card readers cost £19 to £229 plus VAT to buy. Ask whether yours is bought, rented or tied to a contract.
+- A standalone machine knows nothing about the booking, so takings, tips and deposits have to be matched by hand.
+- Run the worked example below with your own monthly takings and number of payments.
+
+Card fees are one of the biggest costs a salon pays that nobody sends a bill for. They come off every payment before the money reaches your bank, so most owners only see them as a line on a monthly statement. On a busy salon's takings they usually come to more than the booking software itself.
+
+We make Daviana, and our till takes cards, so we are one of the companies in this article. Every rate for another company below comes from its own UK pricing page, with the date we checked it listed at the end. Where someone else is cheaper, we say so.
+
+### What do you pay for when you take cards in a salon?
+
+Taking cards costs you in three ways. Put all three in your sums.
+
+- The rate. A percentage of every payment, and on some providers a fixed few pence on top. This is the big one.
+- The reader. Bought outright, rented monthly, or included with a contract. Bought readers cost from £19 to £229 plus VAT on the pages we checked.
+- Monthly fees. Some providers sell a plan that lowers the rate for a fixed monthly charge.
+
+Watch for the exceptions too. Online payments, such as deposits and payment links, often cost more than tapping a card at the desk. Typing a card number in by hand costs more again on some providers. And premium, business and international cards can carry a higher rate than an ordinary UK debit card.
+
+### What do UK card machines and salon systems charge?
+
+These are the published UK rates. The first five are standalone card providers you can use with any diary; the rest are salon systems whose rates apply when you take payments through their own till. Superscripts link to the sources at the end. A dash means the company does not publish that figure on the page we checked.
+
+|  | In person | Online and keyed | Reader to buy |
+| --- | --- | --- | --- |
+| Stripe Terminal | 1.4% + 10p for EEA cards, 2.9% + 10p for other cards; Tap to Pay adds 10p | Online: standard UK cards 1.5% + 20p, premium UK cards 2.8% + 20p | BBPOS WisePad 3 £49; Stripe Reader S700 or S710 £229; excluding VAT |
+| SumUp | Pay as you go: 1.69%. Payments Plus: 0.99% on UK debit and credit cards, for £19 a month or £189 a year | Pay as you go: 2.5% online. Payments Plus: the page gives both 0.99% and 2.5%, so ask | – |
+| Square | 1.75% for UK cards | Online 1.4% + 25p for UK cards; keyed 2.5% | Square Reader £19 + VAT; Square Terminal £149 + VAT |
+| Zettle by PayPal | 1.75% | – | £29 excluding VAT for your first reader (new business users), then £69 each |
+| Fresha | 1.19% + 20p | Online 1.40% + 25p | – |
+| Booksy | Mobile payments 1.29% + 20p + VAT; Tap to Pay 0.99% + 20p + VAT | – | – |
+| Timely | 1.59% + 5p | Online 1.85% + 30p | – |
+| Vagaro | 1.15% + 20p per dip or tap; 1.15% + 27p with tap to pay | Keyed 1.4% + 25p | Free reader when you sign up for its payments, terms apply |
+| Daviana | Taken through Stripe on a Stripe reader; ask us for the current rate | Deposits and payment links also go through Stripe | Ask us |
+
+The spread looks small, a few tenths of a percent. On a salon's takings it is not. And the fixed pence change the order depending on how big your average bill is, which is why the next section matters more than the table.
+
+### How do you work out your monthly card fees? A worked example
+
+Here is the sum to run for each option:
+
+- Your monthly card takings × the percentage
+- + your number of card payments a month × the fixed pence
+- + any monthly plan fee, and VAT where the provider adds it
+- + the reader, spread over the months you expect to keep it
+
+Now an example. Take a salon that takes £12,000 a month by card at the desk, across 300 payments, so an average bill of £40. Put your own figures in place of ours. Rates are the in-person ones from the table, for ordinary UK cards.
+
+|  | The sum | A month | A year |
+| --- | --- | --- | --- |
+| SumUp Payments Plus | £19 + 0.99% of £12,000 (£118.80) | £137.80 | £1,653.60 |
+| Stripe Terminal | 1.4% (£168) + 300 × 10p (£30) | £198.00 | £2,376.00 |
+| Vagaro | 1.15% (£138) + 300 × 20p (£60) | £198.00 | £2,376.00 |
+| Fresha | 1.19% (£142.80) + 300 × 20p (£60) | £202.80 | £2,433.60 |
+| SumUp pay as you go | 1.69% of £12,000 | £202.80 | £2,433.60 |
+| Timely | 1.59% (£190.80) + 300 × 5p (£15) | £205.80 | £2,469.60 |
+| Square or Zettle | 1.75% of £12,000 | £210.00 | £2,520.00 |
+| Booksy Tap to Pay | 0.99% (£118.80) + 300 × 20p (£60), + VAT | £214.56 | £2,574.72 |
+| Booksy mobile payments | 1.29% (£154.80) + 300 × 20p (£60), + VAT | £257.76 | £3,093.12 |
+
+On these numbers the gap between the cheapest and the dearest option is about £1,440 a year. SumUp's paid plan wins clearly here, as long as most of your clients pay with ordinary UK cards. It only pays for itself above about £2,700 a month of card takings, though; below that, the £19 costs more than the lower rate saves.
+
+Now change one thing. Say the same £12,000 comes from 600 payments of £20, as it might for a brow and lash bar or a barber. The percentages stay the same, but the pence double: Stripe goes to £228 a month and Fresha to £262.80, while Square stays at £210. Below about £29 a payment, a flat 1.75% beats 1.4% + 10p. Count your payments, not just your takings.
+
+### Should your card machine connect to your booking system?
+
+A standalone machine is often the cheapest way to take a card. It is also blind. You key in the amount, the client taps, and the money arrives in your bank with nothing to say which visit it paid for, which stylist did the work or how the tip should be split. Somebody then matches the day's payments to the diary by hand, and any mistake shows up later as a till that does not balance or a tip that went to the wrong person.
+
+A reader that is part of the till works the other way round. The bill goes from the visit to the reader, the payment lands against that visit, and tips are recorded for the right stylist. Deposits taken at booking and payment links sent by text are in the same record, so a no-show deposit or a refund does not live in a different system.
+
+That is how the Daviana till works. It sends the bill to a Stripe card reader, takes the tip on the reader for each stylist, can save a card on file with the client's consent, and takes deposits when a client books online. Each night it checks what Stripe paid against what the till recorded. It is part of the salon booking system, not a separate box. The diary and till is £80 a month including VAT, and our pricing page lists every product.
+
+If you only want the lowest rate and keep your diary somewhere else, a standalone reader on a plan like SumUp's may cost less than any salon system's own payments. Weigh that against the time spent matching payments by hand each week.
+
+### How can a salon pay less in card fees?
+
+- Know your two numbers. Your monthly card takings and your number of card payments. Without both, you cannot compare a flat rate with a rate plus pence.
+- Ask for a quote at your volume. SumUp says businesses taking £10,000 or more a month can get bespoke fees. Other providers may do the same if you ask.
+- Take cards in person where you can. Online and keyed payments cost more on most providers. Keep online payments for deposits, where they earn their cost by cutting no-shows. Our salon no-show policy template shows how to word one.
+- Check the card mix. If many clients pay with premium, business or overseas cards, ask what those cost. Stripe, for example, charges 2.8% + 20p online for premium UK cards.
+- Count VAT where it is added. Booksy lists its payment fees plus VAT; others quote theirs without.
+- Buy the reader if you can. A £19 to £229 reader you own is cheaper over a few years than most rentals, and you can take it with you if you change provider.
+
+Card fees are only one line in the cost of running a salon system. Our guide to how much salon software costs in the UK puts them next to subscriptions, texts and commission for a full year, and our 12 questions to ask before switching salon software covers what to get in writing.
+
+### Questions salon owners ask
+
+#### What is the cheapest card machine for a salon in the UK?
+
+On published rates, SumUp's Payments Plus plan, at 0.99% on UK debit and credit cards plus £19 a month, came out cheapest in our example of £12,000 a month in card takings. Below about £2,700 a month of card takings, SumUp's pay as you go rate of 1.69% with no monthly fee costs less. Run the sum with your own takings and number of payments.
+
+#### How much does a card machine cost to buy in the UK?
+
+On the pages we checked: Square Reader £19 plus VAT, Square Terminal £149 plus VAT, Stripe's BBPOS WisePad 3 £49 and Stripe Reader S700 or S710 £229 excluding VAT, and PayPal's reader £29 excluding VAT for a new business's first reader, then £69 each. Vagaro offers a free reader when you sign up for its payments, terms apply.
+
+#### Are card fees higher for deposits and online bookings?
+
+Usually, yes. Stripe charges 1.4% + 10p in person and 1.5% + 20p online for standard UK cards. Fresha charges 1.19% + 20p in person and 1.40% + 25p online, Timely 1.59% + 5p in the salon and 1.85% + 30p online, and SumUp 1.69% in person and 2.5% online on pay as you go.
+
+#### Should a salon card machine connect to the booking system?
+
+It saves work. A connected reader takes the bill from the visit, records the payment and the tip against the right stylist, and keeps deposits and refunds in the same record. A standalone reader can cost less per payment, but someone has to match each day's payments to the diary by hand.
+
+#### What card fees does Daviana charge?
+
+The Daviana till takes card payments, deposits and payment links through Stripe, using a Stripe card reader. Ask us for the current rate and we will put it in the same sum as the others. The diary and till is £80 a month including VAT, with no commission on bookings and no minimum term, and the first month is free.
+
+### Sources
+
+- Stripe: Terminal UK pricing (in-person rates, Tap to Pay, reader prices), checked 2026-10-15
+- Stripe: UK pricing (online card rates), checked 2026-10-15
+- SumUp: UK pricing (pay as you go, Payments Plus, bespoke fees), checked 2026-10-15
+- Square: UK pricing (in-person, online and keyed rates, hardware), checked 2026-10-15
+- PayPal Zettle: UK pricing (card rate, reader price), checked 2026-10-15
+- Fresha: UK pricing (card fees), checked 2026-10-13
+- Booksy Biz: UK pricing (mobile payments, Tap to Pay), checked 2026-10-13
+- Timely: UK pricing (card fees), checked 2026-10-13
+- Vagaro: UK pricing (card rates, card reader offer), checked 2026-10-14
+
+Stripe, SumUp, Square, Zettle, PayPal, Fresha, Booksy, Timely and Vagaro are trademarks of their owners. We are not affiliated with any of them. Daviana takes payments through Stripe. Rates change, so check with each company before deciding.
 
 ---
 
@@ -2082,6 +2201,92 @@ It depends on your team size and whether you already use Daviana. Vish Solo at $
 - Vish: how it works (select and mix, reweigh, charge, track; customer success setup) — checked 2026-09-26
 
 Vish is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Vish may since have changed what it offers, so check with them directly before deciding.
+
+---
+
+## Daviana vs Vagaro
+
+Source: https://daviana.app/compare/daviana-vs-vagaro/
+Published: 2026-10-14
+
+Vagaro costs less for a small team: £20 a month for one calendar and £10 for each extra person. Daviana is £80 a month for the diary, with no per-person price and no marketplace fee. Since July 2026 Vagaro takes 20% of a new client's first booking through its marketplace. Daviana also answers the phone by voice and costs colour to the gram.
+
+Written by Daviana. Every Vagaro fact below is sourced and dated, checked 2026-10-14. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+
+### Vagaro suits you if
+
+You are a solo stylist or a small team who wants a low monthly price, cheap card payments, memberships and loyalty, and a marketplace, website or branded app to bring in new clients.
+
+### Daviana suits you if
+
+Colour cost and the phone are your live problems, you would rather not pay a share of any booking, and you want commission and self-employed pay handled in the same system.
+
+### Side by side
+
+Superscripts link to the source at the foot of the page. Vagaro's pages do not say whether its UK prices include VAT; ours do.
+
+|  | Daviana | Vagaro |
+| --- | --- | --- |
+| Monthly subscription | £80 the diary (Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | From £20 a month for one bookable calendar, plus £10 a month for each additional employee calendar, for up to seven licences. After that, more staff are added at no extra charge. |
+| Minimum term | None. We invoice monthly and you can stop any month. | None. Cancel any time with no cancellation fees; 30-day free trial. |
+| Marketplace and new-client fee | No marketplace. No fee per client. | Yes. Since 14 July 2026, a one-time 20% fee when a new customer books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps), taken as a 20% deposit. Opt out by delisting. |
+| Card processing | Through the Daviana till | 1.15% + 20p per dip or tap, 1.4% + 25p keyed in, 1.15% + 27p tap to pay. No monthly cost. |
+| Reminders and texts | Appointment reminders by email and app notification. No SMS reminders or text campaigns today. | Unlimited notifications and reminders are listed as included. Text plans start at £15 a month for 250 credits, then 7p per extra credit. |
+| The phone answered by AI | Yes. Answers by voice and books into the same diary | No voice receptionist found. Vera Receptionist is a chatbot for listing-page messages and SMS; over SMS it sends a booking link rather than booking. Free in the UK for a limited time. |
+| Colour weighed and costed to the gram | Yes, built in | No colour-weighing or gram-costing feature found in its UK pricing page or pricing article |
+| Team performance and pay | Performance app included: live takings, leaderboards, commission and self-employed settlement | Advanced reporting included. Vagaro Payroll is listed as not available in the UK. |
+| Marketing, loyalty and memberships | No bulk SMS campaigns or loyalty scheme today | Memberships, packages, gift certificates, loyalty, Daily Deals and 1,000 free marketing emails a month included |
+| Website and branded app | No website builder or branded app | MySite website £15 a month; branded app £50 a month plus a £50 one-time fee |
+
+### What Vagaro does better
+
+- A lower price for a small team. £20 a month for one calendar, and £60 a month for five, is less than our Diary at £80. A solo stylist or a two-chair salon will pay less with Vagaro.
+- Low UK card rates and a free reader. 1.15% + 20p per in-person card payment with no monthly cost is among the lowest published rates we have seen, and Vagaro offers a free card reader when you sign up for its payments (terms apply).
+- Marketing, memberships and loyalty we do not have. Memberships, packages, loyalty, Daily Deals and email marketing are in the base price, and paid text plans cover SMS reminders. We do not run marketing campaigns, a loyalty scheme or SMS reminders today.
+- A website, a branded app and a marketplace. If you want your own app in the App Store, a website built for you, or to be found by new clients on a marketplace, Vagaro sells all three. We do not.
+- Built for groups. Flagship syncing across locations, single sign-on, a data lake for Power BI and independent ISO 27001 and SOC 2 audits are aimed at multi-site businesses.
+
+### Where Daviana is different
+
+- No fee on a new client, ever. We have no marketplace, so we never take a share of a booking. With Vagaro the 20% only applies to new clients who find you through its marketplace or partner network, and you can avoid it by delisting, but then that route to new clients closes too.
+- The phone answered by voice, into the same diary. Callers talk to a receptionist that knows your prices and books into the diary the desk is looking at. Vera answers messages and texts; a caller who rings still needs a person to pick up.
+- Colour costing is ours, not a note. Weighing the bowl on a Bluetooth scale and costing it to the gram, onto the client's bill, is what ColorLab was built for.
+- Team pay without an add-on. Commission, self-employed settlement and live leaderboards come with the Diary in the Performance app. Vagaro Payroll is not offered in the UK.
+
+### How to compare the price for your salon
+
+Vagaro's base price is per calendar, so count the people who take bookings. To compare like for like: start at £20 a month, add £10 for each additional bookable person (a five-stylist salon is £60, a seven-stylist salon £80), then add the extras you would actually use. A text plan is £15 to £20 a month for 250 to 350 credits, forms are £10, a website £15. Then estimate the marketplace fee: if 6 new clients a month find you on Vagaro and spend £60 each, 20% of £360 is £72 a month. Card fees come on top for both of us. Set the total against £80 a month for our Diary, which has no per-person price and no fee per client. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
+
+### Questions about Vagaro and Daviana
+
+#### How much does Vagaro cost in the UK?
+
+Vagaro's UK pricing page starts at £20 a month for one bookable calendar, and its pricing article lists each additional employee calendar at £10 a month for up to seven licences, after which more staff are added at no extra charge. Text messages need a paid text plan (from £15 a month for 250 credits) and forms, a website and a branded app are paid add-ons. UK card processing is 1.15% + 20p per dip or tap with no monthly cost. A five-stylist salon would pay £60 a month before texts, add-ons and card fees.
+
+#### Does Vagaro charge a fee for new clients in the UK?
+
+Yes, since 14 July 2026. Vagaro charges a one-time 20% fee when a brand-new customer books through the Vagaro Marketplace or its partner network (which it lists as Yelp, Google and Apple Maps). It collects the fee as a 20% deposit when the client books. Existing clients, and bookings through your own booking widget, website, Facebook, Instagram or branded app, carry no fee. You can opt out by removing your listing from the marketplace. Daviana has no marketplace and charges no fee per client.
+
+#### Does Vagaro have an AI receptionist that answers the phone?
+
+Not by voice, based on what Vagaro publishes. Its Vera Receptionist is a chatbot that replies to messages from your Vagaro listing page and, with a text plan, to SMS. Over SMS it cannot book or reschedule directly; it sends the client a link instead. In the UK it is free for a limited time. Daviana's AI Receptionist answers the phone call by voice and books into the same diary the front desk uses.
+
+#### Am I tied in with Vagaro?
+
+No. Vagaro's UK pricing page says you can cancel any time with no cancellation fees, and it offers a 30-day free trial. Daviana has no minimum term either: we invoice monthly and you can stop any month.
+
+#### Does Vagaro weigh and cost hair colour?
+
+We found no colour-weighing or gram-costing feature in Vagaro's UK pricing page or its plans and pricing article. It includes inventory tracking, client records and SOAP notes. Daviana's ColorLab weighs every bowl on a Bluetooth scale and costs it to the gram onto the client's bill.
+
+### Sources
+
+- Vagaro: United Kingdom pricing (from £20 a month, included features, cancel any time, 30-day free trial) (checked 2026-10-14)
+- Vagaro Support: plans, pricing and premium features (UK calendar licences, card rates, add-on prices, text plans, Payroll availability) (checked 2026-10-14)
+- Vagaro Support: new customer fees for businesses in the United Kingdom (20% from 14 July 2026) (checked 2026-10-14)
+- Vagaro Support: Vera Receptionist chatbot (what it does, SMS limits, UK pricing) (checked 2026-10-14)
+
+Vagaro is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Vagaro may since have changed what it offers, so check with them directly before deciding.
 
 ---
 
