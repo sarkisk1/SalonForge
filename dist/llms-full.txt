@@ -8,7 +8,7 @@ Last updated: 2026-10-18. Contents: what Daviana is; every journal post, newest 
 
 Daviana is one connected system that runs a whole hair salon. Its five products read and write the same shared client record, so the diary, the colour bowl and the till all agree. It is built and run every day inside six working salons, from London to Saudi Arabia.
 
-- **Daviana Diary** (https://daviana.app/diary/): salon booking software. The appointment diary, till, client records, per-stylist pricing, rota and online booking in one system. Every other Daviana product reads and writes the same client record. £80 a month.
+- **Daviana Diary** (https://daviana.app/diary/): salon booking software. The appointment diary, till, client records, per-stylist pricing, rota and online booking in one system. Every other Daviana product reads and writes the same client record. Priced by team size (£25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more).
 - **Daviana AI Receptionist, Aria** (https://daviana.app/ai-receptionist/): a real AI voice that answers the salon phone when the desk can't. It handles the whole visit and books it straight into the Daviana diary, even while the salon sleeps. £60 a month.
 - **Daviana ColorLab** (https://daviana.app/colorlab/): colour management software for hair salons. A Bluetooth precision scale weighs every bowl, a formula can start from a photo, and the true cost of every gram is tied to the booking. £80 a month.
 - **Daviana Bar** (https://daviana.app/bar/): drinks ordering for the salon floor. Each drink posts to the client's bill and deducts the stock, to the ingredient, the instant you tap. Included free with the Diary.
@@ -176,7 +176,7 @@ We make Daviana, so read our view with that in mind. Every price below for anoth
 | Booksy | £40 a month plus £5 per extra team member, plus VAT | Marketplace. New-client fee only with Boost on: 30% of the first visit, minimum £5. No commitment |
 | Treatwell | Monthly fee not stated on its pricing page | Marketplace. 35% of a new client's first booking, 0% on repeats, plus VAT. 30 days' notice |
 | Timely | From £4, £7 or £9 a week, adjusting with bookings; unlimited team members | No new client fees. No contract, 14 days' notice |
-| Daviana | £80 a month including VAT; first month free | No marketplace, no commission. Cancel any month |
+| Daviana | From £25 a month including VAT for one person, up to £120 for nine or more; first month free | No marketplace, no commission. Cancel any month |
 
 Sources for each price are listed in our UK salon software comparison.
 
@@ -293,7 +293,7 @@ A standalone machine is often the cheapest way to take a card. It is also blind.
 
 A reader that is part of the till works the other way round. The bill goes from the visit to the reader, the payment lands against that visit, and tips are recorded for the right stylist. Deposits taken at booking and payment links sent by text are in the same record, so a no-show deposit or a refund does not live in a different system.
 
-That is how the Daviana till works. It sends the bill to a Stripe card reader, takes the tip on the reader for each stylist, can save a card on file with the client's consent, and takes deposits when a client books online. Each night it checks what Stripe paid against what the till recorded. It is part of the salon booking system, not a separate box. The diary and till is £80 a month including VAT, and our pricing page lists every product.
+That is how the Daviana till works. It sends the bill to a Stripe card reader, takes the tip on the reader for each stylist, can save a card on file with the client's consent, and takes deposits when a client books online. Each night it checks what Stripe paid against what the till recorded. It is part of the salon booking system, not a separate box. The diary and till starts at £25 a month including VAT for one person, and our pricing page lists every product.
 
 If you only want the lowest rate and keep your diary somewhere else, a standalone reader on a plan like SumUp's may cost less than any salon system's own payments. Weigh that against the time spent matching payments by hand each week.
 
@@ -328,7 +328,7 @@ It saves work. A connected reader takes the bill from the visit, records the pay
 
 #### What card fees does Daviana charge?
 
-The Daviana till takes card payments, deposits and payment links through Stripe, using a Stripe card reader. Ask us for the current rate and we will put it in the same sum as the others. The diary and till is £80 a month including VAT, with no commission on bookings and no minimum term, and the first month is free.
+The Daviana till takes card payments, deposits and payment links through Stripe, using a Stripe card reader. Ask us for the current rate and we will put it in the same sum as the others. The diary and till starts at £25 a month including VAT for one person, with no commission on bookings and no minimum term, and the first month is free.
 
 ### Sources
 
@@ -391,7 +391,7 @@ These are the published UK prices. Superscripts link to the sources at the end. 
 | SalonIQ | From £47 a month for a solo stylist | – | Two-way SMS is a paid upgrade | No marketplace | Setup from £175 plus VAT. Pricing page: cancel with 60 days' notice; terms: 12-month initial term, then 90 days |
 | Treatwell | Not stated on its pricing page | 2.5% on online prepayments, plus VAT | – | 35% of a new marketplace client's first booking, 0% on repeats, plus VAT | 30 days' notice |
 | Phorest | Quote only | – | – | No marketplace | One year, renewing automatically unless you give two months' notice |
-| Daviana | £80 a month including VAT for the diary and till | Taken through Stripe; ask us for the current rate | – | No marketplace, no commission | No minimum term; data moved across for you at no charge; first month free |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more) | Taken through Stripe; ask us for the current rate | – | No marketplace, no commission | No minimum term; data moved across for you at no charge; first month free |
 
 Two things stand out. Fresha and Booksy charge per person, so a growing team pays more each month, while Timely includes unlimited team members. And the in-salon card rates sit in the same range, around 1% to 1.6% plus a few pence, which on a busy salon's takings adds up to far more than any subscription.
 
@@ -426,7 +426,7 @@ For Daviana, the diary and till is £960 a year including VAT. Ask us for the ca
 
 ### Is the cheapest salon software the best value?
 
-Sometimes, yes. If you work on your own and want new clients from an app, Fresha at £14.95 a month is hard to beat. If you want the lowest price without a marketplace, Timely starts at £4 a week. For a small team, both cost less than Daviana's £80 a month.
+Sometimes, yes. If you work on your own and want new clients from an app, Fresha at £14.95 a month is hard to beat. If you want the lowest price without a marketplace, Timely starts at £4 a week. For a small team, both cost less than Daviana, which starts at £25 a month for one person.
 
 The cheapest headline is not always the cheapest year, though, and price is not the only thing you are buying. Daviana makes sense when you would use more than the diary: ColorLab to cost colour to the gram, or Aria, the AI receptionist, to answer the phone and book into the same salon booking system the desk uses. You pay only for the products you switch on, and Bar and Performance come with the diary.
 
@@ -452,7 +452,7 @@ Yes. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and D
 
 #### How much does Daviana cost?
 
-The Daviana diary and till is £80 a month including VAT. Aria, the AI receptionist, is £60 a month and ColorLab is £80 a month, both including VAT, and Bar and Performance are included with the diary. There is no commission on bookings and no minimum term, moving your data across is included, and the first month is free.
+The Daviana diary and till is priced by team size, including VAT: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. Aria, the AI receptionist, is £60 a month and ColorLab is £80 a month, both including VAT, and Bar and Performance are included with the diary. There is no commission on bookings and no minimum term, moving your data across is included, and the first month is free.
 
 ---
 
@@ -486,14 +486,14 @@ Prices are as each company publishes them for the UK. Superscripts link to the s
 | Timely | From £4, £7 or £9 a week by plan, adjusting with bookings; unlimited team members | No contract, 14 days' notice. No new client fees |
 | SalonIQ | From £47 a month for a solo stylist; setup from £175 plus VAT | Its pricing page says no long-term contracts, cancel with 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice, so ask which applies to you. No marketplace |
 | Phorest | Quote only; no free trial | One year, renewing automatically unless you give two months' notice. No marketplace |
-| Daviana | £80 a month including VAT for the diary and till; first month free | No minimum term; cancel any month. No marketplace, no commission on bookings |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | No minimum term; cancel any month. No marketplace, no commission on bookings |
 
 ### Which salon software suits which salon?
 
 - You want new clients from an app. Fresha, Treatwell and Booksy all run consumer marketplaces. Fresha has the lowest software price and a 20% one-time fee per new marketplace client. Treatwell takes 35% of a new client's first booking, and nothing on repeats. Booksy charges a flat monthly fee and only takes a new-client fee when you switch Boost on. See Fresha alternatives if you are weighing these up.
 - You want the lowest price with no marketplace. Timely starts from £4 a week with unlimited team members and no new client fees, though the weekly price rises with bookings. See Daviana vs Timely.
 - You are a larger salon or a group that wants an established UK system. Phorest and SalonIQ both fit. Phorest is priced by quote on a one-year contract; SalonIQ publishes a starting price and a setup fee. See Daviana vs Phorest and Daviana vs SalonIQ.
-- You want the diary, colour costing and the phone in one system. Daviana's salon booking system is £80 a month including VAT with no marketplace and no minimum term. Its ColorLab weighs and costs colour to the gram, and its AI receptionist books calls into the same diary. It costs more than Fresha or Timely for a small team.
+- You want the diary, colour costing and the phone in one system. Daviana's salon booking system starts at £25 a month including VAT for one person with no marketplace and no minimum term. Its ColorLab weighs and costs colour to the gram, and its AI receptionist books calls into the same diary. It costs more than Fresha or Timely for a small team.
 
 ### Which salon software can answer the phone with AI?
 
@@ -1197,7 +1197,7 @@ Ask whether training happens in person or over a call, once or on an ongoing bas
 
 ### 7. What does it cost when you add a stylist — or lose one?
 
-Get the exact number per seat, not a banded price that turns out to depend on your total headcount. Ask directly whether a self-employed stylist renting a chair part time costs the same as a full-time employed one, and what happens to that cost while a chair sits empty during maternity leave or long-term sick.
+Get the exact number for your team size in writing, and check the price bands are published, not a banded price that only turns out to depend on your total headcount after you sign. Ask directly whether a self-employed stylist renting a chair part time costs the same as a full-time employed one, and what happens to that cost while a chair sits empty during maternity leave or long-term sick.
 
 ### 8. Is there a setup fee, and what does it actually buy?
 
@@ -1644,7 +1644,7 @@ On one London salon group’s shared line, 49% of inbound calls reached nobody i
 
 #### How much does the AI Receptionist cost?
 
-£60 a month including VAT, with the first month free and cancellation any month. It books into Daviana Diary, which is £80 a month.
+£60 a month including VAT, with the first month free and cancellation any month. It books into Daviana Diary, which starts at £25 a month for one person.
 
 ---
 
@@ -1745,7 +1745,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Fresha |
 | --- | --- | --- |
-| Software only, no marketplace clients | £80 a month inc VAT — the diary, till and client record | £59.70 a month inc VAT |
+| Software only, no marketplace clients | £80 a month inc VAT for a team of four to eight — the diary, till and client record | £59.70 a month inc VAT |
 | With the phone answered by AI | £140 a month inc VAT — the diary plus the phone answered | £139.65 a month |
 | Plus 10 new marketplace clients a month | £140 a month inc VAT | £329.65 a month |
 | Plus 20 new marketplace clients a month | £140 a month inc VAT | £519.65 a month |
@@ -1763,14 +1763,14 @@ Then there are two things a headline price does not include: the phone, which is
 
 |  | Daviana | Fresha |
 | --- | --- | --- |
-| Software only, no marketplace clients | £80 a month inc VAT — the diary, till and client record | £59.70 a month inc VAT |
+| Software only, no marketplace clients | £80 a month inc VAT for a team of four to eight — the diary, till and client record | £59.70 a month inc VAT |
 | With the phone answered by AI | £140 a month inc VAT — the diary plus the phone answered | £139.65 a month |
 | Plus 10 new marketplace clients a month | £140 a month inc VAT | £329.65 a month |
 | Plus 20 new marketplace clients a month | £140 a month inc VAT | £519.65 a month |
 
 - If you get few marketplace clients and do not need the phone answered, they are genuinely cheaper than us and this table says so. Once the phone is answered the two sit close together, and from there every new marketplace client moves their figure up while ours stays where it is.
 - Commission is 20% of a new marketplace client's FIRST booking only, minimum £4. Repeat visits are not charged again, and bookings you bring in yourself are never charged. We have assumed a £95 average colour.
-- Their figures are from their own published pricing page. Their subscription is quoted plus VAT, so five stylists is £49.75 plus VAT — £59.70 including it. Their AI Concierge add-on is published at £79.95 a location and we have added it exactly as published, without assuming VAT either way, so the rows that include the phone may understate them. Ours are the published per-product prices, VAT included, and they do not move with the number of chairs: £80 for the diary, £60 for the phone answered, £80 for colour costed to the gram. Both sides move over time, so check before deciding.
+- Their figures are from their own published pricing page. Their subscription is quoted plus VAT, so five stylists is £49.75 plus VAT — £59.70 including it. Their AI Concierge add-on is published at £79.95 a location and we have added it exactly as published, without assuming VAT either way, so the rows that include the phone may understate them. Ours are the published per-product prices, VAT included. The diary moves in four steps with the size of the team (£25 for one person, £45 for two or three, £80 for four to eight, £120 for nine or more), so a five-chair salon pays £80; the phone answered is £60 and colour costed to the gram is £80. Both sides move over time, so check before deciding.
 
 ### Where Daviana is different
 
@@ -1819,7 +1819,7 @@ You run several sites, want a large support team behind you, and are comfortable
 
 ### Daviana suits you if
 
-Colour cost and the phone are your live problems, you want to start at £80 a month and add the rest only when it pays for itself, and you would rather not sign a twelve-month contract to find out whether a system suits you.
+Colour cost and the phone are your live problems, you want to start from £25 a month and add the rest only when it pays for itself, and you would rather not sign a twelve-month contract to find out whether a system suits you.
 
 ### Side by side
 
@@ -1827,7 +1827,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Phorest |
 | --- | --- | --- |
-| Monthly subscription | £80 the diary, £60 the phone answered, £80 colour costed — all inc VAT. Take one, take all three. | Not published — quote only. From our own experience with Phorest, a single London branch ran between £155 and £169 a month including VAT, with one month at £200. Prices will have moved since; get your own quote. |
+| Monthly subscription | From £25 the diary (£45 for two or three people, £80 for four to eight, £120 for nine or more), £60 the phone answered, £80 colour costed — all inc VAT. Take one, take all three. | Not published — quote only. From our own experience with Phorest, a single London branch ran between £155 and £169 a month including VAT, with one month at £200. Prices will have moved since; get your own quote. |
 | Minimum term | None | One year, auto-renewing, with two months' written notice to cancel |
 | Marketplace | No | No — Phorest is explicit that bookings are between the client and the salon |
 | Colour weighed and costed to the gram | Yes, built in | Not natively. Available through a third-party integration. |
@@ -1898,7 +1898,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Treatwell |
 | --- | --- | --- |
-| What you pay | £80 the diary, £60 the phone, £80 colour, all inc VAT. No commission, ever. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
+| What you pay | From £25 the diary, £60 the phone, £80 colour, all inc VAT. No commission, ever. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
 | Monthly software fee | That is the subscription above | Not published for the UK |
 | Marketplace | No | Yes — it is the business. Treatwell acts as your booking agent for marketplace clients. |
 | The phone answered by AI | Yes — answers calls and books into the same diary, £60 a month inc VAT | Yes, since 7 September 2026. Their AI Receptionist answers calls and manages appointments in the Treatwell calendar, from £69 a month |
@@ -1969,7 +1969,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Booksy |
 | --- | --- | --- |
-| Monthly subscription | £80 the diary, £60 the phone answered, £80 colour costed — all inc VAT. Take one, take all three. | £40 a month for one user, plus £5 a month per additional team member, plus VAT |
+| Monthly subscription | From £25 the diary (£45 for two or three people, £80 for four to eight, £120 for nine or more), £60 the phone answered, £80 colour costed — all inc VAT. Take one, take all three. | £40 a month for one user, plus £5 a month per additional team member, plus VAT |
 | Commission on new clients | None | Optional. Their Boost layer takes 30% of a new client's first visit, minimum £5, for marketplace-sourced clients only. |
 | Marketplace | No | Yes — a basic listing is included by default, with opt-out |
 | Colour weighed and costed to the gram | Yes, built in | No colour-weighing or scale feature found in their published feature list |
@@ -2038,7 +2038,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | SalonIQ |
 | --- | --- | --- |
-| Monthly price | £80 a month including VAT for the diary and till. First month free. | From £47 a month for a solo stylist, every plan with the full booking, management and marketing system. |
+| Monthly price | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more). First month free. | From £47 a month for a solo stylist, every plan with the full booking, management and marketing system. |
 | Setup | We set your salon up with you and move your clients and prices across. | One-time setup fee from £175 plus VAT: installation, online training and data migration. |
 | Minimum term | None. You can stop any month. | Terms: an initial term of 12 months, then 90 days' written notice. Its UK page says "no long contracts". |
 | AI receptionist | Aria, £60 a month including VAT. Books into the Daviana diary. | IQ Connect, powered by Callpad.ai, books into the live SalonIQ diary. Price not published. |
@@ -2051,7 +2051,6 @@ Superscripts link to the source at the foot of the page.
 
 - Marketing we do not have. Automated SMS and email campaigns come in every SalonIQ plan. Daviana does not run bulk marketing campaigns today.
 - A much larger UK customer base. SalonIQ says it powers more than 2,500 UK salons, including 180+ salon groups. Daviana runs in six working salons.
-- A lower entry price for a solo stylist. £47 a month against £80, before setup fees and upgrades.
 - More add-ons. A branded client app, an e-shop and onsite training are available if you want them.
 
 ### Where Daviana is different
@@ -2063,13 +2062,13 @@ Superscripts link to the source at the foot of the page.
 
 ### How to compare the price for your salon
 
-Ask SalonIQ for a quote for your team size with the upgrades you would actually use, such as online deposits and card payments, and add the setup fee. Because its terms set a 12-month initial term (its pricing page says no long-term contracts, so ask which applies), compare a full year: 12 months of SalonIQ plus setup, against 12 months of Daviana at £80 a month including VAT, plus £60 for the AI Receptionist or £80 for ColorLab if you want them. If the phone or colour is part of the decision, the missed call calculator and the colour cost calculator show whether either would pay for itself. For the wider market, see our UK salon software comparison.
+Ask SalonIQ for a quote for your team size with the upgrades you would actually use, such as online deposits and card payments, and add the setup fee. Because its terms set a 12-month initial term (its pricing page says no long-term contracts, so ask which applies), compare a full year: 12 months of SalonIQ plus setup, against 12 months of Daviana at your team size (£25 a month for one person up to £120 for nine or more, including VAT), plus £60 for the AI Receptionist or £80 for ColorLab if you want them. If the phone or colour is part of the decision, the missed call calculator and the colour cost calculator show whether either would pay for itself. For the wider market, see our UK salon software comparison.
 
 ### Questions about SalonIQ and Daviana
 
 #### How much does SalonIQ cost?
 
-SalonIQ's pricing page says it starts at £47 a month for a solo stylist, with every plan including the complete booking, management and marketing system, plus a one-time setup fee from £175 plus VAT covering installation, training and data migration. Onsite training, two-way SMS, a branded consumer app, online booking deposits and payments, an e-shop and integrated card payments are listed as upgrade options. Daviana's diary and till are £80 a month including VAT.
+SalonIQ's pricing page says it starts at £47 a month for a solo stylist, with every plan including the complete booking, management and marketing system, plus a one-time setup fee from £175 plus VAT covering installation, training and data migration. Onsite training, two-way SMS, a branded consumer app, online booking deposits and payments, an e-shop and integrated card payments are listed as upgrade options. Daviana's diary and till are priced by team size, including VAT: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more.
 
 #### Is SalonIQ a contract?
 
@@ -2122,7 +2121,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Timely |
 | --- | --- | --- |
-| Monthly subscription | £80 the diary (Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | From £4, £7 or £9 a week depending on plan, rising with the number of bookings you take each week. Unlimited team members. Advanced team management is +£8 a week. |
+| Monthly subscription | From £25 the diary (£45 for two or three people, £80 for four to eight, £120 for nine or more; Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | From £4, £7 or £9 a week depending on plan, rising with the number of bookings you take each week. Unlimited team members. Advanced team management is +£8 a week. |
 | Minimum term | None. We invoice monthly and you can stop any month. | None. No contracts; 14 days' notice to cancel. |
 | Marketplace | No | No. Timely describes its pricing as having no new client fees. |
 | Card processing | Through the Daviana till | 1.59% + 5p in the salon, 1.85% + 30p online, 3.00% + 30p for international cards |
@@ -2134,7 +2133,7 @@ Superscripts link to the source at the foot of the page.
 
 ### What Timely does better
 
-- A lower starting price for a quiet column. From £4 a week with unlimited team members is hard to beat for a small salon or a single chair. Our Diary alone is £80 a month.
+- A lower starting price for a quiet column. From £4 a week with unlimited team members is hard to beat for a small salon or a single chair. Our Diary is £25 a month for one person and £80 for a team of four to eight.
 - Marketing and loyalty tools we do not have. SMS campaigns, promo codes, loyalty rewards, review requests and rebooking reminders are all in their plans. We do not run marketing campaigns or a loyalty scheme today.
 - Consultation forms and before-and-after photos. Digital consultation forms, sent automatically on Thrive, and photos on the client record. If your treatment menu depends on consultations, that depth counts.
 - A long track record. Timely launched in 2011 and is part of EverCommerce. It says more than 28,000 hair and beauty businesses use it.
@@ -2148,7 +2147,7 @@ Superscripts link to the source at the foot of the page.
 
 ### How to compare the price for your salon
 
-Timely's weekly price starts at £4, £7 or £9 and adjusts with the number of bookings you take, so the figure on the page is a floor. To compare like for like: enter your average weekly bookings on their pricing page, multiply the weekly figure by 52 and divide by 12 for a monthly number, add £8 a week if you want their team performance add-on, then set that against £80 a month for our Diary. As a guide, £4 a week works out at about £17 a month and £9 a week at about £39 a month, before booking volume is added. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
+Timely's weekly price starts at £4, £7 or £9 and adjusts with the number of bookings you take, so the figure on the page is a floor. To compare like for like: enter your average weekly bookings on their pricing page, multiply the weekly figure by 52 and divide by 12 for a monthly number, add £8 a week if you want their team performance add-on, then set that against our Diary at your team size: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. As a guide, £4 a week works out at about £17 a month and £9 a week at about £39 a month, before booking volume is added. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
 
 ### Questions about Timely and Daviana
 
@@ -2264,7 +2263,7 @@ Vish is a trademark of its owner. We are not affiliated with, endorsed by or par
 Source: https://daviana.app/compare/daviana-vs-vagaro/
 Published: 2026-10-14
 
-Vagaro costs less for a small team: £20 a month for one calendar and £10 for each extra person. Daviana is £80 a month for the diary, with no per-person price and no marketplace fee. Since July 2026 Vagaro takes 20% of a new client's first booking through its marketplace. Daviana also answers the phone by voice and costs colour to the gram.
+Vagaro costs less for a small team: £20 a month for one calendar and £10 for each extra person. Daviana's diary is £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, with no marketplace fee. Since July 2026 Vagaro takes 20% of a new client's first booking through its marketplace. Daviana also answers the phone by voice and costs colour to the gram.
 
 Written by Daviana. Every Vagaro fact below is sourced and dated, checked 2026-10-14. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
 
@@ -2282,7 +2281,7 @@ Superscripts link to the source at the foot of the page. Vagaro's pages do not s
 
 |  | Daviana | Vagaro |
 | --- | --- | --- |
-| Monthly subscription | £80 the diary (Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | From £20 a month for one bookable calendar, plus £10 a month for each additional employee calendar, for up to seven licences. After that, more staff are added at no extra charge. |
+| Monthly subscription | From £25 the diary (£45 for two or three people, £80 for four to eight, £120 for nine or more; Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | From £20 a month for one bookable calendar, plus £10 a month for each additional employee calendar, for up to seven licences. After that, more staff are added at no extra charge. |
 | Minimum term | None. We invoice monthly and you can stop any month. | None. Cancel any time with no cancellation fees; 30-day free trial. |
 | Marketplace and new-client fee | No marketplace. No fee per client. | Yes. Since 14 July 2026, a one-time 20% fee when a new customer books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps), taken as a 20% deposit. Opt out by delisting. |
 | Card processing | Through the Daviana till | 1.15% + 20p per dip or tap, 1.4% + 25p keyed in, 1.15% + 27p tap to pay. No monthly cost. |
@@ -2295,7 +2294,7 @@ Superscripts link to the source at the foot of the page. Vagaro's pages do not s
 
 ### What Vagaro does better
 
-- A lower price for a small team. £20 a month for one calendar, and £60 a month for five, is less than our Diary at £80. A solo stylist or a two-chair salon will pay less with Vagaro.
+- A lower price for a small team. £20 a month for one calendar, and £60 a month for five, is less than our Diary at £25 for one person or £80 for a team of four to eight. A solo stylist or a small salon will pay a little less with Vagaro.
 - Low UK card rates and a free reader. 1.15% + 20p per in-person card payment with no monthly cost is among the lowest published rates we have seen, and Vagaro offers a free card reader when you sign up for its payments (terms apply).
 - Marketing, memberships and loyalty we do not have. Memberships, packages, loyalty, Daily Deals and email marketing are in the base price, and paid text plans cover SMS reminders. We do not run marketing campaigns, a loyalty scheme or SMS reminders today.
 - A website, a branded app and a marketplace. If you want your own app in the App Store, a website built for you, or to be found by new clients on a marketplace, Vagaro sells all three. We do not.
@@ -2310,7 +2309,7 @@ Superscripts link to the source at the foot of the page. Vagaro's pages do not s
 
 ### How to compare the price for your salon
 
-Vagaro's base price is per calendar, so count the people who take bookings. To compare like for like: start at £20 a month, add £10 for each additional bookable person (a five-stylist salon is £60, a seven-stylist salon £80), then add the extras you would actually use. A text plan is £15 to £20 a month for 250 to 350 credits, forms are £10, a website £15. Then estimate the marketplace fee: if 6 new clients a month find you on Vagaro and spend £60 each, 20% of £360 is £72 a month. Card fees come on top for both of us. Set the total against £80 a month for our Diary, which has no per-person price and no fee per client. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
+Vagaro's base price is per calendar, so count the people who take bookings. To compare like for like: start at £20 a month, add £10 for each additional bookable person (a five-stylist salon is £60, a seven-stylist salon £80), then add the extras you would actually use. A text plan is £15 to £20 a month for 250 to 350 credits, forms are £10, a website £15. Then estimate the marketplace fee: if 6 new clients a month find you on Vagaro and spend £60 each, 20% of £360 is £72 a month. Card fees come on top for both of us. Set the total against our Diary at your team size (£25 to £120 a month), which has no fee per client. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
 
 ### Questions about Vagaro and Daviana
 
@@ -2365,7 +2364,7 @@ Superscripts link to the sources at the foot of the page.
 | Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any timeNew clients: Only if you turn on Boost: 30% of a new client's first visit, minimum £5 |
 | SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
 | Phorest | Quote only; no free trial | Contract: One year, auto-renewing; two months' notice before the anniversaryNew clients: No marketplace |
-| Daviana | £80 a month including VAT for the diary and till; first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2373,7 +2372,7 @@ Superscripts link to the sources at the foot of the page.
 - Booksy. Still a consumer marketplace, but on a flat £40 a month plus £5 per extra team member (plus VAT), and new-client commission only when you switch Boost on. The closest to Fresha if you want to keep being found in an app. See Daviana vs Booksy.
 - SalonIQ. UK salon software from £47 a month for a solo stylist, with a setup fee from £175 plus VAT and no marketplace. Its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term, then 90 days' written notice, so ask before signing. See Daviana vs SalonIQ.
 - Phorest. A long-established system for larger salons, priced by quote, on a one-year contract that renews automatically unless you give two months' notice. See Daviana vs Phorest.
-- Daviana. A salon booking system and till at £80 a month including VAT, with no marketplace, no commission and no minimum term. It costs more than Fresha for a small team. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Fresha.
+- Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It costs more than Fresha for a small team. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Fresha.
 
 ### What Fresha still does better
 
@@ -2440,7 +2439,7 @@ Superscripts link to the sources at the foot of the page.
 | Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
 | SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
 | Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any timeNew clients: Only with Boost on: 30% of a new client's first visit, minimum £5 |
-| Daviana | £80 a month including VAT for the diary and till; first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2448,7 +2447,7 @@ Superscripts link to the sources at the foot of the page.
 - Timely. From £4 a week with unlimited team members, no new client fees and 14 days' notice to leave. The weekly price adjusts with bookings. See Daviana vs Timely.
 - SalonIQ. The closest like-for-like: UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Ask about the contract: its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term. See Daviana vs SalonIQ.
 - Booksy. A flat £40 a month plus £5 per extra team member (plus VAT), no commitment, and a consumer app if you want new clients. See Daviana vs Booksy.
-- Daviana. A salon booking system and till at £80 a month including VAT, no marketplace and no minimum term. Where Phorest adds colour through a third-party integration such as Vish, Daviana weighs and costs colour with ColorLab and answers the phone with an AI receptionist, all on the same client record. See Daviana vs Phorest.
+- Daviana. A salon booking system and till from £25 a month including VAT for one person, no marketplace and no minimum term. Where Phorest adds colour through a third-party integration such as Vish, Daviana weighs and costs colour with ColorLab and answers the phone with an AI receptionist, all on the same client record. See Daviana vs Phorest.
 
 ### What Phorest still does better
 
@@ -2516,7 +2515,7 @@ Superscripts link to the sources at the foot of the page.
 | Booksy | £40 a month plus £5 a month per extra team member, plus VAT; 7-day free trial | Contract: None; cancel any timeNew clients: Only with Boost on: 30% of a new client's first visit, minimum £5, plus VAT |
 | Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
 | SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Daviana | £80 a month including VAT for the diary and till; first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2524,7 +2523,7 @@ Superscripts link to the sources at the foot of the page.
 - Booksy. A marketplace where the commission is a switch. Marketplace bookings are free while Boost is off; with Boost on it is a one-time 30% of a new client's first visit, minimum £5, plus VAT. The subscription is £40 a month plus £5 per extra team member, plus VAT. See Daviana vs Booksy.
 - Timely. No marketplace and no new client fees, from £4 a week with unlimited team members and 14 days' notice to leave. The weekly price adjusts with bookings, so enter your own numbers on their site. See Daviana vs Timely.
 - SalonIQ. UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Its pricing page and its terms describe the commitment differently, so ask which applies to you before signing. See Daviana vs SalonIQ.
-- Daviana. A salon booking system and till at £80 a month including VAT, with no marketplace, no commission and no minimum term. It will not send you new clients the way Treatwell does. It fits salons that are busy enough already and also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Treatwell.
+- Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It will not send you new clients the way Treatwell does. It fits salons that are busy enough already and also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Treatwell.
 
 ### What Treatwell still does better
 
@@ -2599,7 +2598,7 @@ Superscripts link to the sources at the foot of the page.
 | Treatwell | Monthly fee not published on its pricing page | Contract: 30 days' notice, per its partner termsNew clients: 35% commission on a new marketplace client's first booking; 0% on repeat bookings; 2.5% plus VAT on online prepayments |
 | Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
 | SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Daviana | £80 a month including VAT for the diary and till; first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2607,7 +2606,7 @@ Superscripts link to the sources at the foot of the page.
 - Treatwell. The other big UK marketplace. It takes 35% of a new marketplace client's first booking and nothing on repeat bookings, and it does not publish its monthly fee, so ask for a quote. See Daviana vs Treatwell.
 - Timely. No marketplace and no new client fees, from £4 a week with unlimited team members and 14 days' notice to leave. The weekly price adjusts with bookings, so enter your own numbers on their site. See Daviana vs Timely.
 - SalonIQ. UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Ask about the contract before signing: its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term. See Daviana vs SalonIQ.
-- Daviana. A salon booking system and till at £80 a month including VAT, with no marketplace, no commission and no minimum term. It costs more than Booksy for a small team that relies on marketplace clients. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Booksy.
+- Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It costs more than Booksy for a small team that relies on marketplace clients. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Booksy.
 
 ### What Booksy still does better
 
@@ -2675,7 +2674,7 @@ It is the diary a salon runs on: appointments by stylist, the till and the clien
 
 ### How much does Daviana's booking system cost?
 
-£80 a month including VAT. There is no commission and no charge per booking, the first month is free, and you can cancel any month. Bar and Performance are included with it. See pricing.
+£25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, all including VAT. There is no commission and no charge per booking, the first month is free, and you can cancel any month. Bar and Performance are included with it. See pricing.
 
 ### Can clients book online?
 
@@ -2707,7 +2706,7 @@ Yes. You cash out against the appointment: services, retail, tips and payment ty
 
 ### How does the price compare with Fresha or Booksy?
 
-On their published UK prices (checked 26 September 2026), Fresha is £14.95 a month on your own or £9.95 per bookable team member, plus 20% on each new marketplace client, and Booksy is £40 a month plus £5 per extra team member, plus VAT. Daviana is £80 a month including VAT with no marketplace and no commission. For a small team Fresha or Booksy costs less; our UK salon software comparison sets out the full picture.
+On their published UK prices (checked 26 September 2026), Fresha is £14.95 a month on your own or £9.95 per bookable team member, plus 20% on each new marketplace client, and Booksy is £40 a month plus £5 per extra team member, plus VAT. Daviana is priced by team size, from £25 a month including VAT for one person, with no marketplace and no commission. For a small team Fresha can cost less; our UK salon software comparison sets out the full picture.
 
 ---
 
@@ -2741,7 +2740,7 @@ Yes. It can switch language mid-call, and it copes with accents, speakerphone an
 
 ### How much does the AI receptionist cost?
 
-£60 a month including VAT, with the first month free and cancellation any month. It books into Daviana Diary, which is £80 a month. See pricing.
+£60 a month including VAT, with the first month free and cancellation any month. It books into Daviana Diary, which starts at £25 a month for one person. See pricing.
 
 ### Can I hear it before I decide?
 
@@ -2793,7 +2792,7 @@ Source: https://daviana.app/pricing/
 
 ### How much does Daviana cost?
 
-It is priced per product, and every price includes VAT. Daviana Diary — the booking diary, till and client record — is £80 a month. The AI Receptionist, which answers the phone and books into the same diary, is £60 a month. ColorLab, which weighs and costs every colour bowl to the gram, is £80 a month. Bar and Performance are included free once you take the Diary. Take one, take all five. There is no commission on bookings and no lock-in.
+It is priced per product, and every price includes VAT. Daviana Diary — the booking diary, till and client record — is priced by team size: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. The AI Receptionist, which answers the phone and books into the same diary, is £60 a month. ColorLab, which weighs and costs every colour bowl to the gram, is £80 a month. Bar and Performance are included free once you take the Diary. Take one, take all five. There is no commission on bookings and no lock-in.
 
 ### Can I take just one product?
 
@@ -2841,7 +2840,7 @@ What it costs, and what it saves.
 
 #### How much does Daviana cost?
 
-It is priced per product, and every price includes VAT. Daviana Diary — the diary, till and client record — is £80 a month. The AI Receptionist is £60 a month. ColorLab is £80 a month. Bar and Performance are included free once you take the Diary. Take one, take all five.
+It is priced per product, and every price includes VAT. Daviana Diary — the diary, till and client record — is priced by team size: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. The AI Receptionist is £60 a month. ColorLab is £80 a month. Bar and Performance are included free once you take the Diary. Take one, take all five.
 
 It is a monthly subscription. There is no charge per booking and no commission on your clients. See pricing to tick what you need and see the total.
 
