@@ -1210,6 +1210,16 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     }).catch(function(){ b.disabled = false; b.textContent = 'Nummer bestätigen'; err('ss-code-err', 'Keine Verbindung. Bitte erneut versuchen.'); });
   });
   $('ss-otp').addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); $('ss-otp-go').click(); } });
+  // 18 Oct 2026: tapping the code iOS/Android offers from the text filled this box, then
+  // nothing happened until the visitor found the confirm button, and iOS had already deleted
+  // the text. Confirm as soon as a whole 6-digit code is in; once per code, never mid-check.
+  var autoCode = '';
+  $('ss-otp').addEventListener('input', function(){
+    var c = ($('ss-otp').value || '').replace(/\D/g, '');
+    if (c.length !== 6) { autoCode = ''; return; }
+    if (c === autoCode || $('ss-otp-go').disabled) return;
+    autoCode = c; $('ss-otp-go').click();
+  });
   $('ss-resend').addEventListener('click', function(){ ev('otp_resend'); if (++RESENDS >= 2) { showFail('resend_twice'); return; } sendCode(false).then(function(ok){ if (ok) lockResend(Date.now() + RESEND_MS); if (ok) err('ss-code-err', ''); if (ok) $('dc-lead').textContent = 'Wir haben einen neuen Code geschickt an ' + lead.mobile + '.'; }); });
   // 4 Oct 2026: when the code can't be texted (the send failed, or a second "new code"
   // request), the visitor is never left on "Check your phone". They can book a call (no code
