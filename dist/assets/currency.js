@@ -1,14 +1,14 @@
 /* Show Daviana's own prices in euros to visitors in Europe (EU, EEA,
    Switzerland and euro-using microstates). Same figures, € instead of £.
    Country comes from Cloudflare (/cdn-cgi/trace, same origin, no cookie).
-   Only our own list prices are swapped (£80, £60, £220) plus the live total
+   Only our own list prices are swapped (£25, £45, £60, £80, £120, £165, £220) plus the live total
    on /pricing/. Not loaded on /compare/ pages: those set our prices against
    competitors' UK £ prices, and a mixed €/£ table would mislead. Worked
    examples and calculators stay £. VAT wording flips to ex-VAT too (see VAT).
    Test with ?currency=eur or ?currency=gbp. */
 (function () {
   var EU = 'AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO CH AD MC SM VA ME XK'.split(' ');
-  var OWN = /£(80|60|220)(?![\d.,]*\d)/g;
+  var OWN = /£(25|45|60|80|120|165|220)(?![\d.,]*\d)/g;
   var KEY = 'dv_cur';
   // EU business customers are not charged UK VAT (reverse charge), so the
   // UK "inc VAT" wording flips for them. On these pages VAT wording only
@@ -27,6 +27,7 @@
   var TOUCH = /£|VAT|IVA incl|НДС/;
 
   function swap(root) {
+    if (!root || !root.nodeType) return; // a text node removed before the observer ran
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (n) {
         var p = n.parentNode && n.parentNode.nodeName;
