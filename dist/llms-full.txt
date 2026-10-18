@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-17. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-18. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -1552,44 +1552,99 @@ That is the honest version of what "all-in-one" should mean: not a promise that 
 ---
 
 ## Can an AI answer your salon's phone and still book into the real diary?
-Source: https://daviana.app/blog/ai-receptionist-real-diary/
-Published: 2026-07-24  ·  Updated: 2026-07-24
 
-## What happens when two people ring for the same 2pm slot
+Source: https://daviana.app/blog/ai-receptionist-real-diary/
+Published: 2026-07-24  ·  Updated: 2026-10-18
+
+Most phone-answering products sit outside your diary and reach into it. Ours doesn't reach into anything, because the phone and the diary are the same system.
+
+### The short answer
+
+- The AI Receptionist books straight into Daviana Diary, the same diary the front desk is looking at, not a copy that catches up later.
+- Because there is only one diary, two callers can never both be told the same slot is free; whoever books first closes it for everyone else.
+- When it doesn't know a price or an answer, it says so honestly and hands the client to a person rather than guessing.
+- A cancelled slot becomes bookable again the instant it's freed, because the phone and the diary are the same record.
+- It answers calls and books appointments today inside working salons from London to Saudi Arabia, and partner salons across five countries.
+
+### What happens when two people ring for the same 2pm slot
 
 Two clients call within minutes of each other, both asking for a colour appointment at 2pm on Saturday. If the phone is answered by something sitting outside your diary, it checks a copy of your availability, tells the first caller yes, and moves on — with no way of knowing the same slot was just promised to someone else moments earlier on a different line. Both clients get a text confirming 2pm. One of them turns up to a chair that no longer exists.
 
-Our AI Receptionist doesn't check a copy of anything. It is the diary answering the phone. When it books that 2pm slot, the slot closes in Daviana Diary — the same appointment diary the front desk is looking at on the same screen — at the same second the words are spoken. The next caller, moments later, is offered the very next available slot, because 2pm has already gone. There is no gap for two people to be told the same true thing at the same time, because there is only one diary and only one moment when a slot gets taken.
+Our AI Receptionist doesn’t check a copy of anything. It is the diary answering the phone. When it books that 2pm slot, the slot closes in Daviana Diary — the same appointment diary the front desk is looking at on the same screen — at the same second the words are spoken. The next caller, moments later, is offered the very next available slot, because 2pm has already gone. There is no gap for two people to be told the same true thing at the same time, because there is only one diary and only one moment when a slot gets taken.
 
-## Why "connected to the diary" isn't the same as "part of the diary"
+### Why “connected to the diary” isn’t the same as “part of the diary”
 
-Most phone-answering products for salons sit outside the diary and reach into it to check what's free. That reaching-in takes time, and time is exactly where double-bookings live. A service that connects to your diary is reading a snapshot of it — a few seconds old at best, longer if the connection is slow or the desk just made a change while the client was still on hold. A snapshot is always slightly behind the present moment, and a slightly-behind diary is how one chair ends up promised to two people.
+Most phone-answering products for salons sit outside the diary and reach into it to check what’s free. That reaching-in takes time, and time is exactly where double-bookings live. A service that connects to your diary is reading a snapshot of it — a few seconds old at best, longer if the connection is slow or the desk just made a change while the client was still on hold. A snapshot is always slightly behind the present moment, and a slightly-behind diary is how one chair ends up promised to two people.
 
-Ours has nothing to reach into, because there isn't a second system on the other end of a connection. The phone, the diary, the till and the front desk's screen are one record. When the AI Receptionist books a client in, that isn't a message sent asking Daviana Diary to hold a slot on its behalf — it's Daviana Diary itself doing the booking, because the AI Receptionist is part of it, not attached to it.
+Ours has nothing to reach into, because there isn’t a second system on the other end of a connection. The phone, the diary, the till and the front desk’s screen are one record. When the AI Receptionist books a client in, that isn’t a message sent asking Daviana Diary to hold a slot on its behalf — it’s Daviana Diary itself doing the booking, because the AI Receptionist is part of it, not attached to it.
 
-> A phone service that checks your diary is always answering with a few seconds of yesterday. A phone that is the diary can only ever tell a client what's true this second.
+A phone service that checks your diary is always answering with a few seconds of yesterday. A phone that is the diary can only ever tell a client what’s true this second.
 
-## Two ways to answer the phone, side by side
+### Two ways to answer the phone, side by side
 
-The difference shows up hardest exactly when a slot is being fought over — a cancellation re-released later in the day, several people ringing about the same Saturday afternoon, a stylist's column filling while the desk is mid-colour with someone else in the chair.
+The difference shows up hardest exactly when a slot is being fought over — a cancellation re-released later in the day, several people ringing about the same Saturday afternoon, a stylist’s column filling while the desk is mid-colour with someone else in the chair.
 
-| | A phone service that reaches into your diary | The phone answered by the diary itself |
-|---|---|---|
+|  | A phone service that reaches into your diary | The phone answered by the diary itself |
+| --- | --- | --- |
 | Where the booking is written | Sent across to a second system, on a short delay | Written straight into the one diary the front desk already uses |
-| Two calls for the same 2pm | Both callers can be told yes before the two systems catch each other up | The instant one caller takes it, it's gone — nobody else can be offered it |
-| A slot freed by a cancellation | Shows as free once the systems next update one another | Free the moment it's cancelled, visible to the very next caller |
-| A price question | Quotes a general range, or promises someone will call back | States the stylist's actual price from the till, or says plainly it doesn't know |
+| Two calls for the same 2pm | Both callers can be told yes before the two systems catch each other up | The instant one caller takes it, it’s gone — nobody else can be offered it |
+| A slot freed by a cancellation | Shows as free once the systems next update one another | Free the moment it’s cancelled, visible to the very next caller |
+| A price question | Quotes a general range, or promises someone will call back | States the stylist’s actual price from the till, or says plainly it doesn’t know |
 | Who untangles the clashes afterwards | Someone at the front desk, usually at the end of a long Saturday | Nobody has to — there was only ever one diary |
 
-## What it says when it doesn't know
+### How many bookings do unanswered calls cost? A worked example
 
-The direct answer: it hands the call to a person. The AI Receptionist is straight about price and straight about its own limits. If a client asks something it can't answer with real certainty — a bespoke colour correction quote, a question about a patch test, anything where a wrong answer would cost more than a short wait — it doesn't guess and it doesn't invent a figure. It says so, and passes the client through to someone on the floor. On price specifically, because it's reading the same till the front desk uses, it quotes the stylist's actual price for that service, not a rounded-off average across the salon. If a service isn't on that stylist's list, it won't make one up to sound helpful.
+Booking into the real diary only pays off if calls are going unanswered in the first place. Here is the sum with example figures. Swap in your own from your phone system’s call log; none of these numbers is a benchmark.
 
-That matters more than it sounds. A wrong price promised on the phone is worse than no price at all — the client arrives expecting one figure, and the desk is left having an awkward conversation to correct it in front of them. A system willing to say "I'm not certain, let me get someone who knows" protects a client's first impression of the salon far better than a confident guess ever does.
+Step 1: count the calls that ring out. Say the salon takes 180 calls a week and 20% of them reach nobody. That is 36 unanswered calls a week.
 
-## What owners actually notice, week to week
+Step 2: keep only the lost bookings. If 45% of those callers wanted to book, and 60% of them never ring back, about 10 bookings a week go somewhere else (36 × 0.45 × 0.6 = 9.7).
+
+Step 3: put a price on it. At an average bill of £65, that is about £630 a week, or roughly £32,900 a year in first visits alone. If a kept client comes back five times a year, the full figure is about £164,000.
+
+For a real-world reference point, on one London salon group’s shared line 49% of inbound calls reached nobody in the fortnight before an AI receptionist went live, and 11% once it was answering overflow. Most of those calls came in the daytime, at 10am and after 5pm, not after closing. The missed call calculator does the same sum with your own figures, in your browser.
+
+If you are weighing up the options, our guide to the best AI receptionist for UK salons compares Treatwell, Salon Agent, Zenoti, Qlient and Daviana Aria, including which diary each one books into. And if your problem is the evening and Sunday calls, we have written up what happens to after-hours calls when nobody is on the desk.
+
+### What it says when it doesn’t know
+
+The direct answer: it takes a message for the team. The AI Receptionist is straight about price and straight about its own limits. If a client asks something it can’t answer with real certainty — a bespoke colour correction quote, a question about a patch test, anything where a wrong answer would cost more than a short wait — it doesn’t guess and it doesn’t invent a figure. It says so, and takes a message so someone on the team can ring the client back. On price specifically, because it’s reading the same till the front desk uses, it quotes the stylist’s actual price for that service, not a rounded-off average across the salon. If a service isn’t on that stylist’s list, it won’t make one up to sound helpful.
+
+That matters more than it sounds. A wrong price promised on the phone is worse than no price at all — the client arrives expecting one figure, and the desk is left having an awkward conversation to correct it in front of them. A system willing to say “I’m not certain, I’ll have someone call you back” protects a client’s first impression of the salon far better than a confident guess ever does.
+
+### What owners actually notice, week to week
 
 Fewer calls ringing out when the desk is busy with someone in the chair, and fewer of the quiet clashes that used to surface later as a double-booked column or a client insisting they were quoted something different. Nobody sits down at the end of the day to reconcile two calendars, because there was only ever the one. The AI Receptionist answers calls and books into the real diary today across our own working salons, from London to Saudi Arabia, and into partner salons across five countries — the same diary the till already runs on too, not a separate system sitting alongside it.
+
+### Questions salon owners ask
+
+#### Can two clients still get double-booked if the AI Receptionist answers the phone?
+
+No. It writes straight into the same diary the front desk uses, so a slot closes the instant either the phone or the desk takes it. The double-booking risk that comes from two separate calendars catching each other up doesn’t exist here, because there is only one calendar.
+
+#### What does the AI Receptionist do if a client asks about a price it doesn't know?
+
+It says so honestly and takes a message for the team, so someone can ring the client back. Where it does have the stylist’s actual price from the till, it quotes that exact figure. It never rounds off, averages, or invents a number to keep the call moving.
+
+#### Does the AI Receptionist replace the front desk?
+
+No. It catches the calls that would otherwise ring out, go to voicemail, or sit on hold while the desk is busy with a client in the chair. Any booking it takes shows up in the same diary the front desk already runs the day from.
+
+#### How is this different from a call-answering service some salons already use?
+
+A call-answering service usually reaches into your diary from outside it, checking what’s free on a short delay. Ours doesn’t reach into anything separate. The phone, the diary and the till are one system, so what it sees is exactly what the front desk sees, at the same moment.
+
+#### What happens to a slot when an appointment is cancelled?
+
+It’s released back into the diary the instant it’s cancelled, and the AI Receptionist can offer that exact slot to the very next caller. There’s no delay waiting for a second system to catch up.
+
+#### How many salon calls go unanswered?
+
+On one London salon group’s shared line, 49% of inbound calls reached nobody in the two weeks before an AI receptionist went live, and 11% once it was answering overflow. Your own figure depends on your team and your hours. Your phone system’s call log will show it.
+
+#### How much does the AI Receptionist cost?
+
+£60 a month including VAT, with the first month free and cancellation any month. It books into Daviana Diary, which is £80 a month.
 
 ---
 
