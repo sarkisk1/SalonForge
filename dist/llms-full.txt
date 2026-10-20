@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-18. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-20. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -459,20 +459,20 @@ The Daviana diary and till is priced by team size, including VAT: £25 a month f
 ## What is the best salon software in the UK?
 
 Source: https://daviana.app/blog/best-salon-software-uk/
-Published: 2026-09-26  ·  Updated: 2026-10-08
+Published: 2026-09-26  ·  Updated: 2026-10-20
 
-There is no single best salon software. The right one depends on whether you want new clients from a marketplace app, how big your team is, and what you will pay for over a year. Fresha, Treatwell and Booksy bring marketplace clients for a fee. Timely is the cheapest to start without a marketplace. Phorest and SalonIQ are established UK systems for larger salons. Daviana suits salons that also want colour costing and an AI receptionist on the same record.
+There is no single best salon software. The right one depends on whether you want new clients from a marketplace app, how big your team is, and what you will pay for over a year. Fresha, Treatwell, Booksy and Vagaro bring marketplace clients for a fee. Timely is the cheapest to start without a marketplace. Phorest and SalonIQ are established UK systems for larger salons. Daviana suits salons that also want colour costing and an AI receptionist on the same record.
 
 ### The short answer
 
-- Decide first whether you want a marketplace. Fresha, Treatwell and Booksy can bring new clients, and charge a fee on each one; the rest do not.
+- Decide first whether you want a marketplace. Fresha, Treatwell, Booksy and Vagaro can bring new clients, and charge a fee on each one; the rest do not.
 - Compare a year of total cost, not the headline price: subscription, card fees, paid texts and any new-client commission.
 - Read the contract. Most are monthly, but Phorest's UK terms are a one-year contract that renews automatically.
 - If missed calls cost you bookings, check the AI receptionist too. Treatwell, Fresha and SalonIQ now sell one, Booksy has one in beta, and each books only into its own diary.
 - Hair, nail and beauty salons need the same basics: a diary per staff member, online booking with deposits, and treatment lengths that are right. Test your longest and most awkward service on the demo.
 - Ask how your clients and history come across, and how you would take them out again if you left.
 
-Salon software is the diary, the till and the client record your whole day runs on, so switching is a big decision and a bad fit is expensive. Search for the best salon software and most of the lists you find are written by one of the companies on them. This one is too. We make Daviana. So every fact about another company below comes from its own UK pricing, product or terms page, last checked between 6 and 8 October 2026 and listed at the end with the date of each check, and we have said plainly where each one is the better choice.
+Salon software is the diary, the till and the client record your whole day runs on, so switching is a big decision and a bad fit is expensive. Search for the best salon software and most of the lists you find are written by one of the companies on them. This one is too. We make Daviana. So every fact about another company below comes from its own UK pricing, product or terms page, last checked between 6 and 20 October 2026 and listed at the end with the date of each check, and we have said plainly where each one is the better choice.
 
 ### How do the main UK salon booking systems compare on price?
 
@@ -483,6 +483,7 @@ Prices are as each company publishes them for the UK. Superscripts link to the s
 | Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | No contract. 20% one-time commission on new marketplace clients, minimum £4 |
 | Treatwell | Monthly fee not stated on its pricing page | 30 days' notice. 35% on a new marketplace client's first booking, 0% on repeat bookings, 2.5% on online prepayments, all plus VAT |
 | Booksy | £40 a month plus £5 a month per extra team member, plus VAT | No commitment. New-client fee only with Boost on: 30% of the first visit, minimum £5 |
+| Vagaro | £20 a month for one bookable calendar, plus £10 a month for each extra calendar up to seven licences, then more staff at no extra charge | No contract; cancel any time. Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
 | Timely | From £4, £7 or £9 a week by plan, adjusting with bookings; unlimited team members | No contract, 14 days' notice. No new client fees |
 | SalonIQ | From £47 a month for a solo stylist; setup from £175 plus VAT | Its pricing page says no long-term contracts, cancel with 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice, so ask which applies to you. No marketplace |
 | Phorest | Quote only; no free trial | One year, renewing automatically unless you give two months' notice. No marketplace |
@@ -490,10 +491,10 @@ Prices are as each company publishes them for the UK. Superscripts link to the s
 
 ### Which salon software suits which salon?
 
-- You want new clients from an app. Fresha, Treatwell and Booksy all run consumer marketplaces. Fresha has the lowest software price and a 20% one-time fee per new marketplace client. Treatwell takes 35% of a new client's first booking, and nothing on repeats. Booksy charges a flat monthly fee and only takes a new-client fee when you switch Boost on. See Fresha alternatives if you are weighing these up.
+- You want new clients from an app. Fresha, Treatwell, Booksy and Vagaro all run consumer marketplaces. Fresha has the lowest software price and a 20% one-time fee per new marketplace client. Treatwell takes 35% of a new client's first booking, and nothing on repeats. Booksy charges a flat monthly fee and only takes a new-client fee when you switch Boost on. Vagaro starts at £20 a month for one calendar and takes a one-time 20% on brand-new clients from its marketplace or partner network; see Daviana vs Vagaro. See Fresha alternatives if you are weighing these up.
 - You want the lowest price with no marketplace. Timely starts from £4 a week with unlimited team members and no new client fees, though the weekly price rises with bookings. See Daviana vs Timely.
 - You are a larger salon or a group that wants an established UK system. Phorest and SalonIQ both fit. Phorest is priced by quote on a one-year contract; SalonIQ publishes a starting price and a setup fee. See Daviana vs Phorest and Daviana vs SalonIQ.
-- You want the diary, colour costing and the phone in one system. Daviana's salon booking system starts at £25 a month including VAT for one person with no marketplace and no minimum term. Its ColorLab weighs and costs colour to the gram, and its AI receptionist books calls into the same diary. It costs more than Fresha or Timely for a small team.
+- You want the diary, colour costing and the phone in one system. Daviana's salon booking system starts at £25 a month including VAT for one person, with no marketplace and no minimum term. Its ColorLab weighs and costs colour to the gram, and its AI receptionist books calls into the same diary. It costs more than Fresha or Timely for a small team.
 
 ### Which salon software can answer the phone with AI?
 
@@ -501,15 +502,16 @@ Most of the big UK systems now offer an AI front desk of some kind. Each one boo
 
 |  | AI on the phone or messages | Published price |
 | --- | --- | --- |
-| Treatwell | AI Receptionist, launched 7 September 2026. Answers calls and manages appointments in the Treatwell calendar9 | From £69 a month9 |
-| Fresha | AI Concierge. Books, moves and cancels in the Fresha calendar on the call, and answers messages10 | £79.95 a location a month plus VAT, with 200 minutes and 500 messages included, then 48p a minute and 3p a message1 |
-| Booksy | AI Receptionist, in beta. Books into Booksy in English or Spanish, but not yet appointments protected by a deposit11 | Free for at least 12 months for the first 500 providers to sign up. The beta page is written for the US, so ask Booksy about UK access11 |
-| SalonIQ | IQ Connect, powered by Callpad.ai. Answers calls, checks the live SalonIQ diary and books there and then12 | Not published12 |
-| Phorest | Front Desk AI answers SMS and WhatsApp messages, not voice calls13 | An add-on to any plan, priced on quote7 |
-| Timely | No voice receptionist of its own found. Its AI tool, Textie Bestie, helps write SMS messages to clients14 | None listed5 |
+| Treatwell | AI Receptionist, launched 7 September 2026. Answers calls and manages appointments in the Treatwell calendar | From £69 a month |
+| Fresha | AI Concierge. Books, moves and cancels in the Fresha calendar on the call, and answers messages | £79.95 a location a month plus VAT, with 200 minutes and 500 messages included, then 48p a minute and 3p a message |
+| Booksy | AI Receptionist, in beta. Books into Booksy in English or Spanish, but not yet appointments protected by a deposit | Free for at least 12 months for the first 500 providers to sign up. The beta page is written for the US, so ask Booksy about UK access |
+| Vagaro | Vera Receptionist is a chatbot for messages from its listing page and, with a text plan, SMS. Over SMS it sends a booking link rather than booking. No voice receptionist found | Free in the UK for a limited time |
+| SalonIQ | IQ Connect, powered by Callpad.ai. Answers calls, checks the live SalonIQ diary and books there and then | Not published |
+| Phorest | Front Desk AI answers SMS and WhatsApp messages, not voice calls | An add-on to any plan, priced on quote |
+| Timely | No voice receptionist of its own found. Its AI tool, Textie Bestie, helps write SMS messages to clients | None listed |
 | Daviana | Aria answers calls and books single services or whole multi-service visits into the diary the front desk uses | £60 a month including VAT |
 
-The difference that matters is whether the AI takes the call and books it there and then, or only handles messages. If the phone is your main problem, our guide to AI receptionists for salons (https://daviana.app/blog/best-ai-receptionist-for-salons-uk/) compares them in more detail, including tools that work with other booking systems.
+The difference that matters is whether the AI takes the call and books it there and then, or only handles messages. If the phone is your main problem, our guide to AI receptionists for salons compares them in more detail, including tools that work with other booking systems. To see what unanswered calls cost you first, use the free missed call calculator.
 
 ### What should nail and beauty salons look for?
 
@@ -524,7 +526,7 @@ Nail and beauty salons need the same core as hair salons, but the diary gets har
 
 Take a team of four on Fresha's Team plan: 4 × £9.95 is £39.80 a month for the software. Now say the marketplace sends you 10 new clients a month with a first visit of £60. At 20%, that is £120 a month in commission, so £159.80 a month, or about £1,920 a year, before card fees and paid texts.
 
-These are example figures. Run the same sum with your own numbers for each system on your shortlist: subscription, card processing on your monthly takings, paid texts, any new-client fee, and any setup fee spread over the year. The cheapest headline price is often not the cheapest year.
+These are example figures. Run the same sum with your own numbers for each system on your shortlist: subscription, card processing on your monthly takings, paid texts, any new-client fee, and any setup fee spread over the year. The cheapest headline price is often not the cheapest year. Our guide to how much salon software costs in the UK runs the full sum, card fees included.
 
 ### What should you ask before you switch?
 
@@ -540,23 +542,23 @@ We keep a fuller list in 12 questions to ask before switching salon software.
 
 #### What is the cheapest salon software in the UK?
 
-On published prices, Timely starts lowest at £4 a week with unlimited team members, and Fresha is £14.95 a month on your own. Both have extra costs to check: Timely's price rises with bookings, and Fresha charges 20% on each new marketplace client.
+On published prices, Timely starts lowest at £4 a week with unlimited team members, and Fresha is £14.95 a month on your own. Both have extra costs to check: Timely's price rises with bookings, and Fresha charges 20% on each new marketplace client. Vagaro is £20 a month for one calendar and also takes 20% on brand-new clients who book through its marketplace.
 
 #### Which salon software has no commission?
 
-Timely says it has no new client fees, and SalonIQ, Phorest and Daviana have no marketplace, so there is no commission. Booksy only charges on new clients when Boost is switched on. Fresha and Treatwell charge on new marketplace clients.
+Timely says it has no new client fees, and SalonIQ, Phorest and Daviana have no marketplace, so there is no commission. Booksy only charges on new clients when Boost is switched on. Fresha, Treatwell and Vagaro charge on new marketplace clients.
 
 #### Which salon booking systems tie you into a contract?
 
-Phorest's UK terms are a one-year contract that renews automatically unless you give two months' notice. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and Daviana are monthly. SalonIQ's pricing page says no long-term contracts with 60 days' notice, while its terms set a 12-month initial term, then 90 days' written notice, so ask which applies.
+Phorest's UK terms are a one-year contract that renews automatically unless you give two months' notice. Fresha, Booksy, Vagaro, Timely (14 days' notice), Treatwell (30 days' notice) and Daviana are monthly. SalonIQ's pricing page says no long-term contracts with 60 days' notice, while its terms set a 12-month initial term, then 90 days' written notice, so ask which applies.
 
 #### Which salon software has an AI receptionist?
 
-Treatwell, Fresha and SalonIQ each sell an AI receptionist that answers calls and books into their own diary, and Booksy has one in beta. Phorest's Front Desk AI answers texts and WhatsApp messages rather than calls, and we found no voice receptionist of Timely's own. Daviana's Aria answers calls and books into the Daviana diary for £60 a month including VAT.
+Treatwell, Fresha and SalonIQ each sell an AI receptionist that answers calls and books into their own diary, and Booksy has one in beta. Phorest's Front Desk AI answers texts and WhatsApp messages rather than calls. Vagaro's Vera is a chatbot for messages and texts, and we found no voice receptionist of Timely's own. Daviana's Aria answers calls and books into the Daviana diary for £60 a month including VAT.
 
 #### What is the best booking system for a nail salon in the UK?
 
-The one that books your treatments at the right length with the right technician, and handles two services in one visit. If you want marketplace clients, look at Fresha, Treatwell and Booksy; if you do not, Timely, SalonIQ, Phorest and Daviana. Test your longest and most awkward treatment on a demo before you decide.
+The one that books your treatments at the right length with the right technician, and handles two services in one visit. If you want marketplace clients, look at Fresha, Treatwell, Booksy and Vagaro; if you do not, Timely, SalonIQ, Phorest and Daviana. Test your longest and most awkward treatment on a demo before you decide.
 
 #### Can I move my clients from my current salon software?
 
@@ -564,16 +566,26 @@ Usually yes, but what moves depends on what your current system lets you export.
 
 ### Sources
 
-- Fresha: UK pricing — checked 2026-09-26
-- Treatwell: partner pricing — checked 2026-09-26
-- Treatwell: partner terms (notice period) — checked 2026-09-26
-- Booksy Biz: UK pricing — checked 2026-09-26
-- Timely: UK pricing — checked 2026-09-26
-- SalonIQ: pricing — checked 2026-09-26
-- Phorest: UK pricing — checked 2026-09-26
-- Phorest: UK terms and conditions, clause 13.1 — checked 2026-09-26
+- Fresha: UK pricing (plans, commission, AI Concierge add-on) — checked 2026-10-08
+- Treatwell: partner pricing — checked 2026-10-06
+- Treatwell: partner terms (notice period) — checked 2026-10-06
+- Booksy Biz: UK pricing — checked 2026-10-06
+- Timely: UK pricing — checked 2026-10-08
+- SalonIQ: pricing (starting price, setup fee, 60 days' notice) — checked 2026-10-08
+- Phorest: UK pricing — checked 2026-10-06
+- Phorest: UK terms and conditions, clause 13.1 — checked 2026-10-06
+- IT Brief UK: Treatwell launches AI receptionist for salons across Europe (7 September 2026) — checked 2026-10-06
+- Fresha: AI Concierge — checked 2026-10-07
+- Booksy Biz: AI Receptionist (beta) — checked 2026-10-07
+- SalonIQ: IQ Connect AI receptionist — checked 2026-10-08
+- Phorest: AI features (Front Desk AI) — checked 2026-10-06
+- Timely: company information (AI tools) — checked 2026-10-08
+- Vagaro: United Kingdom pricing (from £20 a month, cancel any time) — checked 2026-10-20
+- Vagaro Support: plans and pricing (UK calendar licences) — checked 2026-10-20
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026) — checked 2026-10-20
+- Vagaro Support: Vera Receptionist chatbot (what it does, UK pricing) — checked 2026-10-20
 
-Fresha, Treatwell, Booksy, Timely, SalonIQ and Phorest are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+Fresha, Treatwell, Booksy, Vagaro, Vera, Timely, SalonIQ, IQ Connect, Callpad, Phorest and Textie Bestie are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
@@ -2347,11 +2359,11 @@ Vagaro is a trademark of its owner. We are not affiliated with, endorsed by or p
 ## Fresha alternatives for UK salons
 
 Source: https://daviana.app/compare/fresha-alternatives/
-Published: 2026-09-26  ·  Updated: 2026-10-08
+Published: 2026-09-26  ·  Updated: 2026-10-20
 
-Fresha's software is cheap, and its marketplace brings new clients. The costs sit elsewhere: a 20% one-time commission on each new marketplace client, card fees on every payment, and texts beyond the free allowance. Most salons looking for an alternative want one of two things: no marketplace at all, or a price that does not grow with every new client. Here are five UK options, with where each one wins.
+Fresha's software is cheap, and its marketplace brings new clients. The costs sit elsewhere: a 20% one-time commission on each new marketplace client, card fees on every payment, and texts beyond the free allowance. Most salons looking for an alternative want one of two things: no marketplace at all, or a price that does not grow with every new client. Here are six UK options, with where each one wins.
 
-Written by Daviana, one of the options below. Every fact about another company is sourced and dated, checked 2026-09-26; SalonIQ's contract terms were re-checked 2026-10-08. If anything here is out of date, tell us and we will correct it.
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated, checked 2026-09-26; SalonIQ's contract terms were re-checked 2026-10-08. Vagaro was added and checked 2026-10-20. If anything here is out of date, tell us and we will correct it.
 
 ### Fresha alternatives side by side
 
@@ -2359,12 +2371,13 @@ Superscripts link to the sources at the foot of the page.
 
 |  | Price | Contract and new-client fee |
 | --- | --- | --- |
-| Fresha (for reference) | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any timeNew clients: 20% one-time commission on new marketplace clients, minimum £4 |
-| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
-| Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any timeNew clients: Only if you turn on Boost: 30% of a new client's first visit, minimum £5 |
-| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Phorest | Quote only; no free trial | Contract: One year, auto-renewing; two months' notice before the anniversaryNew clients: No marketplace |
-| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Fresha (for reference) | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any time New clients: 20% one-time commission on new marketplace clients, minimum £4 |
+| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' notice New clients: No new client fees |
+| Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any time New clients: Only if you turn on Boost: 30% of a new client's first visit, minimum £5 |
+| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice New clients: No marketplace |
+| Phorest | Quote only; no free trial | Contract: One year, auto-renewing; two months' notice before the anniversary New clients: No marketplace |
+| Vagaro | £20 a month for one bookable calendar, plus £10 a month for each extra calendar up to seven licences, then more staff at no extra charge | Contract: None; cancel any time New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any month New clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2372,6 +2385,7 @@ Superscripts link to the sources at the foot of the page.
 - Booksy. Still a consumer marketplace, but on a flat £40 a month plus £5 per extra team member (plus VAT), and new-client commission only when you switch Boost on. The closest to Fresha if you want to keep being found in an app. See Daviana vs Booksy.
 - SalonIQ. UK salon software from £47 a month for a solo stylist, with a setup fee from £175 plus VAT and no marketplace. Its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term, then 90 days' written notice, so ask before signing. See Daviana vs SalonIQ.
 - Phorest. A long-established system for larger salons, priced by quote, on a one-year contract that renews automatically unless you give two months' notice. See Daviana vs Phorest.
+- Vagaro. A marketplace system with a low UK price: £20 a month for one bookable calendar, plus £10 a month for each extra up to seven licences, and no contract. Since 14 July 2026 it takes a one-time 20% fee when a brand-new client books through its marketplace or partner network (Yelp, Google, Apple Maps). You can avoid the fee by taking your listing off its marketplace, but then new clients cannot find you there. See Daviana vs Vagaro.
 - Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It costs more than Fresha for a small team. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Fresha.
 
 ### What Fresha still does better
@@ -2411,22 +2425,25 @@ For many salons, yes. If new clients from the marketplace are worth more to you 
 - Fresha: UK pricing (plans, marketplace fee, payments, contract) — checked 2026-09-26
 - Timely: UK pricing (plans, new client fees, notice period) — checked 2026-09-26
 - Booksy Biz: UK pricing (subscription, Boost, commitment) — checked 2026-09-26
-- SalonIQ: pricing (solo price, setup fee) — checked 2026-09-26
+- SalonIQ: pricing (solo price, setup fee, notice) — checked 2026-10-08
 - Phorest: UK pricing (quote only, free trial) — checked 2026-09-26
 - Phorest: UK terms and conditions (clause 13.1, term and renewal) — checked 2026-09-26
+- Vagaro: United Kingdom pricing (from £20 a month, cancel any time) — checked 2026-10-20
+- Vagaro Support: plans and pricing (UK calendar licences) — checked 2026-10-20
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out) — checked 2026-10-20
 
-Fresha, Timely, Booksy, SalonIQ and Phorest are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+Fresha, Timely, Booksy, SalonIQ, Phorest and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
 ## Phorest alternatives for UK salons
 
 Source: https://daviana.app/compare/phorest-alternatives/
-Published: 2026-09-26  ·  Updated: 2026-10-08
+Published: 2026-09-26  ·  Updated: 2026-10-20
 
-Phorest is a long-established UK salon system, and for many larger salons it is a good fit. The reasons salons look elsewhere are usually about terms rather than features: a price you only get by quote, and a one-year contract that renews itself unless you give two months' notice. Here are five UK alternatives with published prices, and where each one wins.
+Phorest is a long-established UK salon system, and for many larger salons it is a good fit. The reasons salons look elsewhere are usually about terms rather than features: a price you only get by quote, and a one-year contract that renews itself unless you give two months' notice. Here are six UK alternatives with published prices, and where each one wins.
 
-Written by Daviana, one of the options below. Every fact about another company is sourced and dated, checked 2026-09-26; SalonIQ's contract terms were re-checked 2026-10-08. If anything here is out of date, tell us and we will correct it.
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated, checked 2026-09-26; SalonIQ's contract terms were re-checked 2026-10-08. Vagaro was added and checked 2026-10-20. If anything here is out of date, tell us and we will correct it.
 
 ### Phorest alternatives side by side
 
@@ -2434,12 +2451,13 @@ Superscripts link to the sources at the foot of the page.
 
 |  | Price | Contract and new-client fee |
 | --- | --- | --- |
-| Phorest (for reference) | Quote only; no free trial | Contract: One year, renewing automatically unless you give two months' notice; leaving early means paying the rest of the yearNew clients: No marketplace |
-| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any timeNew clients: 20% one-time commission on new marketplace clients, minimum £4 |
-| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
-| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any timeNew clients: Only with Boost on: 30% of a new client's first visit, minimum £5 |
-| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Phorest (for reference) | Quote only; no free trial | Contract: One year, renewing automatically unless you give two months' notice; leaving early means paying the rest of the year New clients: No marketplace |
+| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any time New clients: 20% one-time commission on new marketplace clients, minimum £4 |
+| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' notice New clients: No new client fees |
+| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice New clients: No marketplace |
+| Booksy | £40 a month plus £5 a month per extra team member, plus VAT | Contract: None; cancel any time New clients: Only with Boost on: 30% of a new client's first visit, minimum £5 |
+| Vagaro | £20 a month for one bookable calendar, plus £10 a month for each extra calendar up to seven licences, then more staff at no extra charge | Contract: None; cancel any time New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any month New clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2447,6 +2465,7 @@ Superscripts link to the sources at the foot of the page.
 - Timely. From £4 a week with unlimited team members, no new client fees and 14 days' notice to leave. The weekly price adjusts with bookings. See Daviana vs Timely.
 - SalonIQ. The closest like-for-like: UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Ask about the contract: its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term. See Daviana vs SalonIQ.
 - Booksy. A flat £40 a month plus £5 per extra team member (plus VAT), no commitment, and a consumer app if you want new clients. See Daviana vs Booksy.
+- Vagaro. A marketplace system with a low UK price: £20 a month for one bookable calendar, plus £10 a month for each extra up to seven licences, and no contract. Since 14 July 2026 it takes a one-time 20% fee when a brand-new client books through its marketplace or partner network (Yelp, Google, Apple Maps). You can avoid the fee by taking your listing off its marketplace, but then new clients cannot find you there. See Daviana vs Vagaro.
 - Daviana. A salon booking system and till from £25 a month including VAT for one person, no marketplace and no minimum term. Where Phorest adds colour through a third-party integration such as Vish, Daviana weighs and costs colour with ColorLab and answers the phone with an AI receptionist, all on the same client record. See Daviana vs Phorest.
 
 ### What Phorest still does better
@@ -2487,22 +2506,25 @@ For many larger salons, yes. It has a long track record across many sites and a 
 - Phorest: UK terms and conditions (clause 13.1, term and renewal) — checked 2026-09-26
 - Fresha: UK pricing (plans, marketplace fee, contract) — checked 2026-09-26
 - Timely: UK pricing (plans, new client fees, notice period) — checked 2026-09-26
-- SalonIQ: pricing (solo price, setup fee) — checked 2026-09-26
+- SalonIQ: pricing (solo price, setup fee, notice) — checked 2026-10-08
 - Booksy Biz: UK pricing (subscription, Boost, commitment) — checked 2026-09-26
 - Vish: integrations (lists Phorest) — checked 2026-09-26
+- Vagaro: United Kingdom pricing (from £20 a month, cancel any time) — checked 2026-10-20
+- Vagaro Support: plans and pricing (UK calendar licences) — checked 2026-10-20
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out) — checked 2026-10-20
 
-Phorest, Fresha, Timely, SalonIQ, Booksy and Vish are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+Phorest, Fresha, Timely, SalonIQ, Booksy, Vish and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
 ## Treatwell alternatives for UK salons
 
 Source: https://daviana.app/compare/treatwell-alternatives/
-Published: 2026-09-30  ·  Updated: 2026-09-30
+Published: 2026-09-30  ·  Updated: 2026-10-20
 
-The main Treatwell alternatives for UK salons are Fresha and Booksy if you still want a consumer marketplace at a lower commission, and Timely, SalonIQ or Daviana if you would rather pay a flat price and no commission. Treatwell itself suits a salon with empty columns: it takes 35% plus VAT of a new marketplace client's first booking and nothing on repeat visits. Salons usually look elsewhere once the diary is full of regulars and that first-booking fee stops paying for itself. Here is where each alternative wins.
+The main Treatwell alternatives for UK salons are Fresha, Booksy and Vagaro if you still want a consumer marketplace at a lower commission, and Timely, SalonIQ or Daviana if you would rather pay a flat price and no commission. Treatwell itself suits a salon with empty columns: it takes 35% plus VAT of a new marketplace client's first booking and nothing on repeat visits. Salons usually look elsewhere once the diary is full of regulars and that first-booking fee stops paying for itself. Here is where each alternative wins.
 
-Written by Daviana, one of the options below. Every fact about another company is sourced and dated; all seven sources were re-checked 2026-09-30. If anything here is out of date, tell us and we will correct it.
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated; all seven sources were re-checked 2026-09-30. Vagaro was added and checked 2026-10-20. If anything here is out of date, tell us and we will correct it.
 
 ### Treatwell alternatives side by side
 
@@ -2510,12 +2532,13 @@ Superscripts link to the sources at the foot of the page.
 
 |  | Price | Contract and new-client fee |
 | --- | --- | --- |
-| Treatwell (for reference) | Monthly fee not published on its pricing page | Contract: 30 days' notice, per its partner termsNew clients: 35% commission on a new marketplace client's first booking; 0% on repeat bookings; 2.5% on online prepayments; all plus VAT |
-| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any timeNew clients: 20% one-time commission on new marketplace clients, minimum £4 |
-| Booksy | £40 a month plus £5 a month per extra team member, plus VAT; 7-day free trial | Contract: None; cancel any timeNew clients: Only with Boost on: 30% of a new client's first visit, minimum £5, plus VAT |
-| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
-| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Treatwell (for reference) | Monthly fee not published on its pricing page | Contract: 30 days' notice, per its partner terms New clients: 35% commission on a new marketplace client's first booking; 0% on repeat bookings; 2.5% on online prepayments; all plus VAT |
+| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any time New clients: 20% one-time commission on new marketplace clients, minimum £4 |
+| Booksy | £40 a month plus £5 a month per extra team member, plus VAT; 7-day free trial | Contract: None; cancel any time New clients: Only with Boost on: 30% of a new client's first visit, minimum £5, plus VAT |
+| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' notice New clients: No new client fees |
+| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice New clients: No marketplace |
+| Vagaro | £20 a month for one bookable calendar, plus £10 a month for each extra calendar up to seven licences, then more staff at no extra charge | Contract: None; cancel any time New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any month New clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2523,6 +2546,7 @@ Superscripts link to the sources at the foot of the page.
 - Booksy. A marketplace where the commission is a switch. Marketplace bookings are free while Boost is off; with Boost on it is a one-time 30% of a new client's first visit, minimum £5, plus VAT. The subscription is £40 a month plus £5 per extra team member, plus VAT. See Daviana vs Booksy.
 - Timely. No marketplace and no new client fees, from £4 a week with unlimited team members and 14 days' notice to leave. The weekly price adjusts with bookings, so enter your own numbers on their site. See Daviana vs Timely.
 - SalonIQ. UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Its pricing page and its terms describe the commitment differently, so ask which applies to you before signing. See Daviana vs SalonIQ.
+- Vagaro. A marketplace system with a low UK price: £20 a month for one bookable calendar, plus £10 a month for each extra up to seven licences, and no contract. Since 14 July 2026 it takes a one-time 20% fee when a brand-new client books through its marketplace or partner network (Yelp, Google, Apple Maps). You can avoid the fee by taking your listing off its marketplace, but then new clients cannot find you there. See Daviana vs Vagaro.
 - Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It will not send you new clients the way Treatwell does. It fits salons that are busy enough already and also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Treatwell.
 
 ### What Treatwell still does better
@@ -2573,19 +2597,22 @@ Treatwell's pricing page says the data remains the property of your establishmen
 - Timely: UK pricing (plans, new client fees, notice period), checked 2026-09-30
 - SalonIQ: pricing (solo price, setup fee, notice), checked 2026-09-30
 - SalonIQ: terms and conditions (initial term, notice), checked 2026-09-30
+- Vagaro: United Kingdom pricing (from £20 a month, cancel any time), checked 2026-10-20
+- Vagaro Support: plans and pricing (UK calendar licences), checked 2026-10-20
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-10-20
 
-Treatwell, Fresha, Booksy, Timely and SalonIQ are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+Treatwell, Fresha, Booksy, Timely, SalonIQ and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
 ## Booksy alternatives for UK salons
 
 Source: https://daviana.app/compare/booksy-alternatives/
-Published: 2026-09-29  ·  Updated: 2026-10-08
+Published: 2026-09-29  ·  Updated: 2026-10-20
 
-The main Booksy alternatives for UK salons are Fresha and Treatwell if you want to stay on a consumer marketplace, and Timely, SalonIQ or Daviana if you do not. Booksy itself is fair value: £40 a month plus £5 per extra team member, no commitment, and an app that brings new clients. Salons usually look elsewhere because of the Boost commission, VAT on top of the headline price, or wanting software that is not built around a marketplace. Here is where each alternative wins.
+The main Booksy alternatives for UK salons are Fresha, Treatwell and Vagaro if you want to stay on a consumer marketplace, and Timely, SalonIQ or Daviana if you do not. Booksy itself is fair value: £40 a month plus £5 per extra team member, no commitment, and an app that brings new clients. Salons usually look elsewhere because of the Boost commission, VAT on top of the headline price, or wanting software that is not built around a marketplace. Here is where each alternative wins.
 
-Written by Daviana, one of the options below. Every fact about another company is sourced and dated; Booksy, Fresha and Treatwell prices were re-checked 2026-09-29, and SalonIQ's contract terms 2026-10-08. If anything here is out of date, tell us and we will correct it.
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated; Booksy, Fresha and Treatwell prices were re-checked 2026-09-29, and SalonIQ's contract terms 2026-10-08. Vagaro was added and checked 2026-10-20. If anything here is out of date, tell us and we will correct it.
 
 ### Booksy alternatives side by side
 
@@ -2593,12 +2620,13 @@ Superscripts link to the sources at the foot of the page.
 
 |  | Price | Contract and new-client fee |
 | --- | --- | --- |
-| Booksy (for reference) | £40 a month plus £5 a month per extra team member, plus VAT; 7-day free trial | Contract: None; cancel any timeNew clients: Only with Boost on: 30% of a new client's first visit, minimum £5, plus VAT |
-| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any timeNew clients: 20% one-time commission on new marketplace clients, minimum £4 |
-| Treatwell | Monthly fee not published on its pricing page | Contract: 30 days' notice, per its partner termsNew clients: 35% commission on a new marketplace client's first booking; 0% on repeat bookings; 2.5% plus VAT on online prepayments |
-| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' noticeNew clients: No new client fees |
-| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written noticeNew clients: No marketplace |
-| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any monthNew clients: None. No marketplace and no commission on bookings |
+| Booksy (for reference) | £40 a month plus £5 a month per extra team member, plus VAT; 7-day free trial | Contract: None; cancel any time New clients: Only with Boost on: 30% of a new client's first visit, minimum £5, plus VAT |
+| Fresha | £14.95 a month on your own; £9.95 a month per bookable team member on Team | Contract: None; cancel any time New clients: 20% one-time commission on new marketplace clients, minimum £4 |
+| Treatwell | Monthly fee not published on its pricing page | Contract: 30 days' notice, per its partner terms New clients: 35% commission on a new marketplace client's first booking; 0% on repeat bookings; 2.5% plus VAT on online prepayments |
+| Timely | From £4, £7 or £9 a week by plan, adjusting with the bookings you take; unlimited team members | Contract: None; 14 days' notice New clients: No new client fees |
+| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice New clients: No marketplace |
+| Vagaro | £20 a month for one bookable calendar, plus £10 a month for each extra calendar up to seven licences, then more staff at no extra charge | Contract: None; cancel any time New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | From £25 a month including VAT for the diary and till (one person; £45 for two or three, £80 for four to eight, £120 for nine or more); first month free | Contract: None; cancel any month New clients: None. No marketplace and no commission on bookings |
 
 ### The alternatives, one by one
 
@@ -2606,6 +2634,7 @@ Superscripts link to the sources at the foot of the page.
 - Treatwell. The other big UK marketplace. It takes 35% of a new marketplace client's first booking and nothing on repeat bookings, and it does not publish its monthly fee, so ask for a quote. See Daviana vs Treatwell.
 - Timely. No marketplace and no new client fees, from £4 a week with unlimited team members and 14 days' notice to leave. The weekly price adjusts with bookings, so enter your own numbers on their site. See Daviana vs Timely.
 - SalonIQ. UK salon software with marketing tools and no marketplace, from £47 a month for a solo stylist plus a setup fee. Ask about the contract before signing: its pricing page says no long-term contracts with 60 days' notice, but its terms set a 12-month initial term. See Daviana vs SalonIQ.
+- Vagaro. A marketplace system with a low UK price: £20 a month for one bookable calendar, plus £10 a month for each extra up to seven licences, and no contract. Since 14 July 2026 it takes a one-time 20% fee when a brand-new client books through its marketplace or partner network (Yelp, Google, Apple Maps). You can avoid the fee by taking your listing off its marketplace, but then new clients cannot find you there. See Daviana vs Vagaro.
 - Daviana. A salon booking system and till from £25 a month including VAT for one person, with no marketplace, no commission and no minimum term. It costs more than Booksy for a small team that relies on marketplace clients. It fits salons that also want colour weighed and costed with ColorLab and the phone answered by an AI receptionist, all on the same client record. See Daviana vs Booksy.
 
 ### What Booksy still does better
@@ -2653,10 +2682,13 @@ Usually, but it depends on what you can export. Ask any new supplier to look at 
 - Treatwell: partner pricing (new-client commission, repeat bookings, prepayment fee), checked 2026-09-29
 - Treatwell: partner terms of business (notice period), checked 2026-09-26
 - Timely: UK pricing (plans, new client fees, notice period), checked 2026-09-26
-- SalonIQ: pricing (solo price, setup fee), checked 2026-09-26
-- SalonIQ: terms and conditions (initial term, notice), checked 2026-09-26
+- SalonIQ: pricing (solo price, setup fee, notice), checked 2026-10-08
+- SalonIQ: terms and conditions (initial term, notice), checked 2026-10-08
+- Vagaro: United Kingdom pricing (from £20 a month, cancel any time), checked 2026-10-20
+- Vagaro Support: plans and pricing (UK calendar licences), checked 2026-10-20
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-10-20
 
-Booksy, Fresha, Treatwell, Timely and SalonIQ are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+Booksy, Fresha, Treatwell, Timely, SalonIQ and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
