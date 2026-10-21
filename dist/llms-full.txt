@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-20. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-21. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -2689,6 +2689,101 @@ Usually, but it depends on what you can export. Ask any new supplier to look at 
 - Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-10-20
 
 Booksy, Fresha, Treatwell, Timely, SalonIQ and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+
+---
+
+## Salon phone answering services in the UK, compared
+
+Source: https://daviana.app/compare/salon-phone-answering-services/
+Published: 2026-10-21
+
+A UK phone answering service costs a salon from £2.20 a call with no monthly fee, or from £50 a month plus a per-minute charge, on published prices. Most human services take a message; a few book into Fresha, Timely or Phorest. An AI receptionist that books into the live diary is a flat monthly price. Voicemail is free, but loses callers.
+
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated, checked 2026-10-21. If anything here is out of date, tell us and we will correct it.
+
+### What are the options, side by side?
+
+Superscripts link to the sources at the foot of the page. Prices marked plus VAT add 20%.
+
+|  | Price | What happens to the booking | Hours and contract |
+| --- | --- | --- | --- |
+| Voicemail | Free | Takes a message if the caller leaves one. Nothing is booked. | Always on |
+| Answer.co.uk | No monthly fee; £2.20 a call plus VAT for new customers | UK receptionists answer in your business name | 24 hours, 365 days; no contract |
+| SinglePoint Calls | From £33 a month plus VAT for 20 calls; £160 for 100 calls; £465 for 300 calls | A named UK PA; messages by email and SMS. Booking into a diary is offered, and takes longer per call | 24/7 with no out-of-hours surcharge; 30-day rolling under £100 a month, 12-month minimum from £100 |
+| Moneypenny | Price on request; charged per minute | Message taking | 9am to 5pm, Monday to Friday; 24/7 from an extra £35 a month. Smaller plans have a three-month minimum |
+| Posh | From £50 a month plus VAT with no minutes included, then £1.50 a minute; £74 for 50 minutes; £128 for 100 minutes | Appointment scheduling through Calendly, Setmore, Google Calendar and Zapier | 24/7; month to month; free trial |
+| Ansacom | Price on request; free trial | Books into Fresha, Timely and Phorest | 24/7 if needed |
+| Virtual Salon Services | Telephone answering from £13 a week | Salon-only service: answers, books clients in and takes messages | Hours not published; free trial |
+| Daviana AI receptionist (Aria) | £60 a month including VAT, plus Daviana Diary from £25 a month | Books the whole visit into the live Daviana diary; takes a message on anything to do with money | Day and night; first month free; cancel any month |
+
+### When does a salon actually miss calls?
+
+We counted 1,844 inbound calls on the shared line of our own London salon group. In the fortnight before an AI receptionist went live, 49% of calls reached nobody. The worst hour was 10am, when a person answered only 45% of calls, and the worst day was Monday. Only about 10% of calls came before 9am, after 6pm or on a Sunday. The full call data breaks it down by hour and day.
+
+So the calls a salon loses are mostly daytime calls, while the desk is busy with a client at the till. That matters when you compare services. A plan that only answers from 9am to 5pm on weekdays covers most of the problem. A plan that only answers at night covers very little of it. Our post on after-hours salon calls covers the rest.
+
+### What does each type of service do well?
+
+- Voicemail. Free and always on. The cost is the callers who hang up without leaving a message and book somewhere else. In our data, 15% of callers who reached nobody were neither called back nor got through on a second try within 24 hours.
+- Pay-per-call services (Answer.co.uk). No monthly fee, so a quiet month costs little: £2.20 a call plus VAT for new customers, with no contract. A good fit when the phone only overflows now and then.
+- Bundles of calls or minutes (SinglePoint Calls, Posh, Moneypenny). A monthly fee with calls or minutes included, then a charge for each one over. Posh is month to month with a free trial. SinglePoint has no out-of-hours surcharge, but plans from £100 a month carry a 12-month minimum. Moneypenny's standard hours are 9am to 5pm on weekdays, with 24/7 from an extra £35 a month.
+- Salon specialists (Ansacom, Virtual Salon Services). Receptionists who know salon calls. Ansacom says it books straight into Fresha, Timely and Phorest. Neither publishes a full price list, so ask for a quote and a trial.
+- An AI receptionist (Daviana Aria). A real AI voice that answers when the desk cannot and books the whole visit into the live Daviana diary, so nobody re-keys a message later. £60 a month including VAT, a flat published price. It only books into Daviana, so it suits salons that run their diary on Daviana. Other AI options are in our guide to AI receptionists for UK salons.
+
+### Where a human answering service wins
+
+- Any booking system. A person can log in to almost any diary. Aria books only into Daviana.
+- The awkward calls. A complaint, a nervous first-time colour client or a supplier with a problem is often better handled by a person.
+- Nothing to change. You keep your phone number and your software, and add the service on top.
+
+### What would it cost your salon? A worked example
+
+You need two numbers from your own phone log: how many calls a month the desk misses, and how long an average call lasts. Use your own. As an example, say the desk misses 60 calls a month and each one lasts 3 minutes, so 180 minutes in all.
+
+|  | Working | A month, before VAT | A month, including VAT |
+| --- | --- | --- | --- |
+| Answer.co.uk, pay as you go | 60 calls × £2.20 | £132.00 | £158.40 |
+| Posh, 100-minute plan | £128 + 80 extra minutes × £1.35 | £236.00 | £283.20 |
+| SinglePoint Calls | Between its 20-call and 100-call bands, so ask for a quote; at its lowest published rate of £1.65 a call, 60 calls is at least £99 | £99.00 or more | £118.80 or more |
+| Daviana AI receptionist | Flat monthly price | £50.00 | £60.00 |
+
+Posh's 100-minute plan is its cheapest for 180 minutes: the 50-minute plan comes to £262.50 before VAT. If you are not on Daviana already, add the diary from £25 a month including VAT for one person, which makes £85. A VAT-registered salon can usually reclaim the VAT, so compare the before-VAT column.
+
+Then weigh that against what the missed calls are worth. Our free missed call calculator works it out from your average bill and how many callers book.
+
+### Questions about salon phone answering
+
+#### How much does a phone answering service cost a UK salon?
+
+On published prices checked on 21 October 2026: Answer.co.uk charges £2.20 a call plus VAT with no monthly fee. SinglePoint Calls starts at £33 a month plus VAT for 20 calls. Posh starts at £50 a month plus VAT and £1.50 a minute, with bundles from £74 a month for 50 minutes. Moneypenny and Ansacom give prices on request. Daviana's AI receptionist is £60 a month including VAT.
+
+#### Can a phone answering service book appointments into my salon software?
+
+Some can. Ansacom says it books into Fresha, Timely and Phorest. Posh lists Calendly, Setmore, Google Calendar and Zapier. Daviana's AI receptionist books straight into the live Daviana diary, and only that diary. Before you sign, ask any service to make a test booking in your own system while you watch.
+
+#### Does a salon need 24/7 call answering?
+
+Usually not. In our own salon group's data, only about 10% of calls came before 9am, after 6pm or on a Sunday. Most missed calls happened during opening hours, when the desk was busy with clients. Cover for the busy daytime hours matters more than cover at night.
+
+#### Is an AI receptionist better than a human answering service for a salon?
+
+It depends on the calls. A person copes better with complaints and unusual requests, and a human service can work with almost any booking system. An AI receptionist that books into the live diary has a flat published monthly price and never puts a caller on hold. Daviana's takes a message for the team on anything to do with money.
+
+#### Is voicemail enough for a salon?
+
+It is free, but many callers do not leave a message. In our data, 15% of callers who reached nobody were neither called back nor got through on a second try within 24 hours.
+
+### Sources
+
+- Posh: UK pricing (plans, minutes, VAT, month to month), checked 2026-10-21
+- Posh: salon and spa answering (booking integrations, hours), checked 2026-10-21
+- Moneypenny: message taking service (hours, 24/7 add-on, contract), checked 2026-10-21
+- Answer.co.uk: pay-as-you-go call answering (price per call, AI option), checked 2026-10-21
+- SinglePoint Calls: pricing (bands, VAT, contract terms), checked 2026-10-21
+- Ansacom: telephone answering for hair and beauty businesses, checked 2026-10-21
+- Virtual Salon Services: telephone answering for salons, checked 2026-10-21
+
+Posh, Moneypenny, Answer.co.uk, SinglePoint Calls, Ansacom and Virtual Salon Services are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
 
 ---
 
