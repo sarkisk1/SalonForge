@@ -213,6 +213,124 @@ Yes, if it gives each person their own column, knows who does which treatment, a
 
 ---
 
+## What should a salon POS system do?
+
+Source: https://daviana.app/blog/salon-pos-system-uk/
+Published: 2026-10-22
+
+A salon POS system is the till that takes payment for a visit. A good one cashes out against the booking, so services, retail, tips and the payment method land on one bill, credited to the right stylist. Most salons don't need a separate POS: they need a booking system whose till does this, and a card reader.
+
+### The short answer
+
+- Cash out from the appointment, not from a blank keypad, so nothing is typed twice.
+- Split one bill across card, cash, gift voucher and a deposit already paid, and refuse to close it if the parts don't add up.
+- Record services, retail and tips against the stylist who earned them.
+- Take retail stock off the shelf count as it sells.
+- End the day with takings that match what the card provider paid you.
+
+Most salon owners never shop for a POS system on its own. It arrives as the till inside whatever booking system they picked, and they find out what it can't do on a Saturday afternoon, with a client at the desk holding a gift voucher and a deposit receipt.
+
+We make Daviana, and its till is one of the systems this checklist describes, so we are not neutral. The checklist itself applies to any salon till or EPOS, and where a standalone option is the better choice we say so.
+
+### What is a salon POS system?
+
+POS stands for point of sale: the place, and the software, where a sale is rung up and paid. EPOS, electronic point of sale, means the same thing in the UK. In a shop it is a till and a barcode scanner. A salon is different, because most of what it sells is time that was booked in advance.
+
+That means the till has to know the booking. Who did the colour, who did the blow-dry, what price was agreed, whether a deposit was paid when the client booked online. A salon POS also has to sell what a shop till sells: retail products, gift vouchers and the odd walk-in.
+
+### Do you need a separate POS if your booking system has a till?
+
+Usually not. When the diary lives in one system and payments in another, every bill is typed twice: once as an appointment, once as an amount on the card machine. At the end of the day somebody matches the two by hand, and any mistake shows up later as a till that won't balance or a tip paid to the wrong person.
+
+A separate setup can still make sense. A standalone card reader with its own app is often the cheapest way to take a card, as our guide to salon card machine fees shows. And if your booking system's till can't do something on the checklist below, a separate POS may be the lesser evil. Just count the time spent reconciling as part of its price.
+
+### What should a salon POS system do? An 8-point checklist
+
+Take this list to any demo and ask to see each one done, not described.
+
+- Cash out from the appointment. Open the visit, and the services, the stylists and the prices are already on the bill.
+- Sell without a booking too. Walk-ins and retail-only sales should go through the same till and the same reports.
+- Split the payment. Card, cash with change worked out, gift voucher and a deposit already paid, all on one bill. A good till refuses to close a bill whose parts don't add up, instead of letting the gap slip into the day's takings.
+- Record tips per stylist. Ideally the client chooses the tip on the card reader, and it is credited to the stylist who did the work.
+- Take retail stock off as it sells. If the shelf count only changes at stock take, you can't tell a sale from a loss. Our post on why salon stock goes missing explains why that matters.
+- Keep deposits and refunds in the same record. A no-show deposit, a partial refund or a reopened bill should change the original visit, not create a loose payment somewhere else.
+- Redeem gift vouchers and courses. Look up the voucher, take the balance off, and show what is left. Courses and packages should count down a session the same way.
+- End the day reconciled. Cash you should have against cash counted, and card takings checked against what the card provider actually paid.
+
+Two smaller things are worth asking about: an itemised receipt by email, and whether the till works on the devices you already own.
+
+### How should a till handle a real salon bill? A worked example
+
+Here is a Saturday bill that trips up a weak till. Sam does a root colour, Jo does the blow-dry, and Sam sells the client a bottle of bond repair. The client paid a £20 deposit when booking online, has a £50 gift voucher, and adds a £15 tip on the card reader, £10 for Sam and £5 for Jo.
+
+|  | Stylist | Amount |
+| --- | --- | --- |
+| Root colour | Sam | £78.00 |
+| Blow-dry | Jo | £42.00 |
+| Bond repair, retail | Sam | £29.00 |
+| Bill before tips |  | £149.00 |
+| Less deposit paid online |  | −£20.00 |
+| Less gift voucher |  | −£50.00 |
+| Card, including £15 tip | Tip: Sam £10, Jo £5 | £94.00 |
+
+Three payments, two stylists, one product and a tip, all on one visit. When the till gets it right, Sam is credited with £78 of services, £29 of retail and £10 in tips; Jo with £42 of services and £5 in tips. The voucher shows £0 left, the deposit is used up rather than left hanging, and one bottle comes off the retail count. Nobody touches it again at the end of the day.
+
+Now run it on your own till. Take a real busy-day bill with the most payment types you see, and ring it up. Then time how long the end-of-day match takes. If it is 15 minutes a day, six days a week, that is about 6.5 hours a month. At £14 an hour, put in your own rate, that is roughly £91 a month, or £1,092 a year, spent checking the till against the diary.
+
+### How much does a salon POS system cost in the UK?
+
+A salon POS costs you in three places:
+
+- The software. In most salon systems the till comes inside the booking system subscription rather than as a separate charge. Our guide to how much salon software costs in the UK works out a full year for the main UK systems.
+- Card fees. On the UK pricing pages we checked on 15 October 2026, published in-person rates ran from 0.99% to 1.75% of each payment, some with 5p to 20p on top. That is usually more than the software itself on a busy salon's takings.
+- The card reader. Bought readers cost from £19 to £229 plus VAT on the same pages. Ask whether yours is bought, rented or tied to a contract.
+
+For Daviana, the till is part of Daviana Diary: £25 a month including VAT for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, with no commission on bookings and no minimum term. Card payments go through Stripe on a Stripe card reader; ask us for the current card rate. Every product is on our pricing page.
+
+### What should you ask before you choose one?
+
+- Which card reader does it use, and do I buy it? Get the in-person and online card rates in writing.
+- Can staff take payment on a phone? Some systems offer tap to pay on a phone. Daviana doesn't yet; it uses a Stripe card reader at the desk.
+- What happens if a split payment doesn't add up? Ask them to show you, not tell you.
+- How are tips recorded and paid out? Per stylist, and through payroll or straight to the stylist?
+- Can I see each stylist's services, retail and tips for the month? That is what commission is worked out from. Our guide to salon commission structures shows the sums.
+- Can I take my sales history with me if I leave? Our 12 questions to ask before switching salon software covers the rest of what to get in writing.
+
+The Daviana till works the way this checklist describes. It cashes out against the appointment, so services, retail, tips and the payment type land on one bill attributed to each stylist. It splits payments across card, cash, gift vouchers and deposits, takes the tip on the reader for each stylist, takes retail stock off as it sells, and checks each night what Stripe paid against what the till recorded. It is part of our salon booking system and POS, not a separate box, and drinks ordered through Daviana Bar post to the same bill.
+
+### Questions salon owners ask
+
+#### What is the best POS system for a hair salon in the UK?
+
+The best one for most salons is the till inside their booking system, as long as it cashes out against the appointment, splits payments, records tips per stylist and takes retail stock off as it sells. A standalone card reader can cost less per payment, but someone then matches every payment to the diary by hand. Compare card rates as well as features.
+
+#### Do I need a separate card machine for a salon POS?
+
+You need a card reader that works with your till, so the bill goes from the visit to the reader and the payment lands back on the visit. Daviana uses a Stripe card reader. Some systems also take tap to pay on a phone; Daviana doesn't yet.
+
+#### How much does a salon POS system cost in the UK?
+
+Count three things: the software, which is usually part of the booking system subscription; card fees, which on the UK pages we checked in October 2026 ran from 0.99% to 1.75% per payment in person, some with a few pence on top; and the card reader, from £19 to £229 plus VAT to buy. Daviana's diary and till starts at £25 a month including VAT for one person.
+
+#### Can a salon POS system track stylist commission?
+
+It can if it records services, retail and tips against the stylist who earned them. Those are the numbers commission is worked out from. Daviana records product sales and tips per stylist at the till, so the pay run reads the same figures.
+
+#### What is the difference between POS and EPOS?
+
+None that matters to a salon. POS means point of sale and EPOS means electronic point of sale. In the UK both describe the till software and the card reader that go with it.
+
+### Sources
+
+- Stripe: Terminal UK pricing (in-person rates, reader prices), checked 2026-10-15
+- SumUp: UK pricing (Payments Plus 0.99%), checked 2026-10-15
+- Square: UK pricing (1.75% in person, Square Reader £19 + VAT), checked 2026-10-15
+- PayPal Zettle: UK pricing (1.75%), checked 2026-10-15
+
+Stripe, SumUp, Square, Zettle and PayPal are trademarks of their owners. We are not affiliated with any of them. Daviana takes payments through Stripe. Rates change, so check with each company before deciding.
+
+---
+
 ## How much do card machine fees cost a UK salon?
 
 Source: https://daviana.app/blog/salon-card-machine-fees-uk/
