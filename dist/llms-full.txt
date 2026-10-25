@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-21. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-25. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -1612,14 +1612,25 @@ Most owners are surprised by the size of that gap. Almost nobody is surprised by
 ---
 
 ## One diary, one till, one client record: what all-in-one salon software actually means
-Source: https://daviana.app/blog/all-in-one-salon-software-meaning/
-Published: 2026-07-24  ·  Updated: 2026-07-24
 
-Ask what "all-in-one" means and most salon owners can't quite say, only that they were promised it once and the promise didn't fully land. The dashboard looked tidy. The login was single. Six months in, the till still disagreed with the booking tool about who came in on Tuesday.
+Source: https://daviana.app/blog/all-in-one-salon-software-meaning/
+Published: 2026-07-24  ·  Updated: 2026-10-25
+
+Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree. Here is the test that actually shows the difference.
+
+### The short answer
+
+- Most software marketed as all-in-one is several separate products behind one login, each keeping its own copy of the client, which is why the numbers rarely match at the end of the month.
+- The real test of a connected system is simple: change a client's phone number in one place and see whether every other screen knows within minutes, or whether it has to be typed in three more times.
+- One shared record means a colour weighed on the scale can show up on the till at the price it actually cost, not the price someone assumed when the service was booked.
+- One shared record does not fix a service that was priced wrong, a stylist who isn't rebooking clients, or a genuinely quiet week — it only shows you the real numbers faster.
+- Ask any salon software the same question before buying it: what happens to one specific fact, like a phone number or a colour cost, the moment it changes.
+
+Ask what “all-in-one” means and most salon owners can’t quite say, only that they were promised it once and the promise didn’t fully land. The dashboard looked tidy. The login was single. Six months in, the till still disagreed with the booking tool about who came in on Tuesday.
 
 That gap between the promise and the floor is the whole subject of this piece.
 
-## What "all-in-one" is actually supposed to mean
+### What “all-in-one” is actually supposed to mean
 
 It is supposed to mean one system running the whole salon — the diary, the till, the client record, the rota — instead of a diary here and a till there, stitched together by hand.
 
@@ -1627,49 +1638,63 @@ What gets sold under that name is usually something narrower: several separate p
 
 One login is not the same thing as one record. The login is what you see. The record is what everything underneath is actually reading and writing.
 
-## Does everything know when a phone number changes?
+### Does everything know when a phone number changes?
 
-That is the test that actually matters, and it takes about thirty seconds to run. Change a client's phone number at the front desk, then check the till, the appointment reminder, and anywhere marketing pulls from. If they all show the new number within minutes, you have one record. If the till still has the old one until a nightly job catches up — or until someone remembers to fix it there too — you have several products wearing one badge.
+That is the test that actually matters, and it takes about thirty seconds to run. Change a client’s phone number at the front desk, then check the till, the appointment reminder, and anywhere marketing pulls from. If they all show the new number within minutes, you have one record. If the till still has the old one until a nightly job catches up — or until someone remembers to fix it there too — you have several products wearing one badge.
 
-The same test works on colour. A bowl gets weighed on the scale. Does that actual cost land on the till at checkout, on the client's record for the next stylist, and in the month's numbers — or does it live only inside the tool that weighed it, disconnected from what gets charged? [We wrote about what happens when nobody can answer that question](/blog/colour-cost-per-gram/): the tube gets treated as the unit of cost, the gram never gets seen, and the gap between the two is where the money quietly goes.
+The same test works on colour. A bowl gets weighed on the scale. Does that actual cost land on the till at checkout, on the client’s record for the next stylist, and in the month’s numbers — or does it live only inside the tool that weighed it, disconnected from what gets charged? We wrote about what happens when nobody can answer that question: the tube gets treated as the unit of cost, the gram never gets seen, and the gap between the two is where the money quietly goes.
 
-> Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree.
+Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree.
 
-## Several products behind one login, or one record
+### Several products behind one login, or one record
 
 The difference is easiest to see side by side, against the same five everyday moments on the floor.
 
 | What happens on the floor | Several products behind one login | One shared record |
 | --- | --- | --- |
-| A client's phone number changes | Fixed at the front desk; the till and any marketing tool may still show the old one until the next overnight refresh | Every screen reads the same client record — nothing left to catch up |
+| A client’s phone number changes | Fixed at the front desk; the till and any marketing tool may still show the old one until the next overnight refresh | Every screen reads the same client record — nothing left to catch up |
 | A colour is weighed on the scale | The cost sits inside the colour tool; the till keeps charging the old assumed price unless someone updates it by hand | The till sees what was actually mixed, the moment it is mixed |
 | A stylist leaves | Their notes on regular clients may live in a notebook, an old login, or a tool nobody else has access to | Client history stays on the record, not on the person who left |
-| Last month's rebooking rate | Pulled from whichever booking tool's own report; rarely matches the till's version exactly | Read straight from the diary that took the booking and the payment |
-| A no-show | Marked in the booking calendar; may or may not reach the till, the rota, or the client's card | One entry, visible everywhere the moment it happens |
+| Last month’s rebooking rate | Pulled from whichever booking tool’s own report; rarely matches the till’s version exactly | Read straight from the diary that took the booking and the payment |
+| A no-show | Marked in the booking calendar; may or may not reach the till, the rota, or the client’s card | One entry, visible everywhere the moment it happens |
 
 Nothing in that left-hand column is a scandal. It is what happens, quietly and by default, whenever the same fact is asked to live in more than one place and stay in step through nothing more than habit and a bit of luck.
 
-## What one record looks like on the floor
+### What one record looks like on the floor
 
 It looks like nobody re-typing something that already exists somewhere else.
 
-The [AI Receptionist](/ai-receptionist/) books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at [ColorLab](/colorlab/) lands on the till and on the next stylist's screen without a formula being typed out from memory, and the stock it came out of goes down by the gram rather than by a count at the end of the week. Commission is [worked out live from the same diary the desk actually books into](/blog/live-commission-tracking/), not a spreadsheet rebuilt before payday. The client record the [diary](/diary/) holds is the one the colour, the till and the pay run all read.
+The AI Receptionist books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at ColorLab lands on the till and on the next stylist’s screen without a formula being typed out from memory, and the stock it came out of goes down by the gram rather than by a count at the end of the week. Commission is worked out live from the same diary the desk actually books into, not a spreadsheet rebuilt before payday. The client record the diary holds is the one the colour, the till and the pay run all read.
 
-None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far without a single one living only in someone's notebook.
+None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far without a single one living only in someone’s notebook.
 
-## The questions to actually ask before you buy
+### The questions to actually ask before you buy
 
 Ask what happens to one specific fact the moment it changes, and watch what the salesperson has to go and check to answer you.
 
-- If I change a client's phone number at the front desk, does the till see it immediately, or only after an overnight refresh?
+- If I change a client’s phone number at the front desk, does the till see it immediately, or only after an overnight refresh?
 - If a colour is weighed on a scale, does that cost appear on the bill on its own, or does someone still have to type a price in?
-- If a stylist leaves, does the client's colour and service history stay on the record, or does it leave with them?
+- If a stylist leaves, does the client’s colour and service history stay on the record, or does it leave with them?
 - Is rebooking rate and commission worked out from the same diary the desk actually books into, or from a separate report someone builds by hand at the end of the month?
 - Can you show me that, live, on a real example — not a demo account built to look tidy?
 
-If the answer to any of those needs "let me check with the team," you have found the seam between two products.
+If the answer to any of those needs “let me check with the team,” you have found the seam between two products.
 
-## What one record does not solve
+### How much does a second copy of the client cost? A worked example
+
+Most of the cost of several records is time: the same fact typed again, and the end-of-day check that the copies still agree. Here is the sum with example figures. Swap in your own; none of these numbers is a benchmark.
+
+Step 1: count the retyped entries. Say the desk updates 15 client details a week (a new mobile, an email, an allergy note) and each one has to go into two more places. That is 30 extra entries. Add 20 colour services where someone types the price into the till by hand after the bowl is mixed, and the desk makes 50 extra entries a week.
+
+Step 2: put minutes on it. At a minute an entry, that is 50 minutes a week. Add the end-of-day match between the booking tool and the card machine, say 15 minutes a day over six days, or 90 minutes. Together that is 140 minutes, about 2 hours 20 minutes a week.
+
+Step 3: put a price on it. At £14 an hour (put in your own rate), that is about £33 a week, or roughly £1,700 a year, spent keeping copies in step.
+
+That figure leaves out what the copies get wrong: a reminder sent to an old number, or a colour charged at the assumed price instead of what was mixed. The colour gap is a sum of its own, which we work through in how much hair colour your salon is really wasting.
+
+If the till is where your copies disagree most, our checklist of what a salon POS system should do rings up a real split bill with a deposit, a voucher and tips for two stylists. To compare what connected systems charge over a year, see how much salon software costs in the UK, and the best salon software in the UK sets the main systems’ prices and contracts side by side.
+
+### What one record does not solve
 
 Being honest about this matters more than the sales pitch, so: one shared record fixes disagreement between systems. It does not fix everything else that makes a salon hard to run.
 
@@ -1677,7 +1702,37 @@ It will not fix a service that was priced wrong to begin with — it will only s
 
 And moving to it is real work, whatever anyone tells you at the demo. Years of client history sitting in separate old tools has to actually move, not just get promised a fresh coat of paint. Nobody should pretend that part is free. What it removes, once it is done, is the ongoing cost of the old way — retyping the same booking twice, chasing a colour cost that never reached the till, reconciling a commission spreadsheet against a diary it was never really connected to in the first place.
 
-That is the honest version of what "all-in-one" should mean: not a promise that running a salon gets easy, but a bet that the numbers stop arguing with each other, so the harder questions are the only ones left to answer.
+That is the honest version of what “all-in-one” should mean: not a promise that running a salon gets easy, but a bet that the numbers stop arguing with each other, so the harder questions are the only ones left to answer.
+
+### Questions salon owners ask
+
+#### What does all-in-one salon software actually mean?
+
+It is supposed to mean one system running the whole salon — the diary, the till, the client record, the rota — instead of several separate tools glued together. In practice, most of what is sold as all-in-one is still several products behind a single login, each with its own copy of the client, updated on its own schedule.
+
+#### How can I tell if salon software actually shares one record?
+
+Change one fact and watch what happens. Update a client’s phone number at the front desk and see whether the till, the reminders and any marketing tool show the new number within minutes. If it takes a separate update in two or three places, or a wait for an overnight refresh, it is not one record — it is several, kept roughly in step.
+
+#### Does one shared client record fix everything about running a salon?
+
+No. It fixes disagreement between systems — a phone number wrong in one place, a colour cost that never reaches the till, a commission number that does not match payday. It does not fix a service priced too low, a stylist who is not rebooking clients, or a quiet week. It just shows you the real numbers fast enough to act on them.
+
+#### What should I ask before buying salon software marketed as all-in-one?
+
+Ask what happens to one specific fact the moment it changes — a phone number, a colour cost, a no-show — across every part of the system, live, on a real example. Ask whether rebooking rate and commission are worked out from the same diary the front desk books into, or from a separate report someone rebuilds by hand.
+
+#### Is switching to a connected salon system disruptive?
+
+Moving years of client history out of separate old tools is real work, and nobody should tell you otherwise. What it removes afterwards is the ongoing cost of keeping several systems roughly in agreement — retyping the same booking twice, chasing a colour cost that never made it to the till, reconciling a commission spreadsheet against a diary it was never actually connected to.
+
+#### Is a salon POS system the same as all-in-one salon software?
+
+No. A POS is the till that takes payment. All-in-one software should include the till, but the test is whether that till cashes out against the same booking and client record the diary holds, so services, retail and tips land on one bill without being typed twice. A standalone POS next to a separate booking tool is two records, however well they sync.
+
+#### How much does all-in-one salon software cost in the UK?
+
+It depends on the size of the team and which parts you take. Daviana Diary, the diary, till and client record in one, is £25 a month including VAT for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, with no commission on bookings and no minimum term. The first month is free. Card fees are separate. Our guide to what salon software costs in the UK works out a full year for the main systems.
 
 ---
 
