@@ -1757,5 +1757,19 @@ body>.tr-wrap.tr-foot{flex:1 0 auto;width:100%;display:flex;flex-direction:colum
   }).catch(function(){});
 })();
 </script>
+<style>.tr-field .tr-miss{border-color:#d70015;box-shadow:0 0 0 3px rgba(215,0,21,.15)}.tr-missmsg{margin:0;font-size:.875rem;font-weight:600;color:#d70015}</style>
+<script id="tr-missing">/* 26 Oct 2026: the browser's own "fill this in" bubble is easy to miss on a phone, so a press on
+   Get set up with a field left empty (usually team size) did nothing visible. Show it next to the field instead. */
+(function(){var f=document.getElementById("tr-form");if(!f)return;var T={fill:"Please fill this in",choose:"Please choose one"},busy=0;
+function clear(el){el.classList.remove("tr-miss");var m=el.parentNode.querySelector(".tr-missmsg");if(m)m.remove();}
+f.addEventListener("invalid",function(e){var el=e.target;e.preventDefault();el.classList.add("tr-miss");
+ if(!el.parentNode.querySelector(".tr-missmsg")){var m=document.createElement("p");m.className="tr-missmsg";m.setAttribute("role","alert");
+  m.textContent=el.tagName==="SELECT"?T.choose:T.fill;el.insertAdjacentElement("afterend",m);}
+ if(busy)return;busy=1;setTimeout(function(){busy=0;},0);
+ el.scrollIntoView({block:"center",behavior:"smooth"});try{el.focus({preventScroll:true});}catch(_){}
+ try{var go=function(){posthog.capture("trial_form_invalid",{field:el.id||el.name});};if(window.posthog)go();else if(window.sfLater)sfLater(function(){if(window.posthog)go();});}catch(_){}
+},true);
+f.addEventListener("input",function(e){if(e.target.classList)clear(e.target);},true);
+f.addEventListener("change",function(e){if(e.target.classList)clear(e.target);},true);})();</script>
 </body>
 </html>
