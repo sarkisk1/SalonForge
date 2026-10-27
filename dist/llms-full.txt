@@ -141,6 +141,81 @@ It is one London salon group's shared phone line, 1,844 inbound calls over about
 
 ---
 
+## What is the best booking system for a beauty salon in the UK?
+
+Source: https://daviana.app/blog/best-booking-system-beauty-salon-uk/
+Published: 2026-10-27
+
+The best booking system for a beauty salon keeps patch tests and consultation forms on the client record, sells courses of treatments, and only offers each treatment with therapists trained in it. Fresha lists consultation forms and patch tests, Phorest and Timely send digital consultation forms, and Daviana suits salons where hair and beauty share one diary.
+
+### The short answer
+
+- A patch test on the client record, with its date, stops a lash or brow tint going ahead on someone who was never tested.
+- Consultation and consent forms belong on the client card, not in a paper folder at the desk.
+- Courses of treatments bring cash in early and the client back for each session. Check the system counts sessions used.
+- Only offer each treatment with the therapists who do it, online as well as at the desk.
+- Marketplace apps charge on each new client. Work out what share of your book is regulars before you pay for reach.
+
+A beauty salon diary carries more than times and names. Before a lash or brow tint the client needs a patch test in date, a facial or skin treatment needs a consultation on file, and the best clients often buy a course rather than a single visit. The booking system should hold all of that on one client record, so whoever is on the desk can see it.
+
+We make Daviana, so read our view with that in mind. Every price and feature below for another company comes from its own UK pages, checked on 27 October 2026. Treatwell's notice period and Phorest's contract term come from their published terms, listed with links in our UK salon software comparison.
+
+### What does a beauty salon need from a booking system?
+
+- Patch tests on the client record. The date of the last test, visible when the next tint is booked. Manufacturers usually ask for a skin test at least 48 hours before tinting, so the desk needs to see it at booking time, not on the day.
+- Consultation and consent forms. Sent before the visit or filled in at the salon, then saved to the client card.
+- Courses and packages. Sell six sessions at once, take payment up front, and count down what each client has left.
+- The right therapist. Online booking should only offer each treatment with the people trained to do it.
+- Deposits and no-show rules. Long treatments and new clients are where a deposit earns its keep. Our no-show policy template gives wording you can copy.
+- One record for hair and beauty. If your salon does both, a brow tint and a colour should sit on the same client, with the same allergy history.
+
+### How do the main options compare for a UK beauty salon?
+
+|  | Published UK price | Forms, patch tests and courses | New clients and contract |
+| --- | --- | --- | --- |
+| Fresha | £14.95 a month on your own; £9.95 per bookable team member | Consultation forms and patch tests listed as features on its UK pricing page | Marketplace. 20% one-time fee per new marketplace client, minimum £4. No contract |
+| Booksy | £40 a month plus £5 per extra team member, plus VAT | Custom forms and liability waivers; memberships and packages at no extra charge | Marketplace. New-client fee only with Boost on: 30% of the first visit, minimum £5. No commitment |
+| Treatwell | Monthly fee not stated on its pricing page | Not covered on its pricing page | Marketplace. 35% of a new client's first booking, 0% on repeats, plus VAT. 30 days' notice |
+| Timely | From £4, £7 or £9 a week; unlimited team members | Digital consultation forms sent automatically before appointments; packages | No new client fees. No contract, 14 days' notice |
+| Phorest | No published price; quote on request | Digital consultation forms sent by SMS or email, with before-and-after photos. Consultation forms are not in every package | No marketplace fee stated. One-year term that renews, two months' notice |
+| Daviana | From £25 a month including VAT for one person, up to £120 for nine or more; first month free | Patch-test records valid for two years, flagged in the diary; courses sold and redeemed at the till. Simpler consultation forms than Phorest or Timely, and no before-and-after photos | No marketplace, no commission. Cancel any month |
+
+Sources: Fresha UK pricing, Booksy UK pricing, Treatwell partner pricing, Timely pricing, Phorest UK pricing and Phorest consultation forms, all checked 27 October 2026.
+
+### Which one fits your beauty salon?
+
+- A solo therapist building a client list. Fresha at £14.95 a month lists consultation forms and patch tests, and its app can bring new clients. Budget for the 20% fee on each one. Booksy is the other marketplace option.
+- A clinic-style salon doing skin treatments. Phorest has the deepest consultation forms of the systems here, with before-and-after photos on the client card. It is quote-only and on a one-year term, so get the price in writing.
+- A small team with a full book of regulars. Timely, from £4 a week with unlimited team members, consultation forms, packages and no new client fees, is the cheapest to start.
+- A salon that wants to be listed on Treatwell. Treatwell, if a 35% fee on first bookings works for your prices.
+- A salon doing hair and beauty together. Daviana's beauty salon booking system keeps patch tests, courses and colour history on one client record, and its AI receptionist books several services as one visit. It books by therapist, not by room, so if your treatment rooms need booking on their own, test that on any demo. For a beauty-only team it costs more than Fresha or Timely.
+
+### What does a missing patch test cost? A worked example
+
+Say four clients a month arrive for a lash or brow tint without a patch test in date. The tint cannot go ahead. If each slot is 45 minutes at £35 and you refill one of the four at short notice, you lose three: £105 a month, or £1,260 a year, before counting the clients who do not rebook.
+
+A booking system that shows the patch-test date when the tint is booked lets the desk book the test first, a few days before. Work it out with your own figures: how many clients a month arrive untested, the price of the treatment, and how many of those slots you manage to refill.
+
+### Questions salon owners ask
+
+#### What is the best booking system for a small beauty salon in the UK?
+
+It depends on where your clients come from. On published prices, Timely starts at £4 a week with unlimited team members, consultation forms and packages, and no new client fees. Fresha is £14.95 a month for one person and lists patch tests, but charges 20% on each new marketplace client, minimum £4.
+
+#### Which salon booking systems record patch tests?
+
+Fresha lists patch tests as a feature on its UK pricing page. Daviana keeps patch-test records on the client, valid for two years, with a badge on the appointment in the diary. The Timely and Phorest pages we checked describe consultation forms rather than patch tests, so ask them how a patch test is recorded.
+
+#### Do beauty salons need digital consultation forms?
+
+For treatments with a skin or health risk, you need a signed consultation and a way to find it again. Phorest and Timely send forms to clients before the appointment and save them to the client profile. Booksy lists custom forms and liability waivers. Paper works too, as long as it is filed against the right client.
+
+#### Can a booking system sell courses of beauty treatments?
+
+Yes. Booksy includes memberships and packages in its price, Timely lets clients bulk buy services as a package, and Daviana sells courses at the till and counts the sessions each client has left. Ask whether clients can buy a course online: in Daviana, courses are sold at the till today.
+
+---
+
 ## What is the best booking system for a nail salon in the UK?
 
 Source: https://daviana.app/blog/best-booking-system-nail-salon-uk/
