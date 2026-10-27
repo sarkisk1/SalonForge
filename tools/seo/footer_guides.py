@@ -6,6 +6,7 @@ LINKS = [
     ("/blog/best-ai-receptionist-for-salons-uk/", "Best AI receptionists for salons"),
     ("/blog/best-hair-colour-management-software/", "Best hair colour software"),
     ("/blog/best-booking-system-nail-salon-uk/", "Best nail salon booking systems"),
+    ("/blog/best-booking-system-beauty-salon-uk/", "Best beauty salon booking systems"),
     ("/blog/how-much-does-salon-software-cost-uk/", "Salon software costs"),
     ("/compare/fresha-alternatives/", "Fresha alternatives"),
     ("/compare/phorest-alternatives/", "Phorest alternatives"),
