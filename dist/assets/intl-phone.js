@@ -4,7 +4,8 @@
  * The /trial pages only had a bare UK-style box, so an Italian owner typing
  * "333 123 4567" was read as a UK number and never got the code (Gennaro,
  * 28 Oct). Every phone box marked data-sf-phone now gets a country-code picker
- * (UK by default) and the page reads the number through sfPhone.value(),
+ * (the page's own country by default: UK on the English page, Italy on
+ * /it/, Spain on /es/, France on /fr/, Germany on /de/) and the page reads the number through sfPhone.value(),
  * which always gives the server a full international number (+39 333…).
  *
  * Typing or pasting "+39…" / "0039…" still works: the picker follows it.
@@ -26,6 +27,9 @@
     DE: '01512 3456789', PT: '912 345 678', NL: '06 12345678', BE: '0470 12 34 56', CH: '078 123 45 67',
     US: '(415) 555-0123', CA: '(416) 555-0123', AU: '0412 345 678', NZ: '021 123 4567', AE: '050 123 4567'};
   var LANG = (document.documentElement.lang || 'en').slice(0, 2);
+  // 28 Oct 2026 (Sarkis): the Italian page starts on Italy, not the UK.
+  var HOME = {it: 'IT', es: 'ES', fr: 'FR', de: 'DE'}[LANG] || 'GB';
+  TOP = [HOME].concat(TOP.filter(function (iso) { return iso !== HOME; }));
   var MSG = {
     en: ['Country code', 'Please check this number. It looks too short or too long for the country picked.'],
     it: ['Prefisso internazionale', 'Controlla il numero: sembra troppo corto o troppo lungo per il paese scelto.'],
@@ -63,7 +67,7 @@
     var raw = String(input.value || '').trim();
     if (!raw) return '';
     if (isIntl(raw)) return '+' + digits(raw).replace(/^00/, '');
-    var c = C[(input.__sfSel && input.__sfSel.value) || 'GB'] || C.GB;
+    var c = C[(input.__sfSel && input.__sfSel.value) || HOME] || C[HOME];
     var nat = digits(raw);
     // Someone picked Italy and still typed the 39 in front.
     if (nat.indexOf(c.dial) === 0 && nat.length - c.dial.length >= c.min && nat.length > c.max) nat = nat.slice(c.dial.length);
@@ -87,10 +91,10 @@
   }
 
   function paint(input) {
-    var sel = input.__sfSel, c = C[sel.value] || C.GB;
+    var sel = input.__sfSel, c = C[sel.value] || C[HOME];
     input.__sfFace.textContent = flag(c.iso) + ' +' + c.dial;
     if (input.getAttribute('data-sf-phone') === 'mobile') input.placeholder = MOBILE_EG[c.iso] || '';
-    else input.placeholder = c.iso === 'GB' ? (input.__sfUkEg || '') : '';
+    else input.placeholder = c.iso === HOME ? (input.__sfUkEg || '') : '';
   }
 
   // A stored "+39…" back into the boxes: pick the country, show the local number.
@@ -142,7 +146,7 @@
     TOP.forEach(function (iso) { sel.appendChild(opt({iso: iso, name: nameOf(iso)})); });
     var hr = document.createElement('option'); hr.disabled = true; hr.textContent = '──────────'; sel.appendChild(hr);
     list.forEach(function (o) { if (TOP.indexOf(o.iso) === -1) sel.appendChild(opt(o)); });
-    sel.value = 'GB';
+    sel.value = HOME;
     box.appendChild(face); box.appendChild(sel);
     input.parentNode.insertBefore(wrap, input);
     wrap.appendChild(box); wrap.appendChild(input);
