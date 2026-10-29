@@ -141,6 +141,96 @@ It is one London salon group's shared phone line, 1,844 inbound calls over about
 
 ---
 
+## How do you switch from Phorest to another salon system?
+
+Source: https://daviana.app/blog/switching-from-phorest/
+Published: 2026-10-29
+
+To switch from Phorest, send written notice at least two months before your contract's yearly anniversary, export clients, future appointments, services, vouchers, courses and deposits from Phorest's own reports, then run both systems side by side before moving online booking. Phorest may delete your data 60 days after the contract ends.
+
+### The short answer
+
+- Phorest's UK contract runs for a year and renews itself. Written notice has to reach Phorest at least two months before the anniversary.
+- Leave early and the terms say you owe the fees for the rest of the year, so the notice date matters more than the switch date.
+- Phorest's own reports export everything you need, free of charge.
+- Phorest may delete your data 60 days after the contract ends. Export everything before then, and once more on your last day.
+
+Switching from Phorest well comes down to two things: sending notice on time, and getting years of client history, colour notes and future appointments out in a form the next system can read.
+
+We make Daviana, so read our view with that in mind. Every Phorest fact below comes from Phorest's own UK terms and support pages, checked on 29 October 2026 and linked at the end. Your own order form can differ, so check it too.
+
+### When can you leave a Phorest contract?
+
+Clause 13.1 of Phorest's UK terms says the contract starts when Phorest accepts your order and runs for one year. It then renews automatically for another year, and another, unless you give written notice at least two months before the end of the current year. Termination takes effect from the next anniversary.
+
+The same clause says that if you end the contract early, you owe the fees for the rest of the year. What you control is whether you pay for the months that remain or for a whole extra year.
+
+- Find your anniversary. It is the date Phorest accepted your order, not the day you went live. Your order confirmation or first invoice should show it.
+- Count back two months and put that date in the diary, with a reminder a month earlier.
+- Give notice in writing. Phorest's support page sends UK salons to a cancellation form where you book a short call with its team. Keep a copy of what you sent and when.
+
+### What data can you export from Phorest?
+
+Phorest's support article on exporting your data lists a report or export for each part of the system. Phorest says you can run all of them yourself, free of charge, and that exports requested from Phorest itself may involve a charge.
+
+| What to take | Where it is in Phorest | Why it matters |
+| --- | --- | --- |
+| Clients | Marketing, then Client Export, then Emails (CSV). The New Clients and Top Clients reports, run from your first day on Phorest, give the full list | Everything else is matched to the client |
+| Sales and service history | Manager, then Business, then CSV Export, then New Export with a date range. Phorest says it usually takes 15 minutes, up to an hour for long ranges | What each client had and paid, including vouchers and courses sold |
+| Future appointments | Staff Appointments report, by staff member, including colour and service notes | Bookings after your switch date |
+| Services and prices | Manager, then Services, then Export all services. One location at a time | Durations, gap times, prices and each stylist's price level |
+| Each stylist's services | Manager, then Staff Members, then the stylist, then Services, then Export (CSV) | So online booking offers the right people |
+| Deposits, courses and vouchers | Client Credit Account Details; Client Courses/Series Outstanding; the gift voucher reports | Money clients have already paid you |
+
+If you would rather Phorest exported it, clause 13.4(c) of the terms says an engineer export can take up to 15 business days from the request, only once all fees are paid. It comes as a single file, not customised, and you pay reasonable expenses. The same clause says Phorest may destroy your data once 60 days have passed from the end of the contract.
+
+### What order should you switch in?
+
+- Diary the notice date before you choose anything else. Our list of Phorest alternatives compares prices and contracts if you have not picked one yet.
+- Run every export once as a test. Open each file and check it while there is still time to ask.
+- Ask the new provider what they will move for you, and get it in writing. Our 12 questions before switching salon software go through the rest.
+- Set up services, staff and rotas in the new system while Phorest still runs the salon.
+- Pick a quiet day to switch. The evening before, export future appointments and every open balance (deposits, courses, vouchers) one last time, and load them.
+- Move online booking. Change the booking link on Google, Instagram and your website on the same day.
+- Keep Phorest for look-ups until the contract ends, then export everything again on the last day. After that, the 60-day clock starts.
+
+### What does missing the notice date cost? A worked example
+
+Phorest does not publish prices, so take the monthly figure from your own invoice. Say it is £150 a month and your anniversary is 1 March. Notice has to reach Phorest by 1 January.
+
+- Decide in November, give notice in time, switch on 1 December. You pay Phorest for December, January and February while the new system runs: 3 × £150 = £450 of overlap.
+- Decide on 15 January. The deadline has passed, so the contract renews to the following 1 March. Leaving now means owing 13 and a half more months: about £2,025.
+
+Put your own fee and anniversary into the same sum: the notice date, not the switch date, sets the bill. If you are unsure when your year ends, ask Phorest in writing.
+
+### What does Phorest still do better?
+
+Be honest about why you are leaving, because Phorest is strong in places. Its marketing campaigns, loyalty and review tools are deeper than ours. If that is where your new clients come from, check the new system can replace it before you give notice.
+
+Where Daviana differs: no contract, cancel any month, from £25 a month including VAT for one person, first month free. When you start a free month, the form asks which system you use now, and one tick asks us to move your clients, services and prices across for you. We built tooling for salons leaving Phorest that brings across branches, staff, clients, services and categories, appointments and vouchers. The salon booking system keeps colour notes on the client record, so the history you export has somewhere to go. Our Daviana vs Phorest comparison sets the two side by side.
+
+### Questions salon owners ask
+
+#### How much notice do I need to give Phorest?
+
+Phorest's UK terms (clause 13.1) say written notice must reach Phorest at least two months before the end of your one-year contract period. Otherwise the contract renews automatically for another year.
+
+#### Can I leave Phorest before my contract ends?
+
+You can stop using it, but clause 13.1 of Phorest's UK terms says that if you terminate before the end of the contracted period, you owe the subscription fees for the rest of that period.
+
+#### How do I export my client list from Phorest?
+
+Phorest's support pages say to go to Marketing, then Client Export, and click Emails (CSV). For the full list, run the New Clients or Top Clients report from the date you started on Phorest. Sales history comes from Manager, then Business, then CSV Export.
+
+#### What happens to my data after I leave Phorest?
+
+Clause 13.4(c) of Phorest's UK terms says Phorest may destroy your data once 60 days have passed from the end of the contract. You can export it yourself at any time before then. An export done by Phorest's engineers can take up to 15 business days and needs all fees paid first.
+
+Sources: Phorest UK terms and conditions (clauses 13.1 and 13.4), How can I export my data from Phorest?, How can I export sales transaction information to CSV? and How can I cancel my Phorest subscription?, all checked 29 October 2026.
+
+---
+
 ## What is the best booking system for a beauty salon in the UK?
 
 Source: https://daviana.app/blog/best-booking-system-beauty-salon-uk/
