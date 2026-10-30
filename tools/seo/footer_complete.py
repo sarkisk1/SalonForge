@@ -27,7 +27,7 @@ for dp, _, fs in os.walk(root):
         h = PRIVACY.sub(lambda t: f'{t.group(1)} · <a href="/terms/"{t.group(2)}>{TERMS[lang]}</a>{t.group(3)}', h)
         h = h.replace(COL, COL + '\n      <a href="/terms/">Terms</a>')
         h = BASE.sub(r'\1 · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a>\2', h)
-    if not lang and '<a href="/faq/">' not in h:
+    if not lang and 'Questions</a></div>' not in h:
         h = h.replace(CALC, '<a href="/compare/">Compare software</a><a href="/faq/">Questions</a></div>')
     if lang in LOCAL_TRIAL:
         h = CTA.sub(lambda c: f"{c.group(1)}/{lang}/trial/{c.group(2)}", h)
