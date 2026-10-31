@@ -2,11 +2,11 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-25. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-10-31. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
-Daviana is one connected system that runs a whole hair salon. Its five products read and write the same shared client record, so the diary, the colour bowl and the till all agree. It is built and run every day inside six working salons, from London to Saudi Arabia.
+Daviana is one connected system that runs a whole salon. Its five products read and write the same shared client record, so the diary, the colour bowl and the till all agree. It is built and run every day inside six working salons, from London to Saudi Arabia.
 
 - **Daviana Diary** (https://daviana.app/diary/): salon booking software. The appointment diary, till, client records, per-stylist pricing, rota and online booking in one system. Every other Daviana product reads and writes the same client record. Priced by team size (£25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more).
 - **Daviana AI Receptionist, Aria** (https://daviana.app/ai-receptionist/): a real AI voice that answers the salon phone when the desk can't. It handles the whole visit and books it straight into the Daviana diary, even while the salon sleeps. £60 a month.
@@ -14,130 +14,9 @@ Daviana is one connected system that runs a whole hair salon. Its five products 
 - **Daviana Bar** (https://daviana.app/bar/): drinks ordering for the salon floor. Each drink posts to the client's bill and deducts the stock, to the ingredient, the instant you tap. Included free with the Diary.
 - **Daviana Performance** (https://daviana.app/performance/): the team app for salon staff. Live revenue, leaderboards, commission, self-employed settlement and tips for every stylist, read straight from the sales the salon already rang up. Included free with the Diary.
 
+Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is priced by team size, from £25 a month including VAT for one person. ColorLab is for salons doing colour work.
+
 All prices include VAT. No commission on bookings, no per-booking charge, no lock-in. Full details: https://daviana.app/pricing/ . Free trial for a month, no card: https://daviana.app/trial/
-
----
-
-## How many salon phone calls go unanswered? What 1,844 real calls show
-
-Source: https://daviana.app/blog/salon-missed-calls-data/
-Published: 2026-09-26  ·  Updated: 2026-09-26
-
-On one London salon group's shared phone line, 49% of inbound calls reached nobody in the fortnight before an AI receptionist went live. With the AI answering overflow, that fell to 11%. The desk struggled most at 10am and after 5pm, on Mondays and on Sundays. Most unanswered callers were reconnected within a day, but 15% were not.
-
-### The short answer
-
-- Before an AI receptionist, 49% of calls reached nobody (287 of 585 over 14 days). With one answering overflow, 11% did (140 of 1,259 over 24 days).
-- Missed calls are a daytime problem. Only about 10% of calls came before 9am, after 6pm or on a Sunday.
-- The desk answered 45% of calls at 10am and 75% at noon. The busiest hour for clients in the chair is the worst hour for the phone.
-- Monday was the worst weekday: a person answered 38% of calls, against 71% on Saturday.
-- Within 24 hours, 68% of unanswered callers got a call back and 37% rang again and got through. 15% got neither.
-
-Every salon owner suspects the phone rings out more than it should. Very few know the number, because a call nobody answers leaves no trace in the diary. We run our own salons on Daviana, whose phone system logs every call, so we can look.
-
-This is one salon group's data, not an industry survey. We have set out exactly what was counted, and its limits, so you can judge it and compare it with your own.
-
-### What did we count?
-
-Every inbound call to the shared phone line of GA Salons, a group of London salons that runs on Daviana, from 19 August to 25 September 2026 (London time): 1,844 calls from about 900 different numbers. Outbound calls made by the salon are excluded, because a call the salon placed cannot be missed by a client. Each call is counted once, in one of three groups:
-
-- Answered by a person at the front desk.
-- Answered by Aria, the salon's AI receptionist, which went live on 2 September and picks up when the desk cannot.
-- Reached nobody: the caller hung up or went to voicemail without speaking to anyone.
-
-These are totals only. No client details are used or shown.
-
-### How many salon calls go unanswered?
-
-|  | Calls | Answered by a person | Answered by the AI receptionist | Reached nobody |
-| --- | --- | --- | --- | --- |
-| Before the AI receptionist (19 Aug to 1 Sep, 14 days) | 585 | 298 (51%) | n/a | 287 (49%) |
-| With the AI receptionist (2 to 25 Sep, 24 days) | 1,259 | 733 (58%) | 386 (31%) | 140 (11%) |
-
-Before the AI receptionist, roughly one call in two reached nobody. That is not a quiet salon: this is a busy front desk looking after clients in person, where the phone loses every time it clashes with someone standing at the till.
-
-One caution on the first fortnight: it was also the first two weeks on a new phone system, so part of that 49% may be a team getting used to it. The pattern by hour and by day below holds across the whole period.
-
-### When do salon calls go unanswered?
-
-Share of calls answered by a person, by hour of the day (whole period):
-
-| Hour | Calls | Answered by a person |
-| --- | --- | --- |
-| 9am | 220 | 54% |
-| 10am | 234 | 45% |
-| 11am | 254 | 65% |
-| 12pm | 204 | 75% |
-| 1pm | 191 | 57% |
-| 2pm | 172 | 60% |
-| 3pm | 169 | 63% |
-| 4pm | 149 | 61% |
-| 5pm | 136 | 47% |
-| 6pm and later | 67 | 13% |
-
-The two worst hours are the start of the day and the end of it: 10am, when the first clients are being settled and the phone is at its busiest, and 5pm, when the desk is cashing out and rebooking. Lunchtime is the best-covered hour.
-
-And by day of the week:
-
-| Day | Calls | Answered by a person |
-| --- | --- | --- |
-| Monday | 246 | 38% |
-| Tuesday | 366 | 56% |
-| Wednesday | 313 | 50% |
-| Thursday | 320 | 67% |
-| Friday | 312 | 64% |
-| Saturday | 203 | 71% |
-| Sunday | 84 | 23% |
-
-Monday stands out. It is a day many salons run on a reduced team, but callers do not know that, and it is a heavy day for calls about the week ahead.
-
-### Are missed calls an after-hours problem?
-
-Mostly not. Only about 10% of calls (193 of 1,844) came before 9am, after 6pm or on a Sunday. The other 90% arrived while the salon was open and the desk was busy. When the AI receptionist was live, about a third of its calls (32%) came between 9am and 11am, not in the evening.
-
-So a voicemail message that says "we are closed" is not the fix for most salons. The calls being lost are daytime calls from people who expected someone to pick up.
-
-### What happens to the callers nobody answers?
-
-We followed the 427 calls that reached nobody and checked the next 24 hours for the same number:
-
-- 68% received a call back from the salon.
-- 37% rang again and got through.
-- 15% did neither: no call back, and no successful call from them.
-
-This salon works its call-back list hard, and that is why most callers were reached. Without a call-back habit, the 15% is the floor, not the ceiling. Those are the callers most likely to have booked somewhere else.
-
-### What should a salon do with this?
-
-- Measure your own line. Most phone systems can export a call log. Count inbound calls by hour and mark which were answered.
-- Cover 10am and 5pm. If one person can step away from the chair or the till for those hours, that is where the calls are.
-- Look at Mondays. A reduced team on a heavy phone day is the most expensive combination in this data.
-- Call back within the hour. Keep a list of missed numbers and work it between clients.
-- Put overflow somewhere. A second line, a receptionist service or an AI receptionist that books into your diary. Our guide to AI receptionists for UK salons compares the options.
-
-To put a value on your own missed calls, use the free missed call calculator.
-
-### Questions salon owners ask
-
-#### How many salon calls go unanswered?
-
-In this London salon group's data, 49% of inbound calls reached nobody in the two weeks before an AI receptionist went live, and 11% afterwards. Your own figure depends on your team and your hours; count a week of your call log to find it.
-
-#### What time of day do salons miss the most calls?
-
-Here, 10am (45% answered by a person) and 5pm (47%) were the worst hours, and noon the best (75%). Mondays were the worst weekday (38%).
-
-#### Do most missed salon calls happen after hours?
-
-No. Only about 10% of calls came before 9am, after 6pm or on a Sunday. Most missed calls happened while the salon was open and the desk was busy.
-
-#### Do customers call back if a salon misses their call?
-
-Some do. Within 24 hours, 37% of callers who reached nobody rang again and got through, and 68% were called back by the salon. 15% had neither.
-
-#### Is this data from one salon?
-
-It is one London salon group's shared phone line, 1,844 inbound calls over about five weeks. It is a real, fully counted sample, not an industry-wide survey.
 
 ---
 
@@ -303,78 +182,6 @@ For treatments with a skin or health risk, you need a signed consultation and a 
 #### Can a booking system sell courses of beauty treatments?
 
 Yes. Booksy includes memberships and packages in its price, Timely lets clients bulk buy services as a package, and Daviana sells courses at the till and counts the sessions each client has left. Ask whether clients can buy a course online: in Daviana, courses are sold at the till today.
-
----
-
-## What is the best booking system for a nail salon in the UK?
-
-Source: https://daviana.app/blog/best-booking-system-nail-salon-uk/
-Published: 2026-09-26  ·  Updated: 2026-09-26
-
-The best booking system for a nail salon is the one that books each treatment at its real length, only with technicians who do it, and takes a deposit where a no-show would hurt. If you want new clients from an app, Fresha, Booksy and Treatwell all have marketplaces, for a fee on each new client. If you do not, Timely is the cheapest to start. Daviana suits salons where nails and hair share the same diary.
-
-### The short answer
-
-- Treatment length matters more in nails than almost anywhere: a new full set, an infill and a removal are different lengths and should book that way.
-- Only offer a treatment with the technicians who do it. A good system handles that for online booking as well as the desk.
-- Take deposits on long treatments. A no-show on a two-hour set costs more than on a quick polish change.
-- Marketplace apps bring new clients but charge on each one. Work out what share of your book is regulars before you pay for reach.
-- Test the awkward bookings on a demo: a manicure and pedicure together, two clients side by side, and a removal plus a new set.
-
-A nail salon diary looks simple until it is full. Sets, infills, removals, gels and pedicures all run to different lengths, technicians have different skills, and a no-show on a long appointment is an empty chair you cannot fill at short notice. The booking system has to get all of that right without anyone checking it by hand.
-
-We make Daviana, so read our view with that in mind. Every price below for another company comes from its own UK pricing page, checked on 26 September 2026, and is the same set of facts as our UK salon software comparison.
-
-### What does a nail salon need from a booking system?
-
-- Accurate treatment times. Each service should book the time it really takes, so a new set does not get squeezed into an infill slot.
-- The right technician. Online booking should only offer each treatment with the people who do it.
-- Several services in one visit. A manicure and pedicure, or a removal and a new set, should book as one visit.
-- Deposits and no-show rules. Take a deposit on long or expensive treatments, and write down the rule. Our no-show policy template gives wording you can copy.
-- A simple till. Services, retail and tips on one bill, with each technician's takings recorded for pay.
-
-### How do the main options compare for a UK nail salon?
-
-|  | Published UK price | New clients and contract |
-| --- | --- | --- |
-| Fresha | £14.95 a month on your own; £9.95 per bookable team member | Marketplace. 20% one-time fee per new marketplace client, minimum £4. No contract |
-| Booksy | £40 a month plus £5 per extra team member, plus VAT | Marketplace. New-client fee only with Boost on: 30% of the first visit, minimum £5. No commitment |
-| Treatwell | Monthly fee not stated on its pricing page | Marketplace. 35% of a new client's first booking, 0% on repeats, plus VAT. 30 days' notice |
-| Timely | From £4, £7 or £9 a week, adjusting with bookings; unlimited team members | No new client fees. No contract, 14 days' notice |
-| Daviana | From £25 a month including VAT for one person, up to £120 for nine or more; first month free | No marketplace, no commission. Cancel any month |
-
-Sources for each price are listed in our UK salon software comparison.
-
-### Which one fits your nail salon?
-
-- A solo nail technician building a column. Fresha at £14.95 a month, or Booksy, can bring new clients through their apps. Budget for the new-client fees.
-- A small team with a full book of regulars. Timely, from £4 a week with unlimited team members and no new client fees, is the cheapest to start.
-- A salon that wants to be listed on Treatwell. Treatwell, if a 35% finder's fee on first bookings works for your prices.
-- A salon doing hair and nails together. Daviana keeps both in one diary with each person's skills set, and its AI receptionist can book a manicure while a client's colour develops as one visit. It costs more than Fresha or Timely for a nails-only team.
-
-### How much do new-client fees cost a nail salon? A worked example
-
-Say a marketplace sends you 15 new clients a month, each with a first appointment of £40. At Fresha's 20% that is £120 a month; at Treatwell's 35% plus VAT it is £210 plus VAT. If half of those clients come back regularly, the fee may be good value. If most do not return, you are paying for one-off visits.
-
-These are example figures. Use your own: how many new clients a month, their first-visit value, and how many you keep after three months.
-
-### Questions salon owners ask
-
-#### What is the cheapest booking system for a nail salon in the UK?
-
-On published prices, Timely starts at £4 a week with unlimited team members, and Fresha is £14.95 a month for one person. Check the extras: Timely's price rises with bookings, and Fresha charges 20% on each new marketplace client.
-
-#### Is there a free booking system for nail salons?
-
-Some systems advertise a free start or a free trial, but the costs usually come from card fees, paid texts or a fee on new clients. Compare a year of total cost rather than the headline price.
-
-#### Should a nail salon take deposits?
-
-For long or expensive treatments, usually yes. A deposit makes a no-show less likely and covers part of the empty chair when it happens. Say in writing when it is refundable.
-
-#### Can one booking system handle hair and nails together?
-
-Yes, if it gives each person their own column, knows who does which treatment, and can book two services in one visit. Test a manicure during a colour appointment on the demo.
 
 ---
 
@@ -736,6 +543,201 @@ Yes. Fresha, Booksy, Timely (14 days' notice), Treatwell (30 days' notice) and D
 #### How much does Daviana cost?
 
 The Daviana diary and till is priced by team size, including VAT: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. Aria, the AI receptionist, is £60 a month and ColorLab is £80 a month, both including VAT, and Bar and Performance are included with the diary. There is no commission on bookings and no minimum term, moving your data across is included, and the first month is free.
+
+---
+
+## How many salon phone calls go unanswered? What 1,844 real calls show
+
+Source: https://daviana.app/blog/salon-missed-calls-data/
+Published: 2026-09-26  ·  Updated: 2026-09-26
+
+On one London salon group's shared phone line, 49% of inbound calls reached nobody in the fortnight before an AI receptionist went live. With the AI answering overflow, that fell to 11%. The desk struggled most at 10am and after 5pm, on Mondays and on Sundays. Most unanswered callers were reconnected within a day, but 15% were not.
+
+### The short answer
+
+- Before an AI receptionist, 49% of calls reached nobody (287 of 585 over 14 days). With one answering overflow, 11% did (140 of 1,259 over 24 days).
+- Missed calls are a daytime problem. Only about 10% of calls came before 9am, after 6pm or on a Sunday.
+- The desk answered 45% of calls at 10am and 75% at noon. The busiest hour for clients in the chair is the worst hour for the phone.
+- Monday was the worst weekday: a person answered 38% of calls, against 71% on Saturday.
+- Within 24 hours, 68% of unanswered callers got a call back and 37% rang again and got through. 15% got neither.
+
+Every salon owner suspects the phone rings out more than it should. Very few know the number, because a call nobody answers leaves no trace in the diary. We run our own salons on Daviana, whose phone system logs every call, so we can look.
+
+This is one salon group's data, not an industry survey. We have set out exactly what was counted, and its limits, so you can judge it and compare it with your own.
+
+### What did we count?
+
+Every inbound call to the shared phone line of GA Salons, a group of London salons that runs on Daviana, from 19 August to 25 September 2026 (London time): 1,844 calls from about 900 different numbers. Outbound calls made by the salon are excluded, because a call the salon placed cannot be missed by a client. Each call is counted once, in one of three groups:
+
+- Answered by a person at the front desk.
+- Answered by Aria, the salon's AI receptionist, which went live on 2 September and picks up when the desk cannot.
+- Reached nobody: the caller hung up or went to voicemail without speaking to anyone.
+
+These are totals only. No client details are used or shown.
+
+### How many salon calls go unanswered?
+
+|  | Calls | Answered by a person | Answered by the AI receptionist | Reached nobody |
+| --- | --- | --- | --- | --- |
+| Before the AI receptionist (19 Aug to 1 Sep, 14 days) | 585 | 298 (51%) | n/a | 287 (49%) |
+| With the AI receptionist (2 to 25 Sep, 24 days) | 1,259 | 733 (58%) | 386 (31%) | 140 (11%) |
+
+Before the AI receptionist, roughly one call in two reached nobody. That is not a quiet salon: this is a busy front desk looking after clients in person, where the phone loses every time it clashes with someone standing at the till.
+
+One caution on the first fortnight: it was also the first two weeks on a new phone system, so part of that 49% may be a team getting used to it. The pattern by hour and by day below holds across the whole period.
+
+### When do salon calls go unanswered?
+
+Share of calls answered by a person, by hour of the day (whole period):
+
+| Hour | Calls | Answered by a person |
+| --- | --- | --- |
+| 9am | 220 | 54% |
+| 10am | 234 | 45% |
+| 11am | 254 | 65% |
+| 12pm | 204 | 75% |
+| 1pm | 191 | 57% |
+| 2pm | 172 | 60% |
+| 3pm | 169 | 63% |
+| 4pm | 149 | 61% |
+| 5pm | 136 | 47% |
+| 6pm and later | 67 | 13% |
+
+The two worst hours are the start of the day and the end of it: 10am, when the first clients are being settled and the phone is at its busiest, and 5pm, when the desk is cashing out and rebooking. Lunchtime is the best-covered hour.
+
+And by day of the week:
+
+| Day | Calls | Answered by a person |
+| --- | --- | --- |
+| Monday | 246 | 38% |
+| Tuesday | 366 | 56% |
+| Wednesday | 313 | 50% |
+| Thursday | 320 | 67% |
+| Friday | 312 | 64% |
+| Saturday | 203 | 71% |
+| Sunday | 84 | 23% |
+
+Monday stands out. It is a day many salons run on a reduced team, but callers do not know that, and it is a heavy day for calls about the week ahead.
+
+### Are missed calls an after-hours problem?
+
+Mostly not. Only about 10% of calls (193 of 1,844) came before 9am, after 6pm or on a Sunday. The other 90% arrived while the salon was open and the desk was busy. When the AI receptionist was live, about a third of its calls (32%) came between 9am and 11am, not in the evening.
+
+So a voicemail message that says "we are closed" is not the fix for most salons. The calls being lost are daytime calls from people who expected someone to pick up.
+
+### What happens to the callers nobody answers?
+
+We followed the 427 calls that reached nobody and checked the next 24 hours for the same number:
+
+- 68% received a call back from the salon.
+- 37% rang again and got through.
+- 15% did neither: no call back, and no successful call from them.
+
+This salon works its call-back list hard, and that is why most callers were reached. Without a call-back habit, the 15% is the floor, not the ceiling. Those are the callers most likely to have booked somewhere else.
+
+### What should a salon do with this?
+
+- Measure your own line. Most phone systems can export a call log. Count inbound calls by hour and mark which were answered.
+- Cover 10am and 5pm. If one person can step away from the chair or the till for those hours, that is where the calls are.
+- Look at Mondays. A reduced team on a heavy phone day is the most expensive combination in this data.
+- Call back within the hour. Keep a list of missed numbers and work it between clients.
+- Put overflow somewhere. A second line, a receptionist service or an AI receptionist that books into your diary. Our guide to AI receptionists for UK salons compares the options.
+
+To put a value on your own missed calls, use the free missed call calculator.
+
+### Questions salon owners ask
+
+#### How many salon calls go unanswered?
+
+In this London salon group's data, 49% of inbound calls reached nobody in the two weeks before an AI receptionist went live, and 11% afterwards. Your own figure depends on your team and your hours; count a week of your call log to find it.
+
+#### What time of day do salons miss the most calls?
+
+Here, 10am (45% answered by a person) and 5pm (47%) were the worst hours, and noon the best (75%). Mondays were the worst weekday (38%).
+
+#### Do most missed salon calls happen after hours?
+
+No. Only about 10% of calls came before 9am, after 6pm or on a Sunday. Most missed calls happened while the salon was open and the desk was busy.
+
+#### Do customers call back if a salon misses their call?
+
+Some do. Within 24 hours, 37% of callers who reached nobody rang again and got through, and 68% were called back by the salon. 15% had neither.
+
+#### Is this data from one salon?
+
+It is one London salon group's shared phone line, 1,844 inbound calls over about five weeks. It is a real, fully counted sample, not an industry-wide survey.
+
+---
+
+## What is the best booking system for a nail salon in the UK?
+
+Source: https://daviana.app/blog/best-booking-system-nail-salon-uk/
+Published: 2026-09-26  ·  Updated: 2026-09-26
+
+The best booking system for a nail salon is the one that books each treatment at its real length, only with technicians who do it, and takes a deposit where a no-show would hurt. If you want new clients from an app, Fresha, Booksy and Treatwell all have marketplaces, for a fee on each new client. If you do not, Timely is the cheapest to start. Daviana suits salons where nails and hair share the same diary.
+
+### The short answer
+
+- Treatment length matters more in nails than almost anywhere: a new full set, an infill and a removal are different lengths and should book that way.
+- Only offer a treatment with the technicians who do it. A good system handles that for online booking as well as the desk.
+- Take deposits on long treatments. A no-show on a two-hour set costs more than on a quick polish change.
+- Marketplace apps bring new clients but charge on each one. Work out what share of your book is regulars before you pay for reach.
+- Test the awkward bookings on a demo: a manicure and pedicure together, two clients side by side, and a removal plus a new set.
+
+A nail salon diary looks simple until it is full. Sets, infills, removals, gels and pedicures all run to different lengths, technicians have different skills, and a no-show on a long appointment is an empty chair you cannot fill at short notice. The booking system has to get all of that right without anyone checking it by hand.
+
+We make Daviana, so read our view with that in mind. Every price below for another company comes from its own UK pricing page, checked on 26 September 2026, and is the same set of facts as our UK salon software comparison.
+
+### What does a nail salon need from a booking system?
+
+- Accurate treatment times. Each service should book the time it really takes, so a new set does not get squeezed into an infill slot.
+- The right technician. Online booking should only offer each treatment with the people who do it.
+- Several services in one visit. A manicure and pedicure, or a removal and a new set, should book as one visit.
+- Deposits and no-show rules. Take a deposit on long or expensive treatments, and write down the rule. Our no-show policy template gives wording you can copy.
+- A simple till. Services, retail and tips on one bill, with each technician's takings recorded for pay.
+
+### How do the main options compare for a UK nail salon?
+
+|  | Published UK price | New clients and contract |
+| --- | --- | --- |
+| Fresha | £14.95 a month on your own; £9.95 per bookable team member | Marketplace. 20% one-time fee per new marketplace client, minimum £4. No contract |
+| Booksy | £40 a month plus £5 per extra team member, plus VAT | Marketplace. New-client fee only with Boost on: 30% of the first visit, minimum £5. No commitment |
+| Treatwell | Monthly fee not stated on its pricing page | Marketplace. 35% of a new client's first booking, 0% on repeats, plus VAT. 30 days' notice |
+| Timely | From £4, £7 or £9 a week, adjusting with bookings; unlimited team members | No new client fees. No contract, 14 days' notice |
+| Daviana | From £25 a month including VAT for one person, up to £120 for nine or more; first month free | No marketplace, no commission. Cancel any month |
+
+Sources for each price are listed in our UK salon software comparison.
+
+### Which one fits your nail salon?
+
+- A solo nail technician building a column. Fresha at £14.95 a month, or Booksy, can bring new clients through their apps. Budget for the new-client fees.
+- A small team with a full book of regulars. Timely, from £4 a week with unlimited team members and no new client fees, is the cheapest to start.
+- A salon that wants to be listed on Treatwell. Treatwell, if a 35% finder's fee on first bookings works for your prices.
+- A salon doing hair and nails together. Daviana keeps both in one diary with each person's skills set, and its AI receptionist can book a manicure while a client's colour develops as one visit. It costs more than Fresha or Timely for a nails-only team.
+
+### How much do new-client fees cost a nail salon? A worked example
+
+Say a marketplace sends you 15 new clients a month, each with a first appointment of £40. At Fresha's 20% that is £120 a month; at Treatwell's 35% plus VAT it is £210 plus VAT. If half of those clients come back regularly, the fee may be good value. If most do not return, you are paying for one-off visits.
+
+These are example figures. Use your own: how many new clients a month, their first-visit value, and how many you keep after three months.
+
+### Questions salon owners ask
+
+#### What is the cheapest booking system for a nail salon in the UK?
+
+On published prices, Timely starts at £4 a week with unlimited team members, and Fresha is £14.95 a month for one person. Check the extras: Timely's price rises with bookings, and Fresha charges 20% on each new marketplace client.
+
+#### Is there a free booking system for nail salons?
+
+Some systems advertise a free start or a free trial, but the costs usually come from card fees, paid texts or a fee on new clients. Compare a year of total cost rather than the headline price.
+
+#### Should a nail salon take deposits?
+
+For long or expensive treatments, usually yes. A deposit makes a no-show less likely and covers part of the empty chair when it happens. Say in writing when it is refundable.
+
+#### Can one booking system handle hair and nails together?
+
+Yes, if it gives each person their own column, knows who does which treatment, and can book two services in one visit. Test a manicure during a colour appointment on the demo.
 
 ---
 
@@ -3371,7 +3373,7 @@ The short version, before the detail.
 
 #### What is Daviana?
 
-Daviana is one connected system that runs a whole hair salon. It covers the appointment diary and till, the phone answered and booked, and colour weighed and costed to the gram. The difference from most salon software is that these are not separate products behind one login — they read and write the same record, so the diary, the colour bowl and the till all agree.
+Daviana is one connected system that runs a whole salon. It covers the appointment diary and till, the phone answered and booked, and colour weighed and costed to the gram. The difference from most salon software is that these are not separate products behind one login — they read and write the same record, so the diary, the colour bowl and the till all agree.
 
 #### Is Daviana one product or several?
 
@@ -3383,7 +3385,7 @@ No. Each is priced on its own and works on its own — Bar and Performance are i
 
 #### Who is Daviana for?
 
-Hair salons — particularly ones past the point where a single diary app is enough: more than a few chairs, colour work, a mix of employed and self-employed stylists, and a phone that rings more than someone can answer. It is built for salon owners, not for a single mobile stylist.
+Hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is priced by team size, from £25 a month including VAT for one person, and ColorLab is for salons doing colour work. It helps most once a simple diary app is no longer enough: a mix of employed and self-employed stylists, and a phone that rings more than someone can answer.
 
 #### Who builds it?
 
