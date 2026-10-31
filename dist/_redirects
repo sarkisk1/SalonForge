@@ -38,8 +38,12 @@
 # Comparison pages renamed with the brand: salonforge-vs-<x> -> daviana-vs-<x>.
 /compare/salonforge-vs-booksy/ /compare/daviana-vs-booksy/ 301
 /compare/salonforge-vs-booksy /compare/daviana-vs-booksy/ 301
-/compare/salonforge-vs-fresha/ /compare/daviana-vs-fresha/ 301
-/compare/salonforge-vs-fresha /compare/daviana-vs-fresha/ 301
+/compare/salonforge-vs-fresha/ /compare/ 301
+/compare/salonforge-vs-fresha /compare/ 301
+/compare/daviana-vs-fresha/ /compare/ 301
+/compare/daviana-vs-fresha /compare/ 301
+/compare/fresha-alternatives/ /compare/ 301
+/compare/fresha-alternatives /compare/ 301
 /compare/salonforge-vs-phorest/ /compare/daviana-vs-phorest/ 301
 /compare/salonforge-vs-phorest /compare/daviana-vs-phorest/ 301
 /compare/salonforge-vs-treatwell/ /compare/daviana-vs-treatwell/ 301

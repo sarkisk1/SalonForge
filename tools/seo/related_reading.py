@@ -5,7 +5,7 @@ from each target page's <title>, so they never drift. Idempotent (class="xl").""
 import re, sys, pathlib, html
 DIST = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "dist")
 MAP = {
-    "diary": ["/blog/live-commission-tracking/", "/blog/questions-before-switching-salon-software/", "/compare/daviana-vs-phorest/", "/compare/daviana-vs-fresha/", "/pricing/"],
+    "diary": ["/blog/live-commission-tracking/", "/blog/questions-before-switching-salon-software/", "/compare/daviana-vs-phorest/", "/pricing/"],
     "colorlab": ["/blog/colour-cost-per-gram/", "/blog/hair-colour-waste/", "/blog/colour-formulas-when-stylist-leaves/", "/tools/colour-cost-calculator/"],
     "ai-receptionist": ["/blog/after-hours-salon-calls/", "/blog/ai-receptionist-real-diary/", "/tools/missed-call-calculator/", "/pricing/"],
     "pricing": ["/blog/questions-before-switching-salon-software/", "/compare/", "/faq/", "/tools/"],
