@@ -2614,6 +2614,95 @@ Vagaro is a trademark of its owner. We are not affiliated with, endorsed by or p
 
 ---
 
+## Daviana vs Zenoti
+
+Source: https://daviana.app/compare/daviana-vs-zenoti/
+Published: 2026-10-31
+
+Zenoti is enterprise software for salon, spa and medspa chains, and its own UK guide says to budget £400+ a month per location. Daviana's diary is £25 to £120 a month by team size, with no minimum term. If you run many sites and need that depth, Zenoti does far more. If you are one salon or a small group, you may be paying for a lot you do not use.
+
+Written by Daviana. Every Zenoti fact below is sourced and dated, checked 2026-10-31. We have tried to be fair; if anything here is out of date, tell us and we will correct it.
+
+### Zenoti suits you if
+
+You run several sites, or a spa, medspa or franchise, and you want deep reporting, marketing automation, memberships and a dedicated manager, with the budget and team for a full rollout.
+
+### Daviana suits you if
+
+You are a hair, nail or beauty salon or a small group, you want a published monthly price with no fixed term, and colour cost and the phone are your live problems.
+
+### Side by side
+
+Superscripts link to the source at the foot of the page. Zenoti's terms are general: your own order form can differ, so check it.
+
+|  | Daviana | Zenoti |
+| --- | --- | --- |
+| Monthly subscription | From £25 the diary (£45 for two or three people, £80 for four to eight, £120 for nine or more; Bar and Performance included), £60 the phone answered, £80 colour costed. All inc VAT. Take one, take all three. | Not published; you get a quote after a demo. Zenoti's UK guide says to budget £400+ a month per location. |
+| Minimum term | None. We invoice monthly and you can stop any month. | Set in your order form, then renews for a year at a time. |
+| Notice to leave | None beyond stopping that month | At least 60 days before the end of the term |
+| Price rise at renewal | No renewal, so no renewal rise | Up to 20% of current fees, unless your order form says otherwise |
+| Texts and calls | Appointment reminders by email and app notification. No SMS reminders or text campaigns today. | Voice, SMS and messaging tools included, with usage billed on consumption and optional base packs |
+| The phone answered by AI | Yes. Answers by voice and books into the same diary. £60 a month inc VAT. | Yes. AI Receptionist answers calls and books. Needs the AI Plus package; price not published. |
+| Colour weighed and costed to the gram | Yes, built in | Not found on its pricing page. Vish, a separate product, lists Zenoti as a connection. |
+| Team performance and pay | Performance app included: live takings, leaderboards, commission and self-employed settlement | Payroll, commissions, staff goals and AI scheduling listed. Check what each covers for UK pay. |
+| Marketing, loyalty and memberships | No bulk SMS campaigns or loyalty scheme today | Marketing automation, memberships, packages, gift cards, loyalty and reputation management listed |
+| Getting set up | Tick one box and our team moves your clients, services and prices across | Data migration and onboarding included. Its UK guide says 4 to 8 weeks for a full rollout. |
+
+### What Zenoti does better
+
+- Built for chains. Zenoti says it serves more than 30,000 businesses in over 50 countries, and its centralised reporting, shared client profiles and cross-location booking are aimed at groups. We do not match that depth.
+- Far more software in one place. Payroll, marketing automation, memberships, loyalty, reputation management and a run of AI agents all sit in one system. We do not run marketing campaigns, a loyalty scheme or SMS reminders today.
+- Spas, medspas and fitness. Zenoti covers room and resource scheduling and businesses beyond hair and beauty. We were built inside hair salons.
+- Round-the-clock support. Zenoti lists 24/7 global support for every customer, and a dedicated Customer Success Manager on AI Plus.
+
+### Where Daviana is different
+
+- A price you can read before you talk to anyone. Our prices are on the website and include VAT. Zenoti's come as a quote after a demo.
+- No fixed term. We invoice monthly and you can stop any month, so there is no renewal date to watch and no 60-day notice to remember.
+- Colour costing is ours, not a connection. Weighing the bowl on a Bluetooth scale and costing it to the gram, onto the client's bill, is what ColorLab was built for.
+- Sized for one salon or a small group. Zenoti's own UK guide says it may not be the best fit for a single independent salon with straightforward needs. That is who we are for.
+
+### If you are leaving Zenoti
+
+Three dates matter, and all of them come from your own contract, so start with your order form. First, find your term end date: under Zenoti's published terms your notice has to arrive at least 60 days before it, or you renew for another year. Second, ask for your data before you give notice and test that it opens. Third, after the contract ends you have 30 days to ask in writing for your final export. Zenoti delivers it once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep your data. Our 12 questions to ask before switching salon software covers the rest.
+
+### How to compare the price for your salon
+
+Ask Zenoti for a written quote covering every module you would use, per location, plus usage charges for calls and texts, any setup fee, and the renewal rise. Set the yearly total against our Diary at your team size (£25 to £120 a month), adding the phone at £60 and colour at £80 if you want them. Card fees come on top for both of us. If colour or the phone is part of the decision, try our colour cost calculator or missed call calculator first; they show whether ColorLab or the AI Receptionist would pay for itself.
+
+### Questions about Zenoti and Daviana
+
+#### How much does Zenoti cost in the UK?
+
+Zenoti does not publish prices; its pricing page sends you to a demo for a quote. Its own guide for UK salons says to budget £400+ a month per location. Voice, SMS and messaging are billed on usage, and its AI agents need the AI Plus package. Daviana's Diary is £25 to £120 a month by team size, including VAT.
+
+#### Am I tied in with Zenoti?
+
+Usually, yes. Zenoti's published terms set the first term in your order form, then renew automatically for a year at a time. To stop, you give at least 60 days' notice before the term ends, and fees can rise by up to 20% at renewal unless your order form says otherwise. Check your own order form. Daviana has no minimum term: we invoice monthly and you can stop any month.
+
+#### Does Zenoti have an AI receptionist?
+
+Yes. Zenoti lists an AI Receptionist that answers calls and books, and says you must be on its AI Plus package to use its AI agents. It does not publish the price. Daviana's AI Receptionist also answers by voice and books into the same diary the front desk uses, at £60 a month including VAT.
+
+#### Does Zenoti weigh and cost hair colour?
+
+We found no colour-weighing or gram-costing feature on Zenoti's pricing page. Vish, a separate colour product, lists Zenoti among the systems it connects to. Daviana's ColorLab weighs every bowl on a Bluetooth scale and costs it to the gram onto the client's bill.
+
+#### How do I get my data out of Zenoti?
+
+Zenoti's published terms say that if you ask in writing within 30 days of the contract ending, it will deliver your latest customer data once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After that 30 days it has no duty to keep the data. Ask for your export before you give notice, and diarise the deadline.
+
+### Sources
+
+- Zenoti: pricing and plans (quote only, features, usage billing, AI Plus, support) (checked 2026-10-31)
+- Zenoti: How UK salons use Zenoti (budget, rollout time, fit), 21 May 2026 (checked 2026-10-31)
+- Zenoti: terms and conditions (renewal fee increases; sections 13.1, 13.2 and 13.3: term, notice, data return) (checked 2026-10-31)
+- Vish: integrations with salon software, as covered on our Daviana vs Vish page (checked 2026-10-31)
+
+Zenoti is a trademark of its owner. We are not affiliated with, endorsed by or partnered with them. This page reflects publicly available information on the date shown; Zenoti may since have changed what it offers, so check with them directly before deciding.
+
+---
+
 ## Phorest alternatives for UK salons
 
 Source: https://daviana.app/compare/phorest-alternatives/
