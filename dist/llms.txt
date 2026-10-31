@@ -40,7 +40,6 @@ Daviana is for hair, nail and beauty salons, from one person working alone to a 
 ## Comparisons with other salon software
 Sourced from each company's own published pages and dated. Each states plainly where the other option is the better choice.
 - [All comparisons](https://daviana.app/compare/)
-- [Daviana vs Fresha](https://daviana.app/compare/daviana-vs-fresha/)
 - [Daviana vs Phorest](https://daviana.app/compare/daviana-vs-phorest/)
 - [Daviana vs Treatwell](https://daviana.app/compare/daviana-vs-treatwell/)
 - [Daviana vs Booksy](https://daviana.app/compare/daviana-vs-booksy/)
@@ -51,7 +50,6 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Timely alternatives for UK salons](https://daviana.app/compare/timely-alternatives/): Fresha, Booksy, Phorest, SalonIQ, Vagaro and Daviana compared on price, contract and new-client fees against Timely's from £4 a week bookings-based price.
 - [Booksy alternatives for UK salons](https://daviana.app/compare/booksy-alternatives/): Fresha, Treatwell, Timely, SalonIQ and Daviana compared on price, contract and new-client fees, including Booksy Boost.
 - [Phorest alternatives for UK salons](https://daviana.app/compare/phorest-alternatives/): Fresha, Timely, SalonIQ, Booksy and Daviana compared on published price, contract and new-client fees.
-- [Fresha alternatives for UK salons](https://daviana.app/compare/fresha-alternatives/): Timely, Booksy, SalonIQ, Phorest and Daviana compared on price, contract and new-client fees.
 - [Daviana ColorLab vs Vish](https://daviana.app/compare/daviana-vs-vish/): hair colour management software compared; Vish plugs into your existing booking system, ColorLab shares the Daviana diary's record.
 - [Daviana vs Timely](https://daviana.app/compare/daviana-vs-timely/)
 
