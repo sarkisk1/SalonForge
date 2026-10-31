@@ -11,6 +11,7 @@ LINKS = [
     ("/compare/phorest-alternatives/", "Phorest alternatives"),
     ("/compare/booksy-alternatives/", "Booksy alternatives"),
     ("/compare/treatwell-alternatives/", "Treatwell alternatives"),
+    ("/compare/daviana-vs-zenoti/", "Zenoti alternative"),
     ("/compare/daviana-vs-vish/", "Vish alternative"),
 ]
 LOCALE = re.compile(r"^(es|it|ru|fr|de)(/|$)")
