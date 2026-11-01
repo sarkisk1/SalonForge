@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-10-31. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-01. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -1185,10 +1185,10 @@ Yes, if it is written into the stylist's pay terms before they start and the pay
 
 ---
 
-## What should a salon no-show policy say? A UK template you can copy
+## Salon no-show policy template (UK, 2026): what should it say?
 
 Source: https://daviana.app/blog/salon-no-show-policy/
-Published: 2026-09-22  ·  Updated: 2026-09-22
+Published: 2026-09-22  ·  Updated: 2026-11-01
 
 A good salon no-show policy says four things in plain words: how much notice a client must give to cancel, what happens if they give less, what happens if they do not turn up, and which bookings need a deposit. Keep it short, show it before the client books, and never charge more than the empty chair actually costs you.
 
@@ -1204,38 +1204,56 @@ Every salon owner knows the feeling: a three-hour colour slot at 10am, a stylist
 
 A written no-show policy will not stop every missed appointment. What it does is turn an awkward conversation into a rule the client already agreed to, and give your desk something to point at.
 
-## What should a salon no-show policy include?
+### What should a salon no-show policy include?
 
 Keep it to four parts. Anything longer does not get read, and a policy the client did not read is hard to enforce.
 
-1. **The notice window.** How many hours before the appointment a client can cancel or move it without charge. 24 or 48 hours is typical.
-2. **The late cancellation charge.** What happens if they cancel inside the window. Usually the deposit is kept, or a percentage of the booking is charged.
-3. **The no-show charge.** What happens if they simply do not arrive. Usually the same as a late cancellation, sometimes higher.
-4. **Which bookings need a deposit.** A clear rule, such as all colour services or any booking over a set value.
+- The notice window. How many hours before the appointment a client can cancel or move it without charge. 24 or 48 hours is typical.
+- The late cancellation charge. What happens if they cancel inside the window. Usually the deposit is kept, or a percentage of the booking is charged.
+- The no-show charge. What happens if they simply do not arrive. Usually the same as a late cancellation, sometimes higher.
+- Which bookings need a deposit. A clear rule, such as all colour services or any booking over a set value.
 
 Add one line on lateness (for example, arriving more than 15 minutes late may mean a shorter service or rebooking) and one line on how to cancel. That is the whole policy.
 
-## Is there a salon no-show policy template I can copy?
+### Is there a salon no-show policy template I can copy?
 
 Yes. Edit the numbers in square brackets to suit your salon, then put it on your booking page, in your confirmation email and on the wall at reception.
 
-> **Cancellations and missed appointments**
->
-> We keep your time just for you, so we ask for at least [48] hours’ notice if you need to cancel or move your appointment. You can do this [online, by phone or by replying to your confirmation].
->
-> A deposit of [25]% is taken when you book any [colour service / appointment of £100 or more]. It comes off your bill on the day.
->
-> If you cancel with less than [48] hours’ notice, your deposit is kept. If there is no deposit on your booking, a charge of [50]% of the service price may apply.
->
-> If you miss your appointment without letting us know, your deposit is kept and we may ask for a deposit on future bookings.
->
-> If you are running more than [15] minutes late, please call us. We will do our best, but we may need to shorten your service or rebook you.
->
-> We understand emergencies happen. Please talk to us.
+Cancellations and missed appointments
+
+We keep your time just for you, so we ask for at least [48] hours’ notice if you need to cancel or move your appointment. You can do this [online, by phone or by replying to your confirmation].
+
+A deposit of [25]% is taken when you book any [colour service / appointment of £100 or more]. It comes off your bill on the day.
+
+If you cancel with less than [48] hours’ notice, your deposit is kept. If there is no deposit on your booking, a charge of [50]% of the service price may apply.
+
+If you miss your appointment without letting us know, your deposit is kept and we may ask for a deposit on future bookings.
+
+If you are running more than [15] minutes late, please call us. We will do our best, but we may need to shorten your service or rebook you.
+
+We understand emergencies happen. Please talk to us.
 
 The last line matters more than it looks. It tells the client the policy is about protecting chair time, not about catching them out, and it gives the desk room to use judgement.
 
-## How much deposit should a salon take? A worked example
+### What is the short version for a booking page and text?
+
+The full policy belongs on your website, but clients read the short version, so put it where they look. Use the same numbers in both.
+
+Booking page
+
+Free to cancel or move up to [48] hours before your appointment. After that, or if you miss it, your [25]% deposit is kept.
+
+Confirmation text
+
+Your appointment is on [day] at [time]. To change it and keep your deposit, let us know by [day and time]. Reply to this message or call [number].
+
+After a missed appointment
+
+Sorry we missed you today, [name]. As your booking was inside our [48]-hour window, your deposit of £[amount] has been kept, as set out in our policy. If something went wrong, please call us and we will talk it through.
+
+Send the third message once, the same day, and let the desk add a personal line for a regular. It is the message most salons avoid sending, and a ready wording makes it easier to send.
+
+### How much deposit should a salon take? A worked example
 
 Start from your own numbers, not from what another salon charges. Take last month and write down three figures:
 
@@ -1255,9 +1273,9 @@ Now look at where that money sits. In most salons it is concentrated in the long
 
 In the example, if 5 of the 12 no-shows were £140 colour bookings, a 25% deposit keeps 5 × £35 = £175 that month. That will not cover the whole loss, and it is not supposed to. The bigger effect is that a client who has paid something upfront has a reason to pick up the phone when plans change, and a phone call 48 hours out gives the desk time to refill the chair.
 
-## Is it legal to charge a no-show fee in the UK?
+### Is it legal to charge a no-show fee in the UK?
 
-Generally yes, with two conditions. First, the client must have been told before they booked. A term they only discover afterwards is unlikely to hold. Second, the charge must be fair. The Consumer Rights Act 2015 says terms in consumer contracts must be fair and transparent, and the Competition and Markets Authority’s [guidance on unfair contract terms (CMA37)](https://www.gov.uk/government/publications/unfair-contract-terms-cma37) treats cancellation charges that go well beyond the business’s likely loss as a warning sign.
+Generally yes, with two conditions. First, the client must have been told before they booked. A term they only discover afterwards is unlikely to hold. Second, the charge must be fair. The Consumer Rights Act 2015 says terms in consumer contracts must be fair and transparent, and the Competition and Markets Authority’s guidance on unfair contract terms (CMA37) treats cancellation charges that go well beyond the business’s likely loss as a warning sign. Since April 2025 the CMA has also been able to enforce consumer law directly, with unfair contract terms among its stated priorities, so this is worth getting right.
 
 In practice that means:
 
@@ -1268,49 +1286,77 @@ In practice that means:
 
 This is a practical summary, not legal advice. If you are unsure about a specific charge, check the guidance or ask a solicitor.
 
-## How do you enforce a no-show policy without losing good clients?
+### How do you work out a fair no-show charge?
+
+Use your own figures. Take one type of booking and write down three numbers: its price, the product you did not use, and how often the desk refills that slot at short notice.
+
+Say a £140 colour booking uses £20 of product. If the chair stays empty, you lose £140 − £20 = £120. If the desk refills about one in four of these slots, your average loss is £120 × 0.75 = £90.
+
+| Charge | Amount on a £140 booking | Against the £90 average loss |
+| --- | --- | --- |
+| 25% deposit kept | £35 | Well under your loss |
+| 50% charge | £70 | Under your loss |
+| 100% charge | £140 | £50 over your loss, the hardest to defend |
+
+If the desk does refill the slot, you lost little or nothing, so decide in advance what happens to the money. The fairest rule is to refund it or turn it into salon credit. Put that in your policy and the desk does not have to decide on the spot.
+
+### Can you charge a saved card for a no-show?
+
+Only if the client agreed to it. Tell them at booking that the card may be charged, how much and when, and keep a record that they agreed. Taking card details to hold a booking and charging them later without that agreement invites a dispute, and the client can ask their card provider to reverse the payment.
+
+A deposit taken at booking avoids all of this. The money is already paid, and nothing has to be charged afterwards.
+
+### How do you enforce a no-show policy without losing good clients?
 
 The policy is the easy part. Applying it consistently at the desk is where most salons give up, usually because the person on reception does not want an awkward conversation with a regular.
 
 A few habits make it easier:
 
-- **Take the deposit at booking, not afterwards.** Asking for money after a missed appointment is a confrontation. A deposit already paid is simply kept.
-- **Remind clients before the window closes.** A reminder the day before a 48-hour window has already shut is too late to be useful. Send it before the notice period starts.
-- **Give the desk one waiver per client, and log it.** Genuine emergencies get goodwill. The second missed appointment does not, and the record shows it was the second.
-- **Make cancelling easy.** If the only way to cancel is a phone that nobody answers after 6pm, clients who meant to give notice end up as no-shows.
+- Take the deposit at booking, not afterwards. Asking for money after a missed appointment is a confrontation. A deposit already paid is simply kept.
+- Remind clients before the window closes. A reminder the day before a 48-hour window has already shut is too late to be useful. Send it before the notice period starts.
+- Give the desk one waiver per client, and log it. Genuine emergencies get goodwill. The second missed appointment does not, and the record shows it was the second.
+- Make cancelling easy. If the only way to cancel is a phone that nobody answers after 6pm, clients who meant to give notice end up as no-shows.
 
-That last point is the one salons most often miss. A client who tries to cancel at 9pm and reaches voicemail has done the right thing, and still leaves you with an empty chair unless someone hears the message in time. Our [piece on after-hours salon calls](https://daviana.app/blog/after-hours-salon-calls/) covers how much of that happens outside opening hours.
+That last point is the one salons most often miss. A client who tries to cancel at 9pm and reaches voicemail has done the right thing, and still leaves you with an empty chair unless someone hears the message in time. Our piece on after-hours salon calls covers how much of that happens outside opening hours.
 
-## What should your booking system do for you?
+### What should your booking system do for you?
 
-A policy lives or dies on whether the [booking system](https://daviana.app/diary/) backs it up without the desk having to remember. The things worth checking in any salon software:
+A policy lives or dies on whether the booking system backs it up without the desk having to remember. The things worth checking in any salon software:
 
 - Can it take a deposit when the client books online, with rules by percentage and booking value?
 - When a client cancels, can the desk choose to keep or refund the deposit, with the reason recorded?
 - Does an unpaid deposit hold release the slot automatically, so the diary is not blocked by a booking nobody paid for?
 - Is a no-show a status on the appointment, so you can see who has missed before and report on it?
 
-In Daviana, deposits are taken at online booking into the same diary the desk uses, and are set by percentage, minimum and booking threshold. On cancellation the desk chooses whether to retain or refund the deposit, unpaid deposit holds expire on their own, and no-shows and cancellations show up in reporting. If a client calls to cancel at the last minute, [Aria, the AI receptionist](https://daviana.app/ai-receptionist/), reads back the real appointment and offers to reschedule; on anything to do with fees it takes a message for the team rather than deciding. If you are comparing systems, our [questions to ask before switching salon software](https://daviana.app/blog/questions-before-switching-salon-software/) are a good place to start.
+In Daviana, deposits are taken at online booking into the same diary the desk uses, and are set by percentage, minimum and booking threshold. On cancellation the desk chooses whether to retain or refund the deposit, unpaid deposit holds expire on their own, and no-shows and cancellations show up in reporting. If a client calls to cancel at the last minute, Aria, the AI receptionist, reads back the real appointment and offers to reschedule; on anything to do with fees it takes a message for the team rather than deciding. If you are comparing systems, our questions to ask before switching salon software are a good place to start.
 
-## Questions salon owners ask
+Online deposits cost more per payment than a card in the salon, but this is where that cost earns its keep. Our guide to salon card machine fees sets out the rates, and our salon POS checklist covers keeping deposits and refunds in the same record as the visit.
 
-### Can a UK salon charge a client for not turning up?
+### Questions salon owners ask
+
+#### Can a UK salon charge a client for not turning up?
 
 Yes, if the charge was clearly shown to the client before they booked and it is fair. Under the Consumer Rights Act 2015 a cancellation or no-show charge should broadly reflect what the salon loses, such as the value of chair time it could not resell. A charge far above that loss risks being treated as an unfair term.
 
-### How much deposit should a salon take?
+#### How much deposit should a salon take?
 
 Most salons take a percentage of the booking, often somewhere between 20 and 50 per cent, and only on services that are long, expensive or hard to refill at short notice. A flat rule such as 25 per cent on bookings of £100 or more is easy for clients to understand and for the desk to apply.
 
-### How much notice should a salon ask for when a client cancels?
+#### How much notice should a salon ask for when a client cancels?
 
 24 or 48 hours is the most common window. Pick the shortest window in which your desk can realistically refill the slot. Long colour appointments usually justify 48 hours; a cut and finish can often be refilled with 24.
 
-### Should a salon charge a regular client who misses one appointment?
+#### Should a salon charge a regular client who misses one appointment?
 
 The policy should apply to everyone, but it helps to give the desk one discretionary waiver per client for a genuine emergency, logged against the client record. That keeps goodwill with loyal clients while making repeat no-shows visible.
 
----
+#### Can a salon charge a saved card for a no-show?
+
+Only if the client agreed before booking and knew how much would be charged and when. Keep a record of that agreement. Without it the client can dispute the charge with their card provider. A deposit taken at booking is simpler, because nothing has to be charged afterwards.
+
+#### Should a salon keep the deposit if the slot gets refilled?
+
+It is safest not to. A charge should reflect what you lost, and a refilled slot means you lost little or nothing. Refund it or turn it into salon credit, and say so in your policy so the desk does not have to decide on the spot.
 
 ## Screening stylist applicants without spending a week reading CVs
 Source: https://daviana.app/blog/screening-stylist-applicants/
