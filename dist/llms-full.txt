@@ -20,6 +20,94 @@ All prices include VAT. No commission on bookings, no per-booking charge, no loc
 
 ---
 
+## What is the best salon software for multiple locations in the UK?
+
+Source: https://daviana.app/blog/salon-software-multiple-locations-uk/
+Published: 2026-11-03
+
+The best salon software for multiple locations keeps one client record across every branch, lets a stylist work at more than one site without double booking, and reports on each salon and the whole group. Phorest and Zenoti have the deepest group tooling, SalonIQ serves 180+ UK groups, and Daviana runs a four-branch London group.
+
+### The short answer
+
+- Look for one client record across every branch, not a copy per salon.
+- A stylist who works at two sites needs one rota that stops overlapping shifts.
+- Reports should run for each salon and for the whole group, without a spreadsheet.
+- Check whether the price is per location, per person or per booking before you add a site.
+- Phorest and Zenoti suit chains; Timely and Daviana suit small groups that want monthly terms.
+
+A second salon changes what you need from software. The client who books in one branch and turns up at another is still one client. The stylist who covers Saturdays across town is still one person on one rota. And the question you ask on a Monday morning is no longer how one salon did, but how each one did and how the group did together.
+
+We make Daviana, so read our view with that in mind. Every feature and price below for another company comes from its own pages, checked on 3 November 2026, with links under the table.
+
+### What should salon software do for more than one location?
+
+- One client record across branches. A client who has a colour in one salon and a blow-dry in another should have one history, one set of notes and one patch-test date, not a copy in each branch.
+- Staff who work at several sites. The rota should show each shift at its own salon and stop anyone booking a stylist into one branch while they are working at another.
+- Reports for each salon and for the group. Takings, services and staff side by side, without exporting each branch into a spreadsheet.
+- Online booking by branch. The client picks the salon first, then the service and the stylist.
+- Courses, vouchers and deposits that work everywhere. A course bought in one branch should be redeemable in the next. Our no-show policy template covers the deposit wording.
+- Stock by branch. The same product at each salon, with its own count.
+- Access by role. Ask any supplier what a branch manager can see, and what only the owner can see.
+
+### How do the main options compare for a salon group?
+
+|  | Published UK price | What it says it does for groups | Contract |
+| --- | --- | --- | --- |
+| Phorest | No published price; quote on request | Centralised reporting across all locations, one shared client record, cross-location staff scheduling and commissions, group-wide memberships and marketing, role-based access | One-year term that renews, two months' notice |
+| Zenoti | Quote only. Its UK guide says to budget £400+ a month per location | Built for chains: centralised reporting, shared client profiles, cross-location booking. Its guide puts a full rollout at 4 to 8 weeks | Set in your order form, then renews for a year at a time |
+| SalonIQ | From £47 a month for a solo stylist, plus setup from £175 + VAT | Multiple locations from a single account, centralised reporting, group-level dashboards and shared client data. Says it serves 180+ UK salon groups | Pricing page: no long-term contracts, 60 days' notice. Terms: 12-month initial term, 90 days' notice |
+| Timely | From £4, £7 or £9 a week, adjusting with bookings | "Create and manage multiple locations" included in Run, Boost and Thrive | No contract, 14 days' notice |
+| Vagaro | £20 a month in the UK, plus £10 for each extra calendar up to seven | Additional locations £10 a month each in the UK. A 20% fee on new clients who find you through its marketplace | Cancel any time |
+| Daviana | £25 a month including VAT for one person, up to £120 for nine or more; first month free | Each salon on its own or the whole group together; one client record; staff across branches with overlap checks; group reports; a booking page per branch; courses that work at every branch; stock per branch. No stock transfer between branches yet, and no bulk marketing campaigns | No minimum term. Cancel any month |
+
+Sources, all checked 3 November 2026: Phorest multi-location software, Phorest UK terms, Zenoti: how UK salons use Zenoti, SalonIQ UK salon software, SalonIQ pricing, Timely pricing, Vagaro plans and pricing. Contract terms for Phorest, Zenoti and SalonIQ, and Vagaro's marketplace fee, come from their published terms and support pages, linked with dates on our Daviana vs Phorest, Daviana vs Zenoti, Daviana vs SalonIQ and Daviana vs Vagaro pages.
+
+### How does a four-branch London group run on one system?
+
+GA Salons runs four London branches on Daviana: Chelsea, Notting Hill, South Kensington and Wimbledon. Daviana was built inside these salons by the same team, so this is how we use it ourselves, not a customer case study.
+
+- One client, four doors. A client's colour history, notes and patch tests sit on one record, so a stylist in Wimbledon sees the formula mixed in Chelsea. With ColorLab, that formula is weighed and costed on the same record.
+- Stylists who move between branches. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
+- One phone line for the group. Our study of 1,844 calls to the group's shared phone line found that 49% reached nobody before an AI receptionist went live. With Aria answering when the desk cannot, that fell to 11%, and Aria books into the same diary as the desk.
+- Each salon, or the whole group. Reports run for one branch or across all four, with combined totals.
+
+Where it falls short: stock is counted per branch, but there is no transfer of stock between branches yet, and there are no bulk email or SMS campaigns.
+
+### Which one fits your group?
+
+- Ten or more sites with a head office. Zenoti or Phorest. Both are built for chains, with consolidated reporting and role-based access. Both are quote-only and on yearly terms, and Zenoti's own guide says to budget £400 or more a month per location.
+- A group that wants marketing built in. SalonIQ, which says it serves more than 180 UK groups and includes automated campaigns, or Phorest. Daviana does not run bulk campaigns today.
+- Two or three sites on a tight budget. Timely lists multiple locations in every plan from £4 a week, with no contract. Vagaro adds a location for £10 a month, but watch its 20% fee on new marketplace clients.
+- A colour-led group that wants monthly terms. Daviana's multi-site salon booking system keeps one client record across branches, with colour costing and the phone on the same record, at published prices and no minimum term. It runs in six working salons, against SalonIQ's 2,500+, so weigh the track record too.
+
+### What does reporting by hand cost a group? A worked example
+
+Say your manager spends 3 hours a week copying each branch's takings and staff figures into one spreadsheet, and their time costs £18 an hour. That is £54 a week, or £2,808 a year, before any mistakes in the copying.
+
+Now add double bookings. If a stylist is booked into two branches at the same time once a month, and each time you lose a £60 appointment, that is another £720 a year. Work it out with your own figures: hours a week spent on reports, the hourly cost of whoever does them, and how often a shared stylist is double booked.
+
+Then set that against the price difference between systems. If the group software you are looking at costs more than a single-site system, those two numbers are what it has to earn back.
+
+### Questions salon owners ask
+
+#### What is the best salon software for multiple locations in the UK?
+
+For a large chain with a head office, Phorest and Zenoti have the deepest group tooling, and Zenoti's own UK guide says to budget £400 or more a month per location. SalonIQ says it serves more than 180 UK salon groups. Timely includes multiple locations in every plan from £4 a week. Daviana runs a four-branch London group on published monthly prices with no minimum term.
+
+#### Can a client book at any branch with one record?
+
+In Daviana, yes: the client record is shared across your branches, so colour history, notes and patch tests follow the client, and online booking lets them pick the branch first. Phorest describes one shared client record, SalonIQ shared client data and Zenoti shared client profiles across locations.
+
+#### Can a stylist work at two salons in the same system?
+
+Yes, in most group systems. In Daviana a team member can be assigned to more than one branch, the rota shows each shift at its own salon, and it flags a shift that overlaps one at another branch. Phorest lists cross-location staff scheduling and commissions.
+
+#### Is salon software priced per location?
+
+Some of it is. Zenoti's UK guide says to budget £400 or more a month per location, and Vagaro charges £10 a month for each additional location in the UK. Timely lists multiple locations in every plan. Daviana's Diary is priced by team size, from £25 to £120 a month including VAT, so ask on the demo how that applies to your branches.
+
+---
+
 ## How do you switch from Phorest to another salon system?
 
 Source: https://daviana.app/blog/switching-from-phorest/
