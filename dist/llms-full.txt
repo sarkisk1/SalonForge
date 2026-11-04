@@ -16,7 +16,7 @@ Daviana is one connected system that runs a whole salon. Its five products read 
 
 Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is priced by team size, from £25 a month including VAT for one person. ColorLab is for salons doing colour work.
 
-All prices include VAT. No commission on bookings, no per-booking charge, no lock-in. Full details: https://daviana.app/pricing/ . Free trial for a month, no card: https://daviana.app/trial/
+All prices include VAT. No commission on bookings, no lock-in. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. Full details: https://daviana.app/pricing/ . Free trial for a month, no card: https://daviana.app/trial/
 
 ---
 
@@ -2463,7 +2463,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Treatwell |
 | --- | --- | --- |
-| What you pay | From £25 the diary, £60 the phone, £80 colour, all inc VAT. No commission, ever. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
+| What you pay | From £25 the diary, £60 the phone, £80 colour, all inc VAT. No commission on bookings. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
 | Monthly software fee | That is the subscription above | Not published for the UK |
 | Marketplace | No | Yes — it is the business. Treatwell acts as your booking agent for marketplace clients. |
 | The phone answered by AI | Yes — answers calls and books into the same diary, £60 a month inc VAT | Yes, since 7 September 2026. Their AI Receptionist answers calls and manages appointments in the Treatwell calendar, from £69 a month |
@@ -2480,7 +2480,7 @@ Superscripts link to the source at the foot of the page.
 
 ### Where Daviana is different
 
-- A subscription instead of a share of your takings — At 35% plus VAT on first bookings, a busy month costs you more with them and the same with us. Which is cheaper genuinely depends on how many new clients you get. Work it out on your own numbers rather than taking anyone's word.
+- A subscription instead of a fee on new clients' first bookings — At 35% plus VAT on first bookings, a month with many new clients costs you more with them; with us the subscription stays the same however many new clients you get. Which is cheaper genuinely depends on how many new clients you get. Work it out on your own numbers rather than taking anyone's word.
 - We are not between you and your client — There is no marketplace, so there is no mechanism by which your client is shown another salon.
 - The parts a marketplace does not touch — Weighing colour to the gram and taking it off stock as it is used is not what a booking marketplace is for. Both of us now answer the phone with AI; ours books into the same diary that costs the colour.
 
@@ -2867,7 +2867,7 @@ Superscripts link to the source at the foot of the page. Vagaro's pages do not s
 
 ### Where Daviana is different
 
-- No fee on a new client, ever. We have no marketplace, so we never take a share of a booking. With Vagaro the 20% only applies to new clients who find you through its marketplace or partner network, and you can avoid it by delisting, but then that route to new clients closes too.
+- No fee on a new client, ever. We have no marketplace, so we never charge you for bringing in a client. With Vagaro the 20% only applies to new clients who find you through its marketplace or partner network, and you can avoid it by delisting, but then that route to new clients closes too.
 - The phone answered by voice, into the same diary. Callers talk to a receptionist that knows your prices and books into the diary the desk is looking at. Vera answers messages and texts; a caller who rings still needs a person to pick up.
 - Colour costing is ours, not a note. Weighing the bowl on a Bluetooth scale and costing it to the gram, onto the client's bill, is what ColorLab was built for.
 - Team pay without an add-on. Commission, self-employed settlement and live leaderboards come with the Diary in the Performance app. Vagaro Payroll is not offered in the UK.
@@ -3453,7 +3453,7 @@ It is the diary a salon runs on: appointments by stylist, the till and the clien
 
 ### How much does Daviana's booking system cost?
 
-£25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, all including VAT. There is no commission and no charge per booking, the first month is free, and you can cancel any month. Bar and Performance are included with it. See pricing.
+£25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more, all including VAT. There is no commission on bookings, the first month is free, and you can cancel any month. Card payments through Daviana are 1.85% + 10p in person, 1.95% + 20p online, plus VAT. Bar and Performance are included with it. See pricing.
 
 ### Can clients book online?
 
@@ -3461,7 +3461,7 @@ Yes. Make a service bookable online and clients book themselves into the same di
 
 ### Do you take commission on bookings?
 
-No. You pay a monthly subscription and that is it. We do not take a cut of your takings, we do not charge per booking, and we do not market your clients to other salons. Your client list is yours.
+No. You pay a monthly subscription, and it does not go up with the number of bookings you take. If you take card payments through Daviana, there is a fee on each card payment (1.85% + 10p in person, 1.95% + 20p online, plus VAT), which includes Stripe's own charges. We do not market your clients to other salons. Your client list is yours.
 
 ### Can I move across from Phorest or another system?
 
@@ -3579,7 +3579,7 @@ Yes. Each product is priced on its own and works on its own. They share one reco
 
 ### Does Daviana charge commission on bookings?
 
-No. Daviana is a monthly subscription. There is no per-booking charge and no commission on takings, and client lists are not marketed to other salons.
+No. Daviana is a monthly subscription, and the price does not change with the number of bookings you take. If you take card payments through Daviana, there is a fee on each card payment: 1.85% + 10p in person and 1.95% + 20p online, plus VAT, with Stripe's own charges included. Client lists are not marketed to other salons.
 
 ---
 
@@ -3621,7 +3621,7 @@ What it costs, and what it saves.
 
 It is priced per product, and every price includes VAT. Daviana Diary — the diary, till and client record — is priced by team size: £25 a month for one person, £45 for two or three, £80 for four to eight and £120 for nine or more. The AI Receptionist is £60 a month. ColorLab is £80 a month. Bar and Performance are included free once you take the Diary. Take one, take all five.
 
-It is a monthly subscription. There is no charge per booking and no commission on your clients. See pricing to tick what you need and see the total.
+It is a monthly subscription, with no commission on your bookings. Card payments through Daviana carry a fee of 1.85% + 10p in person or 1.95% + 20p online, plus VAT. See pricing to tick what you need and see the total.
 
 #### Can I take just one product?
 
@@ -3629,7 +3629,7 @@ Yes. Each product is priced on its own and works on its own — most salons star
 
 #### Do you take a commission on my bookings?
 
-No. You pay a monthly subscription and that is it. We do not take a cut of your takings, we do not charge per booking, and we do not market your clients to other salons. Your client list is yours.
+No. You pay a monthly subscription, and it does not go up with the number of bookings you take. If you take card payments through Daviana, there is a fee on each card payment (1.85% + 10p in person, 1.95% + 20p online, plus VAT), which includes Stripe's own charges. We do not market your clients to other salons. Your client list is yours.
 
 #### Is there a contract or a lock-in?
 
