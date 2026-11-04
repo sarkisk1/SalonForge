@@ -20,6 +20,165 @@ All prices include VAT. No commission on bookings, no per-booking charge, no loc
 
 ---
 
+## Which salon booking systems take deposits in the UK?
+
+Source: https://daviana.app/blog/salon-booking-system-with-deposits/
+Published: 2026-11-04
+
+Most UK salon booking systems can take a deposit when a client books online. The differences are in the detail: a percentage or a fixed amount, whether a card is saved so you can charge a no-show later, what happens to a booking nobody paid for, and who decides on a refund. Here is how seven systems handle it.
+
+### The short answer
+
+- Fresha, Booksy, Phorest, Timely, Vagaro, SalonIQ and Daviana all take deposits at booking.
+- Check whether a deposit can be a percentage, a fixed amount or both, and set by service.
+- Most systems can save a card instead, so you charge only if the client does not come.
+- Ask what happens to a booking nobody paid for, and who decides on a refund.
+- Online deposits cost more per payment than a card in the salon, so use them where no-shows hurt.
+
+A deposit only protects you if the software takes it at the right moment and handles the awkward cases well: the client who books and never pays, the one who cancels a day early, and the one who simply does not turn up. That is where systems differ, far more than in whether they take deposits at all.
+
+We make Daviana, so read our view with that in mind. Everything below about another company comes from its own pages, checked on 4 November 2026, with links under the table. If you are still deciding what your policy should say, start with our salon no-show policy template; this guide is about the software that enforces it.
+
+### What should a booking system do with deposits?
+
+- A rule by service or booking value. Colour, extensions and long treatments usually need a deposit. A fringe trim usually does not.
+- A percentage, a fixed amount, or both. A percentage scales with the booking. A minimum amount stops a deposit on a cheap service being too small to matter.
+- A deposit, or a card saved for later. Some systems let you save the card instead and charge it only if the client does not show.
+- Unpaid bookings that clear themselves. A booking held for a deposit nobody paid should not block a Saturday slot for days.
+- Keep or refund, decided by a person. When a client cancels, someone on the desk should choose, and the system should record who chose what and why.
+- The deposit off the bill on the day. It should come off the total at the till, without anyone working it out by hand.
+- Reporting. No-shows and late cancellations by client, so you can see who has missed before.
+
+### How do the main UK systems handle deposits?
+
+|  | How the deposit is set | Card saved for a later charge | Booking nobody paid for | Worth knowing |
+| --- | --- | --- | --- | --- |
+| Fresha | A deposit at booking, or card details captured instead. A no-show fee is set as a percentage of the appointment value | Yes, as an alternative to a deposit | Can cancel team-made bookings not paid within 1 to 72 hours | Cancellation terms are generated from your payment policy; you can't write your own |
+| Booksy | No-Show Protection: you pick which services need a deposit or a cancellation fee, as a percentage of the service price | Yes, for cancellation fees; you charge or waive, or set it to charge automatically | Not stated | Its help article for this is on the US help centre |
+| Phorest | Online booking deposits, in-house deposits through PhorestPay, and payment links. A no-show is charged as a percentage of the appointment or a custom amount | Yes, the card used for the deposit, if it is still stored | Not stated | Clients agree to the no-show terms on the booking confirmation screen |
+| Timely | A deposit or the full amount before the visit, depending on your settings; it comes off the final bill | Yes, stored through Stripe to charge a cancellation fee | Not stated | The page doesn't say whether deposits can be a percentage or fixed |
+| Vagaro | A percentage or fixed deposit on online bookings above a minimum price you set, for new or existing clients, or both. Manual deposits from the calendar too | Yes, you can require a card on file to book instead | Not stated | Its support pages are written for all markets, not the UK only |
+| SalonIQ | A set value or a percentage per service | Not stated | Not stated | The source is a SalonIQ article from January 2022 |
+| Daviana | Taken at online booking into the same diary the desk uses, set by percentage, minimum amount and booking value | Not part of the deposit rule; the deposit is paid up front | The hold expires on its own and the slot goes back into the diary | The desk chooses keep or refund on cancellation, and it is recorded |
+
+Sources, all checked 4 November 2026: Fresha: set up payment policies, Fresha: charge no-show and cancellation fees, Booksy No-Show Protection, Booksy: deposits and cancellation fees, Phorest: charging a no-show, Timely online payments and deposits, Vagaro: require a deposit for online booking, Vagaro: require a card on file, SalonIQ: deposits in your salon (11 January 2022).
+
+Two things stand out. First, most systems now offer a saved card as an alternative to a deposit, and say so plainly. Second, very few of them say on their public pages what happens to a booking that was made but never paid, so ask that question on any demo.
+
+### Should you take a deposit or save a card?
+
+A deposit is money already in the bank. If the client does not come, it is kept, and nothing has to be charged afterwards. That is the main reason we lean towards deposits for expensive work.
+
+A saved card is easier for the client at booking, because nothing is taken. The cost comes later: you have to charge someone who did not turn up, they may dispute it, and the conversation is harder. Phorest, for example, can only charge the card if it is still stored, and its terms rely on the client having agreed to them when booking.
+
+Plenty of salons mix the two: a deposit on colour and long treatments, and a saved card, or nothing at all, on short services and regular clients.
+
+### What does a deposit cost to take? A worked example
+
+Use your own figures. Say you take 40 colour bookings a month at £140, with a 25% deposit. That is £35 per booking, paid online.
+
+Online card payments cost more than a card in the salon. At Stripe's standard UK online rate of 1.5% + 20p, each £35 deposit costs about 73p, so 40 deposits cost about £29 a month. Our guide to salon card machine fees lists the rates for other providers, dated.
+
+Now set that against your no-shows. If 3 of those 40 clients would not have turned up, the deposits keep 3 × £35 = £105 that month, against about £29 in fees. Put in your own number of colour bookings, your price, your deposit percentage and your usual no-shows; if the kept deposits are smaller than the fees, a deposit on that service is not worth it.
+
+### Which one fits your salon?
+
+- You want a card saved rather than money taken. Booksy, Fresha, Phorest, Timely and Vagaro all describe this option on their own pages.
+- You want a fixed deposit on some services. Vagaro and SalonIQ both say you can set a fixed amount or a percentage.
+- You are on Phorest already. Its online, in-house and payment-link deposits cover most cases. Our guide to switching from Phorest covers notice dates if you are thinking of moving.
+- You want the deposit, the diary and the till in one record. Daviana's salon booking system with deposits takes the deposit at online booking into the same diary, clears unpaid holds on its own, and lets the desk keep or refund it on cancellation, with the reason recorded. It runs in six working salons, far fewer than the larger systems above, so weigh that too.
+
+### Questions salon owners ask
+
+#### Which salon booking systems take deposits in the UK?
+
+Fresha, Booksy, Phorest, Timely, Vagaro, SalonIQ and Daviana all describe taking a deposit at booking on their own pages. They differ on whether the deposit can be a fixed amount or a percentage, whether a card can be saved instead for a later no-show charge, and what happens to a booking that is never paid.
+
+#### Is it better to take a deposit or save a card on file?
+
+A deposit is money already paid, so there is nothing to chase after a no-show. A saved card is gentler at booking but means charging the client afterwards, which is harder and can be disputed. Many salons use a deposit for long or expensive work and a saved card, or nothing, for short services.
+
+#### What happens to a booking if the client never pays the deposit?
+
+That depends on the system. Fresha can cancel bookings made by the team if the deposit is not paid within a time you choose, from 1 to 72 hours. In Daviana an unpaid deposit hold expires on its own and the slot goes back into the diary. Ask any supplier how long an unpaid booking blocks the diary.
+
+#### Does Daviana take deposits?
+
+Yes. Daviana takes the deposit when the client books online, into the same diary the desk uses, with the rule set by percentage, minimum amount and booking value. When a client cancels, the desk chooses whether to keep or refund the deposit, and the choice is recorded. Booking is from £25 a month including VAT, with no commission on bookings.
+
+### Keep reading
+
+We make Daviana, so read our view with that in mind. Every feature and price below for another company comes from its own pages, checked on 3 November 2026, with links under the table.
+
+### What should salon software do for more than one location?
+
+- One client record across branches. A client who has a colour in one salon and a blow-dry in another should have one history, one set of notes and one patch-test date, not a copy in each branch.
+- Staff who work at several sites. The rota should show each shift at its own salon and stop anyone booking a stylist into one branch while they are working at another.
+- Reports for each salon and for the group. Takings, services and staff side by side, without exporting each branch into a spreadsheet.
+- Online booking by branch. The client picks the salon first, then the service and the stylist.
+- Courses, vouchers and deposits that work everywhere. A course bought in one branch should be redeemable in the next. Our no-show policy template covers the deposit wording.
+- Stock by branch. The same product at each salon, with its own count.
+- Access by role. Ask any supplier what a branch manager can see, and what only the owner can see.
+
+### How do the main options compare for a salon group?
+
+|  | Published UK price | What it says it does for groups | Contract |
+| --- | --- | --- | --- |
+| Phorest | No published price; quote on request | Centralised reporting across all locations, one shared client record, cross-location staff scheduling and commissions, group-wide memberships and marketing, role-based access | One-year term that renews, two months' notice |
+| Zenoti | Quote only. Its UK guide says to budget £400+ a month per location | Built for chains: centralised reporting, shared client profiles, cross-location booking. Its guide puts a full rollout at 4 to 8 weeks | Set in your order form, then renews for a year at a time |
+| SalonIQ | From £47 a month for a solo stylist, plus setup from £175 + VAT | Multiple locations from a single account, centralised reporting, group-level dashboards and shared client data. Says it serves 180+ UK salon groups | Pricing page: no long-term contracts, 60 days' notice. Terms: 12-month initial term, 90 days' notice |
+| Timely | From £4, £7 or £9 a week, adjusting with bookings | "Create and manage multiple locations" included in Run, Boost and Thrive | No contract, 14 days' notice |
+| Vagaro | £20 a month in the UK, plus £10 for each extra calendar up to seven | Additional locations £10 a month each in the UK. A 20% fee on new clients who find you through its marketplace | Cancel any time |
+| Daviana | £25 a month including VAT for one person, up to £120 for nine or more; first month free | Each salon on its own or the whole group together; one client record; staff across branches with overlap checks; group reports; a booking page per branch; courses that work at every branch; stock per branch. No stock transfer between branches yet, and no bulk marketing campaigns | No minimum term. Cancel any month |
+
+Sources, all checked 3 November 2026: Phorest multi-location software, Phorest UK terms, Zenoti: how UK salons use Zenoti, SalonIQ UK salon software, SalonIQ pricing, Timely pricing, Vagaro plans and pricing. Contract terms for Phorest, Zenoti and SalonIQ, and Vagaro's marketplace fee, come from their published terms and support pages, linked with dates on our Daviana vs Phorest, Daviana vs Zenoti, Daviana vs SalonIQ and Daviana vs Vagaro pages.
+
+### How does a four-branch London group run on one system?
+
+GA Salons runs four London branches on Daviana: Chelsea, Notting Hill, South Kensington and Wimbledon. Daviana was built inside these salons by the same team, so this is how we use it ourselves, not a customer case study.
+
+- One client, four doors. A client's colour history, notes and patch tests sit on one record, so a stylist in Wimbledon sees the formula mixed in Chelsea. With ColorLab, that formula is weighed and costed on the same record.
+- Stylists who move between branches. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
+- One phone line for the group. Our study of 1,844 calls to the group's shared phone line found that 49% reached nobody before an AI receptionist went live. With Aria answering when the desk cannot, that fell to 11%, and Aria books into the same diary as the desk.
+- Each salon, or the whole group. Reports run for one branch or across all four, with combined totals.
+
+Where it falls short: stock is counted per branch, but there is no transfer of stock between branches yet, and there are no bulk email or SMS campaigns.
+
+### Which one fits your group?
+
+- Ten or more sites with a head office. Zenoti or Phorest. Both are built for chains, with consolidated reporting and role-based access. Both are quote-only and on yearly terms, and Zenoti's own guide says to budget £400 or more a month per location.
+- A group that wants marketing built in. SalonIQ, which says it serves more than 180 UK groups and includes automated campaigns, or Phorest. Daviana does not run bulk campaigns today.
+- Two or three sites on a tight budget. Timely lists multiple locations in every plan from £4 a week, with no contract. Vagaro adds a location for £10 a month, but watch its 20% fee on new marketplace clients.
+- A colour-led group that wants monthly terms. Daviana's multi-site salon booking system keeps one client record across branches, with colour costing and the phone on the same record, at published prices and no minimum term. It runs in six working salons, against SalonIQ's 2,500+, so weigh the track record too.
+
+### What does reporting by hand cost a group? A worked example
+
+Say your manager spends 3 hours a week copying each branch's takings and staff figures into one spreadsheet, and their time costs £18 an hour. That is £54 a week, or £2,808 a year, before any mistakes in the copying.
+
+Now add double bookings. If a stylist is booked into two branches at the same time once a month, and each time you lose a £60 appointment, that is another £720 a year. Work it out with your own figures: hours a week spent on reports, the hourly cost of whoever does them, and how often a shared stylist is double booked.
+
+Then set that against the price difference between systems. If the group software you are looking at costs more than a single-site system, those two numbers are what it has to earn back.
+
+### Questions salon owners ask
+
+#### What is the best salon software for multiple locations in the UK?
+
+For a large chain with a head office, Phorest and Zenoti have the deepest group tooling, and Zenoti's own UK guide says to budget £400 or more a month per location. SalonIQ says it serves more than 180 UK salon groups. Timely includes multiple locations in every plan from £4 a week. Daviana runs a four-branch London group on published monthly prices with no minimum term.
+
+#### Can a client book at any branch with one record?
+
+In Daviana, yes: the client record is shared across your branches, so colour history, notes and patch tests follow the client, and online booking lets them pick the branch first. Phorest describes one shared client record, SalonIQ shared client data and Zenoti shared client profiles across locations.
+
+#### Can a stylist work at two salons in the same system?
+
+Yes, in most group systems. In Daviana a team member can be assigned to more than one branch, the rota shows each shift at its own salon, and it flags a shift that overlaps one at another branch. Phorest lists cross-location staff scheduling and commissions.
+
+#### Is salon software priced per location?
+
+Some of it is. Zenoti's UK guide says to budget £400 or more a month per location, and Vagaro charges £10 a month for each additional location in the UK. Timely lists multiple locations in every plan. Daviana's Diary is priced by team size, from £25 to £120 a month including VAT, so ask on the demo how that applies to your branches.
+
+---
+
 ## What is the best salon software for multiple locations in the UK?
 
 Source: https://daviana.app/blog/salon-software-multiple-locations-uk/
