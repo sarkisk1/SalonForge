@@ -20,10 +20,109 @@ All prices include VAT. No commission on bookings, no lock-in. Card payments thr
 
 ---
 
+## What is the best salon CRM in the UK?
+
+Source: https://daviana.app/blog/best-salon-crm-uk/
+Published: 2026-11-05
+
+A salon CRM is the client record behind your diary: every visit and spend, notes and colour formulas, consultation forms, marketing consent and the messages that bring clients back. Phorest has the deepest marketing and loyalty, Timely adds photos and SMS campaigns from £7 a week, and Daviana keeps formulas, patch tests and spend on one record.
+
+### The short answer
+
+- A salon CRM is your client record: history, notes, formulas, forms, consent and messages.
+- Phorest has the deepest marketing, loyalty and review tools, on a quote and a one-year term.
+- Fresha, Timely and Booksy publish their prices, including what each marketing message costs.
+- Keep email and SMS consent separate, so a campaign only reaches people marked yes.
+- Before you switch, check that formulas, forms and consent come across with the clients.
+
+Most salons already have a CRM, whether they call it that or not. It is the client card in the booking system. The question is what that card holds, who can see it, and whether it helps bring a client back before they drift to another salon.
+
+We make Daviana, so read our view with that in mind. Everything below about another company comes from its own pages, checked on 5 November 2026 unless a different date is given, with links under the table.
+
+### What should a salon CRM hold?
+
+- Visit and spend history. Every appointment, who did it and what the client paid, so a regular is never treated as a stranger.
+- Notes and colour formulas. The formula, the preferences and the things the next stylist should know. This matters most on the day a stylist leaves, which is why we wrote about what happens to colour formulas when a stylist leaves.
+- Consultation forms and patch tests. Signed forms saved to the client card, and the date of the last patch test visible when the next tint is booked.
+- Photos. Before-and-after pictures help with colour and skin work. Not every system has them on every plan.
+- Marketing consent, by channel. Email and SMS kept as separate switches, so you only message people who agreed to that channel.
+- Flags and tiers. Who misses appointments, who your best clients are, and who has not rebooked.
+- Access by role. What a junior can see of a client's phone number and spend, and what only the manager can see.
+
+### How do the main UK systems compare?
+
+|  | Published UK price | Client record and forms | Marketing and loyalty | Worth knowing |
+| --- | --- | --- | --- | --- |
+| Phorest | No published price; quote on request | Digital consultation and consent forms saved to the client card, before-and-after images, and flags for clients who often miss appointments | Multi-channel marketing, automated rebooking texts, Treatcard loyalty and memberships | One-year term that renews, with two months' notice. Sending forms automatically before a visit is only on certain packages |
+| Fresha | £14.95 a month on your own; £9.95 per bookable team member | Client management, consultation forms and patch tests listed as features. Photos are not listed on its pricing page | 50 marketing emails a month free (per team member on Team), then 2p each. Marketing texts 8p each. Client Loyalty add-on £49.95 per location a month | Google Rating Boost, which asks clients for a Google review, is £12.95 per location a month |
+| Timely | £4, £7 or £9 a week (Run, Boost, Thrive) | Client profiles and notes on every plan. Before-and-after photos, uploaded documents and forms sent before the visit from Boost; forms sent automatically on Thrive | SMS campaigns, Mailchimp email marketing, loyalty rewards and packages from Boost. Rebooking reminders, reconnect messages and review requests on Thrive | Texts cost 8p, 5p or 4p each, depending on the plan |
+| Booksy | £40 a month, plus £5 a month per extra team member, plus VAT | Client management, custom forms and liability waivers | Email and text marketing, with 500 marketing texts a month included, then 5p each. Memberships and packages | Appointment confirmations and reminders are free |
+| SalonIQ | From £47 a month for a solo stylist, plus setup from £175 + VAT | Shared client data and client intake | Automated email and SMS campaigns, including messages to clients who have not been in for a while. Two-way SMS is an upgrade | Pricing page: no long-term contracts, 60 days' notice. Its terms describe a 12-month initial term with 90 days' notice |
+| Daviana | From £25 a month including VAT; first month free | One client card with every visit, spend and favourite stylist; notes and colour formulas; per-client prices; patch tests valid for two years and flagged in the diary. Simpler consultation forms than Phorest or Timely | Email and SMS consent as separate switches. VIP and loyalty tiers worked out from lifetime value and visit count. A list of who has not rebooked. For email and SMS campaigns, ask us what is available today | Phorest's marketing, loyalty and review tools are deeper than ours. Reminders go by email, or by text at 6p each |
+
+Sources, checked 5 November 2026 unless a date is given: Phorest: consultation forms, before-and-after images, Treatcard and marketing, Phorest: CRM software (client flags, staff access), Phorest: automated consultation forms (15 November 2022), Phorest UK pricing, Phorest UK terms, clause 13.1 (29 October 2026), Fresha UK pricing, Timely pricing and plans, Booksy UK pricing, SalonIQ pricing, SalonIQ UK salon software and SalonIQ terms, clause 12.1 (28 October 2026).
+
+Two things stand out. Every system here holds the basics: history, notes and some kind of form. The real differences are photos, which plan your forms and campaigns sit on, and what each marketing message costs. For prices beyond the CRM, our UK salon software comparison sets out contracts and fees.
+
+### Do you need a separate CRM from your booking system?
+
+Usually not. A separate CRM means two client lists that drift apart: a new phone number saved in one and not the other, or a client who unsubscribed still getting texts. For a salon, the CRM works best as the client card inside the booking system, because that is where visits, payments and consent are recorded anyway.
+
+The exception is a group with its own marketing team, which may want a dedicated email tool fed from the booking system. Timely's Mailchimp link is an example of that approach. If you run more than one branch, our guide to salon software for multiple locations covers one client record across sites.
+
+### What is a lapsed client worth? A worked example
+
+Use your own numbers. Say 1,200 clients have visited in the last two years, and 180 of them have not been back in four months. If one message to those 180 brings 5% of them back, that is 9 visits. At an average bill of £70, that is £630.
+
+Now the cost of the message. On published prices, 180 marketing texts cost £14.40 on Fresha at 8p each, £9 on Timely Boost at 5p each, and nothing extra on Booksy if they fit inside its 500 included texts. An email costs less again. The message is cheap. What costs money is not knowing who the 180 are, so check that the system can list clients by last visit, and include only people marked yes for marketing by text.
+
+Put in your own client count, how long counts as lapsed for you, your average bill and a return rate you believe. If the answer is a few hundred pounds a month, a good lapsed-client list is worth more than most features on the demo.
+
+### Which salon CRM fits your salon?
+
+- You want marketing and loyalty to bring clients back without you. Phorest, with automated rebooking texts and Treatcard loyalty. It is quote-only and on a one-year term, so get the price in writing. SalonIQ also says its marketing reaches lapsed clients automatically.
+- A small team that wants photos and forms on a budget. Timely Boost, at £7 a week, adds before-and-after photos, forms sent before the visit and SMS campaigns.
+- You want to know what each message costs. Fresha and Booksy both publish what marketing emails and texts cost. Fresha's loyalty is an add-on at £49.95 per location a month.
+- A colour-led salon, or a group. Daviana's salon booking system and client records keep colour formulas, patch tests and spend on one card across every branch, and with ColorLab the formula is weighed and costed on the same record. For email and SMS campaigns, ask us what is available today. It runs in six working salons, far fewer than the larger systems above, so weigh that too.
+
+### What should you check before you move your client list?
+
+- Do colour formulas and notes come across, or only names and phone numbers?
+- Does marketing consent come across as it was, channel by channel? We keep whatever consent came across from your old system.
+- Do signed consultation forms and patch-test dates move, or stay behind in the old system?
+- Are photos included in the export, and in what format?
+- Who can see client phone numbers and spend after the move?
+
+Our guide to switching from Phorest covers notice dates and exports, and our questions to ask before switching salon software cover the rest. If you run a beauty salon, our beauty salon booking system guide goes deeper on forms and patch tests.
+
+### Questions salon owners ask
+
+#### What is a salon CRM?
+
+A salon CRM is the client record behind your booking system: each client's visits, spend, notes, colour formulas, consultation forms and marketing consent, plus the tools that use it to bring clients back, such as reminders, campaigns and loyalty. In most salon software it is the client card, not a separate product.
+
+#### What is the best salon CRM in the UK?
+
+It depends on what you need it to do. On their own pages, Phorest has the deepest marketing and loyalty tools, Timely Boost adds photos, forms and SMS campaigns from £7 a week, Fresha and Booksy publish what each marketing message costs, and Daviana keeps colour formulas, patch tests and spend on one record for colour-led salons and groups.
+
+#### Is a beauty salon CRM different from a hair salon CRM?
+
+The basics are the same. Beauty salons lean harder on consultation forms, patch tests and before-and-after photos, and hair salons on colour formulas. If you do hair and beauty under one roof, check both on any demo.
+
+#### Can I text all my clients a promotion?
+
+Send marketing only to the clients your consent record allows. A good salon CRM keeps email and SMS consent as separate switches, so a campaign goes only to people marked yes for that channel. Appointment reminders are a different kind of message from marketing.
+
+#### Does Daviana have a CRM?
+
+Yes. Every client has one card with every visit, spend, favourite stylist, notes, colour formulas, patch tests and per-client prices, shared across branches. Lifetime value and visit count roll up into VIP and loyalty tiers, and email and SMS consent are separate switches. Booking is from £25 a month including VAT.
+
+---
+
 ## Which salon booking systems take deposits in the UK?
 
 Source: https://daviana.app/blog/salon-booking-system-with-deposits/
-Published: 2026-11-04
+Published: 2026-11-04  ·  Updated: 2026-11-05
 
 Most UK salon booking systems can take a deposit when a client books online. The differences are in the detail: a percentage or a fixed amount, whether a card is saved so you can charge a no-show later, what happens to a booking nobody paid for, and who decides on a refund. Here is how seven systems handle it.
 
@@ -105,78 +204,6 @@ That depends on the system. Fresha can cancel bookings made by the team if the d
 #### Does Daviana take deposits?
 
 Yes. Daviana takes the deposit when the client books online, into the same diary the desk uses, with the rule set by percentage, minimum amount and booking value. When a client cancels, the desk chooses whether to keep or refund the deposit, and the choice is recorded. Booking is from £25 a month including VAT, with no commission on bookings.
-
-### Keep reading
-
-We make Daviana, so read our view with that in mind. Every feature and price below for another company comes from its own pages, checked on 3 November 2026, with links under the table.
-
-### What should salon software do for more than one location?
-
-- One client record across branches. A client who has a colour in one salon and a blow-dry in another should have one history, one set of notes and one patch-test date, not a copy in each branch.
-- Staff who work at several sites. The rota should show each shift at its own salon and stop anyone booking a stylist into one branch while they are working at another.
-- Reports for each salon and for the group. Takings, services and staff side by side, without exporting each branch into a spreadsheet.
-- Online booking by branch. The client picks the salon first, then the service and the stylist.
-- Courses, vouchers and deposits that work everywhere. A course bought in one branch should be redeemable in the next. Our no-show policy template covers the deposit wording.
-- Stock by branch. The same product at each salon, with its own count.
-- Access by role. Ask any supplier what a branch manager can see, and what only the owner can see.
-
-### How do the main options compare for a salon group?
-
-|  | Published UK price | What it says it does for groups | Contract |
-| --- | --- | --- | --- |
-| Phorest | No published price; quote on request | Centralised reporting across all locations, one shared client record, cross-location staff scheduling and commissions, group-wide memberships and marketing, role-based access | One-year term that renews, two months' notice |
-| Zenoti | Quote only. Its UK guide says to budget £400+ a month per location | Built for chains: centralised reporting, shared client profiles, cross-location booking. Its guide puts a full rollout at 4 to 8 weeks | Set in your order form, then renews for a year at a time |
-| SalonIQ | From £47 a month for a solo stylist, plus setup from £175 + VAT | Multiple locations from a single account, centralised reporting, group-level dashboards and shared client data. Says it serves 180+ UK salon groups | Pricing page: no long-term contracts, 60 days' notice. Terms: 12-month initial term, 90 days' notice |
-| Timely | From £4, £7 or £9 a week, adjusting with bookings | "Create and manage multiple locations" included in Run, Boost and Thrive | No contract, 14 days' notice |
-| Vagaro | £20 a month in the UK, plus £10 for each extra calendar up to seven | Additional locations £10 a month each in the UK. A 20% fee on new clients who find you through its marketplace | Cancel any time |
-| Daviana | £25 a month including VAT for one person, up to £120 for nine or more; first month free | Each salon on its own or the whole group together; one client record; staff across branches with overlap checks; group reports; a booking page per branch; courses that work at every branch; stock per branch. No stock transfer between branches yet, and no bulk marketing campaigns | No minimum term. Cancel any month |
-
-Sources, all checked 3 November 2026: Phorest multi-location software, Phorest UK terms, Zenoti: how UK salons use Zenoti, SalonIQ UK salon software, SalonIQ pricing, Timely pricing, Vagaro plans and pricing. Contract terms for Phorest, Zenoti and SalonIQ, and Vagaro's marketplace fee, come from their published terms and support pages, linked with dates on our Daviana vs Phorest, Daviana vs Zenoti, Daviana vs SalonIQ and Daviana vs Vagaro pages.
-
-### How does a four-branch London group run on one system?
-
-GA Salons runs four London branches on Daviana: Chelsea, Notting Hill, South Kensington and Wimbledon. Daviana was built inside these salons by the same team, so this is how we use it ourselves, not a customer case study.
-
-- One client, four doors. A client's colour history, notes and patch tests sit on one record, so a stylist in Wimbledon sees the formula mixed in Chelsea. With ColorLab, that formula is weighed and costed on the same record.
-- Stylists who move between branches. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
-- One phone line for the group. Our study of 1,844 calls to the group's shared phone line found that 49% reached nobody before an AI receptionist went live. With Aria answering when the desk cannot, that fell to 11%, and Aria books into the same diary as the desk.
-- Each salon, or the whole group. Reports run for one branch or across all four, with combined totals.
-
-Where it falls short: stock is counted per branch, but there is no transfer of stock between branches yet, and there are no bulk email or SMS campaigns.
-
-### Which one fits your group?
-
-- Ten or more sites with a head office. Zenoti or Phorest. Both are built for chains, with consolidated reporting and role-based access. Both are quote-only and on yearly terms, and Zenoti's own guide says to budget £400 or more a month per location.
-- A group that wants marketing built in. SalonIQ, which says it serves more than 180 UK groups and includes automated campaigns, or Phorest. Daviana does not run bulk campaigns today.
-- Two or three sites on a tight budget. Timely lists multiple locations in every plan from £4 a week, with no contract. Vagaro adds a location for £10 a month, but watch its 20% fee on new marketplace clients.
-- A colour-led group that wants monthly terms. Daviana's multi-site salon booking system keeps one client record across branches, with colour costing and the phone on the same record, at published prices and no minimum term. It runs in six working salons, against SalonIQ's 2,500+, so weigh the track record too.
-
-### What does reporting by hand cost a group? A worked example
-
-Say your manager spends 3 hours a week copying each branch's takings and staff figures into one spreadsheet, and their time costs £18 an hour. That is £54 a week, or £2,808 a year, before any mistakes in the copying.
-
-Now add double bookings. If a stylist is booked into two branches at the same time once a month, and each time you lose a £60 appointment, that is another £720 a year. Work it out with your own figures: hours a week spent on reports, the hourly cost of whoever does them, and how often a shared stylist is double booked.
-
-Then set that against the price difference between systems. If the group software you are looking at costs more than a single-site system, those two numbers are what it has to earn back.
-
-### Questions salon owners ask
-
-#### What is the best salon software for multiple locations in the UK?
-
-For a large chain with a head office, Phorest and Zenoti have the deepest group tooling, and Zenoti's own UK guide says to budget £400 or more a month per location. SalonIQ says it serves more than 180 UK salon groups. Timely includes multiple locations in every plan from £4 a week. Daviana runs a four-branch London group on published monthly prices with no minimum term.
-
-#### Can a client book at any branch with one record?
-
-In Daviana, yes: the client record is shared across your branches, so colour history, notes and patch tests follow the client, and online booking lets them pick the branch first. Phorest describes one shared client record, SalonIQ shared client data and Zenoti shared client profiles across locations.
-
-#### Can a stylist work at two salons in the same system?
-
-Yes, in most group systems. In Daviana a team member can be assigned to more than one branch, the rota shows each shift at its own salon, and it flags a shift that overlaps one at another branch. Phorest lists cross-location staff scheduling and commissions.
-
-#### Is salon software priced per location?
-
-Some of it is. Zenoti's UK guide says to budget £400 or more a month per location, and Vagaro charges £10 a month for each additional location in the UK. Timely lists multiple locations in every plan. Daviana's Diary is priced by team size, from £25 to £120 a month including VAT, so ask on the demo how that applies to your branches.
-
 ---
 
 ## What is the best salon software for multiple locations in the UK?
