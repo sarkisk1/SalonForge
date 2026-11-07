@@ -2616,7 +2616,7 @@ Superscripts link to the source at the foot of the page.
 
 |  | Daviana | Treatwell |
 | --- | --- | --- |
-| What you pay | £0 the diary, for any team size. Extras are optional, all inc VAT: texts 6p each, £60 a month the phone, £80 a month colour. No commission on bookings. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. | 35% plus VAT on a new client's first booking, and nothing on repeat or direct bookings within the year |
+| What you pay | £0 the diary, for any team size. Extras are optional, all inc VAT: texts 6p each, £60 a month the phone, £80 a month colour. No commission on bookings. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. | 35% plus VAT on a new client's first booking, and 0% on repeat bookings, and always 0% on bookings through your own website, social or booking widget |
 | Monthly software fee | None for the diary; extras as above | Not published for the UK |
 | Marketplace | No | Yes — it is the business. Treatwell acts as your booking agent for marketplace clients. |
 | The phone answered by AI | Yes — answers calls and books into the same diary, £60 a month inc VAT | Yes, since 7 September 2026. Their AI Receptionist answers calls and manages appointments in the Treatwell calendar, from £69 a month |
@@ -2641,7 +2641,7 @@ Superscripts link to the source at the foot of the page.
 
 #### How much commission does Treatwell take?
 
-35% plus VAT on a new client’s first booking, which works out around 42% of that first appointment. Repeat bookings from that client within a year, and any booking that comes through your own phone, website or social, are not charged. The number people find alarming is the first-booking one, so it is worth doing the arithmetic on how many genuinely new clients you get a month.
+35% plus VAT on a new client’s first booking, which works out around 42% of that first appointment. Repeat bookings are 0%, and bookings through your own phone, website, social media or Treatwell booking widget are always 0%. Clients you add when you join are never counted as new; a client only counts as new again after 365 days with no Treatwell-booked visit to you. The number people find alarming is the first-booking one, so it is worth doing the arithmetic on how many genuinely new clients you get a month.
 
 #### Do I keep my clients if I leave Treatwell?
 
@@ -3285,7 +3285,7 @@ In that example the month comes to £231.60 before the monthly fee, and most of 
 
 #### Why do salons look for a Treatwell alternative?
 
-Usually because of the commission. Treatwell charges 35% plus VAT on the first booking of each new client it brings from its marketplace, which is 42% of that appointment once VAT is added. Salons with a full diary of regulars often decide they no longer need to buy new clients at that price, and want software that is not built around a marketplace.
+Usually because of the new-client fee. Treatwell charges 35% plus VAT on the first booking of each new client it brings from its marketplace, which is 42% of that appointment once VAT is added. Salons with a full diary of regulars often decide they no longer need to buy new clients at that price, and want software that is not built around a marketplace.
 
 #### How much commission does Treatwell take?
 
