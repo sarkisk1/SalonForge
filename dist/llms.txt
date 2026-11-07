@@ -15,18 +15,18 @@ Built and run every day inside six working salons from London to Saudi Arabia, w
 - [More tools](https://daviana.app/other-software/): team performance, the salon bar and the free calculators, in one place.
 
 ## Who it is for
-Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is priced by team size, from £25 a month including VAT for one person. ColorLab is for salons doing colour work. Prices are in pounds and the guides and comparisons below are written for UK salons.
+Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is free for any team size, for as long as you use it. ColorLab is for salons doing colour work. Prices are in pounds and the guides and comparisons below are written for UK salons.
 
 ## Key facts
 - 19,949 colour formulas weighed and costed to date.
 - Running inside 6 salons, London to Saudi Arabia; partner salons in 5 countries.
 - Products share one record — booking a client in the diary is the same record the colour and the till read.
 - A live demonstration line anyone can ring, no signup: +44 7460 096908.
-- Try it free for a month, no card: https://daviana.app/trial/
+- Daviana Diary is free for any team size, no card: https://daviana.app/trial/
 
 ## Pricing
-- [Pricing](https://daviana.app/pricing/): priced per product — Daviana Diary by team size (£25 a month for one person, £45 for two or three, £80 for four to eight, £120 for nine or more), the AI Receptionist £60 a month, ColorLab £80 a month. Bar and Performance are included free once you take the Diary. All prices include VAT. Take one, take all five. No commission on bookings and no lock-in, and client lists are never marketed to other salons. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT.
-- [Start a free trial](https://daviana.app/trial/): fill in your details and confirm your mobile with a six-digit text code. Then either set the salon up yourself in about 5 minutes (add your branches and opening hours, download Daviana for Mac or Windows and log in), or book a 30-minute call where one of our salon managers moves your clients, services and prices across. Free for a month, no card, no contract.
+- [Pricing](https://daviana.app/pricing/): Daviana is free. Daviana Diary (booking diary, till, client record and online booking, with email and app reminders) costs nothing for any team size, and Bar and Performance come with it. You pay only for the extras you switch on: texts 6p each, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. No commission on bookings and no lock-in, and client lists are never marketed to other salons. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT.
+- [Start free](https://daviana.app/trial/): fill in your details and confirm your mobile with a six-digit text code. Then either set the salon up yourself in about 5 minutes (add your branches and opening hours, download Daviana for Mac or Windows and log in), or book a 30-minute call where one of our salon managers moves your clients, services and prices across. Free for good, no card, no contract.
 
 ## Questions answered
 - [Frequently asked questions](https://daviana.app/faq/): pricing, switching, data migration, setup time, hardware.
@@ -45,7 +45,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Daviana vs Booksy](https://daviana.app/compare/daviana-vs-booksy/)
 - [Daviana vs SalonIQ](https://daviana.app/compare/daviana-vs-saloniq/): price, setup, contract terms, AI receptionist, colour costing and marketing compared, with what SalonIQ does better.
 - [Daviana vs Vagaro](https://daviana.app/compare/daviana-vs-vagaro/): UK price per calendar, Vagaro's 20% new-client marketplace fee (from 14 July 2026), card rates, the Vera chatbot and colour costing compared, with what Vagaro does better.
-- [Daviana vs Zenoti](https://daviana.app/compare/daviana-vs-zenoti/): £400+ a location against £25 to £120 a month, contract and renewal terms, AI receptionist, colour costing and how to leave Zenoti
+- [Daviana vs Zenoti](https://daviana.app/compare/daviana-vs-zenoti/): £400+ a location against a free diary, contract and renewal terms, AI receptionist, colour costing and how to leave Zenoti
 - [Salon phone answering services in the UK, compared](https://daviana.app/compare/salon-phone-answering-services/): Posh, Moneypenny, Answer.co.uk, SinglePoint Calls, Ansacom, Virtual Salon Services, voicemail and Daviana's AI receptionist compared on price per call and per minute, booking and hours, with a worked example.
 - [Treatwell alternatives for UK salons](https://daviana.app/compare/treatwell-alternatives/): Fresha, Booksy, Timely, SalonIQ and Daviana compared on commission, price and notice period, including Treatwell's 35% first-booking fee.
 - [Timely alternatives for UK salons](https://daviana.app/compare/timely-alternatives/): Fresha, Booksy, Phorest, SalonIQ, Vagaro and Daviana compared on price, contract and new-client fees against Timely's from £4 a week bookings-based price.
@@ -87,5 +87,5 @@ Sourced from each company's own published pages and dated. Each states plainly w
 - [Contact](https://daviana.app/contact/): how to reach Daviana, and what to do if your question is about a specific salon booking.
 
 ## Contact
-- Book a demo (30-minute call, booked on the free-month page): https://daviana.app/trial/#book
+- Book a demo (30-minute call, booked on the sign-up page): https://daviana.app/trial/#book
 - Email: info@salonforge.com
