@@ -25,35 +25,35 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 Source: https://daviana.app/blog/free-salon-software-uk/
 Published: 2026-11-07
 
-Yes. Daviana's diary and till are free for any team size, and Square Appointments, Setmore and SimplyBook.me have free plans with limits. Fresha, Booksy and Timely charge a monthly fee. On every system, free or not, the bigger monthly cost is usually card fees and texts, so compare those before the subscription.
+Yes. Daviana's diary and till are free forever for any team size, and Square Appointments, Setmore and SimplyBook.me have free plans with limits on locations, users or bookings. Fresha, Booksy and Timely charge for the software. Daviana is the only one here that stays free with no limit on team size, bookings or branches.
 
 ### The short answer
 
-- Daviana's diary, till, client records and online booking are free for any team size; texts, the AI Receptionist and ColorLab are paid extras.
+- Daviana's diary, till, client records and online booking are free forever for any team size; texts, the AI Receptionist and ColorLab are paid extras.
 - Square Appointments is free for a single location, Setmore for up to 4 users and SimplyBook.me for one provider and 50 bookings a month.
 - Fresha, Booksy and Timely have no free plan on their pricing pages.
-- Free plans make their money on card fees, texts and upgrades. Compare those first.
+- On the software alone, only Daviana stays at £0 when a team grows past four people or opens a second branch.
 - Check what the free plan leaves out: text reminders, deposits, a second location, commission.
 
-Free means different things on different pricing pages. Some systems are free up to a cap on bookings or staff, some are free for one location only, and some make their money on every card payment. This guide sets out what each free plan includes, what it leaves out, and how to work out what a free system costs your salon in a month.
+Free means different things on different pricing pages. Some systems are free up to a cap on bookings or staff, some are free for one location only, and some make their money on every card payment. This guide sets out what each free plan includes, what it leaves out, and what each system's software costs as your team grows.
 
 We make Daviana, and our diary is free, so read our view with that in mind. Everything below about another company comes from its own pricing page, checked on the date shown, and we say where another option is the better choice.
 
 ### Which salon software is free in the UK?
 
-|  | Free plan | Limits | Paid on top | Worth knowing |
+|  | Free plan | Limits | Paid plans | Worth knowing |
 | --- | --- | --- | --- | --- |
-| Daviana | Diary, till, client records, per-stylist pricing, rota, online booking, email and app reminders: £0 a month | No limit on team size or bookings | Texts 6p each, AI Receptionist £60 a month, ColorLab £80 a month, all including VAT. Card payments 1.85% + 10p in person, 1.95% + 20p online, plus VAT | Bar and Performance (commission, tips) come with the diary. We move your clients, services and prices across by hand |
-| Square Appointments | Free plan, £0 a month | A single location | Plus (£29) or Premium (£69) per location a month for more than one location, cancellation fees, commissions and text confirmations. Card payments 1.75% in person, 1.4% + 25p online for UK cards | Text and email reminders, card on file, tap to pay on a phone and stock counts are in the free plan |
-| Setmore | Free plan, $0 a month | Up to 4 users | SMS reminders, deposits and recurring appointments are on Pro, from $5 per user a month (priced in US dollars) | Email reminders, payments through Square, Stripe or PayPal, and Reserve with Google. Setmore branding stays on the free plan |
-| SimplyBook.me | Free plan, €0 a month | 1 provider and 50 bookings a month | Payments, deposits and point of sale are on paid plans, from €11.90 a month billed annually (priced in euros) | Booking website and booking widget included |
-| Fresha | No free plan; 7-day trial | None on a paid plan | £14.95 a month on your own, or £9.95 per bookable team member. 20% of a new client's first booking through its marketplace (minimum £4). Texts: 20 free a month (per team member on Team), then 6p | Email and app notifications are free and unlimited. Card payments 1.19% + 20p in person |
-| Booksy | No free plan on its pricing page | None on a paid plan | £40 a month, plus £5 a month per extra team member, plus VAT | Appointment confirmations and reminders are free |
-| Timely | No free plan on its pricing page | None on a paid plan | £4, £7 or £9 a week (Run, Boost, Thrive) | Texts cost 8p, 5p or 4p each, depending on the plan |
+| Daviana | Free forever: diary, till, client records, per-stylist pricing, rota, online booking, email and app reminders | No limit on team size, bookings or branches | None needed: the diary is free at every size | Bar and Performance (commission, tips) come with it. We move your clients, services and prices across by hand |
+| Square Appointments | Free plan, £0 a month | A single location | Plus at £29 or Premium at £69 per location a month, for more than one location, cancellation fees and commissions | Text and email reminders, card on file and stock counts are in the free plan |
+| Setmore | Free plan, $0 a month | Up to 4 users | Pro from $5 per user a month (priced in US dollars), for SMS reminders, deposits and recurring appointments | Email reminders and Reserve with Google. Setmore branding stays on the free plan |
+| SimplyBook.me | Free plan, €0 a month | 1 provider and 50 bookings a month | From €11.90 a month billed annually (priced in euros), for payments, deposits and point of sale | Booking website and booking widget included |
+| Fresha | No free plan; 7-day trial | Not applicable | £14.95 a month on your own, or £9.95 per bookable team member a month | Email and app notifications are free and unlimited |
+| Booksy | No free plan on its pricing page | Not applicable | £40 a month, plus £5 a month per extra team member, plus VAT | Appointment confirmations and reminders are free |
+| Timely | No free plan on its pricing page | Not applicable | £4, £7 or £9 a week by plan, with unlimited team members; the price adjusts with the bookings you take | The weekly price is a starting point that rises with bookings |
 
 Sources, checked 7 November 2026 unless a date is given: Square Appointments UK pricing, Setmore pricing, SimplyBook.me pricing, Fresha UK pricing, Booksy UK pricing (5 November 2026) and Timely pricing and plans (5 November 2026). Daviana's prices are on our pricing page.
 
-Two things stand out. Only Daviana and Square have no cap on staff or bookings, and Square's cap is one location. And every system, free or paid, charges for the things that cost money to run: card payments, and usually text messages.
+One thing stands out. Every free plan here has a cap: one location for Square, four users for Setmore, one provider and 50 bookings for SimplyBook.me. Daviana's diary has none, so it stays free as the salon grows.
 
 ### What do free plans usually leave out?
 
@@ -70,28 +70,32 @@ Nobody runs a booking system for nothing. Free plans are paid for in four places
 
 Daviana earns from the paid extras: texts at 6p, the AI Receptionist at £60 a month and ColorLab at £80 a month, plus a fee on card payments taken through Daviana. There is no commission on bookings, and we are not a marketplace, so we do not market your clients to other salons. Ask every supplier the same question: where does your money come from if I pay nothing for the software?
 
-### What does free software cost in a month? A worked example
+### What does the software cost as your team grows? A worked example
 
-Use your own numbers. Say a team of three takes 400 appointments a month, sends a text reminder for each one, and takes £14,000 on card in the salon across 350 payments.
+This compares the software only: no card fees, texts or add-ons. Say a team of three in one salon, and then the same team opening a second branch.
 
-- Daviana. Software £0. Texts: 400 × 6p = £24. Card fees: 1.85% of £14,000 = £259, plus 350 × 10p = £35, so £294, or £352.80 with VAT. Total: £376.80.
-- Square Appointments Free. Software £0. Square lists text reminders in the free plan, so we count no text cost. Card fees: 1.75% of £14,000 = £245. Total: £245.
-- Fresha Team. Software: 3 × £9.95 = £29.85. Texts: 60 free, then 340 × 6p = £20.40. Card fees: 1.19% of £14,000 = £166.60, plus 350 × 20p = £70, so £236.60. If its marketplace sends 5 new clients spending £50 each, add 20% of £250 = £50. Total: £336.85.
+- Daviana. £0 a month and £0 a year, with one branch or two. The diary is free forever, at any team size.
+- Square Appointments. £0 for one location. A second branch needs Plus at £29 per location: £58 a month, £696 a year.
+- Setmore. £0, since three people fit inside the free plan's four users.
+- SimplyBook.me. Three people are over the free plan's one provider, so a paid plan, from €11.90 a month billed annually (€142.80 a year).
+- Fresha Team. 3 × £9.95 = £29.85 a month, £358.20 a year.
+- Booksy. £40 + 2 × £5 = £50 a month, £60 with VAT, £720 a year.
+- Timely Run. From £4 a week, £208 a year, rising with the bookings you take.
 
-On these numbers Square's free plan is the cheapest and Daviana is the most expensive, because our card fee is higher. What you need changes the order. Square's free plan is one location with no cancellation fees or commission tracking, and adding them means Plus at £29 a month. Daviana's free diary already covers deposits, commission and every branch. Swap in your own appointments, the share you remind by text, your card takings and the number of payments. Our guide to card machine fees for UK salons sets out more published rates, and how much salon software costs in the UK works through a full year.
+At three people in one salon, Daviana, Square and Setmore all cost nothing for the software. Grow past four people or open a second branch and only Daviana stays at £0: Setmore's free plan stops at four users and Square's at one location. Put in your own team size and number of branches. If you want the full running cost of a system, including card fees and texts, our guide to how much salon software costs in the UK works through a full year.
 
 ### Which free option fits your salon?
 
 - On your own, with a handful of bookings. SimplyBook.me's free plan covers one provider and 50 bookings a month. It takes no payments, so take cards separately.
 - A small team that wants free email reminders and Reserve with Google. Setmore's free plan covers up to 4 users. Text reminders and deposits need Pro.
-- One site where the card rate matters most. Square Appointments Free has the lowest in-person card rate here, and tap to pay on a phone, which Daviana does not offer yet.
+- One site that wants text reminders and tap to pay on a phone at no software cost. Square Appointments Free has both. Daviana does not offer tap to pay on a phone yet.
 - A hair, nail or beauty team that wants deposits, commission or more than one branch. Daviana's free salon booking system covers any team size, with Performance for commission included, and the AI Receptionist and ColorLab when you want them. Every price is on our pricing page.
 
 ### What should you check before moving to a free system?
 
 - What happens when you outgrow the limit: more staff, a second location or more bookings?
 - Do reminders go by text or by email only, and what does each text cost?
-- What is the card rate in person and online, and is VAT added?
+- What does the software cost at your team size, and with a second branch?
 - Can you export your clients and their history if you leave?
 - Who moves your clients, services and prices across, and is that charged?
 
@@ -101,7 +105,7 @@ Our 12 questions to ask before switching salon software cover the rest, and the 
 
 #### Is there completely free salon software in the UK?
 
-Yes, with limits. Daviana's diary, till, client records and online booking are free for any team size, with texts, the AI Receptionist and ColorLab as paid extras. Square Appointments is free for a single location, Setmore for up to 4 users and SimplyBook.me for one provider and 50 bookings a month. Card fees apply on all of them when you take payments.
+Yes. Daviana's diary, till, client records and online booking are free forever for any team size, with texts, the AI Receptionist and ColorLab as paid extras. Square Appointments is free for a single location, Setmore for up to 4 users and SimplyBook.me for one provider and 50 bookings a month.
 
 #### Is Daviana really free?
 
@@ -109,7 +113,7 @@ Yes. Daviana Diary, which is the booking diary, till, client record and online b
 
 #### What is the catch with free salon software?
 
-The money comes from somewhere else: card fees, texts, paid upgrades when you outgrow a limit and, on a marketplace, a fee on new clients. Compare those costs on your own numbers rather than the subscription alone.
+Usually a limit. Most free plans cap locations, users or bookings, so a growing salon moves onto a paid plan. Check the price at your team size and with a second branch before you start.
 
 #### Is there a free salon booking app for one person?
 
