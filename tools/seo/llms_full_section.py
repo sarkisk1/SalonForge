@@ -73,7 +73,9 @@ class Md(HTMLParser):
         if self.skip:
             return
         if tag in ("td", "th") and self.cell is not None:
-            self.row.append(clean(" ".join(self.cell)))
+            # chunks are joined with a space so words either side of a tag stay apart;
+            # drop the space that leaves before punctuation (e.g. a link then ";")
+            self.row.append(re.sub(r" ([;.,:)])", r"\1", clean(" ".join(self.cell))))
             self.cell = None
         elif tag == "tr":
             self.rows.append(self.row)
