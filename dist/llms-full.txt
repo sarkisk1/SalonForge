@@ -20,6 +20,89 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 
 ---
 
+## What is the best booking system for a lash and brow studio in the UK?
+
+Source: https://daviana.app/blog/lash-and-brow-booking-system-uk/
+Published: 2026-11-11
+
+The best booking system for a lash and brow studio records patch tests on the client, takes a deposit on long appointments such as a full set, and makes the next infill easy to book. Booksy and Fresha bring new clients for a fee, Timely and Square suit a full book of regulars, and Daviana is free for any team size.
+
+### The short answer
+
+- A patch test on the client record, with its date, matters for tints, lash lifts, brow lamination and extension adhesive.
+- A full set runs long. Take a deposit or prepayment at booking, so a no-show does not cost you two hours.
+- Infills keep the diary full. Book the next one before the client leaves, or pick a system that reminds them.
+- Marketplace apps charge once for each new client. Lash clients come back every few weeks, so the fee can pay for itself. The worked example below shows when.
+- Free plans exist: Square for one location, Setmore for up to four users, and Daviana for any team size.
+
+A lash and brow diary is not like a hair diary. A full set of extensions can take two hours, the client is due back for an infill two or three weeks later, and a tint, lash lift or lamination needs a patch test first. The booking system has to hold the long appointment, protect it with a deposit, and show the patch-test date to whoever takes the booking.
+
+We make Daviana, so read our view with that in mind. Every price and feature below for another company comes from its own pages, checked on 11 November 2026, with links under the table. Where another system fits a lash or brow studio better than ours, we say so.
+
+### What does a lash and brow studio need from a booking system?
+
+- Patch tests on the client record. Makers of tints, lift and lamination lotions and extension adhesives usually ask for a skin test 24 to 48 hours before the treatment, and your insurer may set its own rule. The date of the last test should be visible when the appointment is booked, not on the day.
+- Deposits on long appointments. A no-show on a two-hour full set costs far more than a missed brow wax. Look for a deposit or prepayment at booking, and a clear rule for late cancellations. Our no-show policy template gives wording you can copy.
+- Easy infill rebooking. Infills are repeat income. Check how the next infill gets booked: by hand at the end of the appointment, as a repeating appointment, or by an automatic reminder.
+- The right technician for each treatment. Online booking should only offer volume lashes or lamination with the people trained to do them.
+- Forms and aftercare. A consultation or consent form on the client card, and aftercare advice that reaches the client after the visit.
+- Reminders by text. Check what a text costs and how many are included. Some free plans send email reminders only.
+
+### How do the main options compare for a UK lash and brow studio?
+
+|  | Published price | Patch tests and forms | Deposits and reminders | Rebooking and waiting list | New clients |
+| --- | --- | --- | --- | --- | --- |
+| Booksy | £40 a month plus £5 per extra user, plus VAT. 7-day free trial | Documentation and custom forms. Patch tests are not mentioned on its lash and brow page | Prepayments, cancellation fees and client cards on file. Appointment reminders are free | Not stated on the pages we checked | Marketplace listing included. With Boost on, a one-time 30% of a new client's first visit |
+| Fresha | £14.95 a month on your own; £9.95 per team member, plus VAT | Patch tests and consultation forms listed as features | Upfront payments, no-show and cancellation fees. 20 free texts per team member, then pay as you go | Waitlists listed as a feature | Marketplace. A one-time fee for each new marketplace client: 20%, minimum £4, when we last saw the figure on 13 October 2026 |
+| Timely | From £4, £7 or £9 a week, adjusting with bookings. Unlimited team members | Consultation forms sent before appointments from the Boost plan. Patch tests are not mentioned on its pricing page | Deposits and cards on file on every plan. Cancellation fees from Boost | Waitlist from Boost. Rebooking reminders on Thrive | No new client fees. No contract, 14 days' notice |
+| Square Appointments | Free for a single location. Plus £29 and Premium £69 a month per location | Patch tests are not mentioned on its pricing page | Prepayments and text and email reminders on the free plan. Cancellation policy and fees from Plus | Waitlist from Plus | No marketplace |
+| Setmore | Free for up to 4 users. Pro from $5 per user a month, billed yearly (prices shown in US dollars) | Not mentioned on its pricing page | Deposits and text reminders on Pro. The free plan sends email reminders only | Recurring appointments on Pro | No marketplace |
+| Daviana | Diary, till and online booking free for any team size. Texts 6p each | Patch-test records valid for two years, flagged on the appointment in the diary. Simpler consultation forms than Timely | Deposit taken at online booking. Email and app reminders free | No repeating appointments yet. The waiting list is worked by the desk, with no automatic message to the client | No marketplace, no commission on bookings |
+
+Sources: Booksy for brows and lashes, Booksy UK pricing, Fresha UK pricing, Timely pricing, Square Appointments UK pricing and Setmore pricing, all checked 11 November 2026.
+
+Fresha's pricing page describes its new-client fee without the percentage on the day we checked, so that figure carries its own date. Prices for Booksy and Fresha are before VAT. For how each system handles a deposit in detail, see which salon booking systems take deposits, and for every free plan and its limits, see free salon software in the UK.
+
+### Is a marketplace fee worth it for a lash technician? A worked example
+
+Say a full set is £70 and a client who stays comes back every three weeks for a £40 infill. Over six months that is about eight infills: £320, on top of the £70 first visit. With Booksy's Boost switched on, the one-time fee on that new client is 30% of the first visit, which is £21. You pay £21 to win £390 of work.
+
+Now assume only one new client in three comes back. Three first visits cost 3 × £21 = £63 in fees and bring 3 × £70 = £210, plus £320 from the one who stays: £530 in all. The fee is still about 12% of the money it brought in.
+
+The sum turns against you in two cases: when most new clients are one-offs, such as lashes for a holiday or a wedding, and when your diary is already full and the marketplace is charging you for clients you would have turned away. Put in your own figures: the price of a full set, the price of an infill, the weeks between infills, and the share of new clients who come back.
+
+### Which one fits your lash or brow studio?
+
+- A solo lash or brow technician building a client list. Booksy or Fresha. Both put you in front of people searching their apps, and both take prepayments. Budget for the one-time fee on each new client.
+- A solo technician with a full book. Square Appointments is free for one location, with text reminders and prepayments. Timely, from £4 a week, takes deposits on every plan and has no new client fees.
+- A mobile technician. Timely lists Tap to Pay on a phone on every plan, and Square takes contactless payments on a phone with no extra hardware. Daviana does not offer tap to pay on a phone yet.
+- A studio that wants infill reminders and a waiting list. Timely has a waitlist from Boost and rebooking reminders on Thrive.
+- A studio with a team, or lashes and brows inside a hair or beauty salon. Daviana's lash and brow booking system is free for any team size, takes a deposit at online booking, and keeps patch tests on the same client record as hair and beauty visits. It is not a marketplace, so it will not bring you new clients, and it has no repeating appointments yet. If your salon does more than lashes and brows, our beauty salon booking system guide covers courses and consultation forms.
+
+### Questions lash and brow technicians ask
+
+#### What is the best booking app for lash techs in the UK?
+
+It depends on whether you need new clients. Booksy, at £40 a month plus VAT, and Fresha, at £14.95 a month plus VAT, both list you on a marketplace and charge a one-time fee on each new client it brings. With a full book of regulars, Square Appointments is free for one location, Timely starts at £4 a week, and Daviana is free for any team size.
+
+#### Which booking systems record patch tests for lash and brow treatments?
+
+Fresha lists patch tests as a feature on its UK pricing page. Daviana keeps patch-test records on the client, valid for two years, with a flag on the appointment in the diary. The Booksy, Timely, Square and Setmore pages we checked do not mention patch tests, so ask each of them how a test is recorded and when the desk is warned.
+
+#### How do I stop no-shows for full sets and long lash appointments?
+
+Take money at booking. Booksy has prepayments and cancellation fees, Fresha has upfront payments and no-show fees, Timely takes deposits on every plan, Square has prepayments on its free plan, and Daviana takes a deposit when the client books online. Setmore keeps deposits for its Pro plan.
+
+#### Is there a free booking system for lash technicians?
+
+Yes. Square Appointments is free for a single location, with text and email reminders and prepayments. Setmore is free for up to 4 users, with email reminders only. Daviana's diary, till and online booking are free for any team size, with email and app reminders free and texts at 6p each. Card payments carry a fee on all three.
+
+#### Can a booking system remind clients to book their next infill?
+
+Some can. Timely lists rebooking reminders on its Thrive plan, from £9 a week, and Setmore lists recurring appointments on Pro. Daviana has no repeating appointments yet, so the next infill is booked by hand before the client leaves. Whichever system you use, booking the next visit at the end of the appointment is the surest way to keep the gap at two or three weeks.
+
+---
+
 ## Is there free salon software in the UK?
 
 Source: https://daviana.app/blog/free-salon-software-uk/
@@ -490,7 +573,7 @@ Sources: Phorest UK terms and conditions (clauses 13.1 and 13.4), How can I expo
 ## What is the best booking system for a beauty salon in the UK?
 
 Source: https://daviana.app/blog/best-booking-system-beauty-salon-uk/
-Published: 2026-10-27  ·  Updated: 2026-11-06
+Published: 2026-10-27  ·  Updated: 2026-11-11
 
 The best booking system for a beauty salon keeps patch tests and consultation forms on the client record, sells courses of treatments, and only offers each treatment with therapists trained in it. Fresha lists consultation forms and patch tests, Phorest and Timely send digital consultation forms, and Daviana suits salons where hair and beauty share one diary.
 
@@ -513,6 +596,7 @@ We make Daviana, so read our view with that in mind. Every price and feature bel
 - Courses and packages. Sell six sessions at once, take payment up front, and count down what each client has left.
 - The right therapist. Online booking should only offer each treatment with the people trained to do it.
 - Deposits and no-show rules. Long treatments and new clients are where a deposit earns its keep. Our no-show policy template gives wording you can copy.
+- Lashes and brows. Full sets, infills and lamination have their own needs. See our lash and brow booking system guide.
 - One record for hair and beauty. If your salon does both, a brow tint and a colour should sit on the same client, with the same allergy history.
 
 ### How do the main options compare for a UK beauty salon?
@@ -534,7 +618,7 @@ Sources: Fresha UK pricing, Booksy UK pricing, Treatwell partner pricing, Timely
 - A clinic-style salon doing skin treatments. Phorest has the deepest consultation forms of the systems here, with before-and-after photos on the client card. It is quote-only and on a one-year term, so get the price in writing.
 - A small team with a full book of regulars. Timely, from £4 a week with unlimited team members, consultation forms, packages and no new client fees, is the cheapest to start.
 - A salon that wants to be listed on Treatwell. Treatwell, if a 35% fee on first bookings works for your prices.
-- A salon doing hair and beauty together. Daviana's beauty salon booking system keeps patch tests, courses and colour history on one client record, and its AI receptionist books several services as one visit. It books by therapist, not by room, so if your treatment rooms need booking on their own, test that on any demo. For a beauty-only team it costs more than Fresha or Timely.
+- A salon doing hair and beauty together. Daviana's beauty salon booking system keeps patch tests, courses and colour history on one client record, and its AI receptionist books several services as one visit. It books by therapist, not by room, so if your treatment rooms need booking on their own, test that on any demo. The diary is free for any team size, so for a beauty-only team the cost is the paid extras you switch on.
 
 ### What does a missing patch test cost? A worked example
 
