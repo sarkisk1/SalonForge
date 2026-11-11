@@ -56,6 +56,7 @@ Sourced from each company's own published pages and dated. Each states plainly w
 
 ## Journal
 - [All journal posts](https://daviana.app/blog/): practical writing for salon owners on booking, colour cost, missed calls, stock and pay.
+- [What is the best booking system for a lash and brow studio in the UK?](https://daviana.app/blog/lash-and-brow-booking-system-uk/): patch tests, infills, deposits and new-client fees for UK lash and brow studios; Booksy, Fresha, Timely, Square Appointments, Setmore and Daviana compared, with a worked example of when a marketplace fee pays for itself.
 - [Is there free salon software in the UK?](https://daviana.app/blog/free-salon-software-uk/): free plans from Daviana, Square Appointments, Setmore and SimplyBook.me compared on limits and what they leave out; Fresha, Booksy and Timely have no free plan; and what the software costs a team of three with one branch or two.
 - [What is the best hair colour management software for UK salons?](https://daviana.app/blog/best-hair-colour-management-software/): Vish, SalonScale, Color Bar Manager and Daviana ColorLab compared for UK salons: prices, scales, booking system fit, and which suits which salon.
 - [What is the best AI receptionist for a UK salon?](https://daviana.app/blog/best-ai-receptionist-for-salons-uk/): AI receptionists for UK salons compared: Fresha, Booksy, Treatwell, Salon Agent, Zenoti, Qlient and Daviana Aria. Prices, and which diary each books into.
