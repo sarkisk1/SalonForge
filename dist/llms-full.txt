@@ -20,6 +20,93 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 
 ---
 
+## What is the best booking system for a beauty clinic in the UK?
+
+Source: https://daviana.app/blog/booking-system-for-beauty-clinics-uk/
+Published: 2026-11-12
+
+The best booking system for a beauty clinic keeps consultation forms, patch tests and courses on one client record and takes a deposit on long treatments. Phorest and Timely have the deepest forms, Pabau adds rooms and clinical records, and Daviana's diary is free for any team size. If you give prescribed injectables, use specialist aesthetics software.
+
+### The short answer
+
+- Keep consultation and consent forms, patch tests and courses on one client record, not in a paper folder.
+- Laser and skin work is sold in courses. The system should take payment up front and count down what each client has left.
+- If one machine limits your diary, you need room or equipment booking. Pabau has it; Daviana books by therapist.
+- Prescribed injectables need prescriber and batch records. Use specialist aesthetics software for that work.
+- Daviana's diary is free for any team size, and Timely starts at £4 a week.
+
+A beauty clinic sits between a salon and a medical practice. A course of laser hair removal, a skin peel or a facial needs a consultation on file before the first session, often a patch test, and a record of what was done each time. The diary has to hold all of that against the right client, and show it to whoever takes the booking.
+
+We make Daviana, so read our view with that in mind. Every price and feature below for another company comes from its own pages, with the date we checked under the table. Where another system fits a clinic better than ours, we say so.
+
+### Is your clinic a beauty clinic or an aesthetics clinic?
+
+This guide is for clinics that call themselves beauty, skin or laser clinics but do not give prescription-only treatments: facials and peels, laser and IPL hair removal, microneedling with cosmetic products, lash and brow treatments, waxing and body treatments. For that work, good salon software does the job.
+
+It is not for clinics that give prescribed injectables. Botulinum toxin is a prescription-only medicine in the UK, so the record needs a prescriber and the product batch on each treatment, and you will want medical charting. Daviana has no prescriber or batch-number records, and neither do the general salon systems in this guide. When we checked Google UK on 2 November 2026, the software that came up for aesthetics clinics was specialist: Pabau, Consentz and Aesthetic Nurse Software among others. Start there.
+
+### What does a beauty clinic need from a booking system?
+
+- Consultation and consent forms on the client card. Sent before the visit or filled in at the clinic, signed, and easy to find again two years later.
+- Patch tests with a date. Tints, some peels and laser usually need a test first. The date of the last test should show when the appointment is booked, not on the day.
+- Courses of treatments. Laser and skin work is sold in courses. Take payment up front and count down the sessions each client has left.
+- Deposits on long or high-value treatments. Our guide to booking systems that take deposits compares how each one does it, and the no-show policy template gives wording you can copy.
+- The right therapist for each treatment. Online booking should only offer laser or peels with people trained to do them.
+- Rooms and machines. If you have one laser and two therapists, the machine is the limit, not the people. Check whether the system books rooms and equipment on their own.
+
+### How do the main options compare for a UK beauty clinic?
+
+Columns: published price | forms and patch tests | photos and records | courses and rooms | contract and new clients
+- Phorest | No published price; quote on request | Digital consultation forms sent by SMS or email before the visit, with signatures. Not in every package | Before-and-after photos on the client card | Not covered on the pages we checked | One-year term that renews, two months' notice |
+- Timely | From £4, £7 or £9 a week, adjusting with bookings. Unlimited team members | Forms built in the Consult app, sent before appointments from Boost and automatically on Thrive. Patch tests are not mentioned on its pricing page | Before-and-after photos and uploaded documents from Boost | Packages: clients can buy services in bulk | No contract, 14 days' notice |
+- Fresha | £14.95 a month on your own; £9.95 per team member, plus VAT | Consultation forms and patch tests listed as features | Not covered on its pricing page | Not covered on its pricing page | Marketplace. A one-time fee per new marketplace client: 20%, minimum £4, when we last saw the figure on 13 October 2026 |
+- Pabau | From $104 a month for one user (US dollars on its pricing page). Price set by location and number of users; up to 20% off yearly | Form builder and paperless forms; clinical records, patient portal and ePrescribe | Photo upload and photo compare | Rooms and equipment in its scheduling | Contract terms not stated on its pricing page |
+- Daviana | Diary, till and online booking free for any team size. Texts 6p each | Consultation and consent forms kept on the client card. Simpler forms than Phorest or Timely. Patch tests valid for two years, flagged on the appointment in the diary | No prescriber or batch-number records | Courses sold and redeemed at the till. Books by therapist, not by room | No contract, no commission on bookings |
+Sources: Pabau pricing, checked 12 November 2026; Timely pricing and Fresha UK pricing, checked 11 November 2026; Phorest consultation forms, checked 10 November 2026; Phorest UK pricing and its UK terms, checked 29 October 2026.
+
+Pabau publishes its starting price in US dollars and sets the final price by country and team size, so ask for a UK quote in writing. Fresha prices are before VAT. Zenoti, built for salon, spa and medspa chains, does not publish prices; our Daviana vs Zenoti comparison covers what its own UK guide says to budget.
+
+### What does a course cost you if the count lives on paper? A worked example
+
+Say you sell a course of six laser sessions for £360, paid up front, so each session is worth £60. You sell ten courses a month. That is £3,600 taken before the work is done, and 60 sessions you now owe clients.
+
+Now say the count lives on a card at the desk, and one session in 20 gets missed off: the client has a session that is never crossed out. That is 3 sessions a month given away, or £180 a month and £2,160 a year. The same slip the other way, where a client is told they have used a session they have not, costs less money and more trust.
+
+Put in your own figures: the price of a course, the sessions in it, the courses you sell a month, and how often your desk loses count. A system that counts down the course on the client record, at the till, brings that last number close to zero.
+
+### Which one fits your beauty clinic?
+
+- A skin or laser clinic that wants the deepest forms and photos. Phorest has detailed consultation forms with before-and-after photos on the client card. It is quote-only and on a one-year term, so get the price in writing.
+- A small clinic on a budget. Timely, from £4 a week with unlimited team members, sends forms from Boost and has packages, with no contract.
+- A clinic where rooms and machines set the diary. Pabau books rooms and equipment and keeps clinical records. It is also the one to look at if you add prescribed treatments later.
+- A clinic that wants new clients from an app. Fresha lists consultation forms and patch tests, and its marketplace brings new clients. Budget for the fee on each one.
+- A clinic inside a salon, or a group with several sites. Daviana's beauty clinic booking system is free for any team size and keeps patch tests, courses and forms on the same client record as hair and beauty visits, across every site. Our guide to salon software for multiple locations covers the group side. It books by therapist, not by room, and has simpler forms than Phorest or Timely, so if your machines need booking on their own, test that on any demo.
+If your clinic is mostly lashes and brows, our lash and brow booking system guide goes further on infills and deposits, and the beauty salon booking system guide compares consultation forms system by system.
+
+### Questions beauty clinic owners ask
+
+**What is the best booking software for a beauty clinic in the UK?**
+
+It depends on what you treat. For facials, laser, skin and lash or brow work, look for consultation forms, patch tests and courses on the client record. Phorest and Timely have the deepest consultation forms, Pabau adds room and equipment booking with clinical records, and Daviana's diary is free for any team size. If you give prescribed injectables, use specialist aesthetics software instead.
+
+**Can I use salon software for an aesthetics clinic that does injectables?**
+
+Usually not on its own. Botulinum toxin is a prescription-only medicine in the UK, so you need a prescriber on record and the product batch on each treatment. Daviana has no prescriber or batch-number records. Specialist aesthetics systems such as Pabau, Consentz and Aesthetic Nurse Software are built for that work.
+
+**Which booking systems have consultation and consent forms?**
+
+Phorest sends digital consultation forms by SMS or email before the visit, though not on every package. Timely sends forms from its Boost plan and automatically on Thrive. Fresha lists consultation forms and patch tests on its UK pricing page, and Pabau has a form builder and paperless forms. Daviana keeps simpler consultation and consent forms on the client card, next to patch tests and visit history.
+
+**Can a beauty clinic booking system sell courses of treatments?**
+
+Yes. Timely lets clients buy services as a package, and Daviana sells courses at the till and counts the sessions each client has left. In Daviana a course is sold at the till today, not online, so ask any system whether clients can buy a course when they book.
+
+**Is there a free booking system for a beauty clinic?**
+
+Daviana's diary, till and online booking are free for any team size, with texts at 6p each. Square Appointments is free for a single location. Timely starts at £4 a week. Card payments carry a fee on all of them, and the free plans do not cover prescribed treatments.
+
+---
+
 ## What is the best booking system for a lash and brow studio in the UK?
 
 Source: https://daviana.app/blog/lash-and-brow-booking-system-uk/
