@@ -3,6 +3,7 @@
 
     python3 tools/seo/llms_full_section.py dist/compare/daviana-vs-vagaro/index.html
     python3 tools/seo/llms_full_section.py --check        # list pages missing from llms-full.txt
+    python3 tools/seo/llms_full_section.py --drift        # list sections that no longer match the live page
 
 The section follows the existing llms-full.txt shape: "## <H1>", Source,
 Published/Updated (from the page's JSON-LD), then the article body with page
@@ -173,8 +174,48 @@ def check():
     return 1 if missing else 0
 
 
+def _norm(line):
+    line = line.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+    line = re.sub(r"^[#>\-\s|]+", "", line)
+    return re.sub(r"[\s|*]+", " ", line).strip().lower()
+
+
+def drift():
+    """List /blog/ and /compare/ sections whose text no longer matches the page.
+
+    Sections are the blocks between "---" lines. Heading levels, table style
+    and quote marks are ignored; a page line missing from its section, or a
+    different Published/Updated line, counts as drift.
+    """
+    chunks = Path("dist/llms-full.txt").read_text().split("\n---\n")
+    bad = 0
+    for d in ("blog", "compare"):
+        for p in sorted(Path("dist", d).glob("*/index.html")):
+            new = section(p)
+            src = f"Source: {SITE}/{d}/{p.parent.name}/"
+            hit = [c for c in chunks if src in c]
+            if len(hit) != 1 or hit[0].count("\nSource: ") != 1:
+                print(f"{d}/{p.parent.name}: section missing, repeated or not separated by ---")
+                bad += 1
+                continue
+            old = " ".join(_norm(l) for l in hit[0].splitlines())
+            missing = [l for l in new.splitlines()
+                       if _norm(l) and not l.startswith(("Published", "| ---")) and _norm(l) not in old]
+            od = re.search(r"^Published.*", hit[0], re.M)
+            nd = re.search(r"^Published.*", new, re.M)
+            dates_differ = (od.group(0) if od else None) != (nd.group(0) if nd else None)
+            if missing or dates_differ:
+                print(f"{d}/{p.parent.name}: {len(missing)} page lines not in its section"
+                      + ("; dates differ" if dates_differ else ""))
+                bad += 1
+    print("llms-full.txt matches every /blog/ and /compare/ page" if not bad else f"{bad} sections drifted")
+    return 1 if bad else 0
+
+
 if __name__ == "__main__":
     if sys.argv[1:] == ["--check"]:
         sys.exit(check())
+    if sys.argv[1:] == ["--drift"]:
+        sys.exit(drift())
     for a in sys.argv[1:]:
         sys.stdout.write(section(a))
