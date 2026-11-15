@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-11-14. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-15. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -2152,12 +2152,12 @@ Lead with the unrecorded-use explanation before any other one. Most gaps trace b
 
 ---
 
-## 12 questions to ask before switching salon software
+## What should you ask before switching salon software?
 
 Source: https://daviana.app/blog/questions-before-switching-salon-software/
-Published: 2026-07-24  ·  Updated: 2026-11-06
+Published: 2026-07-24  ·  Updated: 2026-11-15
 
-Twelve real questions to put to any salon software provider, with honest answers — including the ones where the honest answer is "it depends". Ask them of us and of anyone else on your list.
+Before you switch salon software, ask four things: who owns your client data and whether you can export it yourself, how the changeover runs on your first Saturday, what each stylist costs as your team changes, and how you leave. Here are twelve questions in those four groups, a first-year cost example, and our own answers.
 
 ### The short answer
 
@@ -2171,7 +2171,7 @@ A salon changes its booking software about as often as it repaints the front des
 
 These are the twelve worth asking. Ask them of us and ask them of anyone else on your shortlist. The honest answer to several of them is “it depends” — what matters is whether the person answering can tell you what it depends on.
 
-### The shortlist
+### What are the four things to check first?
 
 | Ask about | Why it matters |
 | --- | --- |
@@ -2180,7 +2180,7 @@ These are the twelve worth asking. Ask them of us and ask them of anyone else on
 | Per-stylist pricing | Decides what growth actually costs you |
 | The exit | Decides what happens if this goes wrong |
 
-### Your data
+### Who owns your data, and can you take it with you?
 
 #### 1. Who owns your client and appointment data — and can you export it yourself, any time you like?
 
@@ -2196,7 +2196,7 @@ There is a real difference between a plain file — the kind any other software 
 
 The honest answer to most of these questions is “it depends” — the provider willing to say what it depends on is telling you more than the one with a rehearsed yes.
 
-### The changeover
+### How will the changeover actually go?
 
 #### 4. How long does the changeover really take, start to finish?
 
@@ -2210,7 +2210,7 @@ This is the question that separates a provider who has done this before from one
 
 Ask whether training happens in person or over a call, once or on an ongoing basis, and what happens for the self-employed stylist who only works part of the week and misses the session entirely. A one-off training day works for a salon that is fully staffed and available. Most salons are not.
 
-### The money
+### What will it really cost you?
 
 #### 7. What does it cost when you add a stylist — or lose one?
 
@@ -2231,7 +2231,23 @@ Ask specifically about the phone, colour weighing, card payments, and the rota. 
 | Card payments | Is processing included, or billed separately? |
 | The phone | Does anything answer calls when the desk is busy, and at what cost? |
 
-### Getting out
+### What would switching cost you in the first year?
+
+The monthly price is only one line. Put your own figures into the four lines below. The numbers in the example column are made up for a six-stylist salon, not any provider’s real prices.
+
+| Line | Example | Yours |
+| --- | --- | --- |
+| Notice you still owe on the old system | 2 months × £180 = £360 | months of notice × your monthly bill |
+| Setup or data-move fee on the new system | £250 | ask for the number in writing |
+| Twelve months of the new system for the whole team | 6 stylists × £25 × 12 = £1,800 | stylists × price per stylist × 12 |
+| Extras you would switch on (texts, phone, colour) | £0 | each extra’s monthly price × 12 |
+| First-year cost of switching | £2,410 | add the four lines |
+
+Now work out what staying costs: twelve months of your current bill, here 12 × £180 = £2,160. In this example the switch costs £250 more in the first year and saves £360 a year from the second year on. The notice line is usually what tips the first year, so check your notice date before you agree a go-live date.
+
+Run the same sum for Daviana and two of the lines are zero: the diary, till, client records and online booking are free for your whole team, and moving your clients, services and prices across is done by us, by hand, at no charge. You would pay only the notice on your old system and any extras you choose, such as the AI Receptionist or ColorLab. Full prices are on the pricing page.
+
+### How easy is it to leave?
 
 #### 10. What happens if you decide to leave?
 
@@ -2255,10 +2271,10 @@ We said to ask these of us too, so here are our answers. Every one is taken from
 | 2. What happens to the history? | Notes and colour history are the messiest data in any salon. Bring an example of your current records to the call and we will tell you honestly what carries across and what does not. |
 | 4. How long does the changeover take? | It depends on the size of the salon and how much history is coming across. We plan it around your quietest week, so it does not land on a Friday. |
 | 5. What happens on the first Saturday? | The phone and colour can go live before the diary moves. Running two diaries at once is the one thing we talk salons out of, because that is how double-bookings happen. |
-| 7. What does a stylist cost? | We are straight about how our pricing scales with headcount on the call. Ask everyone on your list the same question. |
+| 7. What does a stylist cost? | Nothing. The diary, till, client records and online booking are free for your whole team, any team size, employed or self-employed, for as long as you use Daviana. Ask everyone else on your list the same question. |
 | 8. Is there a setup fee? | No. We move your clients, services and prices across by hand. It is part of the job, not a line on an invoice. |
-| 9. What is in the price? | Priced per product, VAT included: the Diary is £80 a month, the AI Receptionist £60 and ColorLab £80. Bar and Performance are included free with the Diary. |
-| 11. Is there a contract? | Starting needs no card and no contract. Ongoing terms are covered on the call. |
+| 9. What is in the price? | The Diary is free. You pay only for the extras you switch on, VAT included: texts are 6p each, the AI Receptionist is £60 a month and ColorLab £80 a month. Bar and Performance are included with the Diary. |
+| 11. Is there a contract? | No. There is no contract, no card to start and no commission on your bookings. Your data is yours and you can export it. |
 | 12. Who answers when it breaks? | The people who build it. We run six salons ourselves, so a Saturday going wrong is the same day of the week that hurts us. |
 
 ### Moving from a specific system?
@@ -2267,7 +2283,7 @@ If you already know what you are leaving, these pages go through the realistic o
 
 When you start free, the form asks which system you use now (Fresha, Booksy, Treatwell, Phorest, Timely, Shortcuts, Zenoti, Vagaro, a paper diary or something else), and one tick asks us to move your clients, services and prices across for you.
 
-### The question underneath all the others
+### What is the one question underneath all the others?
 
 Can you get your data out, in a form you can use, without a fight? Every question on this list is really that one question, asked about time, money, or a phone call on a Monday morning.
 
@@ -2298,6 +2314,10 @@ Some providers run rolling monthly terms, others tie you into a year or more wit
 #### Will Daviana move my data across from my current system?
 
 Yes. We move your clients, services and prices across by hand, and there is no setup fee for it. When you sign up, tell us which system you use now and tick the box to have your data moved. Notes and colour history vary most between systems, so bring an example and we will tell you what carries across.
+
+#### How do I compare the cost of switching salon software?
+
+Add up four lines: the notice you still owe on your old system, any setup fee on the new one, twelve months of the new price for your whole team, and the extras you would switch on. Compare that total with twelve months of staying where you are. The notice period is usually what makes the first year cost more.
 
 ---
 
