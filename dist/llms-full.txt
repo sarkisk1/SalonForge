@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-11-15. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-17. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -17,6 +17,110 @@ Daviana is one connected system that runs a whole salon. Its five products read 
 Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is free for any team size. ColorLab is for salons doing colour work.
 
 Daviana is free: the Diary (booking diary, till, client record and online booking, with email and app reminders) costs nothing for any team size, and Bar and Performance come with it. You pay only for the extras you switch on: texts 6p each, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. No commission on bookings, no lock-in. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. Full details: https://daviana.app/pricing/ . Start free, no card: https://daviana.app/trial/
+
+---
+
+## How do you switch from Zenoti to another salon system?
+
+Source: https://daviana.app/blog/switching-from-zenoti/
+Published: 2026-11-17
+
+To switch from Zenoti, find your term end date in your order form and send written notice at least 60 days before it. Export clients, appointments, services and every liability report while you still have access, copy guest notes and forms by hand, and request Zenoti's final CSV within 30 days of the end.
+
+### The short answer
+
+- Zenoti's published terms renew your contract for a year at a time once the first term in your order form ends. Notice has to arrive at least 60 days before the term ends.
+- Miss it and you are in for another year, and fees can rise by up to 20% at renewal unless your order form says otherwise.
+- Zenoti's own help page lists an export for almost everything, but guest notes, forms and their photos can't be exported in bulk.
+- Zenoti can switch off your access when the contract ends. Export before then; the final CSV from Zenoti has to be asked for in writing within 30 days.
+
+Zenoti is built for chains, so leaving it is usually a project rather than an afternoon: several sites, packages and memberships clients have already paid for, and years of guest notes.
+
+We make Daviana, so read our view with that in mind. Every Zenoti fact below comes from Zenoti's own published terms and help centre, checked on 17 November 2026 and linked at the end. Your order form can override the published terms, so read it first.
+
+### When can you leave a Zenoti contract?
+
+Section 13.1 of Zenoti's terms says the first term is whatever your order form sets. After that the contract renews automatically for one year at a time. Section 13.2(d) lets either side end it at the end of a term by giving at least 60 days' notice before the term ends.
+
+The published terms give you no right to stop mid-term because you have found something else. The other ways out are narrow: either side can end it for a material breach that is not put right within 30 days. If Zenoti ends the contract because fees went unpaid, section 13.3(f) says the fees for the rest of the term fall due at once.
+
+- Find your term end date. It is in your order form, not in the software. With several sites, check whether each one has its own order form and date.
+- Count back 60 days and put that date in the diary, with a reminder a month before it.
+- Give notice in writing. Keep a copy of what you sent and when.
+
+The same terms set two price rules. At renewal, fees can rise by up to 20% of the current fees unless your order form says otherwise. Separately, Zenoti may raise fees at any time with at least 60 days' written notice. A price-rise letter is a good moment to check your term end date.
+
+### What data can you export from Zenoti?
+
+Zenoti's help article Backup your data is written for this job: gathering what it calls off-boarding data. It recommends signing in as an Owner or Manager, at organisation or centre level, and lists where each export lives.
+
+| What to take | Where it is in Zenoti | Why it matters |
+| --- | --- | --- |
+| Clients | Guests, then Manage Guests, then the export to Excel or export to CSV icon | Everything else is matched to the client |
+| Appointments | Reports, then the Appointments report, then the export icon | Bookings after your switch date, and past visits |
+| Sales and payments | Reports: Sales-Accrual and Collections | What each client had and paid |
+| Services and prices | Master Data, then Services. The export price list icon gives centre prices | Durations and prices for each site |
+| Staff | Employee, then Employees, then Export. Zenoti emails a download link | So online booking offers the right people |
+| Packages, memberships and products | Master Data, then Packages, Memberships or Products | What you sell, and at what price |
+| Money clients have already paid you | Reports: Gift Cards Liability, Packages Liability, Prepaid Cards Liability, Memberships Liability | Balances you must honour in the new system |
+| Stock | Reports, then Current Stock; Inventory, then Vendors | What is on the shelf and who supplies it |
+
+The same page lists three gaps. Guest notes can't be exported in bulk: Zenoti says to open each guest record and copy the notes out. Forms and their photos can't be exported in bulk either; each one has to be saved by hand. And card numbers are not stored in Zenoti, only tokens held by the payment processor, so keeping stored cards means asking for a 'Stored card transfer' to another processor.
+
+Start on the notes early. With a few thousand clients, copying notes one record at a time takes days, not hours. Do the clients booked in the next three months first, then anyone with colour formulas or allergy notes.
+
+If you would rather Zenoti sent the data, section 13.3(g) says that if you ask in writing within 30 days of the contract ending, Zenoti delivers the latest version of your data once, within 30 days of your request, as a CSV or another format you agree. All fees must be paid first, and Zenoti can charge for the transfer work on a time and materials basis. After those 30 days it has no duty to keep your data. Section 13.3(d) also lets Zenoti switch off your access when the contract ends, so don't plan to run reports on your last day.
+
+### What order should you switch in?
+
+- Diary the notice date before anything else. Our Daviana vs Zenoti comparison sets prices and contracts side by side if you are still choosing.
+- Run every export once as a test. Open each file: the client file should have phone numbers and emails, and the appointments file should reach past your switch date.
+- Start copying guest notes and saving forms, busiest clients first.
+- Decide what happens to memberships. If the new system has no recurring memberships, choose before you switch: turn them into prepaid courses, honour them by hand, or end them with notice to clients.
+- Ask the new provider what they will move for you, and get it in writing. Ask too whether its card processor can take a stored card transfer; if not, plan to take cards again at each client's next visit. Our 12 questions before switching salon software cover the rest.
+- Set up services, staff and rotas in the new system while Zenoti still runs the salon. With several branches, move one site at a time; our guide to salon software for multiple locations covers what to check.
+- Pick a quiet day to switch. The evening before, export future appointments and the four liability reports again, and load them.
+- Move online booking. Change the booking link on Google, Instagram and your website on the same day.
+- Before the term ends, export everything one last time. Then send the written request for Zenoti's final CSV, inside the 30 days.
+
+### What does missing the notice date cost? A worked example
+
+Zenoti does not publish prices, so take the monthly figure from your own invoice. Say it is £450 a month for one site and your term ends on 31 March. Sixty days before that is 30 January, so notice has to reach Zenoti by then.
+
+- Notice sent on 20 January, switch on 1 February. You pay Zenoti for February and March while the new system runs: 2 × £450 = £900 of overlap. Then ask for the final export by 30 April.
+- Notice sent on 5 February. Too late: the contract renews to the next 31 March. If the renewal brings the full 20% rise the terms allow, the extra year costs 12 × £540 = £6,480, against £5,400 at today's price.
+
+Put your own fee, number of sites and end date into the same sum, and multiply by your sites if each one is billed. The notice date, not the switch date, sets the bill. If you are unsure when your term ends, ask Zenoti in writing.
+
+### What does Zenoti still do better?
+
+Be honest about why you are leaving, because Zenoti is strong in places. It is built for chains: its pricing page lists payroll, marketing automation, memberships, packages, loyalty and reputation management in one system, and 24/7 support for every customer. If your business runs on recurring memberships or automated campaigns, check the new system can replace them before you give notice.
+
+Where Daviana differs: no contract, cancel any month, and a free diary for any team size, with paid extras only. We don't run recurring memberships, a loyalty scheme or bulk text campaigns today, so a membership-led spa may be better on a system built for that. When you start free, the form asks which system you use now, and one tick asks us to move your clients, services and prices across for you. The salon booking system keeps notes on the client record, so the notes you copy out of Zenoti have somewhere to go.
+
+### Questions salon owners ask
+
+#### How much notice do I need to give Zenoti?
+
+Zenoti's published terms (section 13.2(d)) say either side can end the contract at the end of a term by giving at least 60 days' notice before the term ends. Otherwise it renews automatically for another year (section 13.1). Your order form can set different terms, so check it.
+
+#### Can I leave Zenoti before my contract ends?
+
+The published terms give no right to end the contract early just because you want to move. Either side can end it for a material breach that is not put right within 30 days of written notice. If Zenoti ends it because fees are unpaid, section 13.3(f) makes the fees for the rest of the term due at once.
+
+#### How do I export my client list from Zenoti?
+
+Zenoti's help article Backup your data says to go to Guests, then Manage Guests, and click the export to Excel or export to CSV icon, signed in as an Owner or Manager. Appointments, sales, collections and the liability reports export from Reports.
+
+#### Can I export guest notes and forms from Zenoti?
+
+Not in bulk. Zenoti's help article says guest notes have to be copied from each guest record by hand, and forms and their photos saved one at a time. Start early, and do the clients you will see soonest first.
+
+#### What happens to my data after I leave Zenoti?
+
+Section 13.3(g) of Zenoti's terms says that if you ask in writing within 30 days of the contract ending, Zenoti delivers your latest data once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep the data and may delete it.
+
+Sources: Zenoti terms and conditions (sections 13.1, 13.2 and 13.3, and the fee rules) and Zenoti Help, Backup your data, both checked 17 November 2026; Zenoti pricing and plans (features and support), checked 31 October 2026.
 
 ---
 
@@ -3673,7 +3777,7 @@ Superscripts link to the source at the foot of the page. Zenoti's terms are gene
 
 ### If you are leaving Zenoti
 
-Three dates matter, and all of them come from your own contract, so start with your order form. First, find your term end date: under Zenoti's published terms your notice has to arrive at least 60 days before it, or you renew for another year. Second, ask for your data before you give notice and test that it opens. Third, after the contract ends you have 30 days to ask in writing for your final export. Zenoti delivers it once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep your data. Our 12 questions to ask before switching salon software covers the rest.
+Three dates matter, and all of them come from your own contract, so start with your order form. First, find your term end date: under Zenoti's published terms your notice has to arrive at least 60 days before it, or you renew for another year. Second, ask for your data before you give notice and test that it opens. Third, after the contract ends you have 30 days to ask in writing for your final export. Zenoti delivers it once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep your data. Our step-by-step guide to switching from Zenoti lists every export and the notes and forms you have to copy by hand, and our 12 questions to ask before switching salon software covers the rest.
 
 ### How to compare the price for your salon
 
