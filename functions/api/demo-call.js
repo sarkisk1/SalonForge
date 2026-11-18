@@ -67,7 +67,10 @@ function capture(ctx, event, props) {
 
 function originOk(request) {
   const o = request.headers.get('origin');
-  return !o || ALLOWED_ORIGIN.test(o);
+  // Browsers always send Origin on POST (fetch and sendBeacon alike), so a missing one is a
+  // script, not a visitor. This does not make the relay private: my.daviana.app's endpoint
+  // is public anyway. It just keeps scripts from draining the shared relay rate limit.
+  return !!o && ALLOWED_ORIGIN.test(o);
 }
 
 async function upstream(method, body) {
