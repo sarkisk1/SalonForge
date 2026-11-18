@@ -20,6 +20,96 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 
 ---
 
+## What are the best Zenoti alternatives for UK salons?
+
+Source: https://daviana.app/compare/zenoti-alternatives/
+Published: 2026-11-18
+
+The main Zenoti alternatives for UK salons are Phorest and SalonIQ if you run a group and want marketing and group reporting built in, Timely or Vagaro if you want a low published price with no contract, and Daviana if you want a free diary, colour costed to the gram and the phone answered on the same client record. Zenoti is quote only, and its own UK guide says to budget £400 or more a month per location. Here is where each one wins, and where Zenoti is still the better choice.
+
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated; the sources were re-checked 2026-11-18 unless the date says otherwise. If anything here is out of date, tell us and we will correct it.
+
+### How do the Zenoti alternatives compare?
+
+Superscripts link to the sources at the foot of the page. Prices are as each company shows them; Vagaro does not say whether its price includes VAT. Zenoti's terms are general, and your own order form can differ.
+
+|  | Price | Contract and several sites |
+| --- | --- | --- |
+| Zenoti (for reference) | Quote only, after a demo. Its UK guide says to budget £400+ a month per location | Contract: First term set in your order form, then renews a year at a time; at least 60 days' notice before the term ends; up to 20% rise at renewal unless your order form says otherwise, and fees can also rise at any time on 60 days' written notice Several sites: Built for groups; its guide says it suits operators of multiple UK salon, spa or clinic locations |
+| Phorest | Quote only; you choose a package and get a custom quote | Contract: One year, renewing automatically unless you give two months' written notice; leaving early means paying the rest of the year Several sites: Centralised reporting, one client database across sites, cross-location scheduling, commissions by location, group-wide memberships and role-based access |
+| SalonIQ | From £47 a month for a solo stylist; setup fee from £175 plus VAT, which covers installation, training and data migration | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice Several sites: Multiple locations from a single account, centralised reporting, group dashboards and shared client data |
+| Timely | From £4, £7 or £9 a week by plan; the price adjusts with the bookings you take; unlimited team members | Contract: None; 14 days' notice Several sites: "Create and manage multiple locations" included in every plan |
+| Vagaro | £20 a month for one bookable calendar for the first six months, shown against a usual £30; each extra calendar £10 a month up to seven licences, then free; 30-day free trial | Contract: None; cancel any time with no fee New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | Free for the diary and till at any team size; optional extras inc VAT: texts 6p each, AI Receptionist £60 a month, ColorLab £80 a month | Contract: None; cancel any month Several sites: One client record across branches, staff assigned to more than one branch with clashing shifts flagged, online booking picks the branch first |
+
+### Which alternative fits which salon?
+
+- Phorest, for a large group. The closest match to Zenoti's group tooling. Its multi-location page lists reporting that rolls every site into one view, one client database so history and consultation notes follow the client, staff scheduled across sites, commissions that differ by location, and memberships clients can redeem at any site. It is quote only and runs on a one-year term that renews unless you give two months' notice, so it is a commitment of the same kind. See Phorest alternatives and Daviana vs Phorest.
+- SalonIQ, for a UK group that wants marketing. Several locations from a single account, with centralised reporting, group dashboards and shared client data, from £47 a month for a solo stylist plus a setup fee that includes data migration. Its pricing page and its terms describe the commitment differently, so ask which applies to you. See Daviana vs SalonIQ.
+- Timely, for two or three sites on a budget. From £4 a week with unlimited team members, multiple locations in every plan and 14 days' notice. The bill adjusts with your bookings, so price it on your real volume. See Timely alternatives.
+- Vagaro, for a low fixed price. £20 a month for one calendar for the first six months, then the page shows £30, with extra calendars at £10 up to seven licences. Since 14 July 2026 it takes a one-time 20% fee on brand-new clients from its marketplace and partner network; you avoid it by removing your marketplace listing. See Daviana vs Vagaro.
+- Daviana, for a salon or small group that wants monthly terms. A salon booking system and till that is free for any team size and any number of branches, with one client record across them and no minimum term. Extras are paid only if you switch them on: an AI receptionist that answers by voice and books into the diary, and colour weighed and costed to the gram with ColorLab. We run in six working salons, so weigh the track record too. See Daviana vs Zenoti.
+
+### What does Zenoti still do better?
+
+- Depth for chains. Its UK guide pitches it at operators of multiple salon, spa or clinic locations who want advanced analytics and one platform that scales as they expand. None of the alternatives here matches all of it.
+- Spas, medspas and clinics. Zenoti covers spa, medspa and fitness businesses as well as salons.
+- Round-the-clock support. Every Zenoti customer gets 24/7 global support, and AI Plus customers get a dedicated Customer Success Manager.
+- Migration help. Zenoti offers white-glove migration of customer data, appointment history and memberships, with onboarding and training in every subscription.
+- Marketing, memberships and loyalty. Daviana does not run bulk text campaigns, memberships or a loyalty scheme today. If you rely on those, look hardest at Phorest and SalonIQ.
+
+### How do you work out what leaving Zenoti saves?
+
+Start from your own Zenoti invoice and your term end date, not a list price. Then put the numbers side by side:
+
+- Your Zenoti cost. Multiply your monthly fee per location by your sites. Say it is £450 a location across three salons: £450 × 3 = £1,350 a month, or £16,200 a year.
+- The renewal you would sign up to. Zenoti's published terms allow a rise of up to 20% at renewal unless your order form says otherwise. At the full 20%, the next year is £16,200 × 1.2 = £19,440.
+- The same group elsewhere. Ask Phorest and SalonIQ for a written quote for all three sites, including setup. The Daviana diary is £0 for every branch; if you add the phone and colour at one salon, that is £60 + £80 = £140 a month, or £1,680 a year. Ask us on the demo how extras apply across your branches.
+
+The numbers are only an illustration, so use your own. The date matters as much as the price: your notice has to reach Zenoti at least 60 days before the term ends, or you renew for another year. Ask for your exports before you give notice, and copy guest notes, forms and photos by hand, because Zenoti's help centre says those cannot be exported in bulk. Our guide to switching from Zenoti lists every export and the order to do it in, salon software for multiple locations compares group tools in more depth, and what salon software costs in the UK works through the fees.
+
+### Questions about leaving Zenoti
+
+#### Why do salons look for a Zenoti alternative?
+
+Mostly cost and commitment. Zenoti does not publish prices, its own UK guide says to budget £400 or more a month per location, and its terms renew for a year at a time with 60 days' notice and a rise of up to 20% at renewal. Zenoti is built for chains, spas and medspas, and its guide says it may not be the best fit for a single independent salon with straightforward needs.
+
+#### Which Zenoti alternative is best for a salon group?
+
+For a large group with a head office, Phorest is the closest match: it lists centralised reporting, one client database across sites, cross-location scheduling and group-wide memberships, but it is quote only and on a one-year term. SalonIQ also manages several locations from one account. Daviana keeps one client record across branches with a free diary and no minimum term, and runs a four-branch London group.
+
+#### Which Zenoti alternative is cheapest?
+
+Daviana's diary is free for any team size, with paid extras only if you switch them on. Timely starts at £4 a week with unlimited team members and includes multiple locations in every plan, though the price adjusts with bookings. Vagaro shows £20 a month for one calendar for the first six months against a usual £30. Phorest and Zenoti are quote only, and SalonIQ starts at £47 a month for a solo stylist plus setup.
+
+#### Can I leave Zenoti before my term ends?
+
+Zenoti's published terms set the first term in your order form, then renew it for a year at a time. You give at least 60 days' notice before the end of the term, and if Zenoti ends the contract for non-payment the remaining fees fall due. Read your own order form first, because it can differ from the published terms.
+
+#### What data can I take with me from Zenoti?
+
+Zenoti's help centre lists an export for each type of data, such as guests, appointments and sales. It says guest notes and forms or photos cannot be exported in bulk, and stored cards need a separate stored card transfer. Its terms say a final export is delivered once, as a CSV, if you ask in writing within 30 days of the contract ending and all fees are paid.
+
+### Sources
+
+- Zenoti: pricing and plans (quote only, usage billing, AI Plus, 24/7 support, migration and onboarding), checked 2026-11-18
+- Zenoti: how UK salons use Zenoti (£400+ a month per location, 4 to 8 week rollout, who it fits), checked 2026-11-18
+- Zenoti: terms and conditions (sections 13.1 to 13.3: term, notice, renewal rise, fee changes on 60 days' notice, data return), checked 2026-11-17
+- Phorest: UK pricing (custom quote), checked 2026-11-18
+- Phorest: UK terms and conditions (clause 13.1, term, renewal and notice), checked 2026-11-18
+- Phorest: multi-location software (reporting, shared client database, cross-location scheduling, memberships, role-based access), checked 2026-11-18
+- SalonIQ: pricing (solo price, setup fee, notice, multiple locations), checked 2026-11-18
+- SalonIQ: terms and conditions (clause 12.1, initial term and notice), checked 2026-11-18
+- Timely: pricing and plans (weekly prices, bookings-based billing, multiple locations, notice), checked 2026-11-18
+- Vagaro: United Kingdom pricing (£20 a month for the first six months, usual £30, cancel any time, free trial), checked 2026-11-18
+- Vagaro Support: plans and pricing (UK calendar licences), checked 2026-11-18
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-11-18
+- Zenoti Help: back up your data (exports by data type; notes, forms and photos), checked 2026-11-17
+
+Zenoti, Phorest, SalonIQ, Timely and Vagaro are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+
+---
+
 ## How do you switch from Zenoti to another salon system?
 
 Source: https://daviana.app/blog/switching-from-zenoti/
@@ -3730,7 +3820,7 @@ Vagaro is a trademark of its owner. We are not affiliated with, endorsed by or p
 ## Daviana vs Zenoti
 
 Source: https://daviana.app/compare/daviana-vs-zenoti/
-Published: 2026-10-31  ·  Updated: 2026-11-06
+Published: 2026-10-31  ·  Updated: 2026-11-18
 
 Zenoti is enterprise software for salon, spa and medspa chains, and its own UK guide says to budget £400+ a month per location. Daviana's diary is free for any team size, with no minimum term. If you run many sites and need that depth, Zenoti does far more. If you are one salon or a small group, you may be paying for a lot you do not use.
 
@@ -3777,7 +3867,7 @@ Superscripts link to the source at the foot of the page. Zenoti's terms are gene
 
 ### If you are leaving Zenoti
 
-Three dates matter, and all of them come from your own contract, so start with your order form. First, find your term end date: under Zenoti's published terms your notice has to arrive at least 60 days before it, or you renew for another year. Second, ask for your data before you give notice and test that it opens. Third, after the contract ends you have 30 days to ask in writing for your final export. Zenoti delivers it once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep your data. Our step-by-step guide to switching from Zenoti lists every export and the notes and forms you have to copy by hand, and our 12 questions to ask before switching salon software covers the rest.
+Three dates matter, and all of them come from your own contract, so start with your order form. First, find your term end date: under Zenoti's published terms your notice has to arrive at least 60 days before it, or you renew for another year. Second, ask for your data before you give notice and test that it opens. Third, after the contract ends you have 30 days to ask in writing for your final export. Zenoti delivers it once, as a CSV or another agreed format, provided all fees are paid, and it can charge for the work. After those 30 days it has no duty to keep your data. Our step-by-step guide to switching from Zenoti lists every export and the notes and forms you have to copy by hand, and our 12 questions to ask before switching salon software covers the rest. Still choosing where to go? Our Zenoti alternatives page compares five options on price, contract and tools for several sites.
 
 ### How to compare the price for your salon
 
