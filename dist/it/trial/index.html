@@ -1079,6 +1079,33 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
    API is down or there are no free times, the panel falls back to "we'll ring you". */
 (function(){
   var API = 'https://my.daviana.app/api/public/demo-call';
+  /* 18 Nov 2026: some browsers load this page but can't reach my.daviana.app (ad blockers,
+     privacy DNS, antivirus or work networks). If the direct call fails, retry through
+     daviana.app/api/demo-call, which relays it server-side and records the failure where
+     we can see it even when this browser blocks analytics. See functions/api/demo-call.js. */
+  var RELAY = '/api/demo-call', via = API;
+  function report(stage, e){
+    try {
+      var b = JSON.stringify({stage: stage, detail: String((e && e.message) || e || '').slice(0, 120), page: location.pathname + location.hash});
+      if (navigator.sendBeacon && navigator.sendBeacon(RELAY + '?report=1', new Blob([b], {type: 'application/json'}))) return;
+      fetch(RELAY + '?report=1', {method:'POST', headers:{'Content-Type':'application/json'}, body: b, keepalive: true}).catch(function(){});
+    } catch (_) {}
+  }
+  function okJson(r){ if (!r.ok) throw new Error('status ' + r.status); return r.json(); }
+  function getSlots(){
+    return fetch(API, {method:'GET'}).then(okJson).catch(function(e){
+      via = RELAY; ev('demo_slots_relay');
+      return fetch(RELAY + '?why=' + encodeURIComponent(String((e && e.message) || e).slice(0, 60)), {method:'GET'}).then(okJson);
+    });
+  }
+  function postBook(body){
+    var opts = {method:'POST', headers:{'Content-Type':'application/json'}, body: body};
+    return fetch(via, opts).catch(function(e){
+      if (via === RELAY) throw e;
+      via = RELAY; ev('demo_book_relay');
+      return fetch(RELAY + '?why=book-network', opts);
+    });
+  }
   function $(id){ return document.getElementById(id); }
   function ev(n, l){ try { if (window.gtag) gtag('event', n, {event_category:'trial', event_label: l || ''}); } catch (_) {} }
   var WD = ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"], MO = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"];
@@ -1086,7 +1113,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   function fallback(ask){
     $('dc-wait').hidden = true; $('dc').hidden = true;
     if (ask) {
-      $('dc-h').textContent = 'La prenotazione online è piena in questo momento.';
+      $('dc-h').textContent = 'Non siamo riusciti a caricare gli orari in questo momento.';
       $('dc-lead').innerHTML = 'Scrivi a <a href="mailto:info@daviana.app">info@daviana.app</a> con il nome del salone, il cellulare e un orario comodo, e una delle nostre responsabili di salone ti chiamerà.';
       return;
     }
@@ -1112,9 +1139,9 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
         box.appendChild(b);
       });
     }
-    fetch(API, {method:'GET'}).then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
+    getSlots().then(function(d){
       (d.slots || []).forEach(function(s){ if (!byDay[s.date]) { byDay[s.date] = []; days.push(s.date); } byDay[s.date].push(s); });
-      if (!days.length) { ev('demo_slots_none'); return fallback(ask); }
+      if (!days.length) { ev('demo_slots_none'); report('no_slots'); return fallback(ask); }
       days = days.slice(0, 7);
       var wrap = $('dc-days');
       days.forEach(function(day){
@@ -1125,7 +1152,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
       });
       $('dc-wait').hidden = true; $('dc').hidden = false; renderTimes(days[0]);
       ev('demo_slots_shown', String(days.length));
-    }).catch(function(){ ev('demo_slots_failed'); fallback(ask); });
+    }).catch(function(e){ ev('demo_slots_failed'); report('slots_unreachable', e); fallback(ask); });
 
     $('dc-book').addEventListener('click', function(){
       if (!pick) return;
@@ -1138,10 +1165,10 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
       }
       btn.disabled = true; btn.textContent = 'Booking…';
       var src = [lead.utm_source, lead.utm_campaign, lead.utm_content].filter(Boolean).join(' / ');
-      fetch(API, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
+      postBook(JSON.stringify({
         start: pick.start, salon: lead.salon, name: lead.fullName || '', mobile: lead.mobile, email: lead.email,
         website: lead.website || '', source: src.slice(0, 200)
-      })}).then(function(r){ return r.json().then(function(j){ return {ok: r.ok, status: r.status, j: j}; }); }).then(function(x){
+      })).then(function(r){ return r.json().then(function(j){ return {ok: r.ok, status: r.status, j: j}; }); }).then(function(x){
         if (!x.ok) {
           ev('demo_call_failed', String(x.status));
           err.textContent = 'Non è stato possibile prenotare quell’orario. Scegline un altro.'; err.classList.add('on');
@@ -1159,7 +1186,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
         $('dc-ok-s').textContent = x.j['with'] + ' ti chiamerà al ' + lead.mobile + '. Ti abbiamo mandato i dettagli per email. Serve un altro orario? Rispondi a quell’email.';
         $('dc-ok').hidden = false;
       }).catch(function(){
-        ev('demo_call_failed', 'network'); if (ask) lead = null;
+        ev('demo_call_failed', 'network'); report('book_unreachable'); if (ask) lead = null;
         btn.disabled = false; btn.textContent = 'Riprova';
         err.textContent = 'Impossibile collegarsi. Riprova.'; err.classList.add('on');
       });
