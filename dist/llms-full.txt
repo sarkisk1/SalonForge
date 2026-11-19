@@ -20,6 +20,102 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 
 ---
 
+## How much do salon text reminders cost in the UK?
+
+Source: https://daviana.app/blog/salon-text-reminder-costs-uk/
+Published: 2026-11-19
+
+Between nothing and about 8p a text. Booksy and Square Appointments include reminder texts in the plan price. Timely includes one text per booking on its Run plan and charges 4p to 8p for extras. Fresha gives 20 free messages per team member, then charges per text. Daviana charges 6p a text, and its email and app reminders are free.
+
+### The short answer
+
+- Booksy and Square Appointments include reminder texts in the plan price.
+- Timely includes one text per booking on Run (two on Boost, three on Thrive), then charges 8p, 5p or 4p.
+- Fresha gives 20 free messages per team member, then charges per text.
+- Daviana charges 6p a text including VAT; email and app reminders and the diary are free.
+- Work it out as appointments × texts each, minus any allowance, × the price per text, then add the software price.
+
+We make Daviana, so read our view with that in mind. Everything below about another company comes from its own UK pricing page, checked on the date shown, and we say where another system is the cheaper choice for texts.
+
+A reminder text is the cheapest thing a salon sends and one of the easiest to lose track of. It is a few pence at a time, but it goes out on every booking, often twice, and the bill grows with the diary. This guide sets out what each system charges, what counts as a text, and how to work out your own monthly cost.
+
+### What does each UK salon system charge for text reminders?
+
+|  | Software price | Reminders included | Extra texts | Worth knowing |
+| --- | --- | --- | --- | --- |
+| Daviana | Free diary at any team size | Email and app reminders free | 6p a text, VAT included | The diary itself is free, so texts are the only reminder cost |
+| Booksy | £40 a month, plus £5 per extra team member, plus VAT | Appointment confirmations and reminders are always free | Marketing texts: 500 a month free, then 5p each | Reminder texts cost nothing extra |
+| Square Appointments | Free for one location; Plus £29 and Premium £69 per location | Text and email reminders on every plan | Custom text wording needs Plus | The cheapest way to send reminder texts for one site |
+| Timely | Run £4, Boost £7, Thrive £9 a week, adjusted to bookings | 1 text per booking on Run, 2 on Boost, 3 on Thrive | 8p (Run), 5p (Boost), 4p (Thrive) | The allowance grows with your bookings |
+| Fresha | £14.95 a month on your own, £9.95 per team member, plus VAT | 20 free messages per team member | Pay as you go; the rate did not show on 19 Nov (6p plus VAT on 13 Oct) | Also sends WhatsApp and app notifications |
+
+Sources, checked 19 November 2026: Booksy Biz UK pricing, Square Appointments UK pricing, Timely pricing, Fresha UK pricing, Daviana pricing. Fresha's per-text rate is from the same page on 13 October 2026. Fresha and Booksy show prices before VAT; Daviana's prices include VAT.
+
+Two systems include reminder texts in the price: Booksy and Square Appointments. Timely and Fresha include an allowance and charge for the rest. Daviana charges for every text but nothing for the diary, and sends email and app reminders free, so you choose which clients get a text.
+
+### What counts as a text?
+
+- Confirmations as well as reminders. Most salons send a text when the booking is made and another the day before. That is two texts per appointment, not one.
+- Long messages. Many text providers bill a message over 160 characters as two or more texts. A reminder that carries the full address, parking notes and the cancellation policy can cost double.
+- Marketing texts. Offers and rebooking nudges are often priced apart from reminders. Booksy, for example, includes 500 marketing texts a month and then charges 5p each, while its reminders stay free.
+- Per team member allowances. Fresha's 20 free messages are per team member, so a team of four starts each period with 80.
+
+Ask every supplier the same three questions: is a confirmation a text, how is a long text counted, and what is the price per text after any allowance, before or after VAT?
+
+### What do text reminders cost a salon each month? A worked example
+
+Put in your own numbers. Say a salon with four stylists takes 480 appointments a month and sends a confirmation and a reminder by text: 960 texts.
+
+- Daviana, two texts each: 960 × 6p = £57.60 a month, VAT included. The diary costs £0.
+- Daviana, confirmation by email or app, reminder by text: 480 × 6p = £28.80 a month.
+- Timely Run: one text per booking is included, so 480 are covered and the other 480 cost 8p each: £38.40 a month, on top of the plan.
+- Fresha, team of four: 80 free messages, then 880 paid. At the 6p plus VAT it showed in October that is £52.80, or £63.36 with VAT, on top of four team members at £9.95 plus VAT.
+- Booksy and Square: £0 for the reminder texts. Booksy's plan for four people is £40 + 3 × £5 = £55 a month plus VAT, and Square Appointments is free for one location.
+
+The formula is the same for any system: appointments a month × texts per appointment, minus the free allowance, × the price per text. Then add the software price, because a free text on a paid plan is not free. At 480 appointments, Daviana's £28.80 to £57.60 a month for texts compares with £66 a month including VAT for Booksy's software. Square is cheaper than both for a single site that only needs its reminders.
+
+### How can a salon send fewer paid texts?
+
+- Send the confirmation by email or app notification. The client has just booked and is expecting it. Keep the text for the reminder.
+- Send one reminder, not two. Many salons send a single text 24 to 48 hours before the appointment, which still leaves time to fill a cancelled slot.
+- Keep reminders under 160 characters. Name, day, time and a link. Put the address and the cancellation policy behind the link.
+- Ask clients how they want to hear from you. Some prefer email. Every client who does is a text you don't pay for.
+- Keep marketing apart from reminders. Check whether offers and rebooking nudges use the same allowance, and send them to the clients who asked for them.
+
+Fewer texts should not mean more no-shows. If missed appointments are the bigger cost, a deposit does more than a second text: our salon no-show policy template and the guide to salon booking systems with deposits cover that side.
+
+### When is paying per text the better deal?
+
+Paying per text works out cheaper when the software itself costs little or nothing. On Daviana the diary, till, client records and online booking are free for any team size, so a salon pays only for the texts it chooses to send. On a plan that includes texts, you pay for them inside the monthly price whether you send many or few.
+
+It is the worse deal if you send a lot of texts and already pay for software that includes them. A single-site salon happy with Square Appointments' reminders, or a team already on Booksy, should not switch to save on texts alone. Compare the whole year: software, texts, card fees and any marketplace fee. Our guide to how much salon software costs in the UK sets out a full year for each system, and free salon software in the UK compares the free plans and what they leave out.
+
+To try it on your own diary, our salon booking system is free to start, and our pricing lists the 6p text rate and every other extra.
+
+### Questions salon owners ask
+
+#### How much does a salon text reminder cost in the UK?
+
+Between nothing and about 8p a text. Booksy says appointment confirmations and reminders are always free, and Square Appointments includes text and email reminders on every plan. Timely charges 8p, 5p or 4p for texts beyond its allowance, Fresha charges per text after 20 free messages per team member, and Daviana charges 6p a text including VAT, with email and app reminders free.
+
+#### Which salon software includes free text reminders?
+
+Booksy (appointment confirmations and reminders are always free; its plan is £40 a month plus £5 per extra team member, plus VAT) and Square Appointments (text and email reminders are on the Free, Plus and Premium plans). Timely includes one text per booking on Run, two on Boost and three on Thrive.
+
+#### Are email reminders enough for a salon?
+
+For some clients, yes. Many salons send the booking confirmation by email or app notification and keep one text for the reminder a day or two before, which halves the number of paid texts without dropping the text clients see on their phone.
+
+#### Does a long text count as two texts?
+
+Often, yes. Many text providers bill a message over 160 characters as two or more texts, so a long reminder with the full address and cancellation policy can cost double. Keep the reminder short and link to the details.
+
+#### How do I work out what text reminders will cost my salon?
+
+Multiply your appointments a month by the texts you send per appointment, take away any free allowance, and multiply by the price per text. A salon with 480 appointments and two texts each sends 960 texts; at 6p that is £57.60 a month, and at one text each it is £28.80.
+
+---
+
 ## What are the best Zenoti alternatives for UK salons?
 
 Source: https://daviana.app/compare/zenoti-alternatives/
@@ -387,7 +483,7 @@ Some can. Timely lists rebooking reminders on its Thrive plan, from £9 a week, 
 ## Is there free salon software in the UK?
 
 Source: https://daviana.app/blog/free-salon-software-uk/
-Published: 2026-11-07
+Published: 2026-11-07  ·  Updated: 2026-11-19
 
 Yes. Daviana's diary and till are free forever for any team size, and Square Appointments, Setmore and SimplyBook.me have free plans with limits on locations, users or bookings. Fresha, Booksy and Timely charge for the software. Daviana is the only one here that stays free with no limit on team size, bookings or branches.
 
@@ -421,7 +517,7 @@ One thing stands out. Every free plan here has a cap: one location for Square, f
 
 ### What do free plans usually leave out?
 
-- Text reminders. Setmore's free plan sends email reminders only; text reminders are on Pro. Daviana sends email and app reminders free and charges 6p a text.
+- Text reminders. Setmore's free plan sends email reminders only; text reminders are on Pro. Daviana sends email and app reminders free and charges 6p a text. Our guide to what salon text reminders cost compares the per-text prices.
 - Deposits and cancellation fees. Setmore and SimplyBook.me keep deposits for paid plans, and Square's cancellation policy and fees start on Plus. Daviana takes a deposit at online booking on the free diary, which matters if no-shows hurt; our salon no-show policy template covers the wording.
 - More than one location. Square's free plan covers a single location. Daviana's diary is free for any team size and any number of branches.
 - Commission and pay. Square keeps commissions for paid plans. Daviana Performance, with commission, self-employed settlement and tips, comes with the free diary.
