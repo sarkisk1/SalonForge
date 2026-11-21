@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-11-19. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-21. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -17,6 +17,113 @@ Daviana is one connected system that runs a whole salon. Its five products read 
 Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is free for any team size. ColorLab is for salons doing colour work.
 
 Daviana is free: the Diary (booking diary, till, client record and online booking, with email and app reminders) costs nothing for any team size, and Bar and Performance come with it. You pay only for the extras you switch on: texts 6p each, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. No commission on bookings, no lock-in. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. Full details: https://daviana.app/pricing/ . Start free, no card: https://daviana.app/trial/
+
+---
+
+## How does a four-branch London salon group run on Daviana? GA Salons in numbers
+
+Source: https://daviana.app/blog/ga-salons-case-study/
+Published: 2026-11-21
+
+GA Salons runs four London branches, Chelsea, Notting Hill, South Kensington and Wimbledon, on one Daviana client record. On the group's shared phone line, 49% of calls reached nobody before Aria, the AI receptionist, went live. With Aria answering when the desk could not, 11% did. Daviana was built inside these salons, so this is our own group, not an independent customer.
+
+### The short answer
+
+- Four branches, one client record. Colour history, notes and patch tests follow the client to every branch.
+- Calls that reached nobody: 49% before Aria (287 of 585 over 14 days), 11% with Aria (140 of 1,259 over 24 days). Aria answered 386 calls (31%).
+- The desk's worst hours were 10am (45% answered by a person) and 5pm (47%). Monday was the worst day (38%).
+- Of the 427 calls that reached nobody, 15% got neither a call back nor a successful call within 24 hours.
+- Where it falls short: no stock transfer between branches and no bulk email or SMS campaigns.
+
+### Who is GA Salons, and why are we telling you this?
+
+GA Salons is a group of four London salons: Chelsea, Notting Hill, South Kensington and Wimbledon. The same team builds Daviana, and Daviana was built inside these salons. It now runs in six working salons, from London to Saudi Arabia.
+
+So this is not an independent customer review. It is how we run our own salons, with the numbers taken from the system's own logs. Every figure here is already published, with its method, in our study of 1,844 salon calls and our guide to salon software for multiple locations. Judge it on that basis.
+
+### How does one client record work across four branches?
+
+A client who has colour in Chelsea and a blow-dry in Wimbledon is one person in the booking system, not two.
+
+- One client, four doors. Colour history, notes and patch tests sit on one record, so a stylist in Wimbledon sees the formula mixed in Chelsea. With ColorLab, that formula is weighed and costed on the same record.
+- Stylists who move between branches. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
+- Each salon, or the whole group. Reports run for one branch or across all four, with combined totals.
+- One phone line. Calls to the group come in on one shared line, and Aria books into the same diary as the desk.
+
+### What happened to the phone when Aria went live?
+
+We counted every inbound call to the group's shared line from 19 August to 25 September 2026: 1,844 calls from about 900 different numbers. Aria went live on 2 September and picks up when the desk cannot.
+
+|  | Calls | Answered by a person | Answered by Aria | Reached nobody |
+| --- | --- | --- | --- | --- |
+| Before Aria (19 Aug to 1 Sep, 14 days) | 585 | 298 (51%) | n/a | 287 (49%) |
+| With Aria (2 to 25 Sep, 24 days) | 1,259 | 733 (58%) | 386 (31%) | 140 (11%) |
+
+One caution: the first fortnight was also the team's first two weeks on a new phone system, so part of that 49% may be people getting used to it. The desk still answered more calls with Aria live (58% against 51%), so Aria took the overflow rather than replacing the team.
+
+Aria's rulebook was learned from 4,106 real salon calls, and it books only into the Daviana diary. Read more about Aria, the AI receptionist.
+
+### When did the desk miss the most calls?
+
+Not after hours. Only about 10% of calls (193 of 1,844) came before 9am, after 6pm or on a Sunday. The gaps were in the working day:
+
+- 10am: a person answered 45% of calls, as the first clients were being settled.
+- 5pm: 47%, while the desk was cashing out and rebooking.
+- Noon: the best-covered hour, at 75%.
+- Monday: the worst weekday, at 38%, against 71% on Saturday.
+
+The full hour-by-hour and day-by-day tables are in the missed-calls study.
+
+### What happened to the callers nobody answered?
+
+We followed the 427 calls that reached nobody and checked the next 24 hours for the same number:
+
+- 68% got a call back from the salon.
+- 37% rang again and got through.
+- 15% did neither.
+
+GA's desks work their call-back list hard, which is why most callers were reached. A salon without that habit should treat 15% as the floor, not the ceiling.
+
+### How do you work out the same numbers for your salon?
+
+You need three figures from your own salon: calls a week, the share that reach nobody, and the average value of a visit. Then:
+
+- Calls a week × share that reach nobody = unanswered calls.
+- Unanswered calls × the share who never get through (15% at GA) = callers you probably lose.
+- Callers you lose × average visit value = money at risk each week.
+
+For example, say your line takes 200 calls a week, 40% reach nobody and an average visit is £70. That is 80 unanswered calls, about 12 callers who never get through, and about £840 a week at risk. Not every caller wanted to book, so treat it as an upper bound. The free missed call calculator does the sum for you.
+
+### Where does Daviana fall short for a group like this?
+
+Two gaps matter to a group, and GA lives with both:
+
+- No stock transfer between branches. Stock is counted per branch, but moving it from one branch to another is not in the system yet.
+- No bulk email or SMS campaigns. If marketing campaigns matter to you, a system with them built in will suit you better today.
+
+Daviana also runs in six working salons, far fewer than the big UK systems. Our multi-location guide sets out who each option fits.
+
+### Questions salon owners ask
+
+#### Is GA Salons an independent Daviana customer?
+
+No. Daviana was built inside GA Salons by the same team, so this is how we use it ourselves. Every figure comes from the system's own logs and is published with its method in our study of 1,844 salon calls.
+
+#### How many branches does GA Salons run on Daviana?
+
+Four, all in London: Chelsea, Notting Hill, South Kensington and Wimbledon. They share one client record, and reports run for one branch or for the whole group.
+
+#### Did the AI receptionist reduce missed calls at GA Salons?
+
+On the group's shared line, 49% of calls reached nobody in the 14 days before Aria went live and 11% in the 24 days after. The first fortnight was also the team's first on a new phone system, so part of the drop may be the team settling in.
+
+#### Can staff work at more than one GA Salons branch?
+
+Yes. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
+
+#### What can't Daviana do yet for a salon group?
+
+There is no transfer of stock between branches and no bulk email or SMS campaigns. Stock is counted per branch.
 
 ---
 
@@ -774,7 +881,7 @@ Yes. Daviana takes the deposit when the client books online, into the same diary
 ## What is the best salon software for multiple locations in the UK?
 
 Source: https://daviana.app/blog/salon-software-multiple-locations-uk/
-Published: 2026-11-03  ·  Updated: 2026-11-06
+Published: 2026-11-03  ·  Updated: 2026-11-21
 
 The best salon software for multiple locations keeps one client record across every branch, lets a stylist work at more than one site without double booking, and reports on each salon and the whole group. Phorest and Zenoti have the deepest group tooling, SalonIQ serves 180+ UK groups, and Daviana runs a four-branch London group.
 
@@ -815,7 +922,7 @@ Sources, all checked 3 November 2026: Phorest multi-location software, Phorest U
 
 ### How does a four-branch London group run on one system?
 
-GA Salons runs four London branches on Daviana: Chelsea, Notting Hill, South Kensington and Wimbledon. Daviana was built inside these salons by the same team, so this is how we use it ourselves, not a customer case study.
+GA Salons runs four London branches on Daviana: Chelsea, Notting Hill, South Kensington and Wimbledon. Daviana was built inside these salons by the same team, so this is how we use it ourselves, not an independent customer's account. The full numbers are in our GA Salons case study.
 
 - One client, four doors. A client's colour history, notes and patch tests sit on one record, so a stylist in Wimbledon sees the formula mixed in Chelsea. With ColorLab, that formula is weighed and costed on the same record.
 - Stylists who move between branches. A team member can be assigned to more than one salon, and the rota flags a shift that overlaps one at another branch.
@@ -856,7 +963,6 @@ Yes, in most group systems. In Daviana a team member can be assigned to more tha
 #### Is salon software priced per location?
 
 Some of it is. Zenoti's UK guide says to budget £400 or more a month per location, and Vagaro charges £10 a month for each additional location in the UK. Timely lists multiple locations in every plan. Daviana's Diary is free for any team size; ask on the demo how paid extras such as texts apply across your branches.
-
 ---
 
 ## How do you switch from Phorest to another salon system?
