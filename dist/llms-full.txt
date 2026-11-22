@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-11-21. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-22. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -3142,12 +3142,12 @@ Daviana ColorLab is £80 a month including VAT, with cancellation any month. It 
 
 ---
 
-## One diary, one till, one client record: what all-in-one salon software actually means
+## What is all-in-one salon software?
 
 Source: https://daviana.app/blog/all-in-one-salon-software-meaning/
-Published: 2026-07-24  ·  Updated: 2026-11-06
+Published: 2026-07-24  ·  Updated: 2026-11-22
 
-Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree. Here is the test that actually shows the difference.
+All-in-one salon software is one system that runs the diary, till, client record, online booking, rota and staff figures from a single record, so nothing is typed twice. One login is not proof. To test it, change a client’s phone number and check whether the till and reminders show it straight away.
 
 ### The short answer
 
@@ -3161,7 +3161,7 @@ Ask what “all-in-one” means and most salon owners can’t quite say, only th
 
 That gap between the promise and the floor is the whole subject of this piece.
 
-### What “all-in-one” is actually supposed to mean
+### What does all-in-one actually mean for a salon?
 
 It is supposed to mean one system running the whole salon — the diary, the till, the client record, the rota — instead of a diary here and a till there, stitched together by hand.
 
@@ -3177,7 +3177,25 @@ The same test works on colour. A bowl gets weighed on the scale. Does that actua
 
 Most things sold as all-in-one are several products behind one login, each keeping its own copy of the client — which is why the numbers never quite agree.
 
-### Several products behind one login, or one record
+### What should all-in-one salon software include?
+
+At the least, a diary with online booking, a till, the client record, the rota and each stylist’s figures, all working from one record. The phone, colour costing and texts are often charged as extras, so check the price of each. The middle column is a test you can run in any demo, ours included.
+
+| Part | How to test it | In Daviana |
+| --- | --- | --- |
+| Appointment diary and online booking | Book online, then look at the desk diary. The slot should be gone for everyone. | Diary, free |
+| Till | Open the bill from the appointment. The service, price and stylist should already be on it. | Part of the Diary, free. Card fees are separate |
+| Client record | Edit a mobile number once, then check the reminder and the till. | Part of the Diary, free |
+| Rota | Take a stylist off for a day. Online booking should stop offering them. | Part of the Diary, free |
+| Staff figures and commission | Ring up a sale and watch the stylist’s total move. | Performance, free with the Diary |
+| Drinks to the chair | Order a coffee for a client. It should reach their bill and come off stock. | Bar, free with the Diary |
+| Phone answering | Ring the salon and book, then find that booking in the diary. | AI Receptionist, £60 a month including VAT |
+| Colour costing | Weigh a bowl, then find its cost on the client record and the bill. | ColorLab, £80 a month including VAT |
+| Text reminders | Ask what one text costs and whether email reminders are free. | Texts 6p each. Email and app reminders are free |
+
+All-in-one does not mean everything. Daviana has no bulk email or SMS campaigns and no stock transfer between branches, as our GA Salons case study sets out. If either is something you need every week, count that as a gap. Daviana’s prices are the ones on our pricing page on 22 November 2026.
+
+### How is one login different from one record?
 
 The difference is easiest to see side by side, against the same five everyday moments on the floor.
 
@@ -3191,15 +3209,15 @@ The difference is easiest to see side by side, against the same five everyday mo
 
 Nothing in that left-hand column is a scandal. It is what happens, quietly and by default, whenever the same fact is asked to live in more than one place and stay in step through nothing more than habit and a bit of luck.
 
-### What one record looks like on the floor
+### What does one record look like on the salon floor?
 
 It looks like nobody re-typing something that already exists somewhere else.
 
 The AI Receptionist books straight into the same diary a phone call at the desk would book into — not a separate calendar someone reconciles later. A bowl of colour weighed on the scale at ColorLab lands on the till and on the next stylist’s screen without a formula being typed out from memory, and the stock it came out of goes down by the gram rather than by a count at the end of the week. Commission is worked out live from the same diary the desk actually books into, not a spreadsheet rebuilt before payday. The client record the diary holds is the one the colour, the till and the pay run all read.
 
-None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far without a single one living only in someone’s notebook.
+None of this is dramatic to watch. That is rather the point — the record is doing its job precisely when nobody notices it working. This is the shape it takes across six working salons, London to Saudi Arabia, and partner salons in five countries: one diary, everything else reading and writing into it, including 19,949 colour formulas weighed and costed so far.
 
-### The questions to actually ask before you buy
+### What should you ask before you buy?
 
 Ask what happens to one specific fact the moment it changes, and watch what the salesperson has to go and check to answer you.
 
@@ -3211,7 +3229,7 @@ Ask what happens to one specific fact the moment it changes, and watch what the 
 
 If the answer to any of those needs “let me check with the team,” you have found the seam between two products.
 
-### How much does a second copy of the client cost? A worked example
+### How much does a second copy of the client cost?
 
 Most of the cost of several records is time: the same fact typed again, and the end-of-day check that the copies still agree. Here is the sum with example figures. Swap in your own; none of these numbers is a benchmark.
 
@@ -3225,7 +3243,7 @@ That figure leaves out what the copies get wrong: a reminder sent to an old numb
 
 If the till is where your copies disagree most, our checklist of what a salon POS system should do rings up a real split bill with a deposit, a voucher and tips for two stylists. To compare what connected systems charge over a year, see how much salon software costs in the UK, and the best salon software in the UK sets the main systems’ prices and contracts side by side.
 
-### What one record does not solve
+### What does all-in-one software not solve?
 
 Being honest about this matters more than the sales pitch, so: one shared record fixes disagreement between systems. It does not fix everything else that makes a salon hard to run.
 
@@ -3264,6 +3282,10 @@ No. A POS is the till that takes payment. All-in-one software should include the
 #### How much does all-in-one salon software cost in the UK?
 
 It depends on the size of the team and which parts you take. Daviana Diary, the diary, till and client record in one, is free for any team size, for as long as you use it, with no commission on bookings and no minimum term. You pay only for extras: texts at 6p each, the AI Receptionist at £60 a month including VAT and ColorLab at £80 a month including VAT. Card fees are separate. Our guide to what salon software costs in the UK works out a full year for the main systems.
+
+#### What can all-in-one salon software leave out?
+
+It varies by system, so ask for a list. In Daviana there are no bulk email or SMS campaigns and no transfer of stock between branches. Texts, the AI Receptionist and ColorLab are paid extras, and card payments carry a fee. The diary, till, client record, Bar and Performance are free.
 
 ---
 
