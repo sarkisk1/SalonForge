@@ -2,7 +2,7 @@
 
 Everything below is published at https://daviana.app and may be quoted with attribution to Daviana.
 
-Last updated: 2026-11-22. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
+Last updated: 2026-11-25. Contents: what Daviana is; every journal post, newest first; every comparison with other salon software; the product and pricing FAQs.
 
 ## What Daviana is
 
@@ -17,6 +17,112 @@ Daviana is one connected system that runs a whole salon. Its five products read 
 Daviana is for hair, nail and beauty salons, from one person working alone to a group with several branches. The Diary is free for any team size. ColorLab is for salons doing colour work.
 
 Daviana is free: the Diary (booking diary, till, client record and online booking, with email and app reminders) costs nothing for any team size, and Bar and Performance come with it. You pay only for the extras you switch on: texts 6p each, the AI Receptionist £60 a month, ColorLab £80 a month. All prices include VAT. No commission on bookings, no lock-in. Card payments through Daviana: 1.85% + 10p in person, 1.95% + 20p online, plus VAT. Full details: https://daviana.app/pricing/ . Start free, no card: https://daviana.app/trial/
+
+---
+
+## Which salon software handles tips best in the UK?
+
+Source: https://daviana.app/blog/salon-tips-software-uk/
+Published: 2026-11-24
+
+The best one asks for the tip on the card reader, credits it to the stylist who did the work, pays it out in full and keeps a record you can hand over. Phorest, Fresha, Timely and Daviana all take tips on the card reader. They differ on how a shared tip is split, how the stylist gets paid and whether a fee comes out of the tip.
+
+### The short answer
+
+- Since 1 October 2024, tips a salon controls must reach the worker in full, apart from tax and National Insurance.
+- The salon needs a written tips policy and three years of tip records that staff can ask to see.
+- Phorest pays tips straight to each stylist's bank, but takes 5% from the tip if the client won't cover the fee.
+- Fresha splits a shared tip by the value of each person's services and adds tips to its pay runs.
+- Daviana asks for each stylist's tip separately on the reader and pays it into that stylist's own account.
+
+Card tips used to be simple: the client added a few pounds on the machine and the salon paid it out at the end of the month. Since the Employment (Allocation of Tips) Act 2023 came into force on 1 October 2024, the way your software takes, splits and records tips is also how you show you are keeping the law. This guide sets out what the law asks for, how the main UK salon systems handle tips, and a worked example you can run on your own bills.
+
+### What does UK law say a salon must do with tips?
+
+The Act covers tips the employer has "control or significant influence" over. In a salon that means any card tip paid to the business, and any cash tips the salon collects and shares out. According to Acas, an employer must:
+
+- Pass tips on in full. The only deductions allowed are the usual tax and National Insurance.
+- Share them fairly, following the statutory Code of Practice.
+- Pay them by the end of the following month. Tips received in March must be paid before the end of April.
+- Have a written tips policy that every worker can see, saying whether the salon asks clients to tip and how tips are shared.
+- Keep records for 3 years: the amount received, the amount paid to each worker, and any amount passed to a tronc.
+
+Workers can ask to see their records once every 3 months, for one month or several months in a row, and the salon must answer within 4 weeks. A worker can take a missing policy or missing records to an employment tribunal, which can award up to £5,000. Tips never count towards the minimum wage. From 1 January 2027, the Employment Rights Act 2025 adds that you must consult staff before you write or review the policy, and review it at least every 3 years.
+
+The Act does not cover self-employed stylists, cash tips a stylist keeps without the salon touching them, or card tips that go straight to the worker rather than to the business.
+
+### Which UK salon systems take tips, and how?
+
+|  | Where the client tips | Two stylists on one bill | How the stylist is paid | Worth knowing |
+| --- | --- | --- | --- | --- |
+| Daviana | On the card reader | The reader asks for each stylist's tip separately | Into each stylist's own Stripe account | Tips are recorded per stylist at the till, so the pay run and the stylist's own numbers read the same figures |
+| Phorest | On the PhorestPay card terminal | A separate tip prompt for each staff member | PhorestTips pays straight to the stylist's bank, released the next working day | The client is asked to cover a 5% fee; if they say no, 5% comes off the tip |
+| Fresha | At checkout, on the card terminal, by self-checkout link, or online after the visit | One tip, split by the value of each person's services (you can change the split) | Tips can be added to a Fresha pay run, paid from the business wallet | Tips show in the finance summary report |
+| Timely | On Timely terminals and Tap to Pay on iPhone in the UK | Not stated on the page we checked | Not stated on the page we checked | You set the tip percentages and can see the team's tips in Timely |
+
+Sources, checked 24 November 2026: Phorest: PhorestTips, Fresha: set up and manage tips, Fresha: add tips to a pay run, Timely: tipping, and Acas on what the law says and policies and records.
+
+Where each one wins: Phorest gets money to the stylist fastest, with no pay run in between. Fresha gives the client the most places to tip, including after they have left. Timely puts tipping on a phone as well as a terminal. Daviana keeps each stylist's tip apart from the first tap, so a shared tip never needs splitting afterwards.
+
+### Can a salon take the card fee out of a tip?
+
+For tips the salon controls, no. Acas says the only deductions allowed are tax and National Insurance, so the card fee on a tip is a cost of the business, like the fee on the haircut. The client can choose to pay something on top, but the tip itself has to reach the worker whole.
+
+Phorest's own help page says that if the client declines to cover its 5% fee, the 5% is taken from the tip. PhorestTips sends tips directly to the stylist's own account, and Acas says the Act does not apply to card tips paid directly to the worker. How that applies to your salon is a question for Phorest and your adviser, not one we can settle here.
+
+### How should tips be split when two stylists work on one client? A worked example
+
+Put in your own numbers. Say Sam does a colour for £120, Jo does the blow-dry for £30, and the client wants to leave £15.
+
+- One tip, split by service value (Fresha's default): Sam gets £120 ÷ £150 × £15 = £12, Jo gets £30 ÷ £150 × £15 = £3.
+- A tip per stylist (Phorest and Daviana): the client chooses, say £10 for Sam and £5 for Jo. The blow-dry gets thanked for the blow-dry, not for its share of the bill.
+- A pooled tronc: all tips for the week go into one pot and are shared by hours or points. Fair for assistants and reception, but you need a troncmaster and the records that go with one.
+
+The formula for a value split is: a stylist's services ÷ the bill before the tip × the tip. There is no single right method. The Code of Practice asks that the split is fair and transparent, so pick one, write it into your tips policy, and check that your software can do it without anyone working it out by hand at the end of the day.
+
+### What tip records should salon software keep?
+
+Enough to answer a stylist's request within 4 weeks without a spreadsheet hunt. Ask every supplier these five questions:
+
+- Is each tip recorded against the stylist, with the date, the amount and the bill it came from?
+- Can I see what was paid out, to whom and when, next to what was received?
+- Can I export one month, or several months in a row, for one stylist?
+- How long are tip records kept, and do they survive if I leave the system? You need 3 years.
+- Is anything taken off the tip, by the software, the card provider or anyone else, and who pays the card fee on it?
+
+If you are moving systems, export your tip history before you go. Our guide to questions to ask before switching salon software covers what else to take with you.
+
+### What about cash tips, tax and self-employed stylists?
+
+Cash. If stylists keep the cash clients hand them and the salon never collects it, the Act does not apply, though Acas suggests your policy still says what happens to it. If the salon empties a tip jar and shares it, those tips are covered, and they belong in the same records as card tips.
+
+Tax. GOV.UK says tips are always subject to Income Tax. Tips passed on through payroll or a tronc have the tax taken when the worker is paid. Whether National Insurance is due depends on how far the employer decides who gets what. Tips a worker keeps directly they report to HMRC themselves.
+
+Self-employed stylists. The Act and the Code do not cover the self-employed, but your agreement with them should still say how their card tips reach them. Our salon commission structure guide covers how tips sit next to commission and the minimum wage.
+
+In Daviana, tips sit on the same bill as the services and retail, credited to the stylist who earned them, and each stylist sees their own tips, commission and targets in Performance. The till is part of our free salon booking system and POS. For the rest of what a till should do, read what a salon POS system should do.
+
+### Questions salon owners ask
+
+#### Which salon software handles tips best in the UK?
+
+The one that takes the tip on the card reader, credits it to the stylist who did the work, pays it out in full and keeps three years of records. Phorest, Fresha, Timely and Daviana all take card tips on the reader. Phorest pays tips straight to each stylist's bank but takes 5% from the tip if the client won't cover its fee. Fresha splits a shared tip by service value. Daviana asks for each stylist's tip separately and pays it into their own account.
+
+#### Can a salon take card fees out of tips in the UK?
+
+Not from tips the salon controls. Since 1 October 2024 the Employment (Allocation of Tips) Act 2023 says those tips must reach the worker in full, and Acas says the only deductions allowed are tax and National Insurance. The card fee on a tip is a cost of the business.
+
+#### How long must a salon keep tip records?
+
+Three years from when the tips were paid. The records must show the amount received, the amount paid to each worker and any amount passed to a tronc. A worker can ask to see them once every 3 months, and the salon must answer within 4 weeks.
+
+#### How do you split a tip between two stylists?
+
+Either by the value of each person's services or by asking for a tip per stylist. On a £150 bill with a £120 colour and a £30 blow-dry, a £15 tip split by value gives £12 and £3. A tip per stylist lets the client choose, for example £10 and £5. Whichever you use, write it into your tips policy.
+
+#### Do tips count towards the minimum wage?
+
+No. Tips, gratuities and service charges can't be used to bring pay up to the minimum wage. Commission can, but tips can't.
 
 ---
 
@@ -223,6 +329,96 @@ Multiply your appointments a month by the texts you send per appointment, take a
 
 ---
 
+## What are the best SalonIQ alternatives for UK salons?
+
+Source: https://daviana.app/compare/saloniq-alternatives/
+Published: 2026-11-25
+
+The main SalonIQ alternatives for UK salons are Phorest if marketing is the reason you chose SalonIQ, Timely, Booksy or Vagaro if you want a published price with no contract, and Daviana if you want a free diary, colour costed to the gram and the phone answered on the same client record. SalonIQ starts at £47 a month plus VAT for a solo stylist, but its terms set a 12-month initial term and 90 days' notice. Here is where each one wins, and where SalonIQ is still the better choice.
+
+Written by Daviana, one of the options below. Every fact about another company is sourced and dated; the sources were re-checked 2026-11-25 unless the date says otherwise. If anything here is out of date, tell us and we will correct it.
+
+### How do the SalonIQ alternatives compare?
+
+Superscripts link to the sources at the foot of the page. Prices are as each company shows them; Vagaro does not say whether its price includes VAT. SalonIQ's terms are general, and your own agreement can differ.
+
+|  | Price | Contract and marketing |
+| --- | --- | --- |
+| SalonIQ (for reference) | From £47 a month plus VAT for a solo stylist; setup fee from £175 plus VAT, which covers installation, training and data migration. Two-way SMS, a branded app, online deposits and payments, an e-shop and integrated card payments are listed as upgrades | Contract: Its pricing page says no long-term contracts and 60 days' notice; its terms set a 12-month initial term, then 90 days' written notice Marketing: Automated SMS and email campaigns |
+| Phorest | Quote only; you choose a package and get a custom quote. Marketing texts are shown at 9.5p, 8.2p or 7p each by package | Contract: One year, renewing automatically unless you give two months' written notice; leaving early means paying the rest of the year Marketing: SMS and email marketing suite in every package; Reserve with Google and an ads manager on the higher ones |
+| Timely | From £4, £7 or £9 a week by plan; the price adjusts with the bookings you take; unlimited team members | Contract: None; 14 days' notice Marketing: SMS campaigns and Mailchimp email campaigns on Boost and Thrive; one-off messages only on Run |
+| Booksy | £40 a month plus £5 for each extra team member, plus VAT; 7-day free trial | Contract: No commitment; cancel any time New clients: Boost, its paid marketplace promotion, takes 30% of the first visit, minimum £5 |
+| Vagaro | £20 a month for one bookable calendar for the first six months, shown against a usual £30; 30-day free trial | Contract: None; cancel any time with no fee New clients: Since 14 July 2026, a one-time 20% fee when a brand-new client books through the Vagaro Marketplace or partner network (Yelp, Google, Apple Maps) |
+| Daviana | Free for the diary and till at any team size; optional extras inc VAT: texts 6p each, AI Receptionist £60 a month, ColorLab £80 a month | Contract: None; cancel any month Marketing: No bulk SMS or email campaigns today |
+
+### Which alternative fits which salon?
+
+- Phorest, if marketing is why you chose SalonIQ. Every package includes an SMS and email marketing suite with automated campaigns, the higher ones add Reserve with Google and an ads manager for Facebook and Instagram, and every package supports several locations. It is quote only and runs on a one-year term that renews unless you give two months' notice, so check that you are not swapping one long commitment for another. See Phorest alternatives and Daviana vs Phorest.
+- Timely, for a published price and short notice. From £4 a week with unlimited team members and 14 days' notice. SMS campaigns and Mailchimp email campaigns come on Boost and Thrive, not Run. The bill adjusts with your bookings, so price it on your real volume. See Daviana vs Timely.
+- Booksy, if you want a marketplace. £40 a month plus £5 for each extra team member, plus VAT, with no commitment. New clients can find you on the Booksy app; if you pay for Boost, it takes 30% of a new client's first visit, minimum £5. See Daviana vs Booksy.
+- Vagaro, for a low fixed price. £20 a month for one calendar for the first six months, then the page shows £30, with a 30-day trial and no cancellation fee. Since 14 July 2026 it takes a one-time 20% fee on brand-new clients from its marketplace and partner network; you avoid it by removing your marketplace listing. See Daviana vs Vagaro.
+- Zenoti, only if you are growing into a chain. Quote only, and its own UK guide says to budget £400 or more a month per location. It is a bigger commitment than SalonIQ, not a smaller one. See Zenoti alternatives.
+- Daviana, for a salon that wants monthly terms. A salon booking system and till that is free for any team size and any number of branches, with no setup fee and no minimum term. Extras are paid only if you switch them on: an AI receptionist that answers by voice and books into the diary, and colour weighed and costed to the gram with ColorLab, without a second colour supplier. We run in six working salons, so weigh the track record too. See Daviana vs SalonIQ.
+
+### What does SalonIQ still do better?
+
+- Automated marketing. SalonIQ finds clients who have not visited in a while and contacts them by email and SMS, and sends campaigns to attract new clients and promote offers. Daviana does not run bulk text or email campaigns today. If campaigns bring in a real share of your bookings, look hardest at Phorest.
+- A large UK customer base. SalonIQ says it powers more than 2,500 UK salons, including 180+ salon groups. Daviana runs in six working salons.
+- Groups on one account. Several locations from a single account, with centralised reporting, group dashboards and shared client data.
+- An AI receptionist on the same diary. IQ Connect, powered by Callpad.ai, answers calls, checks the live SalonIQ diary and books the appointment there and then. SalonIQ does not show its price. Daviana's Aria does the same for the Daviana diary at £60 a month including VAT.
+- Help moving in. The setup fee covers installation, unlimited online training and moving your data from your previous system.
+
+### How do you work out when you can leave SalonIQ, and what it saves?
+
+Start from your own agreement and your start date, not a list price. Then work through the dates and the numbers:
+
+- Your earliest exit. Under SalonIQ's published terms, the first 12 months run from when you first access the service or pay, and your written notice of 90 days has to expire on or after the end of that period. Say you started on 1 March 2026: the initial term ends on 28 February 2027, so the notice has to reach SalonIQ by 30 November 2026. On the 60 days its pricing page describes, the same exit needs notice by 30 December 2026. Ask SalonIQ in writing which one applies.
+- Your SalonIQ cost. Take your monthly invoice, including upgrades such as two-way SMS or card payments. Say it is £150 a month: £150 × 12 = £1,800 a year, before card fees.
+- The same salon elsewhere. The Daviana diary and till are £0. If you add the AI receptionist, that is £60 × 12 = £720 a year; adding ColorLab too makes £1,680. Ask Phorest for a written quote with your team size and the marketing you use, and price Timely on your real booking volume.
+
+The numbers are only an illustration, so use your own. Ask for your data before you give notice: client and report exports are available inside SalonIQ, further CSV exports (services, products, bookings, transactions, client notes and gift cards) are by written request for an administration fee, and SalonIQ deletes or archives customer data 120 days after the contract ends. Questions to ask before switching salon software covers what to check on the new system, the best salon software in the UK guide compares the wider market, and what salon software costs in the UK works through the fees.
+
+### Questions about leaving SalonIQ
+
+#### Why do salons look for a SalonIQ alternative?
+
+Mostly the commitment and the extras. SalonIQ starts at £47 a month plus VAT for a solo stylist with a setup fee from £175 plus VAT, but its published terms set a 12-month initial term and then 90 days' written notice, while its pricing page says there are no long-term contracts and 60 days' notice. Two-way SMS, online deposits and payments, integrated card payments and a branded app are listed as upgrades, so the price you pay depends on which of those you need.
+
+#### Which SalonIQ alternative has the best marketing?
+
+Phorest is the closest match: every package includes an SMS and email marketing suite, and the higher ones add Reserve with Google and an ads manager for Facebook and Instagram, but it is quote only and on a one-year term. Timely includes SMS campaigns and Mailchimp email campaigns from its Boost plan. Daviana does not run bulk SMS or email campaigns today.
+
+#### Which SalonIQ alternative is cheapest?
+
+Daviana's diary and till are free for any team size, with paid extras only if you switch them on. Timely starts at £4 a week with unlimited team members, though the price adjusts with bookings. Vagaro shows £20 a month for one calendar for the first six months against a usual £30. Booksy is £40 a month plus £5 for each extra team member, plus VAT.
+
+#### How much notice do I need to give SalonIQ?
+
+Check your own agreement. SalonIQ's published terms say the contract runs for an initial term of 12 months and then continues until you give at least 90 days' written notice, expiring on or after the end of that initial term. Its pricing page says you can cancel with 60 days' notice. Ask SalonIQ in writing which applies to you before you plan your switch date.
+
+#### What happens to my data when I leave SalonIQ?
+
+SalonIQ's terms say it deletes or archives all customer data 120 days after the contract ends. Client and report exports are available inside SalonIQ, and further CSV exports such as services, products, bookings, transactions, client notes and gift cards are available by written request for an administration fee. Ask for them before you give notice and check that they open.
+
+### Sources
+
+- SalonIQ: pricing (solo price, setup fee, upgrades, 60 days' notice, multiple locations), checked 2026-11-25
+- SalonIQ: terms and conditions (Initial Term; clause 13.1, 90 days' notice and data deleted or archived after 120 days; clauses 6.4.5 and 6.4.6, exports), checked 2026-11-25
+- SalonIQ: UK salon software (2,500+ UK salons, 180+ groups, automated marketing), checked 2026-11-25
+- Phorest: UK pricing (custom quote, packages, SMS rates, marketing, multiple locations), checked 2026-11-25
+- Phorest: UK terms and conditions (clause 13.1, term, renewal and notice), checked 2026-11-25
+- Timely: pricing and plans (weekly prices, bookings-based billing, marketing by plan, notice), checked 2026-11-25
+- Booksy: UK pricing (monthly price, team members, VAT, trial, Boost), checked 2026-11-25
+- Vagaro: United Kingdom pricing (£20 a month for the first six months, usual £30, cancel any time, free trial), checked 2026-11-25
+- Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-11-18
+- Zenoti: pricing and plans (quote only), checked 2026-11-25
+- Zenoti: how UK salons use Zenoti (£400+ a month per location), checked 2026-11-18
+- SalonIQ: IQ Connect AI receptionist (powered by Callpad.ai, no price shown), checked 2026-11-25
+
+SalonIQ, IQ Connect, Callpad, Phorest, Timely, Booksy, Vagaro and Zenoti are trademarks of their owners. We are not affiliated with any of them. Prices and terms change, so check with each company before deciding.
+
+---
+
 ## What are the best Zenoti alternatives for UK salons?
 
 Source: https://daviana.app/compare/zenoti-alternatives/
@@ -302,7 +498,7 @@ Zenoti's help centre lists an export for each type of data, such as guests, appo
 - Phorest: UK terms and conditions (clause 13.1, term, renewal and notice), checked 2026-11-18
 - Phorest: multi-location software (reporting, shared client database, cross-location scheduling, memberships, role-based access), checked 2026-11-18
 - SalonIQ: pricing (solo price, setup fee, notice, multiple locations), checked 2026-11-18
-- SalonIQ: terms and conditions (clause 12.1, initial term and notice), checked 2026-11-18
+- SalonIQ: terms and conditions (clause 13.1, initial term and notice), checked 2026-11-25
 - Timely: pricing and plans (weekly prices, bookings-based billing, multiple locations, notice), checked 2026-11-18
 - Vagaro: United Kingdom pricing (£20 a month for the first six months, usual £30, cancel any time, free trial), checked 2026-11-18
 - Vagaro Support: plans and pricing (UK calendar licences), checked 2026-11-18
@@ -732,7 +928,7 @@ We make Daviana, so read our view with that in mind. Everything below about anot
 | SalonIQ | From £47 a month for a solo stylist, plus setup from £175 + VAT | Shared client data and client intake | Automated email and SMS campaigns, including messages to clients who have not been in for a while. Two-way SMS is an upgrade | Pricing page: no long-term contracts, 60 days' notice. Its terms describe a 12-month initial term with 90 days' notice |
 | Daviana | Diary and client records free for any team size; extras are paid | One client card with every visit, spend and favourite stylist; notes and colour formulas; per-client prices; patch tests valid for two years and flagged in the diary. Simpler consultation forms than Phorest or Timely | Email and SMS consent as separate switches. VIP and loyalty tiers worked out from lifetime value and visit count. A list of who has not rebooked. For email and SMS campaigns, ask us what is available today | Phorest's marketing, loyalty and review tools are deeper than ours. Reminders go by email, or by text at 6p each |
 
-Sources, checked 5 November 2026 unless a date is given: Phorest: consultation forms, before-and-after images, Treatcard and marketing, Phorest: CRM software (client flags, staff access), Phorest: automated consultation forms (15 November 2022), Phorest UK pricing, Phorest UK terms, clause 13.1 (29 October 2026), Fresha UK pricing, Timely pricing and plans, Booksy UK pricing, SalonIQ pricing, SalonIQ UK salon software and SalonIQ terms, clause 12.1 (28 October 2026).
+Sources, checked 5 November 2026 unless a date is given: Phorest: consultation forms, before-and-after images, Treatcard and marketing, Phorest: CRM software (client flags, staff access), Phorest: automated consultation forms (15 November 2022), Phorest UK pricing, Phorest UK terms, clause 13.1 (29 October 2026), Fresha UK pricing, Timely pricing and plans, Booksy UK pricing, SalonIQ pricing, SalonIQ UK salon software and SalonIQ terms, clause 13.1 (25 November 2026).
 
 Two things stand out. Every system here holds the basics: history, notes and some kind of form. The real differences are photos, which plan your forms and campaigns sit on, and what each marketing message costs. For prices beyond the CRM, our UK salon software comparison sets out contracts and fees.
 
@@ -1195,7 +1391,7 @@ Take this list to any demo and ask to see each one done, not described.
 - Cash out from the appointment. Open the visit, and the services, the stylists and the prices are already on the bill.
 - Sell without a booking too. Walk-ins and retail-only sales should go through the same till and the same reports.
 - Split the payment. Card, cash with change worked out, gift voucher and a deposit already paid, all on one bill. A good till refuses to close a bill whose parts don't add up, instead of letting the gap slip into the day's takings.
-- Record tips per stylist. Ideally the client chooses the tip on the card reader, and it is credited to the stylist who did the work.
+- Record tips per stylist. Ideally the client chooses the tip on the card reader, and it is credited to the stylist who did the work. Our guide to which salon software handles tips best covers the UK tips law and how each system splits and pays tips.
 - Take retail stock off as it sells. If the shelf count only changes at stock take, you can't tell a sale from a loss. Our post on why salon stock goes missing explains why that matters.
 - Keep deposits and refunds in the same record. A no-show deposit, a partial refund or a reopened bill should change the original visit, not create a loose payment somewhere else.
 - Redeem gift vouchers and courses. Look up the voucher, take the balance off, and show what is left. Courses and packages should count down a session the same way.
@@ -1522,7 +1718,7 @@ The Daviana diary and till is free for any team size, for as long as you use it,
 - Booksy Biz: UK pricing (plans, payments, texts, Boost) — checked 2026-10-13
 - Timely: UK pricing (plans, card and text fees, notice) — checked 2026-10-13
 - SalonIQ: pricing (starting price, setup fee, 60 days' notice) — checked 2026-10-13
-- SalonIQ: terms and conditions, clause 12.1 — checked 2026-10-08
+- SalonIQ: terms and conditions, clause 13.1 — checked 2026-11-25
 - Treatwell: partner pricing — checked 2026-10-06
 - Treatwell: partner terms (notice period) — checked 2026-10-06
 - Phorest: UK pricing — checked 2026-10-06
@@ -3715,7 +3911,7 @@ Booksy is a trademark of its owner. We are not affiliated with, endorsed by or p
 ## Daviana vs SalonIQ
 
 Source: https://daviana.app/compare/daviana-vs-saloniq/
-Published: 2026-09-26  ·  Updated: 2026-11-06
+Published: 2026-09-26  ·  Updated: 2026-11-25
 
 SalonIQ and Daviana are both UK salon software where clients book through your own website and social media, and both now answer the phone with AI. The honest comparison is SalonIQ's marketing tools, larger customer base and lower solo price against a free diary, colour costing built in, and one shared record for the diary, the till, the colour bowl and the phone.
 
@@ -3759,7 +3955,7 @@ Superscripts link to the source at the foot of the page.
 
 ### How to compare the price for your salon
 
-Ask SalonIQ for a quote for your team size with the upgrades you would actually use, such as online deposits and card payments, and add the setup fee. Because its terms set a 12-month initial term (its pricing page says no long-term contracts, so ask which applies), compare a full year: 12 months of SalonIQ plus setup, against 12 months of Daviana (the diary is free at any team size), plus £60 a month including VAT for the AI Receptionist or £80 for ColorLab if you want them. If the phone or colour is part of the decision, the missed call calculator and the colour cost calculator show whether either would pay for itself. For the wider market, see our UK salon software comparison.
+Ask SalonIQ for a quote for your team size with the upgrades you would actually use, such as online deposits and card payments, and add the setup fee. Because its terms set a 12-month initial term (its pricing page says no long-term contracts, so ask which applies), compare a full year: 12 months of SalonIQ plus setup, against 12 months of Daviana (the diary is free at any team size), plus £60 a month including VAT for the AI Receptionist or £80 for ColorLab if you want them. If the phone or colour is part of the decision, the missed call calculator and the colour cost calculator show whether either would pay for itself. For the wider market, see our UK salon software comparison, and for the other options side by side, SalonIQ alternatives.
 
 ### Questions about SalonIQ and Daviana
 
@@ -3786,7 +3982,7 @@ Usually, but what moves depends on what you can export. SalonIQ's terms say it d
 ### Sources
 
 - SalonIQ: pricing (starting price, setup fee, included features, upgrades, 60 days' notice) — checked 2026-10-08
-- SalonIQ: terms and conditions (Initial Term; clause 12.1, 90 days' notice; data deleted or archived after 120 days) — checked 2026-10-08
+- SalonIQ: terms and conditions (Initial Term; clause 13.1, 90 days' notice; data deleted or archived after 120 days) — checked 2026-11-25
 - SalonIQ: UK salon software (no long contracts, 2,500+ salons, 180+ groups) — checked 2026-10-08
 - SalonIQ: IQ Connect AI receptionist — checked 2026-10-08
 - SalonIQ help centre: Vish colour management integration — checked 2026-09-26
@@ -4379,7 +4575,7 @@ Timely asks for 14 days' notice and there is no contract to wait out. Before you
 - Phorest: UK pricing (custom quote), checked 2026-10-28
 - Phorest: UK terms and conditions (clause 13.1, term, renewal and notice), checked 2026-10-28
 - SalonIQ: pricing (solo price, setup fee, notice), checked 2026-10-28
-- SalonIQ: terms and conditions (clause 12.1, initial term and notice), checked 2026-10-28
+- SalonIQ: terms and conditions (clause 13.1, initial term and notice), checked 2026-11-25
 - Vagaro: United Kingdom pricing (from £20 a month, cancel any time, free trial), checked 2026-10-28
 - Vagaro Support: plans and pricing (UK calendar licences), checked 2026-10-20
 - Vagaro Support: new customer fees for UK businesses (20% from 14 July 2026, opting out), checked 2026-10-20
