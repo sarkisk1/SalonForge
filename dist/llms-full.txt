@@ -20,6 +20,109 @@ Daviana is free: the Diary (booking diary, till, client record and online bookin
 
 ---
 
+## Which salon software has no long-term contract in the UK?
+
+Source: https://daviana.app/blog/salon-software-contracts-uk/
+Published: 2026-11-26
+
+Booksy, Fresha, Timely, Vagaro and Daviana have no minimum contract, so you can leave on 14 days' notice or less. Treatwell asks for 30 days. Phorest and Zenoti run yearly terms that renew themselves unless you give notice in time, and SalonIQ's published terms set a 12-month first term and 90 days' notice.
+
+### The short answer
+
+- Booksy, Fresha, Vagaro and Daviana have no minimum term: cancel any time or any month.
+- Timely has no contract and asks for 14 days' notice; Treatwell asks for 30 days.
+- Phorest renews every year unless written notice arrives two months before the year ends.
+- Zenoti renews a year at a time after the term in your order form, with 60 days' notice.
+- SalonIQ's terms say 12 months and 90 days' notice; its pricing page says 60 days.
+
+A salon changes its software rarely, so the contract you sign today is often the one you are still reading in three years. The price on the pricing page is only half of it. The other half is how long you are committed for, how much notice you have to give and what it costs if you miss the date. This guide sets out what each main UK salon system publishes, and how to work out your own notice date.
+
+### Which UK salon systems have no contract?
+
+Six of the nine have no minimum term, though Timely asks for 14 days' notice and Treatwell for 30. Under their published terms, the other three tie you in for a year or more. Here is what each one publishes.
+
+|  | Minimum term | Notice to leave | Worth knowing |
+| --- | --- | --- | --- |
+| Daviana | None | Cancel any month | Nothing left to pay. The diary and till are free; paid extras stop when you cancel them |
+| Booksy | None: “no commitment” | Cancel any time | Monthly subscription, £40 a month plus £5 per extra team member, plus VAT |
+| Fresha | None: “no minimum commitment or long-term contract” | Cancel any time | Monthly subscription |
+| Timely | None | 14 days' notice | Weekly prices from £4, £7 or £9 by plan |
+| Vagaro | None | Cancel any time | £20 a month for the first six months, then £30 |
+| Treatwell | None: runs until either side ends it | 30 days' notice, for any reason | Treatwell can also end it on 30 days' notice |
+| SalonIQ | Terms: a 12-month initial term. Pricing page: “no long-term contracts” | Terms: 90 days' written notice, ending on or after the initial term. Pricing page: 60 days | The two pages differ, so ask which applies to you before you sign |
+| Phorest | One year, renewing automatically for another year | Written notice at least two months before the year ends | Leave early and you owe the fees for the rest of that year (clause 13.1) |
+| Zenoti | Set in your order form, then renewing for one year at a time | At least 60 days before the term ends (section 13.2(d)) | Fees can rise at any time on 60 days' written notice (section 3.6) |
+
+Sources, checked 26 November 2026: Booksy: UK pricing, Fresha: pricing FAQ, Treatwell: partner terms of business, Phorest: UK terms and conditions (clauses 13.1 and 13.4(c)), SalonIQ: terms and conditions (Term and Termination; 6.4.6, exports) and Zenoti: terms and conditions (sections 3.6, 13.1 to 13.3). Checked 25 November 2026: Timely: pricing, Vagaro: UK pricing and SalonIQ: pricing.
+
+Where each one wins: Booksy, Fresha and Vagaro let you walk away the same month. Timely asks for two weeks and publishes every price. Treatwell's 30 days is short for a marketplace that brings you new clients. Phorest and Zenoti ask for the longest commitment, and in return Phorest offers its marketing tools and Zenoti is built for large groups. SalonIQ's setup fee covers installation, training and data migration, which some salons would rather pay for than do themselves.
+
+### What does a contract that renews itself mean?
+
+It means doing nothing is a decision. Phorest's UK terms (clause 13.1) say the contract runs for one year from when Phorest accepts your order and then renews for another year, and another, unless written notice reaches Phorest at least two months before the end of the current year. Zenoti's published terms work the same way once the first term in your order form ends: one year at a time, with notice at least 60 days before the term ends.
+
+So the real question is not "how much notice?" but "notice before when?". With a 14-day or 30-day notice period you count from today. With a renewing term you count back from an anniversary you may not have written down. Our guides to switching from Phorest and switching from Zenoti walk through each one step by step.
+
+### How do you work out your notice date? A worked example
+
+Take two numbers from your own paperwork: the date your contract started and what you pay each month. Say your yearly contract started on 15 March 2025 and you pay £150 a month.
+
+- The current year ends on 14 March 2027, the day before the next anniversary.
+- With two months' notice, the notice has to reach the supplier by 14 January 2027.
+- With 90 days' notice, count back 90 days from 14 March 2027: 14 December 2026.
+- Miss the date and the contract renews to March 2028: 12 more months at £150 = £1,800.
+
+The formula for the cost of a missed date is: your monthly fee × the months in one renewal term. On a monthly plan with 14 days' notice, the most a late decision costs is about half a month's fee, £75 on the same bill. Put the notice date in your diary with a reminder a month before it, whichever system you use, and check your own agreement: an order form can set a different start date or term from the published terms.
+
+### Are there other costs of leaving salon software?
+
+Yes, and they are mostly about your data, not the notice period. Check these before you give notice:
+
+- Exports that cost money or take time. Phorest's terms (clause 13.4(c)) say an engineer-run export can take up to 15 business days and comes only once all fees are paid. SalonIQ's terms list extra CSV exports by written request for an administration fee. Zenoti's terms (section 13.3(g)) give one CSV if you ask in writing within 30 days of the contract ending, and it can charge for the work.
+- Data that gets deleted. Phorest's terms say it may destroy your data 60 days after the contract ends. SalonIQ's say it deletes or archives customer data 120 days after.
+- Access that stops on the last day. Zenoti's terms let it switch off access when the contract ends, so don't plan to run reports on your final day.
+
+Our checklist of questions to ask before switching salon software covers what else to take with you, and how much salon software costs in the UK works out a full year's bill.
+
+### What should you check before you sign?
+
+- The minimum term, in months. "Flexible" is not a number.
+- The notice period, in days, and what it is counted from: today, or the end of a term.
+- Whether the term renews itself, and for how long each time.
+- Whether the pricing page and the terms say the same thing. If they differ, get the one that applies to you in writing.
+- Whether prices can rise during the term, and on how much notice.
+- What an export costs, how long it takes and when your data is deleted.
+
+### Does no contract mean cheaper?
+
+Not always. A monthly plan can cost more over a year than a quoted yearly deal, and a marketplace with no contract can still charge a fee on every new client it sends you. Compare the full year's bill first, then the exit. The point of a short notice period is that if the software stops working for your salon, the cost of finding out is a few weeks, not a year.
+
+Daviana has no contract: the booking system and till are free at any team size, and the paid extras (texts at 6p each, the AI Receptionist at £60 a month and ColorLab at £80 a month, all including VAT) can be cancelled any month. Everything is on our pricing page.
+
+### Questions salon owners ask
+
+#### Which salon software has no contract in the UK?
+
+Booksy, Fresha, Vagaro and Daviana publish no minimum term and let you cancel any time or any month. Timely has no contract and asks for 14 days' notice. Treatwell asks for 30 days. Phorest and Zenoti run yearly terms that renew themselves, and SalonIQ's terms set a 12-month first term with 90 days' notice.
+
+#### How much notice do I need to give Phorest?
+
+Phorest's UK terms (clause 13.1) say written notice must reach Phorest at least two months before the end of your one-year contract period. Otherwise the contract renews automatically for another year.
+
+#### Can I leave a salon software contract early?
+
+On a monthly plan, yes: you give the notice and stop paying. On a fixed term, usually not without paying. Phorest's terms say that if you end the contract early you owe the fees for the rest of the period, and Zenoti's published terms give no right to end early just because you want to move.
+
+#### Is SalonIQ a 12-month contract?
+
+Its published terms set a 12-month initial term and then 90 days' written notice, expiring on or after the end of that term. Its pricing page says there are no long-term contracts and you can cancel with 60 days' notice. Ask SalonIQ which applies to your agreement before you sign.
+
+#### What happens to my salon data when the contract ends?
+
+It depends on the supplier, so export before you give notice. Phorest's terms say it may destroy your data 60 days after the contract ends, SalonIQ's say it deletes or archives it after 120 days, and Zenoti's give one CSV export if you ask in writing within 30 days.
+
+---
+
 ## Which salon software handles tips best in the UK?
 
 Source: https://daviana.app/blog/salon-tips-software-uk/
@@ -2847,7 +2950,7 @@ Most providers will tell you that you can leave whenever you like. Push past tha
 
 #### 11. Is there a minimum contract term, and what is the real notice period?
 
-Some run rolling monthly agreements; others tie you in for a year or more, with a cost attached to leaving early. Ask for the notice period in days, not the word “flexible”. If there is hardware involved — a card machine, a colour scale — ask what happens to it if you leave: whose is it, and does it need to go back.
+Some run rolling monthly agreements; others tie you in for a year or more, with a cost attached to leaving early. Ask for the notice period in days, not the word “flexible”. If there is hardware involved — a card machine, a colour scale — ask what happens to it if you leave: whose is it, and does it need to go back. Our guide to which salon software has no long-term contract sets out the term and notice period each UK system publishes.
 
 #### 12. Who answers the phone on a Monday morning when something is broken?
 
