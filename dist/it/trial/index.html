@@ -1379,7 +1379,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
 
   function sendCode(first){
     return post('/phone/send', {mobile: lead.mobile}).then(function(x){
-      if (x.ok) { if (first) ev('otp_sent'); return true; }
+      if (x.ok) { AUTO_TRIED = false; if (first) ev('otp_sent'); return true; }
       ev('otp_send_failed', String(x.status));
       codeFailed(String(x.status), 'Non siamo riusciti a inviare il codice. Riprova.');
       return false;
@@ -1435,7 +1435,9 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   // 5 Oct 2026: one text per sign-up. "New code" stays greyed out for 45 s after a code
   // goes out (the server also refuses a second text inside that window).
   var RESEND_MS = 45 * 1000, resendTimer = null, RESEND_LABEL = null;
+  var LOCK_UNTIL = 0, AUTO_TRIED = false, MAX_TRIES_MSG = "Troppi tentativi con quel codice. Ti mandiamo un nuovo codice via SMS.";
   function lockResend(until){
+    LOCK_UNTIL = until;
     var b = $('ss-resend'); if (!b) return;
     if (RESEND_LABEL === null) RESEND_LABEL = b.textContent;
     clearInterval(resendTimer);
@@ -1465,6 +1467,20 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     var b = $('ss-otp-go'); b.disabled = true; b.textContent = 'Checking…';
     post('/phone/check', {mobile: lead.mobile, email: lead.email, code: code}).then(function(x){
       b.disabled = false; b.textContent = 'Conferma il mio numero';
+      // Too many wrong tries on this code: get a fresh one by ourselves (the send route
+      // restarts the capped verification) instead of leaving them on an error.
+      if (x.status === 429 && x.j && x.j.code === 'max_attempts') {
+        ev('otp_max_attempts'); $('ss-otp').value = ''; autoCode = ''; err('ss-code-err', MAX_TRIES_MSG);
+        setTimeout(function(){
+          sendCode(false).then(function(ok){
+            if (!ok) return;
+            lockResend(Date.now() + RESEND_MS); err('ss-code-err', '');
+            $('dc-lead').textContent = FAIL.retryLead.replace('{m}', lead.mobile);
+            try { $('ss-otp').focus({preventScroll:true}); } catch (_) {}
+          });
+        }, Math.max(0, LOCK_UNTIL - Date.now() + 1000));
+        return;
+      }
       if (!x.ok || !x.j.token) { ev('otp_wrong', String(x.status)); err('ss-code-err', 'Il codice non è corretto. Riprova.'); return; }
       token = x.j.token; ev('otp_verified'); dropStep();
       try { if (window.fbq) fbq('trackCustom', 'PhoneVerified'); } catch (_) {}
@@ -1478,9 +1494,12 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
   var autoCode = '';
   $('ss-otp').addEventListener('input', function(){
     var c = ($('ss-otp').value || '').replace(/\D/g, '');
+    // 27 Nov 2026: auto-confirm only the first complete code. Every check spends one of
+    // Twilio's 5 per code, and re-firing on each corrected digit locked people out
+    // (Simie: 5 wrong checks in 2 minutes, then no way to get a new code).
     if (c.length !== 6) { autoCode = ''; return; }
-    if (c === autoCode || $('ss-otp-go').disabled) return;
-    autoCode = c; $('ss-otp-go').click();
+    if (AUTO_TRIED || c === autoCode || $('ss-otp-go').disabled) return;
+    AUTO_TRIED = true; autoCode = c; $('ss-otp-go').click();
   });
   $('ss-resend').addEventListener('click', function(){ ev('otp_resend'); if (++RESENDS >= 2) { showFail('resend_twice'); return; } sendCode(false).then(function(ok){ if (ok) lockResend(Date.now() + RESEND_MS); if (ok) err('ss-code-err', ''); if (ok) $('dc-lead').textContent = 'Ti abbiamo mandato un nuovo codice al ' + lead.mobile + '.'; }); });
   // 4 Oct 2026: when the code can't be texted (the send failed, or a second "new code"
