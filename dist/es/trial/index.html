@@ -1349,6 +1349,24 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     $('dc-lead').textContent = "Ábrelo en tu móvil en tres pasos. No necesitas ordenador.";
   }
   var lead = null, token = '';
+  // 27 Nov 2026: an owner who already has a salon (their email already has a login, or this
+  // mobile set one up today) and fills the form in again was sent to "book a call" with
+  // "email info@daviana.app" (3 owners, 6 times since 15 Oct). Show how to sign in instead.
+  var EXISTING = {"h": "Ya tienes un salón en Daviana.", "lead": "{email} ya está registrado, así que no hay nada que configurar de nuevo. Entra desde el móvil en tres pasos.", "pwLabel": "Tu contraseña", "pw": "Usa la contraseña que ya elegiste. ¿La has olvidado? Abre DavianaGo, toca <b>¿Olvidaste tu contraseña?</b> e introduce {email}. Te enviamos un código de 6 dígitos por email.", "si": "Abre DavianaGo y entra con {email} y esa contraseña.", "key": "¿También en el ordenador? Usa la clave de licencia del email de bienvenida que enviamos a {email}."};
+  function existingAccount(){
+    var em = '<b>' + esc(lead.email) + '</b>';
+    ev('self_setup_existing');
+    phoneReady({j: {}});
+    $('dc-h').textContent = EXISTING.h;
+    $('dc-lead').textContent = EXISTING.lead.replace('{email}', lead.email);
+    $('ss-pw').parentNode.querySelector('b').textContent = EXISTING.pwLabel;
+    $('ss-pw').innerHTML = EXISTING.pw.replace('{email}', em);
+    $('ss-si').innerHTML = EXISTING.si.replace('{email}', em);
+    $('ss-keynote').textContent = EXISTING.key.replace('{email}', lead.email);
+    $('ss-mac').href = 'https://my.daviana.app/download/mac'; $('ss-win').href = 'https://my.daviana.app/download/windows';
+    panel('ss-ready');
+    $('tr-done').scrollIntoView({behavior:'smooth', block:'start'});
+  }
   var SUBMIT = document.querySelector('#tr-form button[type=submit]'), SUBMIT_LABEL = SUBMIT ? SUBMIT.textContent : '';
 
   function toCall(){
@@ -1385,6 +1403,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
       if (!x.ok) {
         ev('self_setup_failed', String(x.status));
         if (x.j && x.j.code === 'phone_unverified') { panel('ss-code'); sendCode(false); return; }
+        if (x.j && (x.j.code === 'email_exists' || x.j.code === 'already_set_up')) { existingAccount(); return; }
         toCall();
         $('dc-h').textContent = 'No hemos podido crear tu salón automáticamente.';
         $('dc-lead').textContent = 'Elige una hora aquí abajo y lo configuramos contigo.';
