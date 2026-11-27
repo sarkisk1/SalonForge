@@ -1369,6 +1369,24 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     $('dc-lead').textContent = "Open it on your phone in three steps. No computer needed.";
   }
   var lead = null, token = '';
+  // 27 Nov 2026: an owner who already has a salon (their email already has a login, or this
+  // mobile set one up today) and fills the form in again was sent to "book a call" with
+  // "email info@daviana.app" (3 owners, 6 times since 15 Oct). Show how to sign in instead.
+  var EXISTING = {"h": "You already have a Daviana salon.", "lead": "{email} is already signed up, so there’s nothing to set up again. Sign in on your phone in three steps.", "pwLabel": "Your password", "pw": "Use the password you chose before. Forgotten it? Open DavianaGo, tap <b>Forgot password?</b> and enter {email}. We email you a 6-digit code.", "si": "Open DavianaGo and sign in with {email} and that password.", "key": "On a computer too? Use the licence key in the welcome email we sent to {email}."};
+  function existingAccount(){
+    var em = '<b>' + esc(lead.email) + '</b>';
+    ev('self_setup_existing');
+    phoneReady({j: {}});
+    $('dc-h').textContent = EXISTING.h;
+    $('dc-lead').textContent = EXISTING.lead.replace('{email}', lead.email);
+    $('ss-pw').parentNode.querySelector('b').textContent = EXISTING.pwLabel;
+    $('ss-pw').innerHTML = EXISTING.pw.replace('{email}', em);
+    $('ss-si').innerHTML = EXISTING.si.replace('{email}', em);
+    $('ss-keynote').textContent = EXISTING.key.replace('{email}', lead.email);
+    $('ss-mac').href = 'https://my.daviana.app/download/mac'; $('ss-win').href = 'https://my.daviana.app/download/windows';
+    panel('ss-ready');
+    $('tr-done').scrollIntoView({behavior:'smooth', block:'start'});
+  }
   var SUBMIT = document.querySelector('#tr-form button[type=submit]'), SUBMIT_LABEL = SUBMIT ? SUBMIT.textContent : '';
 
   function toCall(){
@@ -1405,6 +1423,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
       if (!x.ok) {
         ev('self_setup_failed', String(x.status));
         if (x.j && x.j.code === 'phone_unverified') { panel('ss-code'); sendCode(false); return; }
+        if (x.j && (x.j.code === 'email_exists' || x.j.code === 'already_set_up')) { existingAccount(); return; }
         toCall();
         $('dc-h').textContent = 'We couldn’t create your salon automatically.';
         $('dc-lead').textContent = ((x.j && x.j.error) ? x.j.error + ' ' : '') + 'Pick a time below and one of our salon managers will set it up with you.';

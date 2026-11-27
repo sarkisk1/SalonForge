@@ -1261,6 +1261,24 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
     $('dc-lead').textContent = "Ouvrez-le sur votre téléphone en trois étapes. Pas besoin d’ordinateur.";
   }
   var lead = null, token = '';
+  // 27 Nov 2026: an owner who already has a salon (their email already has a login, or this
+  // mobile set one up today) and fills the form in again was sent to "book a call" with
+  // "email info@daviana.app" (3 owners, 6 times since 15 Oct). Show how to sign in instead.
+  var EXISTING = {"h": "Vous avez déjà un salon Daviana.", "lead": "{email} est déjà inscrit, il n’y a donc rien à reconfigurer. Connectez-vous depuis votre téléphone en trois étapes.", "pwLabel": "Votre mot de passe", "pw": "Utilisez le mot de passe que vous avez déjà choisi. Vous l’avez oublié ? Ouvrez DavianaGo, touchez <b>Mot de passe oublié ?</b> et saisissez {email}. Nous vous envoyons un code à 6 chiffres par e-mail.", "si": "Ouvrez DavianaGo et connectez-vous avec {email} et ce mot de passe.", "key": "Aussi sur ordinateur ? Utilisez la clé de licence de l’email de bienvenue envoyé à {email}."};
+  function existingAccount(){
+    var em = '<b>' + esc(lead.email) + '</b>';
+    ev('self_setup_existing');
+    phoneReady({j: {}});
+    $('dc-h').textContent = EXISTING.h;
+    $('dc-lead').textContent = EXISTING.lead.replace('{email}', lead.email);
+    $('ss-pw').parentNode.querySelector('b').textContent = EXISTING.pwLabel;
+    $('ss-pw').innerHTML = EXISTING.pw.replace('{email}', em);
+    $('ss-si').innerHTML = EXISTING.si.replace('{email}', em);
+    $('ss-keynote').textContent = EXISTING.key.replace('{email}', lead.email);
+    $('ss-mac').href = 'https://my.daviana.app/download/mac'; $('ss-win').href = 'https://my.daviana.app/download/windows';
+    panel('ss-ready');
+    $('tr-done').scrollIntoView({behavior:'smooth', block:'start'});
+  }
   var SUBMIT = document.querySelector('#tr-form button[type=submit]'), SUBMIT_LABEL = SUBMIT ? SUBMIT.textContent : '';
 
   function toCall(){
@@ -1297,6 +1315,7 @@ window.SF_QUIZ=function(){var sp=ans.specialism||((document.getElementById('tr-s
       if (!x.ok) {
         ev('self_setup_failed', String(x.status));
         if (x.j && x.j.code === 'phone_unverified') { panel('ss-code'); sendCode(false); return; }
+        if (x.j && (x.j.code === 'email_exists' || x.j.code === 'already_set_up')) { existingAccount(); return; }
         toCall();
         $('dc-h').textContent = 'Nous n’avons pas pu créer votre salon automatiquement.';
         $('dc-lead').textContent = 'Choisissez un créneau ci-dessous et nous l’installons avec vous.';
